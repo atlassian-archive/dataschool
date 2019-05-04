@@ -1,23 +1,15 @@
 ---
 new_page_extension: md
-auto_deploy: false
+auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
 - type: jekyll-pages
   label: Pages
   create: all
-- type: jekyll-posts
-  label: Posts
-  create: all
 - type: directory
   path: dataschool/_chapters
   label: Chapters
-  create: all
-  match: "**/*"
-- type: directory
-  path: dataschool/_sections
-  label: Sections
   create: all
   match: "**/*"
 - type: directory
@@ -35,6 +27,7 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+instant_preview: true
 build:
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
   publish_command: bundle exec jekyll build -d _site
