@@ -10,6 +10,7 @@ run a local copy it's fairly simple:
 
 > jekyll build
 > jekyll serve --watch
+> bundle install --path vendor/bundle
 
 It will then be available at http://localhost:4000
 

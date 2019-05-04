@@ -1,0 +1,133 @@
+// SQL BOX CSS
+
+sqlbox {
+  .result .pagination-detail {
+    display: none;
+  }
+  .sqlerror {
+    padding: 0.5rem;
+    background-color: $strong-color;
+    color: #fff;
+    border-radius: 5px;
+    .error-help {
+      width: 100%;
+      text-align: right;
+      color: $background-color;
+      border-color: $strong-color-lighter;
+      &:hover {
+        background: $strong-color-light;
+      }
+    }
+  }
+  table {
+    background-color: $background-color;
+    border-radius: 5px;
+    th {
+      text-transform: none;
+    }
+  }
+  div.noanswer {
+    display: none;
+  }
+  div.answered-checkbox {
+    float: left;
+    margin-left: -55px;
+  }
+  th:not(.table-title) { text-transform: none; }
+  .correct {
+    background-color: #A0E2BC;
+  }
+  .incorrect {
+    background-color: #f99;
+  }
+  .result-message {
+    text-align: right;
+    font-style: italic;
+    padding: 0.5rem 0;
+    display: none; // hidden by default.
+  }
+  .CodeMirror {
+    font-family: 'Roboto Mono';
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  .hint {
+    display: none;
+  }
+  input.btn {
+    margin-bottom: 0;
+  }
+    .sqlbox {
+      input.run-sql {
+        margin-bottom: 1rem;
+      }
+  }
+  .fixed-table-pagination div.pagination {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .loading-spinner {
+    display: none;
+    height: 40px;
+  }
+  img {
+    margin: 0;
+  }
+  form.sqlbox {
+    padding: 0 0.5rem 0.5rem;
+    margin: 0 -0.5rem;
+    border-radius: 5px;
+  }
+  form.loading {
+    .loading-spinner {
+      display: block;
+    }
+    input.run-sql {
+      display: none;
+    }
+  }
+}
+
+
+.quizbox {
+  h3.question {
+    span.q {
+      margin-left: -23px;
+    }
+    small {
+      text-transform: uppercase;
+      margin-left: 5px;
+      display: block;
+    }
+  }
+
+}
+
+// CSS for tutorials sidebar navigation
+.sql-categories {
+  & > li {
+    margin-bottom: 0.25rem;
+  }
+  ol {
+    display: none;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  li.current-level {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    a.level-label {
+      color: $primary-color;
+    }
+    ol {
+      display: block;
+    }
+  }
+  a.level-label {
+    cursor: pointer;
+  }
+}

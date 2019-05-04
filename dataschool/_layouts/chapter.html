@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
+{% assign bookchapters = site.chapters | where:'book', page.book | sort: 'number' %}
+
 {% assign book = site.books | where:'slug', page.book %}
 {% assign book = book[0] %}
+
 <div class="wrapper">
 
     <!-- Sidebar -->
@@ -16,30 +19,31 @@ layout: default
           <li><a href="/books/">Contributors</a></li>
           <li><a href="/books/">Slack Community</a></li>
         </ul>
-        <ul class="list-unstyled components">
-          {% for chapter in book.chapters %}
-          <li>
-            <a href="{{ chapter.url }}">
-              {{ chapter.title }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-    <li class="active">
-        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-        <ul class="collapse list-unstyled" id="homeSubmenu">
-            <li>
-                <a href="#">Home 1</a>
-            </li>
-            <li>
-                <a href="#">Home 2</a>
-            </li>
-            <li>
-                <a href="#">Home 3</a>
-            </li>
-        </ul>
-    </li>
 
+        {% include smallbook.html %}
+
+        BOOK CHAPTERSz
+        <ul class="list-unstyled components">
+                <li class="d-none">
+                <ul>
+          {% for chapter in bookchapters %}
+            {% if currentsection != chapter.section %}
+               {% assign currentsection = chapter.section %}
+                </ul>
+                </li>
+                <li class="book-section {% if currentsection == page.section %}active{% endif %}">
+                  <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">{{ currentsection }}</a>
+                  <ul class="collapse list-unstyled" id="{{currentsection}}">
+            {% endif %}
+                      <li>
+                        <a href="{{ chapter.url }}">
+                          {{ chapter.title }}
+                        </a>
+                      </li>
+          {% endfor %}
+                  </ul>
+                </li>
+          </ul>
     </nav>
 
     <!-- Page Content -->
@@ -48,8 +52,20 @@ layout: default
       <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
 
       <br>
+      <div class="py-5">
+        <div class="container page-content">
 
-      {{ content }}
+          <article>
+            <header>
+              <h1>{{ page.title | escape }}</h1>
+            </header>
+            <section>
+              {{ content }}
+            </section>
+          </article>
+        </div>
+      </div>
+
     </div>
 
 </div>

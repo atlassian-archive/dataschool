@@ -2,9 +2,8 @@
 title: Scaling Dashboards
 published: 2019-03-01
 image:
-book: how-to-design-a-dashboard
 section: Scaling
-number: 20
+number: 120
 authors:
   - matt
   - tim

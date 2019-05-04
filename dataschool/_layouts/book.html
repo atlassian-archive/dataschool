@@ -6,7 +6,7 @@ layout: default
 
 <h2>Chapters</h2>
 
-{% assign bookchapters = site.chapters | where:'book', page.slug %}
+{% assign bookchapters = site.chapters | where:'book', page.slug | sort: number%}
 
 {% for chapter in bookchapters %}
 <p class="chapter">

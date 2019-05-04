@@ -23,7 +23,6 @@ github_username:  chartio
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
@@ -60,7 +59,24 @@ defaults:
       layout: "chapter"
       permalink: "/chapter/:path/"
       is_hidden: false
+  - scope:
+      path: "static/"
+    values:
+      permalink: "/"
 
 # set defaults per book
+  - scope:
+      path: "_chapters/dashboard-design"
+      type: "chapters"
+    values:
+      book: how-to-design-a-dashboard
+      image: static/books/images/how-to-design-a-dashboard.jpg  # TODO set a real default image
+  - scope:
+      path: "_chapters/learn-sql"
+      type: "chapters"
+    values:
+      book: learn-sql
+      image: static/books/images/learn-sql.jpg  # TODO set a real default image
+
 plugins:
   - jekyll-last-modified-at

@@ -2,9 +2,8 @@
 title: What is a Dashboard
 published: 2019-03-01
 image:
-book: how-to-design-a-dashboard
 section: Introduction
-number: 20 
+number: 20
 authors:
   - matt
   - tim
