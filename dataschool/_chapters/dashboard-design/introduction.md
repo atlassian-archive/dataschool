@@ -1,0 +1,35 @@
+---
+title: Introduction
+published: 2019-03-01
+image:
+book: how-to-design-a-dashboard
+number: 1
+section:
+authors:
+  - matt
+  - tim
+reviewers:
+  - dave
+summary:
+---
+“The greatest value of a picture is when it forces us to notice what we never expected to see.” - John Tukey, Mathematician
+
+Without looking at data how do people make decisions?
+
+They base it on their past experience and their understanding of the scenario. This is no longer enough as more organizations become data driven. While we cannot change people’s past experience we can surface data to help change their understanding of the scenario.
+
+We live in exciting times for data driven decision making:
+
+We are able to get data from all parts of our business
+We can store tons of data cheaply
+Many tools exist to easily extract and visualize that data
+We want more people within our organizations to better understand what is going on so they can make better decisions. We can do this by exposing people to information dashboards. Dashboards are the link between the data people (people like you) and the business people. This book shows how design thinking and design processes can be used to create highly impactful dashboards to help business people make data driven decisions in your organization.
+
+BI tools have made it easy to create visualizations and dashboards. It is tempting to start building multiple dashboards right away without fully investing in defining the problems, stakeholders, and metrics or prototyping ideal designs. Spending time in the Define and Prototyping stages will help any dashboard designer produce dashboards that get used more by their audience.
+
+This book will quickly introduce you to what dashboards are, what makes them useful, and an overview of the dashboard design process. Then it will spend the bulk of the book going through the process itself:
+
+![dashboard design process](https://assets.website-files.com/5c197923e5851742d9bc835d/5cab6df7afc1aae51285ec64_7whuE2Xy1o6-AL1Xjio-Z_-Hbfb9QU4vGmqhHFWxCiNtHCIcs6SFAzWFteCTBY6DbN8hYw6rnxKYiyqHpWVkAz156MpNsk382LitTuA6AIpJLl63_6OGvdcbO_0_Q-T4ltHKt2TQ.jpeg)
+
+Design Dashboard Process
+This book will provide resources and examples to aid you at every step of the process. Use this book to improve your own dashboard skills and use it as a reference for new analysts that join your organization.

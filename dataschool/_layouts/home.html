@@ -1,0 +1,15 @@
+---
+layout: default
+---
+Welcome to
+<h1>The Data School</h1>
+
+
+<h2>Books</h2>
+{% for book in site.books %}
+  <p>
+    <a href="{{ book.url }}">{{ book.title }}</a>
+    <br>
+    {{ book.description }}
+    </p>
+{% endfor %}

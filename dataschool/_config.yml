@@ -1,0 +1,66 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: DataSchool
+email: dataschool@chartio.com
+description: A community-driven school of free web books and content written by people who work with data for people who work with data.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://dataschool.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: dataschool
+github_username:  chartio
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  people:
+    output: true
+  books:
+    output: true
+  sections:
+    output: false
+  chapters:
+    output: true
+
+# Set defaults for YAML Front Matter variables
+defaults:
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      picture: "static/uploads/people/pictures/default.jpg"
+      status: "reviewer"
+      layout: "person"
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book"
+      permalink: "/:path/"
+      is_hidden: false
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "chapter"
+      permalink: "/chapter/:path/"
+      is_hidden: false
+
+# set defaults per book
+plugins:
+  - jekyll-last-modified-at

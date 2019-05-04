@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p>{{ page.description }}</p>
+
+<h2>Chapters</h2>
+
+{% assign bookchapters = site.chapters | where:'book', page.slug %}
+
+{% for chapter in bookchapters %}
+<p class="chapter">
+   <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+</p>
+{% endfor %}
