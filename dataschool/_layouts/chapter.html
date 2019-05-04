@@ -68,7 +68,7 @@ layout: base
               {% for author_slug in page.authors %}
                 {% assign a = site.people | where: 'slug', author_slug %}
                 {% assign author = a[0] %}
-                <a href="{{ author.url }}">{{ author.name }}</a>{% if forloop.last != true %},{% endif %}
+                <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
               {% endfor %}
             </p>
             <p>
@@ -76,7 +76,7 @@ layout: base
               {% for reviewer_slug in page.reviewers %}
                 {% assign a = site.people | where: 'slug', reviewer_slug %}
                 {% assign reviewer = a[0] %}
-                <a href="{{ reviewer.url }}">{{ reviewer.name }}</a>{% if forloop.last != true %},{% endif %}
+                <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>{% if forloop.last != true %},{% endif %}
               {% endfor %}
             </p>
 

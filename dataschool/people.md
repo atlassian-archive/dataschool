@@ -7,7 +7,7 @@ title: Contributors and Reviewers
   <p>
       <a href="{{ person.url }}">
         <img src="{{ person.image }}">
-        {{ person.name }}
+        {{ person.title }}
       </a>
   </p>
   </person>

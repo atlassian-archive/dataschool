@@ -4,7 +4,6 @@ layout: default
 {% assign person = page %}
 {% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
 {% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.slug" | sort: 'last_modified' %}
-{% assign title = page.name %}
 <img src="{{ person.image }}">
 
 <p>

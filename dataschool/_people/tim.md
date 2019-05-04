@@ -1,5 +1,5 @@
 ---
-name: Tim Miller
+title: Tim Miller # aka name - annoying but we have to use title for name here
 image: /static/people/tim.jpg
 bio: "Tim can write his own damn bio.  But I can say - he's an awesome dude."
 linkedin:

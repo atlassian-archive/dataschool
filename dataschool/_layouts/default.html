@@ -1,18 +1,13 @@
 ---
 layout: base
 ---
-
 <!-- Page Content -->
 <div id="content">
   <div class="py-5">
     <div class="container page-content">
       <article>
         <header>
-          {% if page.name %}
-          <h1>{{ page.name | escape }}</h1>
-          {% else %}
           <h1>{{ page.title | escape }}</h1>
-          {% endif %}
         </header>
         <section>
           {{ content }}
