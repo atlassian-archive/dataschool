@@ -31,8 +31,6 @@ collections:
     output: true
   books:
     output: true
-  sections:
-    output: false
   chapters:
     output: true
 
