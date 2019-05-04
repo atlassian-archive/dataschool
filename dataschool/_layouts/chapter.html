@@ -47,6 +47,11 @@ layout: base
 
     <!-- Page Content -->
     <div id="content">
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+          <i class="fas fa-align-left"></i>
+          <span>Toggle Sidebar</span>
+      </button>
+
       <div class="py-5">
         <div class="container page-content">
           <article>
@@ -66,9 +71,29 @@ layout: base
                 <a href="{{ author.url }}">{{ author.name }}</a>{% if forloop.last != true %},{% endif %}
               {% endfor %}
             </p>
+            <p>
+              <b>reviewers:</b>
+              {% for reviewer_slug in page.reviewers %}
+                {% assign a = site.people | where: 'slug', reviewer_slug %}
+                {% assign reviewer = a[0] %}
+                <a href="{{ reviewer.url }}">{{ reviewer.name }}</a>{% if forloop.last != true %},{% endif %}
+              {% endfor %}
+            </p>
+
           </article>
         </div>
       </div>
     </div>
-
 </div>
+
+<script type="text/javascript">
+// Code for toggling the side menu
+$(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+});
+
+</script>
