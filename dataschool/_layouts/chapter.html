@@ -60,9 +60,10 @@ layout: base
 
             <p>
               <b>authors:</b>
-              {% for author in page.authors %}
-                {% assign a = site.authors | where: 'slug', author %}
-                <a href="{{ a.url }}">{{ a.name }}{{ author }}</a>{% if forloop.last != true %},{% endif %}
+              {% for author_slug in page.authors %}
+                {% assign a = site.people | where: 'slug', author_slug %}
+                {% assign author = a[0] %}
+                <a href="{{ author.url }}">{{ author.name }}</a>{% if forloop.last != true %},{% endif %}
               {% endfor %}
             </p>
           </article>

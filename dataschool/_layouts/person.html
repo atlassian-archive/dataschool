@@ -2,6 +2,8 @@
 layout: default
 ---
 {% assign person = page %}
+{% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
+{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.slug" | sort: 'last_modified' %}
 
 <h1>{{ person.name }}</h1>
 
@@ -29,19 +31,24 @@ layout: default
 </p>
 
 
-{% assign chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
 
-{% if chapters %}
 
-<h2>Contributions</h2>
 
-{% for chapter in chapters %}
-  <p>
-    <a href="{{ chapter.url }}">{{ chapter.title }}</a>
-  </p>
-{% endfor %}
-
+{% if authored_chapters %}
+  <h2>{{ authored_chapters | size }} Contributions</h2>
+  {% for chapter in authored_chapters %}
+    <p>
+      <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+    </p>
+  {% endfor %}
 {% endif %}
 
 
-<h2>Reviews</h2>
+{% if reviewed_chapters %}
+  <h2>{{ reviewed_chapters | size }} Reviews</h2>
+  {% for chapter in reviewed_chapters %}
+    <p>
+      <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+    </p>
+  {% endfor %}
+{% endif %}
