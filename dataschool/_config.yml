@@ -45,7 +45,6 @@ defaults:
       type: "people"
     values:
       picture: "static/uploads/people/pictures/default.jpg"
-      status: "reviewer"
       layout: "person"
   - scope:
       path: ""
