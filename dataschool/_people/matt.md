@@ -6,4 +6,6 @@ linkedin:
 twitter:
 website:
 is_contributor: true
+job_title: Editor of the Data School
+company: Chartio
 ---

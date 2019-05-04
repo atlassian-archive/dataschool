@@ -1,5 +1,47 @@
 ---
 layout: default
 ---
-<h1>Contributor</h1>
-{{ content }}
+{% assign person = page %}
+
+<h1>{{ person.name }}</h1>
+
+<img src="{{ person.image }}">
+
+<p>
+  <b>title:</b>
+  {{ person.job_title }} at {{ person.company }}
+</p>
+<p>
+  <b>bio:</b>
+  {{ person.bio }}
+</p>
+
+<a href="{{ person.linkedin }}">LinkedIn</a>
+<b>twitter:</b> <a href="{{ person.twitter }}">{{ person.twitter }}</a>
+<b>website:</b> <a href="{{ person.website }}">{{ person.website }}</a>
+
+<p>
+{% if person.is_contributer %}
+   Contributor
+{% else %}
+   Reviewer
+{% endif %}
+</p>
+
+
+{% assign chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
+
+{% if chapters %}
+
+<h2>Contributions</h2>
+
+{% for chapter in chapters %}
+  <p>
+    <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+  </p>
+{% endfor %}
+
+{% endif %}
+
+
+<h2>Reviews</h2>

@@ -6,4 +6,6 @@ linkedin: https://www.linkedin.com/in/dave-fowler-482a169/
 twitter: __dave
 website: thingsilearned.com
 is_contributor: true
+job_title: CEO
+company: Chartio
 ---

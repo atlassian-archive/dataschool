@@ -15,8 +15,8 @@ layout: base
         </div>
         <ul class="list-unstyled components">
           <li><a href="/books/">Books</a></li>
-          <li><a href="/books/">Mission</a></li>
-          <li><a href="/books/">Contributors</a></li>
+          <li><a href="/mission/">Mission</a></li>
+          <li><a href="/people/">Contributors</a></li>
           <li><a href="/books/">Slack Community</a></li>
         </ul>
 
@@ -57,6 +57,14 @@ layout: base
             <section>
               {{ content }}
             </section>
+
+            <p>
+              <b>authors:</b>
+              {% for author in page.authors %}
+                {% assign a = site.authors | where: 'slug', author %}
+                <a href="{{ a.url }}">{{ a.name }}{{ author }}</a>{% if forloop.last != true %},{% endif %}
+              {% endfor %}
+            </p>
           </article>
         </div>
       </div>
