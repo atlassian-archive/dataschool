@@ -1,12 +1,12 @@
-<!doctype html>
-<html lang="en">
-  {%- include head.html -%}
+---
+layout: base
+---
 
-  <body>
-    {%- include navigation.html -%}
-    {{ content }}
-
-
-    {%- include footer.html -%}
-  </body>
-</html>
+<!-- Page Content -->
+<div id="content">
+  <div class="py-5">
+    <div class="container page-content">
+      {{ content }}
+    </div>
+  </div>
+</div>

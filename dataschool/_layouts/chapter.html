@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 {% assign bookchapters = site.chapters | where:'book', page.book | sort: 'number' %}
 
@@ -22,7 +22,6 @@ layout: default
 
         {% include smallbook.html %}
 
-        BOOK CHAPTERSz
         <ul class="list-unstyled components">
                 <li class="d-none">
                 <ul>
@@ -48,16 +47,12 @@ layout: default
 
     <!-- Page Content -->
     <div id="content">
-      <h1>Chapter</h1>
-      <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
-
-      <br>
       <div class="py-5">
         <div class="container page-content">
-
           <article>
             <header>
               <h1>{{ page.title | escape }}</h1>
+              <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
             </header>
             <section>
               {{ content }}
@@ -65,7 +60,6 @@ layout: default
           </article>
         </div>
       </div>
-
     </div>
 
 </div>

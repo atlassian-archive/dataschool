@@ -4,12 +4,18 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>{{ page.description }}</p>
 
-<h2>Chapters</h2>
+{% assign bookchapters = site.chapters | where:'book', page.slug | sort: 'number' %}
 
-{% assign bookchapters = site.chapters | where:'book', page.slug | sort: number%}
-
+<ul class="d-none">
 {% for chapter in bookchapters %}
-<p class="chapter">
-   <a href="{{ chapter.url }}">{{ chapter.title }}</a>
-</p>
+  {% if currentsection != chapter.section %}
+     {% assign currentsection = chapter.section %}
+     </ul>
+     <ul id="{{currentsection}}">
+       <h3>{{ currentsection }}</h3>
+  {% endif %}
+      <li>
+       <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+      </li>
 {% endfor %}
+</ul>
