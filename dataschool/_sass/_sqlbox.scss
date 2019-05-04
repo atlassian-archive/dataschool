@@ -6,21 +6,21 @@ sqlbox {
   }
   .sqlerror {
     padding: 0.5rem;
-    background-color: $strong-color;
+    background-color: $primary;
     color: #fff;
     border-radius: 5px;
     .error-help {
       width: 100%;
       text-align: right;
-      color: $background-color;
-      border-color: $strong-color-lighter;
+      color: $primary;
+      border-color: $secondary;
       &:hover {
-        background: $strong-color-light;
+        background: $secondary;
       }
     }
   }
   table {
-    background-color: $background-color;
+    background-color: $body-color;
     border-radius: 5px;
     th {
       text-transform: none;
@@ -119,9 +119,9 @@ sqlbox {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    
+
     a.level-label {
-      color: $primary-color;
+      color: $primary;
     }
     ol {
       display: block;

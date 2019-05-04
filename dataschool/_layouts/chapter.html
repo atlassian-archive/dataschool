@@ -31,9 +31,9 @@ layout: default
                {% assign currentsection = chapter.section %}
                 </ul>
                 </li>
-                <li class="book-section {% if currentsection == page.section %}active{% endif %}">
+                <li class="book-section ">
                   <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">{{ currentsection }}</a>
-                  <ul class="collapse list-unstyled" id="{{currentsection}}">
+                  <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection}}">
             {% endif %}
                       <li>
                         <a href="{{ chapter.url }}">
