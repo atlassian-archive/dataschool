@@ -3,8 +3,8 @@ title: Introduction
 published: 2019-03-01
 image:
 book: how-to-design-a-dashboard
-number: 1
-section:
+number: 10
+section: Introduction
 authors:
   - matt
   - tim
