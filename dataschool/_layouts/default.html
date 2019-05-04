@@ -6,7 +6,14 @@ layout: base
 <div id="content">
   <div class="py-5">
     <div class="container page-content">
-      {{ content }}
+      <article>
+        <header>
+          <h1>{{ page.title | escape }}</h1>
+        </header>
+        <section>
+          {{ content }}
+        </section>
+      </article>
     </div>
   </div>
 </div>

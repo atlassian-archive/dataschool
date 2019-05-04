@@ -4,3 +4,4 @@
 
 layout: home
 ---
+This is all just actually filled out in the _layouts/home.html

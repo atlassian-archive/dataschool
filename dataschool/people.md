@@ -1,9 +1,7 @@
 ---
-title: Data School Library of Books
+title: Contributors and Reviewers
 
 ---
-<h1>Contributors and Reviewers</h1>
-
 {% for person in site.people %}
   <person>
   <p>

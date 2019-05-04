@@ -1,9 +1,6 @@
 ---
-title: Data School Library of Books
- 
+title: Content Library
 ---
-<h1>Book Library</h1>
-
 {% for book in site.books %}
   <book>
 
