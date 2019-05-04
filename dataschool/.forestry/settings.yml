@@ -16,11 +16,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: dataschool/_sections
-  label: Sections
-  create: all
-  match: "**/*"
-- type: directory
   path: dataschool/_books
   label: Books
   create: all
