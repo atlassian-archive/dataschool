@@ -34,6 +34,7 @@ build:
   publish_command: bundle exec jekyll build -d _site
   preview_env:
   - JEKYLL_ENV=staging
+  - RUBY_VERSION=2.6.1
   publish_env:
   - JEKYLL_ENV=production
   preview_output_directory: _site
