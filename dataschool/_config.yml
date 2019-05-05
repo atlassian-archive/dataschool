@@ -83,6 +83,8 @@ defaults:
       database: "PostgreSQL"
       dbname: "herokuchinook"
       section: extras
+      number: 999999
+      needs_sqlbox: true
       image: static/books/images/learn-sql.jpg  # TODO set a real default image
 
 

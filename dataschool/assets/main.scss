@@ -5,11 +5,12 @@
 
 @import "variables";
 @import "bootstrap/bootstrap";
-@import "syntax-highlighting";
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
 
+@import "syntax-highlighting";  // keeps the syntax highlighting styles 
 @import "sidebar";
+@import "sqlbox";
 
 
 .page-content {

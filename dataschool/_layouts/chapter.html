@@ -97,11 +97,10 @@ $(document).ready(function () {
 });
 </script>
 
-<!-- Needed for SQLBox -->
+{% if page.needs_sqlbox %}
+<!-- Needed for SQLBox - Man, there's just a lot needed here. -->
 <link rel="stylesheet" href="/assets/sqlbox/codemirror/codemirror.css">
 <link rel="stylesheet" href="/assets/sqlbox/codemirror/midnight.css">
-<link rel="stylesheet" href="/assets/sqlbox/pastie.css">
-<link rel="stylesheet" href="/assets/sqlbox/sqlbox.css">
 
 <script src="/assets/sqlbox/codemirror/codemirror.js"></script>
 <script src="/assets/sqlbox/codemirror/codemirror-mode-sql.js"></script>
@@ -116,4 +115,7 @@ $(document).ready(function () {
   };
 </script>
 <script type="text/javascript" src="/assets/sqlbox/sqlbox.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.css">
+<script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
 <!-- End for SQLBox -->
+{% endif %}
