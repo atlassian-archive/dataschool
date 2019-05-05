@@ -32,7 +32,7 @@ autorun             |  Automatically run the initial SQL on load
     },
     search: false,
   };
-  var successImageURL = '/images/tutorials/sqlbox-checkedbox.png';
+  var successImageURL = '/assets/sqlbox/sqlbox-checkedbox.png';
   var simg = $('<img style="display: none">'); // Preload the success image
   simg.attr('src', successImageURL);
   simg.appendTo('body');
