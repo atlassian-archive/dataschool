@@ -35,6 +35,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   - RUBY_VERSION=2.6.1
+  - BUILD_DIR=dataschool
   publish_env:
   - JEKYLL_ENV=production
   preview_output_directory: _site
