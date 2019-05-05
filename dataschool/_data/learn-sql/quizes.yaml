@@ -1,0 +1,190 @@
+# Quizzes for the PostgreSQL Basic Practice page
+# The options for questions are:
+#
+#   - question: The question to ask
+#     answer: the correct sql question
+#     hint: hint message
+#     correct_message: optional message to display if they get it right.
+#     references:
+#       - aggregate # the file name (without the .md) linking to the section this question utilizes
+#
+basic:
+  - question: Fetch the first 8 rows of the *albums* table.
+    answer: "SELECT * FROM albums LIMIT 8;"
+    hint: "LIMIT 8"
+    correct_message: "Off to a great start!"
+    references:
+      - select
+      - limit
+  - question: Fetch the 12th through 32nd (21 total) rows of the *tracks* table.
+    answer: "SELECT * FROM tracks LIMIT 21 OFFSET 11;"
+    hint: "offset by 11"
+    references:
+      - select
+      - limit
+  - question: Fetch the 9th through 49th (41 total) rows of the *artists* table.
+    answer: "SELECT * FROM artists LIMIT 41 OFFSET 8;"
+    hint: "offset by 8 and limit 41"
+    references:
+      - limit
+  - question: Get the *name*s of all of the *artists*.
+    answer: "SELECT name FROM artists;"
+    hint: "only fetch names from the artists table"
+    references:
+      - from
+  - question: Get the *name*s of all of the *artists* in reverse alphabetical order. (Z to A)
+    answer: "SELECT name FROM artists ORDER BY name DESC;"
+    hint: "Descending order by name."
+    references:
+      - "order-by"
+  - question: "Get only the last 4 names of the artists sorted alphabetically."
+    answer: "SELECT name FROM artists ORDER BY name DESC LIMIT 4;"
+    hint: "order by name in descending order, limit to just 4"
+    references:
+      - "order-by"
+      - limit
+  - question: "Get the 20 longest tracks."
+    answer: "SELECT * FROM tracks ORDER BY milliseconds DESC LIMIT 20;"
+    hint: "order by milliseconds in descending order"
+    references:
+      - "order-by"
+      - limit
+
+mid-level:
+  - question: "Fetch all the tracks that are over 300000 milliseconds long."
+    answer: "SELECT * FROM tracks WHERE milliseconds > 300000;"
+    hint: "filter by milliseconds > 300000"
+    references:
+      - where
+  - question: "Fetch the *id* for the artist 'Miles Davis'."
+    answer: "SELECT id FROM artists WHERE name = 'Miles Davis';"
+    hint: "get just the id from the artists table where the name is 'Miles Davis'"
+    references:
+      - where
+  - question: "Get all the *tracks* with *gerne_id* of 20 from longest to shortest."
+    answer: "SELECT * FROM tracks WHERE genre_id = 20 ORDER BY milliseconds DESC;"
+    hint: "get genre_id of 20 and order milliseconds descending"
+    references:
+      - where
+      - "order-by"
+  - question: "Get the *artists* who's *id*s are between 55 and 98."
+    answer: "SELECT * FROM artists WHERE id <= 55 AND >= 98"
+    hint: "use the <= and >= operators."
+    references:
+      - operators
+  - question: "Get all the *tracks* except those with *genre_ids* of 15 or 18."
+    answer: "SELECT * FROM tracks WHERE genre_id != 15 AND genre_id != 18;"
+    hint: "use the != operator"
+    references:
+      - operators
+  - question: "Get all the *tracks* that were composed by just Miles Davis"
+    answer: "SELECT * FROM tracks WHERE composer = 'Miles Davis';"
+    hint: "composer = 'Miles Davis'"
+    references:
+      - operators
+  - question: "Get all the *tracks* that Miles Davis had a part in composing."
+    answer: "SELECT * FROM tracks WHERE composer LIKE '%Miles Davis%';"
+    hint: "use the LIKE operator with the pattern '%Miles Davis%'"
+    correct_message: "He seemed to compose most of them alone."
+    references:
+      - operators
+  - question: "Fetch the the *name*s of the *tracks* with the word 'wild' in it, regardless of case"
+    answer: "SELECT name FROM tracks WHERE name ILIKE '%wild%';"
+    hint: "use ILIKE"
+    references:
+      - operators
+  - question: "How many *tracks* did Little Richard helped compose?"
+    answer: "SELECT count(*) FROM tracks WHERE composer LIKE '%Little Richard%'"
+    hint: "return the count of tracks where composer is LIKE '%Little Richard%'"
+    correct_message: Not too much Little Richard in this data.
+    references:
+      - operators
+      - aggregate
+  - question: "How many *tracks* with *genre_id* of 1 have composers listed?"
+    answer: "SELECT COUNT(composer) FROM tracks WHERE genre_id = 1;"
+    hint: "do a COUNT of the composer column"
+    references:
+      - aggregate
+  - question: "How many unique composers are there in the *tracks* table with the *genre_id* of 1."
+    answer: "SELECT COUNT(DISTINCT composer) FROM tracks WHERE genre_id = 1;"
+    hint: "do a COUNT DISTINCT of composer"
+    refrences:
+      - aggregate
+  - question: "What is the average length for tracks with *genre_ids* of either 5, 7 or 10?"
+    answer: "SELECT AVG(milliseconds) FROM tracks WHERE genre_id = 5 OR genre_id = 7 OR genre_id = 10;"
+    hint: "take the AVG of milliseconds and use OR to combine all the genre_id conditions"
+    references:
+      - operators
+      - aggregate
+  - question: Get a list of *genre_id*s and the number of tracks in each.
+    answer: "SELECT genre_id, COUNT(*) FROM tracks GROUP BY genre_id;"
+    hint: "group by genre_id and do a COUNT"
+    references:
+      - "group-by"
+  - question: "A list of the number of tracks grouped by genre_id and then album_id with the column order of *genre_id*, *album_id* and count."
+    answer: "SELECT genre_id, album_id, COUNT(*) FROM tracks GROUP BY genre_id, album_id;"
+    hint: "GROUP BY genre_id, album_id"
+    references:
+      - "group-by"
+  - question: "Take the above query, but order the *album_id* in descending order, keeping genre_id odered the same"
+    answer: "SELECT genre_id, album_id, COUNT(*) FROM tracks GROUP BY genre_id, album_id ORDER BY genre_id ASC, album_id DESC;"
+    hint: "add ORDER BY genre_id ASC, album_id DESC"
+    references:
+      - "order-by"
+      - "group-by"
+  - question: "Take the above query with the same ordering but group by *album_id* and then *group_id* and change the order of the results to reflect that switch."
+    answer: "SELECT album_id, genre_id, COUNT(*) FROM tracks GROUP BY album_id, genre_id ORDER BY genre_id ASC, album_id DESC;"
+    hint: "switch around the occurences of album_id, genre_id except for the ordering"
+    references:
+      - "order-by"
+      - "group-by"
+  - question: "Get the first 5 *tracks* JOINed with their albums info."
+    answer: "SELECT * FROM tracks JOIN albums ON tracks.album_id = albums.id LIMIT 5;"
+    hint: "JOIN albums ON tracks.album_id = albums.id LIMIT 5"
+    references:
+      - "joins"
+      - "limit"
+  - question: "Get the first 5 albums JOINed with thier artists info."
+    answer: "SELECT * FROM albums JOIN artists ON albums.artist_id = artists.id LIMIT 5;"
+    hint: "JOIN artists ON albums.artist_id = artists.id"
+    references:
+      - "joins"
+      - "limit"
+  - question: Return each *customer_id* and the *total* of all of their *invoices*.
+    answer: "SELECT customer_id, SUM(total) FROM invoices GROUP BY customer_id;"
+    hint: "SUM(total) and GROUP BY customer_id on the invoices table"
+    references:
+      - "group-by"
+      - "aggregate"
+  - question: There is a foreign key *customer_id* that relates *invoices* to the *customers* table.  Fetch the company name in the *company* column of the *customers* table and the *total* amount that each has been invoiced by joining these tables."
+    answer: "SELECT company, SUM(total) FROM customers JOIN invoices ON customers.id = invoices.customer_id GROUP BY company;"
+    references:
+      - "group-by"
+      - "aggregate"
+      - "joins"
+  - question: "Get the *first_name*s and *birth_date*s of each of the *employees* in the format: January 01, 1976"
+    answer: "SELECT first_name, TO_CHAR(birth_date, 'Month DD, YYYY') FROM employees;"
+    hint: "TO_CHAR(birth_date, 'Month DD, YYYY')"
+    references:
+      - 'dates'
+  - question: "Get the *first_name*s and *birth_date*s of each of the *employees* in the format: Jan 1st, 1976"
+    answer: "SELECT first_name, TO_CHAR(birth_date, 'Month FMDDth, YYYY') FROM employees;"
+    hint: "first_name, TO_CHAR(birth_date, 'Month FMDDth, YYYY')"
+    references:
+      - 'dates'
+  - question: "Get the *first_name*s and *birth_date*s of each of the *employees* in the format: 09/23/1987"
+    answer: "SELECT first_name, TO_CHAR(birth_date, 'MM/DD/YYYY') FROM employees;"
+    hint: "TO_CHAR(birth_date, 'MM/DD/YYYY')"
+    references:
+      - 'dates'
+  - question: "Get the year of the *invoice_date*  in the format `Y2012` and total number of *invoices* per year."
+    answer: "SELECT TO_CHAR(invoice_date, '&quot;Y&quot;YYYY') as &quot;Year&quot;, COUNT(*) FROM invoices GROUP BY &quot;Year&quot;;"
+    hint: "TO_CHAR(invoice_date, '&quot;Y&quot;YYYY') AS  &quot;Year&quot; ... GROUP BY  &quot;Year&quot;"
+    references:
+      - 'dates'
+  - question: "Get the month of *invoices* and the *total* amount that was invoiced for that month."
+    answer: "SELECT TO_CHAR(invoice_date, 'YYYY-MM') as &quot;Month&quot;, SUM(total) FROM invoices GROUP BY &quot;Month&quot;;"
+    hint: "TO_CHAR(invoice_date, 'YYYY-MM') as &quot;Month&quot;, SUM(total) ..."
+    references:
+      - 'dates'
+      - "aggregate"

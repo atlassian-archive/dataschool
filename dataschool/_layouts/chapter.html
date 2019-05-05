@@ -95,5 +95,23 @@ $(document).ready(function () {
     });
 
 });
-
 </script>
+
+<!-- Needed for SQLBox -->
+<link rel="stylesheet" href="/assets/sqlbox/codemirror/codemirror.css">
+<link rel="stylesheet" href="/assets/sqlbox/codemirror/midnight.css">
+<!-- <link rel="stylesheet" href="/css/lib/pastie.css"> -->
+
+<script src="/javascripts/lib/codemirror.js"></script>
+<script src="/javascripts/lib/codemirror-mode-sql.js"></script>
+<script src="/javascripts/lib/jquery.form.min.js"></script>
+
+<script type="text/javascript">
+  // Data needed for sqlbox.js to work
+  $.sqlboxSettings = {
+    dbType: '{{ page.database }}',
+    dbName: '{{ page.dbname }}',
+    action: '{{ site.sqlboxurl }}'
+  };
+</script>
+<script type="text/javascript" src="/assets/sqlbox/sqlbox.js"></script>

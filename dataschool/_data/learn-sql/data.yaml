@@ -1,0 +1,8 @@
+levels:
+  - slug: basic
+    title: Basic SQL
+  - slug: mid level
+    title: Mid Level SQL
+# Temporarily disabling advanced  - Advanced SQL
+  - slug: extras
+    title: Extras

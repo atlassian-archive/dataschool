@@ -21,6 +21,9 @@ url: "https://dataschool.com" # the base hostname & protocol for your site, e.g.
 twitter_username: dataschool
 github_username:  chartio
 
+sqlboxurl: "https://sqlbox.herokuapp.com/"
+#sqlboxurl: "http://localhost:8084" # localhost sqlbox
+
 # Build settings
 markdown: kramdown
 plugins:
@@ -77,7 +80,11 @@ defaults:
       type: "chapters"
     values:
       book: learn-sql
+      database: "PostgreSQL"
+      dbname: "herokuchinook"
+      section: extras
       image: static/books/images/learn-sql.jpg  # TODO set a real default image
+
 
 plugins:
   - jekyll-last-modified-at
