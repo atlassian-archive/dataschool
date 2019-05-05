@@ -8,9 +8,11 @@ This site is built using Jekyll.  You don't need to know or even run jekyll to
 contribute - you can just edit and commit the markdown files, but if you want to
 run a local copy it's fairly simple:
 
-> jekyll build
-> jekyll serve --watch
-> bundle install --path vendor/bundle
+```
+cd dataschool
+bundle install --path vendor/bundle
+bundle exec jekyll serve --watch
+```
 
 It will then be available at http://localhost:4000
 
