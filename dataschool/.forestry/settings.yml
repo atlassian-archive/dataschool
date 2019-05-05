@@ -31,7 +31,7 @@ instant_preview: true
 build:
   preview_command: cd dataschool && bundle exec jekyll build --drafts --unpublished
     --future -d _site
-  publish_command: cd dataschool && bundle exec jekyll build -d _site
+  publish_command: bundle exec jekyll build -d _site
   preview_env:
   - JEKYLL_ENV=staging
   publish_env:
