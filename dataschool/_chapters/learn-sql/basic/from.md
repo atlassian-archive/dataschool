@@ -22,6 +22,7 @@ SELECT [stuff you want to select] FROM [the table that it is in];
 Let's start with a simple one and query for everything (all of it!) from the *albums* table.
 
 <sqlbox
+        
   initial='SELECT id, title, artist_id FROM albums;'
 ></sqlbox>
 
