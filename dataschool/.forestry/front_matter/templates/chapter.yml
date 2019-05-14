@@ -2,3 +2,5 @@
 label: chapter
 hide_body: false
 fields: []
+pages:
+- dataschool/_chapters/testing-book/first-test-article.md
