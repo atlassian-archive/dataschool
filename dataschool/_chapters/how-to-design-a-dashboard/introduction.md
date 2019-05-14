@@ -2,7 +2,6 @@
 title: Introduction
 published: 2019-03-01
 image: 
-book: how-to-design-a-dashboard
 number: 10
 section: Introduction
 authors:
