@@ -1,0 +1,22 @@
+chapter.yml
+---
+pages:
+- _chapters/
+hide_body: false
+fields:
+- name: title
+  default: ''
+  label: Title
+  hidden: false
+  type: text
+- name: publishDate
+  default: ''
+  label: Date
+  hidden: false
+  type: datetime
+- name: Categories
+  default: []
+  label: Categories
+  hidden: false
+  type: list
+---

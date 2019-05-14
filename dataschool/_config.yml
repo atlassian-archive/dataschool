@@ -61,7 +61,7 @@ defaults:
       type: "chapters"
     values:
       layout: "chapter"
-      permalink: "/chapter/:path/"
+      permalink: "/:path/"
       is_hidden: false
   - scope:
       path: "static/"
@@ -70,7 +70,7 @@ defaults:
 
 # set defaults per book
   - scope:
-      path: "_chapters/dashboard-design"
+      path: "_chapters/how-to-design-a-dashboard"
       type: "chapters"
     values:
       book: how-to-design-a-dashboard
