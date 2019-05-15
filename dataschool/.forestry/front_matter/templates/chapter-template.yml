@@ -28,6 +28,12 @@ fields:
   label: summary
 - name: authors
   type: field_group_list
+  fields:
+  - name: author
+    type: include
+    config: {}
+    template: people-template
+    label: author
   config:
     min: 
     max: 
