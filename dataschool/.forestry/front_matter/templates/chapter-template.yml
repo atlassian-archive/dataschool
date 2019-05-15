@@ -27,7 +27,8 @@ fields:
   name: summary
   label: summary
 - name: authors
-  type: field_group_list
+  type: field_group
+  config: {}
   fields:
   - name: author
     type: select
@@ -41,10 +42,6 @@ fields:
         file: 
         path: 
     label: author
-  config:
-    min: 
-    max: 
-    labelField: 
   label: authors
 pages:
 - dataschool/_chapters/testing-book/testing-chapter.md
