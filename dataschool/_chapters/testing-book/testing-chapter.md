@@ -9,7 +9,6 @@ authors:
 reviewers:
 - reviewer: _people/dave.md
 summary: Test
-published: false
 
 ---
 Testing out writing a new chapter, baby.
