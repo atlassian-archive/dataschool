@@ -15,9 +15,6 @@ fields:
   label: number
   description: sets the sorting order of the chapters for the book
 - type: list
-  name: authors
-  label: authors
-- type: list
   name: reviewers
   label: reviewers
 - name: image
@@ -29,5 +26,12 @@ fields:
 - type: text
   name: summary
   label: summary
+- name: authors
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: authors
 pages:
 - dataschool/_chapters/testing-book/testing-chapter.md
