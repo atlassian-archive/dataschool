@@ -30,9 +30,16 @@ fields:
   type: field_group_list
   fields:
   - name: author
-    type: include
-    config: {}
-    template: people-template
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: people
+        file: 
+        path: 
     label: author
   config:
     min: 
