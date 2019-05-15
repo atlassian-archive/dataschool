@@ -1,7 +1,24 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
-This is all just actually filled out in the _layouts/home.html
+Welcome to
+<h1>The Data School</h1>
+
+
+Check out our
+<ul>
+<li><a href="/books/">Books</a></li>
+<li><a href="/mission/">Mission</a></li>
+<li><a href="/people/">Contributors</a></li>
+<li><a href="/books/">Slack Community</a></li>
+</ul>
+
+<h2>Books</h2>
+
+{% for book in site.books %}
+  <p>
+    <a href="{{ book.url }}">{{ book.title }}</a>
+    <br>
+    {{ book.description }}
+  </p>
+{% endfor %}
