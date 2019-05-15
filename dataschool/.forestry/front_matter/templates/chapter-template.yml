@@ -1,0 +1,25 @@
+---
+label: Chapter template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: image
+  label: image
+- type: text
+  name: section
+  label: section
+- type: number
+  name: number
+  label: number
+- type: list
+  name: authors
+  label: authors
+- type: list
+  name: reviewers
+  label: reviewers
+- type: text
+  name: summary
+  label: summary
