@@ -1,0 +1,22 @@
+---
+label: Book template
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: list
+  name: authors
+  label: authors
+- type: file
+  name: cover_image
+  label: cover_image
+- type: text
+  name: main_color
+  label: main_color
+- type: boolean
+  name: is_hidden
+  label: is_hidden

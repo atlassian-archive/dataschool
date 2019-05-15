@@ -1,0 +1,29 @@
+---
+label: Chapter template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: image
+  label: image
+  description: used for thumbnails and social sharing preview image
+- type: text
+  name: section
+  label: section
+  description: If the book should be broken up into sections, choose which section
+    does this chapter belongs to
+- type: number
+  name: number
+  label: number
+  description: sets the sorting order of the chapters for the book
+- type: list
+  name: authors
+  label: authors
+- type: list
+  name: reviewers
+  label: reviewers
+- type: text
+  name: summary
+  label: summary
