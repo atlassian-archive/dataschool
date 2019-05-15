@@ -6,7 +6,8 @@ number: 1
 authors:
 - author: _people/tim.md
 - author: _people/dave.md
-reviewers: []
+reviewers:
+- reviewer: _people/dave.md
 summary: Test
 published: false
 
