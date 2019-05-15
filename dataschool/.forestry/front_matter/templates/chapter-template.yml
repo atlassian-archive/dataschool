@@ -27,3 +27,5 @@ fields:
 - type: text
   name: summary
   label: summary
+pages:
+- dataschool/_chapters/testing-book/testing-chapter.md
