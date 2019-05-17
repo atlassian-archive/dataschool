@@ -1,0 +1,36 @@
+// Some CSS to ease the integration between Jekyll and Bootstrap 4.
+// It is not recommended to edit this file.
+
+.content {
+  img {
+    max-width: 100%;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+// MY STUFF TO MAKE 1 REM = 1 LINE HEIGHT
+html {
+  min-height: 100%;
+  font-size: 150%;
+
+  // @media(max-width: 57em) {
+  //     font-size: 141%;
+  // }
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-size: 66.6667%;
+}

@@ -1,13 +1,21 @@
 ---
 layout: base
 ---
-<!-- Page Content -->
-<div id="content">
-  <div class="">
-    <div class="container page-content">
+<div class="wrapper">
+  <!-- Nav Sidebar -->
+  {% include main-navigation.html %}
+  <!-- End Nav Sidebar -->
+  <!-- Page Content -->
+  <div class="content">
+    <button type="button" id="sidebarCollapse" class="btn btn-info">
+      <i class="fas fa-align-left"></i>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
       <article>
         <header>
           <h1>{{ page.title | escape }}</h1>
+          <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
         </header>
         <section>
           {{ content }}

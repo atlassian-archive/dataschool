@@ -1,6 +1,7 @@
 ---
 title: Learn SQL
 description: "An interactive SQL Tutorial by example!"
+book: learn-sql
 authors:
   - dave
 cover_image: /static/books/learn-sql/cover.png

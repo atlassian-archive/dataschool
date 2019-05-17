@@ -1,51 +1,63 @@
 ---
-layout: default
+layout: base
 ---
-{% assign person = page %}
-{% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
-{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.slug" | sort: 'last_modified' %}
-<img src="{{ person.image }}">
+<div class="wrapper">
+  <!-- Nav Sidebar -->
+  {% include main-navigation.html %}
+  <!-- End Nav Sidebar -->
+  <!-- Page Content -->
+  <div class="content">
+    <button type="button" id="sidebarCollapse" class="btn btn-info">
+      <i class="fas fa-align-left"></i>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <article>
+        {% assign person = page %}
+        {% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
+        {% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.slug" | sort: 'last_modified' %}
+        <img src="{{ person.image }}">
 
-<p>
-  <b>title:</b>
-  {{ person.job_title }} at {{ person.company }}
-</p>
-<p>
-  <b>bio:</b>
-  {{ person.bio }}
-</p>
+        <p>
+          <b>title:</b>
+          {{ person.job_title }} at {{ person.company }}
+        </p>
+        <p>
+          <b>bio:</b>
+          {{ person.bio }}
+        </p>
 
-<a href="{{ person.linkedin }}">LinkedIn</a>
-<b>twitter:</b> <a href="{{ person.twitter }}">{{ person.twitter }}</a>
-<b>website:</b> <a href="{{ person.website }}">{{ person.website }}</a>
+        <a href="{{ person.linkedin }}">LinkedIn</a>
+        <b>twitter:</b> <a href="{{ person.twitter }}">{{ person.twitter }}</a>
+        <b>website:</b> <a href="{{ person.website }}">{{ person.website }}</a>
 
-<p>
-{% if person.is_contributer %}
-   Contributor
-{% else %}
-   Reviewer
-{% endif %}
-</p>
+        <p>
+        {% if person.is_contributer %}
+           Contributor
+        {% else %}
+           Reviewer
+        {% endif %}
+        </p>
 
-
-
-
-
-{% if authored_chapters %}
-  <h2>{{ authored_chapters | size }} Contributions</h2>
-  {% for chapter in authored_chapters %}
-    <p>
-      <a href="{{ chapter.url }}">{{ chapter.title }}</a>
-    </p>
-  {% endfor %}
-{% endif %}
+        {% if authored_chapters %}
+          <h2>{{ authored_chapters | size }} Contributions</h2>
+          {% for chapter in authored_chapters %}
+            <p>
+              <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+            </p>
+          {% endfor %}
+        {% endif %}
 
 
-{% if reviewed_chapters %}
-  <h2>{{ reviewed_chapters | size }} Reviews</h2>
-  {% for chapter in reviewed_chapters %}
-    <p>
-      <a href="{{ chapter.url }}">{{ chapter.title }}</a>
-    </p>
-  {% endfor %}
-{% endif %}
+        {% if reviewed_chapters %}
+          <h2>{{ reviewed_chapters | size }} Reviews</h2>
+          {% for chapter in reviewed_chapters %}
+            <p>
+              <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+            </p>
+          {% endfor %}
+        {% endif %}
+      </article>
+    </div>
+  </div>
+</div>

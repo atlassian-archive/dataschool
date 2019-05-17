@@ -1,20 +1,36 @@
 ---
-layout: default
+layout: base
 ---
-<p>{{ page.description }}</p>
+<div class="wrapper">
+  <!-- Nav Sidebar -->
+  {% include main-navigation.html %}
+  <!-- End Nav Sidebar -->
+  <!-- Page Content -->
+  <div class="content">
+    <button type="button" id="sidebarCollapse" class="btn btn-info">
+      <i class="fas fa-align-left"></i>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <article>
+        <p>{{ page.description }}</p>
 
-{% assign bookchapters = site.chapters | where:'book', page.slug | sort: 'number' %}
+        {% assign bookchapters = site.chapters | where:'book', page.slug | sort: 'number' %}
 
-<ul class="d-none">
-{% for chapter in bookchapters %}
-  {% if currentsection != chapter.section %}
-     {% assign currentsection = chapter.section %}
-     </ul>
-     <ul id="{{currentsection}}">
-       <h3>{{ currentsection }}</h3>
-  {% endif %}
-      <li>
-       <a href="{{ chapter.url }}">{{ chapter.title }}</a>
-      </li>
-{% endfor %}
-</ul>
+        <ul class="d-none">
+        {% for chapter in bookchapters %}
+          {% if currentsection != chapter.section %}
+             {% assign currentsection = chapter.section %}
+             </ul>
+             <ul id="{{currentsection}}">
+               <h3>{{ currentsection }}</h3>
+          {% endif %}
+              <li>
+               <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+              </li>
+        {% endfor %}
+        </ul>
+      </article>
+    </div>
+  </div>
+</div>
