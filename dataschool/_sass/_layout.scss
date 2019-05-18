@@ -2,18 +2,16 @@
     position: relative;
     width: 100%;
     height: 100%;
-
     .sidebar {
-      position: absolute;
-      top: 0;
-      bottom: 0;
+
       min-width: 300px;
       max-width: 300px;
-      overflow-y: auto;
-      transition: all 0.3s;
-
-      .sidebar-header {
-        padding: 20px;
+      background: pink;
+      .sidebar-logo {
+        padding: 0.5rem;
+        background: yellow;
+        display: block;
+        text-align: center;
       }
       ul.components {
         padding: 20px 0;
@@ -23,12 +21,10 @@
         p {
           padding: 10px;
         }
-
         li a {
           padding: 10px;
           display: block;
         }
-
         li.active > a, a[aria-expanded="true"] {
             // color: #fff;
             // background: #6d7fcc;
@@ -37,11 +33,9 @@
             padding-left: 30px;
         }
       }
-
       a[data-toggle="collapse"] {
           position: relative;
       }
-
       .dropdown-toggle::after {
           display: block;
           position: absolute;
@@ -50,14 +44,16 @@
           transform: translateY(-50%);
       }
     }
-    .content {
+    // .content {
+    // }
+    .sidebar, .content {
       position: absolute;
       top: 0;
       bottom: 0;
+      transition: left 0.3s;
       overflow-y: auto;
     }
 }
-
 .sidebar {
   left: -300px;
 }
@@ -73,6 +69,14 @@
     left: 300px;
   }
 }
+.wrapper.without-sidebar {
+  .sidebar {
+    left: -300px;
+  }
+  .content {
+    left: 0;
+  }
+}
 .wrapper.with-sidebar {
   .sidebar {
     left: 0;
@@ -81,11 +85,19 @@
     left: 300px;
   }
 }
-.wrapper.without-sidebar {
-  .sidebar {
-    left: -300px;
-  }
-  .content {
-    left: 0;
-  }
+#sidebar-collapse {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+article {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.hero {
+  background: red;
+  height: 8rem;
+  width: 100%;
 }

@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<div class="wrapper {% if page.url == '/' %} without-sidebar {% endif %}">
+  <!-- Nav Sidebar -->
+  {% include navigation.html %}
+  <!-- End Nav Sidebar -->
+  <!-- Page Content -->
+  <div class="content">
+    <button type="button" id="sidebar-collapse" class="btn btn-info">
+      <i class="fas fa-align-left"></i>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {{ content }}
+  </div>
+</div>

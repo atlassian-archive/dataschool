@@ -46,7 +46,7 @@ layout: base
   <!-- End Nav Sidebar -->
   <!-- Page Content -->
   <div id="content">
-    <button type="button" id="sidebarCollapse" class="btn btn-info">
+    <button type="button" id="sidebar-collapse" class="btn btn-info">
       <i class="fas fa-align-left"></i>
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -88,7 +88,7 @@ layout: base
 <script type="text/javascript">
 // Code for toggling the side menu
 $(document).ready(function () {
-  $('#sidebarCollapse').on('click', function () {
+  $('#sidebar-collapse').on('click', function () {
     $('#sidebar').toggleClass('active');
   });
 });
