@@ -17,7 +17,6 @@ $container-max-widths: (
 //
 // Color system
 //
-
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #f7f7f9 !default;
@@ -41,20 +40,8 @@ $green:   #56CC9D !default;
 $teal:    #20c997 !default;
 $cyan:    #6CC3D5 !default;
 
-
-$primary:#2f3c48;
-$secondary:#6f7f8c;
-$success:#3e4d59;
-$danger:#cc330d;
-$info:#5c8f94;
-$warning:#6e9fa5;
-$light:#eceeec;
-$dark:#1e2b37;
-
-
-
-$primary:       #78C2AD !default;
-$secondary:     #F3969A !default;
+$primary:       $blue !default;
+$secondary:     $indigo !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -76,11 +63,10 @@ $border-radius-sm:            .3rem !default;
 
 // Fonts
 
-@import url(https://fonts.googleapis.com/css?family=Muli:200,300,400,700);
-$font-family-base:Muli;
-@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
 
-$headings-font-family:        "Oswald", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family:        "Open Sans Condensed", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
 $headings-color:              $gray-700 !default;
 
 // Tables

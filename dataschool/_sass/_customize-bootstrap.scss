@@ -20,7 +20,7 @@ html {
   //     font-size: 141%;
   // }
 }
-
+$text-color: $gray-900;
 body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -33,4 +33,6 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     font-size: 66.6667%;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: $text-color;
 }

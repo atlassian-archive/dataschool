@@ -1,21 +1,20 @@
+// the page wrapper, containers and sidebar
 .wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     .sidebar {
-
       min-width: 300px;
       max-width: 300px;
-      background: pink;
+      border-right: 1px solid $gray-400;
       .sidebar-logo {
         padding: 0.5rem;
-        background: yellow;
         display: block;
         text-align: center;
       }
       ul.components {
         padding: 20px 0;
-        border-bottom: 1px solid $gray-700;
+        border-bottom: 1px solid $gray-400;
       }
       ul {
         p {
@@ -85,19 +84,23 @@
     left: 300px;
   }
 }
+
+// sidebar collapse button
 #sidebar-collapse {
   position: absolute;
   top: 0;
   left: 0;
 }
 
+// general content layout
 article {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 .hero {
-  background: red;
-  height: 8rem;
+  background: $gray-200;
+  min-height: 8rem;
+  padding: 4rem 0;
   width: 100%;
 }
