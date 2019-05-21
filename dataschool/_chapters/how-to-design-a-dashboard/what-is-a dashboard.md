@@ -27,13 +27,13 @@ Dashboards are built to trigger insights that help you take action, **in the cas
 
 This book will explore best practices to create useful dashboards such as this one to help individuals make data-driven decisions.
 
-\### History
+### History
 
-The term “\[dashboard\]([https://www.merriam-webster.com/dictionary/dashboard#h1](https://www.merriam-webster.com/dictionary/dashboard#h1 "https://www.merriam-webster.com/dictionary/dashboard#h1"))” originates from a board that was built into carriages to block the dirt that the horse dash-ed up. When carriages became automobiles, the dashboard remained relevant to block dirt dash-ed up by the front wheel. When the design of automobiles shifted to putting the engine in the front the dashboard’s purpose grew to protecting the driver from the heat and oil. The dashboard also became a convenient location to put gauges to monitor the engine’s performance and other data points about the car such as fuel levels. The term dashboard jumps to describing the modern day business tool this book is all about due to Microsoft. Microsoft is given credit for promoting the term as part of their Digital Nervous System concept in the 90s.
+The term “[dashboard\]([https://www.merriam-webster.com/dictionary/dashboard#h1](https://www.merriam-webster.com/dictionary/dashboard#h1 "https://www.merriam-webster.com/dictionary/dashboard#h1"))” originates from a board that was built into carriages to block the dirt that the horse dash-ed up. When carriages became automobiles, the dashboard remained relevant to block dirt dash-ed up by the front wheel. When the design of automobiles shifted to putting the engine in the front the dashboard’s purpose grew to protecting the driver from the heat and oil. The dashboard also became a convenient location to put gauges to monitor the engine’s performance and other data points about the car such as fuel levels. The term dashboard jumps to describing the modern day business tool this book is all about due to Microsoft. Microsoft is given credit for promoting the term as part of their Digital Nervous System concept in the 90s.
 
 The purpose of the modern day business dashboard has its origins in research that started in the 1970s to use computers to help people make better decisions. Originally known as Decisions Support Systems they became initially commercialized as Executive Information Systems. Now these tools are ubiquitous in business to track performance and help people make informed decisions.
 
-\## Dashboard Value Proposition
+## Dashboard Value Proposition
 
 Let’s begin with that very common dashboard that billions of people use every day, the dashboard in a car. Think about the type of data that is displayed. This dashboard presents how fast the car is going, the RPM, the oil temperature, and how much gas is left. Not to mention warning symbols, information about gears, and whether or not your lights are on. It provides all things you need to monitor in order to do your job, in this case driving your car.
 
@@ -57,7 +57,7 @@ If this was part of a dashboard that included more visualizations about the job 
 
 While this is not a full dashboard we can see the value in having a second visualization. Placing two graphs next to each other, helps the viewer to see that even though unemployment is low, there are some jobs that take a lot of time and effort to get hired. If I want to get a new job quickly, I should consider software development (not a shocker). Dashboards are composed of multiple visualizations in a single window so all the relevant information is available at once and can be simultaneously evaluated.
 
-\## Why are dashboards more important than ever?
+## Why are dashboards more important than ever?
 
 Software is eating the world. It does this by turning everything it can into data, processing that data, and distributing that data with more efficiency than ever before. Once software digitizes something into data, that data can be leveraged by individuals to make higher quality decisions.
 
@@ -67,17 +67,17 @@ Google helps us make decisions about where to purchase delicious Dim Sum. Netfli
 
 People have become accustomed to relying on data to make decisions in their personal life and want the same thing in their companies. In the past, it was challenging to track and store data. Today storage is incredibly cheap, capturing data is ubiquitous, and connecting all these different sources into a database is relatively simple. This has created an incredible opportunity to make more informed decisions in your company based on relevant and timely data from several sources in context.
 
-\## How do dashboards get used
+## How do dashboards get used
 
-\### Ad Hoc Analysis
+### Ad Hoc Analysis
 
 When a question comes into your head about how your business is performing you want to get the data and visualize it. This rarely involves any amount of planning or design as you begin writing your query and choosing simple visualizations to look at the data. You may choose to explore the question in a few different ways which means that multiple (unoptimized) visualizations are brought into the dashboard. This dashboard typically has an audience of one (you) or when shared with others is accompanied with a write up or verbal explanation for how to interpret it.
 
-\### Reports
+### Reports
 
 Often times there will be a large project or large decision that needs historical data laid out so that it can be evaluated. Since it is a static view of the data it typically only provides value for the specific scenario. If this data needs to be evaluated repeatedly then it moves into a decision support dashboard which requires more design and iteration.
 
-\### Ongoing Decision Support
+### Ongoing Decision Support
 
 The strongest use case for dashboards are one that are created to support ongoing decision making. In this way they are built with the same ethos of modern software development using design thinking and iteration. The data powering the visualizations is regularly updated and the dashboard is designed around the audience who will be using it, often times being updated as use cases shift. Ongoing decision support dashboards will be the focus throughout the rest of the book.
 
@@ -87,24 +87,19 @@ Let’s revisit the original dashboard which is a decision support dashboard:
 
 This dashboard displays many types of data from different sources:
 
-\*   Revenue - Payment provider such as Stripe
-
-\*   Cost - Accounting software such as Quickbooks
-
-\*   User Count and Activity - Your production database using tools such as Segment
+* Revenue - Payment provider such as Stripe
+* Cost - Accounting software such as Quickbooks
+* User Count and Activity - Your production database using tools such as Segment
 
 This dashboard includes some predictive measures and groups data in intelligent ways.
 
 Decision makers seek data that provides this level of insight into what is happening in their organizations. They want to make informed decisions based on data. Organizations have more data available than ever before and dashboards such as this one, allow people to leverage all of the data in context for effective decision making. This book will guide you in constructing useful dashboards for any organization.
 
-\## Summary
+## Summary
 
-\*   Dashboards are a dynamic display of information to support high quality decision making
+* Dashboards are a dynamic display of information to support high quality decision making
+* People leverage data all the time to make important decisions in their personal lives and in their organizations
+* There is more data available than ever before within organizations
+* Dashboards help individuals  make informed decisions based on multiple sources of  data within an organization
 
-\*   People leverage data all the time to make important decisions in their personal lives and in their organizations
-
-\*   There is more data available than ever before within organizations
-
-\*   Dashboards help individuals  make informed decisions based on multiple sources of  data within an organization
-
-\[Give Feedback on our Google Doc\]([https://docs.google.com/document/d/1noS4ZOutqt_WipN-4r5CNAff1KCmjznkgwWyTsNjhq0/edit?usp=sharing](https://docs.google.com/document/d/1noS4ZOutqt_WipN-4r5CNAff1KCmjznkgwWyTsNjhq0/edit?usp=sharing "https://docs.google.com/document/d/1noS4ZOutqt_WipN-4r5CNAff1KCmjznkgwWyTsNjhq0/edit?usp=sharing"))
+[Give Feedback on our Google Doc\]([https://docs.google.com/document/d/1noS4ZOutqt_WipN-4r5CNAff1KCmjznkgwWyTsNjhq0/edit?usp=sharing](https://docs.google.com/document/d/1noS4ZOutqt_WipN-4r5CNAff1KCmjznkgwWyTsNjhq0/edit?usp=sharing "https://docs.google.com/document/d/1noS4ZOutqt_WipN-4r5CNAff1KCmjznkgwWyTsNjhq0/edit?usp=sharing"))

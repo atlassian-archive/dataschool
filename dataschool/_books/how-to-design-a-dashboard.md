@@ -1,12 +1,13 @@
 ---
-title: How To Design a Dashboard testing
+title: How to Design a Dashboard
 description: Dashboards enable people to make decisions based on data. This book walks
-  you throughout the process of defining, prototyping, building, and deploying a dashboard.
+  you throught the process of defining, prototyping, building, and deploying a dashboard.
   The focus of the book is to help people make dashboards that get used to make decisions.
-book: how-to-design-a-dashboard
-authors: []
-cover_image: "/static/books/how-to-design-a-dashboard/cover.png"
-main_color: blue
+authors:
+- author: _people/matt.md
+- author: _people/tim.md
+cover_image: "/uploads/design-a-dashboard-cover.png"
+main_color: "#185775"
 is_hidden: false
 
 ---
