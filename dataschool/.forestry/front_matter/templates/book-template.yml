@@ -8,15 +8,6 @@ fields:
 - type: textarea
   name: description
   label: description
-- type: file
-  name: cover_image
-  label: cover_image
-- type: text
-  name: main_color
-  label: main_color
-- type: boolean
-  name: is_hidden
-  label: is_hidden
 - name: authors
   type: field_group_list
   fields:
@@ -38,3 +29,12 @@ fields:
     max: 
     labelField: author
   label: Authors
+- type: file
+  name: cover_image
+  label: cover_image
+- type: text
+  name: main_color
+  label: main_color
+- type: boolean
+  name: is_hidden
+  label: is_hidden
