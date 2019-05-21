@@ -9,6 +9,5 @@ authors:
 cover_image: "/uploads/design-a-dashboard-cover.png"
 main_color: "#185775"
 is_hidden: false
-published: false
 
 ---
