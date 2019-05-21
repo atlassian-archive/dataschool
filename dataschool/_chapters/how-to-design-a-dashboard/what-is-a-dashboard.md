@@ -1,17 +1,17 @@
 ---
-title: What is a Dashboard
-published: 2019-03-01
-image:
+title: What Makes a Great Dashboard (ACES)
+image: 
 section: Introduction
-number: 20
+number: "3"
 authors:
-  - matt
-  - tim
-reviewers:
-  - dave
-summary:
+- tim
+reviewers: []
+summary: 
 is_featured: true
-categories: [data, test]
+categories:
+- data
+- test
+
 ---
 Anytime you want to display information to help people make decisions you are in the process of creating a dashboard. Dashboards allow us to arrange multiple data visualizations to give people enough context to consistently make great decisions.
 
