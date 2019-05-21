@@ -6,7 +6,7 @@ authors:
 - author: _people/matt.md
 reviewers:
 - reviewer: _people/dave.md
-image: "/uploads/intro-dash.jpg"
+image: "/uploads/intro-dash-1.jpg"
 summary: Dashboards are the way data people help the rest of an organization make
   data driven decisions.
 
@@ -31,11 +31,7 @@ Business Intelligence tools have made it easy to create visualizations and dashb
 
 This book will quickly introduce you to what dashboards are, what makes them useful, and an overview of the dashboard design process. Then it will spend the bulk of the book going through the process itself:
 
-<figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center">
-
-<div>!\[Design Dashboard Process\](![](https://uploads-ssl.webflow.com/5c197923e5851742d9bc835d/5cab6df7afc1aae51285ec64_7whuE2Xy1o6-AL1Xjio-Z_-Hbfb9QU4vGmqhHFWxCiNtHCIcs6SFAzWFteCTBY6DbN8hYw6rnxKYiyqHpWVkAz156MpNsk382LitTuA6AIpJLl63_6OGvdcbO_0_Q-T4ltHKt2TQ.jpeg))</div>
-
-</figure>
+![](/uploads/intro-dash-1.jpg)
 
 This book will provide resources and examples to aid you at every step of the process. Use this book to improve your own dashboard skills and use it as a reference for new analysts that join your organization.
 
