@@ -13,7 +13,7 @@ summary: Learn the best practices behind dashboard design to support decision ma
 ---
 An optimal dashboard is Accurate, Clear, Empowering, and Succinct. These key tenets can be remembered with the acronym ACES.
 
-\## Accurate
+\##Accurate
 
 A dashboard lives and dies by the trust the viewers have in what they are seeing. If the viewers doubt the accuracy it will not be used to make decisions. People will also be more hesitant to trust any dashboard or to do any querying themselves. A lack of accuracy in one dashboard causes a lack of faith in all the data.
 
