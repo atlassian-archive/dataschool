@@ -63,6 +63,7 @@ defaults:
       layout: "chapter"
       permalink: "/:path/"
       is_hidden: false
+      is_featured: false
   - scope:
       path: "static/"
     values:

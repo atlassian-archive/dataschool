@@ -1,7 +1,7 @@
 ---
 title: Introduction
 published: 2019-03-01
-image: 
+image:
 number: 10
 section: Introduction
 authors:
@@ -10,6 +10,7 @@ authors:
 reviewers:
   - dave
 summary:
+categories: [data, test]
 ---
 “The greatest value of a picture is when it forces us to notice what we never expected to see.” - John Tukey, Mathematician
 

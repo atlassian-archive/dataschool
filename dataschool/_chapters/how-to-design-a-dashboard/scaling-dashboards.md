@@ -10,6 +10,8 @@ authors:
 reviewers:
   - dave
 summary:
+is_featured: true
+categories: [data, test]
 ---
 Once your dashboard is in front of it’s full audience how the dashboard is used is likely to evolve. This can be an expansion of decisions they would like to see supported or the number of groups who wants to use it for their specific scenarios. To accommodate these changes there are some scaling strategies to consider using.
 

@@ -6,6 +6,8 @@
 @import "variables";
 @import "bootstrap/bootstrap";
 @import "customize-bootstrap";
-@import "layout";
+@import "base";
+@import "navigation";
+@import "components";
 @import "syntax-highlighting";  // keeps the syntax highlighting styles
 @import "sqlbox";

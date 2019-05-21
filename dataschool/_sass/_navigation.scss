@@ -90,17 +90,5 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-// general content layout
-article {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.hero {
-  background: $gray-200;
-  min-height: 8rem;
-  padding: 4rem 0;
-  width: 100%;
+  z-index: 100;
 }

@@ -5,6 +5,7 @@ description: ""
 number: 200
 section: advanced
 published: false
+categories: [data, test]
 ---
 
 Check out the unique functions for Subqueries

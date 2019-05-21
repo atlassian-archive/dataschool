@@ -9,6 +9,6 @@ authors:
 reviewers:
 - reviewer: _people/dave.md
 summary: Test
-
+categories: [test]
 ---
 Testing out writing a new chapter, baby.

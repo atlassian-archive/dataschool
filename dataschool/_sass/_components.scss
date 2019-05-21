@@ -1,0 +1,109 @@
+// chapter list, featured chapters on homepage
+.chapter-list {
+  li {
+    margin-bottom: 1rem;
+
+    a {
+      display: flex;
+    }
+  }
+  .thumbnail-img {
+    background: yellow;
+    width: 6rem;
+    height: 4rem;
+    margin-right: 1rem;
+  }
+  .chapter-info {
+    flex: 1 1 auto;
+  }
+}
+
+// the angled home hero layout with grid background
+.home-hero {
+  position: relative;
+  padding: 2rem 0 5rem;
+}
+.home-hero h1 {
+  text-align: center;
+}
+.home-hero::before {
+  content: '';
+  background-image: url('/assets/images/dot-grid.png');
+  background-position: 0 0;
+  background-size: 17px;
+  background-attachment: scroll;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 100px), 0% 100%);
+}
+.home-hero > div {
+  position: relative;
+  z-index: 1;
+}
+
+// general content layout
+article {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+
+/* styles for Hubspot forms */
+form.hs-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0.618rem;
+    background: #eeeeee;
+    padding: 1rem;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+    border-radius: 0.147rem;
+}
+
+form.hs-form .hs-submit {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+form.hs-form .hs-email label {
+    display: none;
+}
+
+form.hs-form div.hs-email .input {
+    display: inline-block;
+    width: 100%;
+}
+
+form.hs-form div.hs-email input.hs-input {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #1c6497;
+    padding: 0.382rem 0.618rem;
+}
+
+form.hs-form .legal-consent-container {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+form.hs-form .legal-consent-container p {
+    margin: 0;
+    max-width: none;
+}
+
+form.hs-form input.hs-button.primary.large {
+    padding: 0.382rem 0.618rem;
+    background: #1c6497;
+    border: 1px solid #1c6497;
+    color: #fff;
+}

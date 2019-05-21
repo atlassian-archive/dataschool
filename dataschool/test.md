@@ -1,5 +1,7 @@
 ---
-layout: base
+title: A Trip
+categories: [blog, travel]
+tags: [hot, summer]
 ---
 <div class="flex-grow-1 d-flex flex-column">
     <nav class="navbar navbar-expand-md navbar-light bg-light navbar-expand-md">

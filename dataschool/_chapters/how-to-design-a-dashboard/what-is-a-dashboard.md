@@ -10,6 +10,8 @@ authors:
 reviewers:
   - dave
 summary:
+is_featured: true
+categories: [data, test]
 ---
 Anytime you want to display information to help people make decisions you are in the process of creating a dashboard. Dashboards allow us to arrange multiple data visualizations to give people enough context to consistently make great decisions.
 

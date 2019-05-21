@@ -6,7 +6,6 @@ description: This interactive SQL tutorial will explain the FROM command with sy
   how to use the SQL FROM command by following the steps in this interactive tutorial.
 number: 30
 section: basic
-
 ---
 So now you know how to SELECT data but not yet how to choose where to get that data FROM.  Let’s get into the real stuff and SELECT data FROM a specific table.  
 
@@ -22,7 +21,7 @@ SELECT [stuff you want to select] FROM [the table that it is in];
 Let's start with a simple one and query for everything (all of it!) from the *albums* table.
 
 <sqlbox
-        
+
   initial='SELECT id, title, artist_id FROM albums;'
 ></sqlbox>
 

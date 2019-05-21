@@ -1,5 +1,6 @@
 ---
 title: Our Mission
+tags: ["mission"]
 ---
 
 At Chartio we describe our mission in four words which, not coincidentally, can be understood by both people and machines. Our mission is to:
