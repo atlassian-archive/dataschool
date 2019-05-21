@@ -6,6 +6,11 @@ number: 200
 section: advanced
 published: false
 categories: [data, test]
+authors:
+- author: _people/dave.md
+reviewers:
+- reviewer: _people/matt.md
+is_featured: false
 ---
 
 Check out the unique functions for Subqueries

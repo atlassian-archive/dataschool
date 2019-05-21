@@ -6,7 +6,7 @@ title: Content Library
 <book>
 
     <a href="{{ book.url }}">{{ book.title }}</a>
-    
+
     <p>{{ book.description }}</p>
 
 </book>

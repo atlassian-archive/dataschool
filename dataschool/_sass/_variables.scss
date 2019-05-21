@@ -40,14 +40,18 @@ $green:   #56CC9D !default;
 $teal:    #20c997 !default;
 $cyan:    #6CC3D5 !default;
 
-$primary:       $blue !default;
-$secondary:     $indigo !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+// setting colors from variables, some customization
+// $primary:           $blue !default;
+$primary:           #206595;
+$secondary:         $indigo !default;
+$success:           $green !default;
+$info:              $cyan !default;
+$warning:           $yellow !default;
+$danger:            $red !default;
+$light:             $gray-100 !default;
+$dark:              $gray-800 !default;
+$text-color:        $gray-900;
+$background-color:  $white;
 
 $yiq-contrasted-threshold: 250 !default;
 
@@ -64,9 +68,10 @@ $border-radius-sm:            .3rem !default;
 // Fonts
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,900');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
 
-$headings-font-family:        "Open Sans Condensed", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family:        "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
 $headings-color:              $gray-700 !default;
 
 // Tables

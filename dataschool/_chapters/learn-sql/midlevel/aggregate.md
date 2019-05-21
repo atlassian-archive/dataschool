@@ -4,6 +4,11 @@ short: Aggregate
 description: "Learn about the COUNT function in SQL. The COUNT command is a commonly used aggregation function that takes whatever you give it and returns the count of how many there are. This interactive SQL tutorial will teach you how to COUNT."
 number: 70
 section: mid-level
+authors:
+- author: _people/dave.md
+reviewers:
+- reviewer: _people/matt.md
+is_featured: false
 ---
 
 Fetching the raw data is nice and all, but now we're going to start actually doing some aggregations and transformations to it!  The first and probably most commonly used aggregation function we are going to learn is COUNT.  The COUNT function takes whatever you give it and returns the count of how many there are.  

@@ -7,7 +7,7 @@ authors:
 reviewers: []
 image: ''
 summary: Overview of all the steps in a dashboard design process
-
+is_featured: true
 ---
 The dashboard design process is very similar to any design process however the output is a dashboard… obviously.
 

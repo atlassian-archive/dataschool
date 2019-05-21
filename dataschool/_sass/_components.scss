@@ -15,41 +15,12 @@
   }
   .chapter-info {
     flex: 1 1 auto;
+
+    h3 {
+      margin-top: 0;
+    }
   }
 }
-
-// the angled home hero layout with grid background
-.home-hero {
-  position: relative;
-  padding: 2rem 0 5rem;
-}
-.home-hero h1 {
-  text-align: center;
-}
-.home-hero::before {
-  content: '';
-  background-image: url('/assets/images/dot-grid.png');
-  background-position: 0 0;
-  background-size: 17px;
-  background-attachment: scroll;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 100px), 0% 100%);
-}
-.home-hero > div {
-  position: relative;
-  z-index: 1;
-}
-
-// general content layout
-article {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 
 /* styles for Hubspot forms */
 form.hs-form {
@@ -106,4 +77,33 @@ form.hs-form input.hs-button.primary.large {
     background: #1c6497;
     border: 1px solid #1c6497;
     color: #fff;
+}
+
+// the angled home hero layout with grid background
+.home-hero {
+  position: relative;
+  padding: 2rem 0 5rem;
+}
+.home-hero::before {
+  content: '';
+  background-image: url('/assets/images/dot-grid.png');
+  background-position: 0 0;
+  background-size: 17px;
+  background-attachment: scroll;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 100px), 0% 100%);
+}
+.home-hero > div {
+  position: relative;
+  z-index: 1;
+}
+
+// general content layout
+article {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }

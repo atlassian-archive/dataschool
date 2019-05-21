@@ -5,6 +5,11 @@ description: "Learn how to use SQL with your PostgreSQL database. In this intera
 image: /assets/images/learn-sql/sql-tutorial-excel-introduction.png
 number: 10
 section: basic
+authors:
+- author: _people/dave.md
+reviewers:
+- reviewer: _people/matt.md
+is_featured: true
 ---
 
 So you wanna learn SQL huh?  You've come to the right place.  This interactive SQL tutorial is designed to get you querying as quickly as possible.

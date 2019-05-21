@@ -4,6 +4,9 @@ short: SQL Tutorial
 description: "Learn how to use SQL against your PostgreSQL database. SQL is the primary language for data exploration and analysis. Get a foundational understanding in how to use the SQL language with your PostgreSQL database in these data tutorials."
 image: /assets/images/learn-sql/sql-tutorial-sqlbox.gif
 permalink: /learn/sql/
+authors:
+- author: _people/dave.md
+reviewers:
 ---
 Welcome to our {{ page.database }} interactive SQL Tutorial!  We've designed this specifically for tech-savvy folks to learn enough SQL to be able to do their own analysis and data fetching.  
 

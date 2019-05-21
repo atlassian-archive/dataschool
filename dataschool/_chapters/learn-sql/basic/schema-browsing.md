@@ -4,6 +4,11 @@ short: SCHEMA
 description: "The word SCHEMA is used to describe a collection of tables and their relationships in your database. In this interactive SQL tutorial, learn how to browse the SCHEMA in a PostgreSQL database by using SQL to query your data."
 number: 55
 section: basic
+authors:
+- author: _people/dave.md
+reviewers:
+- reviewer: _people/matt.md
+is_featured: false
 ---
 The word *SCHEMA* is used to describe a collection of tables and their relationships in your database.  A database instance may have several different schemas.  When you're working with a set of data, it's useful to be able to browse that schema to get a sense for what data is available to you.  
 

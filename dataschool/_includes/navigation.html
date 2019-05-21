@@ -1,7 +1,7 @@
 <nav class="sidebar">
   <!-- Main nav elements, always include in sidebar -->
   <a class="sidebar-logo" href="/">
-    <img src="/uploads/dataschool-small.png">
+    <img src="/uploads/data-school-logo.png"/>
   </a>
   <ul class="list-unstyled components">
     <li><a href="/books/">Books</a></li>
@@ -28,7 +28,7 @@
                   <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">{{ currentsection }}</a>
                   <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection}}">
             {% endif %}
-            <li>
+            <li {% if page.url == chapter.url %}class="active"{% endif %}>
               <a href="{{ chapter.url }}">
                 {{ chapter.title }}
               </a>

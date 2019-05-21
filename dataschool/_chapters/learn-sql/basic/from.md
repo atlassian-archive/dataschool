@@ -6,6 +6,11 @@ description: This interactive SQL tutorial will explain the FROM command with sy
   how to use the SQL FROM command by following the steps in this interactive tutorial.
 number: 30
 section: basic
+authors:
+- author: _people/dave.md
+reviewers:
+- reviewer: _people/matt.md
+is_featured: false
 ---
 So now you know how to SELECT data but not yet how to choose where to get that data FROM.  Let’s get into the real stuff and SELECT data FROM a specific table.  
 

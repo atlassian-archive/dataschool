@@ -4,6 +4,11 @@ short: LIMIT
 description: "Learn how to LIMIT the number of results that are returned you can simply use the LIMIT SQL command at the end of the query to specify. You can use the LIMIT command on your PostgreSQL database. Read the tutorial to learn more."
 number: 50
 section: basic
+authors:
+- author: _people/dave.md
+reviewers:
+- reviewer: _people/matt.md
+is_featured: false
 ---
 
 So far all of our queries have brought back all the rows in the table.  That's okay for our example database with just a few hundred rows of data, but on other databases that can often be A LOT more data than needed.  If want to LIMIT the number of results that are returned you can simply use the LIMIT command at the end of the query to specify.

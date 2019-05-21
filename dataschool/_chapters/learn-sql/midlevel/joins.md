@@ -4,6 +4,11 @@ short: JOINs
 description: "A JOIN SQL statement combines two data from two tables together. In this interactive SQL tutorial, learn how to use the JOIN statement in your SQL queries against your PostgreSQL database to analyze your data. Read more to learn."
 number: 90
 section: mid-level
+authors:
+- author: _people/dave.md
+reviewers:
+- reviewer: _people/matt.md
+is_featured: false
 ---
 So far we've been working with each table separately, but as you may have guessed by the tables being named *tracks*, *albums*, and *artists* and some of the columns having names like *album_id*, it is possible to JOIN these tables together to fetch results from both!
 
