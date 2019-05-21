@@ -47,13 +47,7 @@ We might know how fast we are going but we could be redlining our engine or we c
 
 A news report might show the job market of the United States in a single chart:
 
-<figure>
-
 ![https://ig.ft.com/sites/numbers/economies/us/](/uploads/5cace7708d24c150426132ad_5c9268b10e85f0caa86b458f_8w_fQ303Xf6cI8pkaTji-vn-d1-IBsM9QP_IDSsIm_4-tHtu8Laaib-F2_yRQVn6iQARSEpbfz9iPQojxSVgh8dJSVIaSR4oP7xIxRIewAsow3MAsppRoh6ArkPR-3AJuMX3CWaw.png "https://ig.ft.com/sites/numbers/economies/us/")
-
-<figcaption >\[21 charts that explain the US economy\]([https://ig.ft.com/sites/numbers/economies/us/](https://ig.ft.com/sites/numbers/economies/us/ "21 charts that explain the US economy"))</figcaption>
-
-</figure>
 
 At first glance this looks great, the unemployment rate is around 4%. This might mean it is easy to find a job. This graph could be useful if Im considering whether I should look for a better job. One visualization alone however should not give me much confidence. There could be critically important data that is missing by considering only one visualization.
 
