@@ -64,4 +64,5 @@ fields:
   name: summary
   label: summary
 pages:
+- dataschool/_chapters/how-to-design-a-dashboard/introduction-1.md
 - dataschool/_chapters/testing-book/testing-chapter.md
