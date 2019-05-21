@@ -38,3 +38,5 @@ fields:
 - type: boolean
   name: is_hidden
   label: is_hidden
+pages:
+- dataschool/_books/how-to-design-a-dashboard-1.md
