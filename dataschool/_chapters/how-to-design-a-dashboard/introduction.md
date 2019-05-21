@@ -10,6 +10,10 @@ image: "/uploads/intro-dash-1.jpg"
 summary: Dashboards are the way data people help the rest of an organization make
   data driven decisions.
 is_featured: false
+<<<<<<< HEAD:dataschool/_chapters/how-to-design-a-dashboard/introduction.md
+=======
+
+>>>>>>> c3a4bc647e8c1cd6631b4e8575f9eaa6ee538312:dataschool/_chapters/how-to-design-a-dashboard/introduction-1.md
 ---
 _“The greatest value of a picture is when it forces us to notice what we never expected to see.” - John Tukey, Mathematician_
 
@@ -33,4 +37,4 @@ This book will quickly introduce you to what dashboards are, what makes them use
 
 This book will provide resources and examples to aid you at every step of the process. Use this book to improve your own dashboard skills and use it as a reference for new analysts that join your organization.
 
-[Give Feedback on our Google Doc\]([https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing](https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing "https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing"))
+[Give Feedback on our Google Doc](https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing)
