@@ -21,19 +21,11 @@ The process starts with defining our stakeholders and what the metrics they care
 
 We can summarize this process into 4 steps:
 
-<figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center">
-
-<div>!\[Dashboard Design Process\](![](https://uploads-ssl.webflow.com/5c197923e5851742d9bc835d/5cab6df7afc1aae51285ec64_7whuE2Xy1o6-AL1Xjio-Z_-Hbfb9QU4vGmqhHFWxCiNtHCIcs6SFAzWFteCTBY6DbN8hYw6rnxKYiyqHpWVkAz156MpNsk382LitTuA6AIpJLl63_6OGvdcbO_0_Q-T4ltHKt2TQ.jpeg))</div>
-
-</figure>
+![](/uploads/dash-design-process-overview.jpg)
 
 \## Define
 
-<figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center">
-
-<div>!\[Define Stakeholders and Metrics\](![](https://uploads-ssl.webflow.com/5c197923e5851742d9bc835d/5cab74819562db50cb557a8a_FkkOWNdLwmba37ySn2lYNhuDxV1z4ZLdcUp-B_vIyo9LGgWQfyjPgdmUVKzjAoiQwGChqUq-2mt8kMvUVms30nCfOk7ce_BvkbcQVFYXMUGCl6-Q7GMa_-tv6D8mQBWEdQVsarPr.png))</div>
-
-</figure>
+![](/uploads/dash-design-define-audience.jpg)
 
 This is the first and most important step. Having clarity about who this dashboard is for and what metrics matter to them is critical to creating a dashboard that will be used.
 
@@ -57,11 +49,7 @@ You will work with the point person to go from vague goals to query-able metrics
 
 \## Prototype
 
-<figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center">
-
-<div>!\[Prototype\](![](https://uploads-ssl.webflow.com/5c197923e5851742d9bc835d/5cab74815e4349b72e708466_7Zc02onZFF8Dc0IUDJsCGiSsU0iijEcKmxcOhvAfamGkVzi1SnvGtzvunFgeB2O0avSpIKaQnxweANsYNN1YsQZjjUmCWKE100RaHX4h4fU-dF-njRyMtNMokU-8nqsdC1m7iu6u.jpeg))</div>
-
-</figure>
+![](/uploads/dash-design-prototype.jpg)
 
 Once we have the metrics that we want to put in a dashboard we need to figure out how best to display them so that it is useful to the whole audience.
 
@@ -79,11 +67,7 @@ At this stage it is recommended that the visualizations and dashboards be sketch
 
 \## Build
 
-<figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center">
-
-<div>!\[Build Dashboard\](![](https://uploads-ssl.webflow.com/5c197923e5851742d9bc835d/5cab7481e5f4b61c7afe0ddc_h2Ffz0eklqH8BwVfX_naUVJa3FE6sFO57JWzUXZ3FSG3qffZMG7W0H6M7wIfaeEtPTPT7_T2S5l4WSBqF_pI-9osLVrN2f2PBAxcGKrgMqZRJQaUXqzb6V32A9nWNyNZCIM159pp.jpeg))</div>
-
-</figure>
+![](/uploads/dash-desig-build.jpg)
 
 Once we are satisfied with the prototype we have to create the dashboard using real data.
 
@@ -97,11 +81,7 @@ We need to create queries to power the metrics, create formulas, and transform t
 
 \## Deploy
 
-<figure class="w-richtext-figure-type-image w-richtext-align-center" data-rt-type="image" data-rt-align="center">
-
-<div>!\[Distribute scale and mainating dashboard\](![](https://uploads-ssl.webflow.com/5c197923e5851742d9bc835d/5cab74815ad679021b11f505_oDGwWr7q1ujS2X9ppLt7Fh3m2qxxm8i0RbpmKeEzrpmVzB3lAME2hf7-j2c8sIxMqQnqB6aYDjNXTMeFIqoJ5GHrno0xtvAWFKZ7xEwdZUWCW0HyRw3pdaCWlb4y8SZSSqUc7jRl.png))</div>
-
-</figure>
+![](/uploads/dash-design-deploy.png)
 
 Finally we have a fully functioning dashboard. Now we need to share it with the full audience. We should enhance the dashboard to make it more effective at scale and we need to make sure to maintain it as usage grows and changes.
 
