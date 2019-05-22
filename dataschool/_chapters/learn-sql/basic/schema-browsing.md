@@ -25,11 +25,7 @@ If you're using a good visual interface to {{ page.database }}, browsing the sch
 
 ### Schemas in PGAdmin
 
-Once connected to a database, you can expand the trees in the left sidebar in PGAdmin to find the database, schema, tables and columns available:
-
-![PGAdmin Schema Browsing](/assets/images/learn-sql/pg-admin-schema-1.png)
-
-The "Properties" tab in the right top of the interface will display all of the extra properties that the _information_schema_ holds on the table or column including default values, data type, and more.
+Once connected to a database, you can expand the trees in the left sidebar in PGAdmin to find the database, schema, tables and columns available:![PGAdmin Schema Browsing](/assets/images/learn-sql/pg-admin-schema-1.png)The "Properties" tab in the right top of the interface will display all of the extra properties that the _information_schema_ holds on the table or column including default values, data type, and more.
 
 ![PGAdmin Column View](/assets/images/learn-sql/pg-admin-schema-2.png)
 
