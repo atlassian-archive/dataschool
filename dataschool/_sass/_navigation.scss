@@ -7,33 +7,42 @@
       min-width: 300px;
       max-width: 300px;
       border-right: 1px solid $gray-400;
+      padding: 0.5rem;
+      background: aqua;
       .sidebar-logo {
-        padding: 0.5rem;
+        padding: 0 1rem 0.5rem;
         display: block;
         text-align: center;
       }
       ul.components {
-        padding: 20px 0;
         border-bottom: 1px solid $gray-400;
+        background: yellow;
+        li {
+          margin-bottom: 0.25rem;
+        }
       }
       ul {
         p {
-          padding: 10px;
+          padding: 0;
+          background: blue;
         }
         li a {
-          padding: 10px;
+          padding: 0;
           display: block;
+          background: red;
         }
         li.active > a, a[aria-expanded="true"] {
-            // color: #fff;
-            // background: #6d7fcc;
+            color: #fff;
+            background: green;
         }
         ul a {
-            padding-left: 30px;
+            padding-left: 0;
+            background: teal;
         }
       }
       a[data-toggle="collapse"] {
-          position: relative;
+        position: relative;
+        background: pink;
       }
       .dropdown-toggle::after {
           display: block;
@@ -41,10 +50,9 @@
           top: 50%;
           right: 20px;
           transform: translateY(-50%);
+          background: orange;
       }
     }
-    // .content {
-    // }
     .sidebar, .content {
       position: absolute;
       top: 0;
