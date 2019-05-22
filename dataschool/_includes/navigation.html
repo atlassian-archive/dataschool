@@ -9,7 +9,6 @@
     <li><a href="/people/">Contributors</a></li>
     <li><a href="/books/">Slack Community</a></li>
   </ul>
-
   {% if page.layout == "chapter" or page.layout == "book" %}
     {% assign book = site.books | where:'slug', page.book %}
     {% assign book = book[0] %}
@@ -17,10 +16,8 @@
     <!-- showing current book -->
     {% include smallbook.html %}
     <!-- building the chapter list -->
-
-    <!-- collapsing sections -->
-    <!-- <ul class="list-unstyled components">
-      <li>
+    <ul class="list-unstyled components">
+      <li class="d-none">
         <ul>
           {% for chapter in bookchapters %}
             {% if currentsection != chapter.section %}
@@ -39,22 +36,6 @@
           {% endfor %}
         </ul>
       </li>
-    </ul> -->
-
-    <!-- non-collapsing sections -->
-    <ul class="list-unstyled components">
-      {% for chapter in bookchapters %}
-        {% if currentsection != chapter.section %}
-          {% assign currentsection = chapter.section %}
-          <li>{{ currentsection }}</li>
-        {% endif %}
-        <li {% if page.url == chapter.url %}class="active"{% endif %}>
-          <a href="{{ chapter.url }}">
-            {{ chapter.title }}
-          </a>
-        </li>
-      {% endfor %}
     </ul>
-
   {% endif %}
 </nav>
