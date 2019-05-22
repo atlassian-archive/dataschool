@@ -54,14 +54,14 @@ defaults:
       type: "books"
     values:
       layout: "book"
-      permalink: /:path
+      permalink: "/:path/"
       is_hidden: false
   - scope:
       path: ""
       type: "chapters"
     values:
       layout: "chapter"
-      permalink: /:path
+      permalink: "/:path/"
       is_hidden: false
       is_featured: false
   - scope:
