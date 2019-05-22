@@ -7,7 +7,6 @@ authors:
 reviewers: []
 image: ''
 summary: ''
-is_featured: true
+is_featured: false
 published: false
-
 ---
