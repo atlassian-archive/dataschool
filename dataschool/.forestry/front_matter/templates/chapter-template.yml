@@ -70,16 +70,21 @@ fields:
   label: Is Featured
   description: toggle to feature this chapter on the home page
 - name: writers
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: people
-      file: 
-      path: 
+  type: field_group
+  config: {}
+  fields:
+  - name: author
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: people
+        file: 
+        path: 
+    label: author
   label: writers
 pages:
 - dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
