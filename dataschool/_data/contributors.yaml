@@ -1,8 +1,7 @@
-- name: Eric Mill
-  github: konklone
-
+---
 - name: Parker Moore
   github: parkr
-
+- name: Eric Mill
+  github: konklone
 - name: Liu Fengyun
   github: liufengyun
