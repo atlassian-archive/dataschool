@@ -3,7 +3,7 @@ title: Dashboard Design Process
 section: ''
 number: 4
 authors:
-- author: _people/matt.md
+- person: _people/matt.md
 reviewers: []
 image: ''
 summary: Overview of all the steps in a dashboard design process

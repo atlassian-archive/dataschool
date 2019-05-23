@@ -4,13 +4,16 @@ layout: default
 <header>
   <h1>{{ page.title | escape }}</h1>
   <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
+  {% for author in page.authors %}
+    <p>{{ author.person.title }}</p>
+  {% endfor %}
 </header>
 <section>
   {{ content }}
 </section>
 <p>
   <b>authors:</b>
-  {% for author_slug in page.authors %}
+  {% for author_slug in page.authors.author %}
     {% assign a = site.people | where: 'slug', author_slug %}
     {% assign author = a[0] %}
     <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}

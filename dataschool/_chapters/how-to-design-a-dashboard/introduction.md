@@ -3,7 +3,7 @@ title: Introduction
 section: ''
 number: 1
 authors:
-- author: _people/matt.md
+- person: _people/matt.md
 reviewers:
 - reviewer: _people/dave.md
 image: "/uploads/intro-dash-1.jpg"
