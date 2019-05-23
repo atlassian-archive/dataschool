@@ -16,7 +16,7 @@ fields:
   description: sets the sorting order of the chapters for the book
 - type: field_group_list
   name: authors
-  label: Authors
+  label: authors
   description: The authors of this post
   hidden: false
   fields:
@@ -29,14 +29,13 @@ fields:
       source:
         type: pages
         section: people
-        file:
-        path:
+        file: 
+        path: 
     label: author
   config:
-    min:
-    max:
+    min: 
+    max: 
     labelField: author
-  label: authors
 - name: reviewers
   type: field_group_list
   fields:
@@ -49,12 +48,12 @@ fields:
       source:
         type: pages
         section: people
-        file:
-        path:
+        file: 
+        path: 
     label: reviewer
   config:
-    min:
-    max:
+    min: 
+    max: 
     labelField: reviewer
   label: reviewers
 - name: image
@@ -70,3 +69,8 @@ fields:
   type: boolean
   label: Is Featured
   description: toggle to feature this chapter on the home page
+pages:
+- dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
+- dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
+- dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
+- dataschool/_chapters/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces.md
