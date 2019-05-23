@@ -80,8 +80,8 @@ fields:
       min: 
       max: 
       source:
-        type: documents
-        section: ''
+        type: pages
+        section: contributors
         path: ''
         file: dataschool/_data/contributors.yaml
     label: writers
