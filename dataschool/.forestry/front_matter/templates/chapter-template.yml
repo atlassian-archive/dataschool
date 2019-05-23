@@ -81,7 +81,7 @@ fields:
       max: 
       source:
         type: pages
-        section: contributors
+        section: people
         path: ''
         file: dataschool/_data/contributors.yaml
     label: writers
