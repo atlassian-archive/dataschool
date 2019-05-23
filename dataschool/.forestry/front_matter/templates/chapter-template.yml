@@ -69,6 +69,19 @@ fields:
   type: boolean
   label: Is Featured
   description: toggle to feature this chapter on the home page
+- name: writers
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: contributors
+      path: ''
+      file: dataschool/_data/contributors.yaml
+  label: Writers
+  description: Who wrote this chapter
 pages:
 - dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
 - dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
