@@ -4,6 +4,7 @@ section: ''
 number: 3
 authors:
 - author: _people/tim.md
+- author: _people/matt.md
 reviewers:
 - reviewer: _people/dave.md
 - reviewer: _people/matt.md

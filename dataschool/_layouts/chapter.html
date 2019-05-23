@@ -13,16 +13,16 @@ layout: default
 </section>
 <p>
   <b>authors:</b>
-  {% for author_slug in page.authors.author %}
-    {% assign a = site.people | where: 'slug', author_slug %}
+  {% for author_path in page.authors %}
+    {% assign a = site.people | where: 'path', author_path.author %}
     {% assign author = a[0] %}
     <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
   {% endfor %}
 </p>
 <p>
   <b>reviewers:</b>
-  {% for reviewer_slug in page.reviewers %}
-    {% assign a = site.people | where: 'slug', reviewer_slug %}
+  {% for reviewer_path in page.reviewers %}
+    {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
     {% assign reviewer = a[0] %}
     <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>{% if forloop.last != true %},{% endif %}
   {% endfor %}

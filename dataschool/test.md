@@ -1,7 +1,5 @@
 ---
-layout: default-breakout
-categories: [data, test]
-tags: test
+layout: default
 ---
 <div class="toggle-content" style="display: block;">
 	<p><strong>Peruse the styles below</strong> to see how Golden Ratio Typography makes <em>all</em> your text look fantastic.</p>
