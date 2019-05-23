@@ -1,8 +1,67 @@
-// UTILITY CLASSES
+
+img {
+  max-width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+// MY STUFF TO MAKE 1 REM = 1 LINE HEIGHT
+html {
+  min-height: 100%;
+  font-size: 150%;
+
+  // @media(max-width: 57em) {
+  //     font-size: 141%;
+  // }
+}
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-size: 66.6667%;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.45;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+// type size reset
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  line-height: 1.15;
+}
+h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+h2 {font-size: 2.441em;}
+h3 {font-size: 1.953em;}
+h4 {font-size: 1.563em;}
+h5 {font-size: 1.25em;}
+p {margin-bottom: 1.25em;}
+small, .small-font {font-size: 0.8em;}
+
+
+// CUSTOM UTILITY CLASSES
 .centered {
   text-align: center;
 }
-
 .height-3 {
   height: 3rem;
 }
@@ -12,6 +71,9 @@ article, .home-hero {
 }
 
 article {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
   h1, h2, h3, h4, h5, h6, p, ul, ol, code, pre {
     max-width: 28rem;
     margin-left: auto;

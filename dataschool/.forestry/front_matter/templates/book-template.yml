@@ -20,13 +20,13 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: Author
     description: choose authors from the current list of contributors
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
   label: Authors
 - type: file

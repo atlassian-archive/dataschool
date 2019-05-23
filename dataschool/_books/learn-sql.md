@@ -3,8 +3,9 @@ title: Learn SQL
 description: "An interactive SQL Tutorial by example!"
 book: learn-sql
 authors:
-  - dave
-cover_image: /static/books/learn-sql/cover.png
-main_color: blue
+  - author: _people/dave.md
+cover_image: "/uploads/teach-ppl-sql-cover.png"
+main_color: "#1B753A"
 is_hidden: false
+is_featured: true
 ---

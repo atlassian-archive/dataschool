@@ -1,20 +1,24 @@
 ---
 layout: default-breakout
-categories: [data, test]
-tags: test
 ---
 <div class="home-hero">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 centered">
+      <div class="col-sm-7 centered">
         <h1>Welcome to the Data School</h1>
         <p>We're a community-driven school of free web books and content written by people who work with data <em>for</em> people who work with data.</p>
         <p>To get started check out <a href="/mission">our mission</a>, see <a href="/people" class="link-6">who's involved</a> or dig into our completely free and growing <a href="/books">content library</a> of web books.</p>
         <a href="/books" class="btn btn-primary">Browse Our Web Book Library</a>
       </div>
-      <div class="col-sm-5 offset-sm-1">
-        <p>this month's featured web book</p>
-        <img src="/uploads/teach-ppl-sql-cover.png" alt="Teaching People SQL web book cover">
+      <div class="col-sm-4 offset-sm-1">
+        <p class="small-font mt-3"><em>This month's featured web book</em></p>
+        {% assign book = site.books | where:'is_featured', 'true' %}
+        {% assign book = book[0] %}
+        <div class="smallbook">
+          <a href="{{ book.url }}">
+            <img src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
+          </a>
+        </div>
       </div>
     </div>
   </div>
