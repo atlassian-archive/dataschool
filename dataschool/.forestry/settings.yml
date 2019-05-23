@@ -25,7 +25,6 @@ sections:
 - type: document
   path: dataschool/_data/contributors.yaml
   label: Contributors
-  match: "**/*"
 upload_dir: dataschool/uploads
 public_path: "/uploads"
 front_matter_path: ''
