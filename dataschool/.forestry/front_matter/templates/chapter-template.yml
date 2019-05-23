@@ -73,18 +73,16 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: author
-    type: select
-    default: []
+  - name: writers
+    type: list
     config:
-      required: false
-      options: []
+      use_select: true
+      min: 
+      max: 
       source:
         type: pages
         section: people
-        file: 
-        path: 
-    label: author
+    label: writers
   label: writers
 pages:
 - dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
