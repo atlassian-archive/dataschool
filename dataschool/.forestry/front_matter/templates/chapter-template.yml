@@ -77,7 +77,7 @@ fields:
     options: []
     source:
       type: pages
-      section: contributors
+      section: people
       file: 
       path: 
   label: writers
