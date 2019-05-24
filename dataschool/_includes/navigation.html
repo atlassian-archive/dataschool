@@ -12,7 +12,7 @@
   {% if page.layout == "chapter" or page.layout == "book" %}
     <!-- {% assign book = site.books | where:'slug', page.book %} -->
     <!-- {% assign book = book[0] %} -->
-    {% assign bookchapters = site.chapters | where:'book', page.book | sort: 'number' %}
+    {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %} 
     <!-- showing current book -->
     {% include smallbook.html %}
     <!-- building the chapter list -->

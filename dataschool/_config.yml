@@ -74,13 +74,13 @@ defaults:
       path: "_chapters/how-to-design-a-dashboard"
       type: "chapters"
     values:
-      book: how-to-design-a-dashboard
+      book_slug: how-to-design-a-dashboard
       image: static/books/images/how-to-design-a-dashboard.jpg  # TODO set a real default image
   - scope:
       path: "_chapters/learn-sql"
       type: "chapters"
     values:
-      book: learn-sql
+      book_slug: learn-sql
       database: "PostgreSQL"
       dbname: "herokuchinook"
       section: extras

@@ -3,7 +3,8 @@ layout: default
 ---
 <p>{{ page.description }}</p>
 
-{% assign bookchapters = site.chapters | where:'book', page.slug | sort: 'number' %}
+Page slug is {{ page.slug }}
+{% assign bookchapters = site.chapters | where:'book_slug', page.slug | sort: 'number' %}
 
 <ul class="d-none">
 {% for chapter in bookchapters %}
