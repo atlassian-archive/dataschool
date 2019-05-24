@@ -43,7 +43,9 @@ $cyan:    #6CC3D5 !default;
 // setting colors from variables, some customization
 // $primary:           $blue !default;
 $primary:           #206595;
-$secondary:         $indigo !default;
+// $secondary:         $indigo !default;
+$secondary:         #fbc657;
+$secondary-light:   #fff3db;
 $success:           $green !default;
 $info:              $cyan !default;
 $warning:           $yellow !default;
@@ -67,11 +69,17 @@ $border-radius-sm:            .3rem !default;
 
 // Fonts
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,900');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i400,400i,600,600i,700,700i,800,800i&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i&display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap');
 
-$headings-font-family:        "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
+$serif-font-loadout:          "Gentium Book Basic", "Times New Roman", serif;
+$sans-font-loadout:           "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+
+$headings-font-family:        $sans-font-loadout;
+// $headings-color:              $gray-800 !default;
 $headings-color:              $gray-800 !default;
 
 // Tables

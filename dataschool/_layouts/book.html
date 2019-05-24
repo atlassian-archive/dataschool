@@ -1,11 +1,26 @@
 ---
 layout: default
 ---
-<p>{{ page.description }}</p>
-
-Page slug is {{ page.slug }}
 {% assign bookchapters = site.chapters | where:'book_slug', page.slug | sort: 'number' %}
-
+<h1 class="mega-title">{{ page.title }}</h1>
+<p>Page slug is <code>{{ page.slug }}</code></p>
+<p>{{ content }}</p>
+<p>
+  <b>authors:</b>
+  {% for author_path in page.authors %}
+    {% assign a = site.people | where: 'path', author_path.author %}
+    {% assign author = a[0] %}
+    <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
+  {% endfor %}
+</p>
+<p>
+  <b>reviewers:</b>
+  {% for reviewer_path in page.reviewers %}
+    {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
+    {% assign reviewer = a[0] %}
+    <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>{% if forloop.last != true %},{% endif %}
+  {% endfor %}
+</p>
 <ul class="d-none">
 {% for chapter in bookchapters %}
   {% if currentsection != chapter.section %}

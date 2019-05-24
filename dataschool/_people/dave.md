@@ -1,6 +1,6 @@
 ---
 title: Dave Fowler  # aka name - annoying but we have to use title for name here
-image: /static/people/dave.jpg
+image: /assets/images/people/dave.jpg
 linkedin: https://www.linkedin.com/in/dave-fowler-482a169/
 twitter: __dave
 website: thingsilearned.com

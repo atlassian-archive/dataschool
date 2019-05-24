@@ -5,8 +5,8 @@
     height: 100%;
 
     .sidebar {
-      min-width: 300px;
-      max-width: 300px;
+      min-width: 250px;
+      max-width: 250px;
       border-right: 1px solid $gray-400;
       // background: aqua;
       padding: 0.75rem;
@@ -18,17 +18,17 @@
         // background: yellow;
         margin-bottom: 1rem;
       }
-      div.smallbook {
-        // background: blue;
-        min-height: 1rem;
+      .smallbook {
+        margin-bottom: 1rem;
         img {
+          margin-bottom: 0.5rem;
         }
       }
       ul.components {
-        padding: 0;
+        padding: 0 0 1rem;
         border-bottom: 1px solid $gray-400;
         // background: orange;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1.25rem;
 
         li.book-section {
           // background: teal;
@@ -69,7 +69,7 @@
     }
 }
 .sidebar {
-  left: -300px;
+  left: -250px;
 }
 .content {
   left: 0;
@@ -80,12 +80,12 @@
     left: 0;
   }
   .content {
-    left: 300px;
+    left: 250px;
   }
 }
 .wrapper.without-sidebar {
   .sidebar {
-    left: -300px;
+    left: -250px;
   }
   .content {
     left: 0;
@@ -96,7 +96,7 @@
     left: 0;
   }
   .content {
-    left: 300px;
+    left: 250px;
   }
 }
 

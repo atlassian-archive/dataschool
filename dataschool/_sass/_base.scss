@@ -29,34 +29,83 @@ body {
     font-size: 66.6667%;
     font-family: "Open Sans", Helvetica, sans-serif;
     font-weight: 600;
-    line-height: 1.45;
+    line-height: 1.5;
     color: $text-color;
     background-color: $background-color;
 }
 
+// TYPOGRAPHY
 // type size reset
-h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1rem;
+h1, h2, h3, h4, h5, h6 {
+  margin: 2rem 0 1rem;
   line-height: 1.15;
-}
-h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
-
+h4, h5, h6 {
+  color: $text-color;
+}
+h1.mega-title {font-size: 2.986em;}
+h1.title {font-size: 2.488em;}
 h1 {
   margin-top: 0;
-  font-size: 3.052em;
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 400;
+  font-size: 2.074em;
 }
-h2 {font-size: 2.441em;}
-h3 {font-size: 1.953em;}
-h4 {font-size: 1.563em;}
-h5 {font-size: 1.25em;}
-p {margin-bottom: 1.25em;}
-small, .small-font {font-size: 0.8em;}
+h2 {font-size: 1.728em;}
+h3 {font-size: 1.44em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: 1em; font-style: italic;}
+h6 {font-size: 0.833em; text-transform: uppercase;}
 
+small, .text_small {font-size: 0.833em;}
+
+blockquote p {
+  border-left: 5px solid $secondary;
+  margin-left: -15px;
+  padding-left: 10px;
+  font-style: italic;
+}
+pre, pre.highlight, code {
+  background: $gray-100;
+  font-size: 0.83333em;
+  font-weight: 400;
+  border-radius: 0.125em;
+}
+pre {
+  padding: 0.5rem;
+  border: 1px solid $gray-400;
+}
+code {
+  padding: 0.125em;
+}
+kbd {
+  padding: 0.125em 0.25em;
+  border-radius: 0.25em;
+}
+
+article, .home-hero {
+  font-size: 1.2em;
+}
+article, section.page {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  h1, h2, h3, h4, h5, h6, p, ul, ol, code, pre, blockquote {
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+article {
+  p, li {
+    font-family: $serif-font-loadout;
+    font-weight: 400;
+  }
+}
+// END TYPOGRAPHY
+
+.btn {
+  font-weight: 600;
+  border-radius: 0.25em;
+}
 
 // CUSTOM UTILITY CLASSES
 .centered {
@@ -64,19 +113,4 @@ small, .small-font {font-size: 0.8em;}
 }
 .height-3 {
   height: 3rem;
-}
-
-article, .home-hero {
-  font-size: 1.25em;
-}
-
-article {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-
-  h1, h2, h3, h4, h5, h6, p, ul, ol, code, pre {
-    max-width: 28rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }

@@ -1,6 +1,6 @@
 ---
 title: Tim Miller # aka name - annoying but we have to use title for name here
-image: /static/people/tim.jpg
+image: /assets/images/people/tim.jpg
 linkedin:
 twitter:
 website:
