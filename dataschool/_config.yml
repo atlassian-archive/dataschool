@@ -26,8 +26,6 @@ sqlboxurl: "https://sqlbox.herokuapp.com/"
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
 
 collections:
   people:
@@ -92,3 +90,10 @@ defaults:
 gems:
   - jekyll-last-modified-at
   - jekyll-sitemap
+  - jekyll-feed
+
+
+feed:
+  collections:
+    chapters:
+      path: "/chapters.xml"
