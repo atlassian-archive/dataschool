@@ -1,14 +1,15 @@
 ---
 title: Contributors and Reviewers
-
+layout: default
 ---
-{% for person in site.people %}
-  <person>
-  <p>
+<h1>Contributors of Data School</h1>
+<ul class="contributors-list list-unstyled">
+  {% for person in site.people %}
+    <li>
       <a href="{{ person.url }}">
         <img src="{{ person.image }}">
         {{ person.title }}
       </a>
-  </p>
-  </person>
-{% endfor %}
+    </li>
+  {% endfor %}
+</ul>

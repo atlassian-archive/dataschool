@@ -10,9 +10,9 @@
     <li><a href="/books/">Slack Community</a></li>
   </ul>
   {% if page.layout == "chapter" or page.layout == "book" %}
-    <!-- {% assign book = site.books | where:'slug', page.book %} -->
-    <!-- {% assign book = book[0] %} -->
-    {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %} 
+    {% assign book = site.books | where:'slug', page.book_slug %}
+    {% assign book = book[0] %}
+    {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
     <!-- showing current book -->
     {% include smallbook.html %}
     <!-- building the chapter list -->
@@ -37,7 +37,6 @@
         </ul>
       </li>
     </ul> -->
-
     <!-- non-collapsing sections -->
     <ul class="list-unstyled components">
       {% for chapter in bookchapters %}

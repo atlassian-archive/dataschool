@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<header>
-  <h1>{{ page.title | escape }}</h1>
-  <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
-  {% for author in page.authors %}
-    <p>{{ author.person.title }}</p>
-  {% endfor %}
-</header>
-<section>
+<article>
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+    <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
+    {% for author in page.authors %}
+      <p>{{ author.person.title }}</p>
+    {% endfor %}
+  </header>
   {{ content }}
-</section>
+</article>
 <p>
   <b>authors:</b>
   {% for author_path in page.authors %}

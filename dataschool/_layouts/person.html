@@ -4,28 +4,23 @@ layout: default
 {% assign person = page %}
 {% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
 {% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.slug" | sort: 'last_modified' %}
-<img src="{{ person.image }}">
 
-<p>
-  <b>title:</b>
-  {{ person.job_title }} at {{ person.company }}
-</p>
-<p>
-  <b>bio:</b>
-  {{ person.bio }}
-</p>
+<p class=""><img src="{{ person.image }}"></p>
 
-<a href="{{ person.linkedin }}">LinkedIn</a>
-<b>twitter:</b> <a href="{{ person.twitter }}">{{ person.twitter }}</a>
-<b>website:</b> <a href="{{ person.website }}">{{ person.website }}</a>
+<h1>{{ person.title }}</h1>
+<h2>{{ person.job_title }} at {{ person.company }}</h2>
+<h2>{% if person.is_contributer %}Contributor{% else %}Reviewer{% endif %} at Data School</h2>
 
-<p>
-{% if person.is_contributer %}
-   Contributor
-{% else %}
-   Reviewer
+{{ content }}
+
+{% if person.twitter or person.linkedin or person.website %}
+  <h3>Social</h3>
+  <ul>
+    {% if person.linkdedin %}<li><a href="{{ person.linkedin }}">LinkedIn</a></li>{% endif %}
+    {% if person.twitter %}<li><b>twitter:</b> <a href="{{ person.twitter }}">{{ person.twitter }}</a></li>{% endif %}
+    {% if person.website %}<li><b>website:</b> <a href="{{ person.website }}">{{ person.website }}</a></li>{% endif %}
+  </ul>
 {% endif %}
-</p>
 
 {% if authored_chapters %}
   <h2>{{ authored_chapters | size }} Contributions</h2>
@@ -35,7 +30,6 @@ layout: default
     </p>
   {% endfor %}
 {% endif %}
-
 
 {% if reviewed_chapters %}
   <h2>{{ reviewed_chapters | size }} Reviews</h2>

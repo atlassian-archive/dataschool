@@ -1,6 +1,6 @@
 ---
 title: Matt David # aka name - annoying but we have to use title for name here
-image: /static/people/matt.jpg
+image: /assets/images/people/matt.jpg
 linkedin:
 twitter:
 website:
