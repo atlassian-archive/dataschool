@@ -40,6 +40,7 @@
     <!-- non-collapsing sections -->
     <ul class="list-unstyled components">
       {% for chapter in bookchapters %}
+        {% if last_chapter_url == chapter.url %}{% assign next_chapter = chapter %}{% endif %}
         {% if currentsection != chapter.section %}
           {% assign currentsection = chapter.section %}
           <li class="book-section">{{ currentsection }}</li>
@@ -49,6 +50,7 @@
             {{ chapter.title }}
           </a>
         </li>
+      {% assign last_chapter_url = chapter.url %}
       {% endfor %}
     </ul>
   {% endif %}

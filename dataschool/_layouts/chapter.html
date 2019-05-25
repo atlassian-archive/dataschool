@@ -10,6 +10,9 @@ layout: default
     {% endfor %}
   </header>
   {{ content }}
+  {% if next_chapter %}
+    <a href="{{ next_chapter.url }}">Next: {{ next_chapter.title }}</a>
+  {% endif %}
 </article>
 <p>
   <b>authors:</b>
