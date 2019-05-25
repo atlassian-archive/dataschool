@@ -89,5 +89,6 @@ defaults:
       image: static/books/images/learn-sql.jpg  # TODO set a real default image
 
 
-plugins:
+gems:
   - jekyll-last-modified-at
+  - jekyll-sitemap
