@@ -18,7 +18,7 @@ contribute - you can just edit and commit the markdown files, but if you want to
 run a local copy it's fairly simple:
 
 ```
-cd dataschool
+cd dataschool/dataschool
 bundle install --path vendor/bundle
 bundle exec jekyll serve --watch
 ```
