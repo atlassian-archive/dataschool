@@ -25,6 +25,8 @@ bundle exec jekyll serve --watch
 
 It will then be available at http://localhost:4000
 
+Note - do use port 4000 and "localhost" vs 127.0.0.1 otherwise SQLBox will not work for you on your localhost.
+
 
 ## Organization
 
