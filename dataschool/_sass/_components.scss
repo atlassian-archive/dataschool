@@ -9,7 +9,7 @@
     margin-left: 3rem;
     img {
       box-shadow: 2px 2px 10px 0 rgba(0,0,0,.2), 0 4px 25px 0 rgba(0,0,0,.2);
-      max-width: 16rem;
+      max-width: 14rem;
     }
   }
   &::before {
@@ -67,18 +67,29 @@
   }
 }
 
-.contributors-list {
+.contributors-list, .book-list {
+  list-style: none;
   li {
     margin-bottom: 1rem;
     a {
       display: flex;
       align-items: flex-start;
-      img {
-        width: 6rem;
-        margin-right: 0.5rem;
+      .description {
+        flex-grow: 1;
+        h2 {
+          margin-top: 0;
+        }
       }
     }
   }
+}
+.contributors-list li a img {
+  width: 6rem;
+  margin-right: 0.5rem;
+}
+.book-list li a img {
+  width: 6rem;
+  margin-left: 1rem;
 }
 
 /* styles for Hubspot forms */

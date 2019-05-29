@@ -43,7 +43,7 @@ layout: default-breakout
     </div>
   </div>
   <div class="row">
-    <div class="col-sm centered">
+    <div class="col-sm centered mt-5 mb-3">
       <h2>Get new data chapters sent right to your Inbox</h2>
       {% include newsletter-form.html %}
     </div>

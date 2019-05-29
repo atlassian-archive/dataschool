@@ -10,7 +10,7 @@ html, body {
 html {
   min-height: 100%;
   font-size: 150%;
-
+  background: #F6F6F6;
   // @media(max-width: 57em) {
   //     font-size: 141%;
   // }
@@ -44,7 +44,13 @@ h1, h2, h3, h4, h5, h6 {
 h4, h5, h6 {
   color: $text-color;
 }
-h1.mega-title {font-size: 2.986em;}
+h1.mega-title, h1.title {
+  font-family: $serif-font-loadout;
+}
+h1.mega-title {
+  font-size: 2.986em;
+  font-style: italic;
+}
 h1.title {font-size: 2.488em;}
 h1 {
   margin-top: 0;
@@ -105,6 +111,7 @@ article {
 .btn {
   font-weight: 600;
   border-radius: 0.25em;
+  font-size: 1em;
 }
 
 // CUSTOM UTILITY CLASSES

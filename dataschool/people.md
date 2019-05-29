@@ -2,7 +2,7 @@
 title: Contributors and Reviewers
 layout: default
 ---
-<h1>Contributors of Data School</h1>
+<h1 class="title centered">Contributors of Data School</h1>
 <ul class="contributors-list list-unstyled">
   {% for person in site.people %}
     <li>
