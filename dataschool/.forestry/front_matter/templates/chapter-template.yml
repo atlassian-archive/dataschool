@@ -10,6 +10,7 @@ fields:
   label: section
   description: If the book should be broken up into sections, choose which section
     does this chapter belongs to
+  default: "book"
 - type: number
   name: number
   label: number
@@ -29,12 +30,12 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: author
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
 - name: reviewers
   type: field_group_list
@@ -48,12 +49,12 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: reviewer
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: reviewer
   label: reviewers
 - name: image
@@ -77,8 +78,8 @@ fields:
     type: list
     config:
       use_select: true
-      min: 
-      max: 
+      min:
+      max:
       source:
         type: pages
         section: people

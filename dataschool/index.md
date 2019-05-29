@@ -25,31 +25,26 @@ layout: default-breakout
   <div class="row">
     <div class="col-sm">
       <h2>Featured Chapters</h2>
-      {% assign bookchapters = site.chapters | where:'is_featured', 'true' | sort: 'number' %}
+       {% assign bookchapters = site.chapters | where:'is_featured', 'true' | sort: 'number' %} <!-- maybe should be sorted by date updated? -->
       <ul class="chapter-list list-unstyled">
         {% for chapter in bookchapters %}
           <li>
-           <a href="{{ chapter.url }}">
-             <div class="thumbnail-img">
-               <!-- thumbnail img -->
-             </div>
-             <div class="chapter-info">
-               <h3>{{ chapter.title }}</h3>
-               <p>{{ chapter.summary }}</p>
-             </div>
-           </a>
+            {% assign book = site.books | where:'book_slug', chapter.book_slug %}
+            {% assign book = book[0] %}
+            <div class="chapter-info">
+              <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
+              <em>From <a href="{{ book.slug }}">{{ book.title }}</a></em>
+              <p>{{ chapter.summary }}</p>
+            </div>
+            <a href="{{ chapter.url }}" class="thumbnail-img" style="background-image: url('{{chapter.image}}');"></a>
           </li>
         {% endfor %}
       </ul>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm centered">
       <h2>Get new data chapters sent right to your Inbox</h2>
-      <!--[if lte IE 8]>
-      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-      <![endif]-->
-      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
       {% include newsletter-form.html %}
     </div>
   </div>

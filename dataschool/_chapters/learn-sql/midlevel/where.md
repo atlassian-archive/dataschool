@@ -8,6 +8,7 @@ authors:
 - author: _people/dave.md
 reviewers:
 - reviewer: _people/matt.md
+image: ''
 is_featured: false
 ---
 [LIMITing queries](../limit/) is one way to filter down result sets, but we can get a lot more specific with the WHERE clause.  The WHERE command is followed by the conditions you'd like to filter by.

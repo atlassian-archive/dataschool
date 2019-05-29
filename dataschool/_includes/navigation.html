@@ -16,7 +16,8 @@
     <!-- showing current book -->
     {% include smallbook.html %}
     <!-- building the chapter list -->
-    <!-- <ul class="list-unstyled components">
+    <!-- collapsing sections -->
+    <ul class="list-unstyled components">
       <li class="d-none">
         <ul>
           {% for chapter in bookchapters %}
@@ -36,9 +37,9 @@
           {% endfor %}
         </ul>
       </li>
-    </ul> -->
+    </ul>
     <!-- non-collapsing sections -->
-    <ul class="list-unstyled components">
+    <!-- <ul class="list-unstyled components">
       {% for chapter in bookchapters %}
         {% if last_chapter_url == chapter.url %}{% assign next_chapter = chapter %}{% endif %}
         {% if currentsection != chapter.section %}
@@ -52,6 +53,6 @@
         </li>
       {% assign last_chapter_url = chapter.url %}
       {% endfor %}
-    </ul>
+    </ul> -->
   {% endif %}
 </nav>

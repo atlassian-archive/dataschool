@@ -9,6 +9,7 @@ authors:
 reviewers:
 - reviewer: _people/matt.md
 is_featured: false
+image: ''
 ---
 By default results are returned in the order that they’re stored in the database.  But sometimes you’ll want to sort them differently.  You can do that with the "ORDER BY" command at the end of your queries as shown in the expanded version of our SQL template here
 

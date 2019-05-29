@@ -36,20 +36,35 @@
 .chapter-list {
   li {
     margin-bottom: 1rem;
-
-    a {
-      display: flex;
+    display: flex;
+    align-items: stretch;
+    .chapter-info {
+      flex-grow: 1;
+      h3 {
+        margin-top: 0.5rem;
+        i {
+          color: $primary;
+          opacity: 0.25;
+        }
+        &:hover {
+          i {
+            opacity: 1;
+          }
+        }
+      }
+      em, p {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
     }
-  }
-  .thumbnail-img {
-    background: yellow;
-    min-width: 9rem;
-    height: 6rem;
-    margin-right: 1rem;
-  }
-  .chapter-info {
-    h3 {
-      margin-top: 0;
+    .thumbnail-img {
+      margin-left: 1rem;
+      background-position: 50% 50%;
+      height: 6rem;
+      min-width: 9rem;
+      max-width: 9rem;
+      background-size: cover;
+      border: 1px solid $gray-400;
     }
   }
 }
