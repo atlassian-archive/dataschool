@@ -56,9 +56,9 @@ layout: default-breakout
       <div class="col centered">
         <div class="footer-links">
           <h4>Created by</h4>
+          <img src="/assets/images/chartio-logo-black-tbg.svg" alt="Chartio logo" class="height-3">
+          <p><a href="https://chartio.com/about/legal/">Terms</a> • <a href="https://chartio.com/about/legal/privacy/">Privacy &amp; Cookies</a></p>
         </div>
-        <img src="/assets/images/chartio-logo-black-tbg.svg" alt="Chartio logo" class="height-3">
-        <p><a href="https://chartio.com/about/legal/"><strong class="bold-text">Terms</strong></a><strong class="bold-text"> • </strong><a href="https://chartio.com/about/legal/privacy/"><strong class="bold-text">Privacy &amp; Cookies</strong></a></p>
       </div>
     </div>
   </div>
