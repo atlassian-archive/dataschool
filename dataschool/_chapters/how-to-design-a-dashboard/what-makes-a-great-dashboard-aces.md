@@ -1,7 +1,7 @@
 ---
 title: What Makes a Great Dashboard (ACES)
-section: ''
-number: 3
+section: 'book'
+number: 30
 authors:
 - author: _people/tim.md
 - author: _people/matt.md

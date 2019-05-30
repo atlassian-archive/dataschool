@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<h1 class="title centered">Data School Styles</h1>
 
 # Heading Size One
 

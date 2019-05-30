@@ -10,6 +10,7 @@ fields:
   label: section
   description: If the book should be broken up into sections, choose which section
     does this chapter belongs to
+  default: book
 - type: number
   name: number
   label: number
@@ -88,6 +89,6 @@ fields:
   label: writers
 pages:
 - dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
-- dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
-- dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
 - dataschool/_chapters/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces.md
+- dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
+- dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md

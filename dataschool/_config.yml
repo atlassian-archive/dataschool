@@ -62,6 +62,7 @@ defaults:
       permalink: "/:path/"
       is_hidden: false
       is_featured: false
+      section: "book"
   - scope:
       path: "static/"
     values:

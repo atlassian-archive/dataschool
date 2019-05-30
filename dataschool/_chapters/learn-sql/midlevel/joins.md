@@ -8,6 +8,7 @@ authors:
 - author: _people/dave.md
 reviewers:
 - reviewer: _people/matt.md
+image: ''
 is_featured: false
 ---
 So far we've been working with each table separately, but as you may have guessed by the tables being named *tracks*, *albums*, and *artists* and some of the columns having names like *album_id*, it is possible to JOIN these tables together to fetch results from both!

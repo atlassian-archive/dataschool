@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
   <header>
-    <h1>{{ page.title | escape }}</h1>
+    <h1 class="title">{{ page.title | escape }}</h1>
     <p>last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</p>
     {% for author in page.authors %}
       <p>{{ author.person.title }}</p>

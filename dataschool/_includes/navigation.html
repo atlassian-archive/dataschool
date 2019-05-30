@@ -3,11 +3,12 @@
   <a class="sidebar-logo" href="/">
     <img src="/uploads/data-school-logo.png"/>
   </a>
-  <ul class="list-unstyled components">
-    <li><a href="/books/">Books</a></li>
-    <li><a href="/mission/">Mission</a></li>
+  <ul class="list-unstyled main-nav components">
+    <li><a href="/books/">Web Books</a></li>
     <li><a href="/people/">Contributors</a></li>
-    <li><a href="/books/">Slack Community</a></li>
+    <li><a href="/mission/">Mission</a></li>
+    <li><a href="#">Contribute</a></li>
+    <li><a href="#">Slack Community</a></li>
   </ul>
   {% if page.layout == "chapter" or page.layout == "book" %}
     {% assign book = site.books | where:'slug', page.book_slug %}
@@ -16,7 +17,7 @@
     <!-- showing current book -->
     {% include smallbook.html %}
     <!-- building the chapter list -->
-    <!-- <ul class="list-unstyled components">
+    <ul class="list-unstyled components">
       <li class="d-none">
         <ul>
           {% for chapter in bookchapters %}
@@ -25,7 +26,7 @@
                 </ul>
                 </li>
                 <li class="book-section ">
-                  <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">{{ currentsection }}</a>
+                  <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle {% if currentsection == 'book' %}d-none{% endif %}">{{ currentsection }}</a>
                   <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection}}">
             {% endif %}
             <li {% if page.url == chapter.url %}class="active"{% endif %}>
@@ -36,22 +37,6 @@
           {% endfor %}
         </ul>
       </li>
-    </ul> -->
-    <!-- non-collapsing sections -->
-    <ul class="list-unstyled components">
-      {% for chapter in bookchapters %}
-        {% if last_chapter_url == chapter.url %}{% assign next_chapter = chapter %}{% endif %}
-        {% if currentsection != chapter.section %}
-          {% assign currentsection = chapter.section %}
-          <li class="book-section">{{ currentsection }}</li>
-        {% endif %}
-        <li {% if page.url == chapter.url %}class="active"{% endif %}>
-          <a href="{{ chapter.url }}">
-            {{ chapter.title }}
-          </a>
-        </li>
-      {% assign last_chapter_url = chapter.url %}
-      {% endfor %}
     </ul>
   {% endif %}
 </nav>
