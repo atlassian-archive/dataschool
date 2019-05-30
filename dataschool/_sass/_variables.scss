@@ -46,6 +46,7 @@ $primary:           #206595;
 // $secondary:         $indigo !default;
 $secondary:         #fbc657;
 $secondary-light:   #fff3db;
+$secondary-dark:    #F3B42F;
 $success:           $green !default;
 $info:              $cyan !default;
 $warning:           $yellow !default;
@@ -77,6 +78,7 @@ $border-radius-sm:            .3rem !default;
 
 $serif-font-loadout:          "Gentium Book Basic", "Times New Roman", serif;
 $sans-font-loadout:           "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+$mono-font-loadout:           "Roboto Mono", monospace;
 
 $headings-font-family:        $sans-font-loadout;
 // $headings-color:              $gray-800 !default;

@@ -1,6 +1,7 @@
 ---
 title: "SELECT"
 short: SELECT
+meta_title: ''
 description: "Learn the SELECT SQL statement with your PostgreSQL database in this interactive SQL data tutorial. The SELECT statement is a basic SQL command that easily allows you to interact with the data in your PostgreSQL database."
 number: 20
 section: basic

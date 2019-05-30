@@ -1,5 +1,6 @@
 ---
 title: Content Library
+meta_title: ''
 layout: default
 ---
 <h1 class="title centered">The Data School Library</h1>

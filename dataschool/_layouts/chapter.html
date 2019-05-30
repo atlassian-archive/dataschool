@@ -10,23 +10,32 @@ layout: default
     {% endfor %}
   </header>
   {{ content }}
+  <a class="max-width-content btn btn-primary mt-5" href="{{ next_chapter.url }}">Next: Next chapter title{{ next_chapter.title }}</a>
   {% if next_chapter %}
-    <a href="{{ next_chapter.url }}">Next: {{ next_chapter.title }}</a>
+
   {% endif %}
 </article>
 <p>
-  <b>authors:</b>
-  {% for author_path in page.authors %}
-    {% assign a = site.people | where: 'path', author_path.author %}
-    {% assign author = a[0] %}
-    <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
-  {% endfor %}
+  <h2>Authors</h2>
+  <ul>
+    {% for author_path in page.authors %}
+      {% assign a = site.people | where: 'path', author_path.author %}
+      {% assign author = a[0] %}
+      <li>
+        <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </p>
 <p>
-  <b>reviewers:</b>
-  {% for reviewer_path in page.reviewers %}
-    {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
-    {% assign reviewer = a[0] %}
-    <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>{% if forloop.last != true %},{% endif %}
-  {% endfor %}
+  <h2>Reviewers</h2>
+  <ul>
+    {% for reviewer_path in page.reviewers %}
+      {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
+      {% assign reviewer = a[0] %}
+      <li>
+        <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>{% if forloop.last != true %},{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </p>

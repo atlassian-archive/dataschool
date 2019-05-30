@@ -9,6 +9,7 @@ reviewers:
 - reviewer: _people/dave.md
 - reviewer: _people/matt.md
 image: ''
+meta_title: ''
 summary: Learn the best practices behind dashboard design to support decision making
 is_featured: false
 ---

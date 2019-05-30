@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Tags
+meta_title: ''
 ---
 <ul>
   {% for chapter in site.chapters %}

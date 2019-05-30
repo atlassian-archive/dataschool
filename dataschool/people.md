@@ -1,5 +1,6 @@
 ---
 title: Contributors and Reviewers
+meta_title: ''
 layout: default
 ---
 <h1 class="title centered">Contributors of Data School</h1>
