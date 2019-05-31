@@ -1,20 +1,27 @@
 // SQL BOX CSS
 
 sqlbox {
+  margin-bottom: 1rem;
   .result .pagination-detail {
     display: none;
   }
   .sqlerror {
-    padding: 0.5rem;
-    background-color: $primary;
-    color: #fff;
+    padding: 0.5rem 0.75rem;
+    background-color: $secondary-light;
+    color: $text-color;
     border-radius: 5px;
+    font-family: $mono-font-loadout;
     .error-help {
-      width: 100%;
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.83333em;
+      font-weight: 600;
       text-align: right;
       color: $primary;
       border-color: $secondary;
+      font-family: $sans-font-loadout;
       &:hover {
+        color: $text-color;
         background: $secondary;
       }
     }
@@ -35,7 +42,7 @@ sqlbox {
   }
   th:not(.table-title) { text-transform: none; }
   .correct {
-    background-color: #A0E2BC;
+    background-color: #e4ffef;
   }
   .incorrect {
     background-color: #f99;
@@ -47,7 +54,7 @@ sqlbox {
     display: none; // hidden by default.
   }
   .CodeMirror {
-    font-family: 'Roboto Mono';
+    font-family: $mono-font-loadout;
     margin-bottom: 1rem;
     padding: 0.5rem 0.75rem;
     border-radius: 5px;
@@ -89,7 +96,42 @@ sqlbox {
     }
   }
 }
-
+sqlbox {
+  display: block;
+  max-width: 28rem;
+  margin: 0 auto;
+  font-size: 0.8333333em;
+}
+.result {
+  .table-hover tbody tr:hover {
+    background: $secondary-light;
+  }
+  .page-item {
+    a.page-link {
+      background: $background-color;
+      color: $text-color;
+      font-family: $sans-font-loadout;
+      font-weight: 600;
+      border-color: $gray-400;
+      &:hover {
+        background: $secondary-light;
+      }
+    }
+    &.active {
+      .page-link {
+        background: $secondary;
+        color: $text-color;
+        border-color: $secondary-dark;
+      }
+    }
+    &.disabled {
+      .page-link {
+        background: $gray-200;
+        color: $text-color;
+      }
+    }
+  }
+}
 
 .quizbox {
   h3.question {

@@ -1,5 +1,6 @@
 ---
 title: Learn SQL
+meta_title: ''
 book_slug: learn-sql
 authors:
   - author: _people/dave.md

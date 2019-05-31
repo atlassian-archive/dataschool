@@ -1,6 +1,7 @@
 ---
 title: "Quick Introductory SQL Concepts"
 short: Introduction
+meta_title: ''
 description: "Learn how to use SQL with your PostgreSQL database. In this interactive SQL data tutorial, get an introduction that is designed to get you querying your PostgreSQL database as quickly as possible. Learn SQL basics, tables and SQLbox."
 number: 10
 section: basic

@@ -167,6 +167,13 @@ form.hs-form {
 .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.btn.btn-default {
+  background: $gray-200;
+  border-color: $gray-400;
+  &:hover {
+    background: $gray-300;
+  }
+}
 
 .footer-links {
   margin-bottom: 2rem;

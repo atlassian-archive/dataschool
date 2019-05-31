@@ -7,6 +7,7 @@ authors:
 reviewers:
 - reviewer: _people/dave.md
 image: '/uploads/intro-dash-1.jpg'
+meta_title: ''
 summary: Dashboards are the way data people help the rest of an organization make
   data driven decisions.
 is_featured: true
