@@ -10,14 +10,13 @@ layout: default
     {% endfor %}
   </header>
   {{ content }}
-  <a class="max-width-content btn btn-primary mt-5" href="{{ next_chapter.url }}">Next: Next chapter title{{ next_chapter.title }}</a>
   {% if next_chapter %}
-
+    <a class="max-width-content btn btn-primary mt-5" href="{{ next_chapter.url }}">Next: Next chapter title{{ next_chapter.title }}</a>
   {% endif %}
 </article>
 <p>
   <h2>Authors</h2>
-  <ul>
+  <ul class="no-pad-list">
     {% for author_path in page.authors %}
       {% assign a = site.people | where: 'path', author_path.author %}
       {% assign author = a[0] %}
@@ -29,7 +28,7 @@ layout: default
 </p>
 <p>
   <h2>Reviewers</h2>
-  <ul>
+  <ul class="no-pad-list">
     {% for reviewer_path in page.reviewers %}
       {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
       {% assign reviewer = a[0] %}
@@ -39,3 +38,9 @@ layout: default
     {% endfor %}
   </ul>
 </p>
+<div class="row">
+  <div class="col-sm centered mt-5 mb-3">
+    <h2>Get new data chapters sent right to your Inbox</h2>
+    {% include newsletter-form.html %}
+  </div>
+</div>

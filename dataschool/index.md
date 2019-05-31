@@ -15,8 +15,8 @@ meta_title: ''
       {% assign book = site.books | where:'is_featured', 'true' %}
       {% assign book = book[0] %}
       <div class="smallbook">
-        <a href="{{ book.url }}">
-          <img src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
+        <a href="{{ book.url }}" class="hover-link">
+          <img class="hover-img" src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
         </a>
       </div>
     </div>
