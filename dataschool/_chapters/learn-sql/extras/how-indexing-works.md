@@ -7,7 +7,8 @@ authors:
 reviewers:
 - reviewer: _people/matt.md
 image: ''
-summary: ''
+summary: Learn how indexing works and why it is a critical part of optimizing your
+  data warehouse
 is_featured: false
 writers:
   writers: []
