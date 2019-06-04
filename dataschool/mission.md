@@ -1,6 +1,7 @@
 ---
 title: Our Mission
-meta_title: ''
+tags:
+- mission
 
 ---
 <h1 class="title centered">Our Mission</h1>
