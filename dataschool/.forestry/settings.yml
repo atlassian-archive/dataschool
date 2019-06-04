@@ -22,7 +22,7 @@ sections:
   label: People
   create: all
   match: "**/*"
-upload_dir: dataschool/uploads
+upload_dir: dataschool/assets/images
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
