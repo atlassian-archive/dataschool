@@ -4,7 +4,7 @@ meta_title: ''
 book_slug: learn-sql
 authors:
   - author: _people/dave.md
-cover_image: /uploads/learn-sql-cover.png
+cover_image: /assets/images/book-covers/learn-sql.png
 main_color: "#1B753A"
 is_hidden: false
 is_featured: true

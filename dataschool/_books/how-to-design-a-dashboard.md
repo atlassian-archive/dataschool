@@ -5,7 +5,7 @@ book_slug: how-to-design-a-dashboard
 authors:
 - author: _people/matt.md
 - author: _people/tim.md
-cover_image: /uploads/design-a-dashboard-cover.png
+cover_image: /assets/images/book-covers/how-to-design-a-dashboard.png
 main_color: "#185775"
 is_hidden: false
 is_featured: false
