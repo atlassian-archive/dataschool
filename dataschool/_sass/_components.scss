@@ -4,12 +4,12 @@
   padding: 0 0 5rem;
   .container {
     display: flex;
+    flex-direction: column;
   }
   .featured-book {
-    margin-left: 3rem;
     img {
       box-shadow: 2px 2px 10px 0 rgba(0,0,0,.2), 0 4px 25px 0 rgba(0,0,0,.2);
-      max-width: 14rem;
+      width: 100%;
     }
   }
   &::before {
@@ -30,11 +30,23 @@
     z-index: 1;
   }
 }
+@media only screen and (min-width: 30rem) {
+  .home-hero .container {
+    flex-direction: row;
+    .featured-book {
+      margin-left: 3rem;
+      img {
+        max-width: 14rem;
+      }
+    }
+  }
+}
 // chapter list, featured chapters on homepage
 .chapter-list {
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: flex;
+    flex-direction: column;
     align-items: stretch;
     .chapter-info {
       flex-grow: 1;
@@ -56,14 +68,32 @@
       }
     }
     .thumbnail-img {
-      margin-left: 1rem;
+      margin: 1rem 0 0;
       background-position: 50% 50%;
-      height: 6rem;
-      min-width: 9rem;
-      max-width: 9rem;
+      height: 8rem;
+      width: 100%;
       background-size: cover;
       border: 1px solid $gray-400;
     }
+  }
+}
+@media only screen and (min-width: 30rem) {
+  .chapter-list li {
+    flex-direction: row;
+    .thumbnail-img {
+      margin-left: 1rem;
+      height: 6rem;
+      min-width: 9rem;
+      max-width: 9rem;
+    }
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .chapter-list li .thumbnail-img {
+    margin-left: 1rem;
+    height: 9rem;
+    min-width: 13.5rem;
+    max-width: 13.5rem;
   }
 }
 .book-list {
@@ -82,12 +112,17 @@
     }
   }
 }
+@media only screen and (min-width: 30rem) {
+  .book-list li a {
+    flex-direction: row;
+  }
+}
 .contributors-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   li {
     display: inline-block;
-    width: 33.3333%;
     padding: 0.5rem;
     h2, h3 {
       font-size: 1em;
@@ -110,6 +145,21 @@
       h3 {
         text-decoration: underline;
       }
+    }
+  }
+}
+@media only screen and (min-width: 25rem) {
+  .contributors-list {
+    flex-direction: row;
+    li {
+      width: 50%;
+    }
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .contributors-list {
+    li {
+      width: 33.3333%;
     }
   }
 }
