@@ -42,6 +42,6 @@ COPY (SELECT * FROM tracks WHERE genre_id = 6) TO '/Users/dave/Downloads/blues_t
 
 After you have run the copy command you can then open the .CSV file(s) with Excel or your favorite text editor.
 
-![figure 1](/assets/images/learn-sql/sql-tutorial-export-csv.png)
+![figure 1](/assets/images/learn-sql/extras/export-csv/sql-tutorial-export-csv.png)
 
 Did you know, that you can also import data from CSV or Excel files into PostgreSQL?

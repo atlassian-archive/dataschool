@@ -1,20 +1,14 @@
 ---
-section: book
-title: How Indexing Works
-number: 
+title: "How to use Indexing to Improve Database Queries"
+short: "How Indexing Works"
 authors:
 - author: _people/blake.md
 reviewers:
 - reviewer: _people/matt.md
-image: ''
-summary: Learn how indexing works and why it is a critical part of optimizing your
+description: Learn how indexing works and why it is a critical part of optimizing your
   data warehouse
-is_featured: false
-writers:
-  writers: []
-published: false
-
 ---
+
 # **How indexing works**
 
 ## **What is Indexing?**
@@ -25,23 +19,23 @@ Imagine you want to find a piece of information that is within a large database.
 
 _Visualization for finding the last entry_:
 
-![](https://lh6.googleusercontent.com/nFxhLi9R5jZ9bpiM8jdSESKE9dyxsUyGd54wZfEyykki4sh4IqLpzvCD9IAHGxVpkibkWx_4ipKPGtd45rhjPi2UQKEPqi8N554ATRqil3RqlmKNjBWJEbOTGp0NwDMyPsqBaybv =551x320)
+![](/assets/images/learn-sql/extras/how_to_index/BasicSearchGif.gif)
 
 If the table was ordered alphabetically, searching for a name could happen a lot faster because we could skip looking for the data in certain rows. If we wanted to search for “Zack” and we know the data is in alphabetical order we could jump down to halfway through the data to see if Zack comes before or after that row. We could then half the remaining rows and make the same comparison.
 
-![](https://lh5.googleusercontent.com/irHA_CuNNleu4e4KFxPRQoSwvmc5ZXd8K8wd_voQ_PfxuJF3oyax8KbQwD7aKClx9EvLEHG1yW8cHY-6X8cZYNHpBUB_-o22k4R4dnlxhWyX1CLc9KZTMuqPxw7t4p5gKbQ_5bvw =600x340)
+![](/assets/images/learn-sql/extras/how_to_index/BinarySearchGif.gif)
 
 This took 3 comparisons to find the right answer instead of 8 in the unindexed data.
 
 Indexes allow us to create sorted lists without having to create all new sorted tables, which would take up a lot of storage space.
 
-## **What exactly is an Index?**
+## **What Exactly is an Index?**
 
 An index is a structure that holds the field the index is sorting and a pointer from each record to their corresponding record in the original table where the data is actually stored. Indexes are used in things like a contact list where the data may be physically stored in the order you add people’s contact information but it is easier to find people when listed out in alphabetical order.
 
 Let's look at the index from the previous example and see how it maps back to the original Friends table:
 
-![](https://lh5.googleusercontent.com/ZsHH7_WdaMbXcKRP8siWYu_675NrDRuu2q1IcKP5MfY__Hxyaz5y1rFlMY3B3kCPxt5wTmczksSR0PYcm8O7GXes8YYXxb3juQjFERVrWIPEVUdqsBcq3KpqkX1ptADMOADdY8rb =624x209)
+![](/assets/images/learn-sql/extras/how_to_index/Index_pointsTo_table.png)
 
 We can see here that the table has the data stored ordered by an incrementing id based on the order in which the data was added. And the Index has the names stored in alphabetical order.
 
@@ -54,7 +48,7 @@ There are two types of databases indexes:
 
 Both clustered and non-clustered indexes are stored and searched as B-trees, a data structure similar to a [binary tree](https://en.wikipedia.org/wiki/Binary_tree). A [B-tree](https://en.wikipedia.org/wiki/B-tree) is a “self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time.” Basically it creates a tree-like structure that sorts data for quick searching.
 
-![](https://lh6.googleusercontent.com/leFRiw3oRgmEw6aK1TPSri7bwCTzdIpwdUe0iqVvc2M_0wC1bV1gVB-47wXY7dykPbhaYEgDWNGTC1DCp0EXvVpqVPPMItTougydH36OP1GPFcNuuhCw436vj-eCGPMxqNrlQ2jO =478x254)
+![](/assets/images/learn-sql/extras/how_to_index/binaryTreeImage.png)
 
 Here is a B-tree of the index we created. Our smallest entry is the leftmost entry and our largest is the rightmost entry. All queries would start at the top node and work their way down the tree, if the target entry is less than the current node the left path is followed, if greater the right path is followed. In our case it checked against Matt, then Todd, and then Zack.
 
@@ -72,15 +66,15 @@ Clustered indexes are the unique index per table that uses the primary key to or
 
 The clustered index will be automatically created when the primary key is defined:
 
-![](https://lh6.googleusercontent.com/0h_bROBHCQyGDEcty-lNUGpO5IbD0zNNaOFRDD2KSdRmVEfCy_9BM6kzTwCXV8Kb8vnsSsXU51PoPs0plVtwu8Kd6fvAyqPPuzuA-1Mi8pD8Hqh_BouFvaDuaTpgAM5hxGLFI4uJ =624x23)
+![](/assets/images/learn-sql/extras/how_to_index/CreateTable.png)
 
 Once filled in, that table would look something like this:
 
-![](https://lh6.googleusercontent.com/myVtLk6Azg-NDW_RKS4nUuIff4FGcndrwVKFemhZO6ogEYu0Yzz_Y78prIOKHt6Ba9Elz6hRZSMSomkouZcFGeKe6T7agW0UFEkZivHpLLhcxdIjirQTOlxUsIclz2Hr5Bnz9njZ =466x256)
+![](/assets/images/learn-sql/extras/how_to_index/friendsTable.png)
 
 The created table, “friends”, will have a clustered index automatically created, organized around the Primary Key “id” called “friends_pkey”:
 
-![](https://lh6.googleusercontent.com/TdsZNqXRNVhH11bKqlyU-h0-ddYhEcV4YoCZ81UCNZW25gzDe8Lwfdt7nOhissG_LHRelifFsg0JcWpkKmwlwKkh7xnkhcPYEMxPIZYPtBwULfix78q4jf3yArxCn3uOqfGVEQyq =624x235)
+![](/assets/images/learn-sql/extras/how_to_index/pkeyToTable.png)
 
 When searching the table by “id”, the ascending order of the column allows for optimal searches to be performed. Since the numbers are ordered, the search can navigate the B-tree allowing searches to happen in logarithmic time.
 
@@ -90,7 +84,7 @@ However, in order to search for the “name” or “city” in the table, we wo
 
 Non-clustered indexes are sorted references for a specific field, from the main table, that hold pointers back to the original entries of the table. The first example we showed is an example of a non-clustered table:
 
-![](https://lh5.googleusercontent.com/ZsHH7_WdaMbXcKRP8siWYu_675NrDRuu2q1IcKP5MfY__Hxyaz5y1rFlMY3B3kCPxt5wTmczksSR0PYcm8O7GXes8YYXxb3juQjFERVrWIPEVUdqsBcq3KpqkX1ptADMOADdY8rb =624x209)
+![](/assets/images/learn-sql/extras/how_to_index/Index_pointsTo_table.png)
 
 They are used to increase the speed of queries on the table by creating columns that are more easily searchable. Non-clustered indexes can be created by data analysts/ developers after a table has been created and filled.
 
@@ -98,9 +92,7 @@ Note: Non-clustered indexes are **not** new tables. Non-clustered indexes hold t
 
 You can think of these just like indexes in a book. The index points to the location in the book where you can find the data you are looking for.
 
-![](https://lh6.googleusercontent.com/SHbufo3B397EwQHtBscF7RsXj1grOUNACvbUqLuzURfBi-xFyO-GTekEkqLLYlMExvtISIUdEknAlO0ux9CHHU_AvDh_79kswGgz435Re-mbLx4x5KQc0SC_kgTl9J7bcpNcHVz8 =470x573)
-
-Image From: ![](https://www.oreilly.com/library/view/adobe-framemaker-11/9780133373677/graphics/12-00_index.jpg)
+![https://www.oreilly.com/library/view/adobe-framemaker-11/9780133373677/graphics/12-00_index.jpg](/assets/images/learn-sql/extras/how_to_index/Index.png)
 
 Non-clustered indexes point to memory addresses instead of storing data themselves. This makes them slower to query than clustered indexes but typically much faster than a non-indexed column.
 
@@ -110,15 +102,15 @@ You can create many non-clustered indexes. As of 2008, you can have up to 999 no
 
 To create an index to sort our friends’ names alphabetically:
 
-![](https://lh6.googleusercontent.com/KucQvSTE5lneIdITh6_usQHW8W1XjNjRfa2UmLsVvV4u4nTJTadEiuePXLWMu7QuLxDGXWvSUM8TkqF0VcehcbhtSrqPABP6FkRy4jv9HWsRjtF0VtFNit66pFhXojuGL9ZvQAxs =565x23)
+![](/assets/images/learn-sql/extras/how_to_index/createFriendIndex.png)
 
 This would create an index called “friends_name_asc”, indicating that this index is storing the **names** from “friends” stored alphabetically in **ascending** order.
 
-![](https://lh3.googleusercontent.com/A2D9XJATUcACSNZ6HO_aEF6MvavpCYzH-_nsMsGd0jJFCsMmgXL_spzTpxk9cl1N7xeIsp1kMgmu47X_LsqToOC6-qe6oMMM9FooiNgChOtu3BmwgLuJAbm6FtDjC6CEhQpYwLes =439x358)
+![](/assets/images/learn-sql/extras/how_to_index/friends_name_asc.png)
 
 Note that the “city” column is not present in this index. That is because indexes do not store all of the information from the original table. The “id” column would be a pointer back to the original table. The pointer logic would look like this:
 
-![](https://lh5.googleusercontent.com/6A81e2P-MOAXVMa5kt6-0PoqL9Gy642lJUzuD5JbYaroDDPFG4qN1uJ7A8K8Kb2JethWeAuNGAA8R854mBKLwd2c5U_2RG5_0zz8h0p1tmA7e0r4rlFKuuZZ_kxh3Zn_GbeJ2E94 =637x197)
+![](/assets/images/learn-sql/extras/how_to_index/indexToTable.png)
 
 ## **Creating Indexes**
 
@@ -128,13 +120,13 @@ The details of our friends table now look like this:
 
 **Query providing details on the friends table**: \\d friends;
 
-![](https://lh5.googleusercontent.com/icTzqNwNB37UHCk5MFQZ4TcIsoDxyvWT2bEIi8kedGOxJlWMQSXwx9EQmGgrXYIgDCqtiA4j22RIUVqf9cPKqL9w4bEkoKgvtWbvJQc-MiIrvXc49oW-kgA52nN5IfWl4WNNlqfq =624x184)
+![](/assets/images/learn-sql/extras/how_to_index/indexesList.png)
 
 Looking at the above image, the “friends_name_asc” is now an associated index of the “friends” table. That means the [query plan](https://dataschool.com/learn/what-is-a-query-plan), the plan that SQL creates when determining the best way to perform a query, will begin to use the index when queries are being made. Notice that “friends_pkey” is listed as an index even though we never declared that as an index. That is the **clustered index** that was referenced earlier in the article that is automatically created based off of the primary key.
 
 We can also see there is a “friends_city_desc” index. That index was created similarly to the names index:
 
-![](https://lh5.googleusercontent.com/RRftpc2TX_noehL7vrEqEhUBs7SDR3Onnp578sLiQYgwDb2FfSbhUkX1pgqib3-U6wa3IeARiYSdz7Et_H57n5HGzoJVUf5OIeBq3Rz5HnG4iEKwft4bj-6HFpj6_es2gqahQ0Zh =548x24)
+![](/assets/images/learn-sql/extras/how_to_index/createCityQuery.png)
 
 This new index will be used to sort the cities and will be stored in reverse alphabetical order because the keyword “DESC” was passed, short for “descending”. This provides a way for our database to swiftly query city names.
 
@@ -142,11 +134,11 @@ This new index will be used to sort the cities and will be stored in reverse alp
 
 After your non-clustered indexes are created you can begin querying with them. Indexes use an optimal search method known as [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm). Binary searches work by constantly cutting the data in half and checking if the entry you are searching for comes before or after the entry in the middle of the current portion of data. This works well with B-trees because they are designed to start at the middle entry; to search for the entries within the tree you know the entries down the left path will be smaller or before the current entry and the entries to the right will be larger or after the current entry. In a table this would look like:
 
-![](https://lh5.googleusercontent.com/irHA_CuNNleu4e4KFxPRQoSwvmc5ZXd8K8wd_voQ_PfxuJF3oyax8KbQwD7aKClx9EvLEHG1yW8cHY-6X8cZYNHpBUB_-o22k4R4dnlxhWyX1CLc9KZTMuqPxw7t4p5gKbQ_5bvw =600x346)
+![](/assets/images/learn-sql/extras/how_to_index/BinarySearchGif.gif)
 
 Comparing this method to the query of the non-indexed table at the beginning of the article, we are able to reduce the total number of searches from eight to three. Using this method, a search of 1,000,000 entries can be reduced down to just 20 jumps in a binary search.
 
-![](https://lh3.googleusercontent.com/TnO8tr1fVKwlXO1vxRbdoyB6EqA_w1meF0KOnrcA1YQVplZ_Bb-wr1V5diDf7D2K_CcIYadEVNwXh6L_HWbmbcFdaeqVc7e3GfGPsiyrSKbnESbjjnfvEsAk-3PZKGfekmDCCFIe =624x295)
+![](/assets/images/learn-sql/extras/how_to_index/BinarySearchComplexity.png)
 
 ## **When to use Indexes**
 
@@ -164,11 +156,11 @@ To test if indexes will begin to decrease query times, you can run a set of quer
 
 To do this, try using the EXPLAIN ANALYZE clause in PostgreSQL.:
 
-![](https://lh4.googleusercontent.com/B1gILxqCfWgMNbKEUNC7hMN3XotnRMfB3VJIQONfQwf9ORZZ2qbeHf_rsDT2PGxsjz2bqyn1rjtH5RM8HL8XE4Zyhgc5qUv7cgtTbUObN3vHLV9PFH4Q-_-Y-mhxDonO1rRz4QFw =624x29)
+![](/assets/images/learn-sql/extras/how_to_index/explainAnalyzeQuery.png)
 
 Which on my small database yielded:
 
-![](https://lh5.googleusercontent.com/bomAnZxPTbmpouxRtwtY17RjOxLwZMy1Sog1wYvrqZr1TSZ7wT_j4WrnnehCE7xG0Yamx5avtj-gCcQoWL-5KIZJJYgNWW2BMXOgnf9qtAQTp514FAaG_CsFdhypjtJvSaAHa_yo =624x107)
+![](/assets/images/learn-sql/extras/how_to_index/queryPlan.png)
 
 This output will tell you which method of search from the query plan was chosen and how long the planning and execution of the query took.
 
@@ -182,11 +174,11 @@ If adding an index does not decrease query time, you can simply remove it from t
 
 To remove an index use the DROP INDEX command:
 
-![](https://lh5.googleusercontent.com/3Kj_UyLeWpxQJmno2jIfpnXNwG70R_soEY3FRm4EhvK0RHEtiOarO-uoPIlGVwU9HncMSuuDw2GIW-9aOIRXmJe22_-qTcgS3WYD6Ipg3-NFlEe7-MxeICrnPzIKHQ_H7bkGOFlR =358x26)
+![](/assets/images/learn-sql/extras/how_to_index/dropIndexQuery.png)
 
 The outline of the database now looks like:
 
-![](https://lh3.googleusercontent.com/5q5IAm5hCh-DCXuIm8Ifs2UyFiEAIT484xO-NK1SGzLMm_YBCnxB7IxcO5vBrCnaeJEAzLMdYuqIZM9XuBAS3bKJ_r1-gpR3GusqM48fx7GZLi2y75VE0Yz3l4_0C2B5q0e6w0lO =624x177)
+![](/assets/images/learn-sql/extras/how_to_index/indexesAfterDrop.png)
 
 Which shows the successful removal of the index for searching names.
 
