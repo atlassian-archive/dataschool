@@ -22,11 +22,11 @@ The process starts with defining our stakeholders and what the metrics they care
 
 We can summarize this process into 4 steps:
 
-![](/assets/images/how-to-design-a-dashboard/dash-design-process-overview.jpg)
+![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg)
 
 ## Define
 
-![](/assets/images/how-to-design-a-dashboard/dash-design-define-audience.jpg)
+![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-define-audience.jpg)
 
 This is the first and most important step. Having clarity about who this dashboard is for and what metrics matter to them is critical to creating a dashboard that will be used.
 
@@ -50,7 +50,7 @@ You will work with the point person to go from vague goals to query-able metrics
 
 ## Prototype
 
-![](/assets/images/how-to-design-a-dashboard/dash-design-prototype.jpg)
+![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-prototype.jpg)
 
 Once we have the metrics that we want to put in a dashboard we need to figure out how best to display them so that it is useful to the whole audience.
 
@@ -68,7 +68,7 @@ At this stage it is recommended that the visualizations and dashboards be sketch
 
 ## Build
 
-![](/assets/images/how-to-design-a-dashboard/dash-desig-build.jpg)
+![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-desig-build.jpg)
 
 Once we are satisfied with the prototype we have to create the dashboard using real data.
 
@@ -82,7 +82,7 @@ We need to create queries to power the metrics, create formulas, and transform t
 
 ## Deploy
 
-![](/assets/images/how-to-design-a-dashboard/dash-design-deploy.png)
+![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-deploy.png)
 
 Finally we have a fully functioning dashboard. Now we need to share it with the full audience. We should enhance the dashboard to make it more effective at scale and we need to make sure to maintain it as usage grows and changes.
 
@@ -96,6 +96,6 @@ If the dashboard is useful the amount of views and total number of viewers is li
 
 ### Maintenance
 
-Datasources, tables, and fields change, dashboards need to change with it. Setting up scheduled times to review dashboards is critical to keeping them relevant and functional. Providing a way for the audience to alert you about issues will allow you to make informed improvements to the dashboard. We cover maintenance in [Making Sure Your Dashboard Always Gets Better]([https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better](https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better "https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better"))
+Datasources, tables, and fields change, dashboards need to change with it. Setting up scheduled times to review dashboards is critical to keeping them relevant and functional. Providing a way for the audience to alert you about issues will allow you to make informed improvements to the dashboard. We cover maintenance in [Making Sure Your Dashboard Always Gets Better]([https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better](https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better "https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better")
 
-[Give Feedback on our Google Doc]([https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing](https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing "https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing"))
+[Give Feedback on our Google Doc]([https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing](https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing "https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing")

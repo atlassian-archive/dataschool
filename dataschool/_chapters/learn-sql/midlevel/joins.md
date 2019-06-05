@@ -22,7 +22,7 @@ There are a couple of key concepts to describe before we start JOINing data:
 
 The relationships for the 3 tables we've been using so far are visualized here:
 
-![figure 1](/assets/images/learn-sql/chinook-schema-excel.png)
+![figure 1](/assets/images/learn-sql/midlevel/joins/chinook-schema-excel.png)
 
 ## Primary Keys
 
@@ -30,7 +30,7 @@ A primary key is a column (or sometimes set of columns) in a table that is a uni
 
 It doesn't have to be *id*.  It can be *email*, *username*, or any other column as long as it can be counted on to uniquely identify that row of data in the table.
 
-![figure 2](/assets/images/learn-sql/sql-tutorial-join-primary-keys.png)
+![figure 2](/assets/images/learn-sql/midlevel/joins/sql-tutorial-join-primary-keys.png)
 
 ## Foreign Keys
 
@@ -44,7 +44,7 @@ It is very common for foreign key to be named in the format of `[other table nam
 
 If we didn't have relationships we'd have to keep all the data in one giant table like the one in the figure here.  
 
-![figure 3](/assets/images/learn-sql/sql-tutorials-join-relationships.png)
+![figure 3](/assets/images/learn-sql/midlevel/joins/sql-tutorials-join-relationships.png)
 
 Each track for example would have to hold all of the information on it's album and on the artist.  That's a lot of duplicate data to store, and if a parameter in any of that changes, you'd have to update it in many different rows.  
 
@@ -186,7 +186,7 @@ You have now unlocked the knowledge to fully enjoy most of the double entendres 
   Do take a moment to enjoy.
 
 
-[innerjoin]: /assets/images/learn-sql/sql-tutorial-inner.png
-[leftouter]: /assets/images/learn-sql/sql-tutorial-left-outer.png
-[rightouter]: /assets/images/learn-sql/sql-tutorial-outer-join.png
-[fullouter]: /assets/images/learn-sql/sql-tutorial-full-outer.png
+[innerjoin]: /assets/images/learn-sql/midlevel/joins/sql-tutorial-inner.png
+[leftouter]: /assets/images/learn-sql/midlevel/joins/sql-tutorial-left-outer.png
+[rightouter]: /assets/images/learn-sql/midlevel/joins/sql-tutorial-outer-join.png
+[fullouter]: /assets/images/learn-sql/midlevel/joins/sql-tutorial-full-outer.png
