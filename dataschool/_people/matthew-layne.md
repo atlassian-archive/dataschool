@@ -1,5 +1,5 @@
 ---
-title: Matthew  # aka name - annoying but we have to use title for name here
+title: Matthew layne # aka name - annoying but we have to use title for name here
 image: /assets/images/people/matthew.png
 job_title: Marketing Intern
 is_contributor: true
