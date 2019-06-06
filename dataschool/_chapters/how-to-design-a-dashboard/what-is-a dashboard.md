@@ -11,7 +11,7 @@ image: '/assets/images/how-to-design-a-dashboard/what-is-a-dashboard/5cace68b51b
 meta_title: ''
 summary: Learn what dashboards are and why they are important to making decisions.
 is_featured: true
-
+published: true
 ---
 Anytime you want to display information to help people make decisions you are in the process of creating a dashboard. Dashboards allow us to arrange multiple data visualizations to give people enough context to consistently make great decisions.
 
@@ -19,13 +19,13 @@ Anytime you want to display information to help people make decisions you are in
 
 For example this is a dashboard tracking the top metrics for a SaaS company. It provides at a glance information related to revenue, operating costs, total users, and other relevant data that can be evaluated.
 
-This dashboard can help the CEO or anyone in the company figure out **what is going on at a high level**, and help him decide where to take action.
+This dashboard can help the CEO or anyone in the company figure out _what is going on at a high level_, and help him decide where to take action.
 
 _“My operations costs are higher than my revenue, I need to reach out to my COO to get informed about why we are spending so much. “_
 
 Decision assisted, good job dashboard
 
-Dashboards are built to trigger insights that help you take action, **in the case shown above** the data indicates that an email needs to be sent to someone in operations. This dashboard is composed of various data visualizations to provide the viewer context to support insights and make decisions. A dashboard is dynamic because as the underlying data changes, the dashboard is automatically updated so that time sensitive insights and decisions can be made.
+Dashboards are built to trigger insights that help you take action, _in the case shown above_ the data indicates that an email needs to be sent to someone in operations. This dashboard is composed of various data visualizations to provide the viewer context to support insights and make decisions. A dashboard is dynamic because as the underlying data changes, the dashboard is automatically updated so that time sensitive insights and decisions can be made.
 
 This book will explore best practices to create useful dashboards such as this one to help individuals make data-driven decisions.
 

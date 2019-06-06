@@ -36,7 +36,7 @@ body {
 
 // TYPOGRAPHY
 // type size reset
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p.faux-header {
   margin: 2rem 0 1rem;
   line-height: 1.15;
   font-weight: 700;
@@ -58,7 +58,7 @@ h1 {
   margin-top: 0;
   font-size: 2.074em;
 }
-h2 {font-size: 1.728em;}
+h2, p.faux-header {font-size: 1.728em;}
 h3 {font-size: 1.44em;}
 h4 {font-size: 1.2em;}
 h5 {font-size: 1em; font-style: italic;}
@@ -92,12 +92,54 @@ em {
   margin-bottom: 1rem;
 }
 .bootstrap-table .fixed-table-container table.table {
+  display: table;
+
   td, th, thead th .th-inner {
     padding: 0.5rem;
   }
 }
-.table-bordered th, .table-bordered td {
-    border: 1px solid rgba(0, 0, 0, 0.10);
+table {
+  display: block;
+  overflow: auto;
+  font-size: 0.8em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  thead {
+    width: 100%;
+  }
+  td, th {
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      line-height: 1rem;
+      vertical-align: top;
+      padding: 0.3rem 1rem 0.3rem 0;
+  }
+  tr th, tr:first-child td {
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+.bootstrap-table .fixed-table-container table.table-bordered {
+  border: none;
+  margin: 0;
+    td, th {
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      line-height: 1rem;
+      vertical-align: top;
+      // padding: 0.3rem 1rem 0.3rem 0;
+    }
+    th {
+      border-top: 2px solid rgba(0, 0, 0, 0.25);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+}
+.bootstrap-table .fixed-table-container table.table-bordered tr:first-child td, thead + tbody tr:first-child td {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  text-transform: none;
+  font-weight: 600;
 }
 section.page {
   max-width: 28rem;
@@ -141,7 +183,12 @@ article {
     background: $gray-300;
   }
 }
-
+article.img-border-on-default img, img.img-border {
+  border: 1px solid $gray-400;
+}
+article.img-border-on-default img.img-no-border {
+  border: none;
+}
 // CUSTOM UTILITY CLASSES
 .centered {
   text-align: center;

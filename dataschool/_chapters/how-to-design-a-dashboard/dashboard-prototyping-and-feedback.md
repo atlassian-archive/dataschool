@@ -10,7 +10,7 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: false
+published: true
 
 ---
 ![](https://lh5.googleusercontent.com/quVmTPL5CAQEY5GKwmijYYYEqUvt0Nimj6ol6Ln8dEUHnysRX8BdxiNgYNGhFGY5tLyxwsbIzfHYAw5UNop6YD5HG38js36VVtJZopokQ8J7t0bYu4RD3S0pRNb6ZCDSaphOj-AJ =624x187)
@@ -49,7 +49,6 @@ Ask the following questions for each visualization:
 * Do I need to know this?
 * What else do I want to know about this metric?
 * Is the conclusion I can draw from the visualization obvious?
-* 
 
 Ask the following questions for the whole dashboard:
 

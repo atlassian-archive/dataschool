@@ -35,11 +35,8 @@ This is the first and most important step. Having clarity about who this dashboa
 There are 4 main stakeholders
 
 *   The designer (you)
-
 *   The audience (who will be viewing this dashboard)
-
 *   The point person (the member of the audience who has the most experience
-
 *   The Data Gatekeeper (member of the data team who will help with the database)
 
 We will define in detail their responsibilities and where they factor into the process in the next chapter.

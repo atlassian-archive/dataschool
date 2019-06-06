@@ -12,7 +12,7 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: false
+published: true
 
 ---
 
@@ -24,7 +24,7 @@ These roles may be fulfilled by the same person but typically they are not.
 
 ## Key Stakeholders
 
-1. Designer
+### 1. Designer
 
 ![](https://lh3.googleusercontent.com/Fa5qiSyQF6nU8p967d2JqV2mP5tqiZBcchHrwXF6164GJVSEuvXXrRC_KVh_QhH2BGVuE0h5iDL5c-skOYLIS-MC9w07bejQyKbYVmcyif09RhjomTeo3toe-Xh7_yLA72IWFuVO =624x93)
 
