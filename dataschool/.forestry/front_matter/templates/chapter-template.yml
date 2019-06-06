@@ -92,5 +92,11 @@ pages:
 - dataschool/_chapters/learn-sql/extras/how-indexing-works.md
 - dataschool/_chapters/learn-sql/extras/how-to-start-a-postgresql-server-on-mac-os-x.md
 - dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
+- dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
 - dataschool/_chapters/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces.md
 - dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
+- dataschool/_chapters/how-to-design-a-dashboard/determine-the-metrics-to-monitor.md
+- dataschool/_chapters/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard.md
+- dataschool/_chapters/how-to-design-a-dashboard/dashboard-prototyping-and-feedback.md
+- dataschool/_chapters/how-to-design-a-dashboard/finding-the-data-that-builds-metrics.md
+- dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
