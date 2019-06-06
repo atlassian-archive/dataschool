@@ -103,8 +103,14 @@ section.page {
   max-width: 28rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
-  margin-bottom: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (min-width: 30rem) {
+  section.page {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
 }
 article, .home-hero {
   font-size: 1.2em;
@@ -145,4 +151,7 @@ article {
 }
 ul.no-pad-list {
   padding-left: 0;
+}
+ul.light-pad-list {
+  padding-left: 0.75rem;
 }
