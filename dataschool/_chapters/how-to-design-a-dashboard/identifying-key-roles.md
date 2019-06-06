@@ -4,7 +4,6 @@ section: book
 number: 50
 authors:
 - author: _people/matt.md
-- author: _people/dave.md
 reviewers:
 - reviewer: _people/dave.md
 image: ''
@@ -13,7 +12,7 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: true
+published: false
 
 ---
 
