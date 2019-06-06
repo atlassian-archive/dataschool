@@ -1,14 +1,14 @@
 <nav class="sidebar">
   <!-- Main nav elements, always include in sidebar -->
   <a class="sidebar-logo" href="/">
-    <img src="/uploads/data-school-logo.png"/>
+    <img src="/assets/images/data-school-logo.svg"/>
   </a>
   <ul class="list-unstyled main-nav components">
-    <li><a href="/books/">Web Books</a></li>
-    <li><a href="/people/">Contributors</a></li>
-    <li><a href="/mission/">Mission</a></li>
-    <li><a href="#">Contribute</a></li>
-    <li><a href="#">Slack Community</a></li>
+    <li {% if page.url == '/books.html' or page.layout == "book" %}class="active"{% endif %}><a href="/books/">Web Books</a></li>
+    <li {% if page.url == '/people.html' %}class="active"{% endif %}><a href="/people/">Contributors</a></li>
+    <li {% if page.url == '/mission.html' %}class="active"{% endif %}><a href="/mission/">Mission</a></li>
+    <li {% if page.url == '/contribute.html' %}class="active"{% endif %}><a href="/contribute/">Contribute</a></li>
+    <li><a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY" target="_blank">Slack Community</a></li>
   </ul>
   {% if page.layout == "chapter" or page.layout == "book" %}
     {% assign book = site.books | where:'slug', page.book_slug %}

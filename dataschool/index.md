@@ -1,21 +1,22 @@
 ---
 layout: default-breakout
+meta_title: ''
 ---
 <div class="home-hero">
   <div class="container centered">
     <div class="mt-5">
-      <h1 class="title">Welcome to the Data&nbsp;School</h1>
+      <h1 class="mega-title">Welcome to the Data&nbsp;School</h1>
       <p>We're a community-driven school of free web books and content written by people who work with data <em>for</em> people who work with data.</p>
       <p>To get started check out <a href="/mission">our mission</a>, see <a href="/people" class="link-6">who's involved</a> or dig into our completely free and growing <a href="/books">content library</a> of web books.</p>
-      <a href="/books" class="btn btn-primary mt-3">Browse Our Web Book Library <i class="fas fa-arrow-right"></i></a>
+      <a href="/books" class="btn btn-primary mt-3">Browse Our Web Books <i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="featured-book">
       <h5>This month's featured web book</h5>
       {% assign book = site.books | where:'is_featured', 'true' %}
       {% assign book = book[0] %}
       <div class="smallbook">
-        <a href="{{ book.url }}">
-          <img src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
+        <a href="{{ book.url }}" class="hover-link">
+          <img class="hover-img" src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
         </a>
       </div>
     </div>
@@ -43,7 +44,7 @@ layout: default-breakout
     </div>
   </div>
   <div class="row">
-    <div class="col-sm centered mt-5 mb-3">
+    <div class="col-sm">
       <h2>Get new data chapters sent right to your Inbox</h2>
       {% include newsletter-form.html %}
     </div>

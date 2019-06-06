@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Styles Page
+meta_title: 'The Data School styles test page'
 ---
 <h1 class="title centered">Data School Styles</h1>
 

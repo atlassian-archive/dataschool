@@ -1,6 +1,7 @@
----
+/assets/images/learn-sql/basic/schema-browsing/schema-browsing/---
 title: Browsing the SCHEMA
 short: SCHEMA
+meta_title: ''
 description: The word SCHEMA is used to describe a collection of tables and their
   relationships in your database. In this interactive SQL tutorial, learn how to browse
   the SCHEMA in a PostgreSQL database by using SQL to query your data.
@@ -27,17 +28,17 @@ If you're using a good visual interface to {{ page.database }}, browsing the sch
 
 Once connected to a database, you can expand the trees in the left sidebar in PGAdmin to find the database, schema, tables and columns available:
 
-![PGAdmin Schema Browsing](/assets/images/learn-sql/pg-admin-schema-1.png)
+![PGAdmin Schema Browsing](/assets/images/learn-sql/basic/schema-browsing/pg-admin-schema-1.png)
 
 The "Properties" tab in the right top of the interface will display all of the extra properties that the _information_schema_ holds on the table or column including default values, data type, and more.
 
-![PGAdmin Column View](/assets/images/learn-sql/pg-admin-schema-2.png)
+![PGAdmin Column View](/assets/images/learn-sql/basic/schema-browsing/pg-admin-schema-2.png)
 
 ### Schemas in Chartio
 
 Chartio's schema viewer simply lists the tables in the Schema tab of any data source connection.
 
-![Chartio Schema Editor](/assets/images/learn-sql/chartio-schema-editor.png)
+![Chartio Schema Editor](/assets/images/learn-sql/basic/schema-browsing/chartio-schema-editor.png)
 
 Each table can be expanded to show the columns underneath.  In Chartio you can actually change the name/alias, define relationships and create custom tables and columns.  This isn't mapped back to database, but used only for the Chartio Visual Data Explorer.
 
@@ -97,4 +98,4 @@ If you're using psql as your connection to your database there are a number of h
 | \\l | list of all databases |
 | \\z | list tables with access privileges |
 
-![figure 4](/assets/images/learn-sql/sql-tutorial-schema-diagram-chartio.png)
+![figure 4](/assets/images/learn-sql/basic/schema-browsing/sql-tutorial-schema-diagram-chartio.png)

@@ -71,7 +71,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), random() FROM generate_series
 
 We've [visualized the sequence with Chartio](/signup/) here to make it more clear what's going on with the data.
 
-![Random Sequence](/assets/images/learn-sql/random-sequence-1.svg)
+![Random Sequence](/assets/images/learn-sql/extras/random-sequences/random-sequence-1.svg)
 
 The above results are all between 0 and 1 as again that is what's returned from random().  As above, to add an amplitude and minimum offset to it we can simply multiple and add to the random value.  The following makes a random sequence with values in the range of 10 to 17.
 
@@ -82,7 +82,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), 10 + 7*random() FROM generate_series
         , '1 day'::interval) day
 ```
 
-![Random Sequence](/assets/images/learn-sql/random-sequence-2.svg)
+![Random Sequence](/assets/images/learn-sql/extras/random-sequences/random-sequence-2.svg)
 
 ### Random  Growth Sequence
 
@@ -97,7 +97,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), (10 + 7*random())*(row_number() over()) as va
 
 Multiplying the row number by our random makes our data linearly increase as you can see in the chart.
 
-![Incremental Linear Random Sequence](/assets/images/learn-sql/random-sequence-3.svg)
+![Incremental Linear Random Sequence](/assets/images/learn-sql/extras/random-sequences/random-sequence-3.svg)
 
 
 ### Random Exponential Sequence
@@ -110,7 +110,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), (10 + 7*random())*(1.1^(row_number() over()))
         , '2017-04-01'::date
         , '1 day'::interval) day
 ```
-![Random Exponential Sequence](/assets/images/learn-sql/random-sequence-4.svg)
+![Random Exponential Sequence](/assets/images/learn-sql/extras/random-sequences/random-sequence-4.svg)
 
 ### Random Exponential Decay Sequence
 
@@ -122,7 +122,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), (1000 + 1000*random())*(.9^(row_number() over
         , '2017-04-01'::date
         , '1 day'::interval) day
 ```
-![Random Exponential Decay](/assets/images/learn-sql/random-sequence-5.svg)
+![Random Exponential Decay](/assets/images/learn-sql/extras/random-sequences/random-sequence-5.svg)
 
 ### Random Log Growth Sequence
 
@@ -135,7 +135,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), (1000 + 500*random())*log(row_number() over()
         , '1 day'::interval) day
 ```
 
-![Log Growth Sequence](/assets/images/learn-sql/random-sequence-6.svg)
+![Log Growth Sequence](/assets/images/learn-sql/extras/random-sequences/random-sequence-6.svg)
 
 
 There are a lot great things you can do with {{ page.database }}'s random() function combined with generating series to get sequences.  Feel free to play around with a few yourself in the SQLBox below, or using [Chartioif you'd like to visualize them](/signup/) as well.

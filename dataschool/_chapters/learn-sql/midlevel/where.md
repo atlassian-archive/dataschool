@@ -1,6 +1,7 @@
 ---
 title: "WHERE"
 short: WHERE
+meta_title: ''
 description: "Learn how to use the SQL WHERE command in PostgreSQL. In this interactive SQL tutorial, learn the syntax of the WHERE command and best practices on using it for data analysis and exploration against your PostgreSQL database."
 number: 60
 section: mid-level

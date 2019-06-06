@@ -46,6 +46,8 @@ h4, h5, h6 {
 }
 h1.mega-title, h1.title {
   font-family: $serif-font-loadout;
+  // margin-top: 4rem;
+  // margin-bottom: 3rem;
 }
 h1.mega-title {
   font-size: 2.986em;
@@ -61,7 +63,6 @@ h3 {font-size: 1.44em;}
 h4 {font-size: 1.2em;}
 h5 {font-size: 1em; font-style: italic;}
 h6 {font-size: 0.833em; text-transform: uppercase;}
-
 small, .text_small {font-size: 0.833em;}
 
 blockquote p {
@@ -87,18 +88,26 @@ kbd {
   padding: 0.125em 0.25em;
   border-radius: 0.25em;
 }
-
+em {
+  margin-bottom: 1rem;
+}
+.bootstrap-table .fixed-table-container table.table {
+  td, th, thead th .th-inner {
+    padding: 0.5rem;
+  }
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+section.page {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
 article, .home-hero {
   font-size: 1.2em;
-}
-article, section.page {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  h1, h2, h3, h4, h5, h6, p, ul, ol, code, pre, blockquote {
-    max-width: 28rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 article {
   p, li {
@@ -113,6 +122,16 @@ article {
   border-radius: 0.25em;
   font-size: 1em;
 }
+.btn {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn.btn-default {
+  background: $gray-200;
+  border-color: $gray-400;
+  &:hover {
+    background: $gray-300;
+  }
+}
 
 // CUSTOM UTILITY CLASSES
 .centered {
@@ -121,7 +140,9 @@ article {
 .height-3 {
   height: 3rem;
 }
-
 .d-none {
   display: none;
+}
+ul.no-pad-list {
+  padding-left: 0;
 }

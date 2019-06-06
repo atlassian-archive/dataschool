@@ -1,6 +1,7 @@
 ---
 title: FROM
 short: FROM
+meta_title: ''
 description: This interactive SQL tutorial will explain the FROM command with syntax
   and use cases on how to interact with your data in the PostgreSQL database. Learn
   how to use the SQL FROM command by following the steps in this interactive tutorial.
@@ -17,7 +18,7 @@ So now you know how to SELECT data but not yet how to choose where to get that d
 
 In our example database we have a table called *albums*, which holds info on some music albums.  It has three columns, id, title, artist_id.  Here's what it looks like in Excel:
 
-![album table for sql tutorial](/assets/images/learn-sql/sql-tutorial-albumtable.png)
+![album table for sql tutorial](/assets/images/learn-sql/basic/from/sql-tutorial-albumtable.png)
 
 To get data that’s in this table we need to specify what columns we want to SELECT and FROM where we want to select it.  So let’s try to get a list of all the album titles we’ve got stored.  We can use the following template to do so:
 

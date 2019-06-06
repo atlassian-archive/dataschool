@@ -1,6 +1,7 @@
 ---
 title: "GROUP BY"
 short: "GROUP BY"
+meta_title: ''
 description: "The GROUP BY SQL statement is used to aggregate functions like COUNT, MAX, MIN, SUM and AVG to group results into columns. In this interactive SQL tutorial, learn how to use the GROUP BY statement in your SQL queries in PostgreSQL."
 number: 80
 section: mid-level

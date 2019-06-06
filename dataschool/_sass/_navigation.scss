@@ -8,10 +8,10 @@
       min-width: 250px;
       max-width: 250px;
       border-right: 1px solid $gray-400;
-      // background: aqua;
+      background: $background-color;
       padding: 0;
-      .sidebar-logo, .smallbook, .main-nav {
-        margin: 0.75rem 0.75rem 1rem;
+      .sidebar-logo, .smallbook {
+        margin: 0.75rem;
       }
       .sidebar-logo {
         padding: 0 0.5rem;
@@ -22,7 +22,26 @@
           opacity: 1;
         }
       }
+      ul.components.main-nav > li, ul.components li.book-section > ul > li {
+        padding: 0.25rem 0.75rem 0.25rem 0.625rem;
+        border-left: 0.125rem solid $background-color;
+        background: $background-color;
+        // &:first-child {
+        //   padding-top: 0.5rem;
+        // }
+        // &:last-child {
+        //   padding-bottom: 0.5rem;
+        // }
+        &.active {
+          border-color: $secondary;
+          > a, a[aria-expanded="true"] {
+          }
+        }
+      }
       ul.components {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
         border-bottom: 1px solid $gray-400;
 
         li {
@@ -64,31 +83,31 @@
                 }
               }
             }
-            > ul > li {
-              padding: 0.25rem 0.75rem;
-              border-left: 0.125rem solid $background-color;
-              background: $background-color;
-              &:first-child {
-                padding-top: 0.5rem;
-              }
-              &:last-child {
-                padding-bottom: 0.5rem;
-              }
-              &.active {
-                border-color: $secondary;
-                > a, a[aria-expanded="true"] {
-                }
-              }
-            }
+            // > ul > li {
+            //   padding: 0.25rem 0.75rem;
+            //   border-left: 0.125rem solid $background-color;
+            //   background: $background-color;
+            //   &:first-child {
+            //     padding-top: 0.5rem;
+            //   }
+            //   &:last-child {
+            //     padding-bottom: 0.5rem;
+            //   }
+            //   &.active {
+            //     border-color: $secondary;
+            //     > a, a[aria-expanded="true"] {
+            //     }
+            //   }
+            // }
           }
         }
       }
-      ul.main-nav {
-        padding-bottom: 0.5rem;
-        li {
-          padding: 0.25rem 0;
-        }
-      }
+      // ul.main-nav {
+      //   padding-bottom: 0.5rem;
+      //   li {
+      //     padding: 0.25rem 0;
+      //   }
+      // }
     }
     .sidebar, .content {
       position: absolute;
