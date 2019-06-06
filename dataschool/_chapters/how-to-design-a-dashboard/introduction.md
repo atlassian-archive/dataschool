@@ -1,9 +1,9 @@
 ---
 title: Introduction
-section: 'book'
+section: book
 number: 10
 authors:
-- person: _people/matt.md
+- author: _people/matt.md
 reviewers:
 - reviewer: _people/dave.md
 image: '/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg'

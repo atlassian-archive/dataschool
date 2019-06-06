@@ -1,9 +1,9 @@
 ---
 title: Dashboard Design Process
-section: 'book'
+section: book
 number: 40
 authors:
-- person: _people/matt.md
+- author: _people/matt.md
 reviewers: []
 image: ''
 meta_title: ''
