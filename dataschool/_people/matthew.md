@@ -1,6 +1,6 @@
 ---
 title: Matthew  # aka name - annoying but we have to use title for name here
-image: /assets/images/people/matthew.jpg
+image: /assets/images/people/matthew.png
 linkedin: https://www.linkedin.com/in/matthew-layne/
 twitter:
 website: layne.live
