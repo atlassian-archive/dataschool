@@ -12,6 +12,7 @@ meta_title: ''
 summary: Learn what dashboards are and why they are important to making decisions.
 is_featured: true
 published: true
+img_border_on_default: false
 ---
 Anytime you want to display information to help people make decisions you are in the process of creating a dashboard. Dashboards allow us to arrange multiple data visualizations to give people enough context to consistently make great decisions.
 

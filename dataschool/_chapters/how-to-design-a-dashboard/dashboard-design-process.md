@@ -9,6 +9,7 @@ image: ''
 meta_title: ''
 summary: Overview of all the steps in a dashboard design process
 is_featured: false
+img_border_on_default: false
 ---
 The dashboard design process is very similar to any design process however the output is a dashboard… obviously.
 

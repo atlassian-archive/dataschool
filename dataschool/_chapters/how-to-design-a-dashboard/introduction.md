@@ -12,7 +12,7 @@ summary: Dashboards are the way data people help the rest of an organization mak
   data driven decisions.
 is_featured: true
 published: true
-img_border_on_default: true
+img_border_on_default: false
 ---
 > “The greatest value of a picture is when it forces us to notice what we never expected to see.”
 > —John Tukey, Mathematician

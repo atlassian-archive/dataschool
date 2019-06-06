@@ -13,7 +13,7 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
 ---
 
 ![](https://lh5.googleusercontent.com/PUuoxj5zQ8sFlU4mFL1dwuVxFCoLw2OSP1HIjp3LpiqxM978gzy_qjYWQ1oEOKF6nVksqVTJOckQDQhK62azgWgrsU4LaPz_q0aIqKDJHZ7FF7Bn7_R7DgLMJSDWLYPa09PO1edx =624x217)

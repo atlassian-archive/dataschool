@@ -30,12 +30,12 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: author
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
 - name: reviewers
   type: field_group_list
@@ -49,12 +49,12 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: reviewer
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: reviewer
   label: reviewers
 - name: image
@@ -70,6 +70,11 @@ fields:
   type: boolean
   label: Is Featured
   description: toggle to feature this chapter on the home page
+- name: img_border_on_default
+  type: boolean
+  label: Image borders on by default
+  description: Toggle on to add borders to all images in this chapter (override with class="img-no-border")
+  default: false
 - name: writers
   type: field_group
   config: {}
@@ -78,8 +83,8 @@ fields:
     type: list
     config:
       use_select: true
-      min: 
-      max: 
+      min:
+      max:
       source:
         type: pages
         section: people
