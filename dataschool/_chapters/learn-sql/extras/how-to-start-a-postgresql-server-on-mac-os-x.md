@@ -5,6 +5,7 @@ number:
 authors:
 - author: _people/matthew-layne.md
 reviewers:
+- reviewer: _people/blake.md
 - reviewer: _people/matt.md
 image: ''
 summary: This article explores starting a PostgreSQL server using both Homebrew and
