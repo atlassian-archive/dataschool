@@ -27,7 +27,7 @@ layout: default
   {% if currentsection != chapter.section %}
      {% assign currentsection = chapter.section %}
      </ul>
-     <ul id="{{currentsection}}" class="no-pad-list">
+     <ul id="{{currentsection}}" class="light-pad-list">
      {% if currentsection != 'book' %}<h3>{{ currentsection | capitalize }}</h3>{% endif %}
   {% endif %}
       <li>
