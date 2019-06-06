@@ -41,7 +41,7 @@ Homebrew is a powerful package manager with many uses, including installing and 
 
 Now that postgres is installed the default server can be started by running the command:
 
-**Pg_ctl -D /usr/local/var/postgres start**
+**pg_ctl -D /usr/local/var/postgres start**
 
 This will start up a postgres server hosted locally on port 5432. The server will be run out of the directory **/usr/local/var/postgres**.
 
@@ -77,7 +77,7 @@ The “Data Directory” refers to the directory that was just initialized (in t
 
 The command above will generate a log file like the one shown, start the server, and tie the log file to the server. If a log file is not specified, events will be logged to the terminal:
 
-![starting a server with a log file using pg_ctl](https://lh3.googleusercontent.com/yMdeoYymA8Twnyu1PUr_RaDf-c7S5FKWTULA5tWmA2z9juYmiYMQD-YzVGsus-n9i_QLMJE9IdimOmX1p9M_OMVgFzDTmsUgKI0lai-s1VZjTBx63EHF6Cc4UfpR_7riW8-ipIJi "starting a custom server with a log file " =606x194)
+![starting a server with a log file using pg](https://lh3.googleusercontent.com/yMdeoYymA8Twnyu1PUr_RaDf-c7S5FKWTULA5tWmA2z9juYmiYMQD-YzVGsus-n9i_QLMJE9IdimOmX1p9M_OMVgFzDTmsUgKI0lai-s1VZjTBx63EHF6Cc4UfpR_7riW8-ipIJi "starting a custom server with a log file " =606x194)
 
 The server will only start if the port is free. If the default server is running it must first be stopped using the **_pg_ctl -D /usr/local/var/postgres stop_** command:
 
