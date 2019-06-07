@@ -8,6 +8,5 @@ authors:
 cover_image: ''
 main_color: "764514"
 is_hidden: true
-published: false
 
 ---
