@@ -1,5 +1,5 @@
 ---
-section: book
+section: appendix
 title: Difference between WHERE and ON in SQL
 number: 20
 authors:
@@ -10,23 +10,21 @@ image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
 Q: Is there a difference between the WHERE and ON clause?
 
 Yes. ON should be used to define the join condition and WHERE should be used to filter the data. Notice I used the word should, meaning this is not a hard rule. The splitting of these purposes with their respective clauses makes the query the most readable, it also prevents incorrect data being retrieved when using JOINs types other than INNER JOIN.
 
-To go more in depth we will cover the two use cases that either WHERE or ON can support: 
+To go more in depth we will cover the two use cases that either WHERE or ON can support:
 
 * Joining data
 * Filtering data
 
 ## Joining data
 
-The way both of these clauses can be used to help join data is through defining the condition on which the two tables are joined. To demonstrate this, lets use an example data set of facebook friends and linkedin connections. 
+The way both of these clauses can be used to help join data is through defining the condition on which the two tables are joined. To demonstrate this, lets use an example data set of facebook friends and linkedin connections.
 
 ![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc347207e440326ec2c79fe_MlkywFZPdL2dUYe4eJypuEkBC1eSLMUFAGlJiUpOcoqB8RLYYIKcxh0O7bOeuG7CT6QthVMWeo6LrYo86m_fGdAjRT-lJnCEseTbKRiV3VmgxiuSt2I4DXUdww1bTFylz0avqrna.png)
 
@@ -62,9 +60,9 @@ The first two are types of explicit joins and the last is an implicit join. An e
 
 ### Readability
 
-The main difference between these queries is how easy it is to understand what is going on. In the first query we can easily see the tables being joined in the FROM and JOIN clause. We can also clearly see the join condition in the ON clause. In the second query it seems just as clear however we may do a double take on the WHERE clause since this is typically used to filter data and not JOIN it. In the last query we have to look closely to both establish what table are being JOINed and how they are being JOINed. 
+The main difference between these queries is how easy it is to understand what is going on. In the first query we can easily see the tables being joined in the FROM and JOIN clause. We can also clearly see the join condition in the ON clause. In the second query it seems just as clear however we may do a double take on the WHERE clause since this is typically used to filter data and not JOIN it. In the last query we have to look closely to both establish what table are being JOINed and how they are being JOINed.
 
-The last query is using what is called an implicit JOIN(a JOIN that is not explicitly stated in the query. In most cases implicit JOINs will act as INNER JOINs. If you want to use a JOIN other than an INNER JOIN stating it explicitly makes it clear what is going on. 
+The last query is using what is called an implicit JOIN(a JOIN that is not explicitly stated in the query. In most cases implicit JOINs will act as INNER JOINs. If you want to use a JOIN other than an INNER JOIN stating it explicitly makes it clear what is going on.
 
 JOINing in the WHERE clause can be confusion since this is not it’s typical purpose. It is most often used to filter the data. So when more filtering conditions are added to the WHERE clause in addition to using it to define how to JOIN the data it becomes harder to understand.
 
@@ -88,7 +86,7 @@ Even though the first query has fewer characters than the second it is not as ea
 
 ### Optimization
 
-Sometimes writing a query in a different way can yield speed improvements. However in this case there should be no speed benefits because of something called a query plan. A query plan is the code that SQL comes up with to execute the query. It takes the query and then creates an optimized way to find the data. Using WHERE or ON to JOIN the data should produce the same query plan. 
+Sometimes writing a query in a different way can yield speed improvements. However in this case there should be no speed benefits because of something called a query plan. A query plan is the code that SQL comes up with to execute the query. It takes the query and then creates an optimized way to find the data. Using WHERE or ON to JOIN the data should produce the same query plan.
 
 However the way query plans are created may vary across SQL languages and versions, again in this instance it should all be the same but you can test it out on your Database to see if you get anymore performance. Be careful of caching affecting the results of your queries.
 

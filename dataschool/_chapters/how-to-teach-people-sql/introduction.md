@@ -12,8 +12,9 @@ is_featured: false
 img_border_on_default: false
 writers:
   writers: []
-
+published: true
 ---
+
 > _“Those who know, do. Those that understand, teach.” -_ Aristotle
 
 There are hundreds of SQL tutorials online to teach people SQL syntax. This book is not about syntax. This book is about building mental models around what SQL is doing and understanding why others struggle to understand so that it is easier to help them learn.
