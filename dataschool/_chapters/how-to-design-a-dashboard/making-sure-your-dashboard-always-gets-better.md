@@ -9,7 +9,7 @@ reviewers:
 - reviewer: _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1nr7qeQM1xjHTq6wh6zCfvU-8356lqSBDG1dKKwKrZAc/edit?usp=sharing
 image: ''
-summary: ''
+description: ''
 is_featured: false
 img_border_on_default: false
 published: true

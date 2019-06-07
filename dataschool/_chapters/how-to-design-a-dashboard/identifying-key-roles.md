@@ -8,7 +8,7 @@ reviewers:
 - reviewer: _people/dave.md
 image: ''
 meta_title: ''
-summary: ''
+description: ''
 is_featured: false
 writers:
   writers: []

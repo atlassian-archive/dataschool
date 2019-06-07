@@ -6,7 +6,7 @@ authors:
 - author: _people/matt.md
 reviewers: 
 image: ''
-summary: ''
+description: ''
 is_featured: false
 writers:
   writers: []

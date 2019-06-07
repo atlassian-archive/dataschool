@@ -7,6 +7,7 @@ authors:
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1sLpiaEW0K1azJLyFp6Va0UJFR3jU3YljuMcg2TUpoDY/edit?usp=sharing
 image: ''
+<<<<<<< HEAD
 summary: ''
 is_featured: false
 img_border_on_default: false
@@ -39,6 +40,41 @@ GROUP BY State
 ```
 
 ![A More Specific SQL COUNT Query](/assets/images/how-to-teach-people-sql/aggregations/aggregations_4.gif)
+=======
+description: ''
+is_featured: false
+img_border_on_default: false
+writers:
+  writers: []
+published: false
+
+---
+SQL COUNT is the most common type of Aggregation in SQL, it counts the number of rows in a column or table. COUNT(*) tells SQL to count the number of rows of the whole table. COUNT(some column) tells SQL to count the number of non-null rows in that column.
+
+SELECT COUNT(*)
+
+FROM facebook
+
+![SQL COUNT Aggregation Visualization](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9563da0c011ef87a8d2b5a_wKQYOGxwkdkMdDOvRZAtqNOsSSUgMsLTxS2xQg7KaUB2z7Y0nPuMwDvNZMAFDmFX4kDuQlFsF-2_ONpkMqzMGD_Tc76OONH0RnPhy-0dTL2KIABsnYVr0_8hMAcZzufdTQJEY7s7.gif)
+
+SQL goes through all the rows of the table and creates a table with total count of rows.
+
+![Example of a SQL COUNT Query](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9563da96e83c1435eea143_oF6kNEXs3x3kmTI7se6_myhLnpQ3SFeWX35GXFMsAla5CAKti-VzmRHW8qICvQuaZwHEVx3LAlpqv0dh-csQO4Fs9r02LaQ7hKv0_O17kJI301fCmoY6jFbbvwT70skNciQmNDsi.png)
+
+With more complex data, SQL can answer more complex questions such as how many rows are there per state.
+
+![Example Table](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9563da4cfd2a6d3f3a4f8e_WoAWi0-rP8o0PIX7TS8J_JdaIx1NnHhBDpdTYOSxiks6C8reDKsHvqpXA3zX09BSh9goetaD_bWRzirRDTuULk2aV4l8jAfkpR6EJgE607TZxE8ja-jZVV7CRXJfHH8vZkkcTxUd.png)
+
+The COUNT aggregation can answer this, but SQL needs to be told what to group by in the query. SQL also needs the column it is grouping by in the SELECT statement so that the final table can show the data in its proper groups.
+
+SELECT State, COUNT(*)
+
+FROM facebook
+
+GROUP BY State
+
+![A More Specific SQL COUNT Query](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9563da4cfd2afb843a4f8f_Th-g3AXPHqy6fO6pNFd5O9wvfz0_GVc6m-ha_coSxxDQL-rtVCmDfhoKWs0h1tdFVMgQkbGFFMATaEnnXcIn_tKzU64XOdBnkAXbjO-nVk5zmLa6NRo5NbYSaLCxQbmW3truPguL.gif)
+>>>>>>> a18a24052dc16bf0960eed73d3f0948bc555bada
 
 First SQL will group together data by the column or columns listed in the group by statement in this case state. Then SQL will perform the same COUNT operation as before but check which group to assign the count to.
 

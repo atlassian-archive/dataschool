@@ -1,7 +1,7 @@
 ---
 title: The Data School Library
 meta_title: 'The Data School Web Book Library'
-description: ''
+description: 'Read our web books on topics such as SQL, data visualization, and dashboard design.'
 layout: default
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>

@@ -7,7 +7,7 @@ authors:
 reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1wE7Dah1_zBK5gcSZHdyrdsmzvuiw_mYuIln7vc0W1dU/edit?usp=sharing
 image: ''
-summary: ''
+description: ''
 is_featured: false
 img_border_on_default: false
 published: true

@@ -8,7 +8,7 @@ reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1nidfueJfQutx96f0A_oXVsRwb9nuKa5qQ18REVA22TQ/edit?usp=sharing
 image: ''
-summary: ''
+description: ''
 is_featured: false
 img_border_on_default: true
 published: true
