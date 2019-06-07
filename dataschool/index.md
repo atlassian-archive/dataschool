@@ -1,6 +1,7 @@
 ---
 layout: default-breakout
 meta_title: ''
+description: ''
 ---
 <div class="home-hero">
   <div class="container centered">
@@ -30,21 +31,6 @@ meta_title: ''
   <div class="row">
     <div class="col-sm">
       <h2>Featured Chapters</h2>
-
-      <!-- <ul class="chapter-list list-unstyled">
-        {% for chapter in bookchapters %}
-          <li>
-            {% assign book = site.books | where:'book_slug', chapter.book_slug %}
-            {% assign book = book[0] %}
-            <div class="chapter-info">
-              <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
-              <em>From <a href="{{ book.slug }}">{{ book.title }}</a></em>
-              <p>{{ chapter.summary }}</p>
-            </div>
-            <a href="{{ chapter.url }}" class="thumbnail-img" style="background-image: url('{{chapter.image}}');"></a>
-          </li>
-        {% endfor %}
-      </ul> -->
     </div>
   </div>
   {% assign bookchapters = site.chapters | where:'is_featured', 'true' | sort: 'number' %} <!-- maybe should be sorted by date updated? -->
@@ -67,7 +53,6 @@ meta_title: ''
     </div>
   </div>
 </div>
-
 <div class="footer">
   <div class="container">
     <div class="row">

@@ -1,23 +1,12 @@
 ---
-title: Content Library
-meta_title: ''
+title: The Data School Library
+meta_title: 'The Data School Web Book Library'
+description: ''
 layout: default
 ---
-<h1 class="title centered mb-5">The Data School Library</h1>
-<!-- <ul class="book-list mt-5 no-pad-list">
-  {% for book in site.books %}
-  <li>
-    <a href="{{ book.url }}" class="hover-link">
-      <div class="description">
-        <h2>{{ book.title }}</h2>
-        {{ book.content }}
-      </div>
-      <img class="hover-img" src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
-    </a>
-  </li>
-  {% endfor %}
-</ul> -->
+<h1 class="title centered mb-5">{{page.title}}</h1>
 {% for book in site.books %}
+{% if book.is_hidden %}{% else %}
 <div class="row mb-5">
   <div class="col-sm-8">
     <a href="{{ book.url }}" class="book-info">
@@ -31,13 +20,5 @@ layout: default
     </a>
   </div>
 </div>
+{% endif %}
 {% endfor %}
-<!-- <li>
-  <a href="{{ book.url }}" class="hover-link">
-    <div class="description">
-      <h2>{{ book.title }}</h2>
-      {{ book.content }}
-    </div>
-    <img class="hover-img" src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
-  </a>
-</li> -->

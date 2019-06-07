@@ -1,10 +1,9 @@
 ---
 title: Our Mission
-tags:
-- mission
-
+meta_title: 'The Data School Mission'
+description: ''
 ---
-<h1 class="title centered">Our Mission</h1>
+<h1 class="title centered mb-5">{{page.title}}</h1>
 
 At Chartio we describe our mission in four words which, not coincidentally, can be understood by both people and machines. Our mission is to:
 

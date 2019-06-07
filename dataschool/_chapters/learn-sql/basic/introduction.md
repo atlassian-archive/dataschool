@@ -9,7 +9,7 @@ authors:
 - author: _people/dave.md
 reviewers:
 - reviewer: _people/matt.md
-is_featured: true
+is_featured: false
 image: /assets/images/learn-sql/basic/introduction/sql-tutorial-excel-introduction.png
 ---
 
