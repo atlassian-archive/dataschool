@@ -1,17 +1,16 @@
 ---
-title: "How to use Indexing to Improve Database Queries"
-short: "How Indexing Works"
+title: How to use Indexing to Improve Database Queries
+short: How Indexing Works
 authors:
 - author: _people/blake.md
 reviewers:
 - reviewer: _people/matt.md
 - reviewer: _people/matthew-layne.md
-description: Learn how indexing works and why it is a critical part of optimizing your
-  data warehouse
-published: false
+description: Learn how indexing works and why it is a critical part of optimizing
+  your data warehouse
 img_border_on_default: true
----
 
+---
 ## **What is Indexing?**
 
 Indexing makes columns faster to query by creating pointers to where data is stored within a database.
