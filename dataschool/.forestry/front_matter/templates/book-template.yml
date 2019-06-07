@@ -8,6 +8,9 @@ fields:
 - type: textarea
   name: description
   label: description
+- type: textarea
+  name: book_slug
+  label: book_slug
 - name: authors
   type: field_group_list
   fields:
@@ -20,13 +23,13 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: Author
     description: choose authors from the current list of contributors
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
   label: Authors
 - type: file
@@ -39,6 +42,8 @@ fields:
   name: is_hidden
   label: is_hidden
 pages:
+- dataschool/_books/how-to-design-a-dashboard.md
+- dataschool/_books/learn-sql.md
 - dataschool/_books/data-governance.md
 - dataschool/_books/how-to-teach-people-sql.md
 - dataschool/_books/data-modeling-101.md
