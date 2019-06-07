@@ -13,6 +13,7 @@ summary: Dashboards are the way data people help the rest of an organization mak
 is_featured: true
 published: true
 img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing
 ---
 > “The greatest value of a picture is when it forces us to notice what we never expected to see.”
 > —John Tukey, Mathematician
@@ -36,5 +37,3 @@ This book will quickly introduce you to what dashboards are, what makes them use
 ![](/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg)
 
 This book will provide resources and examples to aid you at every step of the process. Use this book to improve your own dashboard skills and use it as a reference for new analysts that join your organization.
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing)

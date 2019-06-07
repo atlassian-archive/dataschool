@@ -1,6 +1,6 @@
 ---
 title: Dashboard Design Process
-section: 'book'
+section: book
 number: 40
 authors:
 - person: _people/matt.md
@@ -10,6 +10,7 @@ meta_title: ''
 summary: Overview of all the steps in a dashboard design process
 is_featured: false
 img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing
 ---
 The dashboard design process is very similar to any design process however the output is a dashboard… obviously.
 
@@ -95,5 +96,3 @@ If the dashboard is useful the amount of views and total number of viewers is li
 ### Maintenance
 
 Datasources, tables, and fields change, dashboards need to change with it. Setting up scheduled times to review dashboards is critical to keeping them relevant and functional. Providing a way for the audience to alert you about issues will allow you to make informed improvements to the dashboard. We cover maintenance in [Making Sure Your Dashboard Always Gets Better]([https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better](https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better "https://dataschool.com/learn/making-sure-your-dashboard-always-gets-better")
-
-[Give Feedback on our Google Doc]([https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing](https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing "https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing")

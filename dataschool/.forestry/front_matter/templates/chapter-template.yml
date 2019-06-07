@@ -57,6 +57,10 @@ fields:
     max:
     labelField: reviewer
   label: reviewers
+- type: text
+  name: feedback_doc_url
+  label: Feedback doc URL
+  description: The URL for the shared Google doc where readers can leave feedback, will be added to a button at the end of the chapter.
 - name: image
   type: file
   config:

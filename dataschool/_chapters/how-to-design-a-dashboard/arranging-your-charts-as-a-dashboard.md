@@ -14,6 +14,7 @@ writers:
   writers: []
 published: true
 img_border_on_default: false
+feedback_doc_url: 
 ---
 Arranging the charts is where the science of a dashboard project starts to cede some of its control to art. There are many things to consider when arranging and sizing charts and selecting fonts and colors. How visualizations are composed in a dashboard can either facilitate or hinder the decision making process.
 

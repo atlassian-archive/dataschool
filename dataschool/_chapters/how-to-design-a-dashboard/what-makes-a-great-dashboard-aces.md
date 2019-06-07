@@ -14,6 +14,7 @@ summary: Learn the best practices behind dashboard design to support decision ma
 is_featured: false
 published: true
 img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/173T4Q9yB9arBmAFfLcIRqTj_KFGKFOMEkKGMqSlAtgo/edit?usp=sharing
 ---
 An optimal dashboard is Accurate, Clear, Empowering, and Succinct. These key tenets can be remembered with the acronym ACES.
 
@@ -214,5 +215,3 @@ Looking back at our original dashboard, we can note the placement of relevant da
 * Clear- clarity allows for speed of insight
 * Empowering - will people access the dashboard regularly to make decisions (makes sure the dashboard delivered on it goal of supporting decisions)
 * Succinct - keeping it brief and relevant to critical information makes it easy to evaluate all of the data simultaneously and make decisions
-
-[Give Feedback on our Google Doc]([https://docs.google.com/document/d/173T4Q9yB9arBmAFfLcIRqTj_KFGKFOMEkKGMqSlAtgo/edit?usp=sharing](https://docs.google.com/document/d/173T4Q9yB9arBmAFfLcIRqTj_KFGKFOMEkKGMqSlAtgo/edit?usp=sharing "https://docs.google.com/document/d/173T4Q9yB9arBmAFfLcIRqTj_KFGKFOMEkKGMqSlAtgo/edit?usp=sharing")
