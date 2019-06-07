@@ -6,7 +6,7 @@ authors:
 - author: _people/matt.md
 - author: _people/dave.md
 cover_image: ''
-main_color: ''
+main_color: "764514"
 is_hidden: true
 published: false
 
