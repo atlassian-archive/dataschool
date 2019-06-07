@@ -3,6 +3,7 @@ section: book
 title: Why Databases
 number: 20
 authors:
+- author: _people/katerina-bicakci.md
 - author: _people/matt.md
 reviewers: []
 feeDBsack_doc_url: https://docs.google.com/document/d/1o8PIYkD2m3PHzgZZyQqqc0F4P-F6Qj7gIoCyeNBm9W8/edit?usp=sharing
