@@ -6,6 +6,12 @@ fields:
   name: title
   label: title
 - type: text
+  name: meta_title
+  label: meta_title
+- type: text
+  name: description
+  label: description
+- type: text
   name: section
   label: section
   description: If the book should be broken up into sections, choose which section
@@ -30,31 +36,31 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: author
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
 - name: reviewers
   type: field_group_list
   fields:
   - name: reviewer
     type: select
-    default: 
+    default:
     config:
       required: false
       options: []
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: reviewer
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: reviewer
   label: reviewers
 - type: text
@@ -68,9 +74,6 @@ fields:
     maxSize: 250
   label: image
   description: used for thumbnail and social sharing previews of this chapter
-- type: text
-  name: summary
-  label: summary
 - name: is_featured
   type: boolean
   label: Is Featured
@@ -89,8 +92,8 @@ fields:
     type: list
     config:
       use_select: true
-      min: 
-      max: 
+      min:
+      max:
       source:
         type: pages
         section: people

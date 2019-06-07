@@ -2,7 +2,7 @@
 layout: default
 title: Our Contributors and Reviewers
 meta_title: 'The Data School Contributors'
-description: ''
+description: 'Our community is made up of experienced data professionals and those just getting started with analytics. We welcome anyone who has a passion for data.'
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
 <ul class="contributors-list list-unstyled">

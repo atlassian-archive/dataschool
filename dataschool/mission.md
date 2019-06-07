@@ -1,7 +1,7 @@
 ---
 title: Our Mission
 meta_title: 'The Data School Mission'
-description: ''
+description: 'We want to JOIN people ON data by creating the best resources for building a data driven organization.'
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
 

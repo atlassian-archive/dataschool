@@ -14,7 +14,7 @@ layout: default
 {% assign book = site.books | where:'slug', page.book_slug %}
 {% assign book = book[0] %}
 {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
-<a class="btn btn-primary next-chapter-btn" href="#">Next Chapter</a>
+<!-- <a class="btn btn-primary next-chapter-btn" href="#">Next Chapter</a> -->
 <p class="mt-5">
   Written by:
   {% for author_path in page.authors %}

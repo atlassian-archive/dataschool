@@ -1,7 +1,7 @@
 ---
 title: 'How to Contribute to The Data School'
 meta_title: 'Contribute to Data School'
-descriptoin: ''
+descriptoin: 'Provide content on data analytics, data visualization, data modeling, data governance, or any data topic you think is important to creating a data driven organization.'
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
 

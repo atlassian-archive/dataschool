@@ -8,7 +8,7 @@ reviewers:
 - reviewer: _people/dave.md
 - reviewer: _people/tim.md
 image: ''
-summary: ''
+description: ''
 is_featured: false
 writers:
   writers: []
