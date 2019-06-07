@@ -42,7 +42,7 @@ fields:
   fields:
   - name: reviewer
     type: select
-    default: []
+    default: 
     config:
       required: false
       options: []
@@ -119,5 +119,8 @@ pages:
 - dataschool/_chapters/how-to-design-a-dashboard/design-a-dashboard-example.md
 - dataschool/_chapters/how-to-teach-people-sql/introduction.md
 - dataschool/_chapters/how-to-teach-people-sql/why-databases.md
+- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
 - dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
+- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
