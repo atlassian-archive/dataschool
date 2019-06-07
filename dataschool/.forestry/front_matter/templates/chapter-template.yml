@@ -30,12 +30,12 @@ fields:
       source:
         type: pages
         section: people
-        file:
-        path:
+        file: 
+        path: 
     label: author
   config:
-    min:
-    max:
+    min: 
+    max: 
     labelField: author
 - name: reviewers
   type: field_group_list
@@ -49,12 +49,12 @@ fields:
       source:
         type: pages
         section: people
-        file:
-        path:
+        file: 
+        path: 
     label: reviewer
   config:
-    min:
-    max:
+    min: 
+    max: 
     labelField: reviewer
   label: reviewers
 - type: text
@@ -89,8 +89,8 @@ fields:
     type: list
     config:
       use_select: true
-      min:
-      max:
+      min: 
+      max: 
       source:
         type: pages
         section: people
@@ -123,3 +123,4 @@ pages:
 - dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
 - dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
 - dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
