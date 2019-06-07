@@ -61,7 +61,7 @@ meta_title: ''
     </div>
   {% endfor %}
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm centered">
       <h2>Get new data chapters sent right to your Inbox</h2>
       {% include newsletter-form.html %}
     </div>
@@ -75,7 +75,7 @@ meta_title: ''
         <div class="footer-links">
           <h4>Created by</h4>
           <img src="/assets/images/chartio-logo-black-tbg.svg" alt="Chartio logo" class="height-3">
-          <p><a href="https://chartio.com/about/legal/">Terms</a> • <a href="https://chartio.com/about/legal/privacy/">Privacy &amp; Cookies</a></p>
+          <p class="small-font">©2019 All Rights Reserved • <a href="https://chartio.com/about/legal/">Terms</a></p>
         </div>
       </div>
     </div>

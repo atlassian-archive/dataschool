@@ -4,7 +4,6 @@ section: book
 number: 50
 authors:
 - author: _people/matt.md
-- author: _people/dave.md
 reviewers:
 - reviewer: _people/dave.md
 image: ''
@@ -14,7 +13,8 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
+feedback_doc_url: 
 ---
 
 ![](https://lh5.googleusercontent.com/PUuoxj5zQ8sFlU4mFL1dwuVxFCoLw2OSP1HIjp3LpiqxM978gzy_qjYWQ1oEOKF6nVksqVTJOckQDQhK62azgWgrsU4LaPz_q0aIqKDJHZ7FF7Bn7_R7DgLMJSDWLYPa09PO1edx =624x217)
@@ -25,7 +25,7 @@ These roles may be fulfilled by the same person but typically they are not.
 
 ## Key Stakeholders
 
-1. Designer
+### 1. Designer
 
 ![](https://lh3.googleusercontent.com/Fa5qiSyQF6nU8p967d2JqV2mP5tqiZBcchHrwXF6164GJVSEuvXXrRC_KVh_QhH2BGVuE0h5iDL5c-skOYLIS-MC9w07bejQyKbYVmcyif09RhjomTeo3toe-Xh7_yLA72IWFuVO =624x93)
 

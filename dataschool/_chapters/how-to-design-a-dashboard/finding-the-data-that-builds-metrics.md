@@ -12,8 +12,9 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: false
-
+published: true
+img_border_on_default: false
+feedback_doc_url: 
 ---
 ![](https://lh6.googleusercontent.com/QA-vKJjFYPTUO9eiuJH0Ndu9tR4c5zPTXMRA5FwPypi78Ge8ekSu6zBqUOAChX6Gv1ebyHzUumieVsnvDhW_SFDVn_M-ENm_opHeEnuJChI0E-kjtHfEyNWA8Ls4YT7hpN4PeT6_ =624x187)
 
@@ -43,7 +44,9 @@ Finding where the data is that you need can be the hardest part of the process. 
 
 When you find something promising such as a table with the same keyword you searched or contains a field that matches your keyword do a quick query:
 
-\[code block\] : SELECT * FROM operations LIMIT 3
+```sql
+SELECT * FROM operations LIMIT 3
+```
 
 ![](https://lh6.googleusercontent.com/EDK5AXDgynelu03VnXd0J1XvtM0uhSOWc19GrgqODpOVLqAZjjrw2jdyQyOHPlkYkP4LPj6Tq22Xq3vW8FMfxd6oXF8sbpHVuFRNBln68pHhE1RPU0PInRTxNQa9k-Zr_wq1i5zL =624x87)
 
@@ -92,19 +95,15 @@ Well you have data but it is messy. It may be obvious such as missing values. It
 
 On any column that you will be using in a metric calculation you should check for Nulls and blank records. Here is an example query to get the Total number of nulls and nulls as a percent of total records.
 
+```sql
 SELECT COUNT(*)
-
 FROM table
-
 WHERE field is null
-
 To check for blank values we can use:
-
 SELECT COUNT(*)
-
 FROM table
-
 WHERE field = ‘’ or field = ‘ ’
+```
 
 You need to evaluate how to treat missing values.
 
@@ -124,17 +123,14 @@ Regardless of which option you choose be sure to have the decision documented so
 
 On any column that you will be using in a metric calculation you should also check for bizarre values. The Data School recommends doing a quick check on the highest and lowest values of any of the fields that will be used. You can do this using the ORDER BY clause.
 
+```sql
 SELECT *
-
 FROM table
-
 ORDER BY field DESC
-
 SELECT *
-
 FROM table
-
 ORDER BY field ASC
+```
 
 This will quickly surface values that are way off if they are in the field.
 
@@ -163,59 +159,35 @@ The interquartile range is the difference between the upper quartile (Q3) and th
 
 Here is an example query applying this formula to find outliers using IQR.
 
+```sql
 WITH orderedList as
-
 (SELECT ROW_NUMBER() OVER(ORDER BY amount)as num, quantity
-
 FROM table)
-
 SELECT num, quantity
-
 FROM orderedList
-
 WHERE
-
 num > FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.75 +
-
 (FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.75)-
-
 FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.25)
-
 ))
-
 or
-
 num < FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.25 -
-
 (FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.75)-
-
 FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.25)
-
 ))
+```
 
 Again in text fields this is more difficult to detect. Watch out for the following:
 

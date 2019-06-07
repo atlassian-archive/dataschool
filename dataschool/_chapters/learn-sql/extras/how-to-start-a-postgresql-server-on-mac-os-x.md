@@ -14,8 +14,7 @@ is_featured: false
 writers:
   writers:
   - _people/matthew-layne.md
-published: true
-
+published: false
 ---
 # **How to Start a PostgreSQL Server on Mac OS X**
 

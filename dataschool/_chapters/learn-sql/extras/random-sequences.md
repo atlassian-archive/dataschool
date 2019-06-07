@@ -2,6 +2,7 @@
 title: "How To Generate Random Data in PostgreSQL"
 short: Random Sequences
 description: "You can generate random values in SQL using the following instructions."
+published: false
 ---
 
 There are occasionally reasons to use random data, or even random sequences of data.  {{ page.database }} supports this with the `random` SQL function.  The following are some nice examples of how to use this.

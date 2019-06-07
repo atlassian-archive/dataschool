@@ -10,7 +10,7 @@ reviewers:
 ---
 Welcome to our {{ page.database }} interactive SQL Tutorial!  We've designed this specifically for tech-savvy folks to learn enough SQL to be able to do their own analysis and data fetching.  
 
-We've added a big innovation to our tutorial that makes it quite different: Because we believe the best way to learn SQL is by playing around, we've created an interactive **SQLBox** for you to follow along and play with writing queries from the very start.  The SQLBox takes your input and runs it against a live {{ page.database }} database that we're hosting.
+We've added a big innovation to our tutorial that makes it quite different: Because we believe the best way to learn SQL is by playing around, we've created an interactive _SQLBox_ for you to follow along and play with writing queries from the very start.  The SQLBox takes your input and runs it against a live {{ page.database }} database that we're hosting.
 
 The SQLBox is embedded right in to the lessons themselves.  Some of them have a checkbox to their left.  These are ones that have a correct answer to them.  See if you can get all of them correct!
 

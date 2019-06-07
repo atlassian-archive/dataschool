@@ -30,12 +30,12 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: author
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
 - name: reviewers
   type: field_group_list
@@ -49,14 +49,18 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: reviewer
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: reviewer
   label: reviewers
+- type: text
+  name: feedback_doc_url
+  label: Feedback doc URL
+  description: The URL for the shared Google doc where readers can leave feedback, will be added to a button at the end of the chapter.
 - name: image
   type: file
   config:
@@ -70,6 +74,11 @@ fields:
   type: boolean
   label: Is Featured
   description: toggle to feature this chapter on the home page
+- name: img_border_on_default
+  type: boolean
+  label: Image borders on by default
+  description: Toggle on to add borders to all images in this chapter (override with class="img-no-border")
+  default: false
 - name: writers
   type: field_group
   config: {}
@@ -78,8 +87,8 @@ fields:
     type: list
     config:
       use_select: true
-      min: 
-      max: 
+      min:
+      max:
       source:
         type: pages
         section: people
@@ -92,7 +101,6 @@ pages:
 - dataschool/_chapters/learn-sql/extras/how-indexing-works.md
 - dataschool/_chapters/learn-sql/extras/how-to-start-a-postgresql-server-on-mac-os-x.md
 - dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
-- dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
 - dataschool/_chapters/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces.md
 - dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
 - dataschool/_chapters/how-to-design-a-dashboard/determine-the-metrics-to-monitor.md
@@ -100,3 +108,5 @@ pages:
 - dataschool/_chapters/how-to-design-a-dashboard/dashboard-prototyping-and-feedback.md
 - dataschool/_chapters/how-to-design-a-dashboard/finding-the-data-that-builds-metrics.md
 - dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
+- dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
+- dataschool/_chapters/how-to-design-a-dashboard/build-the-metrics.md
