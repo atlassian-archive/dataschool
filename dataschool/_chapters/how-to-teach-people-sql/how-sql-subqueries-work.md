@@ -17,11 +17,13 @@ published: false
 ---
 A SQL subquery can look complicated:
 
-| --- |
-| SELECT * |
-| FROM (SELECT State, SUM (# of friends) |
-| FROM facebook |
-| GROUP BY state) |
+SELECT * 
+
+FROM (SELECT State, SUM (# of friends)
+
+FROM facebook
+
+GROUP BY state);
 
 The core concept to grasp is that the subquery (the part highlighted in blue inside the parentheses) is a separate SQL query that produces a table that is then used in the main query.
 
@@ -29,10 +31,11 @@ Let’s break the example above up and do the subquery first by itself.
 
 Subquery:
 
-| --- |
-| SELECT State, SUM (# of friends) |
-| FROM facebook |
-| GROUP BY state |
+SELECT State, SUM (# of friends)
+
+FROM facebook
+
+GROUP BY state;
 
 ![SQL Subquery Animation](https://assets.website-files.com/5c197923e5851742d9bc835d/5c95647196e83ca6bbeec3e8_Gfb6UxlJtLvTxjG6EhXweJGe85Jb8ytqFwa6w_6sgy8SBOK_f-682FHKHaxpXlsvYXBKi1ocvLLsgRbL__QT9ZhFF4TD_NlQqb6Ml2Z0SzN9aq-q5-9ILBGd8Q9vQ8DxddSF6qrn.gif)
 
@@ -44,9 +47,9 @@ This table from the subquery can then be used by the main query.
 
 Main query:
 
-| --- |
-| SELECT * |
-| FROM (subquery table) |
+SELECT *
+
+FROM (subquery table) 
 
 ![Main Query](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9563da4476fb5ed34887b2_21-NGat8OO_7__fkccSnoM1c-16ULgDL354Ggca6cRbkNhEYde81_SGvSO6ECisRTGzK0U0biZBbk8uQXjv7AIQaglBWJsiHyNTB7e40wcCjma1mOf7p2nsBQl6qluisrjLWnwcI.png)
 
@@ -60,31 +63,37 @@ Subqueries are most commonly in the FROM statement as a table to query from. How
 
 Single value subquery table:
 
-| --- |
-| SELECT * |
-| FROM facebook |
-| WHERE # of friends = (SELECT MAX(# of connections) |
-| FROM linkedin) |
+ SELECT *
+
+FROM facebook
+
+WHERE # of friends = (SELECT MAX(# of connections)
+
+FROM linkedin)
 
 ![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9564724476fb789948a14a_JCNDN8JR7jL6zkbod5WQZeHPz_Z45CNnQ9ANDq8buzhoa2NZNtLJ4XaTpDTRhoikU3As8ci8KYkl-ORlsoxRMgJXbF1LhBD-WjPxMUWETzkXNJbScBSCOwBppN6JjFTbrqHmcde0.gif)
 
 Multi-value subquery tables will result in an error since it would try to compare a single field to every row in a column or every cell within table at once.
 
-| --- |
-| SELECT * |
-| FROM facebook |
-| WHERE # of friends = (SELECT # of connections |
-| FROM linkedin) |
+ SELECT *
+
+FROM facebook
+
+WHERE # of friends = (SELECT # of connections
+
+FROM linkedin)
 
 ![Full SQL Subquery Animation in WHERE Statement](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9564724cfd2a5f483a6fb9__oygOLV43NTbwEMxa17ksu8NLOq7MsCKM8sqBeGyVI48yyqakJCxaFR1EwLjnkHXzJVCHVk4e90vR_-EHDc1nYqNom8QW5ms3TqcOSRHCe9R0oeD36TCVw0LW6qajfinD5xgW-RU.gif)
 
 Multi-value subquery tables can be used with logical operators such as IN which compares a single field to every row in a column or table.
 
-| --- |
-| SELECT * |
-| FROM facebook |
-| WHERE # of friends IN (SELECT # of connections |
-| FROM linkedin) |
+SELECT * 
+
+FROM facebook 
+
+WHERE # of friends IN (SELECT # of connections 
+
+FROM linkedin)
 
 ![SQL Subquery with Logical Operators Animation](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9564723a3564360d5ac42e_48cBeWcCBRS9eyS_U6mHvHtL18__vstG86SvQVU3d7BJ2mqbCHYvKlA7LZBTxbMOdTNx0YA2o9BYOIrKEp2k4jbDd--iysDCblIabJKfq3xTMwFVqP4-JBWnv_FhF0hnijXGFhab.gif)
 
@@ -94,23 +103,27 @@ Subqueries can also be written in a WITH statement instead of in the main query.
 
 Subquery in the Query:
 
-| --- |
-| SELECT * |
-| FROM (SELECT State, SUM (# of friends) |
-| FROM facebook |
-| GROUP BY state) |
+  SELECT *
+
+ FROM (SELECT State, SUM (# of friends) 
+
+FROM facebook 
+
+GROUP BY state)
 
 Subquery in a WITH statement:
 
-| --- |
-| WITH subQ AS ( |
-| SELECT State, SUM (# of friends) |
-| FROM facebook |
-| GROUP BY state |
-| ) |
-|  |
-| SELECT * |
-| FROM subQ |
+WITH subQ AS ( 
+
+SELECT State, SUM (# of friends)
+
+FROM facebook
+
+GROUP BY state) 
+
+SELECT * 
+
+FROM subQ
 
 Writing it this way can help make it more clear that you are first creating a table and then referencing it in the outer query.
 
