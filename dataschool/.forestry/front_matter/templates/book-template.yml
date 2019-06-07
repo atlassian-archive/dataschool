@@ -40,3 +40,4 @@ fields:
   label: is_hidden
 pages:
 - dataschool/_books/how-to-teach-people-sql.md
+- dataschool/_books/data-modeling-101.md
