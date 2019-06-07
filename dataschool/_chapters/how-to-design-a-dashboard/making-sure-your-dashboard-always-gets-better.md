@@ -12,12 +12,10 @@ image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
-![Iterate on your dashboard](https://assets.website-files.com/5c197923e5851742d9bc835d/5cab87c4d529cc1d9385a34e_p562rkX0sr5DFFH28eEOckl2KaQbZAGtzo_oLRF0C90BqS4wBg5_A9n_wO_AeZrpIXKeNiIdTmApgVL74FJ0qBWp1ElDUCxiMgaWkVyKJNohO3U-61Ko0xnrd6emBrjfXV-0tVAj.jpeg)
+![Iterate on your dashboard](/assets/images/how-to-design-a-dashboard/making_sure_your_dashboard_always_gets_better/gettingBetter.jpeg)
 
 Continuous Improvement is more than just a phrase or a buzzword, it is the key to a useful dashboard. You should not iterate for the sake of iteration. Iteration should be informed by feedback from consumers of the dashboard and the Point Person of the dashboard.
 
@@ -37,13 +35,13 @@ A common type of negative feedback is that something isn't working properly on t
 
 ### Audience to community
 
-![Three examples of the new logo and how it works in different environments ](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9289abff8581317254bc61_APzBOBO0xbtTet4faJfH_vhVg3OBceUhsIvIDjkNt6qjg-k7lyK8WETaFlpUBnSV6licBOzv9LRvdxc8etCW33OGm1hHxmwFoRQvX13sH8aNSymhpmxA8cL9bVgPRSq3kCCBf1cB.png)
+![Three examples of the new logo and how it works in different environments ](/assets/images/how-to-design-a-dashboard/making_sure_your_dashboard_always_gets_better/slack.png)
 
 Moving your audience from a one way feedback channel to a community can unearth more valuable feedback. Use a community building tool like Slack, to get an insight into how viewers are talking about your dashboard with other viewers. These discussions will often provide more candid feedback. You can also solicit feedback on these channels. Once one person chimes in, others who are experiencing the same issues will tend to pipe up so you can judge the significance of the issue.
 
 ## Iteration schedule
 
-![Do maintenance on dashboards](https://assets.website-files.com/5c197923e5851742d9bc835d/5cab8854229f4db61f25d21d_Ewu90r7dFpff6VnoEi1fSEfn4c50Z_YL2QdSt4WKjYRdESosyPXPWUwN19nexCjYRSteYyfke-1rG3QDSwdc0ZxRhE1AjUB5QJF6QjE6uK7kSNretYu61Tqh_66j8-ij8IeOds6h.png)
+![Do maintenance on dashboards](/assets/images/how-to-design-a-dashboard/making_sure_your_dashboard_always_gets_better/schedule.png)
 
 Set up an iteration schedule where you review the feedback you have received. A regular interval such as every month or every week works best. It is better to review feedback (other than bug/broken feedback items) on a schedule instead of ad hoc. This gives you the opportunity to prioritize your work and see if there are themes in the feedback.
 

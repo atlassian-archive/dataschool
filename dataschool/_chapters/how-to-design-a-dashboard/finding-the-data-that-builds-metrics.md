@@ -12,10 +12,11 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: false
-
+published: true
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1AjcnERWqKWWREjniCZ-WZwbBQ_IT4n2FcMAFWyO4iy0/edit?usp=sharing
 ---
-![](https://lh6.googleusercontent.com/QA-vKJjFYPTUO9eiuJH0Ndu9tR4c5zPTXMRA5FwPypi78Ge8ekSu6zBqUOAChX6Gv1ebyHzUumieVsnvDhW_SFDVn_M-ENm_opHeEnuJChI0E-kjtHfEyNWA8Ls4YT7hpN4PeT6_ =624x187)
+<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png" /></div>
 
 From the previous chapters most of the ambiguity of what is going on the dashboard should have been addressed:
 
@@ -35,17 +36,21 @@ If you have the data this will be an easy step of the process. If the data is me
 
 Now you have to find the data that you will use to calculate those metrics in your database. Review the schemas of the databases you have access to.
 
-![](https://lh4.googleusercontent.com/BBjoUNm-p3r4i1vEyttbR6ycFQCVpJ6DYkOpng21VVuL9zc5Rd88CoXBuvGylJ05tTLtUSk_1vC8RjVVYxe3KIHorPWGDIkjVEcelGucK3mNRK6vMSWe9nAOUB5JmQ3ZkwUQit8r =565x521)
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/schema.png)
 
 Finding where the data is that you need can be the hardest part of the process. Often times data is not well documented and what you need could be spread across multiple databases. First search for tables that have keywords from your Metrics Spreadsheet.
 
-![](https://lh4.googleusercontent.com/TyuoABSFh9n0cqWHkHTjHQ_0Pcbpgmt7wvudl8zHpbS3ZTNrH6GPzQZ4NQRJNlFVpRRF3nebPkIteWfr2EKO35P20PvxgwzItGfiJMG1gjQNATw-ObUt6xDEhRFDCJGFb4lgk0c8 =624x281)
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/keywords.png)
 
 When you find something promising such as a table with the same keyword you searched or contains a field that matches your keyword do a quick query:
 
-\[code block\] : SELECT * FROM operations LIMIT 3
+```sql
+SELECT *
+FROM operations
+LIMIT 3;
+```
 
-![](https://lh6.googleusercontent.com/EDK5AXDgynelu03VnXd0J1XvtM0uhSOWc19GrgqODpOVLqAZjjrw2jdyQyOHPlkYkP4LPj6Tq22Xq3vW8FMfxd6oXF8sbpHVuFRNBln68pHhE1RPU0PInRTxNQa9k-Zr_wq1i5zL =624x87)
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/fromOperations3.png)
 
 Once you get the results you can quickly see if it has the relevant information. In this case we can see it has a department column that looks appropriate, and the amount column may be the cost data we are looking for.
 
@@ -53,36 +58,21 @@ If a table such as this one looks relevant to one of the metrics write it down o
 
 Your next step will be to determine what data you cannot find yourself. If you find a table but are unsure if it is the correct data put the name of the table in with a ? at the end. If you cannot find any relevant tables for a metric put three ? in the Metrics Spreadsheet.
 
-| --- | --- | --- | --- |
-| Metric | Aggregation | Grouping | Filtering |
-| Formula | Datasource | Content | Datasource |
-| Operations Cost | SUM(Cost) | Operations | TotalDepartmentMonth | Operations | Do not include marketing spend |
-| Revenue | SUM(Revenue) | ??? | TotalMonth | ??? |  |
-| Subscriptions | Count(Accounts) | subscriptions? | TotalMonth | subscriptions? | Do not include free trials |
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFull.png)
 
 If you have any questions about the tables or columns you have found, it is time to consult the Data Gatekeeper. I’d highly recommend coming to the Data Gatekeeper with the list of tables and fields you have questions about, using the metric spreadsheet is a convenient way to structure the conversation.
 
 Go through each metric with the Data Gatekeeper, and explain what tables and fields you think you should be using and which ones you have questions about.
 
-![](https://lh4.googleusercontent.com/w8UuQlg0MadBH7i3GxzFWeJWaIWiYDUSU38GDqrQ9irn2UROW1L9gBvwc_e-pK9GRsDy8in_z6amU7KiSbZA9w8dvjml0Up8NorVT8vdYTjshYrZ0scupyDkYiBtv06d-1BeGSoU =624x583)
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/highlightedSchema.png)
 
 The Data Gatekeeper will confirm which tables and fields you have selected so far or will help locate the tables and fields you need. Some of the data you need might not be accessible to you due to access permissions. The Data Gatekeeper may grant you access or will provide feedback about how to work around this limitation. After locating the relevant tables, update the Metrics Spreadsheet.
 
-| --- | --- | --- | --- |
-| Metric | Aggregation | Grouping | Filtering |
-| Formula | Datasource | Content | Datasource |
-| Operations Cost | SUM(Cost) | Operations | TotalDepartmentMonth | Operations | Do not include marketing spend |
-| Revenue | SUM(Revenu) | Payments | TotalMonth | Payments |  |
-| Subscriptions | Count(Accounts) | Subscriptions | TotalMonth | Subscriptions | Do not include free trials |
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetDatasource.png)
 
 We also need to specify the fields within the tables that will be used to make creating the SQL queries easy. Place the field names from the tables you found into the Formulas directly and put them in parentheses below your grouping categories in the Content column. Notice ‘Total’ does not have a column associated with it because it is the full aggregation.
 
-| --- | --- | --- | --- |
-| Metric | Aggregation | Grouping | Filtering |
-| Formula | Datasource | Content | Datasource |
-| Operations Cost | SUM(amount) | Operations | TotalDepartment (department)Month (created_date) | Operations | Do not include marketing spend(department) |
-| Revenue | SUM(amount) | Payments | TotalMonth(created_date) | Payments |  |
-| Subscriptions | Count(subscription_id) | Subscriptions | TotalMonth(created_date) | Subscriptions | Do not include free trials(payment_start_date) |
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFormula.png)
 
 ## When you have messy data
 
@@ -97,9 +87,10 @@ SELECT COUNT(*)
 FROM table
 
 WHERE field is null
+```
 
 To check for blank values we can use:
-
+```sql
 SELECT COUNT(*)
 
 FROM table
@@ -129,7 +120,9 @@ SELECT *
 FROM table
 
 ORDER BY field DESC
+```
 
+```sql
 SELECT *
 
 FROM table
@@ -155,7 +148,7 @@ While the previous method showed us obvious outliers there can be more subtle ou
 
 Quartiles split a quantitative variable up into 4 sections
 
-![](https://lh4.googleusercontent.com/a52FFCgaABDav0BbhU9lHuIOTk9lgGwKK1vLR3mexpzy8Fv-EXjs6PV9auMSk2EbmM-UD6rA-gdIGpdJ2K47MILb7A8t19ikEdhJQW8yN1PyAbBpBxlWa_A1qlZ_Jn7ICGuj6Dpd =624x217)
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/IQR.png)
 
 [http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html "http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html")
 

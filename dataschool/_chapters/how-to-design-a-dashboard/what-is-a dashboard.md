@@ -1,6 +1,6 @@
 ---
 title: What is a Dashboard?
-section: 'book'
+section: book
 number: 20
 authors:
 - author: _people/matt.md

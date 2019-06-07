@@ -12,11 +12,12 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: false
-
+published: true
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1JK4JtcC-qqVX-vt4Xe8S5i0f5cspvrBeEuW6Ej8ucYc/edit?usp=sharing
 ---
 
-![](https://lh5.googleusercontent.com/PUuoxj5zQ8sFlU4mFL1dwuVxFCoLw2OSP1HIjp3LpiqxM978gzy_qjYWQ1oEOKF6nVksqVTJOckQDQhK62azgWgrsU4LaPz_q0aIqKDJHZ7FF7Bn7_R7DgLMJSDWLYPa09PO1edx =624x217)
+![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/groupPic.png)
 
 In a dashboard design project, multiple people are involved in making it a success. Key stakeholders need to be defined from the start to facilitate optimal collaboration and communication during the appropriate steps of the process. There are 4 key stakeholders with corresponding responsibilities in a typical dashboard project.
 
@@ -26,7 +27,7 @@ These roles may be fulfilled by the same person but typically they are not.
 
 1. Designer
 
-![](https://lh3.googleusercontent.com/Fa5qiSyQF6nU8p967d2JqV2mP5tqiZBcchHrwXF6164GJVSEuvXXrRC_KVh_QhH2BGVuE0h5iDL5c-skOYLIS-MC9w07bejQyKbYVmcyif09RhjomTeo3toe-Xh7_yLA72IWFuVO =624x93)
+![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/allHighlighted.png)
 
 This is the person that is responsible for creating the dashboard, and managing the project. As you are the one reading this book this is likely you. Since you will be involved in all steps you should be in charge of coordinating all efforts of the project.
 
@@ -41,7 +42,7 @@ Author responsibilities:
 
 ### 2. Audience
 
-![](https://lh4.googleusercontent.com/s9fA3MLsvUCZ3HJ6-JyevGj_wCn_v4mIzpcafCIMYeA80A0cPPfyb3lUvhlkwYoS_CNGt47mxRjgSE2Sj2eovJVRgT3UAc2PbeYwwQG-CNIFOGeZipgF8wbDZs5ZNSkA3eS7ua9k =624x93)
+![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/deployHighlighted.png)
 
 This stakeholder group is the most passive in the creation of the dashboard, but the most active once the dashboard is finalized.
 
@@ -63,7 +64,7 @@ However there is one audience member who is very involved in the process, we wil
 
 ### 3. Point Person
 
-![](https://lh5.googleusercontent.com/og0j0gUz_8Q9NdrcVox-d_0gY2kGBcYH35cJffOTZd5zluiA-tJV0ZLTUPhzsaz5qoUtqBMLOevquM2eOtC0yOLTHFLfQOI3JIrNFHK7UkxvTwR2XPgcIeCBU5Tt-cXzhc325CDH =624x93)
+![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/notBuild.png)
 
 The Point Person is the one that is requesting the dashboard. This is the person who has the business need for creating the dashboard, such as wanting to understand the marketing funnel or how users are engaging with the product over time. They should be involved in all of the decision points since they have the most context to ensure the dashboard is useful.
 
@@ -76,7 +77,7 @@ Point Person’s responsibilities:
 
 ### 4. Data Gatekeeper
 
-![](https://lh6.googleusercontent.com/F-fAVrZV_flmXlvHcx9Kpp5KQu6vPcpYdxS_ewMUAJDGHOJeKjrTmY8EipclJ53JVWTMq3vklCLOowRwN39Avr0BgnJpECBgLpArukQdPFLQmkiFBeP--DpgNhgjruke8XPNgv3i =624x93)
+![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/buildHighlighted.png)
 
 This is a member of the data team that understands the data source, schema, and any other library that will be used to create the metrics. This may also be you or perhaps not.
 

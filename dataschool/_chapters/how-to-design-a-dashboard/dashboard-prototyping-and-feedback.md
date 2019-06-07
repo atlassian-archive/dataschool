@@ -10,10 +10,11 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: false
-
+published: true
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1CqwiH9gPEiU92VQ4YYzTo9-bKy3sL-ynm0P-dY1ssRc/edit?usp=sharing
 ---
-![](https://lh5.googleusercontent.com/quVmTPL5CAQEY5GKwmijYYYEqUvt0Nimj6ol6Ln8dEUHnysRX8BdxiNgYNGhFGY5tLyxwsbIzfHYAw5UNop6YD5HG38js36VVtJZopokQ8J7t0bYu4RD3S0pRNb6ZCDSaphOj-AJ =624x187)
+<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png" /></div>
 
 ## Review
 
@@ -28,7 +29,7 @@ Start with individual metrics and draw them as visualizations. Then try drawing 
 * What does the audience want to be able to do?
 * What does the audience need to know in order to do it?
 
-![](https://lh5.googleusercontent.com/22iYcdPnBoLKb0lAXxQlno13dNHtlzjdG2JcXXzkgnyPP0Spx504XzUcWvhzmiaXMkZUhuDba2c2Pslygh7DuzX2qL-4zcFwqT7B5xYyLmMhOz9KlAouGrdctlUpWU-eihfa1UDy =543x431)
+!<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/dashboardDrawing.jpeg" /></div>
 
 It can be useful to role play this scenario in your head or with others to understand what visualizations will be valuable.
 
@@ -49,7 +50,7 @@ Ask the following questions for each visualization:
 * Do I need to know this?
 * What else do I want to know about this metric?
 * Is the conclusion I can draw from the visualization obvious?
-* 
+*
 
 Ask the following questions for the whole dashboard:
 
