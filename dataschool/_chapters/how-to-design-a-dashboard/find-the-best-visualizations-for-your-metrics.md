@@ -12,9 +12,8 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: true
-img_border_on_default: false
-feedback_doc_url: 
+published: false
+
 ---
 Selecting the best chart for your metrics is not always a straightforward process. Certain visualizations do not represent some datasets well, and certain visualizations can not represent some datasets at all. Sometimes you just need a table, single value, or just show some text. Knowing the difference will help you design the most useful dashboards.
 

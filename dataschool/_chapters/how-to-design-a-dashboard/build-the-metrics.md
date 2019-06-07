@@ -12,11 +12,10 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: true
-img_border_on_default: false
-feedback_doc_url: 
+published: false
+
 ---
-![](https://lh3.googleusercontent.com/Nb5p495OR2gxPmlu1R4oj781eHWrzTfMULRGqkHgFrYK2ZY48Lx-aRPxTDKnMeuX6edGG6i8B0vfDWV8wcPH-m_T0LFl9FwANuODwfrNmrhscirTDp_-V8QJxiWDwc9rkmSW7SUi =448x178)
+# ![](https://lh3.googleusercontent.com/Nb5p495OR2gxPmlu1R4oj781eHWrzTfMULRGqkHgFrYK2ZY48Lx-aRPxTDKnMeuX6edGG6i8B0vfDWV8wcPH-m_T0LFl9FwANuODwfrNmrhscirTDp_-V8QJxiWDwc9rkmSW7SUi =448x178)
 
 In the previous chapters, we filled out a metric spreadsheet. We took a vague ask from a Point Person and turned it into a well-defined list of metrics, calculations, and data sources. We will now use the completed metric architecture to create various SQL queries.
 
@@ -26,37 +25,39 @@ The columns of the metric architecture map to a SQL query.
 
 Take a look at a couple of sample queries we could create from this spreadsheet for the Operations Cost metric:
 
-## Total Operations Cost
+**Total Operations Cost**
 
-```sql
 SELECT SUM(amount)
+
 FROM Operations
-WHERE department != 'marketing'
-```
+
+WHERE department != ‘marketing’
 
 ![](https://lh4.googleusercontent.com/V7Wluc4YUAoo2LJ2xOFmA0ww7dHCdQV2W6MsdsjvAApywVkKeXCGCO1xZJTcyPQbOfyCXgCSA3u6DeInEn_1-gZGRReC-P_J8KsTt3sswRatb6eLRqwRZvA4iGXs_FJAGGUN21aT =143x76)
 
-## Total Operations Cost by Department
+**Total Operations Cost by Department**
 
 (When we introduce a GROUP BY statement we must include any column there in the SELECT statement as well)
 
-```sql
 SELECT SUM(amount), department
+
 FROM Operations
+
 WHERE department != ‘marketing’
+
 GROUP BY department
-```
 
 ![](https://lh4.googleusercontent.com/NhYMejfK7h4hPMHKou0_WyOwwz5g13HSWS7sSHfB4njtLiDQ7B-Us_W8O7WqMgys18If8DyXjj9ZWpxgoJRD8X6xjPStkNwJASTeiowSB7Md2DDq5pNEgMu_7ymPtGhPE_BE-iGa =571x150)
 
-## Total Operations Cost by Department by Month
+**Total Operations Cost by Department by Month**
 
-```sql
 SELECT SUM(amount), department, TO_CHAR(created_date, ‘YYYY-MM’) AS month
+
 FROM Operations
+
 WHERE department != ‘marketing’
+
 GROUP BY department, month
-```
 
 ![](https://lh4.googleusercontent.com/VgtGT_-1fnVT_ARRS-6ENfc2z8CvilxA1x7idHI51MMD61nA0d0P3RzXRL3xFLtCAdHOmKTr1IIAebz87PSXG1YGWyiJFNrFnNzc5BX2FF4z5QQcMfFly7dVEP0DlTZ6rPC_VC-u =624x141)
 
@@ -88,15 +89,19 @@ Depending on the BI tool that you are using you can see other people’s SQL que
 
 Complex Query example:
 
-```sql
 SELECT DATE_TRUNC('day', "Payments"."payment_date")::DATE AS "Day of Payment Date",
+
 SUM("Payments"."amount") AS "MRR"
+
 FROM "public"."payments" AS "Payments"
+
 WHERE ("Payments"."payment_date"::DATE BETWEEN {CALENDAR_INTERVAL.START} AND {CALENDAR_INTERVAL.END})
+
 GROUP BY DATE_TRUNC('day', "Payments"."payment_date")::DATE
+
 ORDER BY "Day of Payment Date" ASC
+
 LIMIT 1000;
-```
 
 Complexity in a query typically suggests the data is nuanced, messy, or certain business logic needs to be adhered to. If you come across a complex query that is for the same or a similar metric as the one you are working on, try reaching out to the creator. You should try to understand what the extra parts are all about so you can incorporate what is relevant into your own query.
 
@@ -106,7 +111,7 @@ On the other hand, if other people have similar looking queries for similar metr
 
 Getting a code review on your queries is a best practice. Reach back out to the Data Gatekeeper to validate your queries are calculating their metrics correctly. Having the metric spreadsheet facilitates this process since they can see your work and how you go to the query you wrote.
 
-## Build the Dashboard
+# Build the Dashboard
 
 Take the tables of data line them up with where they fit into your design.
 

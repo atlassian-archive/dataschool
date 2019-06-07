@@ -11,9 +11,8 @@ summary: ''
 is_featured: false
 writers:
   writers: []
-published: true
-img_border_on_default: false
-feedback_doc_url: 
+published: false
+
 ---
 ![](https://lh4.googleusercontent.com/YPjBU-rY3sr4Pu3Pvu7epnx09DFwTVgW7letCNk0PBOqAe269Y7PXXF0xJpQQEVaIjmIn7O5SIBipA3b6Efh5PtrzOYKiJl5w-gH0rD0cjxD96ji4QidRU1KHrFIoXHjCFO1y-id =624x187)
 
