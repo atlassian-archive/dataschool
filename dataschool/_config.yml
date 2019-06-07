@@ -70,6 +70,18 @@ defaults:
 
 # set defaults per book
   - scope:
+      path: "_chapters/data-governance"
+      type: "chapters"
+    values:
+      book_slug: data-governance
+      image: assets/images/book-covers/data-governance.png  # TODO set a real default image
+  - scope:
+      path: "_chapters/data-modeling-101"
+      type: "chapters"
+    values:
+      book_slug: data-modeling-101
+      image: assets/images/book-covers/data-modeling-101.png  # TODO set a real default image
+  - scope:
       path: "_chapters/how-to-design-a-dashboard"
       type: "chapters"
     values:
