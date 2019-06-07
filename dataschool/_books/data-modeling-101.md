@@ -6,6 +6,7 @@ authors:
 - author: _people/blake.md
 - author: _people/matt.md
 - author: _people/dave.md
+reviewers:
 cover_image: ''
 main_color: "764514"
 is_hidden: true

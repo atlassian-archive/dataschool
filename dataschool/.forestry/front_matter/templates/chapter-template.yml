@@ -30,31 +30,31 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: author
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
 - name: reviewers
   type: field_group_list
   fields:
   - name: reviewer
     type: select
-    default: []
+    default: 
     config:
       required: false
       options: []
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: reviewer
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: reviewer
   label: reviewers
 - type: text
@@ -89,8 +89,8 @@ fields:
     type: list
     config:
       use_select: true
-      min: 
-      max: 
+      min:
+      max:
       source:
         type: pages
         section: people

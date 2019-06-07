@@ -16,17 +16,23 @@ layout: default
 {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
 <a class="btn btn-primary next-chapter-btn" href="#">Next Chapter</a>
 <p class="mt-5">
-  Authors:{% for author_path in page.authors %}
+  Written by:
+  {% for author_path in page.authors %}
     {% assign a = site.people | where: 'path', author_path.author %}
     {% assign author = a[0] %}
-    <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
+    <a href="{{ author.url }}">{{ author.title }}</a>
+    {% if forloop.last != true %},{% endif %}
   {% endfor %}
   <br>
-  Reviewers:{% for reviewer_path in page.reviewers %}
-    {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
-    {% assign reviewer = a[0] %}
-    <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>{% if forloop.last != true %},{% endif %}
-  {% endfor %}
+  {% if page.reviewers %}
+    Reviewed by:
+    {% for reviewer_path in page.reviewers %}
+      {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
+      {% assign reviewer = a[0] %}
+      <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
+      {% if forloop.last != true %},{% endif %}
+    {% endfor %}
+  {% endif %}
 </p>
 <div class="centered mt-5">
   <p class="faux-header">Get new data chapters sent right to your Inbox</p>

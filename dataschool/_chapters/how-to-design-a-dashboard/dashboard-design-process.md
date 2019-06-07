@@ -4,7 +4,7 @@ section: book
 number: 40
 authors:
 - author: _people/matt.md
-reviewers: []
+reviewers: 
 image: ''
 meta_title: ''
 summary: Overview of all the steps in a dashboard design process
