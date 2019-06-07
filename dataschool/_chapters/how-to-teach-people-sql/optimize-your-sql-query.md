@@ -3,7 +3,7 @@ section: book
 title: Optimize your SQL Query
 number: 140
 authors:
-- author: []
+- author: _people/rohan-joseph.md
 reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1nxcE_KYu7WiNerM2dyYE7Q0uiUMCebdHjoV12KtrRB4/edit?usp=sharing
