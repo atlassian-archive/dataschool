@@ -5,17 +5,15 @@ number: 130
 authors:
 - author: _people/matt.md
 reviewers: []
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1wE7Dah1_zBK5gcSZHdyrdsmzvuiw_mYuIln7vc0W1dU/edit?usp=sharing
 image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
-![Scaling your dashboards](https://assets.website-files.com/5c197923e5851742d9bc835d/5cab8777229f4d375124ad2b_QIJCHoKCigaFRrp_mA2bmSWeZ7wqTHTIyy5zmkZyOgam3c6ZS0X-wCkh4hV236E2T8WCKulFC2NUWH-6xKzQlsTugZuNHEhBuXk7kTGaBPOCtGepD6fxggV2X35wSuIM2oMcJnne.png)
+![Scaling your dashboards](/assets/images/how-to-design-a-dashboard/scaling_dashboards/scaling.png)
 
 Once your dashboard is in front of it’s full audience how the dashboard is used is likely to evolve. This can be an expansion of decisions they would like to see supported or the number of groups who wants to use it for their specific scenarios. To accommodate these changes there are some scaling strategies to consider using.
 
@@ -23,7 +21,7 @@ Once your dashboard is in front of it’s full audience how the dashboard is use
 
 If the feedback for the dashboard is to support more decisions consider if it is appropriate for the dashboard you current have or if you should start the dashboard design process over to create a second dashboard to support these new decisions. You can then provide links on the original dashboard to link to these new dashboards.
 
-![Dashboard with Link](https://assets.website-files.com/5c197923e5851742d9bc835d/5cab877723c44c0baec0b35f_sjfLwTQaK3WCk7K_ZHIUSJOEOM3N1nsQuzhst26zBpv7MHyvagA2BL5iHvziHGVXEPZNrWIDekB8grpzOsZ-SLKCwfB-ArRK1kvQu-g9_iaeMCrVldi0bpzkMFxyNP6x2vnnGIhG.png)
+![Dashboard with Link](/assets/images/how-to-design-a-dashboard/scaling_dashboards/dashboard.png)
 
 Here we have an example where at the bottom there is blue text that links out to another dashboard.
 
@@ -33,7 +31,7 @@ There are also technical benefits to linking out. Keeping the number of queries 
 
 If the feedback for the dashboard is to support more groups’ specific scenarios you will need to incorporate interactive features. This means having dropdowns for variables so that multiple situations can be evaluated using the same framework of the dashboard.
 
-![Dashboard with interactivity](https://assets.website-files.com/5c197923e5851742d9bc835d/5cab8777229f4d6c1024ad4d_IiyDfXn_1cyrrj73cIq44Q2C1MCldA9OBPbAL01zq3JJhRcNWECd4xoptUZn2U38IzDJfO5lmy9bBGtqHUKi-sLM7hqxf0dh8OTOELJLhw4eJ0_jec4-CVpu-RWwEX-eg-NdAHmx.png)
+![Dashboard with interactivity](/assets/images/how-to-design-a-dashboard/scaling_dashboards/interactive.png)
 
 Here we have an example where at the top there is an interactive element to change the date range we are viewing.
 
@@ -53,17 +51,17 @@ At Chartio our rule of thumb is that if a query takes longer than 30 seconds the
 
 In addition leave any data manipulation (truncation, casting, etc) until after the aggregation. This means that you will aggregate the data first and then apply the transformations to the aggregated data.
 
+```sql
 SELECT SUM(num), category
-
 FROM table
-
 GROUP BY CAST(category AS VARCHAR)
+```
 
+```sql
 SELECT SUM(num), CAST(category AS VARCHAR)
-
 FROM table
-
 GROUP BY category
+```
 
 This is much more efficient to making the change to every record before aggregation. You can check out more Query optimization strategies here: [Optimize your SQL Query](https://dataschool.com/learn/optimize-your-sql-query)
 
