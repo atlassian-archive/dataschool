@@ -3,7 +3,7 @@ section: book
 title: Types of Data Analysis
 number: 
 authors:
-- author: []
+- author: _people/patrick-gibson.md
 reviewers: []
 feedback_doc_url: ''
 image: ''
