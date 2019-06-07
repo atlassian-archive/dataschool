@@ -23,7 +23,7 @@ sections:
   create: all
   match: "**/*"
 upload_dir: dataschool/assets/images
-public_path: "/uploads"
+public_path: "/assets/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
