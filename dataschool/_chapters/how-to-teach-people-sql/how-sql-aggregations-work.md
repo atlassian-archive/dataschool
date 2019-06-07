@@ -60,17 +60,17 @@ GROUP BY State, City
 
 After COUNT, for all other types of aggregation will need you to define the column you are aggregating.
 
-Wrong
+Wrong:
 
-Right
+SELECT SUM(*)
 
-| --- |
-| SELECT SUM(*) |
-| FROM facebook |
+FROM facebook
 
-| --- |
-| SELECT SUM(# of friends) |
-| FROM facebook |
+Right:
+
+SELECT SUM(# of friends)
+
+FROM facebook
 
 How would it SUM all the columns in the facebook table? The name column has text and cannot summed. Also there are multiple columns so we cannot SUM the row as a whole like the way we could COUNT the row as a whole. SQL needs to know which column the aggregation should be on, in this case the only numeric column is # of friends.
 
