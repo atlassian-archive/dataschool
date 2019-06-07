@@ -1,7 +1,7 @@
 ---
 section: extras
 title: How to Start a PostgreSQL Server on Mac OS X
-number:
+number: 
 authors:
 - author: _people/matthew-layne.md
 reviewers:
@@ -14,7 +14,7 @@ is_featured: false
 writers:
   writers:
   - _people/matthew-layne.md
-published: false
+
 ---
 # **How to Start a PostgreSQL Server on Mac OS X**
 

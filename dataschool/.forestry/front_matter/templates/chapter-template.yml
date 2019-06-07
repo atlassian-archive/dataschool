@@ -30,12 +30,12 @@ fields:
       source:
         type: pages
         section: people
-        file:
-        path:
+        file: 
+        path: 
     label: author
   config:
-    min:
-    max:
+    min: 
+    max: 
     labelField: author
 - name: reviewers
   type: field_group_list
@@ -49,18 +49,19 @@ fields:
       source:
         type: pages
         section: people
-        file:
-        path:
+        file: 
+        path: 
     label: reviewer
   config:
-    min:
-    max:
+    min: 
+    max: 
     labelField: reviewer
   label: reviewers
 - type: text
   name: feedback_doc_url
   label: Feedback doc URL
-  description: The URL for the shared Google doc where readers can leave feedback, will be added to a button at the end of the chapter.
+  description: The URL for the shared Google doc where readers can leave feedback,
+    will be added to a button at the end of the chapter.
 - name: image
   type: file
   config:
@@ -77,7 +78,8 @@ fields:
 - name: img_border_on_default
   type: boolean
   label: Image borders on by default
-  description: Toggle on to add borders to all images in this chapter (override with class="img-no-border")
+  description: Toggle on to add borders to all images in this chapter (override with
+    class="img-no-border")
   default: false
 - name: writers
   type: field_group
@@ -87,8 +89,8 @@ fields:
     type: list
     config:
       use_select: true
-      min:
-      max:
+      min: 
+      max: 
       source:
         type: pages
         section: people
@@ -110,3 +112,8 @@ pages:
 - dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
 - dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
 - dataschool/_chapters/how-to-design-a-dashboard/build-the-metrics.md
+- dataschool/_chapters/how-to-design-a-dashboard/conclusion.md
+- dataschool/_chapters/how-to-design-a-dashboard/sharing-the-dashboard-distribution-strategies.md
+- dataschool/_chapters/how-to-design-a-dashboard/scaling-dashboards.md
+- dataschool/_chapters/how-to-design-a-dashboard/making-sure-your-dashboard-always-gets-better.md
+- dataschool/_chapters/how-to-design-a-dashboard/design-a-dashboard-example.md
