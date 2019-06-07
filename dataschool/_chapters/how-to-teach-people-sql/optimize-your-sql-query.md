@@ -11,9 +11,7 @@ image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
 **Order of a SQL query**
