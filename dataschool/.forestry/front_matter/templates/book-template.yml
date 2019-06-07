@@ -42,9 +42,9 @@ fields:
   name: is_hidden
   label: is_hidden
 pages:
-- dataschool/_books/data-governance.md
-- dataschool/_books/how-to-teach-people-sql.md
-- dataschool/_books/data-modeling-101.md
 - dataschool/_books/fundamentals-of-analysis.md
-- dataschool/_books/how-to-design-a-dashboard.md
 - dataschool/_books/learn-sql.md
+- dataschool/_books/how-to-design-a-dashboard.md
+- dataschool/_books/data-governance.md
+- dataschool/_books/data-modeling-101.md
+- dataschool/_books/how-to-teach-people-sql.md
