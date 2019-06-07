@@ -102,6 +102,8 @@ fields:
     label: writers
   label: writers
 pages:
+- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
 - dataschool/_chapters/Data Governance/how-does-data-governance-apply-to-me.md
 - dataschool/_chapters/Data Governance/implementation.md
 - dataschool/_chapters/Data Governance/security.md
@@ -126,8 +128,6 @@ pages:
 - dataschool/_chapters/how-to-teach-people-sql/cross-join-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/union-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
 - dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
 - dataschool/_chapters/how-to-teach-people-sql/why-databases.md

@@ -13,7 +13,6 @@ is_featured: false
 img_border_on_default: false
 writers:
   writers: []
-published: false
 
 ---
 Data Governance allows the company to monitor the data it has, get more value from it and make important features of the data visible to users. It also provides the skills to manage these aspects. This is important not only because of errors and exclusions for existing data, but because new applications of data often need new features and thus new metadata to back them up.

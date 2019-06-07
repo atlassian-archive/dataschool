@@ -13,7 +13,6 @@ is_featured: false
 img_border_on_default: false
 writers:
   writers: []
-published: false
 
 ---
 ![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e4726a42c422f7c2107ea_five-pillars-5-1-300x125.png)
