@@ -8,6 +8,5 @@ authors: []
 cover_image: "/uploads/book-covers/how-to-teach-people-sql.png"
 main_color: ''
 is_hidden: false
-published: false
 
 ---
