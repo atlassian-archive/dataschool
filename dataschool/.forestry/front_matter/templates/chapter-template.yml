@@ -102,6 +102,7 @@ fields:
     label: writers
   label: writers
 pages:
+- dataschool/_chapters/how-to-teach-people-sql/appendix/how-to-create-a-copy-of-a-database-in-postgresql.md
 - dataschool/_chapters/fundamentals-of-analysis/correlation-and-p-value.md
 - dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
 - dataschool/_chapters/fundamentals-of-analysis/types-of-data-analysis.md
