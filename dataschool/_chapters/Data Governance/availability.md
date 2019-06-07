@@ -13,7 +13,6 @@ is_featured: false
 img_border_on_default: false
 writers:
   writers: []
-published: false
 
 ---
 ‍
