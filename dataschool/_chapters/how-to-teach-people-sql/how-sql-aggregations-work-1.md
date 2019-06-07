@@ -17,9 +17,9 @@ published: false
 ---
 SQL COUNT is the most common type of Aggregation in SQL, it counts the number of rows in a column or table. COUNT(*) tells SQL to count the number of rows of the whole table. COUNT(some column) tells SQL to count the number of non-null rows in that column.
 
-| --- |
-| SELECT COUNT(*) |
-| FROM facebook |
+SELECT COUNT(*) 
+
+FROM facebook
 
 ![SQL COUNT Aggregation Visualization](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9563da0c011ef87a8d2b5a_wKQYOGxwkdkMdDOvRZAtqNOsSSUgMsLTxS2xQg7KaUB2z7Y0nPuMwDvNZMAFDmFX4kDuQlFsF-2_ONpkMqzMGD_Tc76OONH0RnPhy-0dTL2KIABsnYVr0_8hMAcZzufdTQJEY7s7.gif)
 
