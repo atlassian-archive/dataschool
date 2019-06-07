@@ -199,6 +199,19 @@
 .book-title {
   margin-bottom: 5rem;
 }
+a.header-link {
+  font-size: 0.6em;
+  margin-right: 0.25em;
+  opacity: 0.25;
+  transition: opacity 0.25s;
+  &:hover {
+    opacity: 1;
+  }
+}
+.give-feedback-btn, .next-chapter-btn {
+  display: block;
+  margin-top: 1rem;
+}
 
 /* styles for Hubspot forms */
 form.hs-form {
@@ -247,7 +260,7 @@ form.hs-form {
       grid-row-start: 2;
       grid-row-end: 2;
       text-align: center;
-      font-size: 0.8em;
+      font-size: 0.833em;
       p {
           margin: 0;
           max-width: none;

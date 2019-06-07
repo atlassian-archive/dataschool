@@ -13,7 +13,8 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1JK4JtcC-qqVX-vt4Xe8S5i0f5cspvrBeEuW6Ej8ucYc/edit?usp=sharing
 ---
 
 ![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/groupPic.png)
@@ -24,7 +25,7 @@ These roles may be fulfilled by the same person but typically they are not.
 
 ## Key Stakeholders
 
-1. Designer
+### 1. Designer
 
 ![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/allHighlighted.png)
 
@@ -95,5 +96,3 @@ Figuring out which columns to use in a visualization and in a dashboard can be c
 * Consumers are the audience, and the design should meet their needs
 * Point People define the central decisions that a dashboard needs to support
 * Data Gatekeepers help find the relevant data in the database
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1JK4JtcC-qqVX-vt4Xe8S5i0f5cspvrBeEuW6Ej8ucYc/edit?usp=sharing)

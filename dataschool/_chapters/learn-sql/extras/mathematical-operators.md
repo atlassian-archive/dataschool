@@ -2,6 +2,7 @@
 title: "PostgreSQL Mathematical Operators"
 description: ""
 published: false
+published: false
 ---
 
 reference:

@@ -1,32 +1,20 @@
 ---
 layout: default
 ---
-<article>
+<article {% if page.img_border_on_default %}class="img-border-on-default"{% endif %}>
   <header class="mb-4">
     <h1 class="title">{{ page.title | escape }}</h1>
     <p><em>Last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</em></p>
   </header>
   {{ content }}
-  {% if next_chapter %}
-    <a class="max-width-content btn btn-primary mt-5" href="{{ next_chapter.url }}">Next: Next chapter title{{ next_chapter.title }}</a>
-  {% endif %}
 </article>
-
-<!-- {% assign book = site.books | where:'slug', page.book_slug %}
+{% if page.feedback_doc_url %}
+  <a class="btn btn-default give-feedback-btn" href="{{ page.feedback_doc_url }} target="_blank"">Give Feedback on our Google Doc</a>
+{% endif %}
+{% assign book = site.books | where:'slug', page.book_slug %}
 {% assign book = book[0] %}
 {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
-
-<a class="btn btn-primary" href="#">Next Chapter: {{ page.number }}</a>
-<ol>
-  {% for chapter in bookchapters %}
-    <li>
-      <a href="{{ chapter.url }}">
-        {{ chapter.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ol> -->
-
+<a class="btn btn-primary next-chapter-btn" href="#">Next Chapter</a>
 <p class="mt-5">
   Authors:{% for author_path in page.authors %}
     {% assign a = site.people | where: 'path', author_path.author %}
@@ -41,6 +29,6 @@ layout: default
   {% endfor %}
 </p>
 <div class="centered mt-5">
-  <h2>Get new data chapters sent right to your Inbox</h2>
+  <p class="faux-header">Get new data chapters sent right to your Inbox</p>
   {% include newsletter-form.html %}
 </div>

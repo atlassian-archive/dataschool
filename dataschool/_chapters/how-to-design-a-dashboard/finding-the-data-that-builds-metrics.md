@@ -13,7 +13,8 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1AjcnERWqKWWREjniCZ-WZwbBQ_IT4n2FcMAFWyO4iy0/edit?usp=sharing
 ---
 <div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png" /></div>
 
@@ -43,7 +44,7 @@ Finding where the data is that you need can be the hardest part of the process. 
 
 When you find something promising such as a table with the same keyword you searched or contains a field that matches your keyword do a quick query:
 
-```SQL
+```sql
 SELECT *
 FROM operations
 LIMIT 3;
@@ -81,21 +82,19 @@ Well you have data but it is messy. It may be obvious such as missing values. It
 
 On any column that you will be using in a metric calculation you should check for Nulls and blank records. Here is an example query to get the Total number of nulls and nulls as a percent of total records.
 
-```SQL
+```sql
 SELECT COUNT(*)
-
 FROM table
-
 WHERE field is null
 ```
+
 To check for blank values we can use:
-```SQL
+```sql
 SELECT COUNT(*)
-
 FROM table
-
 WHERE field = ‘’ or field = ‘ ’
 ```
+
 You need to evaluate how to treat missing values.
 
 * Ignore - leave the values as they are
@@ -113,20 +112,19 @@ Regardless of which option you choose be sure to have the decision documented so
 ### Obviously Wrong Values
 
 On any column that you will be using in a metric calculation you should also check for bizarre values. The Data School recommends doing a quick check on the highest and lowest values of any of the fields that will be used. You can do this using the ORDER BY clause.
-```SQL
+
+```sql
 SELECT *
-
 FROM table
-
 ORDER BY field DESC
 ```
-```SQL
+
+```sql
 SELECT *
-
 FROM table
-
 ORDER BY field ASC
 ```
+
 This will quickly surface values that are way off if they are in the field.
 
 In text fields this is more difficult to detect, however there are some tricks here as well. They are more use case oriented tips.
@@ -154,61 +152,36 @@ The interquartile range is the difference between the upper quartile (Q3) and th
 
 Here is an example query applying this formula to find outliers using IQR.
 
-```SQL
+```sql
 WITH orderedList as
-
 (SELECT ROW_NUMBER() OVER(ORDER BY amount)as num, quantity
-
 FROM table)
-
 SELECT num, quantity
-
 FROM orderedList
-
 WHERE
-
 num > FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.75 +
-
 (FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.75)-
-
 FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.25)
-
 ))
-
 or
-
 num < FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.25 -
-
 (FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.75)-
-
 FLOOR(
-
 (SELECT COUNT(*) as c
-
 FROM table)*0.25)
-
 ))
 ```
+
 Again in text fields this is more difficult to detect. Watch out for the following:
 
 * Incorrect Grouping
@@ -271,5 +244,3 @@ You could introduce surveys to measure how confident students are in their job p
 * Fill out your metric architecture to know which table and field will be necessary for each metric.
 * Determine how messy your data is and clean it appropriately
 * If you do not have the data for a metric work with the Data Gatekeeper to instrument new data points or use Proxy Metrics
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1AjcnERWqKWWREjniCZ-WZwbBQ_IT4n2FcMAFWyO4iy0/edit?usp=sharing)

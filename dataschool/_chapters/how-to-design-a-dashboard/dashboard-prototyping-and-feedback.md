@@ -11,7 +11,8 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1CqwiH9gPEiU92VQ4YYzTo9-bKy3sL-ynm0P-dY1ssRc/edit?usp=sharing
 ---
 <div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png" /></div>
 
@@ -50,7 +51,6 @@ Ask the following questions for each visualization:
 * What else do I want to know about this metric?
 * Is the conclusion I can draw from the visualization obvious?
 
-
 Ask the following questions for the whole dashboard:
 
 * Does this dashboard support the decisions and goals of this project?
@@ -61,5 +61,3 @@ Ask the following questions for the whole dashboard:
 ## Iteration
 
 Be open to feedback. The goal is to create a useful dashboard for the audience, not to convince people your design is great. You will likely need to do more than one round of prototyping, feedback, and iteration. After you get positive signals from the Point Person that if they had this dashboard it would help support their decisions to reach their goal you are ready to bring the chart to life.
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1CqwiH9gPEiU92VQ4YYzTo9-bKy3sL-ynm0P-dY1ssRc/edit?usp=sharing)

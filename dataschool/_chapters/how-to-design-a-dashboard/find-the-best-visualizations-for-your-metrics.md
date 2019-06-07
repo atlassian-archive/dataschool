@@ -13,7 +13,8 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1z2HnZTxsdPY89M5ElREXoGSIcQMrPzwdYVcaAbFz9eQ/edit?usp=sharing
 ---
 Selecting the best chart for your metrics is not always a straightforward process. Certain visualizations do not represent some datasets well, and certain visualizations can not represent some datasets at all. Sometimes you just need a table, single value, or just show some text. Knowing the difference will help you design the most useful dashboards.
 
@@ -135,5 +136,3 @@ Consider limiting the number of categories shown in a visualization or try lumpi
 
 * Chart decisions should be made based on the data, using the flowchart can help you make the best decision
 * If you are displaying multiple values consider whether you are trying to show relationship, comparison, composition, or distribution between the value to help you pick the most appropriate chart.
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1z2HnZTxsdPY89M5ElREXoGSIcQMrPzwdYVcaAbFz9eQ/edit?usp=sharing)
