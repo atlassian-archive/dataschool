@@ -2,7 +2,8 @@
 section: book
 title: How to Find Outliers with SQL
 number: 200
-authors: []
+authors:
+- author: _people/rebecca-barnes.md
 reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: ''
