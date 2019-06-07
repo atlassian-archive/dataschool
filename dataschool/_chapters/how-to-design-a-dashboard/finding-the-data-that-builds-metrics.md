@@ -1,14 +1,15 @@
 ---
 section: book
 title: Finding the Data That Builds Metrics
+meta_title:
 number: 100
 authors:
 - author: _people/matt.md
 reviewers:
 - reviewer: _people/dave.md
 - reviewer: _people/tim.md
-image: ''
-description: ''
+image: /assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png
+description: Learn to collaborate with your data team to discover what data can be used within a dashboard.
 is_featured: false
 writers:
   writers: []

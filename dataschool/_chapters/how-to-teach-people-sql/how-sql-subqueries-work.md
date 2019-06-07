@@ -1,6 +1,7 @@
 ---
 section: book
 title: How SQL Subqueries Work
+meta_title:
 number: 130
 authors:
 - author: _people/matt.md

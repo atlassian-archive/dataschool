@@ -1,6 +1,7 @@
 ---
 section: book
 title: SQL Join Types Explained Visually
+meta_title:
 number: 40
 authors:
 - author: _people/tim.md

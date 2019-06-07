@@ -1,6 +1,7 @@
 ---
 section: book
 title: Optimize your SQL Query
+meta_title:
 number: 140
 authors:
 - author: _people/rohan-joseph.md

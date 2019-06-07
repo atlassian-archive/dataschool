@@ -1,6 +1,7 @@
 ---
 section: book
 title: Union - Animated
+meta_title:
 number: 80
 authors:
 - author: _people/matt.md

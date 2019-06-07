@@ -1,6 +1,7 @@
 ---
 section: book
 title: Introduction
+meta_title:
 number: 10
 authors:
 - author: _people/matt.md

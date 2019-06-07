@@ -1,13 +1,14 @@
 ---
 section: book
 title: Determine the Metrics to Monitor
+meta_title:
+description: Define what metrics actually matter to business professionals.
 number: 60
 authors:
 - author: _people/matt.md
 reviewers:
 - reviewer: _people/dave.md
-image: ''
-description: ''
+image: /assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/dau.png
 is_featured: false
 writers:
   writers: []

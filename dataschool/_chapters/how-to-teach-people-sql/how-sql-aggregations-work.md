@@ -1,6 +1,7 @@
 ---
 section: book
 title: How SQL Aggregations Work
+meta_title:
 number: 120
 authors:
 - author: _people/matt.md

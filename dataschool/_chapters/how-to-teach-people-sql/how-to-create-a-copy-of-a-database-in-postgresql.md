@@ -1,8 +1,8 @@
 ---
 section: book
-title: 'How to create a copy of a database in PostgreSQL '
-meta_title: ''
-description: ''
+title: How to create a copy of a database in PostgreSQL 
+meta_title:
+description:
 number: 200
 authors:
 - author: _people/matthew-layne.md
@@ -78,6 +78,7 @@ Note: They will not be able to reconnect until the database is completely copied
 
 Once you terminate the connections, create the copy using the first command to CREATE a copy of the specified database. Due to the fact that people can reconnect between the time you terminate and the time you copy, you may want to structure your commands like so:
 
+<<<<<<< Updated upstream
 ```sql
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
@@ -87,5 +88,15 @@ CREATE DATABASE \[Database to create\]
 WITH TEMPLATE \[Database to copy\]
 OWNER \[Your username\];
 ```
+=======
+| --- |
+| SELECT pg_terminate_backend(pg_stat_activity.pid) |
+| FROM pg_stat_activity |
+| WHERE pg_stat_activity.datname = '\[Database to copy\]' |
+| AND pid <> pg_backend_pid(); |
+| CREATE DATABASE \[Database to create\] |
+| WITH TEMPLATE \[Database to copy\] |
+| OWNER \[Your username\]; |
+>>>>>>> Stashed changes
 
 When structured and run like this, the CREATE DATABASE command will run immediately after terminating connections. This will help ensure no connections form between terminating connections and copying the database.

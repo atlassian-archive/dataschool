@@ -1,6 +1,7 @@
 ---
 section: book
 title: Inner Join - Animated
+meta_title:
 number: 50
 authors:
 - author: _people/matt.md

@@ -1,6 +1,7 @@
 ---
 section: book
 title: 'Debugging SQL: Syntax Errors'
+meta_title:
 number: 100
 authors:
 - author: _people/matt.md

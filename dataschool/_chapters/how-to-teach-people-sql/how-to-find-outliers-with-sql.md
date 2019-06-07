@@ -1,6 +1,7 @@
 ---
 section: book
 title: How to Find Outliers with SQL
+meta_title:
 number: 200
 authors:
 - author: _people/rebecca-barnes.md
@@ -111,6 +112,7 @@ While the above is great for explaining what we’re doing when finding outliers
 
 It can be helpful to be able to run a single query that pulls the results. Here’s one way to do that:
 
+<<<<<<< Updated upstream
 ```sql
 with orderedList AS (
 SELECT full_name,
@@ -157,6 +159,53 @@ FROM iqr) -
 (SELECT MAX(outlier_range)
 FROM iqr))
 ```
+=======
+| --- |
+| with orderedList AS ( |
+| SELECT full_name, |
+| age, |
+| ROW_NUMBER() OVER (ORDER BY age) AS row_n |
+| FROM friends |
+| ), |
+| iqr AS ( |
+| SELECT age, full_name, |
+| ( |
+| SELECT age AS quartile_break |
+| FROM orderedList |
+| WHERE row_n = FLOOR((SELECT COUNT(*) |
+| FROM friends)*0.75) |
+| ) AS q_three, |
+| ( |
+| SELECT age AS quartile_break |
+| FROM orderedList |
+| WHERE row_n = FLOOR((SELECT COUNT(*) |
+| FROM friends)*0.25) |
+| ) AS q_one, |
+| 1.5 * (( |
+| SELECT age AS quartile_break |
+| FROM orderedList |
+| WHERE row_n = FLOOR((SELECT COUNT(*) |
+| FROM friends)*0.75) |
+| ) - ( |
+| SELECT age AS quartile_break |
+| FROM orderedList |
+| WHERE row_n = FLOOR((SELECT COUNT(*) |
+| FROM friends)*0.25) |
+| )) AS outlier_range |
+| FROM orderedList |
+| ) |
+|  |
+| SELECT full_name, age |
+| FROM iqr |
+| WHERE age >= ((SELECT MAX(q_three) |
+| FROM iqr) + |
+| (SELECT MAX(outlier_range) |
+| FROM iqr)) OR |
+| age <= ((SELECT MAX(q_one) |
+| FROM iqr) - |
+| (SELECT MAX(outlier_range) |
+| FROM iqr)) |
+>>>>>>> Stashed changes
 
 This query uses ROW_NUMBER and FLOOR (always rounds down) to find the Q1 (at the row 25% of the way through) and Q3 (at the row 75% of the way through) values. From there, we can calculate the IQR x 1.5 and used these as reference for our outliers.
 

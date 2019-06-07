@@ -1,6 +1,7 @@
 ---
 section: book
 title: Why Databases
+meta_title:
 number: 20
 authors:
 - author: _people/katerina-bicakci.md
