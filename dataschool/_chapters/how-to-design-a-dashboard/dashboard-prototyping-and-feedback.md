@@ -50,6 +50,7 @@ Ask the following questions for each visualization:
 * Do I need to know this?
 * What else do I want to know about this metric?
 * Is the conclusion I can draw from the visualization obvious?
+*
 
 Ask the following questions for the whole dashboard:
 

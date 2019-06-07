@@ -25,7 +25,7 @@ These roles may be fulfilled by the same person but typically they are not.
 
 ## Key Stakeholders
 
-### 1. Designer
+1. Designer
 
 ![](/assets/images/how-to-design-a-dashboard/identifying_key_roles/allHighlighted.png)
 

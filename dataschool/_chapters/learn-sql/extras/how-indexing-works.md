@@ -9,9 +9,8 @@ reviewers:
 description: Learn how indexing works and why it is a critical part of optimizing your
   data warehouse
 published: false
+img_border_on_default: true
 ---
-
-# **How indexing works**
 
 ## **What is Indexing?**
 
