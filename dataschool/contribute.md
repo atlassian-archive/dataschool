@@ -1,8 +1,9 @@
 ---
-title: Contribute to Data School
-meta_title: ''
+title: 'How to Contribute to The Data School'
+meta_title: 'Contribute to Data School'
+descriptoin: ''
 ---
-<h1 class="title centered">How to Contribute to The Data School</h1>
+<h1 class="title centered mb-5">{{page.title}}</h1>
 
 Welcome to the Data School. We are building a thriving community of contributors, reviewers and readers. Help contribute to the site!  
 

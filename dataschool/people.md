@@ -1,9 +1,10 @@
 ---
-title: Contributors and Reviewers
-meta_title: ''
 layout: default
+title: Our Contributors and Reviewers
+meta_title: 'The Data School Contributors'
+description: ''
 ---
-<h1 class="title centered">The Data School Contributors</h1>
+<h1 class="title centered mb-5">{{page.title}}</h1>
 <ul class="contributors-list list-unstyled">
   {% for person in site.people %}
     <li class="centered">
