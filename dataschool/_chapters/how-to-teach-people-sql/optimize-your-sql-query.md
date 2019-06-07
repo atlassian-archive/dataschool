@@ -11,25 +11,24 @@ image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
 **Order of a SQL query**
 
 This tutorial will provide some tips and tricks for anyone working with SQL databases who want to increase the efficiency of their queries. The way to make a query run faster is to reduce the number of calculations that the software must perform. To do this, first you’ll need some understanding of how SQL actually executes a query. Let’s take a look at a sample SQL query :
 
-| --- |
-| SELECT DISTINCT column, AGGREGATE(column) |
-| FROM table1 |
-| JOIN table2 |
-| ON table1.column = table2.column |
-| WHERE constraint_expression |
-| GROUP BY column |
-| HAVING constraint_expression |
-| ORDER BY column ASC/DESC |
-| LIMIT count; |
+```sql
+SELECT DISTINCT column, AGGREGATE(column)
+FROM table1
+JOIN table2
+ON table1.column = table2.column
+WHERE constraint_expression
+GROUP BY column
+HAVING constraint_expression
+ORDER BY column ASC/DESC
+LIMIT count;
+```
 
 Each part of the query is executed sequentially, so it’s important to understand the order of execution :
 
