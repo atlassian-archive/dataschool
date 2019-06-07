@@ -17,13 +17,13 @@ published: false
 ---
 This is the fifth most common type of JOIN in SQL. Cross join does not look for matches between any values in the two data sets. Instead for each row in first table every row of second table will be attached to it and added to the final table one by one.
 
+```sql
 SELECT *
-
 FROM facebook
-
 CROSS JOIN linkedin
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9560c896e83cbf3eee126d_vZdxYS7yZUulvIbi55KIHxK_w9_pYqzuPA7dpPN6g4ZOJcvfTUmXUBguh_hrlPKJ487geNYrTD5ayVkHQYVFfswd-e3nxPjfOtcawpoeCfVZL8aOtynDtlFmKJ9yd3vxaLBREbX-.gif)
+![](/assets/images/how-to-teach-people-sql/crossJoin/crossJoin_1.gif)
 
 Why use a CROSS JOIN vs a UNION, LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let’s think about the different questions they are asking.
 
