@@ -1,7 +1,7 @@
 ---
 section: book
 title: How to Find Outliers with SQL
-meta_title: 
+meta_title:
 number: 200
 authors:
 - author: _people/rebecca-barnes.md
@@ -14,6 +14,7 @@ is_featured: false
 img_border_on_default: false
 writers:
   writers: []
+published: false
 
 ---
 Use ORDER BY

@@ -1,6 +1,7 @@
 ---
 section: book
 title: Cross Join - Animated
+meta_title:
 number: 90
 authors:
 - author: _people/matt.md
