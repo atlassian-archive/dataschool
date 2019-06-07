@@ -16,7 +16,8 @@ published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1S8xZVmLzy-et4HrFBr1ccBYj5Vlyr6terU0XVbicLl4/edit?usp=sharing
 ---
-![](https://lh3.googleusercontent.com/Nb5p495OR2gxPmlu1R4oj781eHWrzTfMULRGqkHgFrYK2ZY48Lx-aRPxTDKnMeuX6edGG6i8B0vfDWV8wcPH-m_T0LFl9FwANuODwfrNmrhscirTDp_-V8QJxiWDwc9rkmSW7SUi =448x178)
+
+![](/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png)
 
 In the previous chapters, we filled out a metric spreadsheet. We took a vague ask from a Point Person and turned it into a well-defined list of metrics, calculations, and data sources. We will now use the completed metric architecture to create various SQL queries.
 
@@ -26,12 +27,12 @@ The columns of the metric architecture map to a SQL query.
 
 Take a look at a couple of sample queries we could create from this spreadsheet for the Operations Cost metric:
 
+
 ## Total Operations Cost
 
 ```sql
 SELECT SUM(amount)
 FROM Operations
-
 WHERE department != 'marketing'
 ```
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSum.png)
@@ -40,12 +41,14 @@ WHERE department != 'marketing'
 
 (When we introduce a GROUP BY statement we must include any column there in the SELECT statement as well)
 
+
 ```sql
 SELECT SUM(amount), department
 FROM Operations
 WHERE department != ‘marketing’
 GROUP BY department
 ```
+
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSumByDepartment.png)
 
 ## Total Operations Cost by Department by Month
@@ -56,6 +59,7 @@ FROM Operations
 WHERE department != ‘marketing’
 GROUP BY department, month
 ```
+
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costSumByMonth.png)
 
 One of the beauties of SQL is that it can do the logistical work of finding the columns in the data sources, and it can also compute mathematical equations. Most other methods require you to first access the unaggregated data via SQL and export the data into the tool so that you can create the calculations. Since SQL is tied to accessing the database when the underlying data changes, you can rerun the query and see the latest data. This is more efficient than exporting data into another tool.
