@@ -6,7 +6,7 @@ layout: default
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
 {% for book in site.books %}
-{% if book.is_hidden %}{% else %}
+
 <div class="row mb-5">
   <div class="col-sm-8">
     <a href="{{ book.url }}" class="book-info">
@@ -20,5 +20,5 @@ layout: default
     </a>
   </div>
 </div>
-{% endif %}
+
 {% endfor %}

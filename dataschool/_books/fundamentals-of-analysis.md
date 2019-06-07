@@ -6,7 +6,6 @@ authors:
 - author: _people/rohan-joseph.md
 cover_image: ''
 main_color: ''
-is_hidden: false
 published: false
-
+is_featured: false
 ---

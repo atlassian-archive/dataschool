@@ -30,6 +30,7 @@ fields:
   name: company
   label: company
 pages:
+- dataschool/_people/drew-banin.md
 - dataschool/_people/patrick-gibson.md
 - dataschool/_people/rebecca-barnes.md
 - dataschool/_people/rohan-joseph.md

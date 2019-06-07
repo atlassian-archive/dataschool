@@ -9,7 +9,7 @@ reviewers:
 - reviewer: _people/tim.md
 cover_image: /assets/images/book-covers/how-to-design-a-dashboard.png
 main_color: "#185775"
-is_hidden: false
+published: true
 is_featured: false
 ---
 Dashboards enable people to make decisions based on data. This book walks you through the process of defining, prototyping, building, and deploying a dashboard. The focus of the book is to help people make dashboards that get used to make decisions.
