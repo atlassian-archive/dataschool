@@ -10,10 +10,7 @@ image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
-
+published: true
 ---
 Getting an error in SQL can be frustrating. However getting no errors and no data returned by your query can be even more frustrating. In this tutorial we will explore the most common reasons your query will return 0 rows of data.
 
@@ -21,13 +18,11 @@ Getting an error in SQL can be frustrating. However getting no errors and no dat
 
 The most common issue is JOINing on the wrong column. In the example below it is JOINing on the name column in both tables, however in the pets table the column that would have corresponded to the facebook friend table would have been owner.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ca1704a25d9df29983e04b8_0RowsReturnedName.gif)
-
-‍
+![](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_1.gif)
 
 Sometimes you have picked the right column but there are no matches in the corresponding data. In this example the names of the owner have been changed to show this scenario.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ca1705a0a9e43371560bf7f_0RowsReturnedOwner.gif)
+![](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_2.gif)
 
 Another thing to watch out for which will return an error is if the datatype of the columns being joined do not match. Sometimes columns with numbers in it are saved as text. You will have to CAST that column as a numeric data type such as INT or FLOAT. You could also convert the numeric column to a text data type such as VARCHAR.
 
@@ -37,7 +32,7 @@ It is a best practice to inspect the tables you will be joining independently to
 
 The second most common issue that produces 0 rows returned is that the query is filtering out too much data in the WHERE or HAVING statement.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c956155a7a3db19f674f223_q3po4o8LpdDFVxRHXqWITlt3c4OTvqOljuDWY_68tfWqYAoBFVhkXzUmZcvAJPX92H5F57VW_aemAEpB5XuEZ_b9U49BuV41DDeGW-LGhXWp34TDrbVnmuNEf9WREC5ioM-9xwxD.gif)
+![](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_3.gif)
 
 To see if the WHERE or HAVING clause is too restrictive simply remove it from the query to see if any rows are returned. If rows are returned the problem is likely in your WHERE or HAVING clause.
 
@@ -45,10 +40,11 @@ To see if the WHERE or HAVING clause is too restrictive simply remove it from th
 
 Whenever you get a result you do not expect in SQL take a second and break down the query into smaller bits. Remove or comment clauses out one by one to find where the query stopped making sense. To comment out a part of you SQL query review the documentation for the syntax. In PostgreSQL all you do is add two dashes — in front of a line of SQL
 
-| --- |
-| SELECT * |
-| FROM facebook |
-| --WHERE # of Friends > 1000 |
+```sql
+SELECT *
+FROM facebook
+WHERE # of Friends > 1000
+```
 
 This concept of breaking queries into small pieces also works when you are initially creating the query. Start with a query that only contains SELECT, FROM, and LIMIT. Then layer on each additional SQL clause 1 at a time and run it to see if there are any issues. While this practice is slow you are much less likely to run into an issue in your query that you don’t know the cause of.
 
