@@ -1,7 +1,7 @@
 ---
 section: appendix
 title: Difference between WHERE and ON in SQL
-number: 20
+number: 200
 authors:
 - author: _people/matt.md
 reviewers: []
@@ -26,35 +26,29 @@ To go more in depth we will cover the two use cases that either WHERE or ON can 
 
 The way both of these clauses can be used to help join data is through defining the condition on which the two tables are joined. To demonstrate this, lets use an example data set of facebook friends and linkedin connections.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc347207e440326ec2c79fe_MlkywFZPdL2dUYe4eJypuEkBC1eSLMUFAGlJiUpOcoqB8RLYYIKcxh0O7bOeuG7CT6QthVMWeo6LrYo86m_fGdAjRT-lJnCEseTbKRiV3VmgxiuSt2I4DXUdww1bTFylz0avqrna.png)
+![](/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/fbAndLinkedin.png)
 
 We want to see the people who are both our friend and our connection. So in this case it would only be Matt. Lets now query using a variety of defining the JOIN condition.
 
 All three of these queries produce the same correct result:
 
+```sql
 SELECT *
-
 FROM facebook
-
 JOIN linkedin
-
 ON facebook.name = linkedin.name
 
 SELECT *
-
 FROM facebook
-
 JOIN linkedin
-
 WHERE facebook.name = linkedin.name
 
 SELECT *
-
 FROM facebook, linkedin
-
 WHERE facebook.name = linkedin.name
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc3472084d723fe4a1712b8_WhpaCQg8y7u-OaeeJJ_vqmE6ONy0lSMXhp9XR3ARp8koJT160mQitsj5OFsgpLPQw_BL8rIeLy7CuanXuLGK0IG1AuuGjiM4Bu8fsdAiszZ0Pp2VfBpmdsgG6THU9ety5PtArGAE.png)
+![](/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/namesAndCities.png)
 
 The first two are types of explicit joins and the last is an implicit join. An explicit JOIN explicitly tells you how to JOIN the data by specifying the type of JOIN and the join condition in the ON clause. An Implicit JOIN does not specify the JOIN type and use the WHERE clause to define the join condition.
 
@@ -66,21 +60,17 @@ The last query is using what is called an implicit JOIN(a JOIN that is not expli
 
 JOINing in the WHERE clause can be confusion since this is not it’s typical purpose. It is most often used to filter the data. So when more filtering conditions are added to the WHERE clause in addition to using it to define how to JOIN the data it becomes harder to understand.
 
+```sql
 SELECT *
-
 FROM facebook, linkedin
-
 WHERE facebook.name = linkedin.name AND (facebook.name = Matt OR linkedin.city = “SF”)
 
 SELECT *
-
 FROM facebook
-
 JOIN linkedin
-
 ON facebook.name = linkedin.name
-
 WHERE facebook.name = Matt OR linkedin.city = “SF”
+```
 
 Even though the first query has fewer characters than the second it is not as easily understood.
 
@@ -94,7 +84,7 @@ However the way query plans are created may vary across SQL languages and versio
 
 Both the ON and WHERE clause can be used to filter data in a query. There are readability and accuracy concerns to address with filtering in the ON clause. Let’s use a slightly larger data set to demonstrate this.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc34720c70fc085efdba4d2_OyYM0dNLgMkNLFsZmeDGuVjYSGGFmY-FtdJIQT9XIBF4iYfeB8Zln582U9xCNgIuvqn-j4gPP6mxZC4JEQ-OEAqvcaS2JYIJ6VcXXPbvpyV1ATkXQisWqfSTUrx-zpsg6MS3II45.png)
+![]((/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/fbAndLinkedin.png)
 
 This time we are looking for which people are both our friends and connections, but we only want to see the one(s) who also live in SF.
 
@@ -102,23 +92,19 @@ This time we are looking for which people are both our friends and connections, 
 
 Let’s evaluate how readable each option is, these two queries will produce the same output:
 
+```sql
 SELECT *
-
 JOIN linkedin
-
 ON facebook.name = linkedin.name
-
 WHERE facebook.city = ‘SF’
 
 SELECT *
-
 FROM facebook
-
 JOIN linkedin
-
 ON facebook.name = linkedin.name AND facebook.city = ‘SF’
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc3472084d723fe4a1712b8_WhpaCQg8y7u-OaeeJJ_vqmE6ONy0lSMXhp9XR3ARp8koJT160mQitsj5OFsgpLPQw_BL8rIeLy7CuanXuLGK0IG1AuuGjiM4Bu8fsdAiszZ0Pp2VfBpmdsgG6THU9ety5PtArGAE.png)
+![]((/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/namesAndCities.png)
 
 The first query is clear, each clause has its own purpose. The second query is more difficult to understand because the ON clause is being used to both JOIN the data and filter it.
 
@@ -126,35 +112,32 @@ The first query is clear, each clause has its own purpose. The second query is m
 
 Filtering in the ON clause may produce unexpected results when using a LEFT, RIGHT, or OUTER JOIN. These two queries will not produce the same output:
 
+```sql
 SELECT *
-
 FROM facebook
-
 LEFT JOIN linkedin
-
 ON facebook.name = linkedin.name
-
 WHERE facebook.city = ‘SF’
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc3472084d723fe4a1712b8_WhpaCQg8y7u-OaeeJJ_vqmE6ONy0lSMXhp9XR3ARp8koJT160mQitsj5OFsgpLPQw_BL8rIeLy7CuanXuLGK0IG1AuuGjiM4Bu8fsdAiszZ0Pp2VfBpmdsgG6THU9ety5PtArGAE.png)
+![]((/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/namesAndCities.png)
 
 In a LEFT JOIN it brings in every row from the first table “facebook” and joins wherever the join condition is true (facebook.name = linkedin.name) this would be true for both Matt and Dave. So the interim table would have been.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc34721313a5c6ece66858b_xJ5g9BzvkvrRFstVNtvODqCSJ_nmZPLWUyYMlMPmLT6Pp_s9bqg7s0RVXtI-II-ytSfn100W7zPGvMadCbWYEkmBoH0vPvDWhxPXa6cS6MrkTNJmB7Mgbmq9TonDd9tAM55P0sI_.png)
+![]((/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/Filtering.png)
 
 Then the WHERE clause filters these result to rows where facebook.city = ‘SF’, leaving the one row.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc3472084d723fe4a1712b8_WhpaCQg8y7u-OaeeJJ_vqmE6ONy0lSMXhp9XR3ARp8koJT160mQitsj5OFsgpLPQw_BL8rIeLy7CuanXuLGK0IG1AuuGjiM4Bu8fsdAiszZ0Pp2VfBpmdsgG6THU9ety5PtArGAE.png)
+![]((/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/namesAndCities.png)
 
+```sql
 SELECT *
-
 FROM facebook
-
 LEFT JOIN linkedin
-
 ON facebook.name = linkedin.name AND facebook.city = ‘SF’
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cc3472155626a5bcafab339_AHRbSVgJ5qTQyvhYVvYCuTp3J01JWFMmJzj0yYRXcIc52m5sQgBZoyKJ5c5mDiIoBoW9WTEl2Q6hYTCw4wNh97voPt74pAk6eTkivsTzCDc0UitiGBFoKYdbbwz4wqY45td-J_-a.png)
+![]((/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/moreFiltering.png)
 
 The join condition is different in this query. The LEFT JOIN brings in every row and the data that is JOINed in from linkedin only happens when facebook.name = linkedin.name AND facebook.city = ‘SF’. It does not filter out all of the rows that didn’t have facebook.city = ‘SF’
 
