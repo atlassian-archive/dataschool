@@ -12,7 +12,6 @@ is_featured: false
 img_border_on_default: false
 writers:
   writers: []
-published: false
 
 ---
 This is the fifth most common type of JOIN in SQL. Cross join does not look for matches between any values in the two data sets. Instead for each row in first table every row of second table will be attached to it and added to the final table one by one.
