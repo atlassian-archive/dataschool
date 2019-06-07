@@ -12,7 +12,6 @@ is_featured: false
 img_border_on_default: false
 writers:
   writers: []
-published: false
 
 ---
 > _“Those who know, do. Those that understand, teach.” -_ Aristotle
