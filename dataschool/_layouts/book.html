@@ -30,7 +30,7 @@ layout: default
      <ul id="{{currentsection}}" class="light-pad-list">
      {% if currentsection != 'book' %}<h3>{{ currentsection | capitalize }}</h3>{% endif %}
   {% endif %}
-      <li>
+      <li class="mb-2">
        <a href="{{ chapter.url }}">{{ chapter.title }}</a>
       </li>
 {% endfor %}

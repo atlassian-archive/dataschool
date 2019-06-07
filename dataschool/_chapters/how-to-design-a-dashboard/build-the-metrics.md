@@ -13,8 +13,10 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1S8xZVmLzy-et4HrFBr1ccBYj5Vlyr6terU0XVbicLl4/edit?usp=sharing
 ---
+
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png)
 
 In the previous chapters, we filled out a metric spreadsheet. We took a vague ask from a Point Person and turned it into a well-defined list of metrics, calculations, and data sources. We will now use the completed metric architecture to create various SQL queries.
@@ -25,41 +27,39 @@ The columns of the metric architecture map to a SQL query.
 
 Take a look at a couple of sample queries we could create from this spreadsheet for the Operations Cost metric:
 
-**Total Operations Cost**
-```SQL
+
+## Total Operations Cost
+
+```sql
 SELECT SUM(amount)
-
 FROM Operations
+WHERE department != 'marketing'
 
-WHERE department != ‘marketing’
-```
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSum.png)
 
-**Total Operations Cost by Department**
+## Total Operations Cost by Department
 
 (When we introduce a GROUP BY statement we must include any column there in the SELECT statement as well)
 
-```SQL
+
+```sql
 SELECT SUM(amount), department
-
 FROM Operations
-
 WHERE department != ‘marketing’
-
 GROUP BY department
 ```
+
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSumByDepartment.png)
 
-**Total Operations Cost by Department by Month**
-```SQL
+## Total Operations Cost by Department by Month
+
+```sql
 SELECT SUM(amount), department, TO_CHAR(created_date, ‘YYYY-MM’) AS month
-
 FROM Operations
-
 WHERE department != ‘marketing’
-
 GROUP BY department, month
 ```
+
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costSumByMonth.png)
 
 One of the beauties of SQL is that it can do the logistical work of finding the columns in the data sources, and it can also compute mathematical equations. Most other methods require you to first access the unaggregated data via SQL and export the data into the tool so that you can create the calculations. Since SQL is tied to accessing the database when the underlying data changes, you can rerun the query and see the latest data. This is more efficient than exporting data into another tool.
@@ -90,21 +90,16 @@ Depending on the BI tool that you are using you can see other people’s SQL que
 
 Complex Query example:
 
-```SQL
+```sql
 SELECT DATE_TRUNC('day', "Payments"."payment_date")::DATE AS "Day of Payment Date",
-
 SUM("Payments"."amount") AS "MRR"
-
 FROM "public"."payments" AS "Payments"
-
 WHERE ("Payments"."payment_date"::DATE BETWEEN {CALENDAR_INTERVAL.START} AND {CALENDAR_INTERVAL.END})
-
 GROUP BY DATE_TRUNC('day', "Payments"."payment_date")::DATE
-
 ORDER BY "Day of Payment Date" ASC
-
 LIMIT 1000;
 ```
+
 Complexity in a query typically suggests the data is nuanced, messy, or certain business logic needs to be adhered to. If you come across a complex query that is for the same or a similar metric as the one you are working on, try reaching out to the creator. You should try to understand what the extra parts are all about so you can incorporate what is relevant into your own query.
 
 On the other hand, if other people have similar looking queries for similar metrics you are probably in the clear. However, you still will want to get someone else's eyes on it for verification.
@@ -113,7 +108,7 @@ On the other hand, if other people have similar looking queries for similar metr
 
 Getting a code review on your queries is a best practice. Reach back out to the Data Gatekeeper to validate your queries are calculating their metrics correctly. Having the metric spreadsheet facilitates this process since they can see your work and how you go to the query you wrote.
 
-# Build the Dashboard
+## Build the Dashboard
 
 Take the tables of data line them up with where they fit into your design.
 
@@ -128,5 +123,3 @@ Go through each table and create the corresponding data visualization in your BI
 * Build metrics in SQL by plugging in the columns to their relevant part of a SQL statement
 * SQL is required to get the data. Use it to calculate the metrics directly as well as to reflect any underlying changes
 * Check your queries by evaluating other people’s queries in your company and/or having the Data Gatekeeper review it
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1S8xZVmLzy-et4HrFBr1ccBYj5Vlyr6terU0XVbicLl4/edit?usp=sharing)

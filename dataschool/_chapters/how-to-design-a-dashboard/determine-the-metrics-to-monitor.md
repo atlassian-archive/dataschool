@@ -12,7 +12,8 @@ is_featured: false
 writers:
   writers: []
 published: true
-
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1G9A9TKdhPH_0P5EaeahoFvoU5W0PzUKnWqAbv1XY_pc/edit?usp=sharing
 ---
 ![](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/dau.png)
 
@@ -140,5 +141,3 @@ These metrics should inform the decisions that need to be made by the Point Pers
 * The first step in building a great dashboard is understanding the central premise or purpose for building the dashboard.
 * This understanding can be obtained by interviewing the Point Person of the dashboard and first finding out the question they want to have answered.
 * Then you can work with the Point Person to define the metrics that are involved in answering the questions that will guide their decision making.
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1G9A9TKdhPH_0P5EaeahoFvoU5W0PzUKnWqAbv1XY_pc/edit?usp=sharing)

@@ -13,6 +13,8 @@ is_featured: false
 writers:
   writers: []
 published: true
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1Pa0bVsWjKnISzwNY7REZqlkMQVtJhnMi74QccC7ut1A/edit?usp=sharing
 
 ---
 Arranging the charts is where the science of a dashboard project starts to cede some of its control to art. There are many things to consider when arranging and sizing charts and selecting fonts and colors. How visualizations are composed in a dashboard can either facilitate or hinder the decision making process.
@@ -81,5 +83,3 @@ If information needs to be viewed as is and aggregated at a more granular level,
 * Familiarize yourself with various dashboard layouts to help develop useful arrangements for your own dashboard.
 * Be wary of flashy dashboards arrangements made possible in BI tools
 * Do not overcrowd the dashboard with too many visualizations, link out to provide further investigation where appropriate
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1Pa0bVsWjKnISzwNY7REZqlkMQVtJhnMi74QccC7ut1A/edit?usp=sharing)

@@ -8,6 +8,7 @@ reviewers:
 - reviewer: _people/matthew-layne.md
 description: Learn how indexing works and why it is a critical part of optimizing your
   data warehouse
+published: false
 ---
 
 # **How indexing works**

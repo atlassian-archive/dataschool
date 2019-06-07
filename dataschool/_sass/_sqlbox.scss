@@ -1,6 +1,11 @@
 // SQL BOX CSS
 
 sqlbox {
+  display: block;
+  max-width: 28rem;
+  margin: 0 auto;
+  font-size: 0.833em;
+
   margin-bottom: 1rem;
   .result .pagination-detail {
     display: none;
@@ -29,6 +34,7 @@ sqlbox {
   table {
     background-color: $body-color;
     border-radius: 5px;
+    font-size: 1em;
     th {
       text-transform: none;
     }
@@ -69,6 +75,8 @@ sqlbox {
     .sqlbox {
       input.run-sql {
         margin-bottom: 1rem;
+        font-size: 0.833em;
+        font-weight: 700;
       }
   }
   .fixed-table-pagination div.pagination {
@@ -95,12 +103,6 @@ sqlbox {
       display: none;
     }
   }
-}
-sqlbox {
-  display: block;
-  max-width: 28rem;
-  margin: 0 auto;
-  font-size: 0.8333333em;
 }
 .result {
   .table-hover tbody tr:hover {
