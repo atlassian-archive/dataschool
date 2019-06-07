@@ -1,7 +1,7 @@
 ---
 section: book
 title: Types of Data Analysis
-number: 
+number: 10
 authors:
 - author: _people/patrick-gibson.md
 reviewers: []

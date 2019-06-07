@@ -1,7 +1,7 @@
 ---
 section: book
 title: Correlation and P value
-number: 
+number: 20
 authors:
 - author: _people/rohan-joseph.md
 reviewers: []

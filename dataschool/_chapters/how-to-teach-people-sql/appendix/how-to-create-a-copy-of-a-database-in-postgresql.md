@@ -3,7 +3,7 @@ section: book
 title: How to Create a Copy of a Database in PostgreSQL
 meta_title: ''
 description: ''
-number: 200
+number: 210
 authors:
 - author: _people/matthew-layne.md
 reviewers:
@@ -61,7 +61,7 @@ This query will terminate any open connections to the “Database to copy”, an
 
 ![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce56b99bd2f03de0694cb24_TP0JHahSe5wkZo6R6i7hPWv8uyz7dXJuym5rje2x136FAwIW5RNbM43t6SFHsSeSoPp0iqrxNxaym3AeBbttlSrLTvcz0GjPZGUNtwaQiiuNTRRX4vCwECyF4dd8MCe_xfM4jC4Q.png)
 
-Once they reconnect they can then run queries again against the database. 
+Once they reconnect they can then run queries again against the database.
 
 Note: They will not be able to reconnect until the database is completely copied.
 

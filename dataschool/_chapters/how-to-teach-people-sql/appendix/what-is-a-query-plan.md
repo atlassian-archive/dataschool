@@ -3,7 +3,7 @@ section: book
 title: What is a Query Plan
 meta_title: What is a Query Plan
 description: ''
-number: 200
+number: 220
 authors:
 - author: _people/matthew-layne.md
 reviewers:
@@ -40,7 +40,7 @@ There are often many different ways to search a database. Take for example the f
 
 In order to find a particular tool, there are several possible queries that could be run. For example, the query:
 
-SELECT * 
+SELECT *
 
 FROM tools
 
