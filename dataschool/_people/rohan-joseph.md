@@ -10,6 +10,5 @@ website: ''
 is_contributor: true
 job_title: ''
 company: ''
-published: false
 
 ---
