@@ -10,7 +10,7 @@ reviewers:
 - reviewer: _people/matt.md
 image: ''
 meta_title: ''
-summary: Learn the best practices behind dashboard design to support decision making
+description: Learn the best practices behind dashboard design to support decision making
 is_featured: false
 published: true
 img_border_on_default: false

@@ -7,7 +7,7 @@ authors:
 reviewers: 
 image: ''
 meta_title: ''
-summary: Overview of all the steps in a dashboard design process
+description: Overview of all the steps in a dashboard design process
 is_featured: false
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing

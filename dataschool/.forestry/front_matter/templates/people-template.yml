@@ -30,6 +30,8 @@ fields:
   name: company
   label: company
 pages:
-- dataschool/_people/matthew-layne.md
-- dataschool/_people/katerina-bicakci.md
+- dataschool/_people/patrick-gibson.md
+- dataschool/_people/rebecca-barnes.md
 - dataschool/_people/rohan-joseph.md
+- dataschool/_people/katerina-bicakci.md
+- dataschool/_people/matthew-layne.md

@@ -1,7 +1,8 @@
 ---
 layout: default-breakout
-meta_title: ''
-description: ''
+title: The Data School Home
+meta_title: 'The Data School by Chartio'
+description: 'A community driven school to help people create data driven organizations.'
 ---
 <div class="home-hero">
   <div class="container centered">
@@ -39,7 +40,7 @@ description: ''
       <div class="col-sm-8 chapter-info">
         <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
         <em>From <a href="{{ book.slug }}">{{ book.title }}</a></em>
-        <p>{{ chapter.summary }}</p>
+        <p>{{ chapter.description }}</p> 
       </div>
       <div class="col-sm-4">
         <a href="{{ chapter.url }}" class="chapter-thumbnail-img" style="background-image: url('{{chapter.image}}');"></a>

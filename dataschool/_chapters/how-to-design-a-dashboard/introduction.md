@@ -8,7 +8,7 @@ reviewers:
 - reviewer: _people/dave.md
 image: '/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg'
 meta_title: ''
-summary: Dashboards are the way data people help the rest of an organization make
+description: Dashboards are the way data people help the rest of an organization make
   data driven decisions.
 is_featured: true
 published: true
