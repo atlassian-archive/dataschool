@@ -102,6 +102,7 @@ fields:
     label: writers
   label: writers
 pages:
+- dataschool/_chapters/Data Governance/security.md
 - dataschool/_chapters/Data Governance/integrity.md
 - dataschool/_chapters/Data Governance/usability.md
 - dataschool/_chapters/data-modeling-101/start-modeling-data.md
