@@ -117,3 +117,5 @@ pages:
 - dataschool/_chapters/how-to-design-a-dashboard/scaling-dashboards.md
 - dataschool/_chapters/how-to-design-a-dashboard/making-sure-your-dashboard-always-gets-better.md
 - dataschool/_chapters/how-to-design-a-dashboard/design-a-dashboard-example.md
+- dataschool/_chapters/how-to-teach-people-sql/introduction.md
+- dataschool/_chapters/how-to-teach-people-sql/difference-between-where-and-on-in-sql.md
