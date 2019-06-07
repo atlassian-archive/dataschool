@@ -82,7 +82,7 @@ defaults:
       book_slug: data-modeling-101
       image: assets/images/book-covers/data-modeling-101.png  # TODO set a real default image
   - scope:
-      path: "_chapters/fundamentals-of-analysis
+      path: "_chapters/fundamentals-of-analysis"
       type: "chapters"
     values:
       book_slug: fundamentals-of-analysis
