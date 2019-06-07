@@ -7,6 +7,5 @@ authors:
 cover_image: ''
 main_color: ''
 is_hidden: true
-published: false
 
 ---
