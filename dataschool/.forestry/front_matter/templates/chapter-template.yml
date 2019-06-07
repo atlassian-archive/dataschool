@@ -128,7 +128,6 @@ pages:
 - dataschool/_chapters/how-to-teach-people-sql/debugging-sql-0-rows-returned.md
 - dataschool/_chapters/how-to-teach-people-sql/union-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/debugging-sql-syntax-errors.md
-- dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work.md
 - dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work-1.md
 - dataschool/_chapters/how-to-teach-people-sql/how-sql-subqueries-work.md
 - dataschool/_chapters/how-to-teach-people-sql/optimize-your-sql-query.md
