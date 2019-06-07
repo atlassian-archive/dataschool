@@ -8,6 +8,6 @@ authors:
 reviewers:
 cover_image: ''
 main_color: ''
-is_hidden: true
-
+published: false
+is_featured: false
 ---
