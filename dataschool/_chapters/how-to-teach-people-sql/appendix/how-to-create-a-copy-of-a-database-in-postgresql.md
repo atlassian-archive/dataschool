@@ -9,11 +9,11 @@ authors:
 reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1f7xpecovJ9GUGRaZhghalK66dPHwMGeLi3nFtRV8kqc/edit?usp=sharing
-image: ''
+image: 
 is_featured: false
 img_border_on_default: false
 writers:
-  writers: []
+  
 published: false
 
 ---

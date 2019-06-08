@@ -5,10 +5,10 @@ meta_title:
 number: 130
 authors:
 - author: _people/matt.md
-reviewers: []
+reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1kPX4BXKYuxouonyUpYlCItWCLrtH86mfV2YHj1u0ovw/edit?usp=sharing
-image: ''
-summary: ''
+image:
+description: Visualize how subqueries work in SQL by seeing the intermediate table that is created during the process.
 is_featured: false
 img_border_on_default: false
 published: true

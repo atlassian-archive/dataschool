@@ -4,10 +4,10 @@ title: Full Outer Join - Animated
 number: 70
 authors:
 - author: _people/matt.md
-reviewers: []
+reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1xA160gXkrjyrlrygTqNAVnUYaEA3-oMFPTmxgvyuZxY/edit?usp=sharing
-image: ''
-description: ''
+image:
+description: Visualize how SQL is joining two tables using a Full Outer JOIN
 is_featured: false
 img_border_on_default: false
 published: true

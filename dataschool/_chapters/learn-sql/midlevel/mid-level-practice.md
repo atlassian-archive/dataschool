@@ -9,7 +9,7 @@ authors:
 - author: _people/dave.md
 reviewers:
 - reviewer: _people/matt.md
-image: ''
+image: 
 is_featured: false
 ---
 You've covered the majority of the main use cases of SQL!  You know the stuff, but now you've got some practicing to do to become really fluent and skilled at it.  Here we've constructed a large list of challenges to give you that practice.  If you forgot the rules of our practice playgrounds you can review them in the [Basic SQL Practice](../basic-practice/) page.
