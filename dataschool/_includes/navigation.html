@@ -43,7 +43,7 @@
         {% if last_chapter_url == chapter.url %}{% assign next_chapter = chapter %}{% endif %}
         {% if currentsection != chapter.section %}
           {% assign currentsection = chapter.section %}
-          <li class="book-section">{{ currentsection }}</li>
+          <li class="book-section">{{ currentsection | replace: '-', ' ' | capitalize }}</li>
         {% endif %}
         <li {% if page.url == chapter.url %}class="active"{% endif %}>
           <a href="{{ chapter.url }}">
