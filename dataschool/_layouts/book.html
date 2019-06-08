@@ -2,7 +2,6 @@
 layout: default
 ---
 {% assign bookchapters = site.chapters | where:'book_slug', page.slug | sort: 'number' %}
-{% assign bookchapters = site.people %}
 <p><a href="/books/">Web Books</a></p>
 <h1 class="mega-title">{{ page.title }}</h1>
 <!-- <p>Page slug is <code>{{ page.slug }}</code></p> -->
