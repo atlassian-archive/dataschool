@@ -10,7 +10,7 @@ authors:
 reviewers:
 - reviewer: _people/dave.md
 image: /assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg
-is_featured: true
+is_featured: false
 published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing
