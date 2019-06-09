@@ -1,11 +1,13 @@
 ---
 title: Learn SQL
+meta_title: ''
 book_slug: learn-sql
 authors:
   - author: _people/dave.md
-cover_image: /uploads/teach-ppl-sql-cover.png
+reviewers:
+cover_image: /assets/images/book-covers/learn-sql.png
 main_color: "#1B753A"
-is_hidden: false
+published: true
 is_featured: true
 ---
 An interactive SQL Tutorial by example!

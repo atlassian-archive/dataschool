@@ -1,8 +1,11 @@
 ---
-title: "How to Export PostgreSQL Data to a CSV or Excel File"
+title: How to Export PostgreSQL Data to a CSV or Excel File
 short: Export CSV
-description: "Learn how to export PostgreSQL data to a CSV or Excel file. Follow these instructions to copy full data tables, copy a query result set and opening your CSV file. Read more to learn."
-topic: "PostgreSQL"
+description: Learn how to export PostgreSQL data to a CSV or Excel file. Follow these
+  instructions to copy full data tables, copy a query result set and opening your
+  CSV file. Read more to learn.
+topic: PostgreSQL
+
 ---
 PostgreSQL has some nice commands to help you export data to a Comma Separated Values (CSV) format, which can then be opened in Excel or your favorite text editor.  
 
@@ -42,6 +45,6 @@ COPY (SELECT * FROM tracks WHERE genre_id = 6) TO '/Users/dave/Downloads/blues_t
 
 After you have run the copy command you can then open the .CSV file(s) with Excel or your favorite text editor.
 
-![figure 1](/assets/images/learn-sql/sql-tutorial-export-csv.png)
+![figure 1](/assets/images/learn-sql/extras/export-csv/sql-tutorial-export-csv.png)
 
 Did you know, that you can also import data from CSV or Excel files into PostgreSQL?

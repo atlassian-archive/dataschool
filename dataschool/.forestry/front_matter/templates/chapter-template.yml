@@ -6,10 +6,17 @@ fields:
   name: title
   label: title
 - type: text
+  name: meta_title
+  label: meta_title
+- type: text
+  name: description
+  label: description
+- type: text
   name: section
   label: section
   description: If the book should be broken up into sections, choose which section
     does this chapter belongs to
+  default: book
 - type: number
   name: number
   label: number
@@ -29,65 +36,99 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: author
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
 - name: reviewers
   type: field_group_list
   fields:
   - name: reviewer
     type: select
-    default: []
+    default:
     config:
       required: false
-      options: []
+      options: 
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: reviewer
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: reviewer
   label: reviewers
+- type: text
+  name: feedback_doc_url
+  label: Feedback doc URL
+  description: The URL for the shared Google doc where readers can leave feedback,
+    will be added to a button at the end of the chapter.
 - name: image
   type: file
   config:
     maxSize: 250
   label: image
   description: used for thumbnail and social sharing previews of this chapter
-- type: text
-  name: summary
-  label: summary
 - name: is_featured
   type: boolean
   label: Is Featured
   description: toggle to feature this chapter on the home page
-- name: writers
-  type: field_group
-  config: {}
-  fields:
-  - name: writers
-    type: list
-    config:
-      use_select: true
-      min: 
-      max: 
-      source:
-        type: pages
-        section: people
-        path: ''
-        file: dataschool/_data/contributors.yaml
-    label: writers
-  label: writers
+- name: img_border_on_default
+  type: boolean
+  label: Image borders on by default
+  description: Toggle on to add borders to all images in this chapter (override with
+    class="img-no-border")
+  default: false
 pages:
+- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
+- dataschool/_chapters/Data Governance/how-does-data-governance-apply-to-me.md
+- dataschool/_chapters/Data Governance/implementation.md
+- dataschool/_chapters/Data Governance/security.md
+- dataschool/_chapters/Data Governance/integrity.md
+- dataschool/_chapters/Data Governance/usability.md
+- dataschool/_chapters/data-modeling-101/start-modeling-data.md
+- dataschool/_chapters/Data Governance/availability.md
+- dataschool/_chapters/Data Governance/why-is-data-governance-important.md
+- dataschool/_chapters/how-to-teach-people-sql/appendix/what-is-a-query-plan.md
+- dataschool/_chapters/how-to-teach-people-sql/how-to-create-a-copy-of-a-database-in-postgresql.md
+- dataschool/_chapters/how-to-teach-people-sql/appendix/how-to-create-a-copy-of-a-database-in-postgresql.md
+- dataschool/_chapters/fundamentals-of-analysis/correlation-and-p-value.md
 - dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
+- dataschool/_chapters/fundamentals-of-analysis/types-of-data-analysis.md
+- dataschool/_chapters/how-to-teach-people-sql/how-to-find-outliers-with-sql.md
+- dataschool/_chapters/how-to-teach-people-sql/optimize-your-sql-query.md
+- dataschool/_chapters/how-to-teach-people-sql/how-sql-subqueries-work.md
+- dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work-1.md
+- dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work.md
+- dataschool/_chapters/how-to-teach-people-sql/debugging-sql-syntax-errors.md
+- dataschool/_chapters/how-to-teach-people-sql/debugging-sql-0-rows-returned.md
+- dataschool/_chapters/how-to-teach-people-sql/cross-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/union-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
+- dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
+- dataschool/_chapters/how-to-teach-people-sql/why-databases.md
+- dataschool/_chapters/how-to-teach-people-sql/introduction.md
+- dataschool/_chapters/how-to-design-a-dashboard/design-a-dashboard-example.md
+- dataschool/_chapters/how-to-design-a-dashboard/conclusion.md
+- dataschool/_chapters/how-to-design-a-dashboard/making-sure-your-dashboard-always-gets-better.md
+- dataschool/_chapters/how-to-design-a-dashboard/scaling-dashboards.md
+- dataschool/_chapters/how-to-design-a-dashboard/sharing-the-dashboard-distribution-strategies.md
+- dataschool/_chapters/how-to-design-a-dashboard/build-the-metrics.md
+- dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
+- dataschool/_chapters/how-to-design-a-dashboard/finding-the-data-that-builds-metrics.md
+- dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
+- dataschool/_chapters/how-to-design-a-dashboard/dashboard-prototyping-and-feedback.md
+- dataschool/_chapters/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard.md
+- dataschool/_chapters/how-to-design-a-dashboard/determine-the-metrics-to-monitor.md
 - dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
+- dataschool/_chapters/learn-sql/extras/how-to-start-a-postgresql-server-on-mac-os-x.md
 - dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
+- dataschool/_chapters/learn-sql/extras/how-indexing-works.md
 - dataschool/_chapters/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces.md

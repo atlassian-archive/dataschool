@@ -1,10 +1,76 @@
 <head>
- <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- make it responsive-able -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="/data-school-favicon.png">
+  <!-- title, description -->
+  <title>{{ page.meta_title }}</title>
+  <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
+  <!-- SEO -->
+  <link rel="canonical" href="https://dataschool.com{{ page.url | replace:'index.html','' }}"/>
+  <!-- css -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   {%- feed_meta -%}
+  <!-- TWITTER STUFF -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+  <meta name="twitter:url" content="https://dataschool.com{{ page.url | replace:'index.html','' }}"/>
+  <!-- FACEBOOK STUFF -->
+  <meta property="og:url" content="https://dataschool.com{{ page.url | replace:'index.html','' }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="The Data School" />
+  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}/assets/images/data-school-logo.png{% endif %}" />
+  <!-- JSON-LD STUFF -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org/",
+     "@type": "WebPage",
+     "name": "The Data School",
+     "speakable":
+     {
+      "@type": "SpeakableSpecification",
+      "xpath": [
+        "/html/head/title",
+        "/html/head/meta[@name='description']/@content"
+        ]
+      },
+     "url": "https://dataschool.com{{ page.url | replace:'index.html','' }}"
+     }
+  </script>
+  {% assign a = site.people | where: 'path', author_path.author %}
+  {% assign author = a[0] %}
+  <script type="application/ld+json">
+    { "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.meta_title }}",
+    "image": "{{ page.image }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ page.author }}"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "The Data School",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/assets/images/data-school-logo.png"
+      }
+    },
+    "url": "https://dataschool.com{{ page.url | replace:'index.html','' }}",
+    "datePublished": "{{ page.date }}",
+    "dateCreated": "{{ page.date }}",
+    "dateModified": "{{ page.last_modified_at }}",
+    "description": "{{ page.description }}"
+    }
+  </script>
   <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
   <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
 </head>
