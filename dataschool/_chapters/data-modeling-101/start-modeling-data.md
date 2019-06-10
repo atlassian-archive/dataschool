@@ -22,7 +22,7 @@ But it is not so bad and you can get started in less than 10 minutes.
 
 For this example we use Big Query and dbt. Big Query is one of Google’s cloud database offerings. dbt which stands for Data Build Tool is a data modeling tool created by Fishtown Analytics.
 
-[![Image result for big query logo](/assets/images/data-modeling-101/start_modeling_data/data1.png)
+![Image result for big query logo](/assets/images/data-modeling-101/start_modeling_data/data1.png)
 
 ‍[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/ "https://cloud.google.com/bigquery/")
 
