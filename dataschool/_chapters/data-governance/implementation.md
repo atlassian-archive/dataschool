@@ -15,9 +15,7 @@ writers:
 
 
 ---
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e4726a42c422f7c2107ea_five-pillars-5-1-300x125.png)
-
-‍
+![](/assets/images/data-governance/implementation/implementation.png)
 
 ## **What is Data Governance Implementation?**
 
@@ -25,7 +23,7 @@ Actionably, a data governance plan can configure the corporate philosophy of dat
 
 ## **How do I Implement Data Governance in my Organization?**
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e4726a95969325a7d5341_Screen-Shot-2018-06-22-at-10.50.08-AM-300x100.png)
+![](/assets/images/data-governance/implementation/implementation.png)
 
 The following are components of an effective data governance strategy, which business entities can utilize, to empower decision makers to get the most out of their big data projects. This helps to maximize data insights and achieve the most value from big data. Organizations can help key stakeholders trust their data insights by taking the following five steps to data governance.
 

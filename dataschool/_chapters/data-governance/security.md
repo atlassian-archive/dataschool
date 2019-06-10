@@ -17,7 +17,7 @@ writers:
 ---
 **What is data security?**
 
-![Five Pillars: Security](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e46e8a42e5060a6d895a7_five-pillars-4.png)
+![Five Pillars: Security](/assets/images/data-governance/security/security_1.png)
 
 Data security refers to the digital privacy measures that are applied to prevent unauthorized access to data. A broad range of information security protocols are used to protect databases from security risks. We need data security as there are numerous risks to database systems :
 
@@ -31,7 +31,7 @@ A lapse in data security can lead to catastrophic events. For example, in the ca
 
 ## **Key measures to implement data security**
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e46e8a42e50ea18d89589_Security2-1024x690-1024x690.png)
+![](/assets/images/data-governance/security/security_2.png)
 
 **1. Access control** : Access control is the selective restriction of access to data. It consists of two main components : Authentication and Authorization. Authentication is used to verify that someone is who they claim to be. In addition, we need authorization to determine whether a user should be allowed to access the data.
 
