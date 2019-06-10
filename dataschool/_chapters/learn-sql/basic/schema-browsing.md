@@ -12,7 +12,7 @@ authors:
 reviewers:
 - reviewer: _people/matt.md
 is_featured: false
-image: ''
+image: 
 ---
 The word _SCHEMA_ is used to describe a collection of tables and their relationships in your database.  A database instance may have several different schemas.  When you're working with a set of data, it's useful to be able to browse that schema to get a sense for what data is available to you.
 

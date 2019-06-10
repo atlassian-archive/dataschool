@@ -6,14 +6,11 @@ description: ''
 number: 20
 authors:
 - author: _people/rohan-joseph.md
-reviewers: []
+reviewers:
 feedback_doc_url: ''
-image: ''
+image:
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
 
 ---
 ‍

@@ -1,20 +1,19 @@
 ---
 section: book
 title: Build the Metrics
+meta_title:
+description: Use SQL to query the database to get the data behind the metrics people want to see.
 number: 110
 authors:
 - author: _people/matt.md
 reviewers:
 - reviewer: _people/tim.md
 - reviewer: _people/dave.md
-image: ''
-description: ''
-is_featured: false
-writers:
-  writers: []
-published: true
+image: /assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1S8xZVmLzy-et4HrFBr1ccBYj5Vlyr6terU0XVbicLl4/edit?usp=sharing
+is_featured: false
+published: true
 ---
 
 ![](/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png)

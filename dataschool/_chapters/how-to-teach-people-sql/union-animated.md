@@ -1,13 +1,14 @@
 ---
 section: book
 title: Union - Animated
+meta_title:
 number: 80
 authors:
 - author: _people/matt.md
-reviewers: []
+reviewers:
 feedback_doc_url: https://docs.google.com/document/d/12dp24i8H3q4v_IbGIbJKF-yZirvhtHmEQ6AvC9K91gw/edit?usp=sharing
-image: ''
-description: ''
+image:
+description: Visualize how SQL is joining two tables using a Union All
 is_featured: false
 img_border_on_default: false
 published: true

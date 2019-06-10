@@ -1,6 +1,8 @@
 ---
 section: book
 title: Making Sure Your Dashboard Always Gets Better
+meta_title:
+description: Once a dashboard is built and shared it is not done. You should maintain it and improve it by using audience feedback.
 number: 140
 authors:
 - author: _people/tim.md
@@ -8,8 +10,7 @@ reviewers:
 - reviewer: _people/matt.md
 - reviewer: _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1nr7qeQM1xjHTq6wh6zCfvU-8356lqSBDG1dKKwKrZAc/edit?usp=sharing
-image: ''
-description: ''
+image: /assets/images/how-to-design-a-dashboard/making_sure_your_dashboard_always_gets_better/gettingBetter.jpeg
 is_featured: false
 img_border_on_default: false
 published: true

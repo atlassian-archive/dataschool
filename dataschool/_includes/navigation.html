@@ -31,7 +31,7 @@
             {% endif %}
             <li {% if page.url == chapter.url %}class="active"{% endif %}>
               <a href="{{ chapter.url }}">
-                {{ chapter.title }}
+                {% if chapter.short %}{{ chapter.short }}{% else %}{{ chapter.title }}{% endif %}
               </a>
             </li>
           {% endfor %}

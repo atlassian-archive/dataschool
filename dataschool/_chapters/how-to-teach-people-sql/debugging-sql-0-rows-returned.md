@@ -1,13 +1,14 @@
 ---
 section: book
 title: 'Debugging SQL: 0 Rows Returned'
+meta_title:
 number: 110
 authors:
 - author: _people/matt.md
-reviewers: []
+reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1G55ZE0TMKLPoTd8TWh-t-3BoFDd9HADBjbzVoWHYHMA/edit?usp=sharing
-image: ''
-description: ''
+image:
+description: Learn the most common reasons you will get 0 rows returned from your SQL query.
 is_featured: false
 img_border_on_default: false
 published: true

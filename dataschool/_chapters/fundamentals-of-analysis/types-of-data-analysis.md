@@ -1,18 +1,15 @@
 ---
 section: book
 title: Types of Data Analysis
-number: 
+number: 10
 authors:
 - author: _people/patrick-gibson.md
-reviewers: []
+reviewers:
 feedback_doc_url: ''
-image: ''
+image:
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
 
 ---
 There are four types of data analysis that are in use across all industries. While we separate these into categories, they are all linked together and build upon each other. As you begin moving from the simplest type of analytics forward, the degree of difficulty and resources required increases. At the same time, the level of added insight and value also increases.

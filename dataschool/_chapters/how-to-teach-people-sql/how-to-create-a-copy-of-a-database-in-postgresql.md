@@ -1,19 +1,18 @@
 ---
 section: book
-title: 'How to create a copy of a database in PostgreSQL '
-meta_title: ''
-description: ''
+title: How to create a copy of a database in PostgreSQL
+meta_title:
+description: Create a copy of a database in postgres using psql
 number: 200
 authors:
 - author: _people/matthew-layne.md
 reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: ''
-image: ''
+image:
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
+
 published: false
 
 ---
