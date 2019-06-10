@@ -7,5 +7,5 @@ authors:
 cover_image: ''
 main_color: ''
 is_featured: false
-
+published: false
 ---
