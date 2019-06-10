@@ -10,7 +10,8 @@ authors:
 reviewers:
 - reviewer: _people/matt.md
 is_featured: false
-image: 
+image:
+published: true
 ---
 You're through the basics of SQL!  This is a great place to stop and get more practice on what you've learned so far.   Here we've constructed a list of challenges to give you that practice.  Take some time to go through these before moving on to the Mid-Level SQL section.
 

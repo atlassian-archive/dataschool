@@ -1,9 +1,8 @@
 ---
-section: book
+section: extras
 title: How to create a copy of a database in PostgreSQL
-meta_title: 
-description: 
-number: 200
+meta_title:
+description:
 authors:
 - author: _people/matthew-layne.md
 reviewers:
@@ -12,9 +11,7 @@ feedback_doc_url: ''
 image: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-
+published: true
 ---
 To create a copy of a database, run the following command in psql:
 
@@ -32,23 +29,23 @@ The first step to copying a database is to open psql (the postgreSQL command lin
 
 Open the Postgres app:
 
-![](/assets/images/how-to-teach-people-sql/copyDBs/copyDBs_1.png)
+![](/assets/images/learn-sql/extras/copyDBs/copyDBs_1.png)
 
 In order to start the server, click the start button.
 
-![](/assets/images/how-to-teach-people-sql/copyDBs/copyDBs_2.png)
+![](/assets/images/learn-sql/extras/copyDBs/copyDBs_2.png)
 
 Once this is done, a list will appear showing your databases:
 
-![](/assets/images/how-to-teach-people-sql/copyDBs/copyDBs_3.png)
+![](/assets/images/learn-sql/extras/copyDBs/copyDBs_3.png)
 
 Double-click a database in order to open a psql command line interface. This will open a new window with a connection:
 
-![](/assets/images/how-to-teach-people-sql/copyDBs/copyDBs_4.png)
+![](/assets/images/learn-sql/extras/copyDBs/copyDBs_4.png)
 
 Now that a connection has been established, we can begin writing queries. You can switch to other databases by typing “\\c \[Database Name\]”. To look at all the databases, the \\list or \\l [meta-command](https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql/) can be used:
 
-![](/assets/images/how-to-teach-people-sql/copyDBs/copyDBs_5.png)
+![](/assets/images/learn-sql/extras/copyDBs/copyDBs_5.png)
 
 **Copying the Database**
 
@@ -69,7 +66,7 @@ AND pid <> pg_backend_pid();
 
 This query will terminate any open connections to the “Database to copy”, and will cause brief interruptions to anyone accessing the “Database to copy”. It will disconnect users from the database, however psql will automatically reconnect a user whenever they run their next query as shown below:
 
-![](/assets/images/how-to-teach-people-sql/copyDBs/copyDBs_6.png)
+![](/assets/images/learn-sql/extras/copyDBs/copyDBs_6.png)
 
 Once they reconnect they can then run queries again against the database.
 

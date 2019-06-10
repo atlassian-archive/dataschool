@@ -2,7 +2,7 @@
 title: DATE EXTRACT
 short: EXTRACT
 description: ''
-
+published: false
 ---
 once done link from:
  - learn-sql/dates.md

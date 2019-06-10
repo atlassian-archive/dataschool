@@ -33,7 +33,7 @@ Another major driver for data governance is improving user satisfaction. Organiz
 
 In a [recent study](http://aberdeen.com/research/16816/16816-RR-data-governance-2.0.aspx/content.aspx), organizations determined to be “leaders” in data governance were characterized as those with powerful and clearly communicated policies for data governance, linked with the support of technology to help maintain oversight of their data. Not only are these leaders able to create a more effective data environment, but they also enjoy greater user satisfaction in several key areas, as shown in the graph below.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e4761bf592a6f3a54a52a_chart-300x186.png)
+![](/assets/images/data-governance/howDoesThisApply/application_1.png)
 
 (Source: Aberdeen, September 2017)
 

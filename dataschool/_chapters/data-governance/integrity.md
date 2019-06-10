@@ -15,7 +15,7 @@ writers:
 
 
 ---
-![Five Pillars: Integrity](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e46b80e4583571f231bc0_five-pillars-3.png)
+![Five Pillars: Integrity](/assets/images/data-governance/integrity/integrity_1.png)
 
 ## **What is data integrity?**
 
@@ -29,7 +29,7 @@ Data integrity refers to the fact that data must be reliable and accurate over i
 
 ## **Types of data integrity**
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e46b80719991ca697fc1d_Integrity2-1024x681-1024x681.png)
+![](/assets/images/data-governance/integrity/integrity_2.png)
 
 **1. Physical Integrity** : It deals with challenges in correctly storing and fetching data. Key challenges in physical integrity include material corrosion, electromechanical faults and power outages. Ensuring physical integrity includes methods such as redundant hardware, an uninterruptible power supply or use of a clustered file system to avoid a single point of failure.
 

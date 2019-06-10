@@ -12,7 +12,6 @@ image:
 is_featured: false
 img_border_on_default: false
 published: true
-
 ---
 Access
 
