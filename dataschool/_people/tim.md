@@ -9,4 +9,4 @@ linkedin:
 twitter:
 website:
 ---
-Tim can write his own damn bio.  But I can say - he's an awesome dude.
+Tim is a Senior Data Advisor at Chartio and brings 10+ years of Data Analysis background as well as years of experience in instruction methods and hands-on instruction to Chartio's Data School.
