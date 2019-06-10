@@ -11,8 +11,6 @@ reviewers:
 - reviewer: _people/dave.md
 image: /assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png
 is_featured: false
-writers:
-  
 published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1z2HnZTxsdPY89M5ElREXoGSIcQMrPzwdYVcaAbFz9eQ/edit?usp=sharing
