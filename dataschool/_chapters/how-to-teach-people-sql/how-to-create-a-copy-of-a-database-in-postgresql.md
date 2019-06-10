@@ -1,8 +1,8 @@
 ---
 section: book
 title: How to create a copy of a database in PostgreSQL
-meta_title: 
-description: 
+meta_title:
+description:
 number: 200
 authors:
 - author: _people/matthew-layne.md
@@ -12,9 +12,7 @@ feedback_doc_url: ''
 image: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-
+published: true
 ---
 To create a copy of a database, run the following command in psql:
 

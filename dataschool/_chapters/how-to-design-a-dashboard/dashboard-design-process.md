@@ -11,6 +11,7 @@ image: /assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-de
 is_featured: false
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing
+published: true
 ---
 The dashboard design process is very similar to any design process however the output is a dashboard… obviously.
 
