@@ -62,16 +62,16 @@ GROUP BY State, City
 After COUNT, for all other types of aggregation will need you to define the column you are aggregating.
 
 Wrong:
-
+```sql
 SELECT SUM(*)
-
 FROM facebook
+```
 
 Right:
-
+```sql
 SELECT SUM(# of friends)
-
 FROM facebook
+```
 
 How would it SUM all the columns in the facebook table? The name column has text and cannot summed. Also there are multiple columns so we cannot SUM the row as a whole like the way we could COUNT the row as a whole. SQL needs to know which column the aggregation should be on, in this case the only numeric column is # of friends.
 
@@ -82,7 +82,7 @@ The Average aggregation operates similarly to SUM. The data will be more complex
 ```sql
 SELECT State, AVG(# of friends)
 From facebook
-Group by State
+GROUP BY State
 ```
 
 ![](/assets/images/how-to-teach-people-sql/aggregations/aggregations_8.gif)
@@ -95,18 +95,12 @@ There are a few scenarios to be aware of when aggregating data that may make you
 
 Some cells will not have a value in it. This type of cell is considered null. Null is different than 0 or space “ ”.
 
-_\[Null\]_
-
-0
-
 The COUNT(*) aggregation will count all rows including Null values. However the COUNT(some column) will count all rows without Null values. Since other aggregations require you specify a column they will exclude Nulls in their calculations.
 
-COUNT(*) counts Nulls
+COUNT(*) counts Nulls:
 
 ![SQL COUNT Query With NULL Values](/assets/images/how-to-teach-people-sql/aggregations/aggregations_9.gif)
 
-‍
-
-COUNT(# of friends) does not count Nulls
+COUNT(# of friends) does not count Nulls:
 
 ![SQL COUNT Query with NULL Values](/assets/images/how-to-teach-people-sql/aggregations/aggregations_10.gif)

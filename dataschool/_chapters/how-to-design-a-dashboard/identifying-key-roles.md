@@ -10,8 +10,6 @@ reviewers:
 - reviewer: _people/dave.md
 image: /assets/images/how-to-design-a-dashboard/identifying_key_roles/groupPic.png
 is_featured: false
-writers:
-  
 published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1JK4JtcC-qqVX-vt4Xe8S5i0f5cspvrBeEuW6Ej8ucYc/edit?usp=sharing

@@ -12,9 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/17ubZErPoEZEF5qFh4Ro4mZB0BM
 image: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
 There are two ways to organize relational databases:
@@ -34,11 +32,11 @@ In a row store, or row oriented database, the data is stored row by row, such th
 
 For instance, let's take this Facebook_Friends data:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce58e38b5848fa3066227a3_AbwAot7Viu4KeFOvefGtqMuQaCIYuQntGWUYDGe-85GSPbKcFjhETYte9S88Lks5DdCokFBGta-hQHChTpvEUgaOzsoMX6rdg1a-nWAHoNpGPg9FiuMNq_tz-B5C3y-7M3lFz0lS.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling1.png)
 
 This data would be stored on a disk in a row oriented database in order row by row like this:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44bf0c3ecfb1278085b40_kbNLAOy1OfU9Q-8gA1MnYFd5ch848fk4jrIfs08Tsj0Y4dgZHdYlpom7czYA-5vmiuZzKVs3rhkaITCYdHD3R7Rt9BsqVrWhD8QcC2VD0epSNqze2PprnhOgh14OrXBk6wpgp5K7.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling2.png)
 
 This allows the database to be write optimized because, all that needs to be done to write to it is to tack on another row to the end of the data.
 
@@ -46,15 +44,15 @@ This allows the database to be write optimized because, all that needs to be don
 
 Let’s use the data stored in a database:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44bf0c3ecfb1278085b40_kbNLAOy1OfU9Q-8gA1MnYFd5ch848fk4jrIfs08Tsj0Y4dgZHdYlpom7czYA-5vmiuZzKVs3rhkaITCYdHD3R7Rt9BsqVrWhD8QcC2VD0epSNqze2PprnhOgh14OrXBk6wpgp5K7.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling3.png)
 
 If we want to add a new record:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce58e384c8164666f88b7a4_JJ46TiubOm-uB_lHXT2MNoto_eTycXUdlQheJewlRUu73lClSO977KpVp_y4_Uiz6DLlpCouQVBh9o7T6lE7rumXywkKQIy0QxdBnbOW-rnfrmxmp3rcb6X307d-iKFHhh_kLNIb.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling4.png)
 
 We can just append it to the end of the current data:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44bf0212c0faa3de3b0bd_jq7SLtUpTr-DD4tt2e3r2gJcD7yalPXsOEeNiTQvIVG4pho9Dj6RQcBF5S1hsBQfDE4hSBGva9r5sRQ3Gt54rBA0uGpW4yK3CwMmk-WeYPknceYUnoMKEpeJB_a1iqvbKrkA7Er7.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling5.png)
 
 Row oriented databases are still commonly used for Online Transactional Processing (OLTP) style applications since they can manage writes to the database well. However, another use case for databases is to analyze the data within them. These Online Analytical Processing (OLAP) use cases need a database that can support ad hoc querying of the data. This is where row oriented databases are slower than C-store databases.
 
@@ -66,13 +64,13 @@ Row oriented databases have slow reads because, to do a calculation, they bring 
 
 Say we want to get the sum of ages from the Facebook_Friends data. To do this we will need to load all nine of these pieces of data into memory to then pull out the relevant data to do the calculation.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44bf0c3ecfb1278085b40_kbNLAOy1OfU9Q-8gA1MnYFd5ch848fk4jrIfs08Tsj0Y4dgZHdYlpom7czYA-5vmiuZzKVs3rhkaITCYdHD3R7Rt9BsqVrWhD8QcC2VD0epSNqze2PprnhOgh14OrXBk6wpgp5K7.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling6.png)
 
 **Number of Disks accessed**
 
 Let’s assume a Disk can only hold enough bytes of data for three columns to be stored on each disk. In a row oriented database the table above would be stored as:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce58e384a02f7bf657a36fd_2wC5pwFqzgABPWJbJF9kYfUhFPIhvTE37ehlabT3ZsXhELGwCUWko7O__3cTToJK44iMwQb284iHELp8Zdwm6QlvJNrlRpmkvAnuH8Zhz0sxR5Xw1PNGLUSg6Xl5VlcTxn1T3ba5.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling7.png)
 
 To get the sum of all the people’s ages the computer would need to look through all three disks and across all three columns in each disk in order to make this query.
 
@@ -86,27 +84,27 @@ In a C-Store, columnar, or Column-oriented database, the data is stored such tha
 
 Let's look at the same data set again and see how it would be stored in a column oriented database.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce58e38b5848fa3066227a3_AbwAot7Viu4KeFOvefGtqMuQaCIYuQntGWUYDGe-85GSPbKcFjhETYte9S88Lks5DdCokFBGta-hQHChTpvEUgaOzsoMX6rdg1a-nWAHoNpGPg9FiuMNq_tz-B5C3y-7M3lFz0lS.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling8.png)
 
 A table is stored one column at a time in order row by row:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44bf0683eeef422f6a088_mpYBPZs8zWV10B6GwbGEGNSXfPVzBJO73jBX_lSoAy0j2HGoXIoi_4jR8yKqanv-ATy_u-7c9hFBm6jCIWqsgH3nPOX_i9nRiQHNs97naz8C-cn9l1Tiq_cd3wNsDCFci31qOpcW.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling9.png)
 
 **Writing to a Column Store Databases**
 
 If we want to add a new record:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce58e384c8164666f88b7a4_JJ46TiubOm-uB_lHXT2MNoto_eTycXUdlQheJewlRUu73lClSO977KpVp_y4_Uiz6DLlpCouQVBh9o7T6lE7rumXywkKQIy0QxdBnbOW-rnfrmxmp3rcb6X307d-iKFHhh_kLNIb.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling10.png)
 
 We have to navigate around the data to plug each column in to where it should be.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44bf0cdcf908f6e725ce7_K2wKsoEZs8u-PJo1ZfuH0rbKZ1V5HUakuuqeIr97RDTZa5NFF9x5U7GWtUPS02MfkbV1Nr1xt-YFgKlv1z1aILOrwEPfVV1e8wzX1sHQmrefGJadWyUfHML4xurjy2YrqLSUN6ub.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling11.png)
 
 If the data was stored on a single disk it would have the same extra memory problem as a row oriented database, since it would need to bring everything into memory. However, column oriented databases will have significant benefits when stored on separate disks.
 
 If we placed the table above into the similarly restricted three columns of data disk they would be stored like this:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce58e38d62c5ed1a1a0711a_3cXWQtWiSPRIh68jGbd8jGZ0SQL19LHF54c_Xi7nJbEbtEkHt5GE5wwHE2c4RDTaYxqQUx8-MLGu7vWAuz-_bb3IbktPYmjxkbKwVXqDDohol78w6nAkjHGjsrwBpaBmdYfOjTus.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling12.png)
 
 **Reading from a Column store Database**
 
@@ -136,15 +134,15 @@ When doing ad hoc queries there are a number of different sort orders of the dat
 
 In Row oriented databases, indexes can be created but data is rarely stored in multiple sort orders. However, in Column oriented databases you can have the data stored in an arbitrary number of ways. In fact, there are benefits beyond query performance. These different sort ordered columns are referred to as projections and they allow the system to be more fault tolerant, since the data is stored multiple times.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44da91402855748bb255b_eengdFIUf5WO2zrUW29gqEuoAyv7Aj2ksyHA_lJBJ2pI5IK7sK5EkHMhGVoS0aDepGn0n5jUCkie66NG96k00vBWK1Nc-W4YPIaKaKxzh-4B9WV5hWcgwDG9cJEPsJQGg9ITGLAb.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling13.png)
 
 This seems like a complicated set of tables to update, and it is. This is why the architecture of a C-store database has a writeable store (WS) and a read optimized store (RS). The writeable store has the data sorted in the order it was added, in order to make adding data into it easier. We can easily append the relevant fields to our database as seen below:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce58e384a02f712f87a371a_MMFGjMpaU9zw6XUC7WMTfZH4E7i02xIK_C0kosbIt8-2jxHJJ9ir2v31eEOLXb6Mh6aCuULdsghuQ6yoqOd5FPa44HwlXHR-QZsUTirO5Ndu3ozr-CD4ThtbBzOw6cwfy4J9-A6v.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling14.png)
 
 Then the read-optimized store can have multiple projections. It then has a tuple mover which manages the relevant updates from the WS to the RS. It has to navigate the multiple projections and insert the data in the proper places.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce44da98ca5d427f5128866_gUqp4kyZb0c6LxjFsp9B0wRSatPyfGUXp3jb28h9n2jZPEu0JgeS0YDk46GVS3T-9Ea67grrmgSe37sj1xuaAsAA2YOujdIi3ukQnmPiER-BkCg6wjY09cWRC5WnkeMehRL2-AOF.png)
+![](/assets/images/data-modeling-101/row_vs_col_databases/modeling15.png)
 
 This architecture means that while the data is being updated from the WS to the RS the partially added data must be ignored by queries to the RS until the update is complete.
 

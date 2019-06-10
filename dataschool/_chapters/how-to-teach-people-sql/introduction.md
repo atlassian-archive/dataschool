@@ -12,8 +12,6 @@ image:
 description: Introduction about why teaching SQL requires understanding of the audience who is less adept at dealing with abstract ideas
 is_featured: false
 img_border_on_default: false
-writers:
-
 published: true
 ---
 
