@@ -9,7 +9,7 @@ authors:
 - author: _people/dave.md
 reviewers:
 - reviewer: _people/matt.md
-image: ''
+image: 
 is_featured: false
 ---
 

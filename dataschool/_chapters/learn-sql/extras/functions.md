@@ -1,7 +1,7 @@
 ---
-title: "PostgreSQL Functions"
-description: ""
-published: false
+title: PostgreSQL Functions
+description: ''
+
 ---
 Once complete link to from
  - functions: full list of functions

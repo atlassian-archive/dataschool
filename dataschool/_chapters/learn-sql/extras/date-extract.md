@@ -1,10 +1,9 @@
 ---
-title: "DATE EXTRACT"
+title: DATE EXTRACT
 short: EXTRACT
-description: ""
-published: false
----
+description: ''
 
+---
 once done link from:
  - learn-sql/dates.md
 

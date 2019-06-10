@@ -6,14 +6,13 @@ description: ''
 number: 10
 authors:
 - author: _people/rohan-joseph.md
-reviewers: []
+reviewers:
 feedback_doc_url: ''
-image: ''
+image:
 is_featured: false
 img_border_on_default: false
 writers:
-  writers: []
-published: false
+
 
 ---
 **What is Data Governance?**
@@ -45,7 +44,7 @@ Data Governance not only saves money, but also helps generate revenue too. For e
 ### **2. Data Governance Ensures Consistency and Reliability**
 
 Data Governance is needed to ensure that a company’s information resources are properly, formally, efficiently and proactively managed throughout the company to secure its trust and accountability.  
-  
+
 Data Governance constitutes collecting of data, revising and standardizing it, and making it good for use. It makes data consistent. Data Governance ensures that critical data is available at the right time to the right person, in a standardized and reliable form. This delivers better organization of business operations. Adopting and implementing Data Governance can result in improved productivity and efficiency of an organization.
 
 ### **3. Data Governance Guides All Analytics Activities**

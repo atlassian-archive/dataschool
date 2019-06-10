@@ -6,19 +6,16 @@ description: ''
 number: 20
 authors:
 - author: _people/rohan-joseph.md
-reviewers: []
+reviewers:
 feedback_doc_url: ''
-image: ''
+image:
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
 
 ---
 ‍
 
-![Five Pillars: Availability](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e4637a95969133b7cdd12_five-pillars-1.png)
+![Five Pillars: Availability](/assets/images/data-governance/availability/availability_1.png)
 
 ## **What is data availability?**
 
@@ -36,7 +33,7 @@ According to [Forbes](https://www.forbes.com/sites/larrymyler/2017/07/11/better-
 
 ## **How do we make data available?**
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e4637af69dd05bf2e5d08_DA1.png)
+![](/assets/images/data-governance/availability/availability_2.png)
 
 Data can be collected and made readily available by using the following steps :
 

@@ -1,8 +1,7 @@
 ---
-title: "How to Import Data to PostgreSQL From an Excel or CSV File"
+title: How to Import Data to PostgreSQL From an Excel or CSV File
 short: Import CSV
-description: ""
-published: false
----
+description: ''
 
+---
 https://gist.github.com/nepsilon/f2937fe10fe8b0efc0cc

@@ -1,7 +1,6 @@
 ---
-title: "PostgreSQL Regular Expressions"
-description: ""
-published: false
----
+title: PostgreSQL Regular Expressions
+description: ''
 
+---
 A monster page!

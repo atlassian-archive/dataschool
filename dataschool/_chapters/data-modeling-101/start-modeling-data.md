@@ -22,7 +22,7 @@ But it is not so bad and you can get started in less than 10 minutes.
 
 For this example we use Big Query and dbt. Big Query is one of Google’s cloud database offerings. dbt which stands for Data Build Tool is a data modeling tool created by Fishtown Analytics.
 
-![Image result for big query logo](/assets/images/data-modeling-101/start_modeling_data/data1.png)
+[![Image result for big query logo](/assets/images/data-modeling-101/start_modeling_data/data1.png)
 
 ‍[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/ "https://cloud.google.com/bigquery/")
 
@@ -162,8 +162,9 @@ dbt_project.yml
 
 Now you only need to update one thing in this file, you need to se the profile to the name we just created:
 
----
+```code
 profile: 'my-bigquery-db'
+```
 
 * This is the link to the profile we just created, so if you changed that name to something else replace 'my-bigquery-db' with whatever you created. It does need the single quotes around the name of the profile.
 
@@ -172,12 +173,12 @@ profile: 'my-bigquery-db'
 Go to the models folder in your project and create a new .sql file. In that .sql file you can write a SQL statement that's output will be modeled data. Try adding this text to the .sql file and save it:
 
 ```sql
-{{ config(materialized='table') }}
+
 
 SELECT *
-FROM 'bigquery-public-data.stackoverflow.posts_questions'
+FROM \'bigquery-public-data.stackoverflow.posts_questions\\'
 ORDER BY view_count DESC
-LIMIT 1;
+LIMIT 1
 ```
 Whatever you named the .sql file will be the name of the table in the schema (dataset) In my case I saved it as firstModel.sql
 

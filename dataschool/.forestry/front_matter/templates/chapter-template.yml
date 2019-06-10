@@ -51,7 +51,7 @@ fields:
     default: 
     config:
       required: false
-      options: []
+      options: 
       source:
         type: pages
         section: people
@@ -84,29 +84,12 @@ fields:
   description: Toggle on to add borders to all images in this chapter (override with
     class="img-no-border")
   default: false
-- name: writers
-  type: field_group
-  config: {}
-  fields:
-  - name: writers
-    type: list
-    config:
-      use_select: true
-      min: 
-      max: 
-      source:
-        type: pages
-        section: people
-        path: ''
-        file: dataschool/_data/contributors.yaml
-    label: writers
-  label: writers
 pages:
-- dataschool/_chapters/Data Governance/integrity.md
-- dataschool/_chapters/Data Governance/usability.md
+- dataschool/_chapters/how-to-teach-people-sql/introduction.md
+- dataschool/_chapters/how-to-teach-people-sql/union-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
 - dataschool/_chapters/data-modeling-101/start-modeling-data.md
-- dataschool/_chapters/Data Governance/availability.md
-- dataschool/_chapters/Data Governance/why-is-data-governance-important.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/what-is-a-query-plan.md
 - dataschool/_chapters/how-to-teach-people-sql/how-to-create-a-copy-of-a-database-in-postgresql.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/how-to-create-a-copy-of-a-database-in-postgresql.md
@@ -116,19 +99,14 @@ pages:
 - dataschool/_chapters/how-to-teach-people-sql/how-to-find-outliers-with-sql.md
 - dataschool/_chapters/how-to-teach-people-sql/optimize-your-sql-query.md
 - dataschool/_chapters/how-to-teach-people-sql/how-sql-subqueries-work.md
-- dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work-1.md
 - dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work.md
 - dataschool/_chapters/how-to-teach-people-sql/debugging-sql-syntax-errors.md
 - dataschool/_chapters/how-to-teach-people-sql/debugging-sql-0-rows-returned.md
 - dataschool/_chapters/how-to-teach-people-sql/cross-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/union-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
 - dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
 - dataschool/_chapters/how-to-teach-people-sql/why-databases.md
-- dataschool/_chapters/how-to-teach-people-sql/introduction.md
 - dataschool/_chapters/how-to-design-a-dashboard/design-a-dashboard-example.md
 - dataschool/_chapters/how-to-design-a-dashboard/conclusion.md
 - dataschool/_chapters/how-to-design-a-dashboard/making-sure-your-dashboard-always-gets-better.md

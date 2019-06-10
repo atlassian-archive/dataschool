@@ -6,17 +6,16 @@ description: ''
 number: 30
 authors:
 - author: _people/rohan-joseph.md
-reviewers: []
+reviewers:
 feedback_doc_url: ''
-image: ''
+image:
 is_featured: false
 img_border_on_default: false
 writers:
-  writers: []
-published: false
+
 
 ---
-![Five Pillars: Usability](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e46820e45832fac23121f_five-pillars-2.png)
+![Five Pillars: Usability](/assets/images/data-governance/usability/usability_1.png)
 
 ## **Why do we need usable data?**
 
@@ -26,7 +25,7 @@ published: false
 
 ## **The 5 key features of usable data**
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5c9e4682d2c78168d1cc8932_Usability1-1024x423.png)
+![](/assets/images/data-governance/usability/usability_2.png)
 
 **1. Accuracy and Precision**
 

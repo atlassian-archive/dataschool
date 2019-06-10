@@ -1,13 +1,14 @@
 ---
 section: book
 title: Scaling Dashboards
+meta_title:
+description: Successful dashboards get used a lot so they need to be built to scale
 number: 130
 authors:
 - author: _people/matt.md
-reviewers: 
+reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1wE7Dah1_zBK5gcSZHdyrdsmzvuiw_mYuIln7vc0W1dU/edit?usp=sharing
-image: ''
-description: ''
+image: /assets/images/how-to-design-a-dashboard/scaling_dashboards/scaling.png
 is_featured: false
 img_border_on_default: false
 published: true

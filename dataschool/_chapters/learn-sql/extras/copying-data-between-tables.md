@@ -7,7 +7,7 @@ authors:
 reviewers:
 - reviewer: _people/blake.md
 - reviewer: _people/matt.md
-image: ''
+image: 
 description: This article discusses how to copy data from a table or query into another
   table using the INSERT command in psql.
 is_featured: false

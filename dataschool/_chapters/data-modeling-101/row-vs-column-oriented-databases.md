@@ -13,8 +13,8 @@ image: ''
 is_featured: false
 img_border_on_default: false
 published: true
----
 
+---
 There are two ways to organize relational databases:
 
 1. **Row oriented**
