@@ -10,9 +10,11 @@ reviewers:
 - reviewer: _people/drew-banin.md
 - reviewer: _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1v_F2P6da3SOwy1W5K13tR-unTba-vh2U-3iEQjGSUTs/edit?usp=sharing
-image:
+image: ''
 is_featured: false
 img_border_on_default: false
+writers:
+  writers: []
 published: false
 
 ---
@@ -26,7 +28,7 @@ For this example we use Big Query and dbt. Big Query is one of Google’s cloud 
 
 ‍[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/ "https://cloud.google.com/bigquery/")
 
-Big Query comes with a set of public data sets that are great for practicing data modeling on. I will be using the Stack Overflow data set they have.
+Big Query comes with a set of public data sets that are great for practicing data modeling on. I will be using the Stack Overflow data set they have. 
 
 You can start using Google Clouds various services for free but you will need to upgrade the billing so that you can connect dbt to Google Cloud. If you have not signed up for Google Cloud platform services before they will give you a $300 credit (which is more than enough to run this test thousands of times) so don’t worry about the costs in trying this out.
 
@@ -148,7 +150,7 @@ Your private key that you need to get from BigQuery - keyfile:**/users/matt/BigQ
 
 Once you update all of those fields in your dbt profile (profiles.yml) you now need to link that profile to the project we created.
 
-Go to the project folder we had created earlier (BQSO in my case) and open the yml file inside of it.
+Go to the project folder we had created earlier (BQSO in my case) and open the yml file inside of it. 
 
 dbt_project.yml
 
