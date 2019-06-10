@@ -3,7 +3,7 @@ section: book
 title: Row vs Column Oriented Databases
 meta_title: ''
 description: ''
-number: "20"
+number: 20
 authors:
 - author: _people/blake.md
 - author: _people/matt.md
@@ -17,7 +17,7 @@ writers:
 published: false
 
 ---
-There are two ways to organize relational databases: 
+There are two ways to organize relational databases:
 
 1. **Row oriented**
 2. **Column oriented** (also known as **columnar** or **C-store**)
