@@ -1,11 +1,7 @@
 ---
 title: Katerina Bicakci
 image: "/assets/images/people/katerina.png"
-bio: I first learned about data analytic about 5 years ago and I have been hooked
-  ever since. While completing numerous data related courses I saw the applications
-  of data science to drive human behavior. As a consultant to an educational platform,
-  such as Udacity, I have been utilizing my specialized knowledge in the fields of
-  programming, data and predictive analytics for the last 4 years.
+bio:
 linkedin: ''
 twitter: ''
 website: ''
@@ -14,3 +10,8 @@ job_title: ''
 company: ''
 
 ---
+I first learned about data analytic about 5 years ago and I have been hooked
+  ever since. While completing numerous data related courses I saw the applications
+  of data science to drive human behavior. As a consultant to an educational platform,
+  such as Udacity, I have been utilizing my specialized knowledge in the fields of
+  programming, data and predictive analytics for the last 4 years.
