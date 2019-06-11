@@ -1,7 +1,7 @@
 ---
 title: AND OR Boolean Logic
 description: ''
-published: false
+
 ---
 Once complete link to from;
   - where.md  [AND is essentially a logic multiplication](and-or-boolean-logic)
