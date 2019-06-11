@@ -2,17 +2,15 @@
 section: book
 title: Usability
 meta_title: Usability
-description: ''
+description:
 number: 30
 authors:
 - author: _people/rohan-joseph.md
 reviewers:
-feedback_doc_url: ''
-image:
+feedback_doc_url:
+image: /assets/images/data-governance/usability/usability_1.png
 is_featured: false
 img_border_on_default: false
-writers:
-
 
 ---
 ![Five Pillars: Usability](/assets/images/data-governance/usability/usability_1.png)
@@ -39,7 +37,7 @@ How integrated is the data with other data sources and data objects? As an **exa
 
 **3. Population**
 
-A field can be accurate, precise, and integrated with related information, but if it’s only found in a handful of [records](https://dataschool.com/glossary/database-record/), its value decreases. For **example**, if a field is only populated five percent of the time it becomes difficult to perform data manipulation or analysis.
+A field can be accurate, precise, and integrated with related information, but if it’s only found in a handful of records, its value decreases. For **example**, if a field is only populated five percent of the time it becomes difficult to perform data manipulation or analysis.
 
 **4. Standardization**
 

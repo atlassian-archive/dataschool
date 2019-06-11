@@ -1,7 +1,7 @@
 ---
-section: book
 title: How to Find Outliers with SQL
 meta_title:
+section: appendix
 number: 200
 authors:
 - author: _people/rebecca-barnes.md
@@ -9,7 +9,6 @@ reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: ''
 image: ''
-summary: ''
 is_featured: false
 img_border_on_default: false
 published: true

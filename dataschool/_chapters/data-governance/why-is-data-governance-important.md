@@ -11,8 +11,6 @@ feedback_doc_url: ''
 image:
 is_featured: false
 img_border_on_default: false
-writers:
-
 
 ---
 **What is Data Governance?**
@@ -39,7 +37,7 @@ Data Governance increases efficiency by putting the effort of managing the data 
 
 Data Governance lowers errors in a database by providing integrity of data. This in turn gives the organization a strong database to work from and saves valuable time that would otherwise be used in resolving existing data issues.
 
-Data Governance not only saves money, but also helps generate revenue too. For example, having solid grip on how core metrics, marketing exclusions, segments, and acquired attributes like [customer lifetime value](https://dataschool.com/glossary/customer-lifetime-value/) are defined, can help a firm in making marketing campaigns more effective. Enhanced campaigns generate more revenue while saving money.
+Data Governance not only saves money, but also helps generate revenue too. For example, having solid grip on how core metrics, marketing exclusions, segments, and acquired attributes like customer lifetime value are defined, can help a firm in making marketing campaigns more effective. Enhanced campaigns generate more revenue while saving money.
 
 ### **2. Data Governance Ensures Consistency and Reliability**
 

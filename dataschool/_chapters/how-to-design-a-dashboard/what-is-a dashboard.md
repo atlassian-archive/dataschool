@@ -1,6 +1,7 @@
 ---
 title: What is a Dashboard?
 meta_title:
+description: Learn what dashboards are and why they are important to making decisions.
 section: book
 number: 20
 authors:
@@ -9,8 +10,6 @@ reviewers:
 - reviewer: _people/tim.md
 - reviewer: _people/dave.md
 image: /assets/images/how-to-design-a-dashboard/what-is-a-dashboard/5cace68b51b229cebdb0fc4c_5c81b2f8cf5a793fa7742f9c_Building_a_Great_Dashboard-Dashboard.jpg
-meta_title: ''
-description: Learn what dashboards are and why they are important to making decisions.
 is_featured: true
 published: true
 img_border_on_default: false

@@ -4,10 +4,9 @@ title: Correlation and P value
 number: 
 authors:
 - author: _people/rohan-joseph.md
-reviewers: []
-feedback_doc_url: ''
-image: ''
-summary: ''
+reviewers: 
+feedback_doc_url:
+image: /assets/images/fundamentals-of-analysis/correlation_p_value/correlations1.jpeg
 is_featured: false
 img_border_on_default: false
 writers:

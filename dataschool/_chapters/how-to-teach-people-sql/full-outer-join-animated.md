@@ -1,12 +1,14 @@
 ---
-section: book
 title: Full Outer Join - Animated
+meta_title:
+description: 
+section: book
 number: 70
 authors:
 - author: _people/matt.md
 reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1xA160gXkrjyrlrygTqNAVnUYaEA3-oMFPTmxgvyuZxY/edit?usp=sharing
-image:
+image: /assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif
 description: Visualize how SQL is joining two tables using a Full Outer JOIN
 is_featured: false
 img_border_on_default: false
@@ -24,7 +26,7 @@ FULL OUTER JOIN linkedin
 ON facebook.name = linkedin.name
 ```
 
-This query finds matches and adds them to a newly created table in the same way as a [LEFT join](https://dataschool.com/learn/common-sql-join-types-left-right-join).
+This query finds matches and adds them to a newly created table in the same way as a LEFT join.
 
 ![](/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif)
 

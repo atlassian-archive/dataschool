@@ -1,8 +1,8 @@
 ---
-section: book
 title: What is a Query Plan
 meta_title: What is a Query Plan
-description: ''
+description:
+section: appendix
 number: 200
 authors:
 - author: _people/matthew-layne.md

@@ -6,7 +6,7 @@ authors:
 - author: _people/matt.md
 reviewers:
 cover_image: /assets/images/book-covers/how-to-teach-people-sql.png
-main_color: ''
+main_color: '#147638'
 published: true
 is_featured: false
 ---

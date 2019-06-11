@@ -1,6 +1,6 @@
 ---
 title: How to Design a Dashboard
-meta_title: ''
+meta_title:
 book_slug: how-to-design-a-dashboard
 authors:
 - author: _people/matt.md
@@ -8,7 +8,7 @@ authors:
 reviewers:
 - reviewer: _people/tim.md
 cover_image: /assets/images/book-covers/how-to-design-a-dashboard.png
-main_color: "#185775"
+main_color: '#145776'
 published: true
 is_featured: false
 ---

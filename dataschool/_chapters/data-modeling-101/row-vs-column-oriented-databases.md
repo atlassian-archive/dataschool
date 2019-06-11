@@ -1,15 +1,21 @@
 ---
 section: book
 title: Row vs Column Oriented Databases
+<<<<<<< Updated upstream
 meta_title: ''
 description: ''
 number: "20"
+=======
+meta_title:
+description:
+number: 20
+>>>>>>> Stashed changes
 authors:
 - author: _people/blake.md
 - author: _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/17ubZErPoEZEF5qFh4Ro4mZB0BMewbKZ0MyXDb0ur2hI/edit?usp=sharing
-image: ''
+image: /assets/images/data-modeling-101/row_vs_col_databases/modeling1.png
 is_featured: false
 img_border_on_default: false
 writers:

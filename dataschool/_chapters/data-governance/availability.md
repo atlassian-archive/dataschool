@@ -2,13 +2,13 @@
 section: book
 title: Availability
 meta_title: Availability
-description: ''
+description:
 number: 20
 authors:
 - author: _people/rohan-joseph.md
 reviewers:
-feedback_doc_url: ''
-image:
+feedback_doc_url:
+image: /assets/images/data-governance/availability/availability_1.png
 is_featured: false
 img_border_on_default: false
 
@@ -55,7 +55,7 @@ In the Step 2 example, the hypothesis can be tested by collecting and analyzing 
 1. Identifying the logistics, technology, resources and people.
 2. Using carefully controlled procedures for collecting, storing and accessing data for safeguarding privacy and personal information.
 
-**5. Analyze/Interpret data** : First, a sanity check (check for missing values, data type mismatches, duplicate [records](https://dataschool.com/glossary/database-record/), outliers etc.) is performed on the data. Then, it can be analyzed using complex algorithms, or less so, depending on the methods used and the amount of data collected.
+**5. Analyze/Interpret data** : First, a sanity check (check for missing values, data type mismatches, duplicate records, outliers etc.) is performed on the data. Then, it can be analyzed using complex algorithms, or less so, depending on the methods used and the amount of data collected.
 
 ## **Conclusion**
 

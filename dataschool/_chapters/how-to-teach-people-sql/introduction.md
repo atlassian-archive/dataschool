@@ -1,6 +1,6 @@
 ---
-section: book
 title: Introduction
+section: book
 meta_title: Introduction to How to Teach People SQL
 number: 10
 authors:
@@ -15,7 +15,7 @@ img_border_on_default: false
 published: true
 ---
 
-> _“Those who know, do. Those that understand, teach.” -_ Aristotle
+> “Those who know, do. Those that understand, teach.” —Aristotle
 
 There are hundreds of SQL tutorials online to teach people SQL syntax. This book is not about syntax. This book is about building mental models around what SQL is doing and understanding why others struggle to understand so that it is easier to help them learn.
 

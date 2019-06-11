@@ -1,13 +1,13 @@
 ---
-section: book
 title: How SQL Subqueries Work
 meta_title:
+section: book
 number: 130
 authors:
 - author: _people/matt.md
 reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1kPX4BXKYuxouonyUpYlCItWCLrtH86mfV2YHj1u0ovw/edit?usp=sharing
-image:
+image: /assets/images/how-to-teach-people-sql/subqueries/subqueries_2.png
 description: Visualize how subqueries work in SQL by seeing the intermediate table that is created during the process.
 is_featured: false
 img_border_on_default: false
