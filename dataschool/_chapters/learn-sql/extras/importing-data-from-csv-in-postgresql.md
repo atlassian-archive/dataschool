@@ -1,5 +1,5 @@
 ---
-section: book
+section: extras
 title: Importing Data from CSV in PostgreSQL
 meta_title: Importing Data from CSV in PostgreSQL
 description: This article outlines how to use psql to import data from csv files.
@@ -12,7 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/1zt39uLRSjBc74SXJ-xioYcN9XZ
 image: ''
 is_featured: false
 img_border_on_default: true
-published: false
+published: true
 
 ---
 # Importing from CSV in PSQL
@@ -20,15 +20,16 @@ published: false
 As mentioned in [this](https://dataschool.com/learn/export-to-csv-from-psql) article on exporting data to CSV files, CSV files are a useful format for storing data. They are usually human readable and are useful for data storage. As such, it is important to be able to read data from CSV articles and store the data in tables. This can be done in psql with a few commands.
 
 ## Syntax:
-
-**COPY \[Table Name\](Optional Columns) FROM ‘\[Absolute Path to File\]’ DELIMITER ‘\[Delimiter Character\]’ CSV \[HEADER\];**
+```sql
+COPY [Table Name](Optional Columns) FROM ‘[Absolute Path to File]’ DELIMITER ‘[Delimiter Character]’ CSV [HEADER];
+```
 
 ## Key Details:
 
 There are a few things to keep in mind when copying data from a csv file to a table **before importing the data**:
 
 1. **Make a Table:** There _must_ be a table to hold the data being imported. In order to copy the data, a table must be created with the proper table structure (number of columns, data types, etc.)
-2. **Determine the Delimiter: While CSV files usually separate values using commas, this is not always the case. Values can be separated using ‘|’s or tabs (\\t) among other characters. (NOTE: for tab delimited CSV files (also known as TSV files however the CSV command is still used for TSV) use: “DELIMITER E‘\\t’ ” The ‘E’ allows for the tab character to be used)**
+2. **Determine the Delimiter:** While CSV files usually separate values using commas, this is not always the case. Values can be separated using ‘\|’s or tabs (\\t) among other characters. (NOTE: for tab delimited CSV files (also known as TSV files however the CSV command is still used for TSV) use: “DELIMITER E‘\\t’ ” The ‘E’ allows for the tab character to be used)
 3. **Does the Data Have a Header:** Some CSV files will have Headers while others will not. A Header is a file which contains the column names as the first line of values in the file. If a header is present, include **HEADER** at the end of the query. If there is not a header in the data, do not include **HEADER**.
 
 ## Example:
@@ -50,8 +51,9 @@ Now that a table, ‘items,’ has been created to house the data from the csv f
 ![](/assets/images/learn-sql/extras/importCSV/annotatedCSV.png)
 
 Since the header and the delimiter is known, the query can now be written. As before, the syntax is:
-
-**COPY \[Table Name\](Optional Columns) FROM ‘\[Absolute Path to File\]’ DELIMITER ‘\[Delimiter Character\]’ CSV \[HEADER\];**
+```sql
+COPY [Table Name](Optional Columns) FROM ‘[Absolute Path to File]’ DELIMITER ‘[Delimiter Character]’ CSV [HEADER];
+```
 
 So in order to import the csv we will fill out the necessary parts of the query:
 
@@ -61,9 +63,9 @@ So in order to import the csv we will fill out the necessary parts of the query:
 * \[HEADER\] - the data does have a header
 
 So the final query will be:
-
-**COPY items FROM ‘/Users/matt/Desktop/items.csv’ DELIMITER ‘,’ CSV HEADER;**
-
+```sql
+COPY items FROM ‘/Users/matt/Desktop/items.csv’ DELIMITER ‘,’ CSV HEADER;
+```
 Running this query will look like:![](/assets/images/learn-sql/extras/importCSV/copyToTable.png)
 
 The message COPY 31 indicates that 31 rows were successfully copied from the CSV file to the specified table.
