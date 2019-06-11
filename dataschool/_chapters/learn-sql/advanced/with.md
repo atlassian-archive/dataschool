@@ -1,9 +1,8 @@
 ---
 title: WITH
-short: WITH
-meta_title: ''
-description: ''
-number: "210"
+meta_title:
+description:
+number: 210
 section: advanced
 categories:
 - data
