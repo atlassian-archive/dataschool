@@ -1,9 +1,8 @@
 ---
-title: "PostgreSQL Complete Operator List"
-description: ""
-published: false
----
+title: PostgreSQL Complete Operator List
+description: ''
 
+---
 once done link from:
  - operators.md: [full list of {{ page.database }} operators](../../complete-operator-list.md)
 

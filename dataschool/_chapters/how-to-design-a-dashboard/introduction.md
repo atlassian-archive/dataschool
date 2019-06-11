@@ -1,17 +1,22 @@
 ---
 title: Introduction
-section: ''
-number: 1
+meta_title: Introduction to Designing Dashboards
+description: Dashboards are the way data people help the rest of an organization make
+  data driven decisions.
+section: book
+number: 10
 authors:
-- person: _people/matt.md
+- author: _people/matt.md
 reviewers:
 - reviewer: _people/dave.md
-image: "/uploads/intro-dash-1.jpg"
-summary: Dashboards are the way data people help the rest of an organization make
-  data driven decisions.
+image: /assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg
 is_featured: false
+published: true
+img_border_on_default: false
+feedback_doc_url: https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing
 ---
-_“The greatest value of a picture is when it forces us to notice what we never expected to see.” - John Tukey, Mathematician_
+> “The greatest value of a picture is when it forces us to notice what we never expected to see.”
+> —John Tukey, Mathematician
 
 Without looking at data how do people make decisions?
 
@@ -29,8 +34,6 @@ Business Intelligence tools have made it easy to create visualizations and dashb
 
 This book will quickly introduce you to what dashboards are, what makes them useful, and an overview of the dashboard design process. Then it will spend the bulk of the book going through the process itself:
 
-![](/uploads/intro-dash-1.jpg)
+![](/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg)
 
 This book will provide resources and examples to aid you at every step of the process. Use this book to improve your own dashboard skills and use it as a reference for new analysts that join your organization.
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1Qsf0v_4Ey7DGHtB1RiXQKdHwmZgA3IYcRLITyW5iy24/edit?usp=sharing)

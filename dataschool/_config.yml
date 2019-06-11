@@ -62,6 +62,7 @@ defaults:
       permalink: "/:path/"
       is_hidden: false
       is_featured: false
+      section: "book"
   - scope:
       path: "static/"
     values:
@@ -69,11 +70,35 @@ defaults:
 
 # set defaults per book
   - scope:
+      path: "_chapters/data-governance"
+      type: "chapters"
+    values:
+      book_slug: data-governance
+      image: assets/images/book-covers/data-governance.png  # TODO set a real default image
+  - scope:
+      path: "_chapters/data-modeling-101"
+      type: "chapters"
+    values:
+      book_slug: data-modeling-101
+      image: assets/images/book-covers/data-modeling-101.png  # TODO set a real default image
+  - scope:
+      path: "_chapters/fundamentals-of-analysis"
+      type: "chapters"
+    values:
+      book_slug: fundamentals-of-analysis
+      image: assets/images/book-covers/fundamentals-of-analysis.png  # TODO set a real default image
+  - scope:
       path: "_chapters/how-to-design-a-dashboard"
       type: "chapters"
     values:
       book_slug: how-to-design-a-dashboard
-      image: static/books/images/how-to-design-a-dashboard.jpg  # TODO set a real default image
+      image: assets/images/book-covers/how-to-design-a-dashboard.png  # TODO set a real default image
+  - scope:
+      path: "_chapters/how-to-teach-people-sql"
+      type: "chapters"
+    values:
+      book_slug: how-to-teach-people-sql
+      image: assets/images/book-covers/how-to-teach-people-sql.png  # TODO set a real default image
   - scope:
       path: "_chapters/learn-sql"
       type: "chapters"

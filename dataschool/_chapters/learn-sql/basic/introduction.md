@@ -1,8 +1,8 @@
 ---
-title: "Quick Introductory SQL Concepts"
+title: Quick Introductory SQL Concepts
 short: Introduction
-description: "Learn how to use SQL with your PostgreSQL database. In this interactive SQL data tutorial, get an introduction that is designed to get you querying your PostgreSQL database as quickly as possible. Learn SQL basics, tables and SQLbox."
-image: /assets/images/learn-sql/sql-tutorial-excel-introduction.png
+meta_title:
+description: Learn how to use SQL with your PostgreSQL database. In this interactive SQL data tutorial, get an introduction that is designed to get you querying your PostgreSQL database as quickly as possible. Learn SQL basics, tables and SQLbox.
 number: 10
 section: basic
 authors:
@@ -10,6 +10,7 @@ authors:
 reviewers:
 - reviewer: _people/matt.md
 is_featured: true
+image: /assets/images/learn-sql/basic/introduction/sql-tutorial-excel-introduction.png
 ---
 
 So you wanna learn SQL huh?  You've come to the right place.  This interactive SQL tutorial is designed to get you querying as quickly as possible.
@@ -22,7 +23,7 @@ SQL might seem intimidating but it’s really fairly easy to understand.  SQL st
 
 Just think of it as an advanced, really structured google search.  For example in Google you might ask something like
 
-![Google Example Question](/assets/images/learn-sql/obana-question.png)
+![Google Example Question](/assets/images/learn-sql/basic/introduction/obana-question.png)
 
 And in SQL, if you had a database with that information in it, the equivalent question might be answered with something like
 
@@ -36,7 +37,7 @@ Don’t worry about understanding the above query yet, you’ll get that in no t
 
 Databases organize data in different **tables**.  I’m assuming that most people reading this are familiar with Excel or some other Spreadsheet software.  This makes it easier to explain what a table is as a Table is basically just a Spreadsheet of data.  It has columns with names of fields, and then rows holding the actual data.  
 
-![figure 1](/assets/images/learn-sql/sql-tutorial-excel-introduction.png)
+![figure 1](/assets/images/learn-sql/basic/introduction/sql-tutorial-excel-introduction.png)
 
 In this tutorial we'll be using an example data set that has a bunch of information on *tracks*, *albums* and *artists* in a music collection.  Most databases architects will typically split those items into their own tables rather than group them all in one.  You'll learn all about linking them together when we get to the section on [Table Relationships and JOINs](../joins/).
 

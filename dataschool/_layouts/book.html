@@ -2,34 +2,38 @@
 layout: default
 ---
 {% assign bookchapters = site.chapters | where:'book_slug', page.slug | sort: 'number' %}
+<p><a href="/books/">Web Books</a></p>
 <h1 class="mega-title">{{ page.title }}</h1>
-<p>Page slug is <code>{{ page.slug }}</code></p>
-<p>{{ content }}</p>
-<p>
-  <b>authors:</b>
+<!-- <p>Page slug is <code>{{ page.slug }}</code></p> -->
+<p class="mb-4">{{ content }}</p>
+<p class="mb-5">
+  Written by:
   {% for author_path in page.authors %}
     {% assign a = site.people | where: 'path', author_path.author %}
     {% assign author = a[0] %}
     <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
   {% endfor %}
+  <br>
+  {% if page.reviewers %}
+    Reviewed by:
+    {% for reviewer_path in page.reviewers %}
+      {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
+      {% assign reviewer = a[0] %}
+      <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
+      {% if forloop.last != true %},{% endif %}
+    {% endfor %}
+  {% endif %}
 </p>
-<p>
-  <b>reviewers:</b>
-  {% for reviewer_path in page.reviewers %}
-    {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
-    {% assign reviewer = a[0] %}
-    <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>{% if forloop.last != true %},{% endif %}
-  {% endfor %}
-</p>
+<h2 class="mb-4">Contents</h2>
 <ul class="d-none">
 {% for chapter in bookchapters %}
   {% if currentsection != chapter.section %}
      {% assign currentsection = chapter.section %}
      </ul>
-     <ul id="{{currentsection}}">
-       <h3>{{ currentsection }}</h3>
+     <ul id="{{currentsection}}" class="light-pad-list">
+     {% if currentsection != 'book' %}<h3 class="mb-3 mt-4">{{ currentsection | capitalize }}</h3>{% endif %}
   {% endif %}
-      <li>
+      <li class="mb-2">
        <a href="{{ chapter.url }}">{{ chapter.title }}</a>
       </li>
 {% endfor %}

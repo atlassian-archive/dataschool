@@ -1,6 +1,8 @@
 
 img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 html, body {
@@ -10,7 +12,7 @@ html, body {
 html {
   min-height: 100%;
   font-size: 150%;
-
+  background: #F6F6F6;
   // @media(max-width: 57em) {
   //     font-size: 141%;
   // }
@@ -36,7 +38,7 @@ body {
 
 // TYPOGRAPHY
 // type size reset
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p.faux-header {
   margin: 2rem 0 1rem;
   line-height: 1.15;
   font-weight: 700;
@@ -44,19 +46,26 @@ h1, h2, h3, h4, h5, h6 {
 h4, h5, h6 {
   color: $text-color;
 }
-h1.mega-title {font-size: 2.986em;}
+h1.mega-title, h1.title {
+  font-family: $serif-font-loadout;
+  // margin-top: 4rem;
+  // margin-bottom: 3rem;
+}
+h1.mega-title {
+  font-size: 2.986em;
+  font-style: italic;
+}
 h1.title {font-size: 2.488em;}
 h1 {
   margin-top: 0;
   font-size: 2.074em;
 }
-h2 {font-size: 1.728em;}
+h2, p.faux-header {font-size: 1.728em;}
 h3 {font-size: 1.44em;}
 h4 {font-size: 1.2em;}
 h5 {font-size: 1em; font-style: italic;}
 h6 {font-size: 0.833em; text-transform: uppercase;}
-
-small, .text_small {font-size: 0.833em;}
+small, .small-font, .text_small {font-size: 0.833em;}
 
 blockquote p {
   border-left: 5px solid $secondary;
@@ -81,23 +90,83 @@ kbd {
   padding: 0.125em 0.25em;
   border-radius: 0.25em;
 }
+em {
+  margin-bottom: 1rem;
+}
+.bootstrap-table .fixed-table-container table.table {
+  display: table;
 
+  td, th, thead th .th-inner {
+    padding: 0.5rem;
+  }
+}
+table {
+  display: block;
+  overflow: auto;
+  font-size: 0.8em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  thead {
+    width: 100%;
+  }
+  td, th {
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      line-height: 1rem;
+      vertical-align: top;
+      padding: 0.3rem 1rem 0.3rem 0;
+  }
+  tr th, tr:first-child td {
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+.bootstrap-table .fixed-table-container table.table-bordered {
+  border: none;
+  margin: 0;
+    td, th {
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      line-height: 1rem;
+      vertical-align: top;
+      // padding: 0.3rem 1rem 0.3rem 0;
+    }
+    th {
+      border-top: 2px solid rgba(0, 0, 0, 0.25);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+}
+.bootstrap-table .fixed-table-container table.table-bordered tr:first-child td, thead + tbody tr:first-child td {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  text-transform: none;
+  font-weight: 600;
+}
+section.page {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (min-width: 30rem) {
+  section.page {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+}
 article, .home-hero {
   font-size: 1.2em;
 }
-article, section.page {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  h1, h2, h3, h4, h5, h6, p, ul, ol, code, pre, blockquote {
-    max-width: 28rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 article {
+  margin-bottom: 2rem;
   p, li {
     font-family: $serif-font-loadout;
     font-weight: 400;
+  }
+  ul, ol, dl {
+    padding-left: 1rem;
   }
 }
 // END TYPOGRAPHY
@@ -105,12 +174,37 @@ article {
 .btn {
   font-weight: 600;
   border-radius: 0.25em;
+  font-size: 1em;
 }
-
+.btn {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn.btn-default {
+  background: $gray-200;
+  border-color: $gray-400;
+  &:hover {
+    background: $gray-300;
+  }
+}
+article.img-border-on-default img, img.img-border {
+  border: 1px solid $gray-400;
+}
+article.img-border-on-default img.img-no-border {
+  border: none;
+}
 // CUSTOM UTILITY CLASSES
 .centered {
   text-align: center;
 }
 .height-3 {
   height: 3rem;
+}
+.d-none {
+  display: none;
+}
+ul.no-pad-list {
+  padding-left: 0;
+}
+ul.light-pad-list {
+  padding-left: 0.75rem;
 }
