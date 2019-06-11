@@ -3,7 +3,7 @@ section: book
 title: Importing Data from CSV in PostgreSQL
 meta_title: Importing Data from CSV in PostgreSQL
 description: This article outlines how to use psql to import data from csv files.
-number: 
+number:
 authors:
 - author: _people/matthew-layne.md
 reviewers:
@@ -35,19 +35,19 @@ There are a few things to keep in mind when copying data from a csv file to a ta
 
 Take this list of items as an example:
 
-![](https://lh3.googleusercontent.com/PE0O_u78X-__TB_RtfZYCu6ISURCZHnx6MPpVQneXIpkd2PVP52wguqKVgrBQXsSXyYOluqgQi5rTREaGjVetftntcSZ5l1-63D_30X4-bDeVVFTawt8NKGOwetjBkkgRqFsJ2fr =200x636)
+![](/assets/images/learn-sql/extras/importCSV/exampleCSV.png)
 
 This data contains two columns: ‘name’ and ‘price.’ Name appears to be a VARCHAR due to it’s different lengths. Price appears to be MONEY. This will help in creating the table to load the CSV file into.
 
 The first step, as stated before, is to create the table. It must have at least two columns, one a VARCHAR type and the other a MONEY type:
 
-![](https://lh4.googleusercontent.com/ahqlG1qAUrtrvan33pas-3GDonrGSv6EnH-rsUaPvUmD4ORoooFHy_arJrAUZZOagQoBl_49-p1PF1S560gUwDTr9T0gWQgpZCO6jonGx23nkMMzOhUwRkLWezWgbrCqrD37uQ2b =624x48)
+![](/assets/images/learn-sql/extras/importCSV/createTable.png)
 
 Note: It is also possible to import the csv data to a table with more than 2 columns, however the columns that should be copied to will need to be specified in the query (e.g. **COPY items(item, value) FROM**...).
 
 Now that a table, ‘items,’ has been created to house the data from the csv file, we can start writing our query. The second step in copying data from CSV is to check the delimiter and the third step is to check for a header. In this case, the delimiter is ‘,’ and there is a header in the file:
 
-![](https://lh5.googleusercontent.com/ZjAkM2TLY06x3f3dkWRWYJHzdptzveXpwcJlGijwwQNNNuD7ZDH7kjhjXcYy0jxCThTBxGnAbJcOTrzTrNpyX1f3Cwx_MlY1TNWJF474LjLCDF0UJRrnlax8aKZDTVwlurJOrQ1L =400x149)
+![](/assets/images/learn-sql/extras/importCSV/annotatedCSV.png)
 
 Since the header and the delimiter is known, the query can now be written. As before, the syntax is:
 
@@ -64,7 +64,7 @@ So the final query will be:
 
 **COPY items FROM ‘/Users/matt/Desktop/items.csv’ DELIMITER ‘,’ CSV HEADER;**
 
-Running this query will look like:![](https://lh3.googleusercontent.com/Luectf-jbn1tqmENcHnXC-yN7QQtKvk1WJSkk8tL5Cxm3aFjxw_F5BNvCfC2sbVN2JFFoRHl8FECcRIHJK9-qYPhKcJNTiZNhJFMFjbQNL7oObrL2EWUywbBFEuWumlda0qahIHG =624x33)
+Running this query will look like:![](/assets/images/learn-sql/extras/importCSV/copyToTable.png)
 
 The message COPY 31 indicates that 31 rows were successfully copied from the CSV file to the specified table.
 
