@@ -1,8 +1,8 @@
 ---
 section: book
 title: Start Modeling Data
-meta_title: ''
-description: ''
+meta_title:
+description:
 number: 10
 authors:
 - author: _people/matt.md
@@ -10,10 +10,15 @@ reviewers:
 - reviewer: _people/drew-banin.md
 - reviewer: _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1v_F2P6da3SOwy1W5K13tR-unTba-vh2U-3iEQjGSUTs/edit?usp=sharing
-image: ''
+image: /assets/images/data-modeling-101/start_modeling_data/data1.png
 is_featured: false
 img_border_on_default: false
+<<<<<<< HEAD
 published: true
+=======
+published: false
+
+>>>>>>> 3100e660795a100baff1876b3dfe6badecf08c58
 ---
 
 Data Modeling sounds really scary, like a big chore and months of work.

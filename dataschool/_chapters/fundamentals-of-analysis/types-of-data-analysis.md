@@ -1,17 +1,19 @@
 ---
 section: book
 title: Types of Data Analysis
+<<<<<<< HEAD
 number: 10
+=======
+summary:
+number:
+>>>>>>> 3100e660795a100baff1876b3dfe6badecf08c58
 authors:
 - author: _people/patrick-gibson.md
-reviewers: []
-feedback_doc_url: ''
-image: ''
-summary: ''
+reviewers:
+feedback_doc_url:
+image:
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
 
 ---
 There are four types of data analysis that are in use across all industries. While we separate these into categories, they are all linked together and build upon each other. As you begin moving from the simplest type of analytics forward, the degree of difficulty and resources required increases. At the same time, the level of added insight and value also increases.
@@ -29,13 +31,13 @@ Below, we will introduce each type and give examples of how they are utilized in
 
 ### Descriptive Analysis
 
-The first type of data analysis is descriptive analysis. It is at the foundation of all data insight. It is the simplest and most common use of data in business today. Descriptive analysis answers the “what happened” by summarizing past data usually in the form of dashboards. More tutorials about dashboards can be found [here](https://dataschoolstag.wpengine.com/?s=dashboard).
+The first type of data analysis is descriptive analysis. It is at the foundation of all data insight. It is the simplest and most common use of data in business today. Descriptive analysis answers the “what happened” by summarizing past data usually in the form of dashboards.
 
 The biggest use of descriptive analysis in business is to track Key Performance Indicators (KPI’s). KPI’s describe how a business is performing based on chosen benchmarks.
 
 Business applications of descriptive analysis include:
 
-* [KPI dashboards](https://dataschoolstag.wpengine.com/kpi-dashboard-metrics/)
+* KPI dashboards
 * Monthly revenue reports
 * Sales leads overview
 
@@ -65,7 +67,7 @@ Business applications of predictive analysis include:
 * Risk Assessment
 * Sales Forecasting
 * Using customer segmentation to determine which leads have the best chance of converting
-* [Predictive analytics in customer success teams](https://dataschoolstag.wpengine.com/predictive-analytics-customer-success/)
+* Predictive analytics in customer success teams
 
 ### Prescriptive Analysis
 

@@ -1,20 +1,31 @@
 ---
 section: book
 title: Row vs Column Oriented Databases
+<<<<<<< HEAD
 meta_title: ''
 description: ''
+=======
+meta_title:
+description:
+>>>>>>> 3100e660795a100baff1876b3dfe6badecf08c58
 number: 20
 authors:
 - author: _people/blake.md
 - author: _people/matt.md
-reviewers: []
+reviewers:
 feedback_doc_url: https://docs.google.com/document/d/17ubZErPoEZEF5qFh4Ro4mZB0BMewbKZ0MyXDb0ur2hI/edit?usp=sharing
-image: ''
+image: /assets/images/data-modeling-101/row_vs_col_databases/modeling1.png
 is_featured: false
 img_border_on_default: false
+<<<<<<< HEAD
 published: true
 ---
 
+=======
+published: false
+
+---
+>>>>>>> 3100e660795a100baff1876b3dfe6badecf08c58
 There are two ways to organize relational databases:
 
 1. **Row oriented**

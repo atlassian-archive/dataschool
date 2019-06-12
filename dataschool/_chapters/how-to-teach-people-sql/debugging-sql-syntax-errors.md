@@ -1,13 +1,13 @@
 ---
-section: book
 title: 'Debugging SQL: Syntax Errors'
 meta_title:
+section: book
 number: 100
 authors:
 - author: _people/matt.md
 reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1gviTDfo7zo2KOm2IlgH4kaa2RB7iE17oOdwIzOdhHKE/edit?usp=sharing
-image:
+image: /assets/images/how-to-teach-people-sql/debugging-syntax/syntax_1.png
 description: Learn the most common reasons you will get a SQL error due to syntax.
 is_featured: false
 img_border_on_default: false

@@ -1,13 +1,14 @@
 ---
-section: book
 title: Cross Join - Animated
+meta_title:
+description:
+section: book
 number: 90
 authors:
 - author: _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1v19iRnc-juTr-4N11iw-vm3GyD_izU-QU3qJUV71G9Q/edit?usp=sharing
-image: ''
-description: ''
+image: /assets/images/how-to-teach-people-sql/crossJoin/crossJoin_1.gif
 is_featured: false
 img_border_on_default: false
 writers:

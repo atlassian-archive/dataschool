@@ -1,8 +1,8 @@
 ---
-section: book
 title: How to Create a Copy of a Database in PostgreSQL
-meta_title: ''
-description: ''
+meta_title:
+description:
+section: appendix
 number: 200
 authors:
 - author: _people/matthew-layne.md

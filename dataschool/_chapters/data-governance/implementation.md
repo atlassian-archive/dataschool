@@ -8,11 +8,9 @@ authors:
 - author: _people/rohan-joseph.md
 reviewers:
 feedback_doc_url: ''
-image:
+image: /assets/images/data-governance/implementation/implementation_1.png
 is_featured: false
 img_border_on_default: false
-writers:
-
 
 ---
 ![](/assets/images/data-governance/implementation/implementation_1.png)

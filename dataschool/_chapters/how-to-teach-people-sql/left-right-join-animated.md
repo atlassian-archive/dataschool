@@ -1,7 +1,7 @@
 ---
-section: book
 title: Left & Right Join - Animated
 meta_title:
+section: book
 number: 60
 authors:
 - author: _people/matt.md

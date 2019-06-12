@@ -2,17 +2,15 @@
 section: book
 title: Security
 meta_title: Security
-description: ''
+description:
 number: 50
 authors:
 - author: _people/rohan-joseph.md
 reviewers:
-feedback_doc_url: ''
-image:
+feedback_doc_url:
+image: /assets/images/data-governance/security/security_1.png
 is_featured: false
 img_border_on_default: false
-writers:
-
 
 ---
 **What is data security?**

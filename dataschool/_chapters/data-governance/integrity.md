@@ -2,17 +2,15 @@
 section: book
 title: Integrity
 meta_title: Integrity
-description: ''
+description:
 number: 40
 authors:
 - author: _people/rohan-joseph.md
 reviewers:
-feedback_doc_url: ''
-image:
+feedback_doc_url:
+image: /assets/images/data-governance/integrity/integrity_1.png
 is_featured: false
 img_border_on_default: false
-writers:
-
 
 ---
 ![Five Pillars: Integrity](/assets/images/data-governance/integrity/integrity_1.png)
@@ -35,7 +33,7 @@ Data integrity refers to the fact that data must be reliable and accurate over i
 
 **2. Logical Integrity** : It deals with the accuracy and rationality of the data. Key challenges include software bugs, design flaws and human errors. Logical Integrity ensures that the data always makes perfect sense, given its environment.
 
-* **Entity Integrity** : It states that every table must have a primary key (a key to uniquely identify all table [records](https://dataschool.com/glossary/database-record/)) and the column chosen to be the primary key should be unique and not null.
+* **Entity Integrity** : It states that every table must have a primary key (a key to uniquely identify all table records and the column chosen to be the primary key should be unique and not null.
 
 * **Referential Integrity** : It states that every table must contain a foreign key. The foreign-key value refers to a primary key value of some table in the database. Occasionally, a foreign-key value may also be null. In such a case, we are saying that either there is no relationship between the data sources or the relationship is unknown.
 
