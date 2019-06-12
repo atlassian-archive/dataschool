@@ -12,8 +12,8 @@ image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-
 ---
+
 Use ORDER BY
 
 A fast way to identify outliers is to sort the relevant values in both ascending and descending order. This allows you to quickly skim through the highest and lowest values. If you have a sense of what you are expecting from your data, this can help you quickly identify any unexpected values.
@@ -22,15 +22,16 @@ If we were looking at the ages of friends, we’d expect to see values that fall
 
 To sort our values, we could use the following query.
 
-| --- |
-| SELECT full_name, |
-| age |
-| FROM friends |
-| ORDER BY age |
+```sql
+SELECT full_name,
+age
+FROM friends
+ORDER BY age
+```
 
 Here’s what a sample query could look like.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cd45cbcd29d161317965a81_Screen%20Shot%202019-05-09%20at%2010.00.18%20AM.png)
+![](assets/images/how-to-teach-people-sql/outliers/outliers_1.png)
 
 By sorting we can easily identify anomalies within the data. We don’t expect any of our friends to have an age of 1, so this outlier is likely an error.
 
@@ -38,11 +39,12 @@ Because this is a small dataset, we can also view the final lines in our results
 
 If we had a larger dataset but wanted to quickly view the end of our data, we could do so by adding DESC to our ORDER BY statement.
 
-| --- |
-| SELECT full_name, |
-| age |
-| FROM friends |
-| ORDER BY age DESC |
+```sql
+SELECT full_name,
+age
+FROM friends
+ORDER BY age DESC
+```
 
 This method can be great for identifying obvious outliers that quickly stand out. However, it may miss some other details in the data. For example, if we have less knowledge of the expected values in our dataset, there may be enough outliers that they don’t stand out with just a quick look at the high and low values.
 
@@ -56,29 +58,31 @@ SQL has a function that allows us to easily separate our values into our four qu
 
 NTILE is used in conjunction with a window function. If we use a similar example of friends’ ages, this is what the syntax would look like this:
 
-| --- |
-| SELECT full_name, |
-| age, |
-| NTILE(4) OVER (ORDER BY age) AS age_quartile |
-| FROM friends |
+```sql
+SELECT full_name,
+age,
+NTILE(4) OVER (ORDER BY age) AS age_quartile
+FROM friends
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cd45d38482013a84fbb546b_Screen%20Shot%202019-05-09%20at%2010.02.31%20AM.png)
+![](assets/images/how-to-teach-people-sql/outliers/outliers_2.png)
 
 When using NTILE() in SQL, if we have an odd number of values in each of our quartiles, the maximum value in the first quartile will be the Q1 value, and the maximum value in the third quartile will be the Q3 value.
 
 In our case, the Q1 value is 31, and the Q2 value is 35. We can easily identify these values using a subquery.
 
-| --- |
-| SELECT age_quartile, |
-| MAX(age) AS quartile_break |
-| FROM(SELECT full_name, |
-| age, |
-| NTILE(4) OVER (ORDER BY age) AS age_quartile |
-| FROM friends) AS quartiles |
-| WHERE age_quartile IN (1, 3) |
-| GROUP BY age_quartile |
+```sql
+SELECT age_quartile,
+MAX(age) AS quartile_break
+FROM(SELECT full_name,
+age,
+NTILE(4) OVER (ORDER BY age) AS age_quartile
+FROM friends) AS quartiles
+WHERE age_quartile IN (1, 3)
+GROUP BY age_quartile
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cd45da9737e08fde82920dc_Screen%20Shot%202019-05-09%20at%2010.03.55%20AM.png)
+![](assets/images/how-to-teach-people-sql/outliers/outliers_3.png)
 
 This gives us an IQR of 4, and 1.5 x 4 is 6.
 
@@ -92,22 +96,21 @@ To find the upper threshold for our outliers we add to our Q3 value:
 
 We can then use WHERE to filter values that are above or below the threshold.
 
-| --- |
-| SELECT full_name, |
-| age |
-| FROM friends |
-| WHERE age < 25 OR age > 41 |
+```sql
+SELECT full_name,
+age
+FROM friends
+WHERE age < 25 OR age > 41
+```
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5cd45e0b16994aa058631bc2_Screen%20Shot%202019-05-09%20at%2010.06.10%20AM.png)
+![](assets/images/how-to-teach-people-sql/outliers/outliers_4.png)
 
 ## Fully Query
 
-<<<<<<< HEAD
 While the above is great for explaining what we’re doing when finding outliers, it does have some issues. It works if the number of values in each half are odd, but we would need to make adjustments if it was even. Also, it requires us to write two different queries to get our results.
 
 It can be helpful to be able to run a single query that pulls the results. Here’s one way to do that:
 
-<<<<<<< Updated upstream
 ```sql
 with orderedList AS (
 SELECT full_name,
@@ -154,66 +157,8 @@ FROM iqr) -
 (SELECT MAX(outlier_range)
 FROM iqr))
 ```
-=======
-=======
-While the above is great for explaining what we’re doing when finding outliers, it does have some issues. It works if the number of values in each half are odd, but we would need to make adjustments if it was even. Also, it requires us to write two different queries to get our results.
-
-It can be helpful to be able to run a single query that pulls the results. Here’s one way to do that:
-
->>>>>>> a4e0c245491a01b0d9d2d4aab2939e7c060d3cfc
-| --- |
-| with orderedList AS ( |
-| SELECT full_name, |
-| age, |
-| ROW_NUMBER() OVER (ORDER BY age) AS row_n |
-| FROM friends |
-| ), |
-| iqr AS ( |
-| SELECT age, full_name, |
-| ( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) |
-| FROM friends)*0.75) |
-| ) AS q_three, |
-| ( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) |
-| FROM friends)*0.25) |
-| ) AS q_one, |
-| 1.5 * (( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) |
-| FROM friends)*0.75) |
-| ) - ( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) |
-| FROM friends)*0.25) |
-| )) AS outlier_range |
-| FROM orderedList |
-| ) |
-|  |
-| SELECT full_name, age |
-| FROM iqr |
-| WHERE age >= ((SELECT MAX(q_three) |
-| FROM iqr) + |
-| (SELECT MAX(outlier_range) |
-| FROM iqr)) OR |
-| age <= ((SELECT MAX(q_one) |
-| FROM iqr) - |
-| (SELECT MAX(outlier_range) |
-| FROM iqr)) |
-<<<<<<< HEAD
->>>>>>> Stashed changes
 
 This query uses ROW_NUMBER and FLOOR (always rounds down) to find the Q1 (at the row 25% of the way through) and Q3 (at the row 75% of the way through) values. From there, we can calculate the IQR x 1.5 and used these as reference for our outliers.
-=======
-
-This query uses ROW_NUMBER and FLOOR (always rounds down) to find the Q1 (at the row 25% of the way through) and Q3 (at the row 75% of the way through) values. From there, we can calculate the IQR x 1.5 and used these as reference for our outliers.
->>>>>>> a4e0c245491a01b0d9d2d4aab2939e7c060d3cfc
 
 ### Technical Note
 
@@ -225,66 +170,67 @@ If the value is even, for example, I had 26 values in each half instead of 27, t
 
 To do this, the above query can be adjusted as follows:
 
-| --- |
-| with orderedList AS ( |
-| SELECT full_name, |
-| age, |
-| ROW_NUMBER() OVER (ORDER BY age) AS row_n |
-| FROM friends |
-| ), |
-|  |
-| quartile_breaks AS ( |
-| SELECT age, full_name, |
-| ( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75) |
-| ) AS q_three_lower, |
-| ( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75) + 1 |
-| ) AS q_three_upper, |
-| ( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25) |
-| ) AS q_one_lower, |
-| ( |
-| SELECT age AS quartile_break |
-| FROM orderedList |
-| WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25) + 1 |
-| ) AS q_one_upper |
-| FROM orderedList |
-| ), |
-|  |
-| iqr AS ( |
-| SELECT age, full_name, |
-| ( |
-| (SELECT MAX(q_three_lower) FROM quartile_breaks) + |
-| (SELECT MAX(q_three_upper) FROM quartile_breaks) |
-| )/2 AS q_three, |
-| ( |
-| (SELECT MAX(q_one_lower) FROM quartile_breaks) + |
-| (SELECT MAX(q_one_upper) FROM quartile_breaks) |
-| )/2 AS q_one, |
-| 1.5 * (( |
-| (SELECT MAX(q_three_lower) FROM quartile_breaks) + |
-| (SELECT MAX(q_three_upper) FROM quartile_breaks) |
-| )/2 - ( |
-| (SELECT MAX(q_one_lower) FROM quartile_breaks) + |
-| (SELECT MAX(q_one_upper) FROM quartile_breaks) |
-| )/2) AS outlier_range |
-| FROM quartile_breaks |
-| ) |
-|  |
-| SELECT full_name, age |
-| FROM iqr |
-| WHERE age >= ((SELECT MAX(q_three) |
-| FROM iqr) + |
-| (SELECT MAX(outlier_range) |
-| FROM iqr)) OR |
-| age <= ((SELECT MAX(q_one) |
-| FROM iqr) - |
-| (SELECT MAX(outlier_range) |
-| FROM iqr)) |
+```sql
+with orderedList AS (
+SELECT full_name,
+age,
+ROW_NUMBER() OVER (ORDER BY age) AS row_n
+FROM friends
+),
+
+quartile_breaks AS (
+SELECT age, full_name,
+(
+SELECT age AS quartile_break
+FROM orderedList
+WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75)
+) AS q_three_lower,
+(
+SELECT age AS quartile_break
+FROM orderedList
+WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75) + 1
+) AS q_three_upper,
+(
+SELECT age AS quartile_break
+FROM orderedList
+WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25)
+) AS q_one_lower,
+(
+SELECT age AS quartile_break
+FROM orderedList
+WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25) + 1
+) AS q_one_upper
+FROM orderedList
+),
+
+iqr AS (
+SELECT age, full_name,
+(
+(SELECT MAX(q_three_lower) FROM quartile_breaks) +
+(SELECT MAX(q_three_upper) FROM quartile_breaks)
+)/2 AS q_three,
+(
+(SELECT MAX(q_one_lower) FROM quartile_breaks) +
+(SELECT MAX(q_one_upper) FROM quartile_breaks)
+)/2 AS q_one,
+1.5 * ((
+(SELECT MAX(q_three_lower) FROM quartile_breaks) +
+(SELECT MAX(q_three_upper) FROM quartile_breaks)
+)/2 - (
+(SELECT MAX(q_one_lower) FROM quartile_breaks) +
+(SELECT MAX(q_one_upper) FROM quartile_breaks)
+)/2) AS outlier_range
+FROM quartile_breaks
+)
+
+SELECT full_name, age
+FROM iqr
+WHERE age >= ((SELECT MAX(q_three)
+FROM iqr) +
+(SELECT MAX(outlier_range)
+FROM iqr)) OR
+age <= ((SELECT MAX(q_one)
+FROM iqr) -
+(SELECT MAX(outlier_range)
+FROM iqr))
+```
