@@ -13,9 +13,9 @@ feedback_doc_url: https://docs.google.com/document/d/1v_F2P6da3SOwy1W5K13tR-unTb
 image: /assets/images/data-modeling-101/start_modeling_data/data1.png
 is_featured: false
 img_border_on_default: false
-published: false
-
+published: true
 ---
+
 Data Modeling sounds really scary, like a big chore and months of work.
 
 But it is not so bad and you can get started in less than 10 minutes.
