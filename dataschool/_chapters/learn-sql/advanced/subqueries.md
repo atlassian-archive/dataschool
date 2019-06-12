@@ -1,13 +1,8 @@
 ---
 title: Subqueries
-<<<<<<< HEAD
 short: Subqueries
 meta_title: ''
 description: ''
-=======
-meta_title:
-description:
->>>>>>> 3100e660795a100baff1876b3dfe6badecf08c58
 number: 200
 section: advanced
 categories:

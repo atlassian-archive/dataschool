@@ -1,12 +1,7 @@
 ---
 section: book
 title: Types of Data Analysis
-<<<<<<< HEAD
 number: 10
-=======
-summary:
-number:
->>>>>>> 3100e660795a100baff1876b3dfe6badecf08c58
 authors:
 - author: _people/patrick-gibson.md
 reviewers:
