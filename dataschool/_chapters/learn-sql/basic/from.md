@@ -1,5 +1,6 @@
 ---
 title: FROM
+short: FROM
 meta_title: ''
 description: This interactive SQL tutorial will explain the FROM command with syntax
   and use cases on how to interact with your data in the PostgreSQL database. Learn
