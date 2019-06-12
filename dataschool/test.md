@@ -62,54 +62,6 @@ When including a quote or citation in your content, be sure to use `<blockquote>
 
 Heavy!
 
-<!-- ## Alerts, Notes, and Content Boxes
-
-Sometimes you need to draw special attention to a chunk of text, and GRT makes it easy to do this with 3 handy “box” formats—alerts, notes, and content boxes.
-
-### Alerts
-
-Got some serious information to convey to visitors? You need an alert.
-
-<div class="alert">
-
-**Attention!** Alerts are the best way to convey important messages to your readers.
-
-They can be used to wrap multiple paragraphs or any other HTML elements you need to get your point across.
-
-</div>
-
-
-Sometimes you only need one paragraph for your alert, and that’s fine, too.
-
-### Notes
-
-Alerts are strong, but there are plenty of situations where they’re a little *too* strong. And that’s where you can use notes for a high impact without all the fuss:
-
-<div class="note">
-
-
-Notes offer a more subtle way to draw attention to your content.
-
-And like alerts, notes can encompass other HTML elements or they can stand on their own, as seen below.
-
-</div>
-
-
-One thing is certain—your notes won’t go unnoticed!
-
-### Content Boxes
-
-Sometimes notes are too subtle and alerts just aren’t appropriate. Enter content boxes, which scream “Hey, over here!”
-
-<div class="box">
-
-
-Content boxes are perfect for tweetables, email signup forms, or anything else where visitor attention is at a premium.
-
-Use ‘em like a boss, and pretty soon, you’ll *be* the boss.
-
-</div> -->
-
 
 ## Code Formatting
 
@@ -117,7 +69,6 @@ You’ve already seen <code>inline code styling</code> via the `<code>` tag a fe
 
 <pre> functionBaby(); </pre>
 
-But we’re not done with code-related stuff just yet! GRT also includes keyboard element styles. Wait, what?
 
 ### Keyboard Formatting
 
@@ -139,5 +90,26 @@ Occasionally, you may need to give your readers directions that include keyboard
 
 *   Mac: <kbd>command</kbd> + <kbd>option</kbd> + <kbd>s</kbd>
 *   Win: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>s</kbd>
+
+## Examples
+
+Here are some examples of sections and the propper stylings...
+
+## What is data integrity?
+
+Data integrity refers to the fact that data must be reliable and accurate over its entire lifecycle. Data is expected to have the following features:
+
+1. **Attributable:** Data should clearly demonstrate who observed and recorded it, when it was observed and recorded, and what it is about. This can be achieved by maintaining metadata which clearly describes the title, author and abstract.
+2. **Legible:** Data should be easy to understand, recorded permanently and original entries should be preserved. It should include information regarding the content, format and structure of the database along with relationship between its elements.
+3. **Contemporaneous:** Data should be recorded as it was observed, and at the time it was executed. Also, data should be ready to access and use as soon as it enters the system.
+4. **Preserved:** Source data should be accessible and preserved in its original form. It must be stored in a secure location, stored across multiple locations and saved in formats that will have the highest utility in the future.
+5. **Accurate:** Data should be free from errors, and conform with the protocol. It must be stored in a consistent and unambiguous form.
+
+## Resources
+
+1. [https://www.postgresql.org/docs/10/app-initdb.html](https://www.postgresql.org/docs/10/app-initdb.html "https://www.postgresql.org/docs/10/app-initdb.html")
+2. [https://postgresapp.com](https://postgresapp.com "https://postgresapp.com")
+3. [https://www.postgresql.org/docs/10/app-pg-ctl.html](https://www.postgresql.org/docs/10/app-pg-ctl.html "https://www.postgresql.org/docs/10/app-pg-ctl.html")
+
 
 {% include newsletter-form.html %}

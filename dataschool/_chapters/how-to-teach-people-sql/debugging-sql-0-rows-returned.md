@@ -15,7 +15,7 @@ published: true
 ---
 Getting an error in SQL can be frustrating. However getting no errors and no data returned by your query can be even more frustrating. In this tutorial we will explore the most common reasons your query will return 0 rows of data.
 
-## **JOINing on the wrong column**
+## JOINing on the wrong column
 
 The most common issue is JOINing on the wrong column. In the example below it is JOINing on the name column in both tables, however in the pets table the column that would have corresponded to the facebook friend table would have been owner.
 
@@ -29,7 +29,7 @@ Another thing to watch out for which will return an error is if the datatype of 
 
 It is a best practice to inspect the tables you will be joining independently to try and find these issues. Do a SELECT * from each of the tables (with a LIMIT 10) to review the data and data types in the columns you are trying to JOIN on.
 
-## **Over Filtering**
+## Over Filtering
 
 The second most common issue that produces 0 rows returned is that the query is filtering out too much data in the WHERE or HAVING statement.
 
@@ -37,7 +37,7 @@ The second most common issue that produces 0 rows returned is that the query is 
 
 To see if the WHERE or HAVING clause is too restrictive simply remove it from the query to see if any rows are returned. If rows are returned the problem is likely in your WHERE or HAVING clause.
 
-## **How to debug an SQL query**
+## How to debug an SQL query
 
 Whenever you get a result you do not expect in SQL take a second and break down the query into smaller bits. Remove or comment clauses out one by one to find where the query stopped making sense. To comment out a part of you SQL query review the documentation for the syntax. In PostgreSQL all you do is add two dashes — in front of a line of SQL
 
@@ -49,7 +49,7 @@ WHERE # of Friends > 1000
 
 This concept of breaking queries into small pieces also works when you are initially creating the query. Start with a query that only contains SELECT, FROM, and LIMIT. Then layer on each additional SQL clause 1 at a time and run it to see if there are any issues. While this practice is slow you are much less likely to run into an issue in your query that you don’t know the cause of.
 
-## **Summary**
+## Summary
 
 * Check if you are joining on the wrong column
 * Check if you are over filtering the data

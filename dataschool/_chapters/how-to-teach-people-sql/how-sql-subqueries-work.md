@@ -56,7 +56,7 @@ Now while this was a somewhat pointless subquery example since you could have ju
 
 ![Full SQL Subquery Animation](/assets/images/how-to-teach-people-sql/subqueries/subqueries_4.gif)
 
-## **Subquery placement**
+## Subquery placement
 
 Subqueries are most commonly in the FROM statement as a table to query from. However a subquery can also be placed in the WHERE or HAVING statement. When using it in the WHERE or HAVING statement, the subquery has to produce a single value table if you are using comparison operators such as =, <, <=, >, >=, !=.
 
@@ -92,7 +92,7 @@ FROM linkedin)
 
 ![SQL Subquery with Logical Operators Animation](/assets/images/how-to-teach-people-sql/subqueries/subqueries_7.gif)
 
-## **Common table expression**
+## Common table expression
 
 Subqueries can also be written in a WITH statement instead of in the main query. You write WITH and then what you want to name the resulting table from the subquery and then in parentheses write the subquery. Then you can write a query that uses that subquery by referring to the name given to it. When written in this way they are referred to as a common table expression (CTE). Look at the original example and re-written version using a WITH statement below.
 

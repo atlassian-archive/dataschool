@@ -2,7 +2,7 @@
 title: How to Find Outliers with SQL
 meta_title:
 section: appendix
-number: 200
+number: 230
 authors:
 - author: _people/rebecca-barnes.md
 reviewers:

@@ -73,8 +73,7 @@ Once we add a key, the range of values becomes clear and the map is more useful 
 
 ![Map with key](/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/map2.png)
 
-###   
-Add Definitions
+### Add Definitions
 
 While some metrics are universal such as Total Revenue, some metrics such as MQL(Marketing Qualified Lead), DAU (Daily Active Users), and others are calculated very differently from company to company. The differences are typically due to excluding some groups from being factored into the metric. In such instances, providing notes in the dashboard or easily accessible from the dashboard is critical to interpreting the information accurately.
 

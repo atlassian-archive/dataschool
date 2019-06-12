@@ -31,7 +31,7 @@ Ironically we’d ignored two of the very best practices we were building this d
 
 I saw this as a perfect training opportunity, so we got everyone together and went over the practice and importance of dashboard design - using this very use case.
 
-## **The Design Exercise**
+## The Design Exercise
 
 First we defined how the dashboard was going to be used. We decided that it was most needed when checking in on a customer, often before one of our monthly check-ins with them. We wanted a dashboard we could quickly scan and identify where the customer might be in or near a pitfall so we could discuss it with them.
 

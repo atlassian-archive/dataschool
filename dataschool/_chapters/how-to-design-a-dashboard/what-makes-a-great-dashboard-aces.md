@@ -121,11 +121,9 @@ This differentiation is clear but some of the colors are very far apart on the c
 ![](/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cd377be84b35c49d911af94_chart5948177.png)
 ✅
 
-These colors show the difference between the categories without overweighting one of the categories.
+These colors show the difference between the categories without overweighting one of the categories. Most dashboarding tools will default you to a color scheme that delineates categories clearly. If for some reason they do not, then customize your color selection so that evaluations of the data can be made at a glance.
 
-The Data Color Picker tool is a great resource for picking evenly spaced out colors for any visualization: [[https://learnui.design/tools/data-color-picker.html](https://learnui.design/tools/data-color-picker.html "https://learnui.design/tools/data-color-picker.html")\]([https://learnui.design/tools/data-color-picker.html](https://learnui.design/tools/data-color-picker.html "https://learnui.design/tools/data-color-picker.html"))
-
-Most dashboarding tools will default you to a color scheme that delineates categories clearly. If for some reason they do not, then customize your color selection so that evaluations of the data can be made at a glance.
+[The Data Color Picker tool](https://learnui.design/tools/data-color-picker.html) is a great resource for picking evenly spaced out colors for any visualization.
 
 ### Context
 

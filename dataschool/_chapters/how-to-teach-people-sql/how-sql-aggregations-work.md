@@ -57,17 +57,19 @@ GROUP BY State, City
 
 ![SQL COUNT Query Visualization by State and City](/assets/images/how-to-teach-people-sql/aggregations/aggregations_6.gif)
 
-## **SUM and AVERAGE Aggregation**
+## SUM and AVERAGE Aggregation
 
 After COUNT, for all other types of aggregation will need you to define the column you are aggregating.
 
 Wrong:
+
 ```sql
 SELECT SUM(*)
 FROM facebook
 ```
 
 Right:
+
 ```sql
 SELECT SUM(# of friends)
 FROM facebook
@@ -89,15 +91,15 @@ GROUP BY State
 
 To get an average SQL needs the sum of each group and then divide it by the count of rows in each group.
 
-## **NULLs**
+## NULLs
 
 There are a few scenarios to be aware of when aggregating data that may make you misinterpret the results of your query.
 
 Some cells will not have a value in it. This type of cell is considered null. Null is different than 0 or space “ ”.
 
-The COUNT(*) aggregation will count all rows including Null values. However the COUNT(some column) will count all rows without Null values. Since other aggregations require you specify a column they will exclude Nulls in their calculations.
+The COUNT(\*) aggregation will count all rows including Null values. However the COUNT(some column) will count all rows without Null values. Since other aggregations require you specify a column they will exclude Nulls in their calculations.
 
-COUNT(*) counts Nulls:
+COUNT(\*) counts Nulls:
 
 ![SQL COUNT Query With NULL Values](/assets/images/how-to-teach-people-sql/aggregations/aggregations_9.gif)
 

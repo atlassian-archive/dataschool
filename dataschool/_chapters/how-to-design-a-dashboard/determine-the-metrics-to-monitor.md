@@ -20,9 +20,9 @@ After defining the stakeholders involved we need to get clear about what decisio
 
 Often times the Point Person will have really vague overall goal for wanting a dashboard. It is your job to help them refine their vision to a few key decisions that need to be made and then finding metrics that will help inform those decisions.
 
-1. Understanding the Point Person
-2. Define the Decisions
-3. Define the Metrics
+* Understanding the Point Person
+* Define the Decisions
+* Define the Metrics
 
 ## Understanding the Point Person
 
@@ -116,10 +116,8 @@ After determining the set of metrics the Point Person is interested in from thei
 
 * How is this metric calculated?
   * Write out formula behind each one. For example: LTV is Average Revenue Per Customer / Customer Churn Rate
-
 * How do you want to group the data?
   * Category, Timeframe, etc
-
 * How do you want to filter the data?
   * Group
   * Timeframe
@@ -131,7 +129,7 @@ After they clarify all these aspects of the metrics they are interested in writi
 
 We will use the Metric Spreadsheet to keep track, the questions above map to directly to it’s columns:
 
-## ![](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/filledSpreadsheet.png)
+![](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/filledSpreadsheet.png)
 
 These metrics should inform the decisions that need to be made by the Point Person to achieve their goal. Before we start prototyping these metrics in the next few chapters we will review best practices for visualization selection and arranging a dashboard.
 

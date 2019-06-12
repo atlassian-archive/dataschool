@@ -19,13 +19,13 @@ According to the 2018 State of Data Governance [Report](https://erwin.com/white-
 
 Below are some scenarios where data governance is applied:
 
-## **Change in Regulatory Requirements**
+## Change in Regulatory Requirements
 
 Change in regulations is undeniably one of the biggest drivers for data governance. On May 21, 2018, the European Union’s General Data Protection Regulation (GDPR) — the first attempt at a uniform approach to regulate the way enterprises use and store data — took effect.
 
 Under the new law, Data Governance is indispensable under the new law, and failure to abide will leave companies responsible for huge penalties — up to €20 million or 4% of the firm’s global annual turnover.
 
-## **User Satisfaction**
+## User Satisfaction
 
 Another major driver for data governance is improving user satisfaction. Organizations often have a choice when it comes to their strategy for data governance. It can be difficult and authoritative, or it can be flexible and empowering.
 
@@ -35,13 +35,13 @@ In a [recent study](http://aberdeen.com/research/16816/16816-RR-data-governance-
 
 (Source: Aberdeen, September 2017)
 
-## **Decision Making**
+## Decision Making
 
 Decision making is one of the key drivers of data governance. The success of data governance clearly presents itself as clear-cut data that is persistent throughout the business, accepted across departments, and used to pull the business in the dedicated direction. Ultimately, it improves the quality of the data.
 
 By shifting data governance out of the IT silo, the individuals liable for business outcomes are part of its governance. This association makes data more detectable, contextual and insightful. The decision making process becomes more effective, as the momentum at which the data can be interpreted increases. Enterprises can also better understand and trust the data they are using to determine a system.
 
-## **Reputation and Risk Management**
+## Reputation and Risk Management
 
 Reputation Management is another important driver for Data Governance implementation. This is noticed time and time again with high profile data breaches exposing the likes of Uber, Yahoo and Equifax. All of them encountered costly PR fallouts. In the case of [Equifax’s breach](http://www.spacedaily.com/reports/Massive_data_breach_has_cost_Equifax_nearly_90_million_999.html), as of November 2017, it had to pay $90 million.
 
@@ -49,7 +49,7 @@ One could argue that regulatory compliance and reputation management to be the s
 
 To manage the risk of data breaches, understand that data governance, at a central level, is about knowing where the data is, what is it supposed to be used for and who’s responsible for it. This consideration empowers organizations to target security spending on the fields of highest risk. Therefore, they can take a more cost efficient but thorough approach to risk management.
 
-## **Big Data and Analytics**
+## Big Data and Analytics
 
 Big Data and Analytics are also considered to be key drivers for data governance. The need for data governance in these cases is largely compelled by the number of data companies that are now assigned with inspection.
 

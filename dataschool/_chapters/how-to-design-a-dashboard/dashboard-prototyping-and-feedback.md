@@ -13,7 +13,7 @@ published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1CqwiH9gPEiU92VQ4YYzTo9-bKy3sL-ynm0P-dY1ssRc/edit?usp=sharing
 ---
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png" /></div>
+![Dashboard prototyping feedback loop](/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png)
 
 ## Review
 
@@ -28,7 +28,7 @@ Start with individual metrics and draw them as visualizations. Then try drawing 
 * What does the audience want to be able to do?
 * What does the audience need to know in order to do it?
 
-!<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/dashboardDrawing.jpeg" /></div>
+![Dashboard drawing](/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/dashboardDrawing.jpeg)
 
 It can be useful to role play this scenario in your head or with others to understand what visualizations will be valuable.
 
@@ -49,7 +49,6 @@ Ask the following questions for each visualization:
 * Do I need to know this?
 * What else do I want to know about this metric?
 * Is the conclusion I can draw from the visualization obvious?
-*
 
 Ask the following questions for the whole dashboard:
 

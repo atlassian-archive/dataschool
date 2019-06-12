@@ -1,9 +1,9 @@
 ---
-section: book
 title: How to create a copy of a database in PostgreSQL
-meta_title: 
-description: 
-number: 200
+meta_title:
+description:
+section: book
+number: 150
 authors:
 - author: _people/matthew-layne.md
 reviewers:
@@ -26,7 +26,7 @@ OWNER \[Your username\];
 
 For more information continue reading.
 
-**Starting the Server**
+## Starting the server
 
 The first step to copying a database is to open psql (the postgreSQL command line). On a macOS this can be done when you start the server.
 
@@ -50,7 +50,7 @@ Now that a connection has been established, we can begin writing queries. You ca
 
 ![](/assets/images/how-to-teach-people-sql/copyDBs/copyDBs_5.png)
 
-**Copying the Database**
+## Copying the database
 
 ```sql
 CREATE DATABASE \[Database to create\]

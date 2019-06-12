@@ -1,6 +1,7 @@
 ---
 title: Inner Join - Animated
 meta_title:
+description:
 section: book
 number: 50
 authors:

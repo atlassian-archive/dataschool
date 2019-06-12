@@ -31,7 +31,7 @@ Dashboards are built to trigger insights that help you take action, _in the case
 
 This book will explore best practices to create useful dashboards such as this one to help individuals make data-driven decisions.
 
-### History
+## History
 
 The term “[dashboard\]([https://www.merriam-webster.com/dictionary/dashboard#h1](https://www.merriam-webster.com/dictionary/dashboard#h1 "https://www.merriam-webster.com/dictionary/dashboard#h1"))” originates from a board that was built into carriages to block the dirt that the horse dash-ed up. When carriages became automobiles, the dashboard remained relevant to block dirt dash-ed up by the front wheel. When the design of automobiles shifted to putting the engine in the front the dashboard’s purpose grew to protecting the driver from the heat and oil. The dashboard also became a convenient location to put gauges to monitor the engine’s performance and other data points about the car such as fuel levels. The term dashboard jumps to describing the modern day business tool this book is all about due to Microsoft. Microsoft is given credit for promoting the term as part of their Digital Nervous System concept in the 90s.
 

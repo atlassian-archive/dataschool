@@ -2,7 +2,7 @@
 title: How to use Indexing to Improve Database Queries
 short: How Indexing Works
 section: appendix
-number: 200
+number: 210
 authors:
 - author: _people/blake.md
 reviewers:
@@ -11,6 +11,7 @@ reviewers:
 description: Learn how indexing works and why it is a critical part of optimizing
   your data warehouse
 img_border_on_default: true
+published: true
 
 ---
 ## **What is Indexing?**

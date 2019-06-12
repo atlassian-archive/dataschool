@@ -3,19 +3,17 @@ title: What is a Query Plan
 meta_title: What is a Query Plan
 description:
 section: appendix
-number: 200
+number: 240
 authors:
 - author: _people/matthew-layne.md
 reviewers:
 - reviewer: _people/blake.md
 - reviewer: _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1UcOvqq_7wwxeztReW9WIBY8cJpvCapQtqYfe54JzDmc/edit?usp=sharing
-image: ''
+image:
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
 A Query plan is a list of instructions that the database needs to follow in order to execute a query on the data.
@@ -26,7 +24,7 @@ Below is an example query plan for a given query:
 
 This query plan shows the particular steps taken to execute the given command. It also specifies the expected cost for each section.
 
-## **The Query Optimizer**
+## The Query Optimizer
 
 SQL is a declarative language. This means that SQL queries describe what the user wants and then the query is transformed into executable commands by the Query Optimizer. Those executable commands are known as Query Plans.
 
@@ -40,21 +38,20 @@ There are often many different ways to search a database. Take for example the f
 
 In order to find a particular tool, there are several possible queries that could be run. For example, the query:
 
-SELECT * 
-
+```sql
+SELECT *
 FROM tools
-
 WHERE name=‘Screwdriver’;
-
+```
 Will return the same thing as the query:
 
+```sql
 SELECT *
-
 FROM tools
-
 WHERE id=3;
+```
 
-### **Scan Vs. Seek**
+### Scan Vs. Seek
 
 These queries will return the same results, but may have different final query plans. The first query will have a query plan that uses a sequential scan. This means that all five rows of the database will be checked to see if the name is screwdriver and, when run, would look like the following table:
 

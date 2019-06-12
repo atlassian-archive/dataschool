@@ -1,6 +1,7 @@
 ---
 title: Left & Right Join - Animated
 meta_title:
+description:
 section: book
 number: 60
 authors:
@@ -14,7 +15,7 @@ img_border_on_default: false
 published: true
 
 ---
-**Left Join**
+## Left Join
 
 This is the second most common type of JOIN in SQL. Left refers to the first table, or the table you will be joining to. So in this case it would be the facebook table since it comes before linkedin table in the query.
 
@@ -33,7 +34,7 @@ However there is a large difference in how SQL treats the LEFT table (first tabl
 
 ![](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_2.gif))
 
-## **Right Join**
+## Right Join
 
 This is one of the rarest types of JOIN in SQL. The reason for this is that any RIGHT JOIN can be re-written as a LEFT JOIN, which is more conventional. Right refers to the second table, or the table you will be joining in. So in this case it would be the linkedin table since it comes after facebook table in the query.
 
@@ -63,14 +64,7 @@ Here we can RIGHT JOIN similar to the LEFT JOIN bring in rows from the RIGHT (or
 
 Why use a LEFT JOIN or RIGHT JOIN vs an INNER JOIN? To help understand, Let’s think about the different questions they are asking.
 
-INNER join
 
-* How many friends and connections do my friends who are on both on Facebook and LinkedIn have?
-
-LEFT join
-
-* How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
-
-RIGHT join
-
-* How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
+* **LEFT join:** How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
+* **RIGHT join:** How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
+* **INNER join:** How many friends and connections do my friends who are on both on Facebook and LinkedIn have?

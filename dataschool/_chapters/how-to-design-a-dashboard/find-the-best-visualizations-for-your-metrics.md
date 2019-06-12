@@ -21,11 +21,11 @@ Selecting the best chart for your metrics is not always a straightforward proces
 
 Graphs help people recognize patterns faster than looking through a table with numbers in it. For example, take a look at the table below..
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleTable.png" /></div>
+![Example data table](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleTable.png)
 
 Now take a look at this chart...
 
-![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png)
+![Example chart made with data table](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png)
 
 Data visualization is a general term that describes any effort to help people understand the significance of data by placing it in a visual context. Patterns, trends and correlations that might go undetected in text-based data can be exposed and recognized easier with data visualization software.
 
@@ -88,16 +88,15 @@ Using the Flow Chart we can go through the decision making process for each of t
 
 There are multiple ways we need to aggregate operational cost. We need to calculate the total and we need to calculate the total grouped by department and month. For the total a single value chart is appropriate. For the by department by month aggregation we should use a line chart
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationCost.png" /></div>
-<p />
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationChart.png" /></div>
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationCost.png)
 
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationChart.png)
 
 ### Revenue
 
 We only need to aggregate the total which produces one value. If no comment was provided by the Point Person about wanting to see the total revenue compared to a previous time or compared to a goal the Single Value Chart is the best option. (reword sentence)
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/revenueCost.png" /></div>
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/revenueCost.png)
 
 ### Subscriptions
 
@@ -117,7 +116,7 @@ This is also why many people recommend caution using pie charts or area charts s
 
 People are also not effective at comparing 3D volume, all of these shapes have the same volume(made up of 4 cubes of the same size).
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/3dShapes.png" /></div>
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/3dShapes.png)
 
 In addition it typically requires much more space to convey 3D information than showing it in 2D. Stick with simple 2D visualizations.
 

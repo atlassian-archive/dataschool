@@ -15,7 +15,7 @@ published: true
 ---
 The dashboard design process is very similar to any design process however the output is a dashboard… obviously.
 
-## Why is Process Important
+## Why Process is Important
 
 People get very attached to their solutions for a problem. The more they invest time and effort in their solution the stronger they believe in it regardless of the quality of the solution. This is why it is critical to avoid jumping right to solving the problem by building a dashboard. We don’t want low quality dashboards.
 
@@ -27,13 +27,13 @@ We can summarize this process into 4 steps:
 
 ![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg)
 
-## Define
+## 1. Define
 
 ![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-define-audience.jpg)
 
 This is the first and most important step. Having clarity about who this dashboard is for and what metrics matter to them is critical to creating a dashboard that will be used.
 
-## Stakeholders
+### Stakeholders
 
 There are 4 main stakeholders
 
@@ -48,7 +48,7 @@ We will define in detail their responsibilities and where they factor into the p
 
 You will work with the point person to go from vague goals to query-able metrics. This process involves a lot of back and forth to weed out interesting but ultimately not relevant metrics to mission critical data for decisions to be based on. We will go into further details about how to do this in [Determine the Metrics to Monitor]([https://dataschool.com/learn/determine-the-metrics-to-monitor](https://dataschool.com/learn/determine-the-metrics-to-monitor "https://dataschool.com/learn/determine-the-metrics-to-monitor"))
 
-## Prototype
+## 2. Prototype
 
 ![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-prototype.jpg)
 
@@ -66,7 +66,7 @@ There are best practices for taking the visualizations and composing them togeth
 
 At this stage it is recommended that the visualizations and dashboards be sketched out on paper or using a lo fi tool that is not connected to any real data. The reason for this is that it allows you to quickly throw out bad ideas without worrying about the time investment. It also allows you to focus on design instead of checking if the numbers are right. We talk through visualization and dashboard prototyping strategies in [Dashboard Prototyping and Feedback\]([https://dataschool.com/learn/dashboard-prototyping-and-feedback](https://dataschool.com/learn/dashboard-prototyping-and-feedback "https://dataschool.com/learn/dashboard-prototyping-and-feedback"))
 
-## Build
+## 3. Build
 
 ![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-desig-build.jpg)
 
@@ -80,7 +80,7 @@ Many challenges can arise at this point. Where is the data stored? Is the data m
 
 We need to create queries to power the metrics, create formulas, and transform the data into charts. Using a framework to log the metrics, formulas, and data sources makes creating queries much easier, we outline how to do this best in [Build the Metrics]([https://dataschool.com/learn/build-the-metrics](https://dataschool.com/learn/build-the-metrics "https://dataschool.com/learn/build-the-metrics"))
 
-## Deploy
+## 4. Deploy
 
 ![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-deploy.png)
 

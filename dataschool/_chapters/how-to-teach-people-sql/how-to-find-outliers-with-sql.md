@@ -1,8 +1,9 @@
 ---
-section: book
 title: How to Find Outliers with SQL
 meta_title:
-number: 200
+description:
+section: book
+number: 160
 authors:
 - author: _people/rebecca-barnes.md
 reviewers:
@@ -14,7 +15,7 @@ is_featured: false
 img_border_on_default: false
 ---
 
-Use ORDER BY
+## Use ORDER BY
 
 A fast way to identify outliers is to sort the relevant values in both ascending and descending order. This allows you to quickly skim through the highest and lowest values. If you have a sense of what you are expecting from your data, this can help you quickly identify any unexpected values.
 
@@ -31,7 +32,7 @@ ORDER BY age
 
 Here’s what a sample query could look like.
 
-![](assets/images/how-to-teach-people-sql/outliers/outliers_1.png)
+![](/assets/images/how-to-teach-people-sql/outliers/outliers_1.png)
 
 By sorting we can easily identify anomalies within the data. We don’t expect any of our friends to have an age of 1, so this outlier is likely an error.
 
@@ -65,7 +66,7 @@ NTILE(4) OVER (ORDER BY age) AS age_quartile
 FROM friends
 ```
 
-![](assets/images/how-to-teach-people-sql/outliers/outliers_2.png)
+![](/assets/images/how-to-teach-people-sql/outliers/outliers_2.png)
 
 When using NTILE() in SQL, if we have an odd number of values in each of our quartiles, the maximum value in the first quartile will be the Q1 value, and the maximum value in the third quartile will be the Q3 value.
 
@@ -82,7 +83,7 @@ WHERE age_quartile IN (1, 3)
 GROUP BY age_quartile
 ```
 
-![](assets/images/how-to-teach-people-sql/outliers/outliers_3.png)
+![](/assets/images/how-to-teach-people-sql/outliers/outliers_3.png)
 
 This gives us an IQR of 4, and 1.5 x 4 is 6.
 
@@ -103,7 +104,7 @@ FROM friends
 WHERE age < 25 OR age > 41
 ```
 
-![](assets/images/how-to-teach-people-sql/outliers/outliers_4.png)
+![](/assets/images/how-to-teach-people-sql/outliers/outliers_4.png)
 
 ## Fully Query
 

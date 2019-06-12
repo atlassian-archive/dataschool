@@ -1,7 +1,8 @@
 ---
 title: Introduction
-section: book
 meta_title: Introduction to How to Teach People SQL
+description:
+section: book
 number: 10
 authors:
 - author: _people/matt.md

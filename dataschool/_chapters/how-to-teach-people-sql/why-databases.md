@@ -16,7 +16,7 @@ img_border_on_default: false
 published: true
 
 ---
-What is a database and why use one
+## What is a database and why use one
 
 People understand a spreadsheet. It is visual, the data is right there, and you can perform calculations right next to the data. For many scenarios this is the right tool to use.
 
@@ -26,9 +26,9 @@ Some people have even figured out ways to power their mobile applications off of
 
 The scenario we will be exploring is managing the data within a business. There are big disadvantages to using spreadsheets to do this, which databases handle very well.
 
-1. Size
-2. Accuracy
-3. Security
+* Size
+* Accuracy
+* Security
 
 ### Size
 
@@ -73,13 +73,13 @@ Table, Field and Record all mean something very similar to common spreadsheet wo
 
 Primary Key and Foreign Key are database specific concepts. Data in a database is spread out across multiple tables we need ways of bringing all that data back together. This is accomplished by using Primary and Foreign Keys. The Primary Key is the ID field in a table, that uniquely identifies each record.
 
-The primary key is indicated here with PK_id:
+The primary key is indicated here with `PK_id`:
 
 ![sample table from database primary key](/assets/images/how-to-teach-people-sql/whyDatabase/whyDBs_4.png)
 
 Then in another table the primary key for the location table might exist as well, this is called a Foreign Key.
 
-The Foreign Key is indicated here as FK_location_id:
+The Foreign Key is indicated here as `FK_location_id`:
 
 ![sample table from database foreign key](/assets/images/how-to-teach-people-sql/whyDatabase/whyDBs_5.png)
 
@@ -87,7 +87,7 @@ Now we can join these two tables together using the Primary and Foreign Keys to 
 
 ![tables joined based on primary and foreign keys](/assets/images/how-to-teach-people-sql/whyDatabase/whyDBs_6.png)
 
-If we zoom out to see these two tables in the same database before they were joined we can explain the last jargon word, Schema. Schema is the word to describe all of the tables that exist within the database:
+If we zoom out to see these two tables in the same database before they were joined we can explain the last jargon word, **Schema**. Schema is the word to describe all of the tables that exist within the database:
 
 ![sample table in schema](/assets/images/how-to-teach-people-sql/whyDatabase/whyDBs_7and8.png)
 
@@ -99,39 +99,29 @@ These tables in a schema are commonly represented by showing the table name at t
 
 Ok there is actually more new jargon and these require special attention since most of the errors in writing SQL statements will be related to data type issues. Data types specify what sort of data is stored and what sort of functions can be called on. Every field in a database has a data type associated with it.
 
-**VARCHAR** - Character string having variable length
-
-* This data type treats everything as text, you can place numbers in here but adding them together would just attach them which is what you would expect with text.
-* a + b = ab
-* 1 + 2 = 12
-
-**INTEGER** - Whole Numbers
-
-* This data type only allows whole numbers inside of it. All math functions can be applied to it. Text cannot be placed inside of it
-* 1 + 2 = 3
-
-**FLOAT** - Numbers with decimal point values
-
-* This data type works the same as INTEGER but allows decimal values
-* 1.1 + 2.2 = 3.3
-
-**BOOLEAN** - True or False value
-
-* This data type can either be True or False. It is useful for setting binary characteristics or status about some data.
-* Is the house on fire? True or False?
-
-**DATE** - Date/Time value
-
-* This data type contains date or time information which allows you to perform calculations relevant to date time information.
-* How many days are between 1/1/19 and 2/4/19? 34
+* **VARCHAR:** Character string having variable length
+    * This data type treats everything as text, you can place numbers in here but adding them together would just attach them which is what you would expect with text.
+    * a + b = ab
+    * 1 + 2 = 12
+* **INTEGER:** Whole Numbers
+    * This data type only allows whole numbers inside of it. All math functions can be applied to it. Text cannot be placed inside of it
+    * 1 + 2 = 3
+* **FLOAT:** Numbers with decimal point values
+    * This data type works the same as INTEGER but allows decimal values
+    * 1.1 + 2.2 = 3.3
+* **BOOLEAN:** True or False value
+    * This data type can either be True or False. It is useful for setting binary characteristics or status about some data.
+    * Is the house on fire? True or False?
+* **DATE:** Date/Time value
+    * This data type contains date or time information which allows you to perform calculations relevant to date time information.
+    * How many days are between 1/1/19 and 2/4/19? 34
 
 There is one data type that is not defined for fields that can show up in any of these.
 
-**NULL** - this means there is no value in the cell
-
-* This data type is useful for showing the absence of data. A blank cell and a Null cell are different. Null is ignored by aggregations and it is easy to filter for. Blank values or 0s would be included in aggregations and can be more difficult to detect
-* What is the Average of 1 + Null + 5? 3
-* What is the Average of 1 + 0 + 5? 2
+* **NULL:** This means there is no value in the cell
+    * This data type is useful for showing the absence of data. A blank cell and a Null cell are different. Null is ignored by aggregations and it is easy to filter for. Blank values or 0s would be included in aggregations and can be more difficult to detect
+    * What is the Average of 1 + Null + 5? 3
+    * What is the Average of 1 + 0 + 5? 2
 
 ## Summary
 

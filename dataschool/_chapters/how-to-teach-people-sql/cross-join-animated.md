@@ -27,26 +27,10 @@ CROSS JOIN linkedin
 
 Why use a CROSS JOIN vs a UNION, LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let’s think about the different questions they are asking.
 
-INNER join
 
-* How many friends and connections do my friends who are on both on Facebook and LinkedIn have?
-
-LEFT join
-
-* How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
-
-RIGHT join
-
-* How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
-
-FULL OUTER join
-
-* How many friends and connections do my Facebook friends or LinkedIn connections have?
-
-UNION
-
-* How many friends do my Facebook friends have and how many connections do my LinkedIn connections have?
-
-CROSS JOIN
-
-* How many combinations of friends and connections do I have?
+* **CROSS JOIN:** How many combinations of friends and connections do I have?
+* **UNION:** How many friends do my Facebook friends have and how many connections do my LinkedIn connections have?
+* **LEFT join:** How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
+* **RIGHT join:** How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
+* **INNER join:** How many friends and connections do my friends who are on both on Facebook and LinkedIn have?
+* **FULL OUTER join:** How many friends and connections do my Facebook friends or LinkedIn connections have?

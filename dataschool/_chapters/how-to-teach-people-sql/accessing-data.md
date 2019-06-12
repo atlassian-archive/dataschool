@@ -13,11 +13,9 @@ is_featured: false
 img_border_on_default: false
 published: true
 ---
-Access
-
 Unlike google sheets where everyone can get access to data with a simple click. Getting to run queries against a database requires getting permissions. Access is most commonly given out through a BI tool instead of credentials into the database itself.
 
-Making this part of onboarding at your company will save numerous headaches. Otherwise you will receive random pings to get access all the time. The default should be to give people access and to help train them to use SQL so they can answer most of their data related questions..
+Making this part of onboarding at your company will save numerous headaches. Otherwise you will receive random pings to get access all the time. The default should be to give people access and to help train them to use SQL so they can answer most of their data related questions.
 
 ## Asking a question
 
@@ -25,7 +23,7 @@ Once people have access they might need help understanding how to ask a question
 
 Let’s start with an everyday life question that we type into Google.
 
-What age is Obama?
+_What age is Obama?_
 
 ![Google query example](/assets/images/how-to-teach-people-sql/accessingData/accessing_1.png)
 
@@ -63,6 +61,7 @@ In this case we can see that the people table has both name and age so we can pu
 SELECT name, age
 FROM people
 ```
+
 The WHERE clause needs to specify any specific about what records we want from this table. In this case we want the record where the name is equal to obama
 
 ```sql

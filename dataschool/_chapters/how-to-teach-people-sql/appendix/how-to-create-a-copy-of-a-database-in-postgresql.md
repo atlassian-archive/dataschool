@@ -3,18 +3,16 @@ title: How to Create a Copy of a Database in PostgreSQL
 meta_title:
 description:
 section: appendix
-number: 200
+number: 220
 authors:
-- author: _people/matthew-layne.md
+- author: _people/matt.md
 reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1f7xpecovJ9GUGRaZhghalK66dPHwMGeLi3nFtRV8kqc/edit?usp=sharing
-image: ''
+image:
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-published: false
+published: true
 
 ---
 To create a copy of a database, run the following command in psql:
@@ -61,7 +59,7 @@ This query will terminate any open connections to the “Database to copy”, an
 
 ![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce56b99bd2f03de0694cb24_TP0JHahSe5wkZo6R6i7hPWv8uyz7dXJuym5rje2x136FAwIW5RNbM43t6SFHsSeSoPp0iqrxNxaym3AeBbttlSrLTvcz0GjPZGUNtwaQiiuNTRRX4vCwECyF4dd8MCe_xfM4jC4Q.png)
 
-Once they reconnect they can then run queries again against the database. 
+Once they reconnect they can then run queries again against the database.
 
 Note: They will not be able to reconnect until the database is completely copied.
 
