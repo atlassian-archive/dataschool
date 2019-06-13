@@ -1,7 +1,7 @@
 ---
 title: What is a Query Plan
 meta_title: What is a Query Plan
-description:
+description: Learn what a query plan is and how it effects your SQL queries
 section: appendix
 number: 240
 authors:
@@ -20,7 +20,7 @@ A Query plan is a list of instructions that the database needs to follow in orde
 
 Below is an example query plan for a given query:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce86292f2b08ae70d5731de_qRM2X36gw8ihj_kBHkkfS4DhNkJPztGjxX3j8QtBU4-6ifm7S0iGQB4EcmyCXQYKZfqW7jthCtcxGAc3zcDw9sCb5eOY0muSdQUkRGCa8xFFwlikfTR1gwto4y2J5aeeRWh69SYC.png)
+![](assets/images/how-to-teach-people-sql/appendix/whatsQueryPlan/whatsQueryPlan_1.png)
 
 This query plan shows the particular steps taken to execute the given command. It also specifies the expected cost for each section.
 
@@ -30,11 +30,11 @@ SQL is a declarative language. This means that SQL queries describe what the use
 
 The Query Optimizer generates multiple Query Plans for a single query and determines the most efficient plan to run.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce8629333443b8418b58813_kQIAUxFdhTnk_C6dYPVmlSsOMIsgHgxxNyxoEMvSKgvchrl5N2lTxEJMai-do1xO_n4fMCm1-2TaLiPSXbLZc61yPzKHE3Mrbvsbv7eOj0L_f8tPmT96JVhUvk84KhozeFJlOYbl.png)
+![](assets/images/how-to-teach-people-sql/appendix/whatsQueryPlan/whatsQueryPlan_2.png)
 
 There are often many different ways to search a database. Take for example the following database of tools that has five entries. Each entry has a unique ID number and a non-unique name.
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce8629389a7490df53ae4f2_4VcXl-sdbEJANl7vXNv5OtYKhl6f39pnj2COd6ObKMvr2sDvpHbweVgZnkIawpBqyNXH_VBt3AgaKETu95vIiy_j-vkdD_JmMmpTWiopjlE8oAapqQ5y6TfP1U_oNKqrLJ9CvoPz.png)
+![](assets/images/how-to-teach-people-sql/appendix/whatsQueryPlan/whatsQueryPlan_3.png)
 
 In order to find a particular tool, there are several possible queries that could be run. For example, the query:
 
@@ -55,13 +55,13 @@ WHERE id=3;
 
 These queries will return the same results, but may have different final query plans. The first query will have a query plan that uses a sequential scan. This means that all five rows of the database will be checked to see if the name is screwdriver and, when run, would look like the following table:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce8629366d5e118330fd823_IqN_hPbLNGKtEKB-4Q7DtM_jZo7jK3Z35NhIxd2GR0CDMuaZy27b5Z13Xf2ub4aqf81PaHWEAHvCDtN_CKcuPVXtDf8ivBb7qMoER8TIBqexHbnKP3trhW04edquKGL_wQI7jvsM.png)
+![](assets/images/how-to-teach-people-sql/appendix/whatsQueryPlan/whatsQueryPlan_4.png)
 
 (green = match) | (red = miss) | (white = not checked)
 
 The second query will use a query plan which implements a sequential seek since the second query handles unique values. Like a scan, a seek will go through each entry and check to see if the condition is met. However unlike a scan, a seek will stop once a matching entry has been found. A seek for ID = 3 would look like the following figure:
 
-![](https://assets.website-files.com/5c197923e5851742d9bc835d/5ce8629366d5e150f90fd824_DE_jxE2rNZDs5bP0oBWG8rIsCDFGEVWLmqES23ECGeKyLJlNfRcUoNBhcsGOERNvmdv57-hz9k-reD_3YwU_LeyfNI0u3h6wt5ZLh8ySPHTQPvTeE-oTakUaMdUvJyi7hNEjUZ6O.png)
+![](assets/images/how-to-teach-people-sql/appendix/whatsQueryPlan/whatsQueryPlan_5.png)
 
 (green = match) | (red = miss) | (white = not checked)
 

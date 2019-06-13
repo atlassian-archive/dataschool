@@ -8,8 +8,7 @@ reviewers:
 - reviewer: _people/blake.md
 - reviewer: _people/matt.md
 image:
-description: This article explores starting a PostgreSQL server using both Homebrew and
-  the potgres app.
+description: This article explores starting a PostgreSQL server using both Homebrew and the potgres app.
 is_featured: false
 writers:
   writers:

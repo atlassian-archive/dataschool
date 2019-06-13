@@ -2,7 +2,7 @@
 section: extras
 title: How to create a copy of a database in PostgreSQL
 meta_title:
-description:
+description: Create a copy of a database in postgres using psql
 authors:
 - author: _people/matthew-layne.md
 reviewers:

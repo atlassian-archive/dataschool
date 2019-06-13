@@ -1,8 +1,7 @@
 ---
 title: Introduction
 meta_title: Introduction to Designing Dashboards
-description: Dashboards are the way data people help the rest of an organization make
-  data driven decisions.
+description: Dashboards are the way data people help the rest of an organization make data driven decisions.
 section: book
 number: 10
 authors:

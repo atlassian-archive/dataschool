@@ -2,7 +2,7 @@
 section: book
 title: Row vs Column Oriented Databases
 meta_title:
-description:
+description: Column oriented databases have become dominant over row oriented databases in data warehousing.
 number: 20
 authors:
 - author: _people/blake.md

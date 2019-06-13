@@ -2,7 +2,7 @@
 section: book
 title: Usability
 meta_title: Usability
-description:
+description: Users need to discover data assets, understand what they contain, and how they work.
 number: 30
 authors:
 - author: _people/rohan-joseph.md
