@@ -85,6 +85,7 @@ fields:
     class="img-no-border")
   default: false
 pages:
+- dataschool/_chapters/learn-sql/extras/using-alter-in-postgresql-1.md
 - dataschool/_chapters/learn-sql/errors.md
 - dataschool/_chapters/learn-sql/completed.md
 - dataschool/_chapters/learn-sql/about.md
@@ -98,6 +99,7 @@ pages:
 - dataschool/_chapters/learn-sql/extras/how-indexing-works.md
 - dataschool/_chapters/learn-sql/extras/generate-series.md
 - dataschool/_chapters/learn-sql/extras/functions.md
+- dataschool/_chapters/learn-sql/extras/date-insertion.md
 - dataschool/_chapters/learn-sql/extras/date-functions.md
 - dataschool/_chapters/learn-sql/extras/date-extract.md
 - dataschool/_chapters/learn-sql/extras/complete-operator-list.md
