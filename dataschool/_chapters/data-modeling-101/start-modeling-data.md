@@ -2,7 +2,7 @@
 section: book
 title: Start Modeling Data
 meta_title:
-description:
+description: This is a quick introduction to using DBT and BigQuery to model data.
 number: 10
 authors:
 - author: _people/matt.md

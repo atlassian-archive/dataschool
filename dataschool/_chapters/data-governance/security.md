@@ -2,7 +2,7 @@
 section: book
 title: Security
 meta_title: Security
-description:
+description: Data Governance protects data from actions of unauthorized users such as cyber attacks and data breaches
 number: 50
 authors:
 - author: _people/rohan-joseph.md

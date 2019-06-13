@@ -2,7 +2,7 @@
 section: book
 title: Availability
 meta_title: Availability
-description:
+description: Data has to be made accessible to be looked at holistically throughout the organization.
 number: 20
 authors:
 - author: _people/rohan-joseph.md

@@ -1,6 +1,7 @@
 ---
 title: How to Find Outliers with SQL
 meta_title:
+description: In depth post about using SQL to detect outliers using simple techniques and using inter quartile range
 section: appendix
 number: 230
 authors:

@@ -1,7 +1,7 @@
 ---
 title: Cross Join - Animated
 meta_title:
-description:
+description: Visualize how SQL is joining two tables using a Cross Join.
 section: book
 number: 90
 authors:
