@@ -1,22 +1,20 @@
 ---
 section: extras
 title: Copying Data Between Tables
-number: 
+number:
 authors:
 - author: _people/matthew-layne.md
 reviewers:
 - reviewer: _people/blake.md
 - reviewer: _people/matt.md
-image: ''
+image: 
 description: This article discusses how to copy data from a table or query into another
   table using the INSERT command in psql.
 is_featured: false
 writers:
   writers:
   - _people/matthew-layne.md
-meta_title: Copying Data Between Tables
-feedback_doc_url: ''
-img_border_on_default: false
+published: true
 
 ---
 # **Copying Data Between Tables**
