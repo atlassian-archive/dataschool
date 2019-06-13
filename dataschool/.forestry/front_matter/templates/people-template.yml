@@ -1,6 +1,6 @@
 ---
 label: People template
-hide_body: true
+hide_body: false
 fields:
 - type: text
   name: title
@@ -30,9 +30,12 @@ fields:
   name: company
   label: company
 pages:
+- dataschool/_people/blake.md
+- dataschool/_people/dave.md
 - dataschool/_people/drew-banin.md
+- dataschool/_people/katerina-bicakci.md
+- dataschool/_people/matt.md
+- dataschool/_people/matthew-layne.md
 - dataschool/_people/patrick-gibson.md
 - dataschool/_people/rebecca-barnes.md
 - dataschool/_people/rohan-joseph.md
-- dataschool/_people/katerina-bicakci.md
-- dataschool/_people/matthew-layne.md
