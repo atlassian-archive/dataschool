@@ -1,8 +1,7 @@
 ---
 section: book
 title: Types of Data Analysis
-number: 10
-description: There are different types of analysis. Each is suited to different roles within a company, analyst, executive, data scientists, etc.
+number: 
 authors:
 - author: _people/patrick-gibson.md
 reviewers: []

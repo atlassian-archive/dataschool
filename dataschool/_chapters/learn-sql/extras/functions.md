@@ -1,11 +1,11 @@
 ---
 title: PostgreSQL Functions
 description: ''
-published: false
+
 ---
 Once complete link to from
  - functions: full list of functions
-
+ 
 reference:
 https://www.postgresql.org/docs/9.0/static/functions-math.html
 
