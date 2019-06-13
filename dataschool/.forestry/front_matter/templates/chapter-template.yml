@@ -85,8 +85,15 @@ fields:
     class="img-no-border")
   default: false
 pages:
-- dataschool/_chapters/learn-sql/extras/importing-data-from-csv-in-postgresql.md
+- dataschool/_chapters/how-to-teach-people-sql/appendix/how-case-when-works.md
+- dataschool/_chapters/learn-sql/extras/using-alter-in-postgresql.md
+- dataschool/_chapters/how-to-teach-people-sql/cross-join-animated.md
+- dataschool/_chapters/how-to-design-a-dashboard/dashboard-prototyping-and-feedback.md
+- dataschool/_chapters/how-to-design-a-dashboard/determine-the-metrics-to-monitor.md
+- dataschool/_chapters/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard.md
+- dataschool/_chapters/how-to-design-a-dashboard/sharing-the-dashboard-distribution-strategies.md
 - dataschool/_chapters/how-to-teach-people-sql/introduction.md
+- dataschool/_chapters/learn-sql/extras/importing-data-from-csv-in-postgresql.md
 - dataschool/_chapters/how-to-teach-people-sql/union-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
@@ -101,7 +108,6 @@ pages:
 - dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work.md
 - dataschool/_chapters/how-to-teach-people-sql/debugging-sql-syntax-errors.md
 - dataschool/_chapters/how-to-teach-people-sql/debugging-sql-0-rows-returned.md
-- dataschool/_chapters/how-to-teach-people-sql/cross-join-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
 - dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
 - dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
@@ -110,14 +116,10 @@ pages:
 - dataschool/_chapters/how-to-design-a-dashboard/conclusion.md
 - dataschool/_chapters/how-to-design-a-dashboard/making-sure-your-dashboard-always-gets-better.md
 - dataschool/_chapters/how-to-design-a-dashboard/scaling-dashboards.md
-- dataschool/_chapters/how-to-design-a-dashboard/sharing-the-dashboard-distribution-strategies.md
 - dataschool/_chapters/how-to-design-a-dashboard/build-the-metrics.md
 - dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
 - dataschool/_chapters/how-to-design-a-dashboard/finding-the-data-that-builds-metrics.md
 - dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
-- dataschool/_chapters/how-to-design-a-dashboard/dashboard-prototyping-and-feedback.md
-- dataschool/_chapters/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard.md
-- dataschool/_chapters/how-to-design-a-dashboard/determine-the-metrics-to-monitor.md
 - dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
 - dataschool/_chapters/learn-sql/extras/how-to-start-a-postgresql-server-on-mac-os-x.md
 - dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
