@@ -1,18 +1,17 @@
 ---
 section: book
 title: Design a Dashboard example
-meta_title:
+meta_title: 
 description: Example of how applying design thinking improves dashboard design
 number: 160
 authors:
-- author: _people/dave.md
+- _people/dave.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1nidfueJfQutx96f0A_oXVsRwb9nuKa5qQ18REVA22TQ/edit?usp=sharing
-image: /assets/images/how-to-design-a-dashboard/design_a_dashboard_example/wholeDashboard.png
+image: "/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/wholeDashboard.png"
 is_featured: false
 img_border_on_default: true
-published: true
 
 ---
 A while ago I was working with my customer success team to organize a campaign to proactively uncover 15 common usage pitfalls customers can fall into so as to educate those who’ve fallen into it, or are near it, about the best practices.
