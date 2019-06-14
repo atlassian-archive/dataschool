@@ -1,19 +1,19 @@
 ---
 title: How SQL Aggregations Work
-meta_title:
+meta_title: 
 section: book
 number: 120
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1sLpiaEW0K1azJLyFp6Va0UJFR3jU3YljuMcg2TUpoDY/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/aggregations/aggregations_2.png
-description: Visualize how SQL aggregates data by viewing examples of COUNT, AVG, and SUM
+image: "/assets/images/how-to-teach-people-sql/aggregations/aggregations_2.png"
+description: Visualize how SQL aggregates data by viewing examples of COUNT, AVG,
+  and SUM
 is_featured: false
 img_border_on_default: false
-published: true
----
 
+---
 SQL COUNT is the most common type of Aggregation in SQL, it counts the number of rows in a column or table. COUNT(\*) tells SQL to count the number of rows of the whole table. COUNT(some column) tells SQL to count the number of non-null rows in that column.
 
 ```sql
