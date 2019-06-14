@@ -3,7 +3,12 @@ new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url: 
-sections: 
+sections:
+- type: directory
+  path: dataschool
+  label: Pages
+  create: all
+  match: "**/*"
 upload_dir: dataschool/assets/images
 public_path: "/assets/images"
 front_matter_path: ''
