@@ -1,19 +1,20 @@
 ---
 section: book
 title: Find the Best Visualizations for Your Metrics
-meta_title:
-description: Decide what chart works best for your visualization based on if you want to show composition, relationship, distribution or comparison.
+meta_title: 
+description: Decide what chart works best for your visualization based on if you want
+  to show composition, relationship, distribution or comparison.
 number: 70
 authors:
-- author: _people/tim.md
+- _people/tim.md
 reviewers:
-- reviewer: _people/matt.md
-- reviewer: _people/dave.md
-image: /assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png
+- _people/matt.md
+- _people/dave.md
+image: "/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png"
 is_featured: false
-published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1z2HnZTxsdPY89M5ElREXoGSIcQMrPzwdYVcaAbFz9eQ/edit?usp=sharing
+
 ---
 Selecting the best chart for your metrics is not always a straightforward process. Certain visualizations do not represent some datasets well, and certain visualizations can not represent some datasets at all. Sometimes you just need a table, single value, or just show some text. Knowing the difference will help you design the most useful dashboards.
 
