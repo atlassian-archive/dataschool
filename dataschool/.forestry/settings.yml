@@ -15,13 +15,6 @@ sections:
   templates:
   - book-template
 - type: directory
-  path: dataschool/_chapters
-  label: Chapters
-  create: all
-  match: "**/*"
-  templates:
-  - chapter-template
-- type: directory
   path: dataschool/_people
   label: People
   create: all
