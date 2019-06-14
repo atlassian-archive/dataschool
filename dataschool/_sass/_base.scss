@@ -80,6 +80,9 @@ pre {
 code {
   padding: 0.125em;
 }
+.CodeMirror-scroll {
+  width: 100%;
+}
 kbd {
   padding: 0.125em 0.25em;
   border-radius: 0.25em;
@@ -98,8 +101,6 @@ table {
   display: block;
   overflow: auto;
   font-size: 0.8em;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   thead {
     width: 100%;
   }

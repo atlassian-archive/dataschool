@@ -6,9 +6,9 @@ authors:
 - author: _people/blake.md
 - author: _people/matt.md
 - author: _people/dave.md
-reviewers: 
-cover_image: ''
-main_color: "764514"
+reviewers:
+cover_image: /assets/images/book-covers/data-modeling-101.png
+main_color: '#764514'
 is_featured: false
 
 ---
