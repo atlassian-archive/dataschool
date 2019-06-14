@@ -1,17 +1,17 @@
 ---
 title: SQL Join Types Explained Visually
-meta_title:
-description: Data within a database exists across multiple tables, JOINs allow you to combine datasets into new tables for analysis.
+meta_title: 
+description: Data within a database exists across multiple tables, JOINs allow you
+  to combine datasets into new tables for analysis.
 section: book
 number: 40
 authors:
-- author: _people/tim.md
-reviewers:
+- _people/tim.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/10bjLM1eP66fzkVjqiqNzfl0DAev1wqB1W-jbyRddiWg/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png
+image: "/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png"
 is_featured: true
 img_border_on_default: false
-published: true
 
 ---
 Merging two data sets using SQL or SQL tools can be accomplished through JOINS. A JOIN is a SQL instruction in the FROM clause of your query that is used to identify the tables you are querying and how they should be combined.
