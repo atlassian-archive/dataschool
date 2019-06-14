@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: dataschool/books
+  label: Books
+  create: all
+  match: "**/*"
+  templates:
+  - book-template
+- type: directory
   path: dataschool
   label: Pages
   create: all
