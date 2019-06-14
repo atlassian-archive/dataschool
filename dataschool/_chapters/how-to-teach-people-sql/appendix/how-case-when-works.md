@@ -2,7 +2,7 @@
 section: book
 title: How CASE WHEN works
 meta_title: ''
-description: ''
+description: https://dataschool.com/learn/how-case-when-works
 number: 200
 authors:
 - author: _people/blake.md
@@ -13,7 +13,7 @@ feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKb
 image: ''
 is_featured: false
 img_border_on_default: true
-published: false
+published: true
 
 ---
 CASE WHEN takes in values, checks them against a condition and THEN outputs values into a new column based on if it satisfies the condition.
@@ -30,14 +30,13 @@ Note: CASE WHEN statements will always output new values to a new column which i
 
 Now let’s see what the full query would have looked like for that CASE WHEN statement, notice the title of the output column at the end of the CASE WHEN statement.
 
+```sql
 SELECT **City**,
-
 CASE WHEN **City** = “SF” THEN “San Francisco”
-
 ELSE **City**
-
 END AS “Updated City”  
 FROM friends
+```
 
 Let’s break down each component of the CASE WHEN statement:
 
@@ -55,17 +54,14 @@ NOTE: If you put the column name after THEN or ELSE it will put the value from t
 
 ## **Syntax**
 
+```sql
 SELECT (**optional**: any desired columns),
-
 CASE WHEN (condition) THEN (desired output)
-
 WHEN (other condition) THEN (desired output)
-
 ELSE (desired output)
-
 END AS (descriptive header for the output column)
-
 FROM (appropriate table);
+```
 
 _Note: you do not have to show all of the columns, or any columns besides the CASE column in the output._
 
@@ -85,27 +81,24 @@ Make sure that you are comparing the correct data types in your queries. If you 
 
 #### **Same Data Type**
 
+```sql
 SELECT Track.Name, Track.GenreId,
-
-CASE WHEN (Track.Name = '’40’) THEN 'Rock'
-
+CASE WHEN (Track.Name = '"40"') THEN 'Rock'
 END AS Genre FROM Track
-
 ORDER BY Track.Name ASC LIMIT 10;
-
+```
 ![](https://lh5.googleusercontent.com/eNrBTWR_iWcvcDrVK-mB3vwP7oidhr9Sl6Id3btjIVH2JpNTYoITcN985ZIk44FjA6fFA8RJ_rMNRwo4Jy8KlOTsixLGVgLAzUoMRAy5MoaCt8uwVZ2brgnO8YPMVBZRsecZIFVW =624x201)
 
 The **Name** field is a VARCHAR and we compare it to the characters “40”.
 
 #### **Different Data Type**
 
+```sql
 SELECT Track.Name, Track.GenreId,
-
 CASE WHEN (Track.Name = 40) THEN 'Rock'
-
 END AS Genre FROM Track
-
 ORDER BY Track.Name ASC LIMIT 10;
+```
 
 ![](https://lh5.googleusercontent.com/rJWCY4PClg512C0SuzbZgqlmjWtNXyAwqQObIrZRxN4Ulf7Tbr76WQW6QNUFE3x7MHXINywb3EF9-GeMgH-Zgoo3LT61bKmNrMkCOeUjiTYsBU0SC5gREitChtHQDtHye-p5oM7L =624x53)
 
@@ -113,7 +106,9 @@ The **Name** field is a VARCHAR and cannot be compared to an INTEGER.
 
 Remember you can cast any of your values in order to make the data types match. More on casting from [intersystems here](https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_cast). To determine what data type is used in a column you can use the “\\d (Table name)” command and look for the “Type” column:
 
-**\\d “Track”;**
+```sql
+\\d "Track";
+```
 
 ![](https://lh6.googleusercontent.com/BvgcnX5Kdeoxoet2O0ItHVFeCuDfxx9g2ruJrkrCRMEo5tgUcfBnljmLWDRN-Vj_jO3_t29ceNCsAlZP9rdgSkokKd4_hkWSrorVQkiU07Tu7UnGj2xrZbNMyOSwRldFE-3giJf3 =624x225)
 
@@ -127,29 +122,25 @@ The “TrackId” in the table below is unique for each entry. However, the “G
 
 CASE WHEN allows you to assign the genres yourself. Looking at the first few songs, you can see they all have the same GenreId and we know that 1 corresponded to the “Rock” genre. We can use CASE WHEN to check if there is a 1 in the GenreId Column and then put “Rock” into a newly created GenreType column:
 
-**SELECT Track.Name, Track.GenreId,**
-
-**CASE WHEN (Track.GenreId = 1) THEN ‘Rock’**
-
-**END AS ‘GenreType’**
-
-**FROM Track LIMIT 10;**
+```sql
+SELECT Track.Name, Track.GenreId,
+CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
+END AS ‘GenreType’
+FROM Track LIMIT 10;
+```
 
 ![](https://lh6.googleusercontent.com/tNy6QDSXe9-gP2cKTiSRV1tncFWstCkJUD0_fUT8ck2nL843Cy3lyr5NeKYbtUsZwnZKqCQ10eYNvgGTDPzdvam52IHBiSs3d4ud0NEGp12nlnPpWf6VlXSOmdMH0hoDlGTEFGcC =615x240)
 
 There are more than just 1 genre of music in the track table. Order the entries alphabetically to see some examples of songs that do not have a “GenreId” of 1. In the GenreType column **null** is returned for any values that did not satisfy the conditions of the CASE WHEN statement:
 
-**SELECT Track.Name, Track.GenreId,**
-
-**CASE WHEN (Track.GenreId = 1) THEN ‘Rock’**
-
-**END AS ‘GenreType’**
-
-**FROM Track**
-
-**ORDER BY Track.Name ASC**
-
-**LIMIT 10;**
+```sql
+SELECT Track.Name, Track.GenreId,
+CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
+END AS ‘GenreType’
+FROM Track
+ORDER BY Track.Name ASC
+LIMIT 10;
+```
 
 ![](https://lh4.googleusercontent.com/xYoNyZe9BiQBXrRNa7M8qUU_wCeleSfnXlRNx_zD14e43PufdoHky-7nQrU-oV-7GipqOWvV7_U1WwMNmzHL_mGoClijZsZG6nHzP1jx-ZrmMJY-yfzkI-EkoDuQfS4rmTSyy7ik =624x200)
 
@@ -157,36 +148,27 @@ Note: **Null** values are sometimes not printed in the output, other times they 
 
 All of the null entries in GenreType column are not “Rock” songs, so you can use CASE WHEN to label them as “Not Rock”. This can be done using the ELSE keyword:
 
-**SELECT Track.Name, Track.GenreId,**
-
-**CASE WHEN (Track.GenreId = 1) THEN ‘Rock’**
-
-**ELSE ‘Not Rock’**
-
-**END AS ‘GenreType’**
-
-**FROM Track LIMIT 10;**
-
+```sql
+SELECT Track.Name, Track.GenreId,
+CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
+ELSE ‘Not Rock’
+END AS ‘GenreType’
+FROM Track LIMIT 10;
+```
 ![](https://lh6.googleusercontent.com/bHhUHvw0Ix-hx9Sic7fyYT6qSYrh9p0X2nQ_jS_TE2bT6BNVI6v78SndK5cu9elF3Fcq1CDz0V-mjRf6ZrBMvwYKLmvnP9rI8IDhjbkwLdYDGDQoZj3ZIY_6pRK4Ir7NI7csQ9Hk =624x202)
 
 Alternatively the WHEN keyword can be used several times to create multiple conditions:
 
-**SELECT Track.Name, Track.GenreId,**
-
-**CASE WHEN (Track.GenreId = 1) THEN ‘Rock’**
-
-**WHEN (Track.GenreId = 2) THEN ‘Jazz’**
-
-**WHEN (Track.GenreId = 3) THEN ‘Metal’**
-
-**WHEN (Track.GenreId = 4) THEN ‘Alternative & Punk’**
-
-**ELSE ‘Unknown’**
-
-**END AS ‘GenreType’**
-
-**FROM Track LIMIT 10;**
-
+```sql
+SELECT Track.Name, Track.GenreId,
+CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
+WHEN (Track.GenreId = 2) THEN ‘Jazz’
+WHEN (Track.GenreId = 3) THEN ‘Metal’
+WHEN (Track.GenreId = 4) THEN ‘Alternative & Punk’
+ELSE ‘Unknown’
+END AS ‘GenreType’
+FROM Track LIMIT 10;
+```
 ![](https://lh5.googleusercontent.com/OuMQWDDdPnGHp0uGVJ4fMrtY6klAnc924tvxgiekJLcJolHbN2e401XMmSQ_3phJALljmRpz92cyiKQXg8VqTPDNWcUlb3W6x1tc5oP9r8FtIKEihBVIm-WV85GMMpzVfiew8CaI =624x180)
 
 ### **Summary:**

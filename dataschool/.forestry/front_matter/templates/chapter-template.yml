@@ -36,31 +36,31 @@ fields:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: author
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: author
 - name: reviewers
   type: field_group_list
   fields:
   - name: reviewer
     type: select
-    default: 
+    default:
     config:
       required: false
-      options: 
+      options:
       source:
         type: pages
         section: people
-        file: 
-        path: 
+        file:
+        path:
     label: reviewer
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: reviewer
   label: reviewers
 - type: text
@@ -84,3 +84,88 @@ fields:
   description: Toggle on to add borders to all images in this chapter (override with
     class="img-no-border")
   default: false
+pages:
+- dataschool/_chapters/data-governance/availability.md
+- dataschool/_chapters/data-governance/how-does-data-governance-apply-to-me.md
+- dataschool/_chapters/data-governance/implementation.md
+- dataschool/_chapters/data-governance/integrity.md
+- dataschool/_chapters/data-governance/usability.md
+- dataschool/_chapters/data-governance/why-is-data-governance-important.md
+- dataschool/_chapters/data-modeling-101/start-modeling-data.md
+- dataschool/_chapters/data-modeling-101/row-vs-column-oriented-databases.md
+- dataschool/_chapters/fundamentals-of-analysis/correlation-and-p-value.md
+- dataschool/_chapters/fundamentals-of-analysis/types-of-data-analysis.md
+- dataschool/_chapters/learn-sql/extras/importing-data-from-csv-in-postgresql.md
+- dataschool/_chapters/learn-sql/extras/using-alter-in-postgresql.md
+- dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
+- dataschool/_chapters/learn-sql/extras/how-to-start-a-postgresql-server-on-mac-os-x.md
+- dataschool/_chapters/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard.md
+- dataschool/_chapters/how-to-design-a-dashboard/build-the-metrics.md
+- dataschool/_chapters/how-to-design-a-dashboard/conclusion.md
+- dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
+- dataschool/_chapters/how-to-design-a-dashboard/dashboard-prototyping-and-feedback.md
+- dataschool/_chapters/how-to-design-a-dashboard/design-a-dashboard-example.md
+- dataschool/_chapters/how-to-design-a-dashboard/determine-the-metrics-to-monitor.md
+- dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
+- dataschool/_chapters/how-to-design-a-dashboard/finding-the-data-that-builds-metrics.md
+- dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
+- dataschool/_chapters/how-to-design-a-dashboard/introduction.md
+- dataschool/_chapters/how-to-design-a-dashboard/making-sure-your-dashboard-always-gets-better.md
+- dataschool/_chapters/how-to-design-a-dashboard/scaling-dashboards.md
+- dataschool/_chapters/how-to-design-a-dashboard/sharing-the-dashboard-distribution-strategies.md
+- dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
+- dataschool/_chapters/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces.md
+- dataschool/_chapters/how-to-teach-people-sql/appendix/what-is-a-query-plan.md
+- dataschool/_chapters/how-to-teach-people-sql/appendix/how-to-create-a-copy-of-a-database-in-postgresql.md
+- dataschool/_chapters/how-to-teach-people-sql/appendix/how-case-when-works.md
+- dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
+- dataschool/_chapters/how-to-teach-people-sql/cross-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/debugging-sql-syntax-errors.md
+- dataschool/_chapters/how-to-teach-people-sql/debugging-sql-0-rows-returned.md
+- dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/how-sql-subqueries-work.md
+- dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work.md
+- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/introduction.md
+- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/optimize-your-sql-query.md
+- dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
+- dataschool/_chapters/how-to-teach-people-sql/union-animated.md
+- dataschool/_chapters/how-to-teach-people-sql/why-databases.md
+- dataschool/_chapters/learn-sql/advanced/subqueries.md
+- dataschool/_chapters/learn-sql/advanced/with.md
+- dataschool/_chapters/learn-sql/basics/basic-practice.md
+- dataschool/_chapters/learn-sql/basics/from.md
+- dataschool/_chapters/learn-sql/basics/introduction.md
+- dataschool/_chapters/learn-sql/basics/limit.md
+- dataschool/_chapters/learn-sql/basics/order-by.md
+- dataschool/_chapters/learn-sql/basics/shcema-browsing.md
+- dataschool/_chapters/learn-sql/basics/select.md
+- dataschool/_chapters/learn-sql/extras/and-or-boolean-logic.md
+- dataschool/_chapters/learn-sql/extras/complete-operator-list.md
+- dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
+- dataschool/_chapters/learn-sql/extras/date-extract.md
+- dataschool/_chapters/learn-sql/extras/date-functions.md
+- dataschool/_chapters/learn-sql/extras/date-insertion.md
+- dataschool/_chapters/learn-sql/extras/functions.md
+- dataschool/_chapters/learn-sql/extras/generate-series.md
+- dataschool/_chapters/learn-sql/extras/how-indexing-works.md
+- dataschool/_chapters/learn-sql/extras/how-to-create-a-copy-of-a-database-in-postgresql.md
+- dataschool/_chapters/learn-sql/extras/how-to-export-data-to-csv-or-excel.md
+- dataschool/_chapters/learn-sql/extras/how-to-import-data-from-csv-excel.md
+- dataschool/_chapters/learn-sql/extras/how-to-start-a-postgresql-server-on-mac-os-x.md
+- dataschool/_chapters/learn-sql/extras/importing-data-from-csv-in-postgresql.md
+- dataschool/_chapters/learn-sql/extras/mathematical-operators.md
+- dataschool/_chapters/learn-sql/extras/random-sequences.md
+- dataschool/_chapters/learn-sql/extras/regular-expressions.md
+- dataschool/_chapters/learn-sql/extras/using-alter-in-postgresql.md
+- dataschool/_chapters/learn-sql/midlevel/aggregate.md
+- dataschool/_chapters/learn-sql/extras/dates.md
+- dataschool/_chapters/learn-sql/extras/group-by.md
+- dataschool/_chapters/learn-sql/extras/joins.md
+- dataschool/_chapters/learn-sql/extras/mid-level-practice.md
+- dataschool/_chapters/learn-sql/extras/operators.md
+- dataschool/_chapters/learn-sql/extras/where.md
+- dataschool/_chapters/learn-sql/about.md
+- dataschool/_chapters/learn-sql/completed.md
+- dataschool/_chapters/learn-sql/errors.md
