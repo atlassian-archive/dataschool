@@ -2,13 +2,14 @@
 section: book
 title: Implementation
 meta_title: Implementation
-description: Determine data components and the rules that govern this data across applications.
+description: Determine data components and the rules that govern this data across
+  applications.
 number: 60
 authors:
-- author: _people/rohan-joseph.md
-reviewers:
+- _people/rohan-joseph.md
+reviewers: 
 feedback_doc_url: ''
-image: /assets/images/data-governance/implementation/implementation_1.png
+image: "/assets/images/data-governance/implementation/implementation_1.png"
 is_featured: false
 img_border_on_default: false
 
