@@ -21,48 +21,26 @@ fields:
   name: number
   label: number
   description: sets the sorting order of the chapters for the book
-- type: field_group_list
-  name: authors
-  label: authors
-  description: The authors of this post
-  hidden: false
-  fields:
-  - name: author
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: people
-        file: 
-        path: 
-    label: author
+- name: authors
+  type: list
   config:
-    min: 
+    use_select: true
+    min: '1'
     max: 
-    labelField: author
+    source:
+      type: pages
+      section: people
+  label: Authors
 - name: reviewers
-  type: field_group_list
-  fields:
-  - name: reviewer
-    type: select
-    default: 
-    config:
-      required: false
-      options: 
-      source:
-        type: pages
-        section: people
-        file: 
-        path: 
-    label: reviewer
+  type: list
   config:
+    use_select: true
     min: 
     max: 
-    labelField: reviewer
-  label: reviewers
+    source:
+      type: pages
+      section: people
+  label: Reviewers
 - type: text
   name: feedback_doc_url
   label: Feedback doc URL
@@ -84,15 +62,5 @@ fields:
   description: Toggle on to add borders to all images in this chapter (override with
     class="img-no-border")
   default: false
-- name: writers
-  type: list
-  config:
-    use_select: true
-    min: 
-    max: 
-    source:
-      type: pages
-      section: people
-  label: Writers
 pages:
 - dataschool/_chapters/learn-sql/test-chapter.md
