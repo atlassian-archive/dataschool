@@ -1,17 +1,18 @@
 ---
 title: Accessing Data
-meta_title:
-description: Accessing data within a company requires being given permission to the data, learning how to ask questions in SQL, and how to explore a schema.
+meta_title: 
+description: Accessing data within a company requires being given permission to the
+  data, learning how to ask questions in SQL, and how to explore a schema.
 section: book
 number: 30
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1A3KNPov7-oBuOVWh553DTYXZxip6tw7NvW1q_ED3fI4/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/accessingData/accessing_1.png
+image: "/assets/images/how-to-teach-people-sql/accessingData/accessing_1.png"
 is_featured: false
 img_border_on_default: false
-published: true
+
 ---
 Unlike google sheets where everyone can get access to data with a simple click. Getting to run queries against a database requires getting permissions. Access is most commonly given out through a BI tool instead of credentials into the database itself.
 
