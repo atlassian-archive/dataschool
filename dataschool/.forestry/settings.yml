@@ -29,7 +29,7 @@ sections:
   path: dataschool
   label: Pages
   create: all
-  match: "**/*"
+  match: "*.md"
 upload_dir: dataschool/assets/images
 public_path: "/assets/images"
 front_matter_path: ''
