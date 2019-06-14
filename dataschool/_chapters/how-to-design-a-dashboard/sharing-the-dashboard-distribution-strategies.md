@@ -1,19 +1,19 @@
 ---
 section: book
 title: Sharing the Dashboard – Distribution Strategies
-meta_title:
-description: Learn the best practices and common pitfalls of sharing out your dashboard to a wide audience.
+meta_title: 
+description: Learn the best practices and common pitfalls of sharing out your dashboard
+  to a wide audience.
 number: 120
 authors:
-- author: _people/tim.md
+- _people/tim.md
 reviewers:
-- reviewer: _people/matt.md
-- reviewer: _people/dave.md
+- _people/matt.md
+- _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1Kf3Fb6SbOcGe_3HDfxheTFj07v20480hpEINZQ9RkUg/edit?usp=sharing
-image: /assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg
+image: "/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg"
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 ![Share the dashboard](/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg)
