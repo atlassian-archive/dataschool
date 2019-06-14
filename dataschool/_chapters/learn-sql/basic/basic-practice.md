@@ -1,17 +1,19 @@
 ---
-title: "Basic SQL Practice Grounds"
+title: Basic SQL Practice Grounds
 short: Practice
 meta_title: ''
-description: "Now that you've gone through our PostgreSQL interactive SQL tutorials, you've got the basic SQL fundamentals that you can apply to your data and databases. Put that knowledge to use in these SQL practice exercises."
+description: Now that you've gone through our PostgreSQL interactive SQL tutorials,
+  you've got the basic SQL fundamentals that you can apply to your data and databases.
+  Put that knowledge to use in these SQL practice exercises.
 number: 59
 section: basic
 authors:
-- author: _people/dave.md
+- _people/dave.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 is_featured: false
-image:
-published: true
+image: 
+
 ---
 You're through the basics of SQL!  This is a great place to stop and get more practice on what you've learned so far.   Here we've constructed a list of challenges to give you that practice.  Take some time to go through these before moving on to the Mid-Level SQL section.
 
@@ -36,4 +38,4 @@ Good luck!
     %}
 {% endfor %}
 
-If you've completed all of these CONGRATULATIONS!  You're proficient and fluent enough in SQL now to complete a significant portion of analytic and transactional queries.    
+If you've completed all of these CONGRATULATIONS!  You're proficient and fluent enough in SQL now to complete a significant portion of analytic and transactional queries.
