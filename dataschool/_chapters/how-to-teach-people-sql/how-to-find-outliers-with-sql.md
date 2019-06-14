@@ -4,9 +4,9 @@ title: How to Find Outliers with SQL
 meta_title: 
 number: 200
 authors:
-- author: _people/rebecca-barnes.md
+- _people/rebecca-barnes.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 feedback_doc_url: ''
 image: ''
 summary: ''
