@@ -1,18 +1,17 @@
 ---
 title: Left & Right Join - Animated
-meta_title:
-description:
+meta_title: 
+description: Visualize how SQL is joining two tables using a Left JOIN and a Right
+  JOIN
 section: book
 number: 60
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
-image:
-description: Visualize how SQL is joining two tables using a Left JOIN and a Right JOIN
+image: 
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 ## Left Join
