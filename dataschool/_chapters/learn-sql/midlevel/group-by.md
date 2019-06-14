@@ -1,18 +1,20 @@
 ---
-title: "GROUP BY"
-short: "GROUP BY"
+title: GROUP BY
+short: GROUP BY
 meta_title: ''
-description: "The GROUP BY SQL statement is used to aggregate functions like COUNT, MAX, MIN, SUM and AVG to group results into columns. In this interactive SQL tutorial, learn how to use the GROUP BY statement in your SQL queries in PostgreSQL."
+description: The GROUP BY SQL statement is used to aggregate functions like COUNT,
+  MAX, MIN, SUM and AVG to group results into columns. In this interactive SQL tutorial,
+  learn how to use the GROUP BY statement in your SQL queries in PostgreSQL.
 number: 80
 section: mid-level
 authors:
-- author: _people/dave.md
+- _people/dave.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 image: 
 is_featured: false
----
 
+---
 So far our aggregation functions have run across all of the data, but it's often useful to split the aggregation into groups.
 
 Let's say for example that we wanted to get not a count of all of the tracks, but how many tracks were in each genre.  One way of doing this would be to write a separate query for each genre like this:
