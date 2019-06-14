@@ -94,3 +94,5 @@ fields:
       type: pages
       section: people
   label: Writers
+pages:
+- dataschool/_chapters/learn-sql/test-chapter.md
