@@ -5,10 +5,10 @@ meta_title: ''
 description: ''
 number: 10
 authors:
-- author: _people/matt.md
+- _people/matt.md
 reviewers:
-- reviewer: _people/drew-banin.md
-- reviewer: _people/dave.md
+- _people/drew-banin.md
+- _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1v_F2P6da3SOwy1W5K13tR-unTba-vh2U-3iEQjGSUTs/edit?usp=sharing
 image: ''
 is_featured: false
