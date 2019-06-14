@@ -5,15 +5,14 @@ meta_title: ''
 description: https://dataschool.com/learn/how-case-when-works
 number: 200
 authors:
-- author: _people/blake.md
+- _people/blake.md
 reviewers:
-- reviewer: _people/matthew-layne.md
-- reviewer: _people/matt.md
+- _people/matt.md
+- _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKbyR5n24yeJbuuyAmsk/edit?usp=sharing
 image: ''
 is_featured: false
 img_border_on_default: true
-published: true
 
 ---
 CASE WHEN takes in values, checks them against a condition and THEN outputs values into a new column based on if it satisfies the condition.
