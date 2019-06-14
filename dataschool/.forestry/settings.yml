@@ -25,11 +25,6 @@ sections:
   match: "**/*"
   templates:
   - people-template
-- type: directory
-  path: dataschool
-  label: Pages
-  create: documents
-  match: "*.md"
 upload_dir: dataschool/assets/images
 public_path: "/assets/images"
 front_matter_path: ''
