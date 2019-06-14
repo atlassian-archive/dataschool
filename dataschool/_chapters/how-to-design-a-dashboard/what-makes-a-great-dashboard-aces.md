@@ -10,7 +10,6 @@ authors:
 - _people/matt.md
 reviewers:
 - _people/dave.md
-- _people/matt.md
 image: "/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cab72d78a07165da8e775e9_Screen
   Shot 2019-04-08 at 8.59.39 AM.png"
 is_featured: false
