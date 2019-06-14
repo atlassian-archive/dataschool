@@ -4,14 +4,13 @@ short: How Indexing Works
 section: appendix
 number: 210
 authors:
-- author: _people/blake.md
+- _people/blake.md
 reviewers:
-- reviewer: _people/matt.md
-- reviewer: _people/matthew-layne.md
+- _people/matt.md
+- _people/matthew-layne.md
 description: Learn how indexing works and why it is a critical part of optimizing
   your data warehouse
 img_border_on_default: true
-published: true
 
 ---
 ## **What is Indexing?**
