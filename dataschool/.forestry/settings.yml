@@ -28,7 +28,7 @@ sections:
 - type: directory
   path: dataschool
   label: Pages
-  create: all
+  create: documents
   match: "*.md"
 upload_dir: dataschool/assets/images
 public_path: "/assets/images"
