@@ -1,17 +1,18 @@
 ---
 title: 'Debugging SQL: 0 Rows Returned'
-meta_title:
+meta_title: 
 section: book
 number: 110
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1G55ZE0TMKLPoTd8TWh-t-3BoFDd9HADBjbzVoWHYHMA/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_1.gif
-description: Learn the most common reasons you will get 0 rows returned from your SQL query.
+image: "/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_1.gif"
+description: Learn the most common reasons you will get 0 rows returned from your
+  SQL query.
 is_featured: false
 img_border_on_default: false
-published: true
+
 ---
 Getting an error in SQL can be frustrating. However getting no errors and no data returned by your query can be even more frustrating. In this tutorial we will explore the most common reasons your query will return 0 rows of data.
 

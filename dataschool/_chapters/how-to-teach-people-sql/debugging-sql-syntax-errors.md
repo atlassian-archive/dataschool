@@ -1,17 +1,16 @@
 ---
 title: 'Debugging SQL: Syntax Errors'
-meta_title:
+meta_title: 
 section: book
 number: 100
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1gviTDfo7zo2KOm2IlgH4kaa2RB7iE17oOdwIzOdhHKE/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/debugging-syntax/syntax_1.png
+image: "/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_1.png"
 description: Learn the most common reasons you will get a SQL error due to syntax.
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 When writing SQL queries there are many places where a small mistype can cause you to receive an error. We will review some of the most common errors due to syntax mistakes. Note: this article will cover how common syntax errors affect Postgresql, if you are using a different type of SQL please check the documentation for these scenarios.
