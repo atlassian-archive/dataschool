@@ -1,19 +1,19 @@
 ---
 section: book
 title: Arranging Your Charts as a Dashboard
-meta_title:
-description: Maximize understanding of a dashboard by arranging data visualizations intelligently.
+meta_title: 
+description: Maximize understanding of a dashboard by arranging data visualizations
+  intelligently.
 number: 80
 authors:
-- author: _people/tim.md
+- _people/tim.md
 reviewers:
-- reviewer: _people/dave.md
-- reviewer: _people/matt.md
-image: /assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/dashboardBreakdown.jpeg
+- _people/dave.md
+- _people/matt.md
+image: "/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/dashboardBreakdown.jpeg"
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1Pa0bVsWjKnISzwNY7REZqlkMQVtJhnMi74QccC7ut1A/edit?usp=sharing
 is_featured: false
-published: true
 
 ---
 Arranging the charts is where the science of a dashboard project starts to cede some of its control to art. There are many things to consider when arranging and sizing charts and selecting fonts and colors. How visualizations are composed in a dashboard can either facilitate or hinder the decision making process.
