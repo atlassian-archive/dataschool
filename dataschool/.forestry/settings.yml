@@ -8,11 +8,6 @@ sections:
   label: Pages
   create: all
 - type: directory
-  path: dataschool/_chapters
-  label: Chapters
-  create: all
-  match: "**/*"
-- type: directory
   path: dataschool/_books
   label: Books
   create: all
