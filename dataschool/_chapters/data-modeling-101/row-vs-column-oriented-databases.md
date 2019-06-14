@@ -3,10 +3,10 @@ section: book
 title: Row vs Column Oriented Databases
 meta_title: ''
 description: ''
-number: "20"
+number: 20
 authors:
-- author: _people/blake.md
-- author: _people/matt.md
+- _people/blake.md
+- _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/17ubZErPoEZEF5qFh4Ro4mZB0BMewbKZ0MyXDb0ur2hI/edit?usp=sharing
 image: ''
