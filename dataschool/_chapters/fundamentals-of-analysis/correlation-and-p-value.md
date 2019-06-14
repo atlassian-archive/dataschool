@@ -2,16 +2,17 @@
 section: book
 title: Correlation and P value
 number: 20
-description: Understand how correlation and P-value are related to each other within data analytics.
+description: Understand how correlation and P-value are related to each other within
+  data analytics.
 authors:
-- author: _people/rohan-joseph.md
+- _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''
 image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-published: true
+
 ---
 The two most commonly used statistical tests for establishing relationship between variables are correlation and p-value. Correlation is a way to test if two variables have any kind of relationship, whereas p-value tells us if the result of an experiment is statistically significant. In this tutorial, we will be taking a look at how they are calculated and how to interpret the numbers obtained.
 
