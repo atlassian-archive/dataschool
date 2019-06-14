@@ -84,3 +84,13 @@ fields:
   description: Toggle on to add borders to all images in this chapter (override with
     class="img-no-border")
   default: false
+- name: writers
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: people
+  label: Writers
