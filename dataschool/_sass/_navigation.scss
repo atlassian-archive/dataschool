@@ -26,7 +26,7 @@
       }
       ul.components.main-nav > li, ul.components li.book-section > ul > li {
         padding: 0.25rem 0.75rem 0.25rem 0.625rem;
-        border-left: 0.125rem solid $background-color;
+        border-right: 0.25rem solid $background-color;
         background: $background-color;
         // &:first-child {
         //   padding-top: 0.5rem;
@@ -54,10 +54,13 @@
           }
           &.book-section {
             a.dropdown-toggle {
-              padding: 0.5rem 0.75rem;
-              background: $gray-300;
-              display: block;
               position: relative;
+              padding: 0.5rem 0.75rem;
+              display: block;
+              font-size: 0.833em;
+              text-transform: uppercase;
+              font-weight: 900;
+              color: $gray-600;
               &::after {
                 float: right;
                 margin-top: 0.6em;
