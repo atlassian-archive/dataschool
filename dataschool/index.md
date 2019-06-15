@@ -8,7 +8,7 @@ description: 'A community driven school to help people create data driven organi
   <div class="container centered">
     <div class="row">
       <div class="col-sm-12 col-md-6 mt-4">
-        <h1 class="mega-title">Welcome to <img src="/assets/images/chartio-data-school-logo.svg" alt="Data School logo"> </h1>
+        <h1 class="mega-title">Welcome to <img class="logo" src="/assets/images/chartio-data-school-logo.svg" alt="Data School logo"> </h1>
         <p>We're a community-driven school of free web books and content written by people who work with data <em>for</em> people who work with data.</p>
         <p>To get started check out <a href="/mission">our mission</a>, see <a href="/people" class="link-6">who's involved</a> or dig into our completely free and growing <a href="/books">content library</a> of web books.</p>
         <a href="/books" class="btn btn-primary mt-3">Browse Our Web Books <i class="fas fa-arrow-right"></i></a>

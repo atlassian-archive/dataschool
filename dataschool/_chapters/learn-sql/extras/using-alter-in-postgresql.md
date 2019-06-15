@@ -1,19 +1,18 @@
 ---
-section: extras
 title: Using ALTER in PostgreSQL
 meta_title: Using ALTER in PostgreSQL
 description: This article outlines the different potential uses of the "ALTER" command
   in PSQL
-number: 
+section: extras
+number:
 authors:
 - author: _people/matthew-layne.md
 reviewers:
 - reviewer: _people/matt.md
 - reviewer: _people/blake.md
-feedback_doc_url: ''
-image: ''
-is_featured: false
+image:
 img_border_on_default: false
+is_featured: false
 published: false
 
 ---
@@ -94,13 +93,13 @@ Databases can also be modified using the ALTER command. There are fewer things t
 
 * **Allow Connections:** Whether the database allows connections to itself. **NOTE:** this will block all connections when true, even connections from localhost. It will need to be set to false before it can be connected to again.
 
-      ALTER DATABASE [database name] 
+      ALTER DATABASE [database name]
       WITH ALLOW_CONNECTIONS [true/false];
 
 
 * **Connection Limit:** Limit the number of simultaneous connections. Set to -1 for unlimited connections.
 
-      ALTER DATABASE [database name] 
+      ALTER DATABASE [database name]
       WITH CONNECTION_LIMIT [number of connections];
 
 
@@ -112,7 +111,7 @@ Databases can also be modified using the ALTER command. There are fewer things t
 
 * **Owner:** Can set the owner of the database. Only the current database owner and [superusers](https://www.postgresql.org/docs/11/app-createuser.html) can change the owner.
 
-      ALTER DATABASE [database name] 
+      ALTER DATABASE [database name]
       OWNER TO [username];
 
 
@@ -132,7 +131,7 @@ Databases can also be modified using the ALTER command. There are fewer things t
 
       ALTER DATABASE [database name]
       RESET ALL;
-  * Example: 
+  * Example:
 
         ALTER TABLE traffic SET enable_indexscan TO OFF;
     * This will disable index scans on the specified database

@@ -19,6 +19,9 @@
     position: relative;
     z-index: 1;
   }
+  h1 .logo {
+    height: 6rem;
+  }
 }
 .book-cover {
   display: flex;
@@ -86,9 +89,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   li {
     display: inline-block;
     padding: 0.5rem;
+    min-height: 13rem;
     h2, h3 {
       font-size: 1em;
     }
@@ -97,7 +102,7 @@
     }
     h3 {
       margin: 0.5rem 0 1rem;
-      color: $gray-500;
+      font-size: 0.833em
     }
     .author-img {
       border-radius: 0.25rem;
@@ -105,11 +110,7 @@
       height: 8rem;
       background-position: center;
       background-size: cover;
-    }
-    &:hover {
-      h3 {
-        text-decoration: underline;
-      }
+      background-color: #fff;
     }
   }
 }
@@ -150,8 +151,7 @@
   flex-direction: column;
 }
 .contributor-headshot {
-  width: 100%;
-  max-width: 12rem;
+  width: 12rem;
   border-radius: 0.25rem;
 }
 @media only screen and (min-width: 30rem) {

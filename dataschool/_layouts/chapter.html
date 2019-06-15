@@ -8,46 +8,47 @@ layout: default
   </header>
   {{ content }}
 </article>
-
-<p class="mt-5 mb-5">
-  Written by:
-  {% for author_path in page.authors %}
-    {% assign a = site.people | where: 'path', author_path.author %}
-    {% assign author = a[0] %}
-    <a href="{{ author.url }}">{{ author.title }}</a>
-    {% if forloop.last != true %},{% endif %}
-  {% endfor %}
-  <br>
-  {% if page.reviewers %}
-    Reviewed by:
-    {% for reviewer_path in page.reviewers %}
-      {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
-      {% assign reviewer = a[0] %}
-      <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
+<div class="chapter-followup">
+  <p class="mt-5 mb-5">
+    Written by:
+    {% for author_path in page.authors %}
+      {% assign a = site.people | where: 'path', author_path.author %}
+      {% assign author = a[0] %}
+      <a href="{{ author.url }}">{{ author.title }}</a>
       {% if forloop.last != true %},{% endif %}
     {% endfor %}
+    <br>
+    {% if page.reviewers %}
+      Reviewed by:
+      {% for reviewer_path in page.reviewers %}
+        {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
+        {% assign reviewer = a[0] %}
+        <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
+        {% if forloop.last != true %},{% endif %}
+      {% endfor %}
+    {% endif %}
+  </p>
+
+  {% if page.feedback_doc_url %}
+    <a class="btn btn-default give-feedback-btn" href="{{ page.feedback_doc_url }} target="_blank"">Give Feedback on our Google Doc</a>
   {% endif %}
-</p>
 
-{% if page.feedback_doc_url %}
-  <a class="btn btn-default give-feedback-btn" href="{{ page.feedback_doc_url }} target="_blank"">Give Feedback on our Google Doc</a>
-{% endif %}
+  {% assign book = site.books | where:'slug', page.book_slug %}
+  {% assign book = book[0] %}
+  {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
+  {% for chapter in bookchapters %}
+    {% assign current_index = forloop.index0 %}
+    {% assign next_index = current_index | plus: 1 %}
+    <!-- logic could be used for side links -->
+    <!-- {% assign prev_index = current_index | minus: 1 %} -->
+    {% if chapter.url == page.url %}
+      <!-- {% if bookchapters[prev_index] %}<a class="btn btn-primary next-chapter-btn" href="{{ bookchapters[prev_index].url }}">Prev – {{ bookchapters[prev_index].title }}</a>{% endif %} -->
+      {% if bookchapters[next_index] %}<a class="btn btn-primary next-chapter-btn" href="{{ bookchapters[next_index].url }}">Next – {{ bookchapters[next_index].title }}</a>{% endif %}
+    {% endif %}
+  {% endfor %}
 
-{% assign book = site.books | where:'slug', page.book_slug %}
-{% assign book = book[0] %}
-{% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
-{% for chapter in bookchapters %}
-  {% assign current_index = forloop.index0 %}
-  {% assign next_index = current_index | plus: 1 %}
-  <!-- logic could be used for side links -->
-  <!-- {% assign prev_index = current_index | minus: 1 %} -->
-  {% if chapter.url == page.url %}
-    <!-- {% if bookchapters[prev_index] %}<a class="btn btn-primary next-chapter-btn" href="{{ bookchapters[prev_index].url }}">Prev – {{ bookchapters[prev_index].title }}</a>{% endif %} -->
-    {% if bookchapters[next_index] %}<a class="btn btn-primary next-chapter-btn" href="{{ bookchapters[next_index].url }}">Next – {{ bookchapters[next_index].title }}</a>{% endif %}
-  {% endif %}
-{% endfor %}
-
-<div class="centered mt-5">
-  <p class="faux-header">Get new data chapters sent right to your Inbox</p>
-  {% include newsletter-form.html %}
+  <div class="centered mt-5">
+    <p class="faux-header">Get new data chapters sent right to your Inbox</p>
+    {% include newsletter-form.html %}
+  </div>
 </div>

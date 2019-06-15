@@ -1,6 +1,8 @@
 ---
-section: extras
 title: How to Start a PostgreSQL Server on Mac OS X
+meta_title:
+description: This article explores starting a PostgreSQL server using both Homebrew and the potgres app.
+section: extras
 number:
 authors:
 - author: _people/matthew-layne.md
@@ -8,12 +10,9 @@ reviewers:
 - reviewer: _people/blake.md
 - reviewer: _people/matt.md
 image:
-description: This article explores starting a PostgreSQL server using both Homebrew and the potgres app.
+img_border_on_default: false
 is_featured: false
-writers:
-  writers:
-  - _people/matthew-layne.md
-
+published: false
 ---
 # **How to Start a PostgreSQL Server on Mac OS X**
 

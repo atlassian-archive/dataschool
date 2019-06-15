@@ -2,13 +2,15 @@
 layout: default
 ---
 {% assign person = page %}
-{% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.slug" | sort: 'last_modified' %}
-{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.slug" | sort: 'last_modified' %}
+{% assign authored_chapters = site.chapters | where_exp:'item', "item.authors.author contains person.path" | sort: 'last_modified' %}
+{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.path" | sort: 'last_modified' %}
+
 <p><a href="/people/">Contributors</a></p>
 <div class="max-width-content contributor-info">
   <div>
     <h1>{{ person.title }}</h1>
-    <p><em>{{ person.job_title }} at {{ person.company }},<br>
+    <p>
+      {% if person.job_title and person.company %}<em>{{ person.job_title }} at {{ person.company }},<br>{% endif %}
       {% if person.is_contributor %}Contributor{% else %}Reviewer{% endif %} at Data School</em>
     </p>
     {{ content }}
