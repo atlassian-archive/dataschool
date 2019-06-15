@@ -16,7 +16,7 @@ img_border_on_default: false
 ---
 The two most commonly used statistical tests for establishing relationship between variables are correlation and p-value. Correlation is a way to test if two variables have any kind of relationship, whereas p-value tells us if the result of an experiment is statistically significant. In this tutorial, we will be taking a look at how they are calculated and how to interpret the numbers obtained.
 
-## **What is correlation?**
+## What is correlation?
 
 Correlation coefficient is used in statistics to measure how strong a relationship is between two variables. There are several types of correlation coefficients (e.g. Pearson, Kendall, Spearman), but the most commonly used is the Pearson’s correlation coefficient. This coefficient is calculated as a number between -1 and 1 with 1 being the strongest possible positive correlation and -1 being the strongest possible negative correlation.
 
@@ -28,7 +28,7 @@ A positive correlation means that as one number increases the second number will
 
 We can observe that with increase in weight, the height also increases – which indicates they are positively correlated. Also, the correlation coefficient in this case is 0.88, which supports our finding. Learn more about correlation and how to implement it in Excel [here](https://dataschoolstag.wpengine.com/finding-correlation-in-data/).
 
-## **What is a p-value?**
+## What is a p-value?
 
 P-value evaluates how well your data rejects the [null hypothesis](http://www.statisticshowto.com/probability-and-statistics/null-hypothesis/), which states that there is no relationship between two compared groups. Successfully rejecting this hypothesis tells you that your results may be statistically significant. In academic research, p-value is defined as **the probability of obtaining results ‘as extreme’ or ‘more extreme’, given that the null hypothesis is true —** essentially, how likely it is that you would receive the results (or more dramatic results) you did assuming that there is no correlation or relationship (e.g. the thing that you’re testing) among the subjects. To understand what this means, let us look at an example.
 
@@ -70,6 +70,6 @@ P-value = P(9 heads and 1 tail) + P(10 heads and 0 tail) + P(9 tails and 1 head)
 
 Now, we need to check whether the p-value is significant or not. This is done by specifying a significance cutoff, known as the [alpha value](http://blog.minitab.com/blog/michelle-paret/alphas-p-values-confidence-intervals-oh-my). Alpha is usually set to 0.05, meaning the probability of achieving the same or more extreme results assuming the null hypothesis is 5%. If the p-value is less than the specified alpha value, then we reject the null hypothesis. Hence, we reject the hypothesis that “**“The coin is fair with equal probability of heads and tails”** and conclude that the coin is biased.
 
-## **Conclusion**
+## Conclusion
 
 Though correlation and p-value provides us with the relationship between variables, care should be taken to interpret them correctly. Correlation tells us whether two variables have any sort of relationship and it does not imply causation. If two variables A and B are highly correlated, there are several possible explanations: (a) A influences B; (b) B influences A; (c) A and B are influenced by one or more additional variables; (d) the relationship observed between A and B was a chance error. Similarly, p-value should not be misused to produce a statistically significant result. If analysis is done by exhaustively searching various combinations of variables for correlation, then it is known as [p-hacking](https://dataschoolstag.wpengine.com/what-is-p-hacking/).

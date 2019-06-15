@@ -7,28 +7,26 @@ layout: default
     <p><em>Last modified: {{ page.last_modified_at | date: '%B %d %Y' }}</em></p>
   </header>
   {{ content }}
-</article>
-<div class="chapter-followup">
-  <p class="mt-5 mb-5">
+  <p class="mt-4 mb-5">
     Written by:
     {% for author_path in page.authors %}
-      {% assign a = site.people | where: 'path', author_path.author %}
+      {% assign a = site.people | where: 'path', author_path %}
       {% assign author = a[0] %}
-      <a href="{{ author.url }}">{{ author.title }}</a>
-      {% if forloop.last != true %},{% endif %}
+      <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
     {% endfor %}
     <br>
     {% if page.reviewers %}
       Reviewed by:
       {% for reviewer_path in page.reviewers %}
-        {% assign a = site.people | where: 'path', reviewer_path.reviewer %}
+        {% assign a = site.people | where: 'path', reviewer_path %}
         {% assign reviewer = a[0] %}
         <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
         {% if forloop.last != true %},{% endif %}
       {% endfor %}
     {% endif %}
   </p>
-
+</article>
+<div class="chapter-followup">
   {% if page.feedback_doc_url %}
     <a class="btn btn-default give-feedback-btn" href="{{ page.feedback_doc_url }} target="_blank"">Give Feedback on our Google Doc</a>
   {% endif %}

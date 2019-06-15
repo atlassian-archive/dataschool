@@ -4,8 +4,8 @@ description: Learn how to set up process to get the most out of your data in you
   organization
 book_slug: data-governance
 authors:
-- author: _people/dave.md
-reviewers: 
+- _people/dave.md
+reviewers:
 cover_image: "/assets/images/book-covers/data-governance.png"
 main_color: "#261974"
 is_featured: false

@@ -34,7 +34,7 @@ body {
 h1, h2, h3, h4, h5, h6, p.faux-header {
   margin: 2rem 0 1rem;
   line-height: 1.15;
-  font-weight: 600;
+  font-weight: 700;
 }
 h4, h5, h6 {
   color: $text-color;
@@ -143,12 +143,10 @@ section.page {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  margin-bottom: 4rem;
 }
 @media only screen and (min-width: 30rem) {
   section.page {
     margin-top: 4rem;
-    margin-bottom: 5rem;
   }
 }
 article, .home-hero {
@@ -156,6 +154,7 @@ article, .home-hero {
 }
 article {
   margin-bottom: 2rem;
+
   p, li {
     font-family: $serif-font-loadout;
     font-weight: 400;

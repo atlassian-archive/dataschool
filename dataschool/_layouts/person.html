@@ -2,13 +2,10 @@
 layout: default
 ---
 {% assign person = page %}
-{% assign authored_chapters = site.chapters | where_exp:'item', "item.authors.author contains person.path" | sort: 'last_modified' %}
-{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.path" | sort: 'last_modified' %}
-
 <p><a href="/people/">Contributors</a></p>
 <div class="max-width-content contributor-info">
   <div>
-    <h1>{{ person.title }}</h1>
+    <h1 class="title">{{ person.title }}</h1>
     <p>
       {% if person.job_title and person.company %}<em>{{ person.job_title }} at {{ person.company }},<br>{% endif %}
       {% if person.is_contributor %}Contributor{% else %}Reviewer{% endif %} at Data School</em>
@@ -19,7 +16,7 @@ layout: default
 </div>
 
 {% if person.twitter or person.linkedin or person.website %}
-  <h3>Social</h3>
+  <h2>Social</h2>
   <ul class="light-pad-list">
     {% if person.website %}<li><em>Website:</em> <a href="{{ person.website }}">{{ person.website }}</a></li>{% endif %}
     {% if person.linkedin %}<li><em>LinkedIn:</em> <a href="{{ person.linkedin }}">{{person.title}}</a></li>{% endif %}
@@ -27,20 +24,41 @@ layout: default
   </ul>
 {% endif %}
 
-<!-- {% if authored_chapters %}
-  <h2>{{ authored_chapters | size }} Contributions</h2>
+{% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.path" | sort: 'last_modified' %}
+{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.path" | sort: 'last_modified' %}
+
+{% if authored_chapters %} <!-- #TODO fix this if statement, doesnt seem to work -->
+  <h2 class="mt-5">Author of {{ authored_chapters | size }} chapters</h2>
   {% for chapter in authored_chapters %}
-    <p>
-      <a href="{{ chapter.url }}">{{ chapter.title }}</a>
-    </p>
+    <div class="row mb-3">
+      <div class="col chapter-info">
+        <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
+        {% assign book = site.books | where:'slug', chapter.book_slug %}
+        {% assign book = book[0] %}
+        <em>From <a href="{{ book.slug }}">{{ book.title }}</a></em>
+        <p>{{ chapter.description }}</p>
+      </div>
+      <!-- <div class="col-sm-4">
+        <a href="{{ chapter.url }}" class="chapter-thumbnail-img" style="background-image: url('{{chapter.image}}');"></a>
+      </div> -->
+    </div>
   {% endfor %}
 {% endif %}
 
-{% if reviewed_chapters %}
-  <h2>{{ reviewed_chapters | size }} Reviews</h2>
+ {% if reviewed_chapters %} <!-- #TODO fix this if statement, doesnt seem to work -->
+  <h2 class="mt-5">Reviewer of {{ reviewed_chapters | size }} chapters</h2>
   {% for chapter in reviewed_chapters %}
-    <p>
-      <a href="{{ chapter.url }}">{{ chapter.title }}</a>
-    </p>
+    <div class="row mb-3">
+      <div class="col chapter-info">
+        <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
+        {% assign book = site.books | where:'slug', chapter.book_slug %}
+        {% assign book = book[0] %}
+        <em>From <a href="{{ book.slug }}">{{ book.title }}</a></em>
+        <p>{{ chapter.description }}</p>
+      </div>
+      <!-- <div class="col-sm-4">
+        <a href="{{ chapter.url }}" class="chapter-thumbnail-img" style="background-image: url('{{chapter.image}}');"></a>
+      </div> -->
+    </div>
   {% endfor %}
-{% endif %} -->
+{% endif %}
