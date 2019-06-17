@@ -1,16 +1,18 @@
 ---
 title: Cross Join - Animated
-meta_title:
+meta_title: 
 description: Visualize how SQL is joining two tables using a Cross Join.
 section: book
 number: 90
 authors:
 - _people/matt.md
-reviewers: 
+reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1v19iRnc-juTr-4N11iw-vm3GyD_izU-QU3qJUV71G9Q/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/crossJoin/crossJoin_1.gif"
 is_featured: false
 img_border_on_default: false
+writers:
+  writers: []
 
 ---
 This is the fifth most common type of JOIN in SQL. Cross join does not look for matches between any values in the two data sets. Instead for each row in first table every row of second table will be attached to it and added to the final table one by one.
