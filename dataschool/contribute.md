@@ -8,7 +8,7 @@ description: Provide content on data analytics, data visualization, data modelin
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
 
-Welcome to the Data School. We are building a thriving community of contributors, reviewers and readers. Help contribute to the site!
+Welcome to the Data School.  We are building a thriving community of contributors, reviewers and readers. Help contribute to the site!
 
 While at The Data School let us know if you find any of the following:
 
