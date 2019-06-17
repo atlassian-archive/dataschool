@@ -1,6 +1,6 @@
 ---
 title: Matthew Layne
-meta_title: ''
+meta_title: 
 image: /assets/images/people/matthew.png
 is_contributor: true
 job_title: Marketing Intern

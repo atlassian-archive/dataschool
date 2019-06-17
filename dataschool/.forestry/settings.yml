@@ -12,16 +12,22 @@ sections:
   label: Chapters
   create: all
   match: "**/*"
+  templates:
+  - chapter-template
 - type: directory
   path: dataschool/_books
   label: Books
   create: all
   match: "**/*"
+  templates:
+  - book-template
 - type: directory
   path: dataschool/_people
   label: People
   create: all
   match: "**/*"
+  templates:
+  - people-template
 upload_dir: dataschool/assets/images
 public_path: "/assets/images"
 front_matter_path: ''

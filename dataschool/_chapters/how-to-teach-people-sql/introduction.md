@@ -1,21 +1,20 @@
 ---
 title: Introduction
 meta_title: Introduction to How to Teach People SQL
-description:
+description: Introduction about why teaching SQL requires understanding of the audience
+  who is less adept at dealing with abstract ideas
 section: book
 number: 10
 authors:
-- author: _people/matt.md
+- _people/matt.md
 reviewers:
-- reviewer: _people/dave.md
+- _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1ojOfxqpWfUJTrfYqGxyZO9JJuM9H2L9J8onArYucnOI/edit?usp=sharing
-image:
-description: Introduction about why teaching SQL requires understanding of the audience who is less adept at dealing with abstract ideas
+image: 
 is_featured: false
 img_border_on_default: false
-published: true
----
 
+---
 > “Those who know, do. Those that understand, teach.” —Aristotle
 
 There are hundreds of SQL tutorials online to teach people SQL syntax. This book is not about syntax. This book is about building mental models around what SQL is doing and understanding why others struggle to understand so that it is easier to help them learn.

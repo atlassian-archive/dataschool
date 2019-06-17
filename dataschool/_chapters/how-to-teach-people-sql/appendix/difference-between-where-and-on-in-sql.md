@@ -3,14 +3,14 @@ title: Difference between WHERE and ON in SQL
 section: appendix
 number: 200
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1jWCNjEHDpkTAuR1UaGAmKBmw9bkD7TxOQe-2GvAZ5jA/edit?usp=sharing
-image:
-description: Understand how filtering and joining can be done in both the ON and WHERE clauses in SQL
+image: 
+description: Understand how filtering and joining can be done in both the ON and WHERE
+  clauses in SQL
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 Q: Is there a difference between the WHERE and ON clause?

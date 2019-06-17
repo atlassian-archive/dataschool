@@ -9,10 +9,10 @@ categories:
 - data
 - test
 authors:
-- author: _people/dave.md
+- _people/dave.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 is_featured: false
-
+published: false
 ---
 TODO

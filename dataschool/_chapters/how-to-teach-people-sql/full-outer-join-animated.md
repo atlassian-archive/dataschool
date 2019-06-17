@@ -1,18 +1,16 @@
 ---
 title: Full Outer Join - Animated
-meta_title:
-description:
+meta_title: 
+description: Visualize how SQL is joining two tables using a Full Outer JOIN
 section: book
 number: 70
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/1xA160gXkrjyrlrygTqNAVnUYaEA3-oMFPTmxgvyuZxY/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif
-description: Visualize how SQL is joining two tables using a Full Outer JOIN
+image: "/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif"
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 This is the third most common type of JOIN in SQL. FULL OUTER refers to the first table, or the table you will be joining to. So in this case it would be the facebook table since it comes before linkedin table in the query.

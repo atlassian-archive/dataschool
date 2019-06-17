@@ -5,15 +5,14 @@ description: Learn what a query plan is and how it effects your SQL queries
 section: appendix
 number: 240
 authors:
-- author: _people/matthew-layne.md
+- _people/matthew-layne.md
 reviewers:
-- reviewer: _people/blake.md
-- reviewer: _people/matt.md
+- _people/blake.md
+- _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1UcOvqq_7wwxeztReW9WIBY8cJpvCapQtqYfe54JzDmc/edit?usp=sharing
-image:
+image: 
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 A Query plan is a list of instructions that the database needs to follow in order to execute a query on the data.

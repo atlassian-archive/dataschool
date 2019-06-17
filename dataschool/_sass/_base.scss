@@ -80,6 +80,9 @@ pre {
 code {
   padding: 0.125em;
 }
+.CodeMirror-scroll {
+  width: 100%;
+}
 kbd {
   padding: 0.125em 0.25em;
   border-radius: 0.25em;
@@ -98,8 +101,6 @@ table {
   display: block;
   overflow: auto;
   font-size: 0.8em;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   thead {
     width: 100%;
   }
@@ -142,12 +143,10 @@ section.page {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  margin-bottom: 4rem;
 }
 @media only screen and (min-width: 30rem) {
   section.page {
     margin-top: 4rem;
-    margin-bottom: 5rem;
   }
 }
 article, .home-hero {
@@ -155,6 +154,7 @@ article, .home-hero {
 }
 article {
   margin-bottom: 2rem;
+
   p, li {
     font-family: $serif-font-loadout;
     font-weight: 400;

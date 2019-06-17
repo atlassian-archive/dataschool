@@ -1,17 +1,17 @@
 ---
 section: book
 title: Dashboard Prototyping and Feedback
-meta_title:
+meta_title: 
 description: Learn techniques to prototype your dashboard and iterate on it
 number: 90
 authors:
-- author: _people/matt.md
-reviewers:
-image: /assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png
+- _people/matt.md
+reviewers: 
+image: "/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png"
 is_featured: false
-published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1CqwiH9gPEiU92VQ4YYzTo9-bKy3sL-ynm0P-dY1ssRc/edit?usp=sharing
+
 ---
 ![Dashboard prototyping feedback loop](/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png)
 

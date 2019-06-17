@@ -2,18 +2,16 @@
 section: book
 title: Types of Data Analysis
 number: 10
-description: There are different types of analysis. Each is suited to different roles within a company, analyst, executive, data scientists, etc.
+description: There are different types of analysis. Each is suited to different roles
+  within a company, analyst, executive, data scientists, etc.
 authors:
-- author: _people/patrick-gibson.md
+- _people/patrick-gibson.md
 reviewers: []
 feedback_doc_url: ''
 image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-writers:
-  writers: []
-
 ---
 There are four types of data analysis that are in use across all industries. While we separate these into categories, they are all linked together and build upon each other. As you begin moving from the simplest type of analytics forward, the degree of difficulty and resources required increases. At the same time, the level of added insight and value also increases.
 

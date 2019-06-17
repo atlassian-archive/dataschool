@@ -1,16 +1,19 @@
 ---
-title: "WHERE"
+title: WHERE
 short: WHERE
 meta_title: ''
-description: "Learn how to use the SQL WHERE command in PostgreSQL. In this interactive SQL tutorial, learn the syntax of the WHERE command and best practices on using it for data analysis and exploration against your PostgreSQL database."
+description: Learn how to use the SQL WHERE command in PostgreSQL. In this interactive
+  SQL tutorial, learn the syntax of the WHERE command and best practices on using
+  it for data analysis and exploration against your PostgreSQL database.
 number: 60
 section: mid-level
 authors:
-- author: _people/dave.md
+- _people/dave.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 image: 
 is_featured: false
+
 ---
 [LIMITing queries](../limit/) is one way to filter down result sets, but we can get a lot more specific with the WHERE clause.  The WHERE command is followed by the conditions you'd like to filter by.
 

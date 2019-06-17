@@ -1,17 +1,19 @@
 ---
-title: "SELECT"
+title: SELECT
 short: SELECT
 meta_title: ''
-description: "Learn the SELECT SQL statement with your PostgreSQL database in this interactive SQL data tutorial. The SELECT statement is a basic SQL command that easily allows you to interact with the data in your PostgreSQL database."
+description: Learn the SELECT SQL statement with your PostgreSQL database in this
+  interactive SQL data tutorial. The SELECT statement is a basic SQL command that
+  easily allows you to interact with the data in your PostgreSQL database.
 number: 20
 section: basic
-image: http://img.chartio.com/2M1Q3c3O0m0h/Image%202018-01-26%20at%201.58.15%20PM.png
-authors:
-- author: _people/dave.md
-reviewers:
-- reviewer: _people/matt.md
 image: 
+authors:
+- _people/dave.md
+reviewers:
+- _people/matt.md
 is_featured: false
+
 ---
 Alright, let's get down to some SQL!!  The first command we're going to learn is SELECT as it's the first instruction you need for any SQL statement that's fetching data. There are other starting commands like INSERT and CREATE, but most interactions with databases are SELECTing data.
 

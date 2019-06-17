@@ -2,16 +2,17 @@
 section: book
 title: Correlation and P value
 number: 20
-description: Understand how correlation and P-value are related to each other within data analytics.
+description: Understand how correlation and P-value are related to each other within
+  data analytics.
 authors:
-- author: _people/rohan-joseph.md
+- _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''
 image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
-published: true
+
 ---
 The two most commonly used statistical tests for establishing relationship between variables are correlation and p-value. Correlation is a way to test if two variables have any kind of relationship, whereas p-value tells us if the result of an experiment is statistically significant. In this tutorial, we will be taking a look at how they are calculated and how to interpret the numbers obtained.
 
@@ -19,11 +20,11 @@ The two most commonly used statistical tests for establishing relationship betwe
 
 Correlation coefficient is used in statistics to measure how strong a relationship is between two variables. There are several types of correlation coefficients (e.g. Pearson, Kendall, Spearman), but the most commonly used is the Pearson’s correlation coefficient. This coefficient is calculated as a number between -1 and 1 with 1 being the strongest possible positive correlation and -1 being the strongest possible negative correlation.
 
-![Correlation Bounds](assets/images/fundamentals-of-analysis/correlation_p_value/correlations1.jpeg)
+![Correlation Bounds](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations1.jpeg)
 
 A positive correlation means that as one number increases the second number will also increase. A negative correlation means that as one number increases the second number decreases. However, correlation does not always imply causation — correlation does not tell us whether change in one number is directly caused by the other number, only that they typically move together. Learn more about the Pearson correlation formula, and how to implement it in SQL [here](https://chartio.com/learn/postgresql/correlation-coefficient-pearson/?__hstc=113363352.37e1dac817bf0dbc7d236083a09955aa.1558032271531.1559924569268.1559937170027.53&__hssc=113363352.5.1559937170027&__hsfp=1517700082). To understand how correlation works, let’s look at a chart of height vs weight.
 
-![Height and Weight Correlation](assets/images/fundamentals-of-analysis/correlation_p_value/correlations2.jpeg)
+![Height and Weight Correlation](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations2.jpeg)
 
 We can observe that with increase in weight, the height also increases – which indicates they are positively correlated. Also, the correlation coefficient in this case is 0.88, which supports our finding. Learn more about correlation and how to implement it in Excel [here](https://dataschoolstag.wpengine.com/finding-correlation-in-data/).
 
@@ -51,11 +52,11 @@ P(5 heads and 5 tails) = 10C5 * (½)5 * (½)5 = 0.24609375
 
 Similarly, let’s generate the probabilities of all other possible combinations of heads and tails:
 
-![](assets/images/fundamentals-of-analysis/correlation_p_value/correlations3.png)
+![](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations3.png)
 
 Let’s plot the probabilities to understand the intuition behind the above calculation:
 
-![Probability Chart](assets/images/fundamentals-of-analysis/correlation_p_value/correlations4.jpeg)
+![Probability Chart](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations4.jpeg)
 
 We can observe from the chart that the probability of getting 5 heads is the highest, and the probability of getting 0 heads or 0 tails is the lowest. Now, let’s assume we get the output of this experiment as **“9 heads and 1 tail”**.
 

@@ -1,18 +1,16 @@
 ---
 section: book
 title: Union - Animated
-meta_title:
-section: book
+meta_title: 
 number: 80
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/12dp24i8H3q4v_IbGIbJKF-yZirvhtHmEQ6AvC9K91gw/edit?usp=sharing
-image:
+image: 
 description: Visualize how SQL is joining two tables using a Union All
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 This is the fourth most common type of JOIN in SQL. Union does not attach the data from two tables to a single row. Union stacks two data sets on top of each other into a single table.

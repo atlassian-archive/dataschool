@@ -12,7 +12,9 @@ description: 'Our community is made up of experienced data professionals and tho
         <!-- <img src="{{ person.image }}"> -->
         <div class="author-img hover-img" style="background-image: url('{{ person.image }}');"></div>
         <h2>{{ person.title }}</h2>
-        <h3>{{ person.job_title }}, {{ person.company }}</h3>
+        {% if person.job_title and person.company %}
+          <h3>{{ person.job_title }}, {{ person.company }}</h3>
+        {% endif %}
       </a>
     </li>
   {% endfor %}

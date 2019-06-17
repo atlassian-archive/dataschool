@@ -1,17 +1,17 @@
 ---
 title: Dashboard Design Process
-meta_title:
+meta_title: 
 description: Overview of all the steps in a dashboard design process
 section: book
 number: 40
 authors:
-- author: _people/matt.md
-reviewers:
-image: /assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg
+- _people/matt.md
+reviewers: 
+image: "/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg"
 is_featured: false
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1Hr58hfvmlgidqNYG8E-vwTid2lQwbXi8621lsktysH0/edit?usp=sharing
-published: true
+
 ---
 The dashboard design process is very similar to any design process however the output is a dashboard… obviously.
 

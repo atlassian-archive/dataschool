@@ -1,8 +1,15 @@
 ---
 title: PostgreSQL Complete Operator List
-description: ''
+meta_title:
+description:
+section: extras
+number:
+authors:
+reviewers:
+image:
+img_border_on_default: false
+is_featured: false
 published: false
-
 ---
 once done link from:
  - operators.md: [full list of {{ page.database }} operators](../../complete-operator-list.md)

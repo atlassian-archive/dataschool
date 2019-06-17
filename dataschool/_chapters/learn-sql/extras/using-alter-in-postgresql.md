@@ -1,20 +1,19 @@
 ---
-section: extras
 title: Using ALTER in PostgreSQL
 meta_title: Using ALTER in PostgreSQL
 description: This article outlines the different potential uses of the "ALTER" command
   in PSQL
+section: extras
 number:
 authors:
 - author: _people/matthew-layne.md
 reviewers:
 - reviewer: _people/matt.md
 - reviewer: _people/blake.md
-feedback_doc_url: 'https://dataschool.com/learn/alter-in-postgresql'
-image: ''
-is_featured: false
+image:
 img_border_on_default: false
-published: true
+is_featured: false
+published: false
 
 ---
 In SQL, tables, databases, schemas, groups, indexes, servers, and more can be modified using the **_ALTER_** command. This command enables the user to modify a specific aspect of the table, database, group, etc. while leaving the rest of the data untouched.

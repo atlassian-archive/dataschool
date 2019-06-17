@@ -2,13 +2,14 @@
 section: book
 title: Integrity
 meta_title: Integrity
-description: Data profiling, standardization, enrichment, and constant monitoring is required.
+description: Data profiling, standardization, enrichment, and constant monitoring
+  is required.
 number: 40
 authors:
-- author: _people/rohan-joseph.md
-reviewers:
-feedback_doc_url:
-image: /assets/images/data-governance/integrity/integrity_1.png
+- _people/rohan-joseph.md
+reviewers: 
+feedback_doc_url: 
+image: "/assets/images/data-governance/integrity/integrity_1.png"
 is_featured: false
 img_border_on_default: false
 
