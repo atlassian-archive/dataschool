@@ -1,17 +1,19 @@
 ---
 title: How to Find Outliers with SQL
 meta_title:
+description: In depth post about using SQL to detect outliers using simple techniques
+  and using inter quartile range
 section: appendix
 number: 200
 authors:
-- author: _people/rebecca-barnes.md
+- _people/rebecca-barnes.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 feedback_doc_url: ''
 image: ''
 is_featured: false
 img_border_on_default: false
-published: true
+
 ---
 Use ORDER BY
 

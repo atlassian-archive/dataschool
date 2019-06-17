@@ -1,19 +1,19 @@
 ---
 section: book
 title: Sharing the Dashboard – Distribution Strategies
-meta_title:
-description: Learn the best practices and common pitfalls of sharing out your dashboard to a wide audience.
+meta_title: 
+description: Learn the best practices and common pitfalls of sharing out your dashboard
+  to a wide audience.
 number: 120
 authors:
-- author: _people/tim.md
+- _people/tim.md
 reviewers:
-- reviewer: _people/matt.md
-- reviewer: _people/dave.md
+- _people/matt.md
+- _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1Kf3Fb6SbOcGe_3HDfxheTFj07v20480hpEINZQ9RkUg/edit?usp=sharing
-image: /assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg
+image: "/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg"
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
 ![Share the dashboard](/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg)
@@ -73,8 +73,7 @@ Once we add a key, the range of values becomes clear and the map is more useful 
 
 ![Map with key](/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/map2.png)
 
-###   
-Add Definitions
+### Add Definitions
 
 While some metrics are universal such as Total Revenue, some metrics such as MQL(Marketing Qualified Lead), DAU (Daily Active Users), and others are calculated very differently from company to company. The differences are typically due to excluding some groups from being factored into the metric. In such instances, providing notes in the dashboard or easily accessible from the dashboard is critical to interpreting the information accurately.
 

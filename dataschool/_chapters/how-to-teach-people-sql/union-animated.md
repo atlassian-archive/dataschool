@@ -1,22 +1,18 @@
 ---
 section: book
 title: Union - Animated
-meta_title:
-section: book
+meta_title: 
 number: 80
 authors:
-- author: _people/matt.md
-reviewers:
+- _people/matt.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/12dp24i8H3q4v_IbGIbJKF-yZirvhtHmEQ6AvC9K91gw/edit?usp=sharing
-image:
+image: 
 description: Visualize how SQL is joining two tables using a Union All
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
-Union All
-
 This is the fourth most common type of JOIN in SQL. Union does not attach the data from two tables to a single row. Union stacks two data sets on top of each other into a single table.
 
 ```sql
@@ -75,22 +71,9 @@ FROM linkedin
 
 Why use a UNION vs a LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let’s think about the different questions they are asking.
 
-INNER join
 
-* How many friends and connections do my friends who are on both on Facebook and LinkedIn have?
-
-LEFT join
-
-* How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
-
-RIGHT join
-
-* How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
-
-FULL OUTER join
-
-* How many friends and connections do my Facebook friends or LinkedIn connections have?
-
-UNION
-
-* How many friends do my Facebook friends have and how many connections do my LinkedIn connections have?
+* **INNER join:** How many friends and connections do my friends who are on both on Facebook and LinkedIn have?
+* **LEFT join:** How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
+* **RIGHT join:** How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
+* **FULL OUTER join:** How many friends and connections do my Facebook friends or LinkedIn connections have?
+* **UNION:** How many friends do my Facebook friends have and how many connections do my LinkedIn connections have?

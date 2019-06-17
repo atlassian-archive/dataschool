@@ -1,6 +1,6 @@
 ---
 title: Dave Fowler  # aka name - annoying but we have to use title for name here
-meta_title: ''
+meta_title: 
 image: /assets/images/people/dave.jpg
 is_contributor: true
 job_title: CEO

@@ -1,6 +1,6 @@
 ---
 title: Matt David # aka name - annoying but we have to use title for name here
-meta_title: ''
+meta_title: 
 image: /assets/images/people/matt.jpg
 is_contributor: true
 job_title: Editor of the Data School

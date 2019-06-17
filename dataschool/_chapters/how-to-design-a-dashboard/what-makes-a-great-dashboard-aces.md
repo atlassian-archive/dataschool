@@ -1,20 +1,21 @@
 ---
 title: What Makes a Great Dashboard (ACES)
-meta_title:
-description: Learn the best practices behind dashboard design to support decision making
+meta_title: 
+description: Learn the best practices behind dashboard design to support decision
+  making
 section: book
 number: 30
 authors:
-- author: _people/tim.md
-- author: _people/matt.md
+- _people/tim.md
+- _people/matt.md
 reviewers:
-- reviewer: _people/dave.md
-- reviewer: _people/matt.md
-image: /assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cab72d78a07165da8e775e9_Screen Shot 2019-04-08 at 8.59.39 AM.png
+- _people/dave.md
+image: "/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cab72d78a07165da8e775e9_Screen
+  Shot 2019-04-08 at 8.59.39 AM.png"
 is_featured: false
-published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/173T4Q9yB9arBmAFfLcIRqTj_KFGKFOMEkKGMqSlAtgo/edit?usp=sharing
+
 ---
 An optimal dashboard is Accurate, Clear, Empowering, and Succinct. These key tenets can be remembered with the acronym ACES.
 
@@ -121,11 +122,9 @@ This differentiation is clear but some of the colors are very far apart on the c
 ![](/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cd377be84b35c49d911af94_chart5948177.png)
 ✅
 
-These colors show the difference between the categories without overweighting one of the categories.
+These colors show the difference between the categories without overweighting one of the categories. Most dashboarding tools will default you to a color scheme that delineates categories clearly. If for some reason they do not, then customize your color selection so that evaluations of the data can be made at a glance.
 
-The Data Color Picker tool is a great resource for picking evenly spaced out colors for any visualization: [[https://learnui.design/tools/data-color-picker.html](https://learnui.design/tools/data-color-picker.html "https://learnui.design/tools/data-color-picker.html")\]([https://learnui.design/tools/data-color-picker.html](https://learnui.design/tools/data-color-picker.html "https://learnui.design/tools/data-color-picker.html"))
-
-Most dashboarding tools will default you to a color scheme that delineates categories clearly. If for some reason they do not, then customize your color selection so that evaluations of the data can be made at a glance.
+[The Data Color Picker tool](https://learnui.design/tools/data-color-picker.html) is a great resource for picking evenly spaced out colors for any visualization.
 
 ### Context
 

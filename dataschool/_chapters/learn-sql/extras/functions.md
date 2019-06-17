@@ -1,11 +1,19 @@
 ---
 title: PostgreSQL Functions
-description: ''
-
+meta_title:
+description:
+section: extras
+number:
+authors:
+reviewers:
+image:
+img_border_on_default: false
+is_featured: false
+published: false
 ---
 Once complete link to from
  - functions: full list of functions
- 
+
 reference:
 https://www.postgresql.org/docs/9.0/static/functions-math.html
 

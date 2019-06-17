@@ -1,5 +1,6 @@
 ---
 title: FROM
+short: FROM
 meta_title: ''
 description: This interactive SQL tutorial will explain the FROM command with syntax
   and use cases on how to interact with your data in the PostgreSQL database. Learn
@@ -7,12 +8,12 @@ description: This interactive SQL tutorial will explain the FROM command with sy
 number: 30
 section: basic
 authors:
-- author: _people/dave.md
+- _people/dave.md
 reviewers:
-- reviewer: _people/matt.md
+- _people/matt.md
 is_featured: false
-image:
-published: true
+image: 
+
 ---
 So now you know how to SELECT data but not yet how to choose where to get that data FROM.  Let’s get into the real stuff and SELECT data FROM a specific table.  
 

@@ -1,19 +1,20 @@
 ---
 section: book
 title: Find the Best Visualizations for Your Metrics
-meta_title:
-description: Decide what chart works best for your visualization based on if you want to show composition, relationship, distribution or comparison.
+meta_title: 
+description: Decide what chart works best for your visualization based on if you want
+  to show composition, relationship, distribution or comparison.
 number: 70
 authors:
-- author: _people/tim.md
+- _people/tim.md
 reviewers:
-- reviewer: _people/matt.md
-- reviewer: _people/dave.md
-image: /assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png
+- _people/matt.md
+- _people/dave.md
+image: "/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png"
 is_featured: false
-published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1z2HnZTxsdPY89M5ElREXoGSIcQMrPzwdYVcaAbFz9eQ/edit?usp=sharing
+
 ---
 Selecting the best chart for your metrics is not always a straightforward process. Certain visualizations do not represent some datasets well, and certain visualizations can not represent some datasets at all. Sometimes you just need a table, single value, or just show some text. Knowing the difference will help you design the most useful dashboards.
 
@@ -21,11 +22,11 @@ Selecting the best chart for your metrics is not always a straightforward proces
 
 Graphs help people recognize patterns faster than looking through a table with numbers in it. For example, take a look at the table below..
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleTable.png" /></div>
+![Example data table](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleTable.png)
 
 Now take a look at this chart...
 
-![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png)
+![Example chart made with data table](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png)
 
 Data visualization is a general term that describes any effort to help people understand the significance of data by placing it in a visual context. Patterns, trends and correlations that might go undetected in text-based data can be exposed and recognized easier with data visualization software.
 
@@ -88,16 +89,15 @@ Using the Flow Chart we can go through the decision making process for each of t
 
 There are multiple ways we need to aggregate operational cost. We need to calculate the total and we need to calculate the total grouped by department and month. For the total a single value chart is appropriate. For the by department by month aggregation we should use a line chart
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationCost.png" /></div>
-<p />
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationChart.png" /></div>
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationCost.png)
 
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/operationChart.png)
 
 ### Revenue
 
 We only need to aggregate the total which produces one value. If no comment was provided by the Point Person about wanting to see the total revenue compared to a previous time or compared to a goal the Single Value Chart is the best option. (reword sentence)
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/revenueCost.png" /></div>
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/revenueCost.png)
 
 ### Subscriptions
 
@@ -117,7 +117,7 @@ This is also why many people recommend caution using pie charts or area charts s
 
 People are also not effective at comparing 3D volume, all of these shapes have the same volume(made up of 4 cubes of the same size).
 
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/3dShapes.png" /></div>
+![](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/3dShapes.png)
 
 In addition it typically requires much more space to convey 3D information than showing it in 2D. Stick with simple 2D visualizations.
 

@@ -1,7 +1,15 @@
 ---
 title: AND OR Boolean Logic
-description: ''
-
+meta_title:
+description:
+section: extras
+number:
+authors:
+reviewers:
+image:
+img_border_on_default: false
+is_featured: false
+published: false
 ---
 Once complete link to from;
   - where.md  [AND is essentially a logic multiplication](and-or-boolean-logic)

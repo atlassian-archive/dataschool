@@ -1,21 +1,22 @@
 ---
 section: book
 title: Finding the Data That Builds Metrics
-meta_title:
+meta_title: 
 number: 100
 authors:
-- author: _people/matt.md
+- _people/matt.md
 reviewers:
-- reviewer: _people/dave.md
-- reviewer: _people/tim.md
-image: /assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png
-description: Learn to collaborate with your data team to discover what data can be used within a dashboard.
+- _people/dave.md
+- _people/tim.md
+image: "/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png"
+description: Learn to collaborate with your data team to discover what data can be
+  used within a dashboard.
 is_featured: false
-published: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1AjcnERWqKWWREjniCZ-WZwbBQ_IT4n2FcMAFWyO4iy0/edit?usp=sharing
+
 ---
-<div style="text-align:center"><img src="/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png" /></div>
+![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png)
 
 From the previous chapters most of the ambiguity of what is going on the dashboard should have been addressed:
 
@@ -77,36 +78,35 @@ We also need to specify the fields within the tables that will be used to make c
 
 Well you have data but it is messy. It may be obvious such as missing values. It may be mysterious, such as a value you have is different than what a user of your application is seeing. Let’s explore what to do about different messy data problems.
 
-### Missing Values
+### Missing values
 
 On any column that you will be using in a metric calculation you should check for Nulls and blank records. Here is an example query to get the Total number of nulls and nulls as a percent of total records.
 
+```sql
 SELECT COUNT(*)
-
 FROM table
-
 WHERE field is null
 ```
 
 To check for blank values we can use:
+
 ```sql
 SELECT COUNT(*)
-
 FROM table
-
 WHERE field = ‘’ or field = ‘ ’
+```
 
 You need to evaluate how to treat missing values.
 
-* Ignore - leave the values as they are
-  * This is the most common approach to dealing with missing data, you note the amount of missing values that exist and move on.
-  * If there are high amounts of missing data in a field it is not recommended to use it in a calculation since it may no longer be representative of that field.
-* Delete - remove any records with missing data
-  * Deletion is only recommended if the records are a very small minority of the data set so it does not skew the data.
-  * One legitimate reason for removing a record due to a missing value is if it has missing values in multiple fields.
-* Impute - replace the missing value with a value
-  * If the data is relatively normally distributed replacing the value with the average or median can be done if there are only a few records missing the value.
-  * In some cases it is clear that leaving a field blank might indicate that the answer is 0, in these cases it is appropriate to impute with a 0
+* **Ignore:** leave the values as they are
+    * This is the most common approach to dealing with missing data, you note the amount of missing values that exist and move on.
+    * If there are high amounts of missing data in a field it is not recommended to use it in a calculation since it may no longer be representative of that field.
+* **Delete:** remove any records with missing data
+    * Deletion is only recommended if the records are a very small minority of the data set so it does not skew the data.
+    * One legitimate reason for removing a record due to a missing value is if it has missing values in multiple fields.
+* **Impute:** replace the missing value with a value
+    * If the data is relatively normally distributed replacing the value with the average or median can be done if there are only a few records missing the value.
+    * In some cases it is clear that leaving a field blank might indicate that the answer is 0, in these cases it is appropriate to impute with a 0
 
 Regardless of which option you choose be sure to have the decision documented so others can reproduce the calculation and understand if they should take the data they are seeing to be 100% accurate or not.
 
@@ -114,32 +114,30 @@ Regardless of which option you choose be sure to have the decision documented so
 
 On any column that you will be using in a metric calculation you should also check for bizarre values. The Data School recommends doing a quick check on the highest and lowest values of any of the fields that will be used. You can do this using the ORDER BY clause.
 
+```sql
 SELECT *
-
 FROM table
-
 ORDER BY field DESC
 ```
 
 ```sql
 SELECT *
-
 FROM table
-
 ORDER BY field ASC
+```
 
 This will quickly surface values that are way off if they are in the field.
 
 In text fields this is more difficult to detect, however there are some tricks here as well. They are more use case oriented tips.
 
 * Phone Number
-  * Common fake numbers 123-456-7890, 000-000-0000, 867-5309, and 999-999-9999
-* Name:
-  * Common fake names: John Doe, Jane Doe,
-  * Repetitive letters such as ‘aa’,’bb’
+    * Common fake numbers 123-456-7890, 000-000-0000, 867-5309, and 999-999-9999
+* Name
+    * Common fake names: John Doe, Jane Doe,
+    * Repetitive letters such as ‘aa’,’bb’
 * Birthday
-  * Too old: pre 1919
-  * Too young: 2014 and above
+    * Too old: pre 1919
+    * Too young: 2014 and above
 
 ### Potentially Wrong Values
 
@@ -155,65 +153,35 @@ The interquartile range is the difference between the upper quartile (Q3) and th
 
 Here is an example query applying this formula to find outliers using IQR.
 
-WITH orderedList as
-
-(SELECT ROW_NUMBER() OVER(ORDER BY amount)as num, quantity
-
-FROM table)
-
-SELECT num, quantity
-
-FROM orderedList
-
-WHERE
-
-num > FLOOR(
-
-(SELECT COUNT(*) as c
-
-FROM table)*0.75 +
-
-(FLOOR(
-
-(SELECT COUNT(*) as c
-
-FROM table)*0.75)-
-
-FLOOR(
-
-(SELECT COUNT(*) as c
-
-FROM table)*0.25)
-
-))
-
-or
-
-num < FLOOR(
-
-(SELECT COUNT(*) as c
-
-FROM table)*0.25 -
-
-(FLOOR(
-
-(SELECT COUNT(*) as c
-
-FROM table)*0.75)-
-
-FLOOR(
-
-(SELECT COUNT(*) as c
-
-FROM table)*0.25)
-
-))
+```sql
+WITH orderedlist
+     AS (SELECT Row_number()
+                  OVER(
+                    ORDER BY amount)AS num,
+                quantity
+         FROM   table)
+SELECT num,
+       quantity
+FROM   orderedlist
+WHERE  num > Floor((SELECT Count(*) AS c
+                    FROM   table) * 0.75 + ( Floor((SELECT Count(*) AS c
+                                                    FROM   table) * 0.75)
+                                             - Floor(
+                                             (SELECT Count(*) AS c
+                                              FROM   table) * 0.25) ))
+        OR num < Floor((SELECT Count(*) AS c
+                        FROM   table) * 0.25 - ( Floor((SELECT Count(*) AS c
+                                                        FROM   table) * 0.75)
+                                                 - Floor(
+                                                 (SELECT Count(*) AS c
+                                                  FROM   table) * 0.25) ))
+```
 
 Again in text fields this is more difficult to detect. Watch out for the following:
 
 * Incorrect Grouping
-  * Misspellings of the same thing such as ‘Hamburger’, ‘Hamburdr’, ‘Hanburger’
-  * Various capitalization ‘Hamburger’, ‘HamBurger’, ‘hamburger’’
+* Misspellings of the same thing such as ‘Hamburger’, ‘Hamburdr’, ‘Hanburger’
+* Various capitalization ‘Hamburger’, ‘HamBurger’, ‘hamburger’’
 
 SQL will treat each of these variations as unique, you can find these by grouping by the column the text values are in and reviewing any groups with very few records in them. This is potentially a sign that they should have been incorporated into a larger group but weren’t due to misspellings and capitalization inconsistencies.
 
@@ -221,11 +189,9 @@ SQL will treat each of these variations as unique, you can find these by groupin
 
 Sometimes you do not have the data in your database to calculate a metric. This can be seen as a huge roadblock but there are a few ways forward. We need to first ask ourselves the following to know what we can do.
 
-Do we care about historical data?
-
-Is the metric actually trackable?
-
-How much data is needed for this metric to be valuable?
+* Do we care about historical data?
+* Is the metric actually trackable?
+* How much data is needed for this metric to be valuable?
 
 ### Instrumenting new data points
 

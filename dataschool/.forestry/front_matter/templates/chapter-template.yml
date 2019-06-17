@@ -21,48 +21,26 @@ fields:
   name: number
   label: number
   description: sets the sorting order of the chapters for the book
-- type: field_group_list
-  name: authors
-  label: authors
-  description: The authors of this post
-  hidden: false
-  fields:
-  - name: author
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: people
-        file: 
-        path: 
-    label: author
+- name: authors
+  type: list
   config:
-    min: 
+    use_select: true
+    min: '1'
     max: 
-    labelField: author
+    source:
+      type: pages
+      section: people
+  label: Authors
 - name: reviewers
-  type: field_group_list
-  fields:
-  - name: reviewer
-    type: select
-    default: 
-    config:
-      required: false
-      options: 
-      source:
-        type: pages
-        section: people
-        file: 
-        path: 
-    label: reviewer
+  type: list
   config:
+    use_select: true
     min: 
     max: 
-    labelField: reviewer
-  label: reviewers
+    source:
+      type: pages
+      section: people
+  label: Reviewers
 - type: text
   name: feedback_doc_url
   label: Feedback doc URL
@@ -84,41 +62,3 @@ fields:
   description: Toggle on to add borders to all images in this chapter (override with
     class="img-no-border")
   default: false
-pages:
-- dataschool/_chapters/learn-sql/extras/importing-data-from-csv-in-postgresql.md
-- dataschool/_chapters/how-to-teach-people-sql/introduction.md
-- dataschool/_chapters/how-to-teach-people-sql/union-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/inner-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/left-right-join-animated.md
-- dataschool/_chapters/data-modeling-101/start-modeling-data.md
-- dataschool/_chapters/how-to-teach-people-sql/appendix/what-is-a-query-plan.md
-- dataschool/_chapters/how-to-teach-people-sql/appendix/how-to-create-a-copy-of-a-database-in-postgresql.md
-- dataschool/_chapters/fundamentals-of-analysis/correlation-and-p-value.md
-- dataschool/_chapters/how-to-design-a-dashboard/what-is-a dashboard.md
-- dataschool/_chapters/fundamentals-of-analysis/types-of-data-analysis.md
-- dataschool/_chapters/how-to-teach-people-sql/optimize-your-sql-query.md
-- dataschool/_chapters/how-to-teach-people-sql/how-sql-subqueries-work.md
-- dataschool/_chapters/how-to-teach-people-sql/how-sql-aggregations-work.md
-- dataschool/_chapters/how-to-teach-people-sql/debugging-sql-syntax-errors.md
-- dataschool/_chapters/how-to-teach-people-sql/debugging-sql-0-rows-returned.md
-- dataschool/_chapters/how-to-teach-people-sql/cross-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/full-outer-join-animated.md
-- dataschool/_chapters/how-to-teach-people-sql/sql-join-types-explained-visually.md
-- dataschool/_chapters/how-to-teach-people-sql/accessing-data.md
-- dataschool/_chapters/how-to-teach-people-sql/why-databases.md
-- dataschool/_chapters/how-to-design-a-dashboard/design-a-dashboard-example.md
-- dataschool/_chapters/how-to-design-a-dashboard/conclusion.md
-- dataschool/_chapters/how-to-design-a-dashboard/making-sure-your-dashboard-always-gets-better.md
-- dataschool/_chapters/how-to-design-a-dashboard/scaling-dashboards.md
-- dataschool/_chapters/how-to-design-a-dashboard/sharing-the-dashboard-distribution-strategies.md
-- dataschool/_chapters/how-to-design-a-dashboard/build-the-metrics.md
-- dataschool/_chapters/how-to-design-a-dashboard/find-the-best-visualizations-for-your-metrics.md
-- dataschool/_chapters/how-to-design-a-dashboard/finding-the-data-that-builds-metrics.md
-- dataschool/_chapters/learn-sql/extras/copying-data-between-tables.md
-- dataschool/_chapters/how-to-design-a-dashboard/dashboard-prototyping-and-feedback.md
-- dataschool/_chapters/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard.md
-- dataschool/_chapters/how-to-design-a-dashboard/determine-the-metrics-to-monitor.md
-- dataschool/_chapters/how-to-design-a-dashboard/identifying-key-roles.md
-- dataschool/_chapters/learn-sql/extras/how-to-start-a-postgresql-server-on-mac-os-x.md
-- dataschool/_chapters/how-to-design-a-dashboard/dashboard-design-process.md
-- dataschool/_chapters/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces.md

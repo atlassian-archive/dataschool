@@ -1,24 +1,24 @@
 ---
 title: SQL Join Types Explained Visually
-meta_title:
-description: Data within a database exists across multiple tables, JOINs allow you to combine datasets into new tables for analysis.
+meta_title: 
+description: Data within a database exists across multiple tables, JOINs allow you
+  to combine datasets into new tables for analysis.
 section: book
 number: 40
 authors:
-- author: _people/tim.md
-reviewers:
+- _people/tim.md
+reviewers: 
 feedback_doc_url: https://docs.google.com/document/d/10bjLM1eP66fzkVjqiqNzfl0DAev1wqB1W-jbyRddiWg/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png
+image: "/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png"
 is_featured: true
 img_border_on_default: false
-published: true
 
 ---
 Merging two data sets using SQL or SQL tools can be accomplished through JOINS. A JOIN is a SQL instruction in the FROM clause of your query that is used to identify the tables you are querying and how they should be combined.
 
 ## Primary and Foreign Keys
 
-Typically in a [relational database](https://en.wikipedia.org/wiki/Relational_database), data is organized into various tables made of attributes (columns) and [records](https://en.wikipedia.org/wiki/Relational_database) (rows). In each table there exist a column that is the _primary key_ which is a column where each entry uniquely represents a single row in that table. This is usually the ID (short for identifier) column. A column in a table that establishes an association with another table’s primary key via shared values is called a _foreign key_. Foreign keys are also typically titled IDs but prepended with the name of the referenced table.
+Typically in a [relational database](https://en.wikipedia.org/wiki/Relational_database), data is organized into various tables made of attributes (columns) and [records](https://en.wikipedia.org/wiki/Relational_database) (rows). In each table there exist a column that is the **primary key** which is a column where each entry uniquely represents a single row in that table. This is usually the ID (short for identifier) column. A column in a table that establishes an association with another table’s primary key via shared values is called a **foreign key**. Foreign keys are also typically titled IDs but prepended with the name of the referenced table.
 
 This concept is applied when combining two or more tables together using a JOIN. In the example below, we have two tables: User Table (Table 1) and Event Table (Table 2). We want to join the two tables together to get user data alongside their events data. A real-life example of this would be if you had data from a CRM tool like Salesforce containing users who are paid customers (Table 1) and an events analytics tool like Mixpanel that tracks all the users that have performed an action in your product (Table 2).
 
@@ -28,7 +28,7 @@ Notice that between the two tables there is a common column (dimension) highligh
 
 ## Meet the joins
 
-There are three common ways you can join any two or more tables together we’ll talk about first: _Outer Join_, _Inner Join_, and _Left Join_. Using the example _User_ and _Event_ tables above, let’s look at some examples of joins…
+There are three common ways you can join any two or more tables together we’ll talk about first: **Outer Join**, **Inner Join**, and **Left Join**. Using the example **User** and **Event** tables above, let’s look at some examples of joins…
 
 ### Outer Join
 
@@ -62,7 +62,7 @@ For a more Detailed look at the [Left Join click here.](https://dataschool.com/l
 
 ### Union and Cross Join
 
-In addition to these common join types, there are some methods which will result in additional rows in your output table as well as more columns. Two of these join types are called _Union_ and _Cross Join_. These join types probably wouldn’t be as appropriate for our example tables above, but for the sake of this article we can still use them to see how these joins function. A **Union Join** will stack tables on top of each other resulting in new rows.
+In addition to these common join types, there are some methods which will result in additional rows in your output table as well as more columns. Two of these join types are called **Union** and **Cross Join**. These join types probably wouldn’t be as appropriate for our example tables above, but for the sake of this article we can still use them to see how these joins function. A **Union Join** will stack tables on top of each other resulting in new rows.
 
 ![UNION](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_5.png)
 

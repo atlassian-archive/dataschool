@@ -1,7 +1,7 @@
 <nav class="sidebar">
   <!-- Main nav elements, always include in sidebar -->
   <a class="sidebar-logo" href="/">
-    <img src="/assets/images/data-school-logo.svg"/>
+    <img src="/assets/images/chartio-data-school-logo.svg"/>
   </a>
   <ul class="list-unstyled main-nav components">
     <li {% if page.url == '/books.html' or page.layout == "book" %}class="active"{% endif %}><a href="/books/">Web Books</a></li>
@@ -10,13 +10,16 @@
     <li {% if page.url == '/contribute.html' %}class="active"{% endif %}><a href="/contribute/">Contribute</a></li>
     <li><a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY" target="_blank">Slack Community</a></li>
   </ul>
+  <!-- showing current book -->
   {% if page.layout == "chapter" or page.layout == "book" %}
-    {% assign book = site.books | where:'slug', page.book_slug %}
-    {% assign book = book[0] %}
-    {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
-    <!-- showing current book -->
+  {% assign book = site.books | where:'slug', page.book_slug %}
+  {% assign book = book[0] %}
     {% include smallbook.html %}
-    <!-- building the chapter list -->
+  {% endif %}
+  <!-- building the chapter list -->
+  {% if page.layout == "chapter" %}
+
+  {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
     <ul class="list-unstyled components">
       <li class="d-none">
         <ul>
@@ -26,7 +29,7 @@
                 </ul>
                 </li>
                 <li class="book-section ">
-                  <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle {% if currentsection == 'book' %}d-none{% endif %}">{{ currentsection }}</a>
+                  <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle {% if currentsection == 'book' %}d-none{% endif %}">{{ currentsection | capitalize }}</a>
                   <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection}}">
             {% endif %}
             <li {% if page.url == chapter.url %}class="active"{% endif %}>

@@ -8,28 +8,27 @@ sections:
   label: Pages
   create: all
 - type: directory
-  path: dataschool/_chapters
-  label: Chapters
-  create: all
-  match: "**/*"
-- type: directory
   path: dataschool/_books
   label: Books
   create: all
   match: "**/*"
+  templates:
+  - book-template
 - type: directory
   path: dataschool/_people
   label: People
   create: all
   match: "**/*"
+  templates:
+  - people-template
 upload_dir: dataschool/assets/images
 public_path: "/assets/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+instant_preview: true
 build:
-  preview_command: cd dataschool && bundle exec jekyll build --drafts --unpublished
-    --future -d _site
+  preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
   publish_command: bundle exec jekyll build -d _site
   preview_env:
   - JEKYLL_ENV=staging
@@ -37,7 +36,9 @@ build:
   - BUILD_DIR=dataschool
   publish_env:
   - JEKYLL_ENV=production
+  - RUBY_VERSION=2.6.1
+  - BUILD_DIR=dataschool
   preview_output_directory: dataschool/_site
-  output_directory: _site
+  output_directory: dataschool/_site
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     --port 8080 --host 0.0.0.0 -d _site

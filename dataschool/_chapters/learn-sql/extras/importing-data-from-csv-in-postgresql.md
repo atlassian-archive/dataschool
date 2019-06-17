@@ -1,19 +1,18 @@
 ---
-section: book
 title: Importing Data from CSV in PostgreSQL
 meta_title: Importing Data from CSV in PostgreSQL
 description: This article outlines how to use psql to import data from csv files.
-number: 
+section: extras
+number:
 authors:
 - author: _people/matthew-layne.md
 reviewers:
 - reviewer: _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1zt39uLRSjBc74SXJ-xioYcN9XZDs7NarubmVqn0qrwk/edit?usp=sharing
-image: ''
+image:
+img_border_on_default: false
 is_featured: false
-img_border_on_default: true
 published: false
-
 ---
 # Importing from CSV in PSQL
 
