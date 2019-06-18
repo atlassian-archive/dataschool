@@ -62,5 +62,3 @@ fields:
   description: Toggle on to add borders to all images in this chapter (override with
     class="img-no-border")
   default: false
-pages:
-- dataschool/_chapters/how-to-teach-people-sql/appendix/how-window-functions-work.md

@@ -10,10 +10,11 @@ authors:
 reviewers:
 - reviewer: _people/matt.md
 - reviewer: _people/blake.md
-image:
-img_border_on_default: false
+feedback_doc_url: 'https://dataschool.com/learn/alter-in-postgresql'
+image: 
 is_featured: false
-published: false
+img_border_on_default: false
+published: true
 
 ---
 In SQL, tables, databases, schemas, groups, indexes, servers, and more can be modified using the **_ALTER_** command. This command enables the user to modify a specific aspect of the table, database, group, etc. while leaving the rest of the data untouched.
@@ -92,6 +93,7 @@ RENAME TO [new name];
 ```
 
 * **Allow Connections:** Whether the database allows connections to itself. **NOTE:** this will block all connections when true, even connections from localhost. It will need to be set to false before it can be connected to again.
+
 ```sql
 ALTER DATABASE [database name]
 WITH ALLOW_CONNECTIONS [true/false];
@@ -139,6 +141,7 @@ RESET ALL;
 ALTER TABLE traffic SET enable_indexscan TO OFF;
 ```
 * This will disable index scans on the specified database
+
 
 ### References:
 
