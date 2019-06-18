@@ -6,7 +6,7 @@ is_contributor: true
 job_title: Data Advisor
 company: Chartio
 linkedin: 
-twitter: https://twitter.com/timmiller716
+twitter: ''
 website: 
 
 ---
