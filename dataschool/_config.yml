@@ -27,6 +27,8 @@ sqlboxurl: "https://sqlbox.herokuapp.com/"
 # Build settings
 markdown: kramdown
 
+permalink: /:path/
+
 collections:
   people:
     output: true
@@ -52,21 +54,15 @@ defaults:
       type: "books"
     values:
       layout: "book"
-      permalink: "/:path/"
       is_hidden: false
   - scope:
       path: ""
       type: "chapters"
     values:
       layout: "chapter"
-      permalink: "/:path/"
       is_hidden: false
       is_featured: false
       section: "book"
-  - scope:
-      path: "static/"
-    values:
-      permalink: "/"
 
 # set defaults per book
   - scope:
@@ -75,6 +71,13 @@ defaults:
     values:
       book_slug: data-governance
       image: assets/images/book-covers/data-governance.png  # TODO set a real default image
+  - scope:
+      path: "_chapters/dictionary"
+      type: "chapters"
+    values:
+      book_slug: dictionary
+      image: assets/images/book-covers/dictionary.png
+      layout: dictionary
   - scope:
       path: "_chapters/data-modeling-101"
       type: "chapters"

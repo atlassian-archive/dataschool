@@ -1,0 +1,15 @@
+---
+layout: chapter
+---
+{{ content }}
+
+<div class="referenced-books">
+  {% assign books = site.books | where_exp:"item", "item.topics contains page.path" %}
+    {% for book in books %}
+        {% include smallbook.html %}
+    {% endfor %}
+</div>
+
+<div class="referenced-chapters">
+
+</div>
