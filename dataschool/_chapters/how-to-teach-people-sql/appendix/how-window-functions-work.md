@@ -8,11 +8,12 @@ authors:
 - _people/blake.md
 reviewers:
 - _people/matt.md
+- _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1-baqTQWPYoOB_IFykR9DZcqiAXA0B6SGE_51UhMOyOI/edit?usp=sharing
-image: ''
+image: 'assets/images/how-to-teach-people-sql/appendix/window_functions/CompareWindowToAgg.png'
 is_featured: false
 img_border_on_default: true
-published: false
+published: true
 
 ---
 # What are Window Functions?
@@ -20,24 +21,24 @@ published: false
 Window functions create a new column based on calculations performed on a subset or “**window**” of the data. This window starts at the first row on a particular column and increases in size unless you constrain the size of the window.
 
 ```sql
-SELECT Day, Mile Driving,
-SUM(Miles Driving) OVER(ORDER BY Day) AS Running Total
-FROM Running total mileage visual;
+SELECT 'Day', 'Mile Driving',
+SUM('Miles Driving') OVER(ORDER BY 'Day') AS 'Running Total'
+FROM 'Running total mileage visual';
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/RunningTotalGif.gif)
+![Visualization of a running total](/assets/images/how-to-teach-people-sql/appendix/window_functions/RunningTotalGif.gif)
 
 Here we can see it perform an aggregation of what is in side of the window. The window grows each row and so it aggregates more and more of the data giving you a running aggregation, in this case a running total.
 
 If we constrain the window to be 3 rows tall we can get a 3 day running average.
 
 ```sql
-SELECT Day, Daily Revenue,
-AVG(Daily Revenue) OVER(ORDER BY Day ROWS 2 PROCEEDING)
-AS 3 Day Average FROM Running Average Example;
+SELECT 'Day', 'Daily Revenue',
+AVG('Daily Revenue') OVER(ORDER BY 'Day' ROWS 2 PRECEDING)
+AS '3 Day Average' FROM 'Running Average Example';
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/RunningAVGGif.gif)
+![Visualization of a running average](/assets/images/how-to-teach-people-sql/appendix/window_functions/RunningAVGGif.gif)
 
 The window still starts as a single row, then it grows to its fixed size and then the whole window shifts along with it.
 
@@ -46,12 +47,12 @@ Window functions also work on partitioned data (grouped data). It first sorts th
 Below, you can see an example of this calculating the total revenue a business makes on the weekend vs the rest of the week.
 
 ```sql
-SELECT Day, Weekend, Daily Revenue,
-SUM(Daily Revenue) OVER(PARTITION BY Weekend) AS Total
-FROM Partitioned Total Example;
+SELECT 'Day', 'Weekend', 'Daily Revenue',
+SUM('Daily Revenue') OVER(PARTITION BY 'Weekend') AS 'Total'
+FROM 'Partitioned Total Example';
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/WindowPartitionedGif.gif)
+![Visualization of a window partition](/assets/images/how-to-teach-people-sql/appendix/window_functions/WindowPartitionedGif.gif)
 
 Window functions are very similar to aggregation functions, in fact every window function applies an aggregation within it. The difference are:
 
@@ -70,18 +71,19 @@ Let’s look at the first example above if we applied an aggregation instead of 
 Window Function:
 
 ```sql
-SELECT Day, Mile Driving,
-SUM(Miles Driving) OVER(ORDER BY Day) AS Running Total
-FROM Running total mileage visual;
+SELECT 'Day', 'Mile Driving',
+SUM('Miles Driving') OVER(ORDER BY 'Day') AS 'Running Total'
+FROM 'Running total mileage visual';
 ```
 
 Aggregate:
 
 ```sql
-SELECT SUM(Miles Driving) FROM Running total mileage visual AS Sum of Miles Driving;
+SELECT SUM('Miles Driving') AS 'Sum of Miles Driving'
+FROM 'Running total mileage visual';
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/CompareWindowToAgg.png)
+![Comparing the output of a window function and an aggregate function](/assets/images/how-to-teach-people-sql/appendix/window_functions/CompareWindowToAgg.png)
 
 Window Functions can be used to create running totals, moving averages and much more. The three main keywords to create a Window Function are:
 
@@ -100,17 +102,18 @@ Now, let's look at these keywords within a full query.
 ### Syntax
 
 ```sql
-SELECT (**Optional**: The data you want to select),
-\[aggregate function\](The column to perform the aggregate function on)
-OVER(**Optional**: PARTITION BY and/or ORDER BY) AS (Descriptive name) FROM (corresponding table);
+SELECT '(Optional: The data you want to select)',
+[aggregate function]'(The column to perform the aggregate function on)'
+OVER(Optional: PARTITION BY and/or ORDER BY)
+AS '(Descriptive name)' FROM '(corresponding table)';
 ```
 
 Going back to the first example the query would look like:
 
 ```sql
-SELECT “Date”, “Miles Driving”,
-SUM(“Miles Driving”) OVER(ORDER BY “Date”) AS “Running Total”
-FROM “Running Total Mileage”;
+SELECT 'Date', 'Miles Driving',
+SUM('Miles Driving') OVER(ORDER BY Date) AS 'Running Total'
+FROM 'Running Total Mileage';
 ```
 
 The SUM keyword shows that the query is looking for the SUM of the “Miles Driving” column, shown OVER the whole table, ORDERed BY the date the mileage will occur.
@@ -119,21 +122,62 @@ The SUM keyword shows that the query is looking for the SUM of the “Miles Driv
 
 The example below uses the Chinook database with PostgreSQL 11. The “Track” table in the Chinook database is a large, informational table on many different songs by many different artists:
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/chinookDB.png)
+![The first few rows of the Chinook Database](/assets/images/how-to-teach-people-sql/appendix/window_functions/chinookDB.png)
 
 If you wanted to create a column displaying the average song length you can do so like:
 
 ```sql
 SELECT Track.Name, Track.Milliseconds
-AVG(Track.Milliseconds) OVER() AS “AverageSongLength”
-FROM “Track” LIMIT 20;
+AVG(Track.Milliseconds) OVER() AS 'AverageSongLength'
+FROM 'Track' LIMIT 20;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/avgMilliseconds.png)
+![Average of all song lengths](/assets/images/how-to-teach-people-sql/appendix/window_functions/avgMilliseconds.png)
 
 You can see the “AverageSongLength” is stored in the last column and is the same for every row. This can help you visualize and compare songs that are longer or shorter than the “AverageSongLength”.
 
 ## Organizing with Window Functions
+
+### Using ROWS
+
+The window can also be given specific size dimensions using the ROWS keyword. You can specify the number or rows you want the window to be with the keywords:
+
+PRECEDING - define the number of rows before the current row to include
+FOLLOWING - define the number of rows after the current row to include
+
+#### Syntax
+
+```sql
+SELECT '(The data you want to select)',
+[aggregate function]'(The column to perform the aggregate function on)'
+OVER(ROWS [# of rows you want to aggregate - 1] PRECEDING/FOLLOWING)
+AS '(descriptive name)'
+FROM '(appropriate table)';
+```
+
+#### Example
+
+```sql
+SELECT *,
+AVG('Daily Revenue')
+OVER(ROWS 2 PRECEDING)
+AS '3 Day Average'
+FROM 'Running Average Example'
+```
+
+![Example of Rows Preceding](/assets/images/how-to-teach-people-sql/appendix/window_functions/rowsPreceding.png)
+
+```sql
+SELECT *,
+AVG('Daily Revenue')
+OVER(ROWS 2 FOLLOWING)
+AS '3 Day Average'
+FROM 'Running Average Example'
+```
+
+![Example of Rows Following](/assets/images/how-to-teach-people-sql/appendix/window_functions/rowsFollowing.png)
+
+You use one less than the days you would like to average because the query executes the aggregate function of the current row and the number of specified preceding or following rows. This allows you to create moving averages, which are great for showing more general trends in data.
 
 ### Using PARTITION BY
 
@@ -142,10 +186,10 @@ PARTITION BY is used to group the data before performing an aggregate function s
 #### Syntax
 
 ```sql
-SELECT (The data you want to select),
-\[aggregate function\](The column to perform the aggregate function on)
-OVER(PARTITION BY \[category to **group** by\]) AS (descriptive name)
-FROM (appropriate table);
+SELECT '(The data you want to select)',
+[aggregate function]'(The column to perform the aggregate function on)'
+OVER(PARTITION BY [category to group by]) AS '(descriptive name)'
+FROM '(appropriate table)';
 ```
 
 #### **Example**
@@ -155,11 +199,11 @@ If you wanted to compare the average length of a song by the genre of the song, 
 ```sql
 SELECT Track.Name, Track.Milliseconds
 AVG(Track.Milliseconds) OVER(PARTITION BY Track.GenreId)
-AS “AverageSongLength”
-FROM Track ORDER BY Track.Name ASC LIMIT 20;
+AS 'AverageSongLength'
+FROM 'Track' ORDER BY Track.Name ASC LIMIT 20;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/partitionById.png)
+![Example of Partitioning by Genre ID](/assets/images/how-to-teach-people-sql/appendix/window_functions/partitionById.png)
 
 You can see that the average song length from the first example is not the same average song length for all songs grouped by their genres.
 
@@ -167,40 +211,39 @@ You can see that the average song length from the first example is not the same 
 
 Traditionally, ORDER BY is called on the whole table(as seen above) and will sort the table by the given column. There are two circumstances ORDER BY can be used in:
 
-1. **Without PARTITION BY:** ORDER BY will sort like the traditional ORDER BY while also causing the aggregate function to be applied incrementally, providing a new, recalculated value for every row in the table.(first example below)
-2. **With PARTITION BY:** ORDER BY will sort each partition individually by the given column.
+1. **Without `PARTITION BY`:** ORDER BY will sort like the traditional ORDER BY while also causing the aggregate function to be applied incrementally, providing a new, recalculated value for every row in the table.(first example below)
+2. **With `PARTITION BY`:** ORDER BY will sort each partition individually by the given column.
 
 #### Example
 
 If you had the data for the daily steps taken by an individual:
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/StepsTakenTable.png)
+![A table of steps taken on different days](/assets/images/how-to-teach-people-sql/appendix/window_functions/StepsTakenTable.png)
 
 You could begin to find the average number of steps someone has taken in a week to determine their weekly activity levels:
 
 ```sql
-SELECT Date, “Steps Taken”,
-AVG(“Steps Taken”) OVER(ORDER BY Date) AS “Average Steps Taken”
-FROM “Steps Taken Daily”;
+SELECT 'Date', 'Steps Taken',
+AVG('Steps Taken') OVER(ORDER BY Date)
+AS 'Average Steps Taken'
+FROM 'Steps Taken Daily';
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/StepsTakenRunningAvg.png)
+![A steps taken running average table](/assets/images/how-to-teach-people-sql/appendix/window_functions/StepsTakenRunningAvg.png)
 
 You should notice that, since ORDER BY was used alone, the AVG function is taken as the “running average”. So the AVG is recalculated in every row.
 
 We could also use PARTITION BY with ORDER BY, implementing a weekend indicator, to separate weekday activity from weekend activity:
 
 ```sql
-SELECT Date, Weekend, “Steps Taken”,
-AVG(“Steps Taken”) OVER(PARTITION BY Weekend ORDER BY Date)
-AS “Average Steps Taken” FROM “Steps Taken Daily”;
+SELECT 'Date', 'Weekend', 'Steps Taken',
+AVG('Steps Taken') OVER(PARTITION BY 'Weekend' ORDER BY Date)
+AS 'Average Steps Taken' FROM 'Steps Taken Daily';
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/window_functions/PartitionByAndOrderBy.png)
+![Partitioning the steps taken running average table by weekend or weekday](/assets/images/how-to-teach-people-sql/appendix/window_functions/PartitionByAndOrderBy.png)
 
 Looking at the data above, you can see that when used with PARTITION BY, ORDER BY does not create a “running average”. Again, note that Window Functions do not return two new rows just displaying the average steps from during the week and on the weekend, the average is displayed as a new column on the end of the data.
-
-### Controlling the Window
 
 ## Summary
 
