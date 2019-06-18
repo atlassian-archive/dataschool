@@ -3,7 +3,7 @@ title: Tim Miller
 meta_title: 
 image: "/assets/images/people/tim.jpg"
 is_contributor: true
-job_title: Data Advisor
+job_title: Senior Data Advisor
 company: Chartio
 linkedin: 
 twitter: ''
