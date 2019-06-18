@@ -93,18 +93,7 @@ RENAME TO [new name];
 ```
 
 * **Allow Connections:** Whether the database allows connections to itself. **NOTE:** this will block all connections when true, even connections from localhost. It will need to be set to false before it can be connected to again.
-<<<<<<< HEAD
 
-      ALTER DATABASE [database name]
-      WITH ALLOW_CONNECTIONS [true/false];
-
-
-* **Connection Limit:** Limit the number of simultaneous connections. Set to -1 for unlimited connections.
-
-      ALTER DATABASE [database name]
-      WITH CONNECTION_LIMIT [number of connections];
-
-=======
 ```sql
 ALTER DATABASE [database name]
 WITH ALLOW_CONNECTIONS [true/false];
@@ -115,7 +104,6 @@ WITH ALLOW_CONNECTIONS [true/false];
 ALTER DATABASE [database name]
 WITH CONNECTION_LIMIT [number of connections];
 ```
->>>>>>> eb6077714b35ab422d5a30a68e357b3583d7e63b
 
 * **Template:** Can set the database to be or not to be a template. A template is a designation that some tables get which allows the database to be copied by a user with lower privileges so that they can have a pre-structured database and fill it out with their own data.
 ```sql
@@ -124,17 +112,10 @@ WITH IS_TEMPLATE [true/false];
 ```
 
 * **Owner:** Can set the owner of the database. Only the current database owner and [superusers](https://www.postgresql.org/docs/11/app-createuser.html) can change the owner.
-<<<<<<< HEAD
-
-      ALTER DATABASE [database name]
-      OWNER TO [username];
-
-=======
 ```sql
 ALTER DATABASE [database name]
 OWNER TO [username];
 ```
->>>>>>> eb6077714b35ab422d5a30a68e357b3583d7e63b
 
 * **Tablespace:** Can set which default tablespace is used. A tablespace is a way to logically separate databases on the disk so that they can handle more throughput. See the [documentation](https://www.postgresql.org/docs/11/manage-ag-tablespaces.html) for more.
 ```sql
@@ -143,21 +124,6 @@ SET TABLESPACE [new tablespace];
 ```
 
 * **Configuration Parameters:** Can be used to override system preferences on an individual basis. Some possible parameters that can be edited are: enable_indexscan, enable_bitmapscan, statement_timeout, and more.
-<<<<<<< HEAD
-
-      ALTER DATABASE [database name]
-      SET [configuration parameter] TO [value];
-
-      ALTER DATABASE [database name]
-      RESET [configuration parameter];
-
-      ALTER DATABASE [database name]
-      RESET ALL;
-  * Example:
-
-        ALTER TABLE traffic SET enable_indexscan TO OFF;
-    * This will disable index scans on the specified database
-=======
 ```sql
 ALTER DATABASE [database name]
 SET [configuration parameter] TO [value];
@@ -175,7 +141,7 @@ RESET ALL;
 ALTER TABLE traffic SET enable_indexscan TO OFF;
 ```
 * This will disable index scans on the specified database
->>>>>>> eb6077714b35ab422d5a30a68e357b3583d7e63b
+
 
 ### References:
 

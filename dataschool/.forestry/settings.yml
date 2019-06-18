@@ -4,21 +4,25 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
-  create: all
 - type: directory
   path: dataschool/_books
   label: Books
-  create: all
-  match: "**/*"
+  create: documents
+  match: "*.md"
   templates:
   - book-template
 - type: directory
+  path: dataschool/_chapters
+  label: Chapters
+  create: all
+  match: "**/*.md"
+  templates:
+  - chapter-template
+- type: directory
   path: dataschool/_people
   label: People
-  create: all
-  match: "**/*"
+  create: documents
+  match: "*.md"
   templates:
   - people-template
 upload_dir: dataschool/assets/images

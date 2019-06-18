@@ -1,12 +1,13 @@
 ---
-title: Tim Miller # aka name - annoying but we have to use title for name here
-meta_title:
-image: /assets/images/people/tim.jpg
+title: Tim Miller
+meta_title: 
+image: "/assets/images/people/tim.jpg"
 is_contributor: true
 job_title: Data Advisor
 company: Chartio
-linkedin:
-twitter:
-website:
+linkedin: 
+twitter: ''
+website: 
+
 ---
 Tim is a Senior Data Advisor at Chartio and brings 10+ years of Data Analysis background as well as years of experience in instruction methods and hands-on instruction to Chartio's Data School.
