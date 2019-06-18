@@ -16,7 +16,7 @@ img_border_on_default: true
 published: true
 
 ---
-# What are Window Functions?
+## What are Window Functions?
 
 Window functions create a new column based on calculations performed on a subset or “**window**” of the data. This window starts at the first row on a particular column and increases in size unless you constrain the size of the window.
 
@@ -118,7 +118,7 @@ FROM 'Running Total Mileage';
 
 The SUM keyword shows that the query is looking for the SUM of the “Miles Driving” column, shown OVER the whole table, ORDERed BY the date the mileage will occur.
 
-### **Example**
+#### Example
 
 The example below uses the Chinook database with PostgreSQL 11. The “Track” table in the Chinook database is a large, informational table on many different songs by many different artists:
 
@@ -252,7 +252,7 @@ Looking at the data above, you can see that when used with PARTITION BY, ORDER B
   * PARTITION BY- Divides the aggregate function results between different groupings of data.
   * ORDER BY- Organize the data being worked on by the aggregate functions and create running calculations
 
-### References
+## References
 
 [https://mode.com/sql-tutorial/sql-window-functions/](https://mode.com/sql-tutorial/sql-window-functions/ "https://mode.com/sql-tutorial/sql-window-functions/")
 
