@@ -1,14 +1,14 @@
 ---
 title: What Makes a Great Dashboard (ACES)
-meta_title: 
+meta_title:
 description: Learn the best practices behind dashboard design to support decision
   making
 section: book
 number: 30
-authors: []
+authors:
 - _people/tim.md
 - _people/matt.md
-reviewers: []
+reviewers:
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cab72d78a07165da8e775e9_Screen
   Shot 2019-04-08 at 8.59.39 AM.png"

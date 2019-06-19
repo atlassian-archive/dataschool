@@ -8,9 +8,9 @@ description: Learn the SELECT SQL statement with your PostgreSQL database in thi
 number: 20
 section: basic
 image:
-authors: []
+authors:
 - _people/dave.md
-reviewers: []
+reviewers:
 - _people/matt.md
 is_featured: false
 topics:

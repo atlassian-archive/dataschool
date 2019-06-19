@@ -1,14 +1,14 @@
 ---
 title: Optimize your SQL Query
-meta_title: 
+meta_title:
 section: book
 number: 140
-authors: []
+authors:
 - _people/rohan-joseph.md
-reviewers: []
+reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1nxcE_KYu7WiNerM2dyYE7Q0uiUMCebdHjoV12KtrRB4/edit?usp=sharing
-image: 
+image:
 description: Learn quick tips for how to optimize your SQL queries
 is_featured: false
 img_border_on_default: false

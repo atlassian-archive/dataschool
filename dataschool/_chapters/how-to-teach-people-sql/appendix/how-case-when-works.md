@@ -4,9 +4,9 @@ title: How CASE WHEN works
 meta_title: ''
 description: https://dataschool.com/learn/how-case-when-works
 number: 200
-authors: []
+authors:
 - _people/blake.md
-reviewers: []
+reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKbyR5n24yeJbuuyAmsk/edit?usp=sharing

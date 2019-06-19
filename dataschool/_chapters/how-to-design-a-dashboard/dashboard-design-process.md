@@ -4,7 +4,7 @@ meta_title:
 description: Overview of all the steps in a dashboard design process
 section: book
 number: 40
-authors: []
+authors:
 - _people/matt.md
 reviewers:
 image: "/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg"

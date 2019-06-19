@@ -3,9 +3,9 @@ title: How to use Regex to Create Optimal Search Queries
 short: How Regex Works
 section: appendix
 number: 210
-authors: []
+authors:
 - _people/blake.md
-reviewers: []
+reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 description: Learn how Regex works and how to use it in your queries.

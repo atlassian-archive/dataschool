@@ -7,11 +7,11 @@ description: Learn about the COUNT function in SQL. The COUNT command is a commo
   of how many there are. This interactive SQL tutorial will teach you how to COUNT.
 number: 70
 section: mid-level
-authors: []
+authors:
 - _people/dave.md
-reviewers: []
+reviewers:
 - _people/matt.md
-image: 
+image:
 is_featured: false
 
 ---

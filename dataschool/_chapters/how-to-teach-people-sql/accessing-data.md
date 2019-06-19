@@ -1,13 +1,13 @@
 ---
 title: Accessing Data
-meta_title: 
+meta_title:
 description: Accessing data within a company requires being given permission to the
   data, learning how to ask questions in SQL, and how to explore a schema.
 section: book
 number: 30
-authors: []
+authors:
 - _people/matt.md
-reviewers: [] 
+reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1A3KNPov7-oBuOVWh553DTYXZxip6tw7NvW1q_ED3fI4/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/accessingData/accessing_1.png"
 is_featured: false

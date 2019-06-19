@@ -5,9 +5,9 @@ description: In depth post about using SQL to detect outliers using simple techn
   and using inter quartile range
 section: appendix
 number: 200
-authors: []
+authors:
 - _people/rebecca-barnes.md
-reviewers: []
+reviewers:
 - _people/matt.md
 feedback_doc_url: ''
 image: ''

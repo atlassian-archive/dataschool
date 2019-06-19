@@ -4,9 +4,9 @@ meta_title: What is a Query Plan
 description: Learn what a query plan is and how it effects your SQL queries
 section: appendix
 number: 240
-authors: []
+authors:
 - _people/matthew-layne.md
-reviewers: []
+reviewers:
 - _people/blake.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1UcOvqq_7wwxeztReW9WIBY8cJpvCapQtqYfe54JzDmc/edit?usp=sharing

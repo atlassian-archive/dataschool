@@ -1,13 +1,13 @@
 ---
 section: book
 title: Arranging Your Charts as a Dashboard
-meta_title: 
+meta_title:
 description: Maximize understanding of a dashboard by arranging data visualizations
   intelligently.
 number: 80
-authors: []
+authors:
 - _people/tim.md
-reviewers: []
+reviewers:
 - _people/dave.md
 - _people/matt.md
 image: "/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/dashboardBreakdown.jpeg"

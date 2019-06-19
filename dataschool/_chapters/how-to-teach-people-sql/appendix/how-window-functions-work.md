@@ -4,9 +4,9 @@ title: How Window Functions work
 meta_title: ''
 description: ''
 number: 200
-authors: []
+authors:
 - _people/blake.md
-reviewers: []
+reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1-baqTQWPYoOB_IFykR9DZcqiAXA0B6SGE_51UhMOyOI/edit?usp=sharing
