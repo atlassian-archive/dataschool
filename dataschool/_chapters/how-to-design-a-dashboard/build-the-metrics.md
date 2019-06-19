@@ -64,19 +64,15 @@ One of the beauties of SQL is that it can do the logistical work of finding the 
 
 ## SQL Resources
 
-If you are new to SQL check out Chartio’s tutorial:
-
-* [https://chartio.com/learn/sql/](https://chartio.com/learn/sql/ "https://chartio.com/learn/sql/")
-
 If you are struggling with understanding how Aggregations or Subqueries work check out:
 
-* [How SQL Count Aggregation Works](/how-to-teach-people-sql/how-sql-count-aggregation-works)
+* [How SQL Count Aggregation Works](/how-to-teach-people-sql/how-sql-aggregation-works)
 * [How SQL Subqueries Work](/how-to-teach-people-sql/how-sql-subqueries-work)
 
 If you are running into errors or are getting 0 rows returned check out:
 
-* [Debugging SQL Syntax Errors](/how-to-teach-people-sql/debugging-sql-series-syntax-errors)
-* [Debugging SQL 0 Rows Returned](/how-to-teach-people-sql/debugging-sql-series-0-rows-returned)
+* [Debugging SQL Syntax Errors](/how-to-teach-people-sql/debugging-sql-syntax-errors)
+* [Debugging SQL 0 Rows Returned](/how-to-teach-people-sql/debugging-sql-0-rows-returned)
 
 ## Checking your Queries
 

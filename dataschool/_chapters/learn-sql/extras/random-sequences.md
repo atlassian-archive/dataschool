@@ -62,7 +62,7 @@ SELECT random();"
 
 ## Random Sequences
 
-If you'd like full sequences of random data you can use the `generate_series` function in {{ page.database }} to generate a series of [dates](/learn/sql/dates/).  
+If you'd like full sequences of random data you can use the `generate_series` function to generate a series of [dates](/learn-sql/dates/).  
 
 ```sql
 ... FROM generate_series([start date], [end date], [increment])
@@ -77,7 +77,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), random() FROM generate_series
         , '1 day'::interval) day
 ```
 
-We've [visualized the sequence with Chartio](/signup/) here to make it more clear what's going on with the data.
+We've [visualized the sequence with Chartio](https://chartio.com/signup/) here to make it more clear what's going on with the data.
 
 ![Random Sequence](/assets/images/learn-sql/extras/random-sequences/random-sequence-1.svg)
 
@@ -146,7 +146,7 @@ SELECT TO_CHAR(day, 'YYYY-MM-DD'), (1000 + 500*random())*log(row_number() over()
 ![Log Growth Sequence](/assets/images/learn-sql/extras/random-sequences/random-sequence-6.svg)
 
 
-There are a lot great things you can do with {{ page.database }}'s random() function combined with generating series to get sequences.  Feel free to play around with a few yourself in the SQLBox below, or using [Chartioif you'd like to visualize them](/signup/) as well.
+There are a lot great things you can do with {{ page.database }}'s random() function combined with generating series to get sequences.  Feel free to play around with a few yourself in the SQLBox below, or using [Chartioif you'd like to visualize them](https://chartio.com/signup/) as well.
 
 <sqlbox
   initial="

@@ -15,7 +15,7 @@ reviewers:
 You've gotten all the way to the end of our {{ page.database }} tutorial!
 We're always adding more content and appreciate any feedback, suggestions, or requests for additional sections.  If you have any please [drop us a line](mailto:support+sqltutorial@chartio.com?subject=SQL%20Tutorial%20Question%20{{ page.url }}&body=Report%20an%20error%20or%20leave%20a%20question%20here).
 
-If you enjoyed this tutorial please be sure to share us out, spread the word, and be sure to [checkout our product](/signup/).  We're on a mission to enable anyone to work with data, and would love your support!
+If you enjoyed this tutorial please be sure to share us out, spread the word, and be sure to [checkout our product](https://chartio.com/signup/).  We're on a mission to enable anyone to work with data, and would love your support!
 
 
 If you want to keep going, we've also have a ton of other {{ page.database }} related content outside of the tutorial format.  We've created an **Extras** category for all of these.

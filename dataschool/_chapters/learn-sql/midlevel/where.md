@@ -64,7 +64,7 @@ In the above examples we were querying on unique fields so we were only getting 
   initial="SELECT * FROM tracks WHERE album_id = 89;"  
 ></sqlbox>
 
-89 just happens to be the same *album_id* as "American Idiot" had.  We've just pulled all the *tracks* from the album American Idiot!  We'll get more into how we can [JOIN this data](https://chartio.com/learn/sql/joins/) based on the common key of *album_id* in a later section.
+89 just happens to be the same *album_id* as "American Idiot" had.  We've just pulled all the *tracks* from the album American Idiot!  We'll get more into how we can [JOIN this data](/learn-sql/joins/) based on the common key of *album_id* in a later section.
 
 ## AND - Requiring Multiple Conditions
 
