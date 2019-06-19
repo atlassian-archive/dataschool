@@ -101,6 +101,14 @@ defaults:
       book_slug: how-to-teach-people-sql
       image: assets/images/book-covers/how-to-teach-people-sql.png  # TODO set a real default image
   - scope:
+      path: "_chapters/dictionary"
+      type: "chapters"
+    values:
+      book_slug: dictionary
+      image: assets/images/book-covers/dictionary.png
+      layout: dictionary
+
+  - scope:
       path: "_chapters/learn-sql"
       type: "chapters"
     values:
