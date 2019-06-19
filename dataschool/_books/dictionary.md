@@ -5,7 +5,7 @@ book_slug: dictionary
 authors:
 - _people/dave.md
 reviewers:
-cover_image: /assets/images/book-covers/dictionary.png
+cover_image: /assets/images/book-covers/data-school-dictionary.png
 main_color: '#762314'
 published: true
 is_featured: false
