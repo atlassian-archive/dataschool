@@ -63,4 +63,5 @@ fields:
     class="img-no-border")
   default: false
 pages:
+- dataschool/_chapters/dictionary/sql-optimization.md
 - dataschool/_chapters/dictionary/sql-errors.md
