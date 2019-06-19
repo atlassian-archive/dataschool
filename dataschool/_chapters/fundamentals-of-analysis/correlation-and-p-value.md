@@ -22,7 +22,7 @@ Correlation coefficient is used in statistics to measure how strong a relationsh
 
 ![Correlation Bounds](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations1.jpeg)
 
-A positive correlation means that as one number increases the second number will also increase. A negative correlation means that as one number increases the second number decreases. However, correlation does not always imply causation — correlation does not tell us whether change in one number is directly caused by the other number, only that they typically move together. Learn more about the Pearson correlation formula, and how to implement it in SQL [here](https://chartio.com/learn/postgresql/correlation-coefficient-pearson/?__hstc=113363352.37e1dac817bf0dbc7d236083a09955aa.1558032271531.1559924569268.1559937170027.53&__hssc=113363352.5.1559937170027&__hsfp=1517700082). To understand how correlation works, let’s look at a chart of height vs weight.
+A positive correlation means that as one number increases the second number will also increase. A negative correlation means that as one number increases the second number decreases. However, correlation does not always imply causation — correlation does not tell us whether change in one number is directly caused by the other number, only that they typically move together. Learn more about the Pearson correlation formula, and how to implement it in SQL [here](https://chartio.com/learn/postgresql/correlation-coefficient-pearson/). To understand how correlation works, let’s look at a chart of height vs weight.
 
 ![Height and Weight Correlation](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations2.jpeg)
 

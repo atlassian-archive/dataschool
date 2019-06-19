@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 - _people/blake.md
-feedback_doc_url: '/learn/alter-in-postgresql'
+feedback_doc_url: ''
 image:
 is_featured: false
 img_border_on_default: false
@@ -25,7 +25,7 @@ There are many alterable things in postgreSQL heavily discussed in the PostgreSQ
 
 Altering tables and databases alters critical parts of their structure. As such, queries that ran on tables/databases that were altered may no longer work and may need to be rewritten.
 
-## **ALTER TABLE**
+## ALTER TABLE
 
 Altering tables is a very common use of ALTER. Using ALTER TABLE is very useful for adding, removing, and editing columns:
 
@@ -49,7 +49,7 @@ TYPE char USING belts::char;
 ```
 This usage of ALTER takes a column and converts it into a different type using a specified method for this (in this case the cast: belts::char).
 
-### Table Constraints:
+### Table Constraints
 
 Another usage of ALTER TABLE is to **add table constraints**. For example, if a column should be unique:
 ```sql
@@ -65,7 +65,7 @@ Common constraints include: **_NOT NULL_**, **_PRIMARY KEY_**, and **_UNIQUE_** 
 ALTER TABLE traffic
 DROP CONSTRAINT unique_seqid;
 ```
-### Renaming and Changing Schemas:
+### Renaming and Changing Schemas
 
 ALTER TABLE can also be used to rename the table or column that is being accessed. To do this, use the rename command:
 ```sql
@@ -82,7 +82,7 @@ The **schema** that a table is using can be changed by using:
 ALTER TABLE public.traffic
 SET SCHEMA mySchema;
 ```
-## ALTER DATABASE:
+## ALTER DATABASE
 
 Databases can also be modified using the ALTER command. There are fewer things that can be modified in a Database, however they have very serious effects. As such they often have required permissions to execute them. The things that can be changed using ALTER DATABASE are:
 
@@ -143,10 +143,8 @@ ALTER TABLE traffic SET enable_indexscan TO OFF;
 * This will disable index scans on the specified database
 
 
-### References:
+## References
 
-[https://www.postgresql.org/docs/11/sql-alterdatabase.html](https://www.postgresql.org/docs/11/sql-alterdatabase.html "https://www.postgresql.org/docs/11/sql-alterdatabase.html")
-
-[https://www.postgresql.org/docs/11/ddl-constraints.html](https://www.postgresql.org/docs/11/sql-alterdatabase.html "https://www.postgresql.org/docs/11/sql-alterdatabase.html")
-
-[https://www.postgresql.org/docs/11/sql-altertable.html](https://www.postgresql.org/docs/11/sql-alterdatabase.html "https://www.postgresql.org/docs/11/sql-alterdatabase.html")
+* [https://www.postgresql.org/docs/11/sql-alterdatabase.html](https://www.postgresql.org/docs/11/sql-alterdatabase.html "https://www.postgresql.org/docs/11/sql-alterdatabase.html")
+* [https://www.postgresql.org/docs/11/ddl-constraints.html](https://www.postgresql.org/docs/11/sql-alterdatabase.html "https://www.postgresql.org/docs/11/sql-alterdatabase.html")
+* [https://www.postgresql.org/docs/11/sql-altertable.html](https://www.postgresql.org/docs/11/sql-alterdatabase.html "https://www.postgresql.org/docs/11/sql-alterdatabase.html")
