@@ -11,5 +11,6 @@ published: true
 is_featured: true
 topics:
   - _chapters/dictionary/sql.md
+status: released
 ---
 An interactive SQL Tutorial by example!

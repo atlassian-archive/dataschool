@@ -10,5 +10,6 @@ reviewers:
 cover_image: /assets/images/book-covers/data-modeling-101.png
 main_color: '#764514'
 is_featured: false
+status: in_progress
 
 ---

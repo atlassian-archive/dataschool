@@ -14,7 +14,7 @@ reviewers:
 is_featured: false
 image:
 topics:
-  - sql
+  - _chapters/dictionary/sql.md
 ---
 So far all of our queries have brought back all the rows in the table.  That's okay for our example database with just a few hundred rows of data, but on other databases that can often be A LOT more data than needed.  If want to LIMIT the number of results that are returned you can simply use the LIMIT command at the end of the query to specify.
 

@@ -7,5 +7,5 @@ authors:
 cover_image: "/assets/images/book-covers/fundamentals-of-analysis.png"
 main_color: "#75185C"
 is_featured: false
-
+status: in_progress
 ---

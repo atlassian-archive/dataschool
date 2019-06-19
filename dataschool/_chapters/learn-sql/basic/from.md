@@ -14,7 +14,7 @@ reviewers:
 is_featured: false
 image:
 topics:
-  - sql
+  - _chapters/dictionary/sql.md
 ---
 So now you know how to SELECT data but not yet how to choose where to get that data FROM.  Let’s get into the real stuff and SELECT data FROM a specific table.  
 

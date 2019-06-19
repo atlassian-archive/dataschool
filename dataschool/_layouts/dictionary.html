@@ -4,6 +4,7 @@ layout: chapter
 {{ content }}
 
 <div class="referenced-books">
+  <h4>Books mentioning {{ page.title }}</h4>
   {% assign books = site.books | where_exp:"item", "item.topics contains page.path" %}
     {% for book in books %}
         {% include smallbook.html %}
