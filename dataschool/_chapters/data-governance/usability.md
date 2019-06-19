@@ -5,9 +5,9 @@ meta_title: Usability
 description: Users need to discover data assets, understand what they contain, and
   how they work.
 number: 30
-authors:
+authors: []
 - _people/rohan-joseph.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: 
 image: "/assets/images/data-governance/usability/usability_1.png"
 is_featured: false

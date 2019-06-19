@@ -5,9 +5,9 @@ meta_title: Integrity
 description: Data profiling, standardization, enrichment, and constant monitoring
   is required.
 number: 40
-authors:
+authors: []
 - _people/rohan-joseph.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: 
 image: "/assets/images/data-governance/integrity/integrity_1.png"
 is_featured: false

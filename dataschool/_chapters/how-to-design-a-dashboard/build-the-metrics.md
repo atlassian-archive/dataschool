@@ -5,9 +5,9 @@ meta_title:
 description: Use SQL to query the database to get the data behind the metrics people
   want to see.
 number: 110
-authors:
+authors: []
 - _people/matt.md
-reviewers:
+reviewers: []
 - _people/tim.md
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png"

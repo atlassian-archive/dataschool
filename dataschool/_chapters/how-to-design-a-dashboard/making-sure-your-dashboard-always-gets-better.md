@@ -5,9 +5,9 @@ meta_title:
 description: Once a dashboard is built and shared it is not done. You should maintain
   it and improve it by using audience feedback.
 number: 140
-authors:
+authors: []
 - _people/tim.md
-reviewers:
+reviewers: []
 - _people/matt.md
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1nr7qeQM1xjHTq6wh6zCfvU-8356lqSBDG1dKKwKrZAc/edit?usp=sharing

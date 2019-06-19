@@ -7,9 +7,9 @@ description: Learn how to use the SQL ORDER BY command in PostgreSQL. The ORDER 
   the interactive SQL tutorial to use cases and best practices for the ORDER BY command.
 number: 40
 section: basic
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 is_featured: false
 image:

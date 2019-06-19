@@ -5,10 +5,10 @@ description: Learn the best practices behind dashboard design to support decisio
   making
 section: book
 number: 30
-authors:
+authors: []
 - _people/tim.md
 - _people/matt.md
-reviewers:
+reviewers: []
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cab72d78a07165da8e775e9_Screen
   Shot 2019-04-08 at 8.59.39 AM.png"

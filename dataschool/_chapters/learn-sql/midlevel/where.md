@@ -7,9 +7,9 @@ description: Learn how to use the SQL WHERE command in PostgreSQL. In this inter
   it for data analysis and exploration against your PostgreSQL database.
 number: 60
 section: mid-level
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 image: 
 is_featured: false

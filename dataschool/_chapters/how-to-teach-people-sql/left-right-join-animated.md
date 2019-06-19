@@ -5,9 +5,9 @@ description: Visualize how SQL is joining two tables using a Left JOIN and a Rig
   JOIN
 section: book
 number: 60
-authors:
+authors: []
 - _people/matt.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
 image: 
 is_featured: false

@@ -4,7 +4,7 @@ title: Creating an EC2 Server
 meta_title: EC2-server
 description: ''
 number: 30
-authors:
+authors: []
 - _people/blake.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1rZJjWr3QnktTxRBUCdS6FIEoh9f8HBaTiUS9ybJtlFk/edit?usp=sharing

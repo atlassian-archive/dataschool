@@ -6,9 +6,9 @@ description: Learn how to use SQL against your PostgreSQL database. SQL is the p
   how to use the SQL language with your PostgreSQL database in these data tutorials.
 image: "/assets/images/learn-sql/sql-tutorial-sqlbox.gif"
 permalink: "/learn/sql/"
-authors:
+authors: []
 - _people/dave.md
-reviewers: 
+reviewers: [] 
 
 ---
 Welcome to our {{ page.database }} interactive SQL Tutorial!  We've designed this specifically for tech-savvy folks to learn enough SQL to be able to do their own analysis and data fetching.  

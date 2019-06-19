@@ -5,9 +5,9 @@ description: Data within a database exists across multiple tables, JOINs allow y
   to combine datasets into new tables for analysis.
 section: book
 number: 40
-authors:
+authors: []
 - _people/tim.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: https://docs.google.com/document/d/10bjLM1eP66fzkVjqiqNzfl0DAev1wqB1W-jbyRddiWg/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png"
 is_featured: true

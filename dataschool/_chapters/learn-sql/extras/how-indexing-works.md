@@ -6,11 +6,11 @@ description: Learn how indexing works and why it is a critical part of optimizin
   your data warehouse
 section: extras
 number:
-authors:
-- author: _people/blake.md
-reviewers:
-- reviewer: _people/matt.md
-- reviewer: _people/matthew-layne.md
+authors: []
+- _people/blake.md
+reviewers: []
+- _people/matt.md
+- _people/matthew-layne.md
 image:
 img_border_on_default: false
 is_featured: false

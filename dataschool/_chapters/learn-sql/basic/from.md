@@ -7,9 +7,9 @@ description: This interactive SQL tutorial will explain the FROM command with sy
   how to use the SQL FROM command by following the steps in this interactive tutorial.
 number: 30
 section: basic
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 is_featured: false
 image:

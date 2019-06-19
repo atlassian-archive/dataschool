@@ -4,9 +4,9 @@ title: Start Modeling Data
 meta_title:
 description: This is a quick introduction to using DBT and BigQuery to model data.
 number: 10
-authors:
+authors: []
 - _people/matt.md
-reviewers:
+reviewers: []
 - _people/drew-banin.md
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1v_F2P6da3SOwy1W5K13tR-unTba-vh2U-3iEQjGSUTs/edit?usp=sharing

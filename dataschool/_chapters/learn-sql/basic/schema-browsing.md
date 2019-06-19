@@ -7,9 +7,9 @@ description: The word SCHEMA is used to describe a collection of tables and thei
   the SCHEMA in a PostgreSQL database by using SQL to query your data.
 number: 55
 section: basic
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 is_featured: false
 image: "/assets/images/learn-sql/basic/schema-browsing/schema-browsing/"

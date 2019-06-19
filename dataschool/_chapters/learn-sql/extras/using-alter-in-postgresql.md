@@ -5,13 +5,13 @@ description: This article outlines the different potential uses of the "ALTER" c
   in PSQL
 section: extras
 number:
-authors:
-- author: _people/matthew-layne.md
-reviewers:
-- reviewer: _people/matt.md
-- reviewer: _people/blake.md
+authors: []
+- _people/matthew-layne.md
+reviewers: []
+- _people/matt.md
+- _people/blake.md
 feedback_doc_url: 'https://dataschool.com/learn/alter-in-postgresql'
-image: 
+image:
 is_featured: false
 img_border_on_default: false
 published: true

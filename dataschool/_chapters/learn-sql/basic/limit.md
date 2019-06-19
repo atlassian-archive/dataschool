@@ -7,9 +7,9 @@ description: Learn how to LIMIT the number of results that are returned you can 
   command on your PostgreSQL database. Read the tutorial to learn more.
 number: 50
 section: basic
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 is_featured: false
 image:

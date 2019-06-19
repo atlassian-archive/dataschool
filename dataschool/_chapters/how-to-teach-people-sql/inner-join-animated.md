@@ -4,9 +4,9 @@ meta_title:
 description: Visualize how SQL is joining two tables using an Inner JOIN
 section: book
 number: 50
-authors:
+authors: []
 - _people/matt.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: https://docs.google.com/document/d/1BW7SJQIwigKWFxFe9mf17GCimXZOPKgigRELKteosVE/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/innerJoin/innerJoin_1.png"
 is_featured: false

@@ -7,9 +7,9 @@ description: The GROUP BY SQL statement is used to aggregate functions like COUN
   learn how to use the GROUP BY statement in your SQL queries in PostgreSQL.
 number: 80
 section: mid-level
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 image: 
 is_featured: false

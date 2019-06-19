@@ -7,9 +7,9 @@ description: DATE and TIME values in PostgreSQL have a whole special set of func
   interactive SQL tutorial, so you can get the DATE and TIME of your data analysis.
 number: 110
 section: mid-level
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 image: 
 is_featured: false

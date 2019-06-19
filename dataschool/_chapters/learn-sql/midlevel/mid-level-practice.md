@@ -7,9 +7,9 @@ description: Now that you've gone through our PostgreSQL interactive SQL tutoria
   Put that knowledge to use in these SQL practice exercises.
 number: 150
 section: mid-level
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 image: 
 is_featured: false
