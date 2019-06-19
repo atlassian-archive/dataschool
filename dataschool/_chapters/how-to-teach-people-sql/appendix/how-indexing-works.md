@@ -3,9 +3,9 @@ title: How to use Indexing to Improve Database Queries
 short: How Indexing Works
 section: appendix
 number: 210
-authors: []
+authors:
 - _people/blake.md
-reviewers: []
+reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 description: Learn how indexing works and why it is a critical part of optimizing

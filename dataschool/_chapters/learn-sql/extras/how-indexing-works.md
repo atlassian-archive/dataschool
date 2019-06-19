@@ -6,9 +6,9 @@ description: Learn how indexing works and why it is a critical part of optimizin
   your data warehouse
 section: extras
 number:
-authors: []
+authors:
 - _people/blake.md
-reviewers: []
+reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 image:

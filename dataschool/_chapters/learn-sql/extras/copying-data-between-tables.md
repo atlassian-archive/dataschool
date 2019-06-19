@@ -5,9 +5,9 @@ description: This article discusses how to copy data from a table or query into 
   table using the INSERT command in psql.
 section: extras
 number:
-authors: []
+authors:
 - _people/matthew-layne.md
-reviewers: []
+reviewers:
 - _people/blake.md
 - _people/matt.md
 image:

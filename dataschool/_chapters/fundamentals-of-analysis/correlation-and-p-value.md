@@ -4,7 +4,7 @@ title: Correlation and P value
 number: 20
 description: Understand how correlation and P-value are related to each other within
   data analytics.
-authors: []
+authors: 
 - _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''

@@ -1,11 +1,11 @@
 ---
 section: book
 title: Finding the Data That Builds Metrics
-meta_title: 
+meta_title:
 number: 100
-authors: []
+authors:
 - _people/matt.md
-reviewers: []
+reviewers:
 - _people/dave.md
 - _people/tim.md
 image: "/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png"

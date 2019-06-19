@@ -1,13 +1,13 @@
 ---
 section: book
 title: Find the Best Visualizations for Your Metrics
-meta_title: 
+meta_title:
 description: Decide what chart works best for your visualization based on if you want
   to show composition, relationship, distribution or comparison.
 number: 70
-authors: []
+authors:
 - _people/tim.md
-reviewers: []
+reviewers:
 - _people/matt.md
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/exampleChart.png"

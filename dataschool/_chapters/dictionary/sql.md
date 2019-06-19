@@ -3,7 +3,7 @@ title: SQL (Structured Query Language)
 meta_title:
 description: SQL is short for Structured Query Language
 number: 10
-authors: []
+authors:
   - _people/dave.md
 ---
 SQL is short for Structured Query Language.  

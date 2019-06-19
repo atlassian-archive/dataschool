@@ -1,12 +1,12 @@
 ---
 title: Identifying Key Roles
-meta_title: 
+meta_title:
 description: Learn the key stakeholders for a dashboard design process.
 section: book
 number: 50
-authors: []
+authors:
 - _people/matt.md
-reviewers: []
+reviewers:
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/identifying_key_roles/groupPic.png"
 is_featured: false

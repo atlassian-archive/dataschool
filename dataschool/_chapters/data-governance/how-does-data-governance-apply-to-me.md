@@ -5,10 +5,10 @@ meta_title: How Does Data Governance Apply to Me?
 description: Data governance helps with compliance, user satisfaction, decision making,
   risk management, and getting value out of big data.
 number: 70
-authors: []
+authors:
 - _people/rohan-joseph.md
-reviewers: [] 
-feedback_doc_url: 
+reviewers: []
+feedback_doc_url:
 image: "/assets/images/data-governance/howDoesThisApply/application_1.png"
 is_featured: false
 img_border_on_default: false
