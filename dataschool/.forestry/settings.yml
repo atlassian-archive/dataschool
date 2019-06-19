@@ -8,7 +8,7 @@ sections:
   path: dataschool/_books
   label: Books
   create: documents
-  match: "*.md"
+  match: "**/*.md"
   templates:
   - book-template
 - type: directory
