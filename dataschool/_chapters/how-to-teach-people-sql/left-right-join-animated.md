@@ -25,7 +25,7 @@ LEFT JOIN linkedin
 ON facebook.name = linkedin.name
 ```
 
-This query finds matches and adds them to a newly created table in the same way as an [INNER JOIN](/learn/common-sql-join-types-inner-join).
+This query finds matches and adds them to a newly created table in the same way as an [INNER JOIN](/how-to-teach-people-sql/inner-join-animated/).
 
 ![](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_1.gif)
 

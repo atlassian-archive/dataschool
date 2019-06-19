@@ -63,7 +63,7 @@ FROM table
 GROUP BY category
 ```
 
-This is much more efficient to making the change to every record before aggregation. You can check out more Query optimization strategies here: [Optimize your SQL Query](/learn/optimize-your-sql-query)
+This is much more efficient to making the change to every record before aggregation. You can check out more Query optimization strategies here: [Optimize your SQL Query](/how-to-teach-people-sql/optimize-your-sql-query/)
 
 ### Setting the schedule
 
