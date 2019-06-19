@@ -25,11 +25,25 @@ layout: default
 {% endif %}
 
 {% assign authored_chapters = site.chapters | where_exp:'item', "item.authors contains person.path" | sort: 'last_modified' %}
-{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.path" | sort: 'last_modified' %}
-
 {% if authored_chapters %}
   <h2 class="mt-5">Author of {{ authored_chapters | size }} chapters</h2>
   {% for chapter in authored_chapters %}
+    <div class="row mb-3">
+      <div class="col chapter-info">
+        <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
+        {% assign book = site.books | where:'slug', chapter.book_slug %}
+        {% assign book = book[0] %}
+        <em>From <a href="{{ book.url }}">{{ book.title }}</a></em>
+        <p>{{ chapter.description }}</p>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}
+
+{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.path" | sort: 'last_modified' %}
+{% if reviewed_chapters %}
+  <h2 class="mt-5">Reviewer of {{ reviewed_chapters | size }} chapters</h2>
+  {% for chapter in reviewed_chapters %}
     <div class="row mb-3">
       <div class="col chapter-info">
         <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
