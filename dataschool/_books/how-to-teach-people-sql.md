@@ -2,9 +2,9 @@
 title: How to Teach People SQL
 mata_title:
 book_slug: how-to-teach-people-sql
-authors:
+authors: []
 - _people/matt.md
-reviewers:
+reviewers: []
 cover_image: /assets/images/book-covers/how-to-teach-people-sql.png
 main_color: '#147638'
 published: true

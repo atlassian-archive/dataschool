@@ -4,10 +4,10 @@ meta_title:
 description: Create a copy of a database in postgres using psql
 section: extras
 number:
-authors:
-- author: _people/matthew-layne.md
-reviewers:
-- reviewer: _people/matt.md
+authors: []
+- _people/matthew-layne.md
+reviewers: []
+- _people/matt.md
 image:
 img_border_on_default: false
 is_featured: false

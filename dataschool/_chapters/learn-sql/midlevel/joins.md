@@ -7,9 +7,9 @@ description: A JOIN SQL statement combines two data from two tables together. In
   against your PostgreSQL database to analyze your data. Read more to learn.
 number: 90
 section: mid-level
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 image: 
 is_featured: false

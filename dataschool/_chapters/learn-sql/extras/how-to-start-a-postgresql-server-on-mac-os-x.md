@@ -4,11 +4,11 @@ meta_title:
 description: This article explores starting a PostgreSQL server using both Homebrew and the potgres app.
 section: extras
 number:
-authors:
-- author: _people/matthew-layne.md
-reviewers:
-- reviewer: _people/blake.md
-- reviewer: _people/matt.md
+authors: []
+- _people/matthew-layne.md
+reviewers: []
+- _people/blake.md
+- _people/matt.md
 image:
 img_border_on_default: false
 is_featured: false

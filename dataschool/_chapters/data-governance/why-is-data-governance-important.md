@@ -5,9 +5,9 @@ meta_title: Why is Data Governance Important?
 description: Data grows in complexity within organizations. Data governance allows
   you to manage that complexity.
 number: 10
-authors:
+authors: []
 - _people/rohan-joseph.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: ''
 image: 
 is_featured: false

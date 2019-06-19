@@ -5,9 +5,9 @@ description: Congratulations on completing your learning in SQL for PostgreSQL. 
   your SQL education in testing out the SQL editor in Chartio that enables you to
   analyze your data from disparate data sources in one dashboard. Start a trial.
 number: 10000
-authors:
+authors: []
 - _people/dave.md
-reviewers: 
+reviewers: [] 
 
 ---
 # Congratulations!  

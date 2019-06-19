@@ -5,9 +5,9 @@ meta_title: Implementation
 description: Determine data components and the rules that govern this data across
   applications.
 number: 60
-authors:
+authors: []
 - _people/rohan-joseph.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: ''
 image: "/assets/images/data-governance/implementation/implementation_1.png"
 is_featured: false

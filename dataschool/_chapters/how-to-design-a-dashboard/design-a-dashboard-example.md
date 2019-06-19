@@ -4,9 +4,9 @@ title: Design a Dashboard example
 meta_title: 
 description: Example of how applying design thinking improves dashboard design
 number: 160
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1nidfueJfQutx96f0A_oXVsRwb9nuKa5qQ18REVA22TQ/edit?usp=sharing
 image: "/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/wholeDashboard.png"

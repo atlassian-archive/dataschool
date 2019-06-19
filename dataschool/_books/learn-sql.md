@@ -2,9 +2,9 @@
 title: Learn SQL
 meta_title:
 book_slug: learn-sql
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 cover_image: /assets/images/book-covers/learn-sql.png
 main_color: '#762314'
 published: true

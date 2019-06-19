@@ -2,9 +2,9 @@
 title: Dictionary of The Data School
 meta_title:
 book_slug: dictionary
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 cover_image: /assets/images/book-covers/data-school-dictionary.png
 main_color: '#762314'
 published: true

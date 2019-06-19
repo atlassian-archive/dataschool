@@ -5,8 +5,8 @@ meta_title:
 description: You can generate random values in SQL using the following instructions.
 section: extras
 number:
-authors:
-reviewers:
+authors: []
+reviewers: []
 image:
 img_border_on_default: false
 is_featured: false

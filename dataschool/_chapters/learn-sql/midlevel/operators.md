@@ -7,9 +7,9 @@ description: Learn about Operator in SQL, which are used to specify conditions i
   In this interactive SQL tutorial, learn how to use an Operator in a SQL query.
 number: 65
 section: mid-level
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 image: 
 is_featured: false

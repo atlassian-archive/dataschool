@@ -5,9 +5,9 @@ meta_title: Availability
 description: Data has to be made accessible to be looked at holistically throughout
   the organization.
 number: 20
-authors:
+authors: []
 - _people/rohan-joseph.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: 
 image: "/assets/images/data-governance/availability/availability_1.png"
 is_featured: false

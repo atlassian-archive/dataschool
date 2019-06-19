@@ -4,9 +4,9 @@ meta_title:
 description: Visualize how SQL is joining two tables using a Full Outer JOIN
 section: book
 number: 70
-authors:
+authors: []
 - _people/matt.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: https://docs.google.com/document/d/1xA160gXkrjyrlrygTqNAVnUYaEA3-oMFPTmxgvyuZxY/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif"
 is_featured: false

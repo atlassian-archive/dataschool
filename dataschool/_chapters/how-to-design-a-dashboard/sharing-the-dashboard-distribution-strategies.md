@@ -5,9 +5,9 @@ meta_title:
 description: Learn the best practices and common pitfalls of sharing out your dashboard
   to a wide audience.
 number: 120
-authors:
+authors: []
 - _people/tim.md
-reviewers:
+reviewers: []
 - _people/matt.md
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1Kf3Fb6SbOcGe_3HDfxheTFj07v20480hpEINZQ9RkUg/edit?usp=sharing

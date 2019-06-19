@@ -3,9 +3,9 @@ title: 'Debugging SQL: 0 Rows Returned'
 meta_title: 
 section: book
 number: 110
-authors:
+authors: []
 - _people/matt.md
-reviewers: 
+reviewers: [] 
 feedback_doc_url: https://docs.google.com/document/d/1G55ZE0TMKLPoTd8TWh-t-3BoFDd9HADBjbzVoWHYHMA/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_1.gif"
 description: Learn the most common reasons you will get 0 rows returned from your

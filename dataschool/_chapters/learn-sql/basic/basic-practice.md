@@ -7,9 +7,9 @@ description: Now that you've gone through our PostgreSQL interactive SQL tutoria
   Put that knowledge to use in these SQL practice exercises.
 number: 59
 section: basic
-authors:
+authors: []
 - _people/dave.md
-reviewers:
+reviewers: []
 - _people/matt.md
 is_featured: false
 image: 

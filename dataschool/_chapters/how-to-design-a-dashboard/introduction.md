@@ -5,9 +5,9 @@ description: Dashboards are the way data people help the rest of an organization
   data driven decisions.
 section: book
 number: 10
-authors:
+authors: []
 - _people/matt.md
-reviewers:
+reviewers: []
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg"
 is_featured: false
