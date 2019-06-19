@@ -6,7 +6,7 @@ section: book
 number: 40
 authors:
 - _people/matt.md
-reviewers: []
+reviewers:
 image: "/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg"
 is_featured: false
 img_border_on_default: false

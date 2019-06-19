@@ -2,16 +2,16 @@
 section: book
 title: Creating an EC2 Server
 meta_title: EC2-server
-description: ''
+description: 'Learn how to quickly set up an EC2 server'
 number: 30
 authors:
 - _people/blake.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1rZJjWr3QnktTxRBUCdS6FIEoh9f8HBaTiUS9ybJtlFk/edit?usp=sharing
-image: ''
+image: '/assets/images/data-modeling-101/ec2_article/EC2.png'
 is_featured: false
 img_border_on_default: false
-published: false
+published: true
 
 ---
 # Creating an EC2 Server
@@ -32,11 +32,11 @@ If you do not have an AWS account, you will need one for the rest of the steps. 
 
 On the product page, find the section labeled “Compute” and click on “EC2”:
 
-![](https://lh3.googleusercontent.com/GpEs0FdaF28uHUyHEU-aHg5r7Vo6is7ua9Mr84naOu-ILLB_ptv1m0H9ddnpPHdUZnDEJNC7KjvcRlXwDh4qrd-fJHXY4bL7NL5iTYzzSh7faWb0aUue7ML6XUzDDvBmDHQW0k6U =624x456)
+![](/assets/images/data-modeling-101/ec2_article/EC2.png)
 
 From there click “Launch Instance” to begin creating an EC2 server:
 
-![](https://lh5.googleusercontent.com/_QAWyKDCjRBJB5TvsgxZg7U_USko-eWjaU_Xl6yK8NH7pbDr1EyZrRUYsYtcpq8N9_67InGTSjBXbv-y8UWBCEkcKDG2faYB_BOK6oJ1HNMI3BbEDl9g8QpyyJ9e9YYJO64O0Bu4 =624x456)
+![](/assets/images/data-modeling-101/ec2_article/launchInstance.png)
 
 ### Step 3: Picking an operating system
 
@@ -44,19 +44,19 @@ EC2 has a large variety of operating system available and you are free to pick w
 
 For the purpose of this tutorial we will using Ubuntu Server 18.04:
 
-![](https://lh3.googleusercontent.com/dbYQZo7vS8woIP8qmxuTcmYUI77ygmMMkC-54ucpGMEZP-LziTkKnRpDDVZ_sf-2pPo5djfdAY_YhRjWWtxF2c2GsG-xJQ2WiwzNCQe4QAGT1jAoCQYjewD-U_zz_ftOtbp4uQXb =624x453)
+![](/assets/images/data-modeling-101/ec2_article/ubuntu.png)
 
 ### Step 4: Choosing an instance type
 
 The instance type of your server will determine how much hardware is dedicated to your server. The more vCPUs and Memory, the faster your server will process requests. For this example we will be using the free “t2.micro” tier, providing 750 hours (which are the number of hours in a month) of uptime per month for your first year using AWS:
 
-![](https://lh4.googleusercontent.com/oLOWeLvG5mlnXfofGaDUWes8gaF6_jH3ga-lgDaZRVKBzhO11CpDccCv9tCCy08pLpw8zdiIhdGxoNI6WuCb9RHtp-mX47OQvCkzAT7QKr6HTCuTiF6GzD32suoW5Lq9cIhWMuyH =624x453)
+![](/assets/images/data-modeling-101/ec2_article/microInstance.png)
 
 ### Step 5: Review and Launch
 
 Unless you want to increase the capabilities of your EC2 server or provide more functionality, your basic EC2 instance is ready to launch:
 
-![](https://lh4.googleusercontent.com/wtjpAhDb9qo34eXU7aNIEoNqM7gRXeYwYuUNlOB3PJEgYS6k7PyyGNnPJMrotbbMBsEgvcUYffeCXXAdU6Vf10ucetj9wizbOfSoLS9B1vDjjUyk7hmzgYQD_qU466be-QfrkuvU =624x457)
+![](/assets/images/data-modeling-101/ec2_article/reviewInstance.png)
 
 On this page you will notice that you can edit things:
 
@@ -67,21 +67,21 @@ Once you have changed those to suit your needs click “Launch” on the bottom 
 
 ### Step 6: Creating an SSH key
 
-![](https://lh4.googleusercontent.com/Q_m1SNT93u8G_osjQ8bK_sDSDEvTDukva1w6DiodKQ322de_EPWylyhsRI7Qwp4xVfYEhbxVO3sWj7TG-URyPY6gHX9CSqnxBoLPPcfYFQ92gkb5sEdcbfV4xwPJL6rbssDFKMwj =624x455)
+![](/assets/images/data-modeling-101/ec2_article/existingPair.png)
 
 When prompted to create an SSH key, you must “Create a new key pair” and download the pair to finish creating your EC2 instance:
 
-![](https://lh4.googleusercontent.com/eD7GfqA3f468j383GN_pjk37mJm1L3hsrhYJ4nE7tVeIQCBws4mfKqNr-qYgEnCArXWks2kujA2QiwEdlkxP9A3H0U_PKYxhtW3rW78c95Oz3waK-qB96FvY1Aa6NRIJlsy1sgXK =624x453)
+![](/assets/images/data-modeling-101/ec2_article/newPair.png)
 
 This SSH key pair will allow you to connect remotely to your server from the command line. In order to do this you may have to change the permissions for your key file. This can be done with:
 
-\`Sudo chmod 400 /Path/Yourkey.pem\`
+`Sudo chmod 400 /Path/Yourkey.pem`
 
+<!---
 Potential uses:
-
 (article on running jupyter on EC2)
-
 (any other articles using EC2)
+-->
 
 References:
 
