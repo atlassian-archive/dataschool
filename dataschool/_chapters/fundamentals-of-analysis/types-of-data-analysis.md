@@ -28,13 +28,13 @@ Below, we will introduce each type and give examples of how they are utilized in
 
 ### Descriptive Analysis
 
-The first type of data analysis is descriptive analysis. It is at the foundation of all data insight. It is the simplest and most common use of data in business today. Descriptive analysis answers the “what happened” by summarizing past data usually in the form of dashboards. More tutorials about dashboards can be found [here](https://dataschoolstag.wpengine.com/?s=dashboard).
+The first type of data analysis is descriptive analysis. It is at the foundation of all data insight. It is the simplest and most common use of data in business today. Descriptive analysis answers the “what happened” by summarizing past data usually in the form of dashboards. More information about designing dashboards can be found [here](/how-to-design-a-dashboard/).
 
 The biggest use of descriptive analysis in business is to track Key Performance Indicators (KPI’s). KPI’s describe how a business is performing based on chosen benchmarks.
 
 Business applications of descriptive analysis include:
 
-* [KPI dashboards](https://dataschoolstag.wpengine.com/kpi-dashboard-metrics/)
+* KPI dashboards
 * Monthly revenue reports
 * Sales leads overview
 
@@ -64,7 +64,7 @@ Business applications of predictive analysis include:
 * Risk Assessment
 * Sales Forecasting
 * Using customer segmentation to determine which leads have the best chance of converting
-* [Predictive analytics in customer success teams](https://dataschoolstag.wpengine.com/predictive-analytics-customer-success/)
+* Predictive analytics in customer success teams
 
 ### Prescriptive Analysis
 

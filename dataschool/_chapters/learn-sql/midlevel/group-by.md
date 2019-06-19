@@ -53,7 +53,7 @@ It's useful here to order the results of this query by the count, so we can see 
   hint="add IS NOT NULL"
   ></sqlbox>
 
-  Above, the NULL composer is being counted as having the most tracks. That's just noise. Using what we just [learned abour NULL operators](https://chartio.com/learn/sql/operators/), can you modify the query to filter out the NULL composers?
+  Above, the NULL composer is being counted as having the most tracks. That's just noise. Using what we just [learned abour NULL operators](/learn-sql/operators/), can you modify the query to filter out the NULL composers?
 
 [comment]: <> I really don't have good example data for this... would be nice if they already knew joins or i had a denormalized table.
 
@@ -81,7 +81,7 @@ There are a few rules to follow when using GROUP BYs.  The largest is that all d
 SELECT genre_id, unit_price FROM tracks GROUP BY genre_id;
 ```
 
-It throws an error because the database doesn't know what to do about *unit_price*.  While there is only one genre_id per group, there are many unit_prices.  They all can't just be output as a value without some [aggregation function](https://chartio.com/learn/sql/aggregate/).
+It throws an error because the database doesn't know what to do about *unit_price*.  While there is only one genre_id per group, there are many unit_prices.  They all can't just be output as a value without some [aggregation function](/learn-sql/aggregate/).
 
 Can you correct the above query to get the average *unit_price* by *genre_id*?
 
@@ -94,9 +94,11 @@ Can you correct the above query to get the average *unit_price* by *genre_id*?
 
 It's easy to forget this rule and if so you're going to see an error like the following
 
-``` ERROR: column "tracks.composer" must appear in the GROUP BY clause or be used in an aggregate function LINE 1: SELECT genre_id, composer FROM tracks GROUP BY genre_id;```
+```sql
+ERROR: column "tracks.composer" must appear in the GROUP BY clause or be used in an aggregate function LINE 1: SELECT genre_id, composer FROM tracks GROUP BY genre_id;
+```
 
-Just remember that that means you have to either add that column to the GROUP BY or apply an [aggregation function](https://chartio.com/learn/sql/aggregate/) to it so the database knows what to do.
+Just remember that that means you have to either add that column to the GROUP BY or apply an [aggregation function](/learn-sql/aggregate/) to it so the database knows what to do.
 
 The following example will throw this error because the database doesn't know what to do with all of the unit prices.  Can you modify it to do return the average *unit_price* by *genre_id*?
 
