@@ -28,7 +28,7 @@ layout: default
 </article>
 <div class="chapter-followup">
   {% if page.feedback_doc_url %}
-    <a class="btn btn-default give-feedback-btn" href="{{ page.feedback_doc_url }} target="_blank"">Give Feedback on our Google Doc</a>
+    <a class="btn btn-default give-feedback-btn" href="{{ page.feedback_doc_url }}" target="_blank">Give Feedback on our Google Doc</a>
   {% endif %}
 
   {% assign book = site.books | where:'slug', page.book_slug %}

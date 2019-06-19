@@ -13,9 +13,9 @@ layout: base
       </span>
     </button>
     <div class="social-btn-group">
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://dataschool.com{{ page.url }}&title={{ page.title }}&summary={{ page.description | url_encode }}&source=The%20Data%20School" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20interesting%20read%20at%20Data%20School%20https://dataschool.com{{ page.url }}" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://dataschool.com{{ page.url }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description | url_encode }}&source=The%20Data%20School" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20interesting%20read%20at%20Data%20School%20{{ site.url }}{{ page.url }}" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <!-- <a href="#"><i class="fas fa-print"></i></a> -->
     </div>
     {{ content }}

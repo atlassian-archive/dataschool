@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 - _people/blake.md
-feedback_doc_url: 'https://dataschool.com/learn/alter-in-postgresql'
+feedback_doc_url: '/learn/alter-in-postgresql'
 image:
 is_featured: false
 img_border_on_default: false
