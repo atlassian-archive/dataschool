@@ -25,11 +25,11 @@ fields:
   type: list
   config:
     use_select: true
-    min: '1'
+    min: ''
     max: 
     source:
       type: pages
-      section: people
+      section: people-b2efe50e-9f1d-4f8a-b262-478a266e2ea6
   label: Authors
 - name: reviewers
   type: list
