@@ -4,7 +4,7 @@ title: Correlation and P value
 number: 20
 description: Understand how correlation and P-value are related to each other within
   data analytics.
-authors: 
+authors:
 - _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''
@@ -22,11 +22,11 @@ Correlation coefficient is used in statistics to measure how strong a relationsh
 
 ![Correlation Bounds](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations1.jpeg)
 
-A positive correlation means that as one number increases the second number will also increase. A negative correlation means that as one number increases the second number decreases. However, correlation does not always imply causation — correlation does not tell us whether change in one number is directly caused by the other number, only that they typically move together. Learn more about the Pearson correlation formula, and how to implement it in SQL [here](https://chartio.com/learn/postgresql/correlation-coefficient-pearson/?__hstc=113363352.37e1dac817bf0dbc7d236083a09955aa.1558032271531.1559924569268.1559937170027.53&__hssc=113363352.5.1559937170027&__hsfp=1517700082). To understand how correlation works, let’s look at a chart of height vs weight.
+A positive correlation means that as one number increases the second number will also increase. A negative correlation means that as one number increases the second number decreases. However, correlation does not always imply causation — correlation does not tell us whether change in one number is directly caused by the other number, only that they typically move together. Learn more about the Pearson correlation formula, and how to implement it in SQL [here](https://chartio.com/learn/postgresql/correlation-coefficient-pearson/). To understand how correlation works, let’s look at a chart of height vs weight.
 
 ![Height and Weight Correlation](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations2.jpeg)
 
-We can observe that with increase in weight, the height also increases – which indicates they are positively correlated. Also, the correlation coefficient in this case is 0.88, which supports our finding. Learn more about correlation and how to implement it in Excel [here](https://dataschoolstag.wpengine.com/finding-correlation-in-data/).
+We can observe that with increase in weight, the height also increases – which indicates they are positively correlated. Also, the correlation coefficient in this case is 0.88, which supports our finding. Learn more about correlation and how to implement it in Excel [here](/fundamentals-of-analysis/correlation-and-p-value/).
 
 ## **What is a p-value?**
 
@@ -72,4 +72,4 @@ Now, we need to check whether the p-value is significant or not. This is done by
 
 ## **Conclusion**
 
-Though correlation and p-value provides us with the relationship between variables, care should be taken to interpret them correctly. Correlation tells us whether two variables have any sort of relationship and it does not imply causation. If two variables A and B are highly correlated, there are several possible explanations: (a) A influences B; (b) B influences A; (c) A and B are influenced by one or more additional variables; (d) the relationship observed between A and B was a chance error. Similarly, p-value should not be misused to produce a statistically significant result. If analysis is done by exhaustively searching various combinations of variables for correlation, then it is known as [p-hacking](https://dataschoolstag.wpengine.com/what-is-p-hacking/).
+Though correlation and p-value provides us with the relationship between variables, care should be taken to interpret them correctly. Correlation tells us whether two variables have any sort of relationship and it does not imply causation. If two variables A and B are highly correlated, there are several possible explanations: (a) A influences B; (b) B influences A; (c) A and B are influenced by one or more additional variables; (d) the relationship observed between A and B was a chance error. Similarly, p-value should not be misused to produce a statistically significant result. If analysis is done by exhaustively searching various combinations of variables for correlation, then it is known as [p-hacking](/fundamentals-of-analysis/correlation-and-p-value/).

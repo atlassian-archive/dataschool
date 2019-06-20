@@ -10,7 +10,7 @@
   <title>{{ page.meta_title }}</title>
   <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
   <!-- SEO -->
-  <link rel="canonical" href="https://dataschool.com{{ page.url | replace:'index.html','' }}"/>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
   <!-- css -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -19,9 +19,9 @@
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
-  <meta name="twitter:url" content="https://dataschool.com{{ page.url | replace:'index.html','' }}"/>
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}"/>
   <!-- FACEBOOK STUFF -->
-  <meta property="og:url" content="https://dataschool.com{{ page.url | replace:'index.html','' }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
@@ -42,7 +42,7 @@
         "/html/head/meta[@name='description']/@content"
         ]
       },
-     "url": "https://dataschool.com{{ page.url | replace:'index.html','' }}"
+     "url": "{{ site.url }}{{ page.url }}"
      }
   </script>
   {% assign a = site.people | where: 'path', author_path.author %}
@@ -64,7 +64,7 @@
         "url": "/assets/images/chartio-data-school-logo.png"
       }
     },
-    "url": "https://dataschool.com{{ page.url | replace:'index.html','' }}",
+    "url": "{{site.url }}{{ page.url }}",
     "datePublished": "{{ page.date }}",
     "dateCreated": "{{ page.date }}",
     "dateModified": "{{ page.last_modified_at }}",

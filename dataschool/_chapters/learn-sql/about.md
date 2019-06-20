@@ -5,7 +5,6 @@ description: Learn how to use SQL against your PostgreSQL database. SQL is the p
   language for data exploration and analysis. Get a foundational understanding in
   how to use the SQL language with your PostgreSQL database in these data tutorials.
 image: "/assets/images/learn-sql/sql-tutorial-sqlbox.gif"
-permalink: "/learn/sql/"
 authors:
 - _people/dave.md
 reviewers: []
@@ -23,7 +22,7 @@ Best of luck to you!  I hope you learn a great amount from our lessons here.  If
 
 <br>
 <p class="text-center">
-  <a class="btn btn-success btn-large " href="introduction/">START TUTORIAL</a>
+  <a class="btn btn-success btn-large " href="/learn-sql/introduction/">START TUTORIAL</a>
 </p>
 
 
@@ -84,7 +83,7 @@ Having an interactive SQL interface running against a live {{ page.database }} s
 
 ### Q: What is Chartio?
 
-Chartio is a company and a product on a mission to enable anyone in a company (not only the data scientists) to explore and understand their data.  If you're interested you can see [more about our product here](/product/) or [signup for our free trial here](/signup/).
+Chartio is a company and a product on a mission to enable anyone in a company (not only the data scientists) to explore and understand their data.  If you're interested you can see [more about our product here](https://chartio.com/product/) or [signup for our free trial here](https://chartio.com/signup/).
 
 
 ### Q: Why so colloquial?

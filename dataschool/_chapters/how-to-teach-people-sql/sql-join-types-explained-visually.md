@@ -18,7 +18,7 @@ Merging two data sets using SQL or SQL tools can be accomplished through JOINS. 
 
 ## Primary and Foreign Keys
 
-Typically in a [relational database](https://en.wikipedia.org/wiki/Relational_database), data is organized into various tables made of attributes (columns) and [records](https://en.wikipedia.org/wiki/Relational_database) (rows). In each table there exist a column that is the **primary key** which is a column where each entry uniquely represents a single row in that table. This is usually the ID (short for identifier) column. A column in a table that establishes an association with another table’s primary key via shared values is called a **foreign key**. Foreign keys are also typically titled IDs but prepended with the name of the referenced table.
+Typically in a [relational database](https://en.wikipedia.org/wiki/Relational_database/), data is organized into various tables made of attributes (columns) and [records](https://en.wikipedia.org/wiki/Relational_database/) (rows). In each table there exist a column that is the **primary key** which is a column where each entry uniquely represents a single row in that table. This is usually the ID (short for identifier) column. A column in a table that establishes an association with another table’s primary key via shared values is called a **foreign key**. Foreign keys are also typically titled IDs but prepended with the name of the referenced table.
 
 This concept is applied when combining two or more tables together using a JOIN. In the example below, we have two tables: User Table (Table 1) and Event Table (Table 2). We want to join the two tables together to get user data alongside their events data. A real-life example of this would be if you had data from a CRM tool like Salesforce containing users who are paid customers (Table 1) and an events analytics tool like Mixpanel that tracks all the users that have performed an action in your product (Table 2).
 
@@ -38,7 +38,7 @@ You would use an **Outer Join** to join the tables together. An outer join combi
 
 ![Outer JOIN](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_2.png)
 
-For a more detailed look at the [Outer Join click here.](https://dataschool.com/learn/common-sql-join-types-full-outer-join)
+For a more detailed look at the [Outer Join click here.](/how-to-teach-people-sql/full-outer-join-animated/)
 
 ### Inner Join
 
@@ -48,7 +48,7 @@ You would use an **Inner Join** to join the tables together. An inner join combi
 
 ![Inner JOIN](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_3.png)
 
-For a more detailed look at the [Inner Join click here.](https://dataschool.com/learn/common-sql-join-types-inner-join)
+For a more detailed look at the [Inner Join click here.](/how-to-teach-people-sql/inner-join-animated/)
 
 ### Left Join
 
@@ -58,7 +58,7 @@ You would use a **Left Join** to join the tables together. A left join combines 
 
 ![Left JOIN](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_4.png)
 
-For a more Detailed look at the [Left Join click here.](https://dataschool.com/learn/common-sql-join-types-left-right-join)
+For a more Detailed look at the [Left Join click here.](/how-to-teach-people-sql/left-right-join-animated/)
 
 ### Union and Cross Join
 
@@ -66,13 +66,13 @@ In addition to these common join types, there are some methods which will result
 
 ![UNION](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_5.png)
 
-For a more detailed look at the [Union Join click here.](https://dataschool.com/learn/common-sql-join-types-union)
+For a more detailed look at the [Union Join click here.](/how-to-teach-people-sql/union-animated/)
 
 A good use case for this would be if you’re looking to combine two tables by appending them rather than joining them. A **Cross Join** would result in a table with all possible combinations of your tables’ rows together. This can result in enormous tables and should be used with caution.
 
 ![Cross JOIN](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_6.png)
 
-For a more detailed look at the [Cross Join click here.](https://dataschool.com/learn/common-sql-join-types-cross-join)
+For a more detailed look at the [Cross Join click here.](/how-to-teach-people-sql/cross-join-animated/)
 
 Cross Joins will likely only be used when your tables contain single values that you want to join together without a common dimension.
 

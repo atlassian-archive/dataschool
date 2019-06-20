@@ -2,7 +2,7 @@
 section: appendix
 title: How CASE WHEN works
 meta_title: ''
-description: https://dataschool.com/learn/how-case-when-works
+description: CASE WHEN is a SQL function that works a lot like IF THEN in regular programming.
 number: 200
 authors:
 - _people/blake.md
@@ -10,7 +10,7 @@ reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKbyR5n24yeJbuuyAmsk/edit?usp=sharing
-image: ''
+image:
 is_featured: false
 img_border_on_default: true
 
@@ -72,7 +72,7 @@ _Note: you do not have to show all of the columns, or any columns besides the CA
 
 Time to complete a query can be a problem. There is no defined maximum for the number of WHEN conditions you can have within a CASE WHEN statement. CASE WHEN queries can become very slow because the query has to check each condition for every row until it finds a case where it satisfies the condition. This can dramatically increase the query time.
 
-If queries are taking a long time to finish, consider finding ways to optimize your query. More on [optimizing queries from Data School here](https://dataschool.com/learn/optimize-your-sql-query).
+If queries are taking a long time to finish, consider finding ways to optimize your query. More on [optimizing queries from Data School here](/how-to-teach-people-sql/optimize-your-sql-query/).
 
 ### Data Types
 
