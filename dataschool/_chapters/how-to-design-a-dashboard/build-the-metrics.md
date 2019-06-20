@@ -1,7 +1,7 @@
 ---
 section: book
 title: Build the Metrics
-meta_title:
+meta_title: 
 description: Use SQL to query the database to get the data behind the metrics people
   want to see.
 number: 110
@@ -66,7 +66,7 @@ One of the beauties of SQL is that it can do the logistical work of finding the 
 
 If you are struggling with understanding how Aggregations or Subqueries work check out:
 
-* [How SQL Count Aggregation Works](/how-to-teach-people-sql/how-sql-aggregations-works/)
+* [How SQL Count Aggregation Works](/how-to-teach-people-sql/how-sql-aggregations-work/)
 * [How SQL Subqueries Work](/how-to-teach-people-sql/how-sql-subqueries-work/)
 
 If you are running into errors or are getting 0 rows returned check out:
