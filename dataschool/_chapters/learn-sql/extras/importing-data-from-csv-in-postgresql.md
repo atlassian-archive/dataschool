@@ -16,7 +16,7 @@ published: false
 ---
 # Importing from CSV in PSQL
 
-As mentioned in [this](/learn/export-to-csv-from-psql) article on exporting data to CSV files, CSV files are a useful format for storing data. They are usually human readable and are useful for data storage. As such, it is important to be able to read data from CSV articles and store the data in tables. This can be done in psql with a few commands.
+As mentioned in [this](/learn-sql/how-to-export-data-to-csv-or-excel/) article on exporting data to CSV files, CSV files are a useful format for storing data. They are usually human readable and are useful for data storage. As such, it is important to be able to read data from CSV articles and store the data in tables. This can be done in psql with a few commands.
 
 ## Syntax:
 

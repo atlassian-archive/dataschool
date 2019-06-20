@@ -125,7 +125,7 @@ The details of our friends table now look like this:
 
 ![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/indexesList.png)
 
-Looking at the above image, the “friends_name_asc” is now an associated index of the “friends” table. That means the [query plan](/learn/what-is-a-query-plan), the plan that SQL creates when determining the best way to perform a query, will begin to use the index when queries are being made. Notice that “friends_pkey” is listed as an index even though we never declared that as an index. That is the **clustered index** that was referenced earlier in the article that is automatically created based off of the primary key.
+Looking at the above image, the “friends_name_asc” is now an associated index of the “friends” table. That means the [query plan](/how-to-teach-people-sql/what-is-a-query-plan/), the plan that SQL creates when determining the best way to perform a query, will begin to use the index when queries are being made. Notice that “friends_pkey” is listed as an index even though we never declared that as an index. That is the **clustered index** that was referenced earlier in the article that is automatically created based off of the primary key.
 
 We can also see there is a “friends_city_desc” index. That index was created similarly to the names index:
 

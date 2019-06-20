@@ -22,7 +22,7 @@ Best of luck to you!  I hope you learn a great amount from our lessons here.  If
 
 <br>
 <p class="text-center">
-  <a class="btn btn-success btn-large " href="introduction/">START TUTORIAL</a>
+  <a class="btn btn-success btn-large " href="/learn-sql/introduction/">START TUTORIAL</a>
 </p>
 
 
