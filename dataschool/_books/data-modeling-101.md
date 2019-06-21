@@ -1,10 +1,7 @@
 ---
 title: Data Modeling 101
-description: Dimensional modeling used to deliver significant query efficiency and
-  business value which justified the cost in implementing these design practices.
-  With the advent of new cloud storage technologies it is no longer able to deliver
-  as much value and should be replaced with simpler techniques. This book covers data
-  modeling techniques that will get you enormous value for very little effort.
+description: Learn why data modeling is valuable and how it has changed with the advent
+  of cloud storage and columnar databases
 book_slug: data-modeling-101
 authors:
 - _people/blake.md
@@ -17,3 +14,4 @@ is_featured: false
 status: in_progress
 
 ---
+Dimensional modeling used to deliver significant query efficiency and business value which justified the cost in implementing these design practices. With the advent of new cloud storage technologies it is no longer able to deliver as much value and should be replaced with simpler techniques. This book covers data modeling techniques that will get you enormous value for very little effort.
