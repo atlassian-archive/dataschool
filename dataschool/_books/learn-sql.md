@@ -2,6 +2,7 @@
 title: Learn SQL
 meta_title:
 book_slug: learn-sql
+book_sort_number: 1
 authors:
 - _people/dave.md
 reviewers: []

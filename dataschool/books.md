@@ -5,7 +5,8 @@ description: 'Read our web books on topics such as SQL, data visualization, and 
 layout: default
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
-{% for book in site.books %}
+{% assign books = site.books | sort: 'book_sort_number' %}
+{% for book in books %}
   {% if book.published %}<div class="row mb-5">
     <div class="col-sm-8">
       <a href="{{ book.url }}" class="book-info">

@@ -2,6 +2,7 @@
 title: How to Teach People SQL
 mata_title:
 book_slug: how-to-teach-people-sql
+book_sort_number: 1
 authors:
 - _people/matt.md
 reviewers: []

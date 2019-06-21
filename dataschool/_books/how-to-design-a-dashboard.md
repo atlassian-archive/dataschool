@@ -2,6 +2,7 @@
 title: How to Design a Dashboard
 meta_title:
 book_slug: how-to-design-a-dashboard
+book_sort_number: 1
 authors:
 - _people/matt.md
 - _people/tim.md

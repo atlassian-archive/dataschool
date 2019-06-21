@@ -2,6 +2,7 @@
 title: Fundamentals of Analysis
 description: ''
 book_slug: fundamentals-of-analysis
+book_sort_number: 1
 authors:
 - _people/rohan-joseph.md
 reviewers: []
