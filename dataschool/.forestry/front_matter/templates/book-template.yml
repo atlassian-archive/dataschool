@@ -39,4 +39,5 @@ fields:
   name: main_color
   label: main_color
 pages:
+- dataschool/_books/misrepresenting-data.md
 - dataschool/_books/sql-optimization.md
