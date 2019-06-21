@@ -28,7 +28,11 @@ body {
     color: $text-color;
     background-color: $background-color;
 }
-
+/* setting the overflow scrolling to have momentum, for on mobile */
+nav.sidebar, div.content {
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+}
 // TYPOGRAPHY
 // type size reset
 h1, h2, h3, h4, h5, h6, p.faux-header {
