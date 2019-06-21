@@ -1,7 +1,7 @@
 ---
 section: book
 title: Build the Metrics
-meta_title: 
+meta_title:
 description: Use SQL to query the database to get the data behind the metrics people
   want to see.
 number: 110
@@ -43,7 +43,7 @@ WHERE department != 'marketing'
 ```sql
 SELECT SUM(amount), department
 FROM Operations
-WHERE department != ‘marketing’
+WHERE department != 'marketing'
 GROUP BY department
 ```
 
@@ -52,9 +52,9 @@ GROUP BY department
 ### Total Operations Cost by Department by Month
 
 ```sql
-SELECT SUM(amount), department, TO_CHAR(created_date, ‘YYYY-MM’) AS month
+SELECT SUM(amount), department, TO_CHAR(created_date, 'YYYY-MM') AS month
 FROM Operations
-WHERE department != ‘marketing’
+WHERE department != 'marketing'
 GROUP BY department, month
 ```
 
@@ -76,11 +76,11 @@ If you are running into errors or are getting 0 rows returned check out:
 
 ## Checking your Queries
 
-Do not assume your query is perfect. You should check it by looking at other peoples’ queries and/or by having the Data Gatekeeper review it.
+Do not assume your query is perfect. You should check it by looking at other peoples' queries and/or by having the Data Gatekeeper review it.
 
-### Check other people’s Queries
+### Check other people's Queries
 
-Depending on the BI tool that you are using you can see other people’s SQL queries. This can be very insightful. You can take note of data sources they used that you were not aware of. You can also see if other people have complexity in their queries.
+Depending on the BI tool that you are using you can see other people's SQL queries. This can be very insightful. You can take note of data sources they used that you were not aware of. You can also see if other people have complexity in their queries.
 
 Complex Query example:
 
@@ -116,4 +116,4 @@ Go through each table and create the corresponding data visualization in your BI
 
 * Build metrics in SQL by plugging in the columns to their relevant part of a SQL statement
 * SQL is required to get the data. Use it to calculate the metrics directly as well as to reflect any underlying changes
-* Check your queries by evaluating other people’s queries in your company and/or having the Data Gatekeeper review it
+* Check your queries by evaluating other people's queries in your company and/or having the Data Gatekeeper review it
