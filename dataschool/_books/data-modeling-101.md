@@ -1,14 +1,18 @@
 ---
 title: Data Modeling 101
-description: How to model your data in your start up.
+description: Dimensional modeling used to deliver significant query efficiency and
+  business value which justified the cost in implementing these design practices.
+  With the advent of new cloud storage technologies it is no longer able to deliver
+  as much value and should be replaced with simpler techniques. This book covers data
+  modeling techniques that will get you enormous value for very little effort.
 book_slug: data-modeling-101
 authors:
 - _people/blake.md
 - _people/matt.md
 - _people/dave.md
 reviewers: []
-cover_image: '/assets/images/book-covers/data-modeling-101.png'
-main_color: '#764514'
+cover_image: "/assets/images/book-covers/data-modeling-101.png"
+main_color: "#764514"
 is_featured: false
 status: in_progress
 
