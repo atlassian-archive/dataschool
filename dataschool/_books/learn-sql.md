@@ -1,6 +1,6 @@
 ---
 title: Learn SQL
-meta_title: 
+meta_title:
 book_slug: learn-sql
 book_sort_number: 1
 authors:
@@ -13,6 +13,7 @@ topics:
 - _chapters/dictionary/sql.md
 status: released
 description: Learn how to write SQL by answering simple data questions
+published: true
 
 ---
 An interactive SQL Tutorial by example!
