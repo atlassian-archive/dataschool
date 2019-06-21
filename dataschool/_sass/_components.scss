@@ -178,6 +178,9 @@ a.header-link {
 .give-feedback-btn, .next-chapter-btn {
   display: block;
   margin-top: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* styles for Hubspot forms */
