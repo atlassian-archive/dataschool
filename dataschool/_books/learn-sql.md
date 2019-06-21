@@ -1,16 +1,17 @@
 ---
 title: Learn SQL
-meta_title:
+meta_title: 
 book_slug: learn-sql
 authors:
 - _people/dave.md
 reviewers: []
-cover_image: '/assets/images/book-covers/learn-sql.png'
-main_color: '#762314'
-published: true
+cover_image: "/assets/images/book-covers/learn-sql.png"
+main_color: "#762314"
 is_featured: true
 topics:
-  - _chapters/dictionary/sql.md
+- _chapters/dictionary/sql.md
 status: released
+description: Learn how to write SQL by answering simple data questions
+
 ---
 An interactive SQL Tutorial by example!
