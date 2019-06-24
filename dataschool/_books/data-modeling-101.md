@@ -1,5 +1,6 @@
 ---
 title: Data Modeling 101
+meta_title:
 description: Learn why data modeling is valuable and how it has changed with the advent
   of cloud storage and columnar databases
 book_slug: data-modeling-101

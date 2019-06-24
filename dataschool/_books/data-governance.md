@@ -1,5 +1,6 @@
 ---
 title: Data Governance
+meta_title:
 description: Learn how to apply Data Governance techniques to optimize your data stack
 book_slug: data-governance
 book_sort_number: 1

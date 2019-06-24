@@ -11,27 +11,12 @@ fields:
 - type: textarea
   name: book_slug
   label: book_slug
-- name: authors
-  type: field_group_list
-  fields:
-  - name: author
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: people
-        file: 
-        path: 
-    label: Author
-    description: choose authors from the current list of contributors
-  config:
-    min: 
-    max: 
-    labelField: author
-  label: Authors
+- type: select
+  name: authors
+  label: authors
+- type: select
+  name: reviewers
+  label: revewers
 - type: file
   name: cover_image
   label: cover_image

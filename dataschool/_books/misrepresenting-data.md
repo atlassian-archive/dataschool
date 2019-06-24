@@ -1,9 +1,10 @@
 ---
 title: Misrepresenting Data
+meta_title:
 description: Learn how to not make typical errors in interpreting data.
 book_slug: misrepresenting-data
 authors:
-- author: _people/matt.md
+- _people/matt.md
 cover_image: ''
 main_color: ''
 published: false

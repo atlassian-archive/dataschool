@@ -1,11 +1,12 @@
 ---
 title: SQL Optimization
+meta_title:
 description: Learn SQL techniques to improve query speed and data warehouse performance.
 book_slug: sql-optimization
 authors:
-- author: _people/matthew-layne.md
-- author: _people/blake.md
-- author: _people/matt.md
+- _people/matthew-layne.md
+- _people/blake.md
+- _people/matt.md
 cover_image: ''
 main_color: ''
 published: false
