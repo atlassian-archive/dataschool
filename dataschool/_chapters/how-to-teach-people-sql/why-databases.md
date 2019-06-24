@@ -1,14 +1,14 @@
 ---
 section: book
-title: Why Databases
-meta_title:
+title: Why Databases?
+meta_title: Why Databases?
 number: 20
 authors:
 - _people/katerina-bicakci.md
 - _people/matt.md
 reviewers: []
 feeDBsack_doc_url: https://docs.google.com/document/d/1o8PIYkD2m3PHzgZZyQqqc0F4P-F6Qj7gIoCyeNBm9W8/edit?usp=sharing
-image:
+image: 
 description: Databases are better for managing data than spreadsheets when you consider
   size, accuracy, and security
 is_featured: false
