@@ -1,7 +1,7 @@
 ---
 section: book
 title: Conclusion
-meta_title:
+meta_title: Use Design Thinking to Create Dashboards
 description: Quick visual review of designing a dashboard
 number: 150
 authors:

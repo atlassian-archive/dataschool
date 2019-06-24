@@ -1,7 +1,7 @@
 ---
 section: book
 title: Build the Metrics
-meta_title:
+meta_title: Building Metrics for your Dashboard
 description: Use SQL to query the database to get the data behind the metrics people
   want to see.
 number: 110
