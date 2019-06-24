@@ -1,7 +1,7 @@
 ---
 title: Operators
 short: Operators
-meta_title: ''
+meta_title: SQL - Operators
 description: Learn about Operator in SQL, which are used to specify conditions in
   a SQL statement and as conjunctions for multiple conditions in a SQL statement.
   In this interactive SQL tutorial, learn how to use an Operator in a SQL query.
@@ -11,7 +11,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image:
+image: 
 is_featured: false
 
 ---

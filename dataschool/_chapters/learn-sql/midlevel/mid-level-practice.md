@@ -1,7 +1,7 @@
 ---
 title: Mid Level SQL Practice Grounds
 short: Practice
-meta_title: ''
+meta_title: Mid Level SQL Practice Grounds
 description: Now that you've gone through our PostgreSQL interactive SQL tutorials,
   you've got mid-level SQL fundamentals that you can apply to your data and databases.
   Put that knowledge to use in these SQL practice exercises.
@@ -11,7 +11,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image:
+image: 
 is_featured: false
 
 ---

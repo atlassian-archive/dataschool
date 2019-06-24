@@ -1,7 +1,7 @@
 ---
 title: JOIN Relationships and JOINing Tables
 short: JOINs
-meta_title: ''
+meta_title: SQL - JOIN Relationships and JOINing Tables
 description: A JOIN SQL statement combines two data from two tables together. In this
   interactive SQL tutorial, learn how to use the JOIN statement in your SQL queries
   against your PostgreSQL database to analyze your data. Read more to learn.
@@ -11,7 +11,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image:
+image: 
 is_featured: false
 
 ---
