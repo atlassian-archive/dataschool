@@ -1,6 +1,6 @@
 ---
 title: 'Debugging SQL: Syntax Errors'
-meta_title:
+meta_title: 'Debugging SQL: Syntax Errors'
 section: book
 number: 100
 authors:

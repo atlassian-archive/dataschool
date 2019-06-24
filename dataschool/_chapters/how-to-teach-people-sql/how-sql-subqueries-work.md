@@ -1,6 +1,6 @@
 ---
 title: How SQL Subqueries Work
-meta_title:
+meta_title: How SQL Subqueries Work
 section: book
 number: 130
 authors:

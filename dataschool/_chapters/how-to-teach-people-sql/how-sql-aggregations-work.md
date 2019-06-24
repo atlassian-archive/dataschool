@@ -1,6 +1,6 @@
 ---
 title: How SQL Aggregations Work
-meta_title:
+meta_title: How SQL Aggregations Work
 section: book
 number: 120
 authors:

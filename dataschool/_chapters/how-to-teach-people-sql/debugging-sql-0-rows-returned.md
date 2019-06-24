@@ -1,6 +1,6 @@
 ---
 title: 'Debugging SQL: 0 Rows Returned'
-meta_title:
+meta_title: 'Debugging SQL: 0 Rows Returned'
 section: book
 number: 110
 authors:
