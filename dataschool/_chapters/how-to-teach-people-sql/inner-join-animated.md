@@ -1,6 +1,6 @@
 ---
 title: Inner Join - Animated
-meta_title:
+meta_title: Inner Join - Animated
 description: Visualize how SQL is joining two tables using an Inner JOIN
 section: book
 number: 50
