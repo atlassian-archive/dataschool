@@ -1,6 +1,6 @@
 ---
 title: Dictionary of The Data School
-meta_title:
+meta_title: Dictionary of Data Terms by the Data School
 description:
 book_slug: dictionary
 book_sort_number: 2

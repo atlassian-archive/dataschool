@@ -1,6 +1,6 @@
 ---
 title: Learn SQL
-meta_title:
+meta_title: Learn SQL web book
 description: Learn how to write SQL by answering simple data questions
 book_slug: learn-sql
 book_sort_number: 1

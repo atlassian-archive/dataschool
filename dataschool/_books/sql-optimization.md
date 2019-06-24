@@ -1,6 +1,6 @@
 ---
 title: SQL Optimization
-meta_title:
+meta_title: SQL Optimization web book
 description: Learn SQL techniques to improve query speed and data warehouse performance.
 book_slug: sql-optimization
 authors:

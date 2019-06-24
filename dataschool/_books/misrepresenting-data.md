@@ -1,6 +1,6 @@
 ---
 title: Misrepresenting Data
-meta_title:
+meta_title: Misrepresenting Data web book
 description: Learn how to not make typical errors in interpreting data.
 book_slug: misrepresenting-data
 authors:

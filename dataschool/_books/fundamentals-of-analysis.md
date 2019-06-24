@@ -1,6 +1,6 @@
 ---
 title: Fundamentals of Analysis
-meta_title:
+meta_title: Fundamentals of Analysis web book
 description: Learn how to get insights out of data
 book_slug: fundamentals-of-analysis
 book_sort_number: 1
