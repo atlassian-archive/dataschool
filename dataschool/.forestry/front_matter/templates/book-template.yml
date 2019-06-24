@@ -5,6 +5,9 @@ fields:
 - type: text
   name: title
   label: title
+- type: text
+  name: meta_title
+  label: meta_title
 - type: textarea
   name: description
   label: description
