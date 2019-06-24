@@ -1,6 +1,7 @@
 ---
 title: Drew Banin
 meta_title:
+description: 
 image: /assets/images/people/drew.jpg
 linkedin: https://www.linkedin.com/in/drewbanin/
 twitter:

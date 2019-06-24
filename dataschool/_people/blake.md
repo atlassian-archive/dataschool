@@ -1,6 +1,7 @@
 ---
 title: Blake Barnhill
-meta_title: 
+meta_title:
+description: 
 image: /assets/images/people/blake.png
 is_contributor: true
 job_title: Marketing Intern

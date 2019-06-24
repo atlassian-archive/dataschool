@@ -1,6 +1,7 @@
 ---
 title: Katerina Bicakci
 meta_title:
+description: 
 image: /assets/images/people/katerina.png
 linkedin:
 twitter:

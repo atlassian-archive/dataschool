@@ -1,6 +1,7 @@
 ---
 title: Patrick Gibson
-meta_title: 
+meta_title:
+description: 
 image: /assets/images/people/patrick.jpg
 linkedin: https://www.linkedin.com/in/patrick-gibson-536b1a86/
 twitter:

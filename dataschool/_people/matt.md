@@ -1,6 +1,7 @@
 ---
 title: Matt David
-meta_title: 
+meta_title:
+description: 
 image: "/assets/images/people/matt.jpg"
 is_contributor: true
 job_title: Editor of the Data School

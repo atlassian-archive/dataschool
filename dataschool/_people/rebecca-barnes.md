@@ -1,6 +1,7 @@
 ---
 title: Rebecca Barnes
 meta_title:
+description: 
 image: /assets/images/people/rebecca.jpg
 linkedin:
 twitter:

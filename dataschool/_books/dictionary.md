@@ -1,6 +1,7 @@
 ---
 title: Dictionary of The Data School
-meta_title: 
+meta_title:
+description: 
 book_slug: dictionary
 book_sort_number: 2
 authors:

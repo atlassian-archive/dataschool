@@ -8,6 +8,9 @@ fields:
 - type: text
   name: meta_title
   label: meta title
+- type: text
+  name: description
+  label: description
 - type: file
   name: image
   label: image
