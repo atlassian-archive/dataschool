@@ -1,7 +1,7 @@
 ---
 section: book
 title: Dashboard Prototyping and Feedback
-meta_title:
+meta_title: Dashboard Prototyping and Feedback
 description: Learn techniques to prototype your dashboard and iterate on it
 number: 90
 authors:

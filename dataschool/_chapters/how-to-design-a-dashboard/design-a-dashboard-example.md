@@ -1,7 +1,7 @@
 ---
 section: book
 title: Design a Dashboard example
-meta_title:
+meta_title: Designing a Dashboard example
 description: Example of how applying design thinking improves dashboard design
 number: 160
 authors:
