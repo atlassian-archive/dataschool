@@ -1,6 +1,6 @@
 ---
 title: Accessing Data
-meta_title:
+meta_title: Accessing Data
 description: Accessing data within a company requires being given permission to the
   data, learning how to ask questions in SQL, and how to explore a schema.
 section: book

@@ -1,6 +1,6 @@
 ---
 title: What Makes a Great Dashboard (ACES)
-meta_title:
+meta_title: What Makes a Great Dashboard
 description: Learn the best practices behind dashboard design to support decision
   making
 section: book
