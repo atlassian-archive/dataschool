@@ -1,7 +1,7 @@
 ---
 section: book
 title: Finding the Data That Builds Metrics
-meta_title:
+meta_title: Finding the Data That Builds Metrics
 number: 100
 authors:
 - _people/matt.md
