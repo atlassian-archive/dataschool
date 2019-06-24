@@ -1,8 +1,9 @@
 ---
 section: appendix
 title: How Window Functions work
-meta_title: ''
-description: ''
+meta_title: How Window Functions work
+description: Learn how window functions work by looking at gifs that show the process
+  in slow motion.
 number: 200
 authors:
 - _people/blake.md
@@ -10,10 +11,9 @@ reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1-baqTQWPYoOB_IFykR9DZcqiAXA0B6SGE_51UhMOyOI/edit?usp=sharing
-image: 'assets/images/how-to-teach-people-sql/appendix/window_functions/CompareWindowToAgg.png'
+image: assets/images/how-to-teach-people-sql/appendix/window_functions/CompareWindowToAgg.png
 is_featured: false
 img_border_on_default: true
-published: true
 
 ---
 ## What are Window Functions?
