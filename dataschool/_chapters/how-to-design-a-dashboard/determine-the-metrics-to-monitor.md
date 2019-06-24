@@ -1,7 +1,7 @@
 ---
 section: book
 title: Determine the Metrics to Monitor
-meta_title:
+meta_title: Determine Metrics to Monitor for a Dashboard
 description: Define what metrics actually matter to business professionals.
 number: 60
 authors:
