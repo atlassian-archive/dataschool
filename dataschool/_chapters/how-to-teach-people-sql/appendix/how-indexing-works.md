@@ -12,6 +12,7 @@ description: Learn how indexing works and why it is a critical part of optimizin
   your data warehouse
 feedback_doc_url: https://docs.google.com/document/d/1S7AJ4rsaPnio2bK-opfz_fAIMZ214UpdMUYdhwlsQrg/edit?usp=sharing
 img_border_on_default: true
+meta_title: How to use Indexing to Improve Database Queries
 
 ---
 ## **What is Indexing?**

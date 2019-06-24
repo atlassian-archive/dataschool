@@ -11,9 +11,9 @@ reviewers:
 description: Learn how Regex works and how to use it in your queries.
 feedback_doc_url: https://docs.google.com/document/d/1MgGrt9nqanxNvJ3FLZNoBP5R0nlzksrsOQp6g5R5fcc/edit?usp=sharing
 img_border_on_default: true
+meta_title: How to use Regex in SQL
 
 ---
-
 ## What is Regex?
 
 Regex is a tool to find text within text. For instance, if you were looking for a list of company emails from a list of all your stored emails:
