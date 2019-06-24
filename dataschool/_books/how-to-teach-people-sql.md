@@ -1,18 +1,18 @@
 ---
 title: How to Teach People SQL
-mata_title:
+mata_title: 
 book_slug: how-to-teach-people-sql
 book_sort_number: 1
 authors:
 - _people/matt.md
 reviewers: []
-cover_image: '/assets/images/book-covers/how-to-teach-people-sql.png'
-main_color: '#147638'
-published: true
+cover_image: "/assets/images/book-covers/how-to-teach-people-sql.png"
+main_color: "#147638"
 is_featured: false
 status: released
 topics:
-  - _chapters/dictionary/sql.md
+- _chapters/dictionary/sql.md
+description: Learn the Mental Models to make SQL Intuitive
 
 ---
 So you want your company to learn SQL?
