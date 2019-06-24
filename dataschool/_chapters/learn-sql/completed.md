@@ -7,7 +7,8 @@ description: Congratulations on completing your learning in SQL for PostgreSQL. 
 number: 10000
 authors:
 - _people/dave.md
-reviewers:
+reviewers: 
+meta_title: PostgreSQL tutorial Ending
 
 ---
 # Congratulations!  
