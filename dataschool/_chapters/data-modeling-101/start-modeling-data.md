@@ -1,7 +1,7 @@
 ---
 section: book
 title: Start Modeling Data
-meta_title:
+meta_title: Start Modeling Data with dbt
 description: This is a quick introduction to using DBT and BigQuery to model data.
 number: 10
 authors:
@@ -10,12 +10,11 @@ reviewers:
 - _people/drew-banin.md
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1v_F2P6da3SOwy1W5K13tR-unTba-vh2U-3iEQjGSUTs/edit?usp=sharing
-image: /assets/images/data-modeling-101/start_modeling_data/data1.png
+image: "/assets/images/data-modeling-101/start_modeling_data/data1.png"
 is_featured: false
 img_border_on_default: false
-published: true
----
 
+---
 Data Modeling sounds really scary, like a big chore and months of work.
 
 But it is not so bad and you can get started in less than 10 minutes.
