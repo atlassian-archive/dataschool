@@ -1,6 +1,6 @@
 ---
 title: What is a Dashboard?
-meta_title:
+meta_title: What is a Dashboard?
 description: Learn what dashboards are and why they are important to making decisions.
 section: book
 number: 20
