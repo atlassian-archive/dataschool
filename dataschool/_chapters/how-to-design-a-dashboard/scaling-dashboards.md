@@ -1,7 +1,7 @@
 ---
 section: book
 title: Scaling Dashboards
-meta_title:
+meta_title: Scaling Dashboards
 description: Successful dashboards get used a lot so they need to be built to scale
 number: 130
 authors:

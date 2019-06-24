@@ -1,7 +1,7 @@
 ---
 section: book
 title: Making Sure Your Dashboard Always Gets Better
-meta_title:
+meta_title: Iterating on Dashboards
 description: Once a dashboard is built and shared it is not done. You should maintain
   it and improve it by using audience feedback.
 number: 140

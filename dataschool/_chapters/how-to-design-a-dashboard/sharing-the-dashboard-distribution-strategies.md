@@ -1,7 +1,7 @@
 ---
 section: book
 title: Sharing the Dashboard – Distribution Strategies
-meta_title:
+meta_title: Dashboard Distribution Strategies
 description: Learn the best practices and common pitfalls of sharing out your dashboard
   to a wide audience.
 number: 120
