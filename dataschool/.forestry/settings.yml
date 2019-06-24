@@ -12,13 +12,6 @@ sections:
   templates:
   - chapter-template
 - type: directory
-  path: dataschool/_books
-  label: Books
-  create: documents
-  match: "**/*.md"
-  templates:
-  - book-template
-- type: directory
   path: dataschool/_people
   label: People
   create: documents
