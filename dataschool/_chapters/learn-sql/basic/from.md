@@ -1,7 +1,7 @@
 ---
 title: FROM
 short: FROM
-meta_title: ''
+meta_title: SQL - FROM
 description: This interactive SQL tutorial will explain the FROM command with syntax
   and use cases on how to interact with your data in the PostgreSQL database. Learn
   how to use the SQL FROM command by following the steps in this interactive tutorial.
@@ -12,9 +12,10 @@ authors:
 reviewers:
 - _people/matt.md
 is_featured: false
-image:
+image: 
 topics:
-  - _chapters/dictionary/sql.md
+- _chapters/dictionary/sql.md
+
 ---
 So now you know how to SELECT data but not yet how to choose where to get that data FROM.  Let’s get into the real stuff and SELECT data FROM a specific table.  
 
