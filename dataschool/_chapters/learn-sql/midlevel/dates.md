@@ -1,7 +1,7 @@
 ---
 title: DATE and TIME Functions
 short: DATEs
-meta_title: ''
+meta_title: SQL - DATE and TIME Functions
 description: DATE and TIME values in PostgreSQL have a whole special set of functions
   and operators for their proper use. Learn how to use dates in PostgreSQL in this
   interactive SQL tutorial, so you can get the DATE and TIME of your data analysis.
@@ -11,7 +11,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image:
+image: 
 is_featured: false
 
 ---

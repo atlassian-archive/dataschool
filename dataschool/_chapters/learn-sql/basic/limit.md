@@ -1,7 +1,7 @@
 ---
 title: LIMIT and OFFSET
 short: LIMIT
-meta_title: ''
+meta_title: SQL - LIMIT and OFFSET
 description: Learn how to LIMIT the number of results that are returned you can simply
   use the LIMIT SQL command at the end of the query to specify. You can use the LIMIT
   command on your PostgreSQL database. Read the tutorial to learn more.
@@ -12,9 +12,10 @@ authors:
 reviewers:
 - _people/matt.md
 is_featured: false
-image:
+image: 
 topics:
-  - _chapters/dictionary/sql.md
+- _chapters/dictionary/sql.md
+
 ---
 So far all of our queries have brought back all the rows in the table.  That's okay for our example database with just a few hundred rows of data, but on other databases that can often be A LOT more data than needed.  If want to LIMIT the number of results that are returned you can simply use the LIMIT command at the end of the query to specify.
 
