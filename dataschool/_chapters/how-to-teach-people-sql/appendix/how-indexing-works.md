@@ -96,7 +96,7 @@ Note: Non-clustered indexes are **not** new tables. Non-clustered indexes hold t
 
 You can think of these just like indexes in a book. The index points to the location in the book where you can find the data you are looking for.
 
-![https://www.oreilly.com/library/view/adobe-framemaker-11/9780133373677/graphics/12-00_index.jpg](/assets/images/how-to-teach-people-sql/appendix/how_to_index/Index.png)
+![https://www.oreilly.com/library/view/adobe-framemaker-11/9780133373677/graphics/12-00](/assets/images/how-to-teach-people-sql/appendix/how_to_index/Index.png)
 
 Non-clustered indexes point to memory addresses instead of storing data themselves. This makes them slower to query than clustered indexes but typically much faster than a non-indexed column.
 
