@@ -12,6 +12,8 @@ image: ''
 summary: ''
 is_featured: false
 img_border_on_default: false
+meta_title: 4 Types of Data Analysis
+
 ---
 There are four types of data analysis that are in use across all industries. While we separate these into categories, they are all linked together and build upon each other. As you begin moving from the simplest type of analytics forward, the degree of difficulty and resources required increases. At the same time, the level of added insight and value also increases.
 
