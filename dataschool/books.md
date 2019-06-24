@@ -7,7 +7,7 @@ layout: default
 <h1 class="title centered mb-5">{{page.title}}</h1>
 {% assign books = site.books | sort: 'book_sort_number' %}
 {% for book in books %}
-  {% if book.published %}<div class="row mb-5">
+  {% if book.published != 'false' %}<div class="row mb-5">
     <div class="col-sm-8">
       <a href="{{ book.url }}" class="book-info">
         <h2 class="mt-0">{{ book.title }} <i class="fas fa-arrow-right"></i></h2>

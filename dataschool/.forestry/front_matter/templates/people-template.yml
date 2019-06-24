@@ -5,21 +5,12 @@ fields:
 - type: text
   name: title
   label: title
+- type: text
+  name: meta_title
+  label: meta title
 - type: file
   name: image
   label: image
-- type: textarea
-  name: bio
-  label: bio
-- type: text
-  name: linkedin
-  label: linkedin
-- type: text
-  name: twitter
-  label: twitter
-- type: text
-  name: website
-  label: website
 - type: boolean
   name: is_contributor
   label: is_contributor
@@ -29,3 +20,12 @@ fields:
 - type: text
   name: company
   label: company
+- type: text
+  name: linkedin
+  label: linkedin
+- type: text
+  name: twitter
+  label: twitter
+- type: text
+  name: website
+  label: website
