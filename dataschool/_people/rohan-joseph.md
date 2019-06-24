@@ -1,13 +1,15 @@
 ---
 title: Rohan Joseph
-meta_title:
-description: 
-image: /assets/images/people/rohan.jpg
+meta_title: Contributor Rohan Joseph
+description: Writes about Correlation, Causation, and the different types of data
+  analysis
+image: "/assets/images/people/rohan.jpg"
 linkedin: https://www.linkedin.com/in/rohan-joseph-b39a86aa/
-twitter:
-website:
+twitter: 
+website: 
 is_contributor: true
-job_title:
-company:
+job_title: 
+company: 
+
 ---
 Practicing the dark arts of data science. I am currently pursuing Master's in Operations Research at Virginia Tech and working with Chartio to democratize analytics in every organization.
