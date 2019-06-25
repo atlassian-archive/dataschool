@@ -17,11 +17,7 @@ is_featured: false
 ---
 **Copy into a new pre-structured table:**
 
-\`\`\`sql
-
 CREATE TABLE \[Table to copy **To**\] AS \[Table to copy **From**\] WITH NO DATA;
-
-\`\`\`
 
 \- Note: “WITH NO DATA” specifies that the new table should only copy the table structure with no data
 
