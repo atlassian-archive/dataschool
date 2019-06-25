@@ -29,7 +29,7 @@ fields:
     max: 
     source:
       type: pages
-      section: people-b2efe50e-9f1d-4f8a-b262-478a266e2ea6
+      section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
   label: Authors
 - name: reviewers
   type: list
@@ -39,7 +39,7 @@ fields:
     max: 
     source:
       type: pages
-      section: people
+      section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
   label: Reviewers
 - type: text
   name: feedback_doc_url
