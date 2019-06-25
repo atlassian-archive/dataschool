@@ -3,16 +3,16 @@ title: Importing Data from CSV in PostgreSQL
 meta_title: Importing Data from CSV in PostgreSQL
 description: This article outlines how to use psql to import data from csv files.
 section: extras
-number:
+number: 
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1zt39uLRSjBc74SXJ-xioYcN9XZDs7NarubmVqn0qrwk/edit?usp=sharing
-image:
+image: 
 img_border_on_default: false
 is_featured: false
-published: false
+
 ---
 # Importing from CSV in PSQL
 
@@ -20,7 +20,9 @@ As mentioned in [this](/learn-sql/how-to-export-data-to-csv-or-excel/) article o
 
 ## Syntax:
 
-**COPY \[Table Name\](Optional Columns) FROM ‘\[Absolute Path to File\]’ DELIMITER ‘\[Delimiter Character\]’ CSV \[HEADER\];**
+    COPY [Table Name](Optional Columns) 
+    FROM ‘[Absolute Path to File]’ 
+    DELIMITER ‘[Delimiter Character]’ CSV [HEADER];
 
 ## Key Details:
 
@@ -50,7 +52,9 @@ Now that a table, ‘items,’ has been created to house the data from the csv f
 
 Since the header and the delimiter is known, the query can now be written. As before, the syntax is:
 
-**COPY \[Table Name\](Optional Columns) FROM ‘\[Absolute Path to File\]’ DELIMITER ‘\[Delimiter Character\]’ CSV \[HEADER\];**
+    COPY [Table Name](Optional Columns) 
+    FROM ‘[Absolute Path to File]’ 
+    DELIMITER ‘[Delimiter Character]’ CSV [HEADER];
 
 So in order to import the csv we will fill out the necessary parts of the query:
 
