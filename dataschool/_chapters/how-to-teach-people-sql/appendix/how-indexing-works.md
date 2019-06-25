@@ -8,8 +8,7 @@ authors:
 reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
-description: Learn how indexing works and why it is a critical part of optimizing
-  your data warehouse
+description: Learn how indexing works and why it is a critical part of optimizing your data warehouse
 feedback_doc_url: https://docs.google.com/document/d/1S7AJ4rsaPnio2bK-opfz_fAIMZ214UpdMUYdhwlsQrg/edit?usp=sharing
 img_border_on_default: true
 meta_title: How to use Indexing to Improve Database Queries
@@ -70,7 +69,9 @@ Clustered indexes are the unique index per table that uses the primary key to or
 
 The clustered index will be automatically created when the primary key is defined:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/CreateTable.png)
+```sql
+CREATE TABLE friends (id INT PRIMARY KEY, name VARCHAR, city VARCHAR);
+```
 
 Once filled in, that table would look something like this:
 
@@ -106,7 +107,9 @@ You can create many non-clustered indexes. As of 2008, you can have up to 999 no
 
 To create an index to sort our friends’ names alphabetically:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/createFriendIndex.png)
+```sql
+CREATE INDEX friends_name_asc ON friends(name ASC);
+```
 
 This would create an index called “friends_name_asc”, indicating that this index is storing the **names** from “friends” stored alphabetically in **ascending** order.
 
@@ -124,13 +127,15 @@ The details of our friends table now look like this:
 
 **Query providing details on the friends table**: \\d friends;
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/indexesList.png)
+![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/IndexesList.png)
 
 Looking at the above image, the “friends_name_asc” is now an associated index of the “friends” table. That means the [query plan](/how-to-teach-people-sql/what-is-a-query-plan/), the plan that SQL creates when determining the best way to perform a query, will begin to use the index when queries are being made. Notice that “friends_pkey” is listed as an index even though we never declared that as an index. That is the **clustered index** that was referenced earlier in the article that is automatically created based off of the primary key.
 
 We can also see there is a “friends_city_desc” index. That index was created similarly to the names index:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/createCityQuery.png)
+```sql
+CREATE INDEX friends_city_desc ON friends(city DESC);
+```
 
 This new index will be used to sort the cities and will be stored in reverse alphabetical order because the keyword “DESC” was passed, short for “descending”. This provides a way for our database to swiftly query city names.
 
@@ -142,7 +147,7 @@ After your non-clustered indexes are created you can begin querying with them. I
 
 Comparing this method to the query of the non-indexed table at the beginning of the article, we are able to reduce the total number of searches from eight to three. Using this method, a search of 1,000,000 entries can be reduced down to just 20 jumps in a binary search.
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/BinarySearchComplexity.png)
+![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/binarySearchComplexity.png)
 
 ## **When to use Indexes**
 
@@ -160,7 +165,9 @@ To test if indexes will begin to decrease query times, you can run a set of quer
 
 To do this, try using the EXPLAIN ANALYZE clause in PostgreSQL.:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/explainAnalyzeQuery.png)
+```sql
+EXPLAIN ANALYZE SELECT * FROM friends WHERE name = 'Blake';
+```
 
 Which on my small database yielded:
 
@@ -178,7 +185,9 @@ If adding an index does not decrease query time, you can simply remove it from t
 
 To remove an index use the DROP INDEX command:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/dropIndexQuery.png)
+```sql
+DROP INDEX friends_name_asc;
+```
 
 The outline of the database now looks like:
 
@@ -198,11 +207,7 @@ Which shows the successful removal of the index for searching names.
 ## References:
 
 [https://www.geeksforgeeks.org/indexing-in-databases-set-1/](https://www.geeksforgeeks.org/indexing-in-databases-set-1/ "https://www.geeksforgeeks.org/indexing-in-databases-set-1/")
-
 [https://www.c-sharpcorner.com/blogs/differences-between-clustered-index-and-nonclustered-index1](https://www.c-sharpcorner.com/blogs/differences-between-clustered-index-and-nonclustered-index1 "https://www.c-sharpcorner.com/blogs/differences-between-clustered-index-and-nonclustered-index1")
-
 [https://en.wikipedia.org/wiki/B-tree](https://en.wikipedia.org/wiki/B-tree "https://en.wikipedia.org/wiki/B-tree")
-
 [https://www.tutorialspoint.com/postgresql/postgresql_indexes.htm](https://www.tutorialspoint.com/postgresql/postgresql_indexes.htm "https://www.tutorialspoint.com/postgresql/postgresql_indexes.htm")
-
 [https://www.cybertec-postgresql.com/en/postgresql-indexing-index-scan-vs-bitmap-scan-vs-sequential-scan-basics/#](https://www.cybertec-postgresql.com/en/postgresql-indexing-index-scan-vs-bitmap-scan-vs-sequential-scan-basics/# "https://www.cybertec-postgresql.com/en/postgresql-indexing-index-scan-vs-bitmap-scan-vs-sequential-scan-basics/#")

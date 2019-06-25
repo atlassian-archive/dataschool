@@ -53,7 +53,7 @@ Regular expressions are used in searches, "find and replace", in email and passw
 
 For example, if you have a file in an overcrowded folder called "myVeryImportantDoc.txt" but you don't remember the exact semantics you used when naming the folder, regular expressions can help you easily find the file.
 
-![File Manager on Mac](/assets/images/how-to-teach-people-sql/appendix/how_regex_works/fileManager.png)
+![File Manager on Mac](/assets/images/how-to-teach-people-sql/appendix/how_regex_works/FileManager.png)
 
 Regex expressions allows you to run a search, case insensitive, for the word "important", which will bring up a list of all files with the word "important" and we can locate "myVeryImportantDoc.txt".
 
