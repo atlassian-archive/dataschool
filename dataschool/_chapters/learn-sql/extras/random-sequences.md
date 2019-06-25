@@ -5,12 +5,13 @@ meta_title: Generate Random Data in Postgres
 description: You can generate random values in SQL using the following instructions.
 section: extras
 number: 
-authors: []
-reviewers: []
+authors:
+- _people/dave.md
+reviewers:
+- _people/matt.md
 image: 
 img_border_on_default: false
 is_featured: false
-published: false
 
 ---
 There are occasionally reasons to use random data, or even random sequences of data.  {{ page.database }} supports this with the `random` SQL function.  The following are some nice examples of how to use this.
