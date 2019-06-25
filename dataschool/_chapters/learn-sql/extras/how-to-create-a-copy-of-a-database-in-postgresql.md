@@ -16,9 +16,9 @@ is_featured: false
 To create a copy of a database, run the following command in psql:
 
 ```sql
-CREATE DATABASE \[Database to create\]
-WITH TEMPLATE \[Database to copy\]
-OWNER \[Your username\];
+CREATE DATABASE [Database to create]
+WITH TEMPLATE [Database to copy]
+OWNER [Your username];
 ```
 
 For more information continue reading.
