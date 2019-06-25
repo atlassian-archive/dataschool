@@ -15,8 +15,6 @@ img_border_on_default: false
 is_featured: false
 
 ---
-# **Copying Data Between Tables**
-
 **Copy into a new pre-structured table:**
 
 CREATE TABLE \[Table to copy **To**\] AS \[Table to copy **From**\] WITH NO DATA;
@@ -93,7 +91,6 @@ Each SELECT statement can also have its own where statement for table specific c
     SELECT \[Columns to Copy\]
     FROM \[Table to copy **From**\]
     WHERE \[Optional Condition\];
-
 * Will create independent copy in the new table
 
 ### References
