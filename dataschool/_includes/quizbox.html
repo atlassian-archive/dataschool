@@ -1,0 +1,21 @@
+<div class="quizbox">
+    <h2 class="question">
+        <span class="q">Q.</span> {{ include.question | markdownify | remove: '<p>' | remove: '</p>' }}
+        <br>
+        <small class="references">References:
+          {% for ref in include.references %}
+            <a href="../{{ ref }}/">{{ ref }}</a>
+          {% endfor %}
+        </small>
+    </h2>
+    <sqlbox
+      answer="{{ include.answer }}"
+      hint="{{ include.hint }}"
+      correct_message="{{ include.correct_message }}"
+      {% if include.initial %}{{ include.initial }}{% endif %}
+      {% if include.show_incorrect %}show_incorrect="true"{% endif %}
+      {% if include.incorrect_message %}incorrect_message="{{ include.incorrect_message }}"{% endif %}
+      {% if include.autorun %}autorun="true"{% endif %}
+    ></sqlbox>
+  </div>
+  

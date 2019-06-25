@@ -28,7 +28,7 @@ A few things to keep in mind when going through
 
 Good luck!
 
-{% for quiz in site.data.tutorials.postgresql.basic %}
+{% for quiz in site.data.learn-sql.quizes.basic %}
   {% include quizbox.html
     question=quiz.question
     answer=quiz.answer

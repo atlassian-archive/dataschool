@@ -19,7 +19,7 @@ You've covered the majority of the main use cases of SQL!  You know the stuff, b
 
 Good luck!
 
-{% for quiz in site.data.tutorials.postgresql.mid-level %}
+{% for quiz in site.data.learn-sql.quizes.mid-level %}
   {% include quizbox.html
     question=quiz.question
     answer=quiz.answer
