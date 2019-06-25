@@ -1,13 +1,13 @@
 <div class="quizbox">
-    <h2 class="question">
+    <h3 class="question">
         <span class="q">Q.</span> {{ include.question | markdownify | remove: '<p>' | remove: '</p>' }}
         <br>
-        <small class="references">References:
+        <p class="references">references:
           {% for ref in include.references %}
             <a href="../{{ ref }}/">{{ ref }}</a>
           {% endfor %}
-        </small>
-    </h2>
+        </p>
+    </h3>
     <sqlbox
       answer="{{ include.answer }}"
       hint="{{ include.hint }}"
