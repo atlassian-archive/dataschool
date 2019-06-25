@@ -21,6 +21,12 @@ WITH TEMPLATE [Database to copy]
 OWNER [Your username];
 ```
 
+\`\`\`
+
+codez
+
+\`\`\`
+
 For more information continue reading.
 
 **Starting the Server**
