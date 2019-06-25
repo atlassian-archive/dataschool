@@ -2,20 +2,17 @@
 section: book
 title: Creating an EC2 Server
 meta_title: EC2-server
-description: 'Learn how to quickly set up an EC2 server'
+description: Learn how to quickly set up an EC2 server
 number: 30
 authors:
 - _people/blake.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1rZJjWr3QnktTxRBUCdS6FIEoh9f8HBaTiUS9ybJtlFk/edit?usp=sharing
-image: '/assets/images/data-modeling-101/ec2_article/EC2.png'
+image: "/assets/images/data-modeling-101/ec2_article/EC2.png"
 is_featured: false
 img_border_on_default: false
-published: true
 
 ---
-# Creating an EC2 Server
-
 ## What is an EC2 Server?
 
 EC2 provides a variety of operating systems and hardware levels for a wide variety of uses that can be easily scaled in the cloud. Whether you are an individual looking to host some small projects on the web or a large company trying to host and automate large databases or websites, EC2 can support you.
@@ -81,7 +78,7 @@ This SSH key pair will allow you to connect remotely to your server from the com
 Potential uses:
 (article on running jupyter on EC2)
 (any other articles using EC2)
--->
+\-->
 
 References:
 
