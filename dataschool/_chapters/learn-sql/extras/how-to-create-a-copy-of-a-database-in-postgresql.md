@@ -16,9 +16,9 @@ is_featured: false
 To create a copy of a database, run the following command in psql:
 
 ```sql
-CREATE DATABASE \[Database to create\]
-WITH TEMPLATE \[Database to copy\]
-OWNER \[Your username\];
+CREATE DATABASE [Database to create]
+WITH TEMPLATE [Database to copy]
+OWNER [Your username];
 ```
 
 For more information continue reading.
@@ -50,9 +50,9 @@ Now that a connection has been established, we can begin writing queries. You ca
 **Copying the Database**
 
 ```sql
-CREATE DATABASE \[Database to create\]
-WITH TEMPLATE \[Database to copy\]
-OWNER \[Your username\];
+CREATE DATABASE [Database to create]
+WITH TEMPLATE [Database to copy]
+OWNER [Your username];
 ```
 
 Replace the bracketed portions with your database names and username. This query will generate a copy of the database as long as the “Database to copy” is not currently being accessed. If the “Database to copy” is being accessed by a user, that connection will have to be terminated before copying the database. To do this, run the following command:
@@ -60,7 +60,7 @@ Replace the bracketed portions with your database names and username. This query
 ```sql
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
-WHERE pg_stat_activity.datname = '\[Database to copy\]'
+WHERE pg_stat_activity.datname = '[Database to copy]'
 AND pid <> pg_backend_pid();
 ```
 
@@ -77,11 +77,11 @@ Once you terminate the connections, create the copy using the first command to C
 ```sql
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
-WHERE pg_stat_activity.datname = '\[Database to copy\]'
+WHERE pg_stat_activity.datname = '[Database to copy]'
 AND pid <> pg_backend_pid();
-CREATE DATABASE \[Database to create\]
-WITH TEMPLATE \[Database to copy\]
-OWNER \[Your username\];
+CREATE DATABASE [Database to create]
+WITH TEMPLATE [Database to copy]
+OWNER [Your username];
 ```
 
 When structured and run like this, the CREATE DATABASE command will run immediately after terminating connections. This will help ensure no connections form between terminating connections and copying the database.

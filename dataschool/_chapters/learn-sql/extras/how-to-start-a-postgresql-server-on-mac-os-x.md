@@ -1,18 +1,20 @@
 ---
 title: How to Start a PostgreSQL Server on Mac OS X
-meta_title:
-description: This article explores starting a PostgreSQL server using both Homebrew and the potgres app.
+meta_title: PostgreSQL Server on Mac OS X
+description: This article explores starting a PostgreSQL server using both Homebrew
+  and the potgres app.
 section: extras
-number:
+number: 
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/blake.md
 - _people/matt.md
-image:
+image: 
 img_border_on_default: false
 is_featured: false
-published: false
+feedback_doc_url: https://docs.google.com/document/d/1MfBqyfJXD9x4iaI_2Lmt-yCoPqD_jDbDEULMJ7NaavU/edit?usp=sharing
+
 ---
 # **How to Start a PostgreSQL Server on Mac OS X**
 
@@ -39,13 +41,13 @@ Homebrew is a powerful package manager with many uses, including installing and 
 
 Now that postgres is installed the default server can be started by running the command:
 
-**pg_ctl -D /usr/local/var/postgres start**
+    pg_ctl -D /usr/local/var/postgres start
 
 This will start up a postgres server hosted locally on port 5432. The server will be run out of the directory **/usr/local/var/postgres**.
 
 It can now be accessed by typing the following command:
 
-**psql postgres**
+    psql postgres
 
 This will connect to the server and access the postgres database. Once this is done:
 
@@ -67,7 +69,7 @@ This will fill the myData directory with files necessary to run the server:![sho
 
 Now that the server is initialized and the log file is created, you can start the server from this directory. To do this use the command and substitute in for the specified values:
 
-**pg_ctl -D \[Data Directory\] -l \[Log file\] start**
+    pg_ctl -D [Data Directory] -l [Log file] start
 
 The “Data Directory” refers to the directory that was just initialized (in this case myData). The “Log file” is a file that will record server events for later analysis. Generally log files are formatted to contain the date in the file name (e.g. “2018-05-27.log” or “myData-logfile-2018-05-27.log”) and should be stored outside of the database that they are logging so as to avoid unnecessary risks. Log files can be dense to read but are very useful for security and debugging purposes:
 
@@ -83,7 +85,7 @@ The server will only start if the port is free. If the default server is running
 
 Once started, it can be connected to the same way as before using:
 
-**psql postgres**
+    psql postgres
 
 ## **Using PostgreSQL App**
 
@@ -107,21 +109,21 @@ Note: To change the port in the terminal, the ‘postgres.conf’ file (which ca
 
 Once the app has been downloaded, command line tools can be used as well. These tools can be accessed by typing:
 
-**/Applications/Postgres.app/Contents/Versions/latest/bin/\[Tool Name\] \[Options and/or Arguments\]**
+    /Applications/Postgres.app/Contents/Versions/latest/bin/[Tool Name] [Options and/or Arguments]
 
 For example, the ‘postgres’ database on the server can be connected to using the psql tool with postgres as an argument:
 
-**/Applications/Postgres.app/Contents/Versions/latest/bin/psql postgres**
+    /Applications/Postgres.app/Contents/Versions/latest/bin/psql postgres
 
 Rather than typing out the full path each time however, the path can be added to a file that will allow significantly easier access to the tools, allowing the tools be accessed from any directory on the computer. To do this, the following command can be run in the terminal:
 
-**sudo mkdir -p /etc/paths.d &&**
+    sudo mkdir -p /etc/paths.d &&
 
-**echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp**
+    echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
 
 Once this is done, the ‘postgres’ database can be accessed by simply typing:
 
-**psql postgres**
+    psql postgres
 
 ## Summary
 
@@ -143,5 +145,3 @@ Once this is done, the ‘postgres’ database can be accessed by simply typing:
 1. [https://www.postgresql.org/docs/10/app-initdb.html](https://www.postgresql.org/docs/10/app-initdb.html "https://www.postgresql.org/docs/10/app-initdb.html")
 2. [https://postgresapp.com](https://postgresapp.com "https://postgresapp.com")
 3. [https://www.postgresql.org/docs/10/app-pg-ctl.html](https://www.postgresql.org/docs/10/app-pg-ctl.html "https://www.postgresql.org/docs/10/app-pg-ctl.html")
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/1MfBqyfJXD9x4iaI_2Lmt-yCoPqD_jDbDEULMJ7NaavU/edit?usp=sharing "Google Doc")

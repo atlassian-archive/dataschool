@@ -13,25 +13,21 @@ reviewers:
 image: 
 img_border_on_default: false
 is_featured: false
+feedback_doc_url: https://docs.google.com/document/d/13CikUhX31sfe_ouqeKRCZPr14TIxi45wzQksXs9yaJE/edit?usp=sharing
 
 ---
-# **Copying Data Between Tables**
-
 **Copy into a new pre-structured table:**
 
-CREATE TABLE \[Table to copy **To**\] AS \[Table to copy **From**\] WITH NO DATA;
+    CREATE TABLE [Table to copy To] AS [Table to copy From] WITH NO DATA;
 
 \- Note: “WITH NO DATA” specifies that the new table should only copy the table structure with no data
 
 **Copy into pre-existing table:**
 
-INSERT INTO \[Table to copy **To**\]
-
-SELECT \[Columns to Copy\]
-
-FROM \[Table to copy **From**\]
-
-WHERE \[Optional Condition\];
+    INSERT INTO [Table to copy To] 
+    SELECT [Columns to Copy] 
+    FROM [Table to copy From] 
+    WHERE [Optional Condition];
 
 Copying data between tables is just as easy as querying data however it will take a bit longer to run than a normal query. It can be used to update an inventory, create a table that has different permissions than the original, and much more.
 
@@ -47,7 +43,7 @@ In order to create a master list that contains all of the store’s items and pr
 
 The shopkeeper needs to first make a new table to contain the data. The master list needs to have the same table structure (columns, data-types, etc.). The easiest way to create a table with the same table structure as a different table is to use:
 
-CREATE TABLE \[New Table\] AS TABLE \[Old Table\] WITH NO DATA;
+    CREATE TABLE [New Table] AS TABLE [Old Table] WITH NO DATA;
 
 Once filled out, this command will create a new table with the same table structure, but without any data. The shopkeeper can use this to create his master list:
 
@@ -79,7 +75,7 @@ This gives the shopkeeper the desired result so that he can begin his audit:
 
 Copying data with INSERT INTO can also be done with conditions. For example, if the shopkeeper is only interested in items over $50 these values can be copied by using:
 
-INSERT INTO masterlist \[SELECT statements\] WHERE price>money(50);
+    INSERT INTO masterlist [SELECT statements] WHERE price>money(50);
 
 Each SELECT statement can also have its own where statement for table specific conditions. After the table is created and filled it can be manipulated, added to or removed from without affecting the tables the data was copied from.
 
@@ -93,12 +89,9 @@ Each SELECT statement can also have its own where statement for table specific c
     SELECT \[Columns to Copy\]
     FROM \[Table to copy **From**\]
     WHERE \[Optional Condition\];
-
 * Will create independent copy in the new table
 
 ### References
 
 1. [https://www.postgresql.org/docs/9.5/sql-insert.html](https://www.postgresql.org/docs/9.5/sql-insert.html "https://www.postgresql.org/docs/9.5/sql-insert.html")
 2. [https://stackoverflow.com/questions/25969/insert-into-values-select-from/25971](https://stackoverflow.com/questions/25969/insert-into-values-select-from/25971 "https://stackoverflow.com/questions/25969/insert-into-values-select-from/25971")
-
-[Give Feedback on our Google Doc](https://docs.google.com/document/d/13CikUhX31sfe_ouqeKRCZPr14TIxi45wzQksXs9yaJE/edit?usp=sharing "Link to Google Doc")

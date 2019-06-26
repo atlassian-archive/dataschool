@@ -31,10 +31,10 @@ Note: CASE WHEN statements will always output new values to a new column which i
 Now let’s see what the full query would have looked like for that CASE WHEN statement, notice the title of the output column at the end of the CASE WHEN statement.
 
 ```sql
-SELECT **City**,
-CASE WHEN **City** = “SF” THEN “San Francisco”
-ELSE **City**
-END AS “Updated City”  
+SELECT City,
+CASE WHEN City = "SF" THEN "San Francisco"
+ELSE City
+END AS "Updated City"  
 FROM friends
 ```
 
@@ -55,7 +55,7 @@ NOTE: If you put the column name after THEN or ELSE it will put the value from t
 ## **Syntax**
 
 ```sql
-SELECT (**optional**: any desired columns),
+SELECT (optional: any desired columns),
 CASE WHEN (condition) THEN (desired output)
 WHEN (other condition) THEN (desired output)
 ELSE (desired output)
@@ -83,10 +83,11 @@ Make sure that you are comparing the correct data types in your queries. If you 
 
 ```sql
 SELECT Track.Name, Track.GenreId,
-CASE WHEN (Track.Name = '"40"') THEN 'Rock'
+CASE WHEN (Track.Name = '40') THEN 'Rock'
 END AS Genre FROM Track
 ORDER BY Track.Name ASC LIMIT 10;
 ```
+
 ![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen5.png)
 
 The **Name** field is a VARCHAR and we compare it to the characters “40”.
@@ -107,7 +108,7 @@ The **Name** field is a VARCHAR and cannot be compared to an INTEGER.
 Remember you can cast any of your values in order to make the data types match. More on casting from [intersystems here](https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_cast). To determine what data type is used in a column you can use the “\\d (Table name)” command and look for the “Type” column:
 
 ```sql
-\\d "Track";
+\d "Track";
 ```
 
 ![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen7.png)
@@ -124,8 +125,8 @@ CASE WHEN allows you to assign the genres yourself. Looking at the first few son
 
 ```sql
 SELECT Track.Name, Track.GenreId,
-CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
-END AS ‘GenreType’
+CASE WHEN (Track.GenreId = 1) THEN 'Rock'
+END AS 'GenreType'
 FROM Track LIMIT 10;
 ```
 
@@ -135,8 +136,8 @@ There are more than just 1 genre of music in the track table. Order the entries 
 
 ```sql
 SELECT Track.Name, Track.GenreId,
-CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
-END AS ‘GenreType’
+CASE WHEN (Track.GenreId = 1) THEN 'Rock'
+END AS 'GenreType'
 FROM Track
 ORDER BY Track.Name ASC
 LIMIT 10;
@@ -150,25 +151,27 @@ All of the null entries in GenreType column are not “Rock” songs, so you can
 
 ```sql
 SELECT Track.Name, Track.GenreId,
-CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
-ELSE ‘Not Rock’
-END AS ‘GenreType’
+CASE WHEN (Track.GenreId = 1) THEN 'Rock'
+ELSE 'Not Rock'
+END AS 'GenreType'
 FROM Track LIMIT 10;
 ```
+
 ![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen11.png)
 
 Alternatively the WHEN keyword can be used several times to create multiple conditions:
 
 ```sql
 SELECT Track.Name, Track.GenreId,
-CASE WHEN (Track.GenreId = 1) THEN ‘Rock’
-WHEN (Track.GenreId = 2) THEN ‘Jazz’
-WHEN (Track.GenreId = 3) THEN ‘Metal’
-WHEN (Track.GenreId = 4) THEN ‘Alternative & Punk’
-ELSE ‘Unknown’
-END AS ‘GenreType’
+CASE WHEN (Track.GenreId = 1) THEN 'Rock'
+WHEN (Track.GenreId = 2) THEN 'Jazz'
+WHEN (Track.GenreId = 3) THEN 'Metal'
+WHEN (Track.GenreId = 4) THEN 'Alternative & Punk'
+ELSE 'Unknown'
+END AS 'GenreType'
 FROM Track LIMIT 10;
 ```
+
 ![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen12.png)
 
 ### **Summary:**

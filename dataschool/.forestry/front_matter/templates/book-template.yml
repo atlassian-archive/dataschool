@@ -17,9 +17,17 @@ fields:
 - type: select
   name: authors
   label: authors
+  config:
+    source:
+      type: pages
+      section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
 - type: select
   name: reviewers
   label: revewers
+  config:
+    source:
+      type: pages
+      section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
 - type: file
   name: cover_image
   label: cover_image
