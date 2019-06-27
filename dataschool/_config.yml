@@ -106,6 +106,13 @@ defaults:
       image: assets/images/book-covers/how-to-teach-people-sql.png  # TODO set a real default image
       permalink: "/how-to-teach-people-sql/:slug/"
   - scope:
+      path: "_chapters/sql-optimization"
+      type: "chapters"
+    values:
+      book_slug: sql-optimization
+      image: assets/images/book-covers/sql-optimization.png  # TODO set a real default image
+      permalink: "/sql-optimization/:slug/"
+  - scope:
       path: "_chapters/dictionary"
       type: "chapters"
     values:
