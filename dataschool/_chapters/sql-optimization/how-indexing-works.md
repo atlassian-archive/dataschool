@@ -22,11 +22,11 @@ Imagine you want to find a piece of information that is within a large database.
 
 _Visualization for finding the last entry_:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/BasicSearchGif.gif)
+![](/assets/images/sql-optimization/how_to_index/BasicSearchGif.gif)
 
 If the table was ordered alphabetically, searching for a name could happen a lot faster because we could skip looking for the data in certain rows. If we wanted to search for “Zack” and we know the data is in alphabetical order we could jump down to halfway through the data to see if Zack comes before or after that row. We could then half the remaining rows and make the same comparison.
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/BinarySearchGif.gif)
+![](/assets/images/sql-optimization/how_to_index/BinarySearchGif.gif)
 
 This took 3 comparisons to find the right answer instead of 8 in the unindexed data.
 
@@ -38,7 +38,7 @@ An index is a structure that holds the field the index is sorting and a pointer 
 
 Let's look at the index from the previous example and see how it maps back to the original Friends table:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/Index_pointsTo_table.png)
+![](/assets/images/sql-optimization/how_to_index/Index_pointsTo_table.png)
 
 We can see here that the table has the data stored ordered by an incrementing id based on the order in which the data was added. And the Index has the names stored in alphabetical order.
 
@@ -51,7 +51,7 @@ There are two types of databases indexes:
 
 Both clustered and non-clustered indexes are stored and searched as B-trees, a data structure similar to a [binary tree](https://en.wikipedia.org/wiki/Binary_tree). A [B-tree](https://en.wikipedia.org/wiki/B-tree) is a “self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time.” Basically it creates a tree-like structure that sorts data for quick searching.
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/binaryTreeImage.png)
+![](/assets/images/sql-optimization/how_to_index/binaryTreeImage.png)
 
 Here is a B-tree of the index we created. Our smallest entry is the leftmost entry and our largest is the rightmost entry. All queries would start at the top node and work their way down the tree, if the target entry is less than the current node the left path is followed, if greater the right path is followed. In our case it checked against Matt, then Todd, and then Zack.
 
@@ -75,11 +75,11 @@ CREATE TABLE friends (id INT PRIMARY KEY, name VARCHAR, city VARCHAR);
 
 Once filled in, that table would look something like this:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/friendsTable.png)
+![](/assets/images/sql-optimization/how_to_index/friendsTable.png)
 
 The created table, “friends”, will have a clustered index automatically created, organized around the Primary Key “id” called “friends_pkey”:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/pkeyToTable.png)
+![](/assets/images/sql-optimization/how_to_index/pkeyToTable.png)
 
 When searching the table by “id”, the ascending order of the column allows for optimal searches to be performed. Since the numbers are ordered, the search can navigate the B-tree allowing searches to happen in logarithmic time.
 
@@ -89,7 +89,7 @@ However, in order to search for the “name” or “city” in the table, we wo
 
 Non-clustered indexes are sorted references for a specific field, from the main table, that hold pointers back to the original entries of the table. The first example we showed is an example of a non-clustered table:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/Index_pointsTo_table.png)
+![](/assets/images/sql-optimization/how_to_index/Index_pointsTo_table.png)
 
 They are used to increase the speed of queries on the table by creating columns that are more easily searchable. Non-clustered indexes can be created by data analysts/ developers after a table has been created and filled.
 
@@ -97,7 +97,7 @@ Note: Non-clustered indexes are **not** new tables. Non-clustered indexes hold t
 
 You can think of these just like indexes in a book. The index points to the location in the book where you can find the data you are looking for.
 
-![https://www.oreilly.com/library/view/adobe-framemaker-11/9780133373677/graphics/12-00](/assets/images/how-to-teach-people-sql/appendix/how_to_index/Index.png)
+![https://www.oreilly.com/library/view/adobe-framemaker-11/9780133373677/graphics/12-00](/assets/images/sql-optimization/how_to_index/Index.png)
 
 Non-clustered indexes point to memory addresses instead of storing data themselves. This makes them slower to query than clustered indexes but typically much faster than a non-indexed column.
 
@@ -113,11 +113,11 @@ CREATE INDEX friends_name_asc ON friends(name ASC);
 
 This would create an index called “friends_name_asc”, indicating that this index is storing the **names** from “friends” stored alphabetically in **ascending** order.
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/friends_name_asc.png)
+![](/assets/images/sql-optimization/how_to_index/friends_name_asc.png)
 
 Note that the “city” column is not present in this index. That is because indexes do not store all of the information from the original table. The “id” column would be a pointer back to the original table. The pointer logic would look like this:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/indexToTable.png)
+![](/assets/images/sql-optimization/how_to_index/indexToTable.png)
 
 ## **Creating Indexes**
 
@@ -127,7 +127,7 @@ The details of our friends table now look like this:
 
 **Query providing details on the friends table**: \\d friends;
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/IndexesList.png)
+![](/assets/images/sql-optimization/how_to_index/IndexesList.png)
 
 Looking at the above image, the “friends_name_asc” is now an associated index of the “friends” table. That means the [query plan](/how-to-teach-people-sql/what-is-a-query-plan/), the plan that SQL creates when determining the best way to perform a query, will begin to use the index when queries are being made. Notice that “friends_pkey” is listed as an index even though we never declared that as an index. That is the **clustered index** that was referenced earlier in the article that is automatically created based off of the primary key.
 
@@ -143,11 +143,11 @@ This new index will be used to sort the cities and will be stored in reverse alp
 
 After your non-clustered indexes are created you can begin querying with them. Indexes use an optimal search method known as [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm). Binary searches work by constantly cutting the data in half and checking if the entry you are searching for comes before or after the entry in the middle of the current portion of data. This works well with B-trees because they are designed to start at the middle entry; to search for the entries within the tree you know the entries down the left path will be smaller or before the current entry and the entries to the right will be larger or after the current entry. In a table this would look like:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/BinarySearchGif.gif)
+![](/assets/images/sql-optimization/how_to_index/BinarySearchGif.gif)
 
 Comparing this method to the query of the non-indexed table at the beginning of the article, we are able to reduce the total number of searches from eight to three. Using this method, a search of 1,000,000 entries can be reduced down to just 20 jumps in a binary search.
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/binarySearchComplexity.png)
+![](/assets/images/sql-optimization/how_to_index/binarySearchComplexity.png)
 
 ## **When to use Indexes**
 
@@ -171,7 +171,7 @@ EXPLAIN ANALYZE SELECT * FROM friends WHERE name = 'Blake';
 
 Which on my small database yielded:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/queryPlan.png)
+![](/assets/images/sql-optimization/how_to_index/queryPlan.png)
 
 This output will tell you which method of search from the query plan was chosen and how long the planning and execution of the query took.
 
@@ -191,7 +191,7 @@ DROP INDEX friends_name_asc;
 
 The outline of the database now looks like:
 
-![](/assets/images/how-to-teach-people-sql/appendix/how_to_index/indexesAfterDrop.png)
+![](/assets/images/sql-optimization/how_to_index/indexesAfterDrop.png)
 
 Which shows the successful removal of the index for searching names.
 
