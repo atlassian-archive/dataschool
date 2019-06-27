@@ -11,7 +11,7 @@ feedback_doc_url: https://docs.google.com/document/d/1rZJjWr3QnktTxRBUCdS6FIEoh9
 image: "/assets/images/data-modeling-101/ec2_article/EC2.png"
 is_featured: false
 img_border_on_default: false
-
+published: true
 ---
 ## What is an EC2 Server?
 
