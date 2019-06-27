@@ -1,0 +1,96 @@
+---
+section: book
+title: Export to CSV from psql
+meta_title: ''
+description: ''
+number: 
+authors:
+- _people/matthew-layne.md
+reviewers:
+- _people/blake.md
+- _people/matt.md
+feedback_doc_url: ''
+image: ''
+is_featured: false
+img_border_on_default: false
+published: false
+
+---
+## **The Commands:**
+
+In order to export a table or query to csv use one of the following commands:
+
+For Client-Side Export:
+
+_\\copy_ \[Table/Query\] to ‘\[Relative Path/**filename**.csv\]’ csv header;
+
+For Server-Side Export:
+
+_COPY_ \[Table/Query\] to ‘\[Absolute Path/**filename**.csv\]’ csv header;
+
+Example Absolute Path: ‘/Users/matt/Desktop/filename.csv’
+
+Example Relative Path: ‘Desktop/filename.csv’
+
+Key words:
+
+* csv: this tells the copy command that the file being created should be a CSV file.
+* header: this tells copy command to include the headers at the top of the document.
+
+## **CSV Files**
+
+Comma Separated Value (CSV) files are a useful format for storing data. Many tools support importing data from CSV files because it is an easy to read format that is plain text and not metadata dependant.
+
+In psql there are two commands that can do this, both slightly different.
+
+The first is the _\\copy_ [meta-command](https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql/) which is used to generate a client CSV file. This command takes the specified table or query results and writes them to the client’s computer.
+
+The second command, _COPY_, generates a CSV file on the server where the database is running.
+
+### **The _\\copy_ command**
+
+The _\\copy_ meta-command is used for exporting to a client computer. It is useful for copying a database that may have somewhat restricted access and for creating a personal copy of the data. For example, a user may want to generate a csv so that they can analyse financial data in excel. The format of a _\\copy_ to csv is as follows:
+
+_\\copy_ \[Table/Query\] to \[Relative Path\] csv header;
+
+The \[Table/Query\] section can be filled with a table or query. For example to copy all entries from a table, the table name can be put here. To copy all entries that contain “saw” in their names from the table of tools to a csv, the following commands could be run:![](https://lh3.googleusercontent.com/yRAW4-4s3DH2zegFJqPPvsnCWp3NdeGaA-KW1XUHP5VqfSjNxuEvwyP0mvNB1jRoM83LQ69vc5XhKJSRUZBwVkz0egQVAPaN-BftgyOnwOVlu4TWFWfL1BamXqzeqyG3UntKY6i1 =598x189)
+
+The \[Relative Path\] is the path from where psql is currently saving files to where you want to save the file. The location that psql is currently saving can be found by using the _\\! pwd_ command.
+
+Note: The _\\!_ meta-command takes whatever arguments it is given and runs them as a bash command within psql.
+
+The pwd command prints the current working directory. The meta-command \\! pwd and \\! ls are shown being used below:![](https://lh3.googleusercontent.com/vOusrjRXufNNUvt93sey8jtz7ZdFFdCIB91XjzP-3-c-rlymzI0h6Zx2KgQVqszHh7NF-1PAECxMjZW2jdMMV2S4QFxSsRtWLCy9WfERkmKlQTITmenypG-_Himp5uafGuEG8RpF =679x228)
+
+This means that if the file name “myTools.csv” is used as the \[Relative Path\], it will be saved in _/Users/matt/_ as can be seen below:
+
+![](https://lh3.googleusercontent.com/2C3NPRXwNY4mlXU7FQXVHEghCQlFl9J2DWokjbH-w0lCLNeBdYD3569cClbjVolvVQl8girgdFlCV-2PBtlY_ZEJPR28vMZ4TSl7YlaOawFkRgHOpNCz6tVosDbsfdCjzKxDjXyO =678x233)
+
+The file can also be saved elsewhere by entering a specific relative path. For example, if _‘/Desktop/\[Filename\].csv’_ is entered as the path, the file will be saved to the desktop.
+
+Following the Relative Path in the command is the text _‘csv header;’_ This text does two things. The _‘csv’_ specifies that the data should be stored in the CSV format. Other possible formats are ‘text’ and ‘Binary.’
+
+The _‘header’_ specifies that, when the data is copied to a csv file, the names of each column should be saved on the first line as shown here:
+
+![](https://lh6.googleusercontent.com/zhIqjHZFkCBr-PkLmXCOZjTOlYwQeqs3_I8UhBSO2-bH3MvKnkCGVJp_BMOodWYBgYjcbHdKKTUPv6yBB7RbfJgKrzV9AlQaAZaml0h0yP3TeY05zagY8yBuCql4X3of2lXyhKWD =613x201)
+
+### **The _COPY_ command**
+
+The _COPY_ command also requires the user to specify a Table/Query to copy. Unlike _\\copy_ however, the _COPY_ command requires an absolute path. The absolute path is . This is because _COPY_ is for copying a database from a server to another location on the same server; not to a client computer. The _\\! pwd_ is very useful for finding the absolute path if you do not know where to save the file. In order to save to the desktop using \\copy _‘Desktop/\[Filename\].csv’_ would be used. In order to do this with _COPY_, _‘/Users/\[Username\]/Desktop/\[Filename\].csv’_ would need to be used as shown below:
+
+![](https://lh6.googleusercontent.com/PC3isioti-RbnWYU6IAs6F9SiGC76eu4FAB2kiYQJHEQfS2xOQKo1vMR5JYeukcJE7H5wR52KF4BIF7LRsaBN_gV1eOR64XI-Skz0MKa_Q_mWlMZMeP_fnSta2eluDnjCnR8Bbzz =651x184)
+
+## **Copying Queries**
+
+## **Summary**
+
+* To copy a table or query to a csv file, use either the _\\copy_ command or the _COPY_ command.
+* _\\copy_ should be used for a copy to local systems
+  * _\\copy_ uses a relative path
+* _COPY_ should be used to create a csv on the server’s side.
+  * _COPY_ uses an absolute path.
+
+**Resources**
+
+1. [https://www.postgresql.org/docs/9.2/app-psql.html#APP-PSQL-META-COMMANDS-COPY](https://www.postgresql.org/docs/9.2/app-psql.html#APP-PSQL-META-COMMANDS-COPY "https://www.postgresql.org/docs/9.2/app-psql.html#APP-PSQL-META-COMMANDS-COPY")
+2. [https://www.postgresql.org/docs/9.2/sql-copy.html](https://www.postgresql.org/docs/9.2/sql-copy.html "https://www.postgresql.org/docs/9.2/sql-copy.html")
+3. [https://tableplus.io/blog/2018/04/postgresql-how-to-export-table-to-csv-file-with-header.html](https://tableplus.io/blog/2018/04/postgresql-how-to-export-table-to-csv-file-with-header.html "https://tableplus.io/blog/2018/04/postgresql-how-to-export-table-to-csv-file-with-header.html")
