@@ -4,31 +4,33 @@ meta_title: Copying Data Between Tables
 description: This article discusses how to copy data from a table or query into another
   table using the INSERT command in psql.
 section: extras
-number: 
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/blake.md
 - _people/matt.md
-image: 
+image:
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/13CikUhX31sfe_ouqeKRCZPr14TIxi45wzQksXs9yaJE/edit?usp=sharing
 
 ---
 **Copy into a new pre-structured table:**
-
-    CREATE TABLE [Table to copy To] AS [Table to copy From] WITH NO DATA;
-
+```sql
+CREATE TABLE [Table to copy To]
+AS [Table to copy From]
+WITH NO DATA;
+```
 \- Note: “WITH NO DATA” specifies that the new table should only copy the table structure with no data
 
 **Copy into pre-existing table:**
-
-    INSERT INTO [Table to copy To] 
-    SELECT [Columns to Copy] 
-    FROM [Table to copy From] 
-    WHERE [Optional Condition];
-
+```sql
+INSERT INTO [Table to copy To]
+SELECT [Columns to Copy]
+FROM [Table to copy From]
+WHERE [Optional Condition];
+```
 Copying data between tables is just as easy as querying data however it will take a bit longer to run than a normal query. It can be used to update an inventory, create a table that has different permissions than the original, and much more.
 
 ## Example:
@@ -42,16 +44,16 @@ In order to create a master list that contains all of the store’s items and pr
 ### Creating the table
 
 The shopkeeper needs to first make a new table to contain the data. The master list needs to have the same table structure (columns, data-types, etc.). The easiest way to create a table with the same table structure as a different table is to use:
-
+```sql
     CREATE TABLE [New Table] AS TABLE [Old Table] WITH NO DATA;
-
+```
 Once filled out, this command will create a new table with the same table structure, but without any data. The shopkeeper can use this to create his master list:
 
 ![Creating a blank copy of the table](/assets/images/learn-sql/extras/copying_data_between_tables/copyingBetweenTables_2.png)
 
 With this done, the shopkeeper now has the following tables:
 
-![](/assets/images/learn-sql/extras/copying_data_between_tables/copyingBetweenTables_3.png)
+![Tables that the shopkeeper has](/assets/images/learn-sql/extras/copying_data_between_tables/copyingBetweenTables_3.png)
 
 ### INSERT INTO command
 
@@ -74,9 +76,9 @@ This gives the shopkeeper the desired result so that he can begin his audit:
 ### Adding Conditions
 
 Copying data with INSERT INTO can also be done with conditions. For example, if the shopkeeper is only interested in items over $50 these values can be copied by using:
-
+```sql
     INSERT INTO masterlist [SELECT statements] WHERE price>money(50);
-
+```
 Each SELECT statement can also have its own where statement for table specific conditions. After the table is created and filled it can be manipulated, added to or removed from without affecting the tables the data was copied from.
 
 ## Summary
