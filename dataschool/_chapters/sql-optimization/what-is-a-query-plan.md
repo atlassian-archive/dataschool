@@ -2,8 +2,8 @@
 title: What is a Query Plan
 meta_title: What is a Query Plan
 description: Learn what a query plan is and how it effects your SQL queries
-section: appendix
-number: 240
+section: query optimizations
+number: 20
 authors:
 - _people/matthew-layne.md
 reviewers:
