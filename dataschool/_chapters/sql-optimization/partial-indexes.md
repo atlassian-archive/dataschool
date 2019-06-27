@@ -1,15 +1,15 @@
 ---
 section: book
 title: Partial Indexes
-meta_title: ''
-description: ''
-number: 
+meta_title: What are Partial Indexes
+description: This article explains what partial indexes are and how to use them to help optimize your queries
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 - _people/blake.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1awdAqjjHRME_Q8I7kG4tjQ9snArvRLBFhbLWetXY4hU/edit
 image: ''
 is_featured: false
 img_border_on_default: true
@@ -24,31 +24,33 @@ Creating indexes is a common practice to optimize data warehouses, as explored i
 
 A partial index can be as simple as an index that stores data on a subsection of a column. Take for example data.gov’s dataset on [traffic violations](https://catalog.data.gov/dataset/traffic-violations-56dda) in Montgomery County, MD. This table has many columns that could benefit from partial indexing. Columns that have many distinct groups in them are good for partial indexes as there is a large amount of data in the column. This is because columns like this are often filtered for one particular group.
 
-One example of this is the column **dlstate** (the state that the driver has a driver’s license from). There are 71 distinct values (Includes out of country plates like QC for quebec and includes XX for no plate) in the database for this column. Say you are studying how many Virginia driver’s are involved in Montgomery County traffic violations.
+One example of this is the column **dlstate** (the state that the driver has a driver’s license from). There are 71 distinct values (Includes out of country plates like QC for Quebec and includes XX for no plate) in the database for this column. Say you are studying how many Virginia driver’s are involved in Montgomery County traffic violations.
 
 We are going to be filtering all our queries to where **dlstate** = “VA” so applying a partial index on the **dlstate** state column where **dlstate** = “VA” will make subsequent queries much faster. For this example we will focus on Virgina:
 
-![](https://lh4.googleusercontent.com/EmWGYI7vdIWO3N-9JOUDDEmvp9zmKxAEProxZ676xl3Xk_5Qp-JYbXd2iMKaEVGKBcdxuH8sSGB9NXh8YSdEiV8T5a4wwXswVPT1qSY5N7_yZaZjfTQuJCiqkGiUMi0fqkE1GPM- =618x331)
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_0.png)
 
 The command for creating a Partial Index is the same command for creating a traditional index with an additional WHERE filter at the end:
 
+```sql
 CREATE INDEX idx_dlstate_va ON traffic (dlstate) WHERE dlstate=’VA’;
 
-ANALYZE; ![](https://lh4.googleusercontent.com/gs8bDgXdNRXxX5ZAkMBMx050FNSq5QqIU6bzyjXDfTVaj_JEneCUURA7qa-BToyZY8aXowWMG4x1EhqJtSvH2ASGz5TmND348w3WyFaaetKWcEPiwZDWhXUEoCgAehYAgkiIgy1C =624x104)
+ANALYZE;
+```
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_1.png)
 
 Let’s now look at querying a sample of the data to see why Partial Indexing is much faster than querying the full table or an indexed version of the table.
 
 Lets use a subset of the data and run the following query:
 
-SELECT COUNT *articles
+```sql
+SELECT COUNT *
 
 FROM traffic
 
 WHERE dlstate=”VA”
-
-Partial Index: No Index: Traditional Index:
-
-![](https://lh4.googleusercontent.com/cUqDrQx33wUs7apzA0aLazyTc81JIwxmnfp8sFqzaBEJVl5A2JY0MlOIkYoQRT5lUZEDuwrV8ifzwLKuaKHYT698-ePsZB4fx0s8bbeu-JocyERxOqW8oECHiSzbiq5DanBnthBK =794x262)
+```
+![](/assets/images/sql-optimization/partialIndexing/partialIndexGIF.gif)
 
 * Partial Index only has to move through rows where **dlstate** = VA.
 * No index has to move through every row to find each place where **dlstate** = VA.
@@ -58,9 +60,11 @@ Remember to **ANALYZE;** after creating an index. **ANALYZE;** will gather stati
 
 NOTE: Indexing will lock out writes to the table until it is done by default. To avoid this, create the index with the CONCURRENTLY parameter:
 
+```sql
 CREATE INDEX CONCURRENTLY \[index name\]
 
 ON \[table name (column name(s))\] \[WHERE \[Filter\]\];
+```
 
 ## Time Comparisons
 
@@ -70,9 +74,10 @@ Now that the index has been created, and we have an understanding as to how the 
 
 * The speed of running a COUNT aggregation where the dlstate=’VA’ with a **No Index** is:
 
+```sql
 EXPLAIN ANALYZE SELECT COUNT(*) FROM traffic WHERE dlstate=’VA’;
-
-![](https://lh5.googleusercontent.com/-2u91lEBvE55ed8_Ag_aTcZNZDjYsZHAUOMagiJF2ME4X7hOalP1aJMoKOOxGILVk0Xy-E_gzmMmAl2lWlH5-Y7ThWDt9Dbxt_WeA5PmNiCPu7JeSRRYuaoj6HQWdT6YOgOz_QGA =685x118)
+```
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_2.png)
 
 Speed: 1.79 sec or 1784 ms
 
@@ -80,9 +85,10 @@ Speed: 1.79 sec or 1784 ms
 
 * The speed of running a COUNT aggregation where the dlstate=’VA’ with a **Traditional Index** is:
 
+```sql
 EXPLAIN ANALYZE SELECT COUNT(*) FROM traffic WHERE dlstate=’VA’;
-
-![](https://lh6.googleusercontent.com/urSr081XBK0Ry9IPGTvbLecZ9J2cC1jBYHiJowgmUpCclqrkNbDl9o2LGBMWHReDrrl_nL3M0B4_iVbC8Td6Nq17cwp9s-WS-vHrlhjebCOgErhbscrFNm23mAtJUTMaG9W55SwS =624x95)
+```
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_3.png)
 
 Speed: 0.06 sec or 59.7 ms
 
@@ -90,15 +96,16 @@ Speed: 0.06 sec or 59.7 ms
 
 * The speed of running a COUNT aggregation where the dlstate=’VA’ with a **Partial Index** is:
 
+```sql
 EXPLAIN ANALYZE SELECT COUNT(*) FROM traffic WHERE dlstate=’VA’;
-
-![](https://lh4.googleusercontent.com/Hom4zdJcKdzPQ242BBgbDNvGBvEpgJbMu298nBlCtM_QqEMbIo2zBQ2yVDLwJYL-D8kI0q33-nfLsCJhgqJvOQNUq322_jbEA2JkPA9fTp7qm74m_F60Xy1N7dpTfGVY1TD-pQup =672x78)
+```
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_4.png)
 
 Speed: 0.02 sec or 17.8 ms
 
 ### Speed Comparison:
 
-![](https://lh6.googleusercontent.com/fdaFSgMt9csWMSfqWB9vA4dlRy63dFwEd-ggPE5FmxS2T961K3PXXvhZ9VzfkAsqDmTimdE3WnWRw4m9MYArVz1IxjQIpS3CZXCpwVonbT1xCYZDGmF-YserfbKYAlAu8dpUBaKf =624x112)
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_5.png)
 
 As this table shows that, while adding an index of either variety is a significant improvement, a partial index is roughly 3.5 times faster than a traditional index in this situation.
 
@@ -124,29 +131,29 @@ It is important to balance how specific the partial index with the frequency of 
 
 For example, a partial index could be created on a column with multiple filters such as the column ‘arresttype’ where the incident takes place from 4-4:30AM and zipcodes=’12’:
 
-![](https://lh5.googleusercontent.com/Y8rZk6jTnJyyD1COwme-yjk2DnkRwbl9dtTOffkwU5VjPywx2oEA0-wOUy57O92G8RLjrr-qvA8_1nGuIvWG3j6oCJcFMCBQEBrEiHUCxDI0R69y2VW3v4kukMnCR9xA6CE0y51L =624x40)
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_6.png)
 
 This would significantly speed up some queries, however this partial index is so specific it may never be used more than a few times.
 
 Sometimes however, if a specific set of filters are used a lot it can dramatically increase performance. This is what makes partial indexes so powerful. If there are a large number of queries regarding specific times between 9am-5pm, we can create an index on serial_id for these times.
 
-![](https://lh3.googleusercontent.com/t8kWPNEymMwrO6MNJWznQLEZlAzO5RnHX5jbHBb3hl16LG8-HykMi3_5vN3kaJA9AnS62MKggyGXHl4_r_GH3_CJ_QKjwP-0uwz7wHWNeRyq0EBjECqhcCpHYLAvh7Qn7FQ6zJq_ =642x49)
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_7.png)
 
 This new index will make filtering by times between 9am and 5pm much quicker. This includes times inside this range as well such as 12:00-1:00 pm.
 
 Before Index:
 
-![](https://lh5.googleusercontent.com/w8jOIz-K5iVryTRtbH8WGVKdxapS_-6M5l0aa8qPQqe-kSpUr60tHJXlbX7F0oL_ImYZeuC0cyYJ-Vj21RdFPwRU7YHlacx-_t3rjgBrPhXiaxpOwjj-UPFT7vdft7CUOY_L_Epd =682x102)
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_8.png)
 
 After Index:
 
-![](https://lh3.googleusercontent.com/8Kg4n5ay6OAkEvb3lkPYG_hmS0YjMQQRZbwPPVgW2dhVJ45wVVEV0aHZsrQQ_4ylzimcG2jSCLsVUhtnHkcDdTRsO-5nTYlHJEQEvlhF5Qund_ogAvcVFF36jkiwpQ866Hc4v15n =688x108)
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_9.png)
 
 Here the execution time drops from 5013 ms to 247 ms (\~20x faster with index) which shows that partial indexes can save time.
 
 Partial Indexes are also less memory intensive than traditional indexes:
 
-![](https://lh6.googleusercontent.com/PLjgRzl1C0v98lX2k1bZHnn2WVJTh7hntGxS83gjkSqkNjRyuSFsHRz1nr8CgIe8O48BevPNIIaGkGWSdD2O_jhD4Frsv_AiwExgbPvV563bLPijaiXzzKK8DEqi8ZFynWPJhd2L =624x32)
+![](/assets/images/sql-optimization/partialIndexing/partialIndex_10.png)
 
 The traditional version of the index is 3 times the size of the partial index. The trade off here is that the traditional index can improve a wide range of queries where as the partial index is more specific, but also faster.
 

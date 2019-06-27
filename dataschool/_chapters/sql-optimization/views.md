@@ -1,15 +1,15 @@
 ---
 section: book
-title: Views
-meta_title: ''
-description: ''
-number: 
+title: Views in SQL
+meta_title: Views in SQL
+description: This article discusses what views are and how to optimize your queries using views
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 - _people/blake.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1r0fyo8QHWhe_ADc-XruJBRtlIjQjJ3kjwM6xcjmbhhs/edit
 image: ''
 is_featured: false
 img_border_on_default: true
@@ -22,29 +22,23 @@ Views are a way to store a long query for easier access. When a view is created,
 
 For example, instead of typing:
 
-\`\`\`sql
-
+```sql
 SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state=’MD’;
-
-\`\`\`
+```
 
 Every time that details about a vehicle are needed, you can create a view:
 
-\`\`\`sql
-
+```sql
 CREATE VIEW vehicle_details AS SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state=’MD’;
-
-\`\`\`
+```
 
 Once a view is created, the details about the vehicle can be accessed through the view:
 
-\`\`\`sql
-
+```sql
 SELECT * FROM vehicle_details;
+```
 
-\`\`\`
-
-![](https://lh5.googleusercontent.com/NvH4bG9r1M-H5ZxI16H6kkEeYslmkIRVa9dhDWR00QkcvUk3NrAYJYqGfJ7V9XH4fMFTI9DY-ftxHOZi8dNYmGt395ZwO6y5wjNI_fCITCP3BBtFL7seCN8bBCe1yxYBEqL-x_-5 =706x267)
+![](/assets/images/sql-optimization/views/views_0.png)
 
 As we can see, the two queries return the same result. The only difference between the two queries is the length of the queries in terms of characters.
 
@@ -52,19 +46,15 @@ As we can see, the two queries return the same result. The only difference betwe
 
 Creating a view follows this form:
 
-\`\`\`sql
-
+```sql
 CREATE VIEW \[view name\] AS \[SELECT statement / Query to store\] \[(optional) WHERE \[condition\]\];
-
-\`\`\`
+```
 
 In the first example, a view was created on the details of a vehicle. For this view, the name vehicle_details was used and the query used to create the view was:
 
-\`\`\`sql
-
+```sql
 SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state=’MD’;
-
-\`\`\`
+```
 
 The view will store the query above. This means that when the view is used, the query that is stored in the view will be accessed and run. In other words running a standard view is no different from running the query it was created on in terms of execution. The only difference is the length of the query that needs to be written by the user. As such, creating views is mainly for simplifying the writing of queries, not the running of queries.
 
@@ -78,45 +68,49 @@ Views can be used in a variety of ways and with several optional parameters:
 
 Adding TEMP or TEMPORARY to the creation of a view creates a view that is automatically dropped at the end of the user’s session.
 
-Example: \`\`\`sql CREATE TEMP VIEW myView AS SELECT serial_id FROM traffic; \`\`\`
+Example:
+```sql
+CREATE TEMP VIEW myView AS SELECT serial_id FROM traffic;
+```
 
 ### WITH CHECK OPTION
 
 Adding ‘WITH CHECK OPTION’ to the end of a CREATE VIEW statement ensures that, if the view is updated, the update does not conflict with the view. For example, if a column is created on a view where dlstate must be ‘MD’, then the user cannot INSERT a row into the view where the dlstate is ‘VA.’
 
-It will return an error \`\`\`ERROR: new row violates check option for view \[name of view\]\`\`\`
+It will return an error :
+```sql
+ERROR: new row violates check option for view \[name of view\]
+```
 
-Example: ![](https://lh5.googleusercontent.com/LaAXIfdvQBnqJ5l5iAqGSoP8-Ma5w0DFgOUClgG2gqWPAT4hyLFN-7pN3rDIbkqFS1Do80dov1AH7Y3rRg1xD32RXeGkj9MqvyFMh58jwvrocAE2FO8Wr7Wh6Mm7yXscPxw4YN43 =624x99)
+Example: ![](/assets/images/sql-optimization/views/views_1.png)
 
 ### LOCAL and CASCADED
 
 Adding LOCAL or CASCADED to CHECK OPTION will designate the scope for the CHECK OPTION. If LOCAL is added, the CHECK only applies to that specific view. CASCADED on the other hand, applies the CHECK to all views that the current view is dependant on.
 
-Example: \`\`\`sql CREATE VIEW myView AS SELECT serial_id FROM traffic WITH LOCAL CHECK OPTION; \`\`\`
+Example:
+```sql
+CREATE VIEW myView AS SELECT serial_id FROM traffic WITH LOCAL CHECK OPTION;
+```
 
 ### VIEW definition
 
 To see the definition (underlying query) of a view, you can use:
 
-\`\`\`sql
-
+```sql
 \\d+ \[view name\]
-
-\`\`\`![](https://lh4.googleusercontent.com/Ilp-4GIwdJ6N6G-okkB3qFAnekWyYxxWp-zG6nA4VC4DGgPqZ2IXtsxczrGiWegyvlNucUd3N5kZ98d-GiBWqbf2Kh4RYJkQI74tCNA9g_N7-pNDQ470uQvh--mnv8Ew_v4Q2o28 =653x236)
+```
+![](/assets/images/sql-optimization/views/views_2.png)
 
 ## Updating Views
 
 Views can be updated by using the following syntax:
 
-\`\`\`sql
-
+```sql
 UPDATE \[Name of View\]
-
 SET \[Column Name\]=\[Value to set to\], \[Column Name\]=\[Value to set to\], etc
-
 WHERE \[condition\];
-
-\`\`\`
+```
 
 Views can only be updated if they follow these criteria:
 
@@ -129,7 +123,7 @@ Views can only be updated if they follow these criteria:
 
 Materialized views are similar to standard views, however they store the result of the query in a physical table taking up memory in your database. This means that a query run on a materialized view will be faster than standard view because the underlying query does not need to be rerun each time the view is called. The query is run on the new Materialized view:
 
-![](https://lh3.googleusercontent.com/PMyC4TKKe-z30RcSWjOuFqHo2_giSlzwy4_ZC4F6QAPBXZi-DE-1f3uya9LZNRAAlZ0wI4bqY3OfEMra0hdBL70tDVJZ_NbtNquKngE_qboGZMfwwajMSP8kF-wmXl64XjVNHNV0 =811x220)
+![](/assets/images/sql-optimization/views/views_3.png)
 
 This query plan shows the materialized view being used as a table and being scanned. It also shows a significant difference in speed between the two methods.
 
@@ -156,11 +150,15 @@ Cons:
 
 To create a materialized view, add the MATERIALIZED keyword:
 
-\`\`\`sql CREATE MATERIALIZED VIEW myView AS \[Query\]; \`\`\`
+```sql
+CREATE MATERIALIZED VIEW myView AS \[Query\];
+```
 
 To refresh the view manually use the following command:
 
-\`\`\`sql REFRESH MATERIALIZED VIEW \[view name\] \`\`\`
+```sql
+REFRESH MATERIALIZED VIEW \[view name\]
+```
 
 ## Summary
 
