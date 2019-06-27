@@ -63,6 +63,9 @@ fields:
     class="img-no-border")
   default: false
 pages:
+- dataschool/_chapters/sql-optimization/partial-indexes.md
+- dataschool/_chapters/sql-optimization/views.md
+- dataschool/_chapters/sql-optimization/optimization-using-explain.md
 - dataschool/_chapters/data-modeling-101/creating-an-ec2-server.md
 - dataschool/_chapters/dictionary/sql-optimization.md
 - dataschool/_chapters/dictionary/sql-errors.md
