@@ -1,8 +1,8 @@
 ---
 title: Using ALTER in PostgreSQL
-meta_title: Using ALTER in PostgreSQL
-description: This article outlines the different potential uses of the ALTER command
-  in PSQL
+meta_title: ALTER in PostgreSQL
+description: Learn the different potential uses of the ALTER command in PSQL. Add
+  and drop columns from tables. Rename and change schemas and more.
 section: extras
 number: 
 authors:
