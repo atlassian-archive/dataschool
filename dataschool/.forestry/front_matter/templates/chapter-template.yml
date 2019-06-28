@@ -63,6 +63,7 @@ fields:
     class="img-no-border")
   default: false
 pages:
+- dataschool/_chapters/sql-optimization/snowflake.md
 - dataschool/_chapters/sql-optimization/scheduling-dbt.md
 - dataschool/_chapters/learn-sql/extras/export-to-csv-from-psql.md
 - dataschool/_chapters/sql-optimization/partial-indexes.md
