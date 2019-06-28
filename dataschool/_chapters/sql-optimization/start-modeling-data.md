@@ -1,5 +1,5 @@
 ---
-section: book
+section: modeling data
 title: Start Modeling Data
 meta_title: Start Modeling Data with dbt
 description: This is a quick introduction to using DBT and BigQuery to model data.
