@@ -6,7 +6,8 @@ description: Learn how to quickly set up an EC2 server
 number: 30
 authors:
 - _people/blake.md
-reviewers: []
+reviewers:
+- _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1rZJjWr3QnktTxRBUCdS6FIEoh9f8HBaTiUS9ybJtlFk/edit?usp=sharing
 image: "/assets/images/data-modeling-101/ec2_article/EC2.png"
 is_featured: false

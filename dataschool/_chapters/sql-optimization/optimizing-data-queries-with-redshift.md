@@ -1,9 +1,9 @@
 ---
-section: book
+section: databases
 title: Optimizing Data Queries with Redshift
 meta_title: ''
 description: ''
-number: 
+number: 190
 authors:
 - _people/blake.md
 reviewers:
@@ -57,7 +57,8 @@ Following this structure, Redshift has had to optimize their queries to be run a
 
 Below is an image provided by [AWS](https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html) to explain their cluster interface:
 
-![](https://lh5.googleusercontent.com/jhwsJdnQQSMhHovDcZmh4hxQsGRBJUhjnh1KTAHkloou5rxR22XK6tE_8_PWLhykbOZEZzvkQFnahbYzm67vW2dvZNj_zLIYoGQttS-Shb1Hp0yG1LoellxTlisOT9z4X4HZdUL9 =616x431)
+![](/assets/images/sql-optimization/redshift/nodeRelations.png)
+Source: [https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html](https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html)
 
 Redshift is one of the fastest databases for data analytics and ad hoc queries. Redshift is built to handle petabyte sized databases while maintaining relatively fast queries of these databases.
 
@@ -101,7 +102,5 @@ Another benefit of being on the AWS platform is the security. AWS allows you to 
 ### References:
 
 [https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html")
-
 [http://db.csail.mit.edu/madden/html/theses/ferreira.pdf](http://db.csail.mit.edu/madden/html/theses/ferreira.pdf "http://db.csail.mit.edu/madden/html/theses/ferreira.pdf")
-
 [https://hevodata.com/blog/amazon-redshift-pros-and-cons/](https://hevodata.com/blog/amazon-redshift-pros-and-cons/ "https://hevodata.com/blog/amazon-redshift-pros-and-cons/")

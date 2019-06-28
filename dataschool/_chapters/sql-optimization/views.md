@@ -3,7 +3,7 @@ section: book
 title: Views in SQL
 meta_title: Views in SQL
 description: This article discusses what views are and how to optimize your queries using views
-number:
+number: 120
 authors:
 - _people/matthew-layne.md
 reviewers:
