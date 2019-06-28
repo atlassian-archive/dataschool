@@ -1,10 +1,10 @@
 ---
-section: book
+section: databases
 title: Snowflake
 meta_title: Snowflake
 description: This article outlines what snowflake is and how it can help make your
   workflow more efficient
-number: 
+number: 200
 authors:
 - _people/matthew-layne.md
 reviewers:
