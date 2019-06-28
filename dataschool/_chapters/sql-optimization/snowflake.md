@@ -2,9 +2,8 @@
 section: book
 title: Snowflake
 meta_title: Snowflake
-description: This article outlines what snowflake is and how it can help make your
-  workflow more efficient
-number: 
+description: This article outlines what snowflake is and how it can help make your workflow more efficient
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
@@ -38,13 +37,13 @@ Snowflake is designed to be an OLAP database system. One of snowflake’s signat
 
 The cluster uses MPP (massively parallel processing) to compute any task that it is given. MPP is where the task is given to the cluster’s lead node, which divides the task up into many smaller tasks which are then sent out to processing nodes. The nodes each solve their portion of the task. These portions are then pulled together by the lead node to create the full solution:
 
-![](https://lh3.googleusercontent.com/4phy6dUnZ0seLOtMvaGRh7mUdIqYEOnTekd8s7CZGGgPVbkDNx8jIZhYPQNK86nGJsJI7_2QASPEzGtZtfkeeN-aPkFZ5OwTNot5NWcCr7DWxczdv8Kdtsvyw9blT2YTuYazJQvO =624x344)
+![This image shows how a task is divided between processing nodes and reassembled](/assets/images/sql-optimization/snowflake/snowflake_0.png)
 
 Since the data is stored in S3, snowflake will have slightly longer initial query times. This will speed up as the data warehouse is used however due to caching and updated statistics.
 
 ## Snowflake’s Architecture
 
-Snowflake has a specialized [architecture](https://www.snowflake.com/product/architecture/) that is divided into three layers: storage, compute, and services.![](https://lh4.googleusercontent.com/hREPjFk7IGi9b5rR8wHDmYjhFIYWnYMCT4_O2rg9-JZwKBBDJIbc51cTWQe0NDR7JXduU5WFQ5oQAiaZ-sS6n5GZq4R3lURaWYG3WvHJPCUmdbcc_cKAufUaSizK4zwRqY5YK5kL =624x361)
+Snowflake has a specialized [architecture](https://www.snowflake.com/product/architecture/) that is divided into three layers: storage, compute, and services.![Graphic showing the three layers in the snowflake architecture](/assets/images/sql-optimization/snowflake/snowflake_1.png)
 
 The Storage Layer:
 
@@ -85,7 +84,7 @@ Snowflake has a variety of factors that impact the price of using their data war
 
 ### Warehouse Type
 
-![](https://lh4.googleusercontent.com/yVbrD3X9D915E4RIHwcLxqMUai0oLMQBPNQxot2geYu5eWB99h-2zEFtupwDg7S63baIq-EjWq5VAPDfkjxwJY123XXtpMQGWLoje3cLTm-Y5wgzItppR0QDOWHgbqS_Vm5uYwIJ =624x372)
+![Graphic showing the different warehouse data types and there corresponding $/token costs](/assets/images/sql-optimization/snowflake/snowflake_2.png)
 
 These different tiers decide what level of security, speed, and support are needed. They have corresponding costs as well. The basic package costs $2.00 per credit used. Credits are how snowflake measures the computations done.
 
@@ -93,7 +92,7 @@ These different tiers decide what level of security, speed, and support are need
 
 While many data warehouse companies have a cost based on the maximum processing power that your database might need, snowflake is priced based on the amount of processing that is used. When you turn on your database, you can set what amount of processing power you want. The size of the warehouse can range from X-Small to 3X-Large. These sizes directly relate to how much computational power you can access and correspondingly how expensive the warehouse is. Here is a table from the snowflake documentation regarding the costs of three different sizes:
 
-![](https://lh6.googleusercontent.com/VndbZB1tY4ddT-4D13HCtIavGvmimRvGUqgbiaWOsRiNWPrx4W92IZhXQau_ffced6xQ9gT98DhIgoQE7lSnhwwwsIiULwrVffQw81u_xIJpK34YCIQKmAgy9h6KKaNvSzQvSmAn =624x211)
+![Table showing three of the Warehouse sizes](/assets/images/sql-optimization/snowflake/snowflake_3.png)
 
 (Full list of sizes: X-Small, Small, Medium, Large, X-Large, 2X-Large, 3X-Large)
 
