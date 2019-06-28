@@ -1,7 +1,7 @@
 ---
 title: Using ALTER in PostgreSQL
 meta_title: Using ALTER in PostgreSQL
-description: This article outlines the different potential uses of the "ALTER" command
+description: This article outlines the different potential uses of the ALTER command
   in PSQL
 section: extras
 number: 
