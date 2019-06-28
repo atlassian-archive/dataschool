@@ -26,11 +26,11 @@ Once you have set up your dbt and BigQuery, you need to set up your GitHub repos
 
 Now, in your dbt folder run these commands:
 
-`git init`
-`git add .`
-`git commit -m ‘commit message’`
-`git remote add (the URL you saved)`
-`git push -u origin master`
+'git init.'
+'git add .'
+'git commit -m ‘commit message’'
+'git remote add (the URL you saved)'
+'git push -u origin master'
 
 After this you can refresh your GitHub account to make sure you have all your files and you are ready to begin scheduling dbt.
 
@@ -104,7 +104,7 @@ Give your new “Job” a name, select the “Environment” you want to automat
 
 ![](/assets/images/sql-optimization/scheduling_dbt/jobFields.png)
 
-Next, you can tell the “Job” which dbt commands to run, \`dbt run\` is used by default. Finally, you can tell the “Job” when you want it to run:
+Next, you can tell the “Job” which dbt commands to run, 'dbt run' is used by default. Finally, you can tell the “Job” when you want it to run:
 
 ![](/assets/images/sql-optimization/scheduling_dbt/jobSchedule.png)
 
