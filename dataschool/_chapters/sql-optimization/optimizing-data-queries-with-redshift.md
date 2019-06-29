@@ -1,8 +1,9 @@
 ---
 section: databases
 title: Optimizing Data Queries with Redshift
-meta_title: ''
-description: ''
+meta_title: Optimizing Redshift
+description: Learn how Redshift manages optimization and when you can tune it further
+  for more performance.
 number: 12
 authors:
 - _people/blake.md
@@ -13,7 +14,6 @@ feedback_doc_url: ''
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 ## What is Redshift?
