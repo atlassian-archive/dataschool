@@ -2,8 +2,9 @@
 section: book
 title: Partial Indexes
 meta_title: What are Partial Indexes
-description: This article explains what partial indexes are and how to use them to help optimize your queries
-number: 80
+description: This article explains what partial indexes are and how to use them to
+  help optimize your queries
+number: 70
 authors:
 - _people/matthew-layne.md
 reviewers:
@@ -13,7 +14,6 @@ feedback_doc_url: https://docs.google.com/document/d/1awdAqjjHRME_Q8I7kG4tjQ9snA
 image: ''
 is_featured: false
 img_border_on_default: true
-published: false
 
 ---
 Partial indexes store information on the results of a query, rather than on a whole column which is what a traditional index does. This can speed up queries significantly compared to a traditional Index if the query targets the set of rows the partial index was created for.

@@ -2,13 +2,14 @@
 title: How to use Indexing to Improve Database Queries
 short: How Indexing Works
 section: Column and Table Optimizations
-number: 60
+number: 50
 authors:
 - _people/blake.md
 reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
-description: Learn how indexing works and why it is a critical part of optimizing your data warehouse
+description: Learn how indexing works and why it is a critical part of optimizing
+  your data warehouse
 feedback_doc_url: https://docs.google.com/document/d/1S7AJ4rsaPnio2bK-opfz_fAIMZ214UpdMUYdhwlsQrg/edit?usp=sharing
 img_border_on_default: true
 meta_title: How to use Indexing to Improve Database Queries
