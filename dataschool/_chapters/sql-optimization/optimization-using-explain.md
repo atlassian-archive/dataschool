@@ -4,7 +4,7 @@ title: Optimization in PostgreSQL using Explain
 meta_title: Optimization using Explain
 description: This article goes over how to use the EXPLAIN command for optimization
   in PostgreSQL
-number: 70
+number: 6
 authors:
 - _people/matthew-layne.md
 reviewers:
