@@ -3,7 +3,7 @@ section: databases
 title: Optimizing Data Queries with Redshift
 meta_title: ''
 description: ''
-number: 190
+number: 12
 authors:
 - _people/blake.md
 reviewers:
