@@ -2,7 +2,8 @@
 section: databases
 title: Snowflake
 meta_title: Snowflake
-description: This article outlines what snowflake is and how it can help make your workflow more efficient
+description: This article outlines what snowflake is and how it can help make your
+  workflow more efficient
 number: 200
 authors:
 - _people/matthew-layne.md
@@ -12,7 +13,6 @@ feedback_doc_url: https://docs.google.com/document/d/12zEPe3-HWfnSlKeizN5xqFcdXZ
 image: ''
 is_featured: false
 img_border_on_default: true
-published: false
 
 ---
 Snowflake is a cloud-based elastic data warehouse or Relational Database Management System (RDBMS). It is a run using Amazon Amazon Simple Storage Service (S3) for storage and is optimized for high speed on data of any size.

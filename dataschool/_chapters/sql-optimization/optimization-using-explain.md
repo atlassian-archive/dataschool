@@ -2,7 +2,8 @@
 section: column and table optimizations
 title: Optimization in PostgreSQL using Explain
 meta_title: Optimization using Explain
-description: This article goes over how to use the EXPLAIN command for optimization in PostgreSQL
+description: This article goes over how to use the EXPLAIN command for optimization
+  in PostgreSQL
 number: 70
 authors:
 - _people/matthew-layne.md
@@ -13,7 +14,6 @@ feedback_doc_url: https://docs.google.com/document/d/1nWKtuIgW_cjeYTvKDv8QabP9IF
 image: ''
 is_featured: false
 img_border_on_default: true
-published: false
 
 ---
 Querying postgres databases, when done properly, can result in extremely efficient results and provide powerful insights. Sometimes however, queries are written in less than optimal ways, causing slow response times. Because of this, it is important to be able to analyze how queries execute and find the most optimized ways to run them.
