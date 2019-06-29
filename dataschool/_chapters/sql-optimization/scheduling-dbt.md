@@ -3,7 +3,7 @@ section: modeling data
 title: Scheduling dbt
 meta_title: Scheduling dbt with dbt Cloud
 description: A guide on scheduling your dbt queries to run automatically.
-number: 110
+number: 10
 authors:
 - _people/blake.md
 reviewers:

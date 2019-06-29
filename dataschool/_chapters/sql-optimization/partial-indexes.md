@@ -2,8 +2,9 @@
 section: book
 title: Partial Indexes
 meta_title: What are Partial Indexes
-description: This article explains what partial indexes are and how to use them to help optimize your queries
-number: 80
+description: This article explains what partial indexes are and how to use them to
+  help optimize your queries
+number: 7
 authors:
 - _people/matthew-layne.md
 reviewers:
