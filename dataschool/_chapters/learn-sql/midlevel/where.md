@@ -6,7 +6,7 @@ description: Learn how to use the SQL WHERE command in PostgreSQL. In this inter
   SQL tutorial, learn the syntax of the WHERE command and best practices on using
   it for data analysis and exploration against your PostgreSQL database.
 number: 60
-section: mid-level
+section: Mid-Level
 authors:
 - _people/dave.md
 reviewers:

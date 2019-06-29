@@ -2,7 +2,7 @@
 title: AND OR Boolean Logic
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

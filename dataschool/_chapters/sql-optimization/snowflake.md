@@ -1,5 +1,5 @@
 ---
-section: databases
+section: Databases
 title: Snowflake
 meta_title: Snowflake
 description: This article outlines what snowflake is and how it can help make your

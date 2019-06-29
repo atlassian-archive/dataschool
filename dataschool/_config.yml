@@ -127,7 +127,7 @@ defaults:
       book_slug: learn-sql
       database: "PostgreSQL"
       dbname: "herokuchinook"
-      section: extras
+      section: Extras
       number: 999999
       needs_sqlbox: true
       permalink: "/learn-sql/:slug/"

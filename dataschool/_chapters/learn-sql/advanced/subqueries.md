@@ -4,7 +4,7 @@ short: Subqueries
 meta_title: ''
 description: ''
 number: 200
-section: advanced
+section: Advanced
 authors:
 - _people/dave.md
 reviewers:

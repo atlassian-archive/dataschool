@@ -7,9 +7,9 @@ authors:
 - _people/matthew-layne.md
 - _people/blake.md
 - _people/matt.md
-cover_image: ''
+cover_image: "/assets/images/book-covers/sql-optimization.png"
 main_color: ''
-published: false
+published: true
 
 ---
 Get exposed to the most common techniques for improving query speed and database performance. Learn how to optimize queries by modifying SQL. Understand how indexes work and when to apply them. Learn the basics of data modeling and how it impacts performance. Understand the optimization techniques available in modern data warehouses.

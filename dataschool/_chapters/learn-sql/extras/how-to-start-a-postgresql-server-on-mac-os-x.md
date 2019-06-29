@@ -3,7 +3,7 @@ title: How to Start a PostgreSQL Server on Mac OS X
 meta_title: PostgreSQL Server on Mac OS X
 description: This article explores starting a PostgreSQL server using both Homebrew
   and the potgres app.
-section: extras
+section: Extras
 number:
 authors:
 - _people/matthew-layne.md

@@ -6,13 +6,13 @@ description: Learn how to LIMIT the number of results that are returned you can 
   use the LIMIT SQL command at the end of the query to specify. You can use the LIMIT
   command on your PostgreSQL database. Read the tutorial to learn more.
 number: 50
-section: basic
+section: Basic
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
 is_featured: false
-image: 
+image:
 topics:
 - _chapters/dictionary/sql.md
 

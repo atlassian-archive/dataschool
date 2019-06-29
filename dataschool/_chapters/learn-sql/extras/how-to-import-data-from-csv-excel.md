@@ -3,7 +3,7 @@ title: How to Import Data to PostgreSQL From an Excel or CSV File
 short: Import CSV
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

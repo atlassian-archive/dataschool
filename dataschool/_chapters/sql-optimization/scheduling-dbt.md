@@ -1,5 +1,5 @@
 ---
-section: modeling data
+section: Modeling Data
 title: Scheduling dbt
 meta_title: Scheduling dbt with dbt Cloud
 description: A guide on scheduling your dbt queries to run automatically.

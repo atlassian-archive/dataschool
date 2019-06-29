@@ -6,8 +6,8 @@ description: Learn the SELECT SQL statement with your PostgreSQL database in thi
   interactive SQL data tutorial. The SELECT statement is a basic SQL command that
   easily allows you to interact with the data in your PostgreSQL database.
 number: 20
-section: basic
-image: 
+section: Basic
+image:
 authors:
 - _people/dave.md
 reviewers:

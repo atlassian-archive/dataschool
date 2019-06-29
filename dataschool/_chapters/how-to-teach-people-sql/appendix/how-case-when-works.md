@@ -1,5 +1,5 @@
 ---
-section: appendix
+section: Appendix
 title: How CASE WHEN works
 meta_title: How CASE WHEN works
 description: CASE WHEN is a SQL function that works a lot like IF THEN in regular
@@ -11,7 +11,7 @@ reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKbyR5n24yeJbuuyAmsk/edit?usp=sharing
-image: 
+image:
 is_featured: false
 img_border_on_default: true
 

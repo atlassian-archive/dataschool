@@ -1,5 +1,5 @@
 ---
-section: column and table optimizations
+section: Column and Table Optimizations
 title: Optimization in PostgreSQL using Explain
 meta_title: Optimization using Explain
 description: This article goes over how to use the EXPLAIN command for optimization

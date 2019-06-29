@@ -3,7 +3,7 @@ title: How To Generate Random Data in PostgreSQL
 short: Random Sequences
 meta_title: Generate Random Data in Postgres
 description: You can generate random values in SQL using the following instructions.
-section: extras
+section: Extras
 number: 
 authors:
 - _people/dave.md

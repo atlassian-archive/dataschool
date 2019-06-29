@@ -1,7 +1,7 @@
 ---
 title: How to use Regex to Create Optimal Search Queries
 short: How Regex Works
-section: appendix
+section: Appendix
 number: 210
 authors:
 - _people/blake.md

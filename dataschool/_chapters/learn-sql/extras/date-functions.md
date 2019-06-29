@@ -3,7 +3,7 @@ title: PostgreSQL Comprehensive Date Functions
 short: DATE functions
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

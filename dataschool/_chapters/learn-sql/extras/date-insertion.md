@@ -3,7 +3,7 @@ title: DATE EXTRACT
 short: EXTRACT
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

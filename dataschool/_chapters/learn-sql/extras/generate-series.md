@@ -2,7 +2,7 @@
 title: PostgreSQL Generate_Series
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

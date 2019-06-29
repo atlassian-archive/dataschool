@@ -28,13 +28,13 @@ layout: default
 
 <h2 class="mb-4">Contents</h2>
 <ul class="d-none">
-{% assign bookchapters = site.chapters | where:'book_slug', page.slug | sort: 'number' %}
+{% assign bookchapters = site.chapters | where:'book_slug', page.slug | where:'is_hidden', false | sort: 'number' %}
 {% for chapter in bookchapters %}
   {% if currentsection != chapter.section %}
      {% assign currentsection = chapter.section %}
      </ul>
-     <ul id="{{currentsection}}" class="light-pad-list">
-     {% if currentsection != 'book' %}<h3 class="mb-3 mt-4">{{ currentsection | capitalize }}</h3>{% endif %}
+     <ul id="{{currentsection}}" class="no-pad-list">
+     {% if currentsection != 'book' %}<h3 class="mb-3 mt-4">{{ currentsection }}</h3>{% endif %}
   {% endif %}
       <li class="mb-2">
        <a href="{{ chapter.url }}">{{ chapter.title }}</a>

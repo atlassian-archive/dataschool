@@ -2,7 +2,7 @@
 title: PostgreSQL Mathematical Operators
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

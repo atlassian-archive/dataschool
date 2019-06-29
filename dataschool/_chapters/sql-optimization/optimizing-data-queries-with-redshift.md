@@ -1,5 +1,5 @@
 ---
-section: databases
+section: Databases
 title: Optimizing Data Queries with Redshift
 meta_title: ''
 description: ''

@@ -1,5 +1,5 @@
 ---
-section: appendix
+section: Appendix
 title: How Window Functions work
 meta_title: How Window Functions work
 description: Learn how window functions work by looking at gifs that show the process

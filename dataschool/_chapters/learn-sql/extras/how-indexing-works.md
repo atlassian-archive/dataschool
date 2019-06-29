@@ -4,7 +4,7 @@ short: How Indexing Works
 meta_title:
 description: Learn how indexing works and why it is a critical part of optimizing
   your data warehouse
-section: extras
+section: Extras
 number:
 authors:
 - _people/blake.md

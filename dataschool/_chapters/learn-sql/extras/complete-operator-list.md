@@ -2,7 +2,7 @@
 title: PostgreSQL Complete Operator List
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

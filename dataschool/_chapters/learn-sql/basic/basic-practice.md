@@ -6,13 +6,13 @@ description: Now that you've gone through our PostgreSQL interactive SQL tutoria
   you've got the basic SQL fundamentals that you can apply to your data and databases.
   Put that knowledge to use in these SQL practice exercises.
 number: 59
-section: basic
+section: Basic
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
 is_featured: false
-image: 
+image:
 
 ---
 You're through the basics of SQL!  This is a great place to stop and get more practice on what you've learned so far.   Here we've constructed a list of challenges to give you that practice.  Take some time to go through these before moving on to the Mid-Level SQL section.

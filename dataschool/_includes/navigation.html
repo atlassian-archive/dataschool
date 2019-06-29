@@ -19,7 +19,7 @@
   <!-- building the chapter list -->
   {% if page.layout == "chapter" %}
 
-  {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | sort: 'number' %}
+  {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | where:'is_hidden', false | sort: 'number' %}
     <ul class="list-unstyled components">
       <li class="d-none">
         <ul>
@@ -29,8 +29,8 @@
                 </ul>
                 </li>
                 <li class="book-section ">
-                  <a href="#{{currentsection}}" data-target="#{{currentsection}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle {% if currentsection == 'book' %}d-none{% endif %}">{{ currentsection | capitalize }}</a>
-                  <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection}}">
+                  <a href="#{{currentsection | remove:' '}}" data-target="#{{currentsection | remove:' '}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle {% if currentsection == 'book' %}d-none{% endif %}">{{ currentsection | capitalize }}</a>
+                  <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection | remove:' '}}">
             {% endif %}
             <li {% if page.url == chapter.url %}class="active"{% endif %}>
               <a href="{{ chapter.url }}">

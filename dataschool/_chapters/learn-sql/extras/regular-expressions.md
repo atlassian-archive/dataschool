@@ -2,7 +2,7 @@
 title: PostgreSQL Regular Expressions
 meta_title:
 description:
-section: extras
+section: Extras
 number:
 authors: []
 reviewers: []

@@ -6,7 +6,7 @@ description: Learn about Operator in SQL, which are used to specify conditions i
   a SQL statement and as conjunctions for multiple conditions in a SQL statement.
   In this interactive SQL tutorial, learn how to use an Operator in a SQL query.
 number: 65
-section: mid-level
+section: Mid-Level
 authors:
 - _people/dave.md
 reviewers:

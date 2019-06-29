@@ -1,7 +1,7 @@
 ---
 title: How to use Indexing to Improve Database Queries
 short: How Indexing Works
-section: column and table optimizations
+section: Column and Table Optimizations
 number: 60
 authors:
 - _people/blake.md

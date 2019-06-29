@@ -6,7 +6,7 @@ description: Now that you've gone through our PostgreSQL interactive SQL tutoria
   you've got mid-level SQL fundamentals that you can apply to your data and databases.
   Put that knowledge to use in these SQL practice exercises.
 number: 150
-section: mid-level
+section: Mid-Level
 authors:
 - _people/dave.md
 reviewers:

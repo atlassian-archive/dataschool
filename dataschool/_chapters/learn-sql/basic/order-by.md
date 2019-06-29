@@ -6,13 +6,13 @@ description: Learn how to use the SQL ORDER BY command in PostgreSQL. The ORDER 
   command is used to sort your result data in ascending or descending order. Follow
   the interactive SQL tutorial to use cases and best practices for the ORDER BY command.
 number: 40
-section: basic
+section: Basic
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
 is_featured: false
-image: 
+image:
 topics:
 - _chapters/dictionary/sql.md
 

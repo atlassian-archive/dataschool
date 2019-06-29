@@ -3,7 +3,7 @@ title: Copying Data Between Tables
 meta_title: Copying Data Between Tables
 description: This article discusses how to copy data from a table or query into another
   table using the INSERT command in psql.
-section: extras
+section: Extras
 number:
 authors:
 - _people/matthew-layne.md
