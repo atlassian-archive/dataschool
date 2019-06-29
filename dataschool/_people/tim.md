@@ -4,7 +4,7 @@ meta_title: Contributor - Tim Miller
 description: Tim writes about Dashboard design and SQL
 image: "/assets/images/people/tim.jpg"
 is_contributor: true
-job_title: Sr. Data Advisor
+job_title: Senior Data Advisor
 company: Chartio
 linkedin: 
 twitter: ''
