@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1r0fyo8QHWhe_ADc-XruJBRtlIj
 image: ''
 is_featured: false
 img_border_on_default: true
+published: false
 
 ---
 ## What is a view?
