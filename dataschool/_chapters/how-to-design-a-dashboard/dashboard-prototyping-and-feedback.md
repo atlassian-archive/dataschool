@@ -1,8 +1,9 @@
 ---
-section: book
+section: Prototype
 title: Dashboard Prototyping and Feedback
 meta_title: Dashboard Prototyping and Feedback
-description: Learn techniques to prototype your dashboard and iterate on it
+description: Learn techniques to prototype your dashboard and iterate. See actual
+  examples of prototyped dashboards and download dashboard sketch templates.
 number: 90
 authors:
 - _people/matt.md
