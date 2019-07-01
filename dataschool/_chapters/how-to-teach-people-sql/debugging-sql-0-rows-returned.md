@@ -1,6 +1,6 @@
 ---
-title: 'Debugging SQL: 0 Rows Returned'
-meta_title: 'Debugging SQL: 0 Rows Returned'
+title: 0 Rows Returned
+meta_title: 'Debugging SQL: 0 Rows Returned animated with Gifs'
 section: Debugging
 number: 110
 authors:

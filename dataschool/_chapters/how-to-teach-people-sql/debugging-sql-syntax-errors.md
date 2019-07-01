@@ -1,6 +1,6 @@
 ---
-title: 'Debugging SQL: Syntax Errors'
-meta_title: 'Debugging SQL: Syntax Errors'
+title: Syntax Errors
+meta_title: 'Debugging SQL: Syntax Errors animated with Gifs'
 section: Debugging
 number: 100
 authors:
