@@ -1,6 +1,6 @@
 ---
 title: How to Find Outliers with SQL
-meta_title: How to Find Outliers with SQL
+meta_title: Find Outliers with SQL
 description: Find Outliers quickly with SQL. Detect outliers using simple ORDER BY
   techniques and using inter quartile range. Learn more.
 section: Appendix
