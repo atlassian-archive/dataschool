@@ -1,7 +1,7 @@
 ---
 section: book
 title: Implementation
-meta_title: Implementation
+meta_title: Implement Data Governance Best Practices
 description: Determine data components and the rules that govern this data across
   applications.
 number: 60
