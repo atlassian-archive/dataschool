@@ -1,7 +1,7 @@
 ---
 section: Prototype
 title: Dashboard Prototyping and Feedback
-meta_title: Dashboard Prototyping and Feedback
+meta_title: How to Prototype Dashboards
 description: Learn techniques to prototype your dashboard and iterate. See actual
   examples of prototyped dashboards and download dashboard sketch templates.
 number: 90
