@@ -3,7 +3,7 @@ section: Appendix
 title: How Window Functions work
 meta_title: How Window Functions work
 description: Learn how window functions work by looking at gifs that show the process
-  in slow motion.
+  in slow motion. See every step in SQL animated in slow motion. Learn more.
 number: 200
 authors:
 - _people/blake.md

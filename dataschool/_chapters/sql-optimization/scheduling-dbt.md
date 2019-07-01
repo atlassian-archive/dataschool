@@ -2,7 +2,8 @@
 section: Modeling Data
 title: Scheduling dbt
 meta_title: Scheduling dbt with dbt Cloud
-description: A guide on scheduling your dbt queries to run automatically.
+description: Schedule data modeling tasks to make data easy to query. Learn to use
+  dbt Cloud to model data to optimize your data warehouse. Learn more.
 number: 100
 authors:
 - _people/blake.md

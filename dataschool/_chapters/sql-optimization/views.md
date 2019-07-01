@@ -1,9 +1,9 @@
 ---
-section: book
+section: Modeling Data
 title: Views in SQL
 meta_title: Views in SQL
-description: This article discusses what views are and how to optimize your queries
-  using views
+description: SQL VIEWs allow you to create temporary or permanent references to data.
+  This is a common database optimization technique. Learn more.
 number: 110
 authors:
 - _people/matthew-layne.md
@@ -14,7 +14,6 @@ feedback_doc_url: https://docs.google.com/document/d/1r0fyo8QHWhe_ADc-XruJBRtlIj
 image: ''
 is_featured: false
 img_border_on_default: true
-published: false
 
 ---
 ## What is a view?

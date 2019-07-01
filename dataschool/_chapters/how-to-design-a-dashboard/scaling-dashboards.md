@@ -1,8 +1,9 @@
 ---
-section: book
+section: Deploy
 title: Scaling Dashboards
 meta_title: Scaling Dashboards to the Company
-description: Successful dashboards get used a lot so they need to be built to scale
+description: Successful dashboards get used a lot so they need to be built to scale.
+  Learn to share dashboards in a scalable way.
 number: 130
 authors:
 - _people/matt.md

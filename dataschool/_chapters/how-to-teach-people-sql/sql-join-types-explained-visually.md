@@ -1,9 +1,9 @@
 ---
 title: SQL Join Types Explained Visually
 meta_title: SQL Join Types Explained Visually
-description: Data within a database exists across multiple tables, JOINs allow you
-  to combine datasets into new tables for analysis.
-section: book
+description: 'Data within a database exists across multiple tables, JOINs allow you
+  to combine datasets into new tables for analysis. Learn more. '
+section: JOINs
 number: 40
 authors:
 - _people/tim.md

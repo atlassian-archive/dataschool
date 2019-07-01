@@ -1,9 +1,9 @@
 ---
-section: book
+section: Build
 title: Build the Metrics
 meta_title: Building Metrics for your Dashboard
 description: Use SQL to query the database to get the data behind the metrics people
-  want to see.
+  want to see. Use our template to quickly build accurate queries. Learn more.
 number: 110
 authors:
 - _people/matt.md
