@@ -2,8 +2,8 @@
 section: book
 title: Views in SQL
 meta_title: Views in SQL
-description: This article discusses what views are and how to optimize your queries
-  using views
+description: See how Redshift optimizes your database for you and how to manually
+  tune the database for more performance. Learn more
 number: 110
 authors:
 - _people/matthew-layne.md
