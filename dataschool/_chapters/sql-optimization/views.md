@@ -1,7 +1,7 @@
 ---
 section: Modeling Data
-title: Views in SQL
-meta_title: Views in SQL
+title: Views
+meta_title: Create Views in SQL
 description: SQL VIEWs allow you to create temporary or permanent references to data.
   This is a common database optimization technique. Learn more.
 number: 110

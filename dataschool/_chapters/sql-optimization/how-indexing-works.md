@@ -1,5 +1,5 @@
 ---
-title: How to use Indexing to Improve Database Queries
+title: Indexing
 short: How Indexing Works
 section: Column and Table Optimizations
 number: 50
