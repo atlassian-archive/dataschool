@@ -25,6 +25,10 @@ sections:
   match: "**/*.md"
   templates:
   - people-template
+- type: jekyll-pages
+  label: Pages
+  create: documents
+  match: "**/*"
 upload_dir: dataschool/assets/images
 public_path: "/assets/images"
 front_matter_path: ''
