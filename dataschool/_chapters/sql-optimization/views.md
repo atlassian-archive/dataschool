@@ -1,5 +1,5 @@
 ---
-section: book
+section: Modeling Data
 title: Views in SQL
 meta_title: Views in SQL
 description: SQL VIEWs allow you to create temporary or permanent references to data.

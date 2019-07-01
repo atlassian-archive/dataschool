@@ -1,5 +1,5 @@
 ---
-section: book
+section: Column and Table Optimizations
 title: Partial Indexes
 meta_title: What are Partial Indexes
 description: Partial indexes are an advanced database optimization technique. Learn
