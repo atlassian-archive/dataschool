@@ -2,8 +2,8 @@
 section: Databases
 title: Optimizing Data Queries with Redshift
 meta_title: Optimizing Redshift
-description: Learn how Redshift manages optimization and when you can tune it further
-  for more performance.
+description: Learn how Redshift manages optimization for your cloud data warehouse.
+  Learn when to manually tune the database further for more performance for SQL queries.
 number: 120
 authors:
 - _people/blake.md
