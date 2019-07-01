@@ -2,7 +2,8 @@
 section: Modeling Data
 title: Start Modeling Data
 meta_title: Start Modeling Data with dbt
-description: This is a quick introduction to using DBT and BigQuery to model data.
+description: Quick introduction on using to dbt and BigQuery to model data. Modeling
+  data can have significance performance impacts on your database.
 number: 90
 authors:
 - _people/matt.md
