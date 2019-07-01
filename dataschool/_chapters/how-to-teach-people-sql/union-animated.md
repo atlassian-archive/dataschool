@@ -1,5 +1,5 @@
 ---
-section: book
+section: JOINs
 title: Union - Animated
 meta_title: Union - Animated
 number: 80
@@ -8,7 +8,8 @@ authors:
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/12dp24i8H3q4v_IbGIbJKF-yZirvhtHmEQ6AvC9K91gw/edit?usp=sharing
 image: 
-description: Visualize how SQL is joining two tables using a Union All
+description: Visualize how SQL is joining two tables using a Union All join. See animated
+  visualizations of the data being Unioned in SQL. Learn more.
 is_featured: false
 img_border_on_default: false
 
