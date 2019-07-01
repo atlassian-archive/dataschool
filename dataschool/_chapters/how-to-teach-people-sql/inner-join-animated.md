@@ -1,6 +1,6 @@
 ---
 title: Inner Join - Animated
-meta_title: Inner Join - Animated
+meta_title: Inner Join - Animated with Gifs
 description: Visualize how SQL is joining two tables using an Inner JOIN. See animated
   visualizations of the data being INNER joined in SQL. Learn more.
 section: JOINs
