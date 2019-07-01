@@ -1,6 +1,6 @@
 ---
 title: Left & Right Join - Animated
-meta_title: Left & Right Join - Animated
+meta_title: Left & Right Join - Animated with Gifs
 description: Visualize how SQL is joining two tables using a Left JOIN and a Right
   JOIN. See animated visualizations of the data being LEFT and RIGHT joined in SQL.
   Learn more.
