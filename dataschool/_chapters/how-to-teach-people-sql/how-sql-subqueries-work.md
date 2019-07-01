@@ -1,6 +1,6 @@
 ---
-title: How SQL Subqueries Work
-meta_title: How SQL Subqueries Work
+title: How Subqueries Work
+meta_title: How SQL Subqueries Work with animated Gifs
 section: Advanced
 number: 130
 authors:
