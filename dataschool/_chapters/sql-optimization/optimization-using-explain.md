@@ -2,8 +2,8 @@
 section: Column and Table Optimizations
 title: Optimization in PostgreSQL using Explain
 meta_title: Optimization using Explain
-description: This article goes over how to use the EXPLAIN command for optimization
-  in PostgreSQL
+description: 'The EXPLAIN shows the query plan for SQL queries in Postgres. Learn
+  how to interpret the results from EXPLAIN and use it to optimize your SQL queries. '
 number: 60
 authors:
 - _people/matthew-layne.md
