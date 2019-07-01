@@ -8,8 +8,8 @@ authors:
 reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
-description: Learn how indexing works and why it is a critical part of optimizing
-  your data warehouse
+description: 'Indexing is a critical part of database optimization. See how indexes
+  work. Learn to build indexes with SQL. And see how to test their performance impacts. '
 feedback_doc_url: https://docs.google.com/document/d/1S7AJ4rsaPnio2bK-opfz_fAIMZ214UpdMUYdhwlsQrg/edit?usp=sharing
 img_border_on_default: true
 meta_title: How to use Indexing to Improve Database Queries
