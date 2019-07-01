@@ -1,7 +1,7 @@
 ---
 section: Build
 title: Finding the Data That Builds Metrics
-meta_title: Finding the Data That Builds Metrics
+meta_title: Use SQL to Find Data to Builds Metrics
 number: 100
 authors:
 - _people/matt.md
