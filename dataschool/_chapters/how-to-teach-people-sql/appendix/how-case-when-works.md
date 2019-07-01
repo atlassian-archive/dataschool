@@ -1,5 +1,5 @@
 ---
-section: Appendix
+section: Advanced
 title: How CASE WHEN works
 meta_title: How CASE WHEN works
 description: CASE WHEN is a SQL function that works a lot like IF THEN in other programming
