@@ -1,7 +1,7 @@
 ---
 section: book
 title: How Does Data Governance Apply to Me?
-meta_title: How Does Data Governance Apply to Me?
+meta_title: How Does Data Governance Apply to Me and My Business?
 description: Data governance helps with compliance, user satisfaction, decision making,
   risk management, and getting value out of big data.
 number: 70
