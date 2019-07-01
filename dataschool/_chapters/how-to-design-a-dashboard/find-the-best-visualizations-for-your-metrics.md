@@ -1,7 +1,7 @@
 ---
 section: Prototype
 title: Find the Best Visualizations for Your Metrics
-meta_title: Find the Best Visualizations for Your Metrics
+meta_title: Best Visualizations for Metrics
 description: Decide what chart works best for your visualization based on if you want
   to show composition, relationship, distribution or comparison. Not all visualizations
   are appropriate, learn which are.
