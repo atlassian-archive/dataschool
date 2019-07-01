@@ -1,5 +1,5 @@
 ---
-title: How to use Regex to Create Optimal Search Queries
+title: How Regex in SQL Works
 short: How Regex Works
 section: Appendix
 number: 210

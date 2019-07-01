@@ -1,7 +1,7 @@
 ---
 section: Appendix
 title: How CASE WHEN works
-meta_title: How CASE WHEN works
+meta_title: How CASE WHEN works in SQL with animated Gifs
 description: CASE WHEN is a SQL function that works a lot like IF THEN in other programming
   languages. Learn to create new columns and values based on conditions in SQL.
 number: 200
