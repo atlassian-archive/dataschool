@@ -1,14 +1,14 @@
 ---
 section: book
 title: Usability
-meta_title: Usability
+meta_title: What Makes Data Usable
 description: Users need to discover data assets, understand what they contain, and
   how they work.
 number: 30
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url:
+feedback_doc_url: 
 image: "/assets/images/data-governance/usability/usability_1.png"
 is_featured: false
 img_border_on_default: false
