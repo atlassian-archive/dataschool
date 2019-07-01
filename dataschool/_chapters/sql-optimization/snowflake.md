@@ -2,8 +2,8 @@
 section: Databases
 title: Snowflake
 meta_title: Snowflake
-description: This article outlines what snowflake is and how it can help make your
-  workflow more efficient
+description: Snowflake is a powerful cloud database. Learn how it optimizes your database
+  automatically, and hot to increase performance manually.
 number: 200
 authors:
 - _people/matthew-layne.md
