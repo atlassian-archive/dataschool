@@ -1,6 +1,6 @@
 ---
-title: How SQL Aggregations Work
-meta_title: How SQL Aggregations Work
+title: How Aggregations Work
+meta_title: How SQL Aggregations Work with animated Gifs
 section: Advanced
 number: 120
 authors:
