@@ -1,6 +1,6 @@
 ---
 section: Modeling Data
-title: Scheduling dbt
+title: Scheduling Modeling
 meta_title: Scheduling dbt with dbt Cloud
 description: Schedule data modeling tasks to make data easy to query. Learn to use
   dbt Cloud to model data to optimize your data warehouse. Learn more.
