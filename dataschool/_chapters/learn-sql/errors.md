@@ -6,7 +6,7 @@ description: When working with SQL you’re going to run into a lot of errors. T
   reading to troubleshoot your errors and fix them.
 authors:
 - _people/dave.md
-meta_title: Help with Common PostgreSQL Errors
+meta_title: Common PostgreSQL Errors
 is_hidden: true
 
 ---
