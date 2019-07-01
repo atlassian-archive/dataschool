@@ -1,17 +1,16 @@
 ---
 section: Databases
-title: Optimizing Data Queries with Redshift
+title: Redshift Optimization
 meta_title: Optimizing Redshift
-description: Learn how Redshift manages optimization and when you can tune it further
-  for more performance.
+description: Learn how Redshift manages optimization and when you can tune it further for more performance.
 number: 120
 authors:
 - _people/blake.md
 reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
-feedback_doc_url: ''
-image: ''
+feedback_doc_url: https://docs.google.com/document/d/1rl45BatWGUEr5roDcABjmPH3e9QWNJFDlpH9oGT4oeE/edit?usp=sharing
+image: /assets/images/sql-optimization/redshift/nodeRelations.png
 is_featured: false
 img_border_on_default: false
 

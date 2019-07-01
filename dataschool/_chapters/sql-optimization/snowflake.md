@@ -1,16 +1,15 @@
 ---
 section: Databases
-title: Snowflake
-meta_title: Snowflake
-description: This article outlines what snowflake is and how it can help make your
-  workflow more efficient
+title: Snowflake Optimization
+meta_title: Optimizing Snowflake
+description: This article outlines what snowflake is and how it can help make your workflow more efficient
 number: 200
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/12zEPe3-HWfnSlKeizN5xqFcdXZrkfha4ge9e9vRjuK8/edit?usp=sharing
-image: ''
+image: /assets/images/sql-optimization/snowflake/snowflake_0.png
 is_featured: false
 img_border_on_default: true
 
