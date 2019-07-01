@@ -1,7 +1,7 @@
 ---
 section: Databases
-title: Snowflake
-meta_title: Snowflake
+title: Snowflake Optimization
+meta_title: 'Snowflake Database Optimization '
 description: Snowflake is a powerful cloud database. Learn how it optimizes your database
   automatically, and hot to increase performance manually.
 number: 200
