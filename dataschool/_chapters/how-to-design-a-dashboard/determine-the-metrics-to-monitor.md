@@ -1,8 +1,9 @@
 ---
-section: book
+section: Define
 title: Determine the Metrics to Monitor
 meta_title: Determine Metrics to Monitor for a Dashboard
-description: Define what metrics actually matter to business professionals.
+description: Define what metrics actually matter to business professionals. Use customer
+  development techniques to determine the best metrics.
 number: 60
 authors:
 - _people/matt.md
