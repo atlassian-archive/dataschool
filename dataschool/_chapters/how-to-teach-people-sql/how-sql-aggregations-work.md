@@ -1,7 +1,7 @@
 ---
 title: How SQL Aggregations Work
 meta_title: How SQL Aggregations Work
-section: book
+section: Advanced
 number: 120
 authors:
 - _people/matt.md
@@ -9,7 +9,7 @@ reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1sLpiaEW0K1azJLyFp6Va0UJFR3jU3YljuMcg2TUpoDY/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/aggregations/aggregations_2.png"
 description: Visualize how SQL aggregates data by viewing examples of COUNT, AVG,
-  and SUM
+  and SUM. See animations showing each step of the SQL query.
 is_featured: false
 img_border_on_default: false
 
