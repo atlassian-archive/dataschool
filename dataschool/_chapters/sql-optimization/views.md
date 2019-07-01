@@ -2,8 +2,8 @@
 section: book
 title: Views in SQL
 meta_title: Views in SQL
-description: See how Redshift optimizes your database for you and how to manually
-  tune the database for more performance. Learn more
+description: SQL VIEWs allow you to create temporary or permanent references to data.
+  This is a common database optimization technique. Learn more.
 number: 110
 authors:
 - _people/matthew-layne.md
