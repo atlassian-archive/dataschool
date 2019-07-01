@@ -1,7 +1,8 @@
 ---
 title: What is a Query Plan
 meta_title: What is a Query Plan
-description: Learn what a query plan is and how it effects your SQL queries
+description: Query Plan's are the code that SQL runs on your database. Learn how the
+  query plan works and how to optimize your SQL queries. Learn more
 section: Query Optimizations
 number: 20
 authors:
@@ -10,7 +11,7 @@ reviewers:
 - _people/blake.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1UcOvqq_7wwxeztReW9WIBY8cJpvCapQtqYfe54JzDmc/edit?usp=sharing
-image:
+image: 
 is_featured: false
 img_border_on_default: false
 
