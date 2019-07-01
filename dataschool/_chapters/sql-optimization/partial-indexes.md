@@ -2,8 +2,8 @@
 section: book
 title: Partial Indexes
 meta_title: What are Partial Indexes
-description: This article explains what partial indexes are and how to use them to
-  help optimize your queries
+description: Partial indexes are an advanced database optimization technique. Learn
+  how to create Partial Indexes and measure their performance increase on SQL queries.
 number: 70
 authors:
 - _people/matthew-layne.md
