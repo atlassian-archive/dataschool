@@ -20,13 +20,13 @@ CASE WHEN takes in values, checks them against a condition and THEN outputs valu
 
 CASE WHEN in SQL operates very similarly to “if then” statements in other programming languages. Replace the “if” with CASE WHEN and “else if” with WHEN, and the rest matches:
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen1.png)
+![comparison between 'if' logic in other languages to 'CASE WHEN' logic in SQL](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen1.png)
 
 Note: CASE WHEN statements will always output new values to a new column which is different than “if then” which can replace values in the same column.
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen2.png)
+![How if then works: replaces values](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen2.png)
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen3.png)
+![How case when works: adds value to new column](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen3.png)
 
 Now let’s see what the full query would have looked like for that CASE WHEN statement, notice the title of the output column at the end of the CASE WHEN statement.
 
@@ -65,7 +65,7 @@ FROM (appropriate table);
 
 _Note: you do not have to show all of the columns, or any columns besides the CASE column in the output._
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen4.png)
+![Image showing how the query results look with and without an additional column selected](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen4.png)
 
 ## **CASE WHEN Issues**
 
@@ -88,7 +88,7 @@ END AS Genre FROM Track
 ORDER BY Track.Name ASC LIMIT 10;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen5.png)
+![Showing results from the query and how rock is added in an additional column](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen5.png)
 
 The **Name** field is a VARCHAR and we compare it to the characters “40”.
 
@@ -101,17 +101,17 @@ END AS Genre FROM Track
 ORDER BY Track.Name ASC LIMIT 10;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen6.png)
+![Error caused by wrong data types](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen6.png)
 
 The **Name** field is a VARCHAR and cannot be compared to an INTEGER.
 
 Remember you can cast any of your values in order to make the data types match. More on casting from [intersystems here](https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_cast). To determine what data type is used in a column you can use the “\\d (Table name)” command and look for the “Type” column:
 
 ```sql
-\d "Track";
+\d "Track"
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen7.png)
+![details on the column types using \d "Track"](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen7.png)
 
 ## **In Depth Example**
 
@@ -119,7 +119,7 @@ This example uses the Chinook database with PostgreSQL 11. The “Track” table
 
 The “TrackId” in the table below is unique for each entry. However, the “GenreId” column is a reference to another table that links each id number to a genre of music. Let’s say you lost the “Genre” table (indicated with the red X through it). Now you could not JOIN in Genre Names, How could we replace the GenreId in the Track table?
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen8.png)
+![Showing lost table](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen8.png)
 
 CASE WHEN allows you to assign the genres yourself. Looking at the first few songs, you can see they all have the same GenreId and we know that 1 corresponded to the “Rock” genre. We can use CASE WHEN to check if there is a 1 in the GenreId Column and then put “Rock” into a newly created GenreType column:
 
@@ -130,7 +130,7 @@ END AS 'GenreType'
 FROM Track LIMIT 10;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen9.png)
+![Using CASE WHEN to fill in certain Genres](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen9.png)
 
 There are more than just 1 genre of music in the track table. Order the entries alphabetically to see some examples of songs that do not have a “GenreId” of 1. In the GenreType column **null** is returned for any values that did not satisfy the conditions of the CASE WHEN statement:
 
@@ -143,7 +143,7 @@ ORDER BY Track.Name ASC
 LIMIT 10;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen10.png)
+![Showing ordering the output from the query](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen10.png)
 
 Note: **Null** values are sometimes not printed in the output, other times they will be greyed out or italicized like this _Null_
 
@@ -157,7 +157,7 @@ END AS 'GenreType'
 FROM Track LIMIT 10;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen11.png)
+![Adding an ELSE to the CASE WHEN clause](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen11.png)
 
 Alternatively the WHEN keyword can be used several times to create multiple conditions:
 
@@ -172,7 +172,7 @@ END AS 'GenreType'
 FROM Track LIMIT 10;
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen12.png)
+![Adding multiple additional WHEN subclauses to the query in order to fill in multiple genres (not just rock and not rock)](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen12.png)
 
 ### **Summary:**
 
