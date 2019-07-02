@@ -10,8 +10,8 @@ authors:
 reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
-feedback_doc_url: ''
-image: ''
+feedback_doc_url: https://docs.google.com/document/d/1rl45BatWGUEr5roDcABjmPH3e9QWNJFDlpH9oGT4oeE/edit?usp=sharing
+image: /assets/images/sql-optimization/redshift/nodeRelations.png
 is_featured: false
 img_border_on_default: false
 

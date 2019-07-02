@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/12zEPe3-HWfnSlKeizN5xqFcdXZrkfha4ge9e9vRjuK8/edit?usp=sharing
-image: ''
+image: /assets/images/sql-optimization/snowflake/snowflake_0.png
 is_featured: false
 img_border_on_default: true
 
