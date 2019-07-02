@@ -4,7 +4,7 @@ meta_title: Find Outliers with SQL
 description: Find Outliers quickly with SQL. Detect outliers using simple ORDER BY
   techniques and using inter quartile range. Learn more.
 section: Appendix
-number: 202
+number: 203
 authors:
 - _people/rebecca-barnes.md
 reviewers:
