@@ -1,5 +1,5 @@
 ---
-section: book
+section: Analysis Mistakes
 title: Metric vs Metrics
 meta_title: Why you should use multiple metrics
 description: A single Metric can be misleading. Learn how to use multiple Metrics
