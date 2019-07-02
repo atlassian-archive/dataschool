@@ -11,7 +11,7 @@ reviewers:
 - _people/blake.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1UcOvqq_7wwxeztReW9WIBY8cJpvCapQtqYfe54JzDmc/edit?usp=sharing
-image: 
+image:
 is_featured: false
 img_border_on_default: false
 
@@ -20,7 +20,7 @@ A Query plan is a list of instructions that the database needs to follow in orde
 
 Below is an example query plan for a given query:
 
-![](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_1.png)
+![Shows a query plan and points out the key parts: costs, rows, data size, and the method being used](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_1.png)
 
 This query plan shows the particular steps taken to execute the given command. It also specifies the expected cost for each section.
 
@@ -30,11 +30,11 @@ SQL is a declarative language. This means that SQL queries describe what the use
 
 The Query Optimizer generates multiple Query Plans for a single query and determines the most efficient plan to run.
 
-![](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_2.png)
+![Graphic showing how the query optimizer creates query plans and selects the best plan](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_2.png)
 
 There are often many different ways to search a database. Take for example the following database of tools that has five entries. Each entry has a unique ID number and a non-unique name.
 
-![](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_3.png)
+![Table containing an ID column and a Name column. the IDs are the numbers 1-5. The names are: Callipers, Hammer, Screwdriver, Wrench, and Hammer.](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_3.png)
 
 In order to find a particular tool, there are several possible queries that could be run. For example, the query:
 
@@ -55,13 +55,13 @@ WHERE id=3;
 
 These queries will return the same results, but may have different final query plans. The first query will have a query plan that uses a sequential scan. This means that all five rows of the database will be checked to see if the name is screwdriver and, when run, would look like the following table:
 
-![](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_4.png)
+![table showing that the correct entry is at slot 3 in the table, but in a scan, the last two values must be checked anyways](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_4.png)
 
 (green = match) | (red = miss) | (white = not checked)
 
 The second query will use a query plan which implements a sequential seek since the second query handles unique values. Like a scan, a seek will go through each entry and check to see if the condition is met. However unlike a scan, a seek will stop once a matching entry has been found. A seek for ID = 3 would look like the following figure:
 
-![](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_5.png)
+![Table showing that with a seek, the last two values of the table can be ignored.](/assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_5.png)
 
 (green = match) | (red = miss) | (white = not checked)
 
