@@ -36,7 +36,7 @@ SELECT age FROM people WHERE name = 'obama'
 
 We put the data that we want in the SELECT statement (age) and we put what table that data exists in, in the FROM statement (people). Lastly put conditions to find what matches our criteria in the WHERE statement (name='obama')
 
-![](/assets/images/how-to-teach-people-sql/accessingData/accessing_2.png)
+![diagram showing what WHERE, FROM, and SELECT mean visually](/assets/images/how-to-teach-people-sql/accessingData/accessing_2.png)
 
 That SQL query on this example table would give us 57.
 

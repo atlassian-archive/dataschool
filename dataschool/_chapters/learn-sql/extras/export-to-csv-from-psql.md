@@ -22,11 +22,11 @@ In order to export a table or query to csv use one of the following commands:
 
 For Client-Side Export:
 ```sql
-\copy [Table/Query] to ‘[Relative Path/filename.csv]’ csv header;
+\copy [Table/Query] to '[Relative Path/filename.csv]' csv header;
 ```
 For Server-Side Export:
 ```sql
-COPY [Table/Query] to ‘[Absolute Path/filename.csv]’ csv header;
+COPY [Table/Query] to '[Absolute Path/filename.csv]' csv header;
 ```
 Example Absolute Path: ‘/Users/matt/Desktop/filename.csv’
 
@@ -53,17 +53,17 @@ The _\\copy_ meta-command is used for exporting to a client computer. It is usef
 ```sql
 \copy [Table/Query] to [Relative Path] csv header;
 ```
-The \[Table/Query\] section can be filled with a table or query. For example to copy all entries from a table, the table name can be put here. To copy all entries that contain “saw” in their names from the table of tools to a csv, the following commands could be run:![](/assets/images/learn-sql/extras/export/export_0.png)
+The \[Table/Query\] section can be filled with a table or query. For example to copy all entries from a table, the table name can be put here. To copy all entries that contain “saw” in their names from the table of tools to a csv, the following commands could be run:![using \copy with a subquery to select entries that have 'saw' in them](/assets/images/learn-sql/extras/export/export_0.png)
 
 The \[Relative Path\] is the path from where psql is currently saving files to where you want to save the file. The location that psql is currently saving can be found by using the _\\! pwd_ command.
 
 Note: The _\\!_ meta-command takes whatever arguments it is given and runs them as a bash command within psql.
 
-The pwd command prints the current working directory. The meta-command \\! pwd and \\! ls are shown being used below:![](/assets/images/learn-sql/extras/export/export_1.png)
+The pwd command prints the current working directory. The meta-command \\! pwd and \\! ls are shown being used below:![using \! to run ls and pwd](/assets/images/learn-sql/extras/export/export_1.png)
 
 This means that if the file name “myTools.csv” is used as the \[Relative Path\], it will be saved in _/Users/matt/_ as can be seen below:
 
-![](/assets/images/learn-sql/extras/export/export_2.png)
+![Showing \copy running and the corresponding file that was created](/assets/images/learn-sql/extras/export/export_2.png)
 
 The file can also be saved elsewhere by entering a specific relative path. For example, if _‘/Desktop/\[Filename\].csv’_ is entered as the path, the file will be saved to the desktop.
 
@@ -71,13 +71,13 @@ Following the Relative Path in the command is the text _‘csv header;’_ This 
 
 The _‘header’_ specifies that, when the data is copied to a csv file, the names of each column should be saved on the first line as shown here:
 
-![](/assets/images/learn-sql/extras/export/export_3.png)
+![comparing a csv with and without a header](/assets/images/learn-sql/extras/export/export_3.png)
 
 ### **The _COPY_ command**
 
 The _COPY_ command also requires the user to specify a Table/Query to copy. Unlike _\\copy_ however, the _COPY_ command requires an absolute path. The absolute path is . This is because _COPY_ is for copying a database from a server to another location on the same server; not to a client computer. The _\\! pwd_ is very useful for finding the absolute path if you do not know where to save the file. In order to save to the desktop using \\copy _‘Desktop/\[Filename\].csv’_ would be used. In order to do this with _COPY_, _‘/Users/\[Username\]/Desktop/\[Filename\].csv’_ would need to be used as shown below:
 
-![](/assets/images/learn-sql/extras/export/export_4.png)
+![Shows using COPY to copy a csv file](/assets/images/learn-sql/extras/export/export_4.png)
 
 ## **Summary**
 

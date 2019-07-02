@@ -87,7 +87,7 @@ From facebook
 GROUP BY State
 ```
 
-![](/assets/images/how-to-teach-people-sql/aggregations/aggregations_8.gif)
+![Running an AVG aggregation](/assets/images/how-to-teach-people-sql/aggregations/aggregations_8.gif)
 
 To get an average SQL needs the sum of each group and then divide it by the count of rows in each group.
 
