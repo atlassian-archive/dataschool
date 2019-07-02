@@ -20,11 +20,11 @@ Getting an error in SQL can be frustrating. However getting no errors and no dat
 
 The most common issue is JOINing on the wrong column. In the example below it is JOINing on the name column in both tables, however in the pets table the column that would have corresponded to the facebook friend table would have been owner.
 
-![](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_1.gif)
+![Gif showing the common wrong column name error](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_1.gif)
 
 Sometimes you have picked the right column but there are no matches in the corresponding data. In this example the names of the owner have been changed to show this scenario.
 
-![](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_2.gif)
+![gif showing no matched rows](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_2.gif)
 
 Another thing to watch out for which will return an error is if the datatype of the columns being joined do not match. Sometimes columns with numbers in it are saved as text. You will have to CAST that column as a numeric data type such as INT or FLOAT. You could also convert the numeric column to a text data type such as VARCHAR.
 
@@ -34,7 +34,7 @@ It is a best practice to inspect the tables you will be joining independently to
 
 The second most common issue that produces 0 rows returned is that the query is filtering out too much data in the WHERE or HAVING statement.
 
-![](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_3.gif)
+![gif of filtering by an unreasonable filter](/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_3.gif)
 
 To see if the WHERE or HAVING clause is too restrictive simply remove it from the query to see if any rows are returned. If rows are returned the problem is likely in your WHERE or HAVING clause.
 
