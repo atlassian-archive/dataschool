@@ -82,11 +82,11 @@ In the side menu select “Environments”:
 
 Then select “New Environment” to create your environment:
 
-![shows where the significant fields that need to be filled are](/assets/images/sql-optimization/scheduling_dbt/newEnvironments.png)
+![shows where the 'New Environment' button is](/assets/images/sql-optimization/scheduling_dbt/newEnvironment.png)
 
 Then begin filling in the required information. Give your “Environment” a name, select the repository you would like to link it to, and select the database “Connection” you would like this environment to have:
 
-![](/assets/images/sql-optimization/scheduling_dbt/environmentFields.png)
+![shows where the significant fields that need to be filled are](/assets/images/sql-optimization/scheduling_dbt/environmentFields.png)
 
 Once you have selected your desired options from the drop down menus, click “Save” to save this “Environment”.
 
