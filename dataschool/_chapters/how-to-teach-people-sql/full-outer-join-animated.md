@@ -25,11 +25,11 @@ ON facebook.name = linkedin.name
 
 This query finds matches and adds them to a newly created table in the same way as a LEFT join.
 
-![](/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif)
+![gif showing part one of a full outer join: the left join](/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif)
 
 However after completing the LEFT join of the data then there is essentially RIGHT join performed. However since all the cases where there is a match has been made, SQL only checks to see if each value is present in the joined table. If it is not in the joined table, SQL will add this row to the new table and put in nulls for the columns from the other table.
 
-![](/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_2.gif)
+![gif showing subsequent adding of values that were not copied from the table](/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_2.gif)
 
 Why use a FULL OUTER JOIN vs LEFT JOIN or RIGHT JOIN vs an INNER JOIN? To help understand, Let’s think about the different questions they are asking.
 
