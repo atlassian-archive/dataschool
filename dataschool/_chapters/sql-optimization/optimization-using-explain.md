@@ -1,7 +1,7 @@
 ---
 section: Column and Table Optimizations
-title: Optimization in PostgreSQL using Explain
-meta_title: Optimization using Explain
+title: Optimization with EXPLAIN ANALYZE
+meta_title: Optimization using EXPLAIN ANALYZE in Postgres
 description: 'The EXPLAIN shows the query plan for SQL queries in Postgres. Learn
   how to interpret the results from EXPLAIN and use it to optimize your SQL queries. '
 number: 60
