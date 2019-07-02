@@ -38,7 +38,7 @@ Once a view is created, the details about the vehicle can be accessed through th
 SELECT * FROM vehicle_details;
 ```
 
-![](/assets/images/sql-optimization/views/views_0.png)
+![This image compares a query that uses a view with a query that does the same operation without using a view. The view makes the query significantly shorter.](/assets/images/sql-optimization/views/views_0.png)
 
 As we can see, the two queries return the same result. The only difference between the two queries is the length of the queries in terms of characters.
 
@@ -82,7 +82,7 @@ It will return an error :
 ERROR: new row violates check option for view \[name of view\]
 ```
 
-Example: ![](/assets/images/sql-optimization/views/views_1.png)
+Example: ![Shows the creation of a view using the 'WITH CHECK OPTION' parameter. It is followed by an example of an insert into the view failing due to said parameter.](/assets/images/sql-optimization/views/views_1.png)
 
 ### LOCAL and CASCADED
 
@@ -100,7 +100,7 @@ To see the definition (underlying query) of a view, you can use:
 ```sql
 \\d+ \[view name\]
 ```
-![](/assets/images/sql-optimization/views/views_2.png)
+![Shows the execution of \d+ vehicle_details and where to view the definition](/assets/images/sql-optimization/views/views_2.png)
 
 ## Updating Views
 
@@ -123,7 +123,7 @@ Views can only be updated if they follow these criteria:
 
 Materialized views are similar to standard views, however they store the result of the query in a physical table taking up memory in your database. This means that a query run on a materialized view will be faster than standard view because the underlying query does not need to be rerun each time the view is called. The query is run on the new Materialized view:
 
-![](/assets/images/sql-optimization/views/views_3.png)
+![Image showing the creation of a materialized view, followed by comparison of a query with and without using the materialized view](/assets/images/sql-optimization/views/views_3.png)
 
 This query plan shows the materialized view being used as a table and being scanned. It also shows a significant difference in speed between the two methods.
 
