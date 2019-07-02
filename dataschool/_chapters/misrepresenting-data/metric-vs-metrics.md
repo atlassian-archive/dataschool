@@ -30,14 +30,14 @@ We want to show how single metrics can be misleading for a business. Do they rea
 
 ## Outline + Learning Objectives
 
-The problem with a single metric
+#### The problem with a single metric
 
 * Describe why a single metric can be misleading
 
-Create multiple metrics
+#### Create multiple metrics
 
 * Create a dashboard to view multiple metrics at once
 
-Interpret multiple metrics
+#### Interpret multiple metrics
 
 * Analyze a dashboard containing multiple metrics for a nuanced view of the data
