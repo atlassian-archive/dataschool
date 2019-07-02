@@ -33,11 +33,11 @@ Examine the following two examples:
 
 Single quotes indicate you are referencing that text string
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_1.png)
+![table for query filtered by name='Matt'](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_1.png)
 
 Double quotes indicate you are referencing a table name or a field.
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_2.png)
+![table for a similar but Unfiltered query](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_2.png)
 
 Different types of SQL handle a single quote ‘ and a double quote “ differently so if you get an error such as “ERROR: column “age” does not exist,” try switching to using the other type of quotation around the text and if that does not work consult the documentation for that specific type of SQL.
 
@@ -45,45 +45,45 @@ Different types of SQL handle a single quote ‘ and a double quote “ differen
 
 If you reference a column or table and put it in quotes and the capitalization does not match what it is in the database, you will get an error since that table or column does not exist in the database. If you do not use quotes to reference the column or table it will run as expected.
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_3.png)
+![image of the table used for this example](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_3.png)
 
 For the table above the keyword select, the table facebook, and the column name without quotes can be written as:
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_4.png)
+![Image demonstrating that sql is not picky about capitalization unless " characters are used](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_4.png)
 
 You can get the same result with whatever use of upper and lower case letter:
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_5.png)
+![Table showing that mismatched capitalization is not an error](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_5.png)
 
 Table and column with quotes must be written lowercase since that is how they are in the table above:
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_6.png)
+![Example using " characters making capitalization matter](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_6.png)
 
 There are some capitalization conventions that should be followed though they are not required. The main one being that the keywords for clauses should be written out in all caps. This helps with the readability of the query.
 
 While this capitalization of Select and From will work:
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_7.png)
+![Only first letters of Select and From are capitalized](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_7.png)
 
 This is all capitalization of SELECT and FROM is preferred:
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_8.png)
+![SELECT and FROM are both completely capitalized. This is best practice.](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_8.png)
 
 ## Data Types
 
 A common syntax error is not using the correct data type when comparing a value in a field with some constant in your query. Sometimes when a number is stored in a database it is stored as a string. This would cause the following query to error.
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_9.png)
+![table with the column data types listed](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_9.png)
 
 The query below will produce an error because the data type of 27 in the WHERE clause is numeric but the field age is a text data type:
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_10.png)
+![query that will fail due to missing quotation marks around 27](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_10.png)
 
 To get the answer we expect we must put 27 in double quotes “27”
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_11.png)
+![corrected version of the previous query](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_11.png)
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_12.png)
+![output of the query above](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_12.png)
 
 ## Clause Order
 
@@ -102,11 +102,11 @@ You do not need to include all of these clauses in a SQL query but you do need a
 
 WHERE filters rows before they are grouped.
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_13.png)
+![table being filtered by where clause](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_13.png)
 
 HAVING filters the newly grouped rows.
 
-![](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_14.png)
+![table being filtered by having clause](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_14.png)
 
 ## Summary
 
