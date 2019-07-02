@@ -42,7 +42,7 @@ Once you have created your dbt Cloud account there are just a few steps between 
 
 In the side menu select “Repositories”:
 
-![](/assets/images/sql-optimization/scheduling_dbt/repositories.png)
+![Shows the dbt interface and where the repositories button is located on it](/assets/images/sql-optimization/scheduling_dbt/repositories.png)
 
 Click “Add New Repository” and link your GitHub account to your dbt account.
 
@@ -50,27 +50,27 @@ Click “Add New Repository” and link your GitHub account to your dbt account.
 
 In the side menu select “Connections”:
 
-![](/assets/images/sql-optimization/scheduling_dbt/connections.png)
+![Shows where the connections button os located](/assets/images/sql-optimization/scheduling_dbt/connections.png)
 
 Then click “New Connection”:
 
-![](/assets/images/sql-optimization/scheduling_dbt/newConnection.png)
+![shows where the 'New Connection' button is](/assets/images/sql-optimization/scheduling_dbt/newConnection.png)
 
 In the “Type” drop down, select the type of database you want to connect. For this example, we will connect a BigQuery database:
 
-![](/assets/images/sql-optimization/scheduling_dbt/connectionType.png)
+![Shows how to select the type of connection](/assets/images/sql-optimization/scheduling_dbt/connectionType.png)
 
 The easiest way to fill in the information to build your “Connection” is to “Upload a Service Account JSON file” that you used when linking dbt to your BigQuery account:
 
-![](/assets/images/sql-optimization/scheduling_dbt/uploadAJSON.png)
+![shows where the 'Upload a Service Account JSON File' button is](/assets/images/sql-optimization/scheduling_dbt/uploadAJSON.png)
 
 Now the only information you should have to fill out for yourself is the “Schema”, the name of the table in your BigQuery to connect to:
 
-![](/assets/images/sql-optimization/scheduling_dbt/schema.png)
+![Shows where to edit the new connection](/assets/images/sql-optimization/scheduling_dbt/schema.png)
 
 and your desired “Timeout in Seconds”, the length of time your query is allowed to run before the system terminates it:
 
-![](/assets/images/sql-optimization/scheduling_dbt/schemaAndTimeout.png)
+![shows what fields in the file still needs to be filled out](/assets/images/sql-optimization/scheduling_dbt/schemaAndTimeout.png)
 
 Once you have filled out those two fields, you can press “Save” in the top right.
 
@@ -78,15 +78,15 @@ Once you have filled out those two fields, you can press “Save” in the top r
 
 In the side menu select “Environments”:
 
-![](/assets/images/sql-optimization/scheduling_dbt/environments.png)
+![shows where the 'Environments' button is](/assets/images/sql-optimization/scheduling_dbt/environments.png)
 
 Then select “New Environment” to create your environment:
 
-![](/assets/images/sql-optimization/scheduling_dbt/newEnvironments.png)
+![shows where the 'New Environment' button is](/assets/images/sql-optimization/scheduling_dbt/newEnvironment.png)
 
 Then begin filling in the required information. Give your “Environment” a name, select the repository you would like to link it to, and select the database “Connection” you would like this environment to have:
 
-![](/assets/images/sql-optimization/scheduling_dbt/environmentFields.png)
+![shows where the significant fields that need to be filled are](/assets/images/sql-optimization/scheduling_dbt/environmentFields.png)
 
 Once you have selected your desired options from the drop down menus, click “Save” to save this “Environment”.
 
@@ -94,19 +94,19 @@ Once you have selected your desired options from the drop down menus, click “S
 
 To schedule your first dbt query, select “Jobs” from the side menu:
 
-![](/assets/images/sql-optimization/scheduling_dbt/jobs.png)
+![shows where the 'Jobs' button is](/assets/images/sql-optimization/scheduling_dbt/jobs.png)
 
 Click on “New Job”:
 
-![](/assets/images/sql-optimization/scheduling_dbt/newJob.png)
+![shows where the 'New Job' button is](/assets/images/sql-optimization/scheduling_dbt/newJob.png)
 
 Give your new “Job” a name, select the “Environment” you want to automate, you can also change the “Run Timeout” by default the query will never timeout:
 
-![](/assets/images/sql-optimization/scheduling_dbt/jobFields.png)
+![shows where the new job fields need to be filled in](/assets/images/sql-optimization/scheduling_dbt/jobFields.png)
 
 Next, you can tell the “Job” which dbt commands to run, 'dbt run' is used by default. Finally, you can tell the “Job” when you want it to run:
 
-![](/assets/images/sql-optimization/scheduling_dbt/jobSchedule.png)
+![shows where to write your commands and where to schedule triggers to run the command](/assets/images/sql-optimization/scheduling_dbt/jobSchedule.png)
 
 Once you have filled in all the required fields, you can click “Save” in the top right and the job will begin running on schedule. Now your queries will be regularly updated and ready to use by others in your organization.
 

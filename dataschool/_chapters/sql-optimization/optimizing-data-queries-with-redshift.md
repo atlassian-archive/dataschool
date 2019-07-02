@@ -57,7 +57,7 @@ Following this structure, Redshift has had to optimize their queries to be run a
 
 Below is an image provided by [AWS](https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html) to explain their cluster interface:
 
-![](/assets/images/sql-optimization/redshift/nodeRelations.png)
+![Image showing the cluster architecture of redshift's compute nodes](/assets/images/sql-optimization/redshift/nodeRelations.png)
 Source: [https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html](https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html)
 
 Redshift is one of the fastest databases for data analytics and ad hoc queries. Redshift is built to handle petabyte sized databases while maintaining relatively fast queries of these databases.

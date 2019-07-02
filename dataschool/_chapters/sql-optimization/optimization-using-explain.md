@@ -27,14 +27,14 @@ In postgreSQL, the query plan can be examined using the **_EXPLAIN_** command:
 ```sql
 EXPLAIN SELECT seqid FROM traffic WHERE serial_id<21;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_1.png)
+![Image showing an example query plan using explain](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_1.png)
 
 This command shows the generated query plan but does not run the query. In order to see the results of actually executing the query, you can use the **_EXPLAIN ANALYZE_** command:
 
 ```sql
 EXPLAIN ANALYZE SELECT seqid FROM traffic WHERE serial_id<21;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_2.png)
+![Image showing an example query plan using explain analyze](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_2.png)
 
 **Warning:** Adding **_ANALYZE_** to **_EXPLAIN_** will both run the query and provide statistics. This means that if you use **_EXPLAIN ANALYZE_** on a **_DROP_** command (Such as EXPLAIN ANALYZE DROP TABLE table), the specified values will be dropped after the query executes.
 
@@ -42,7 +42,8 @@ EXPLAIN ANALYZE SELECT seqid FROM traffic WHERE serial_id<21;
 
 The data that is being used to demonstrate optimization is a table of data regarding traffic violations which can be found [here](https://catalog.data.gov/dataset/traffic-violations-56dda). It was [imported](https://dataschool.com/learn/importing-from-csv-psql) from the csv file available for download and [altered](https://dataschool.com/learn/alter-in-postgresql) to have a SERIAL row named serial_id. The details of the table are shown here:
 
-\\d+ traffic![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_3.png)
+\\d+ traffic
+![Shows a table of all columns, types, and rules for the table used](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_3.png)
 
 ## Indexes
 
@@ -53,7 +54,7 @@ For example, an index on the serial_id column in the sample data can make a larg
 ```sql
 EXPLAIN ANALYZE SELECT * FROM traffic WHERE serial_id = 1;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_4.png)
+![shows a query plan and highlights the cost, execution time, and the method used](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_4.png)
 
 13 seconds to return a single row on a database of this size is definitely a suboptimal result. In the query plan we can see that the query is running a parallel sequential scan on the _entire_ table which is inefficient. This operation has a high start up time (1000ms) and execution time (13024ms).
 
@@ -61,10 +62,9 @@ A parallel sequential scan can be avoided by creating an index and analyzing it 
 
 ```sql
 CREATE INDEX idx_serial_id ON traffic(serial_id);
-
 ANALYZE;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_5.png)
+![Shows creating and analyzing an index as well as its impact on execution time](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_5.png)
 
 This shows that when using an index, the execution time drops from 13024.774 ms to 0.587 ms (that is a 99.99549**%** decrease in time). This is a dramatic decrease in execution time. The planning time does rise by 3.72 ms because the query planner needs to access the index and decide if using it would be efficient before it can start the execution. However the rise in planning time is negligible compared to the change in execution time.
 
@@ -77,20 +77,19 @@ Indexes are not always the answer. There will be times when a sequential scan is
 Sometimes it is best to use a partial index as opposed to a full index. A partial index is an index that stores ordered data on the results of a query rather than a column. Partial indexes are best for when you want a specific filter to operate quickly. For example, in this table, there are many types of vehicles that are recorded:
 
 ```sql
-SELECT DISTINCT vehicletype FROM traffic GROUP BY vehicletype;
+SELECT DISTINCT vehicletype FROM traffic
+GROUP BY vehicletype;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_6.png)
+![table of all distinct vehicle types](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_6.png)
 
 Many studies are done on motorcycle safety. For these studies, it would be wise to use a partial index on only motorcycles as opposed to an index which also includes unneeded information about other vehicle types. To create a partial index that only indexes rows involving motorcycles, the following query can be run:
 
 ```sql
 CREATE INDEX idx_motorcycle ON traffic(vehicletype)
-
-WHERE vehicle = ‘01 - Motorcycle’;
-
+WHERE vehicle = '01 - Motorcycle';
 ANALYZE;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_7.png)
+![shows the query above being run](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_7.png)
 
 This index will only store data relating to motorcycle violations, which will be much faster to search through than searching through the entire table.
 
@@ -106,7 +105,7 @@ Another important aspect of efficiency is the data types being used. Data types 
 
 Different data types can have drastically different storage sizes as shown by this table from the postgreSQL documentation on **numeric types**:
 
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_8.png)
+![table of different numeric data types in postgreSQL](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_8.png)
 
 The dataset of traffic violations contains 1,521,919 rows in it (found using the **COUNT** [aggregation](https://chartio.com/learn/sql/aggregate/)). We need to consider the data type that requires the least amount of space that can store the data we want. We added a serial column to the data, which starts at 0 and increments by one each row. Since the data is 1,521,919 rows long we need a data type that can store at least that amount of data:
 
@@ -125,14 +124,14 @@ Results from Original Table:
 ```sql
 EXPLAIN ANALYZE SELECT COUNT(*) FROM traffic;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_9.png)
+![shows query plan on traffic aggregate](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_9.png)
 
 Results from Copy:
 
 ```sql
 EXPLAIN ANALYZE SELECT COUNT(*) FROM traffic2;
 ```
-![](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_10.png)
+![shows query plan on traffic2 aggregate](/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_10.png)
 
 As we can see from the images above, the time to aggregate on the original table is 197 ms or 0.2 seconds. The time to aggregate on the inefficient copy is 1139 ms or 1.1 seconds (5.5 times slower). This example clearly shows that data types can make a large impact on efficiency.
 
