@@ -32,7 +32,7 @@ You can start using Google Clouds various services for free but you will need to
 
 ## Installing dbt
 
-![dbt-logo-full.png](/assets/images/sql-optimization/start_modeling_data/data2.png)
+![The logo for dbt](/assets/images/sql-optimization/start_modeling_data/data2.png)
 
 To install you can visit their documentation page here:
 
@@ -80,7 +80,7 @@ Navigate inside the folder to see all the folders and files dbt created for us
 cd BQSO
 ```
 
-![](/assets/images/sql-optimization/start_modeling_data/data3.png)
+![Image displaying the contents of the directory: BQSO](/assets/images/sql-optimization/start_modeling_data/data3.png)
 
 ## Configuring BigQuery
 
@@ -119,19 +119,19 @@ Now I will mark where you will need to update with your own info with **bold**.
     * How you will connect. This is specific to the database chosen, for bigquery this is how you do it.
 * `project: healthy-terrain-239904`
     * **update with your own info**
-    * This is the project name, it will be a weirdly named thing inside of BigQuery on the left. ![](/assets/images/sql-optimization/start_modeling_data/data4.png)
+    * This is the project name, it will be a weirdly named thing inside of BigQuery on the left. ![Image showing big query's interface and the project name](/assets/images/sql-optimization/start_modeling_data/data4.png)
     * Replace **healthy-terrain-239904** with your project name.
     * You may need to create a new project in BigQuery but there should be a default one which is fine to use for this example
 * `dataset: soCleaned`
     * **update with your own info**
-    * The name of Schema (Schema are called datasets in BigQuery) you will be putting the modeled data in ![](/assets/images/sql-optimization/start_modeling_data/data5.png)
+    * The name of Schema (Schema are called datasets in BigQuery) you will be putting the modeled data in ![Image showing the creation of a dataset in big query](/assets/images/sql-optimization/start_modeling_data/data5.png)
     * Inside of BigQuery click on your project (healthy-terrain-239904)
     * On the right you will see Create Data Set, click that
     * The Dataset ID will be the name of the schema
     * Replace **soCleaned** with your schema name that you put in the Dataset ID
 * `keyfile: /users/matt/BigQuerykeyfile.json`
     * **update with your own info**
-    * You do this by going to IAM & admin in BigQuery (hidden in the hamburger menu on the left) ![](/assets/images/sql-optimization/start_modeling_data/data6.png)
+    * You do this by going to IAM & admin in BigQuery (hidden in the hamburger menu on the left) ![Image showing the contents of IAM & admin > Service Accounts](/assets/images/sql-optimization/start_modeling_data/data6.png)
     * Click Service Accounts
     * Click Create Service Account
     * Create a name for it (a name like dbt)
