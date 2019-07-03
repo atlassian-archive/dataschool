@@ -8,7 +8,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feeDBsack_doc_url: https://docs.google.com/document/d/1o8PIYkD2m3PHzgZZyQqqc0F4P-F6Qj7gIoCyeNBm9W8/edit?usp=sharing
-image: 
+image:
 description: Databases are better for managing data than spreadsheets when you consider
   size, accuracy, and security
 is_featured: false
@@ -68,7 +68,7 @@ New jargon always takes time to sink in. These words will be used throughout the
 
 Table, Field and Record all mean something very similar to common spreadsheet words. Their pairs are as follows:
 
-![](/assets/images/how-to-teach-people-sql/whyDatabase/whyDBs_3.png)
+![Table, Field, and Record compared to their spreadsheet alternative](/assets/images/how-to-teach-people-sql/whyDatabase/whyDBs_3.png)
 
 Primary Key and Foreign Key are database specific concepts. Data in a database is spread out across multiple tables we need ways of bringing all that data back together. This is accomplished by using Primary and Foreign Keys. The Primary Key is the ID field in a table, that uniquely identifies each record.
 

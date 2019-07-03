@@ -30,7 +30,7 @@ How does Regex do this? A more technical definition is that Regex, or Regular ex
 
 Regex statements are created using common letters, numbers, and metacharacters. Regex takes this string and tries to find the specific pattern in the data you are applying it to.
 
-[Metacharacters](https://www.ibm.com/support/knowledgecenter/en/SSGU8G_12.1.0/com.ibm.dbext.doc/ids_dbxt_545.htm) use special characters, and combination of characters to represent patterns. The most commonly used regex metacharacters are +, ^, \|, (), _, %, ., .* I know this looks pretty crazy but regular expressions do tend to look a little intimidating. Here is a quick cheat sheet for those metacharacters:
+[Metacharacters](https://www.ibm.com/support/knowledgecenter/en/SSGU8G_12.1.0/com.ibm.dbext.doc/ids_dbxt_545.htm) use special characters, and combination of characters to represent patterns. The most commonly used regex metacharacters are +, ^, \|, (), \_, %, ., .* I know this looks pretty crazy but regular expressions do tend to look a little intimidating. Here is a quick cheat sheet for those metacharacters:
 
 |Metacharacter|Description|Example|Examples Matches|
 |---|---|---|---|

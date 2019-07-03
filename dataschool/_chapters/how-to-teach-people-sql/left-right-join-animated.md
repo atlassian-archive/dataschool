@@ -10,7 +10,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
-image: 
+image:
 is_featured: false
 img_border_on_default: false
 
@@ -28,11 +28,11 @@ ON facebook.name = linkedin.name
 
 This query finds matches and adds them to a newly created table in the same way as an [INNER JOIN](/how-to-teach-people-sql/inner-join-animated/).
 
-![](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_1.gif)
+![Shows the Left join adding matches between the left and right table to the result table](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_1.gif)
 
 However there is a large difference in how SQL treats the LEFT table (first table; in this case the facebook table). For any rows in the first (or LEFT) table that did not have a match, it will still add this row to the new table and put in nulls for the columns from the other table.
 
-![](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_2.gif))
+![Shows the Left join adding nulls when a left value has no matching value on the right](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_2.gif))
 
 ## Right Join
 
@@ -56,11 +56,11 @@ ON facebook.name = linkedin.name
 
 However let’s look at the process of a RIGHT JOIN in order to see how it works. It changes which table SQL evaluates from.
 
-![](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_3.gif)
+![Shows how a right join iterates through the tables](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_3.gif)
 
 Here we can RIGHT JOIN similar to the LEFT JOIN bring in rows from the RIGHT (or second) table that did not have any matches and add nulls for the columns in the first table.
 
-![](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_4.gif)
+![Shows how the tight join adds nulls when a right value has no match](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_4.gif)
 
 Why use a LEFT JOIN or RIGHT JOIN vs an INNER JOIN? To help understand, Let’s think about the different questions they are asking.
 

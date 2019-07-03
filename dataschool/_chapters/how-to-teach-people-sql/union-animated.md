@@ -7,7 +7,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/12dp24i8H3q4v_IbGIbJKF-yZirvhtHmEQ6AvC9K91gw/edit?usp=sharing
-image: 
+image:
 description: Visualize how SQL is joining two tables using a Union All join. See animated
   visualizations of the data being Unioned in SQL. Learn more.
 is_featured: false
@@ -34,7 +34,7 @@ SELECT Name
 FROM linkedin
 ```
 
-![](/assets/images/how-to-teach-people-sql/union/union_1.jpeg)
+![The two tables referenced and the unionized version of the tables](/assets/images/how-to-teach-people-sql/union/union_1.jpeg)
 
 However if the columns selected do not have the same data type such as trying to Union the Name column of the facebook table and the # of connections column from the linkedin table.
 
@@ -68,7 +68,7 @@ SELECT Name, # of connections
 FROM linkedin
 ```
 
-![](/assets/images/how-to-teach-people-sql/union/union_2.gif)
+![gif showing how the union runs through each table to build the result](/assets/images/how-to-teach-people-sql/union/union_2.gif)
 
 Why use a UNION vs a LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let’s think about the different questions they are asking.
 

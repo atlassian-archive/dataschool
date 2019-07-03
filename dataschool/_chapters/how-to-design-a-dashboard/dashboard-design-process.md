@@ -8,7 +8,7 @@ section: book
 number: 40
 authors:
 - _people/matt.md
-reviewers: 
+reviewers:
 image: "/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg"
 is_featured: false
 img_border_on_default: false
@@ -27,11 +27,11 @@ The process starts with defining our stakeholders and what the metrics they care
 
 We can summarize this process into 4 steps:
 
-![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg)
+![Four steps of the design process: Define > Prototype > Build > Deploy](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg)
 
 ## 1. Define
 
-![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-define-audience.jpg)
+![Example of potential audience](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-define-audience.jpg)
 
 This is the first and most important step. Having clarity about who this dashboard is for and what metrics matter to them is critical to creating a dashboard that will be used.
 
@@ -52,7 +52,7 @@ You will work with the point person to go from vague goals to query-able metrics
 
 ## 2. Prototype
 
-![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-prototype.jpg)
+![visualization of the prototyping process](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-prototype.jpg)
 
 Once we have the metrics that we want to put in a dashboard we need to figure out how best to display them so that it is useful to the whole audience.
 
@@ -70,7 +70,7 @@ At this stage it is recommended that the visualizations and dashboards be sketch
 
 ## 3. Build
 
-![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-desig-build.jpg)
+![Building process visualization](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-desig-build.jpg)
 
 Once we are satisfied with the prototype we have to create the dashboard using real data.
 
@@ -84,7 +84,7 @@ We need to create queries to power the metrics, create formulas, and transform t
 
 ## 4. Deploy
 
-![](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-deploy.png)
+![Deploying the product](/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-deploy.png)
 
 Finally we have a fully functioning dashboard. Now we need to share it with the full audience. We should enhance the dashboard to make it more effective at scale and we need to make sure to maintain it as usage grows and changes.
 

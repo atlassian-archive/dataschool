@@ -70,7 +70,7 @@ WHERE # of friends = (SELECT MAX(# of connections)
 FROM linkedin)
 ```
 
-![](/assets/images/how-to-teach-people-sql/subqueries/subqueries_5.gif)
+![Gif showing a subquery that uses the max function](/assets/images/how-to-teach-people-sql/subqueries/subqueries_5.gif)
 
 Multi-value subquery tables will result in an error since it would try to compare a single field to every row in a column or every cell within table at once.
 ```sql
