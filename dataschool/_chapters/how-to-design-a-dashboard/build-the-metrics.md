@@ -16,13 +16,13 @@ feedback_doc_url: https://docs.google.com/document/d/1S8xZVmLzy-et4HrFBr1ccBYj5V
 is_featured: false
 
 ---
-![](/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png)
+![Build the metrics: image of how db metrics interact with technology](/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png)
 
 In the previous chapters, we filled out a metric spreadsheet. We took a vague ask from a Point Person and turned it into a well-defined list of metrics, calculations, and data sources. We will now use the completed metric architecture to create various SQL queries.
 
 The columns of the metric architecture map to a SQL query.
 
-![](/assets/images/how-to-design-a-dashboard/build_the_metrics/metricArchitectureMap.png)
+![SQL query metric architecture](/assets/images/how-to-design-a-dashboard/build_the_metrics/metricArchitectureMap.png)
 
 Take a look at a couple of sample queries we could create from this spreadsheet for the Operations Cost metric:
 
@@ -34,7 +34,7 @@ FROM Operations
 WHERE department != 'marketing'
 ```
 
-![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSum.png)
+![SUM of all departments. Sum = 2628498](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSum.png)
 
 ### Total Operations Cost by Department
 
@@ -47,7 +47,7 @@ WHERE department != 'marketing'
 GROUP BY department
 ```
 
-![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSumByDepartment.png)
+![SUM separated by department](/assets/images/how-to-design-a-dashboard/build_the_metrics/costsSumByDepartment.png)
 
 ### Total Operations Cost by Department by Month
 
@@ -58,7 +58,7 @@ WHERE department != 'marketing'
 GROUP BY department, month
 ```
 
-![](/assets/images/how-to-design-a-dashboard/build_the_metrics/costSumByMonth.png)
+![SUM separated by department and month](/assets/images/how-to-design-a-dashboard/build_the_metrics/costSumByMonth.png)
 
 One of the beauties of SQL is that it can do the logistical work of finding the columns in the data sources, and it can also compute mathematical equations. Most other methods require you to first access the unaggregated data via SQL and export the data into the tool so that you can create the calculations. Since SQL is tied to accessing the database when the underlying data changes, you can rerun the query and see the latest data. This is more efficient than exporting data into another tool.
 
@@ -106,11 +106,11 @@ Getting a code review on your queries is a best practice. Reach back out to the 
 
 Take the tables of data line them up with where they fit into your design.
 
-![](/assets/images/how-to-design-a-dashboard/build_the_metrics/buildTheDashboard.png)
+![Tables arranged how you want your dashboard to be laid out](/assets/images/how-to-design-a-dashboard/build_the_metrics/buildTheDashboard.png)
 
 Go through each table and create the corresponding data visualization in your BI tool. Put all the visualizations together into your final dashboard.
 
-![](/assets/images/how-to-design-a-dashboard/build_the_metrics/exampleDashboard.jpeg)
+![Dashboard version of those queries](/assets/images/how-to-design-a-dashboard/build_the_metrics/exampleDashboard.jpeg)
 
 ## Summary
 
