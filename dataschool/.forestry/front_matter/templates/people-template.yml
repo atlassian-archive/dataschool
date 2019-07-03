@@ -32,3 +32,5 @@ fields:
 - type: text
   name: website
   label: website
+pages:
+- dataschool/_people/mike-yi.md
