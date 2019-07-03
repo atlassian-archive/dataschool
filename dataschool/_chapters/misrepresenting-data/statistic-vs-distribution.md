@@ -16,18 +16,17 @@ is_featured: false
 img_border_on_default: false
 
 ---
-
 ## The problem with a single statistic
 
-Most metrics are reported by a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While this high-level stat can be informative, relying on it to accurately represent the underlying data can be problematic because it can hide important patterns in the underlying data.
+Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While this high-level stat can be informative, relying on it to accurately represent the underlying data can be problematic because it can hide important patterns in the underlying data.
 
 ![High Level Statistic](https://lh6.googleusercontent.com/GSSSDck5R8x0PL2bpS4lAcfd_WPTvYK-Q4FVh08tzuV4ExhjzJPq85-kU27LhNrABBNvul2_4wskX8n6bzpWbyg77BZi2FTyrNAuTJo3CTIIvRMPExTjnovRb0DeZEFKaUJqMIII)
 
-That amount of time on page seems respectable! Let’s look at the actual underlying distribution.
+That amount of time on page seems respectable! Let’s look at the actual underlying distribution of data points.
 
 ![Avg Time on Page Distribution](https://lh3.googleusercontent.com/77guS8Qb6XFje9gfYYMkrEN4ks5fu5hrnMqwb6CztpaYD8Lw4h7jcv0AyQcz_OSrGjygC81A83kzx0RZXYV1awQCNF-SNpw9-So_8q8mA4GpCHqALrnWr5hkSfOJqoqbtrKPKWDP)
 
-Here we can see most people are under 2 minutes, and we have some outliers that are effecting the average time on page. Your data could be fairly normally distributed and the average represents this underlying data well:
+Here we can see most people are under 2 minutes, and we have some outliers that are affecting the average time on page. Your data could be fairly normally distributed and then the average represents this underlying data well:
 
 ![Avg Time On Page Normally Distributed](https://lh6.googleusercontent.com/ZR2RUhkRTT_YVArsfyXXHXV6lx4LpCKZ1RqbFZx8bsECCJXvWkXySCNtdGqxbh32Boz2l9ZiODjUfl17A7FpavoM642LpMKHby7vMxWcWCQr3_fHjC-K0P9SNaJEhKZU20uUhgYJ)
 
@@ -42,9 +41,9 @@ SELECT AVG("Time On Page")
 FROM Traffic;
 ```
 
-Creating a distribution is a bit more complex. First you have to bucket the data, which means you need to create evenly sized ranges for your numeric data to fit into.
+Creating a distribution is a bit more complex. First you have to create buckets for the data, which means you need to organize “evenly sized” ranges for your numeric data to fit into.
 
-If you had the numbers 1,2,3,3,6,6 You could bucket them into two groups. 1-3 and 4-6. The first bucket 1-3 would have 4 values in it 1,2,3,3 and the second bucket 4-6 would have two values in it 6,6.
+If you had the numbers 1,2,3,3,6,6 You could bucket them into two groups. 1-3 and 4-6. The first bucket 1-3 would have 4 values in it 1,2,3,3 and the second bucket 4-6 would have two values in it 6,6. You could bucket them into three groups which would be 1-2, 3-4, and 5-6.
 
 Bucketing can be done using CASE WHEN. Bucket size should be the same with the exception that the last bucket can have an open ended upper limit if there are extreme outliers. Figuring out the correct bucket size to use takes some trial and error to capture the right amount of variation in the data.
 
@@ -91,14 +90,14 @@ We can look closer at the peak on the lower end by making the bucket size smalle
 
 ![Right half of Bimodal distribution](https://lh4.googleusercontent.com/-FBin4u8tEQFyyt0pZ5Uey_9WAJoHizn8Ik3DdrOmw8e4UNhVhEGDTUfaGTIhFPQiJuBaKARbguuXe41DF1KqJbjyxvW-F-DLmOXPUPGbqyoV5xyqBlWCuYoSqhi1lAIO6zOpSye)
 
-By splitting and re-bucketing we can see in greater detail what the underlying data looks like and what statistics would be representative of them.
+By splitting and re-bucketing we can see in greater detail what the underlying data looks like and which statistics would be a better representation of the actual data.
 
 ## Summary
 
-While statistics such as a mean or median are commonly used and easy to understand, a distribution adds much more nuance to the data. Even if you do not end up displaying your distribution you should look at it to know how well your summary stat represents it.
+While statistics such as a mean or median are commonly used and easy to understand, a distribution adds more nuance and clarity to the data. Even if you do not end up displaying your distribution, you should look at it to know how well your summary stat represents it.
 
 * Always look at the distribution of the underlying data
-* Verify that high level statistic accurately represent the underlying data
+* Verify that the high level statistic accurately represent the underlying data
 * There are many types of distributions
   * Right Skewed
   * Left Skewed
