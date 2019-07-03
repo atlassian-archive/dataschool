@@ -98,7 +98,7 @@ While statistics such as a mean or median are commonly used and easy to understa
 
 * Always look at the distribution of the underlying data
 * Verify that the high level statistic accurately represent the underlying data
-* There are many types of distributions
+* There are many types of distributions:
   * Right Skewed
   * Left Skewed
   * Normal
