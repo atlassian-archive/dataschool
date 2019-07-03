@@ -18,7 +18,7 @@ A while ago I was working with my customer success team to organize a campaign t
 
 Being very good at querying and visualizing data, they had created a dashboard with a ridiculous amount of charts on it. It was an only slightly organized view of almost everything under the sun about how a customer is using us.
 
-![](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/wholeDashboard.png)
+![Chartio overview page](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/wholeDashboard.png)
 
 Because it showed too much information in a disorganized way it was of little value (not shown in the image above is 14 more sets of visualizations about our customers you have to scroll to see).
 
@@ -42,19 +42,19 @@ For this example, we’ll only focus on one of the pitfalls of customers not hav
 
 The drawn mock that Tracy came up with was a simple table of some useful information on all of the sources that didn’t have foreign keys defined (thanks Tracy for keeping all your great notes!).
 
-![](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/paperDesign.jpeg)
+![Handwritten notes on data structure](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/paperDesign.jpeg)
 
 We then discussed it with the whole group (who in our case are also the intended users of the dashboard) and gathered feedback. The feedback was that we were very happy with how much more concise this was but that we needed one more simple chart that would let you assess more quickly how significant the issue was before having to look at the table. We also noted that the “creator email” wasn’t always the person you’d want to discuss the issue with, that the actual database id was not important but the type of database likely was.
 
 With these edits Tracy redrew the design and then built it out. It looked like this
 
-![](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/labeledCharts.png)
+![Built out version of the hand written notes](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/labeledCharts.png)
 
 At this point our team was pretty excited. It was clear that this version of the dashboard was not only more concise but more useful than the pre-design versions. This made their work not only significantly easier but also more effective for the customers. They could very clearly see each potential pitfall, definitively know whether there was a problem or not, and access the information to discuss it with the customer within a matter of seconds.
 
 Still, we had a bit more work to do. As is sometimes common in the implementation phase, some extra things that seemed important or at least easy enough to add got added. After using this dashboard for a few months we went back over and did another analysis on what was useful and what wasn’t.
 
-![](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/markedupCharts.png)
+![Marked up version with potential changes before the deployed](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/markedupCharts.png)
 
 We determined again that the id column would never need to be known in this use case, and that the Creator Email was an unreliable and unnecessary column as who we really needed to speak to were the data governors of the organization not the original connector of the sources. The table on the right had expanded between design and implementation to now show not just Data Sources without foreign keys, but those with foreign keys as well. The reason is that the builder thought it’d be cool to add a drill down feature where you could click the green or the red of either chart on the left to filter to the sources that respectively either had or didn’t have foreign keys. It was cool, but it just wasn’t too important.
 
@@ -62,15 +62,15 @@ The second chart had crept in with an attempt to not look at CSV files as a data
 
 With the above changes we came up with a single bullet graph that would show what percent of relevant sources had foreign keys, and have clearly marked zones of where there’s a significant issue.
 
-![](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/moreLabeledCharts.png)
+![Revised and remarked version](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/moreLabeledCharts.png)
 
 We decided that the table should be sorted with those having the most queries first. We showed this as a % of all queries so you could quickly determine if it’s a heavily or unused source, and therefore make a decision on whether it’s worth talking about. The # of Tables and # of Queries were also considered valuable pieces of information for the customer conversation.
 
-![](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/moreLabeledCharts2.png)
+![More revisions on the same visualization](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/moreLabeledCharts2.png)
 
 After a while of using this version, we realized that many of the data sources without foreign keys were hardly used. And that a better key metric for identifying if there’s an issue was the percent of queries that are being run on a source without foreign keys. We also realized that GoogleAnalytics and our DataStores shouldn’t count - as they’re unique and never can have foreign keys.
 
-![](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/moreLabeledCharts3.png)
+![Final Version of the visualization](/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/moreLabeledCharts3.png)
 
 So we changed the bullet graph, and added a few links to more information for each database, as we found that helpful in our customer conversations.
 
