@@ -80,9 +80,11 @@ In many BI tools creating a histogram is a built-in type of chart that can take 
 
 **Normal** - Using an average or median here is acceptable because they both fall within the middle of the data.
 
+Note: This is technically a **unimodal** symmetrical distribution, but often people will refer to distributions that looks like this as a normal distribution. To be a real [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), it needs to have a very specific set of criteria that this distribution does not have.
+
 ![Bimodal Distribution](https://lh6.googleusercontent.com/JDTWxbaFzKc2iteajySZkm4oy_y4mHur6qv7r9TjCCiYqv18P0pwRhFxn3sMgUaBtcrEBSAmXwiarV1gpKOsiMD074psSrIqLW1g8VdPGad_Mzn6KYoDp1gJJ9xbi-dqYS1otXtg)
 
-**Bi-Modal** - Neither an average or median is representative because there is more than one peak in the data. Split the data in half and then report a summary stat on each section of the data.
+**Bi-Modal** - Neither an average or median is representative because there is more than one peak in the data. Split the data between the peaks and then report a summary stat on each section of the data.
 
 We can look closer at the peak on the lower end by making the bucket size smaller and filtering the data to be less than 10 minutes on the page.
 
