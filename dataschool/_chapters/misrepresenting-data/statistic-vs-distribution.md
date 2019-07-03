@@ -96,8 +96,8 @@ By splitting and re-bucketing we can see in greater detail what the underlying d
 
 While statistics such as a mean or median are commonly used and easy to understand, a distribution adds more nuance and clarity to the data. Even if you do not end up displaying your distribution, you should look at it to know how well your summary stat represents it.
 
-* Always look at the distribution of the underlying data
-* Verify that the high level statistic accurately represent the underlying data
+* Always look at the distribution of the underlying data.
+* Verify that the high level statistic accurately represent the underlying data.
 * There are many types of distributions:
   * Right Skewed
   * Left Skewed
