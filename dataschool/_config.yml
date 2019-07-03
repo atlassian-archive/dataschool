@@ -113,6 +113,13 @@ defaults:
       image: assets/images/book-covers/sql-optimization.png  # TODO set a real default image
       permalink: "/sql-optimization/:slug/"
   - scope:
+      path: "_chapters/misrepresenting-data"
+      type: "chapters"
+    values:
+      book_slug: misrepresenting-data
+      image: assets/images/book-covers/misrepresenting-data.png  # TODO set a real default image
+      permalink: "/misrepresenting-data/:slug/"
+  - scope:
       path: "_chapters/dictionary"
       type: "chapters"
     values:
