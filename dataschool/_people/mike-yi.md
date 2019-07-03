@@ -1,6 +1,6 @@
 ---
 title: Mike Yi
-meta_title: ''
+meta_title: Contributor - Mike Yi
 description: ''
 image: "/assets/images/Mike.jpeg"
 is_contributor: true
