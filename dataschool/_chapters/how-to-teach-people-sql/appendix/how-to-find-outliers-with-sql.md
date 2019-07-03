@@ -32,7 +32,7 @@ ORDER BY age
 
 Here’s what a sample query could look like.
 
-![](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_1.png)
+![Sample of query sorted by age](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_1.png)
 
 By sorting we can easily identify anomalies within the data. We don’t expect any of our friends to have an age of 1, so this outlier is likely an error.
 
@@ -66,7 +66,7 @@ NTILE(4) OVER (ORDER BY age) AS age_quartile
 FROM friends
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_2.png)
+![Showing how to make a quartile using ntile(4)](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_2.png)
 
 When using NTILE() in SQL, if we have an odd number of values in each of our quartiles, the maximum value in the first quartile will be the Q1 value, and the maximum value in the third quartile will be the Q3 value.
 
@@ -83,7 +83,7 @@ WHERE age_quartile IN (1, 3)
 GROUP BY age_quartile
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_3.png)
+![Results from the sql written above](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_3.png)
 
 This gives us an IQR of 4, and 1.5 x 4 is 6.
 
@@ -104,7 +104,7 @@ FROM friends
 WHERE age < 25 OR age > 41
 ```
 
-![](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_4.png)
+![Values returned by the sql written above](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_4.png)
 
 ## Fully Query
 
