@@ -34,6 +34,6 @@ Business Intelligence tools have made it easy to create visualizations and dashb
 
 This book will quickly introduce you to what dashboards are, what makes them useful, and an overview of the dashboard design process. Then it will spend the bulk of the book going through the process itself:
 
-![](/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg)
+![dashboard design process: Define>Prototype>Build>Deploy](/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg)
 
 This book will provide resources and examples to aid you at every step of the process. Use this book to improve your own dashboard skills and use it as a reference for new analysts that join your organization.
