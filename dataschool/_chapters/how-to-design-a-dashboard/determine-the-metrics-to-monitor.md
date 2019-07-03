@@ -15,7 +15,7 @@ img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1G9A9TKdhPH_0P5EaeahoFvoU5W0PzUKnWqAbv1XY_pc/edit?usp=sharing
 
 ---
-![](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/dau.png)
+![Dau logo](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/dau.png)
 
 After defining the stakeholders involved we need to get clear about what decisions this dashboard is going to help people with. The point of a dashboard is to help people find insights and make decisions. The Point Person will help you determine this since they are the main audience member who will be using the dashboard to make decisions.
 
@@ -87,7 +87,7 @@ Work with the Point Person to write out how they want to aggregate, group by, an
 
 Metric Spreadsheet
 
-![](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/blankSpreadsheet.png)
+![Blank sample metric spreadsheet template](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/blankSpreadsheet.png)
 
 This Metric Spreadsheet will help you track what the Point Person wants and help you build the final visualizations quickly.
 
@@ -97,7 +97,7 @@ There are two approaches that can assist with figuring out the proper metrics th
 
 Some people who are requesting a dashboard will struggle to articulate what they need. An easy hack for this is to have them fill out what a dashboard would look like that would help them make decisions. Here is a sample template:
 
-![](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/blankVisual.png)
+![Blank sample of a hand drawn dashboard template](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/blankVisual.png)
 
 After they fill this out it is easier to talk with them in more detail about the underlying metrics in the visualizations they drew. In the “Bringing it all together” section further down we will discuss how to dig in to each of these visualizations.
 
@@ -130,7 +130,7 @@ After they clarify all these aspects of the metrics they are interested in writi
 
 We will use the Metric Spreadsheet to keep track, the questions above map to directly to it’s columns:
 
-![](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/filledSpreadsheet.png)
+![Filled out Metric Spreadsheet example](/assets/images/how-to-design-a-dashboard/determine_the_metrics_to_follow/filledSpreadsheet.png)
 
 These metrics should inform the decisions that need to be made by the Point Person to achieve their goal. Before we start prototyping these metrics in the next few chapters we will review best practices for visualization selection and arranging a dashboard.
 
