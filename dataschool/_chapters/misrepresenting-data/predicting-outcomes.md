@@ -13,7 +13,6 @@ feedback_doc_url: https://docs.google.com/document/d/1EN9jLWcWilsrw3z7eWCiEN3fx-
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 ### Here is a simple question:

@@ -15,7 +15,6 @@ feedback_doc_url: https://docs.google.com/document/d/1T-RDM2NDtgsp-ZNn5F_Ls9PGyJ
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 We just launched our new feature and our metrics look like they have improved. How should be feel about the following graph?:
