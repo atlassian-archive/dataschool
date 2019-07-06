@@ -2,7 +2,8 @@
 section: Cognitive Bias
 title: Survivorship Bias
 meta_title: How Survivorship Bias Affects your Analysis
-description: ''
+description: Survivorship bias affects analysis. Learn how to detect Survivorship
+  Bias and how to avoid this cognitive bias.
 number: 3
 authors:
 - _people/matt.md
