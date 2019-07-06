@@ -1,8 +1,9 @@
 ---
 section: book
 title: Overall vs Groups
-meta_title: ''
-description: ''
+meta_title: The Problem with Overall Statistics
+description: Overall statistics in data can be misleading because there may be distinct
+  groups within the data that have very different statistics.
 number: 7
 authors:
 - _people/matt.md
