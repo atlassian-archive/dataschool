@@ -16,7 +16,7 @@ img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1AjcnERWqKWWREjniCZ-WZwbBQ_IT4n2FcMAFWyO4iy0/edit?usp=sharing
 
 ---
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png)
+![Finding data icon](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png)
 
 From the previous chapters most of the ambiguity of what is going on the dashboard should have been addressed:
 
@@ -36,11 +36,11 @@ If you have the data this will be an easy step of the process. If the data is me
 
 Now you have to find the data that you will use to calculate those metrics in your database. Review the schemas of the databases you have access to.
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/schema.png)
+![available schemas](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/schema.png)
 
 Finding where the data is that you need can be the hardest part of the process. Often times data is not well documented and what you need could be spread across multiple databases. First search for tables that have keywords from your Metrics Spreadsheet.
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/keywords.png)
+![Find relevant tables in the menu](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/keywords.png)
 
 When you find something promising such as a table with the same keyword you searched or contains a field that matches your keyword do a quick query:
 
@@ -50,7 +50,7 @@ FROM operations
 LIMIT 3;
 ```
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/fromOperations3.png)
+![check for relevant info with limit](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/fromOperations3.png)
 
 Once you get the results you can quickly see if it has the relevant information. In this case we can see it has a department column that looks appropriate, and the amount column may be the cost data we are looking for.
 
@@ -58,21 +58,21 @@ If a table such as this one looks relevant to one of the metrics write it down o
 
 Your next step will be to determine what data you cannot find yourself. If you find a table but are unsure if it is the correct data put the name of the table in with a ? at the end. If you cannot find any relevant tables for a metric put three ? in the Metrics Spreadsheet.
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFull.png)
+![Full metric spreadsheet](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFull.png)
 
 If you have any questions about the tables or columns you have found, it is time to consult the Data Gatekeeper. I’d highly recommend coming to the Data Gatekeeper with the list of tables and fields you have questions about, using the metric spreadsheet is a convenient way to structure the conversation.
 
 Go through each metric with the Data Gatekeeper, and explain what tables and fields you think you should be using and which ones you have questions about.
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/highlightedSchema.png)
+![table structure with desired tables highlighted](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/highlightedSchema.png)
 
 The Data Gatekeeper will confirm which tables and fields you have selected so far or will help locate the tables and fields you need. Some of the data you need might not be accessible to you due to access permissions. The Data Gatekeeper may grant you access or will provide feedback about how to work around this limitation. After locating the relevant tables, update the Metrics Spreadsheet.
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetDatasource.png)
+![Metrics spreadsheet with datasources highlighted](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetDatasource.png)
 
 We also need to specify the fields within the tables that will be used to make creating the SQL queries easy. Place the field names from the tables you found into the Formulas directly and put them in parentheses below your grouping categories in the Content column. Notice ‘Total’ does not have a column associated with it because it is the full aggregation.
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFormula.png)
+![Metrics spreadsheet with the formulae highlighted](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFormula.png)
 
 ## When you have messy data
 
@@ -145,7 +145,7 @@ While the previous method showed us obvious outliers there can be more subtle ou
 
 Quartiles split a quantitative variable up into 4 sections
 
-![](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/IQR.png)
+![shows quartile split and the interquartile range](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/IQR.png)
 
 [http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html "http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html")
 

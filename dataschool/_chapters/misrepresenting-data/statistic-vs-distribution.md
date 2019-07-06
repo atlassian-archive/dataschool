@@ -18,15 +18,15 @@ img_border_on_default: false
 ---
 ## The problem with a single statistic
 
-Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While this high-level stat can be informative, relying on it to accurately represent the underlying data can be problematic because it can hide important patterns in the underlying data.
+Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While this high-level stats can be informative, relying on them to accurately represent the underlying data can be problematic because they can hide important patterns in the underlying data.
 
 ![High Level Statistic](https://lh6.googleusercontent.com/GSSSDck5R8x0PL2bpS4lAcfd_WPTvYK-Q4FVh08tzuV4ExhjzJPq85-kU27LhNrABBNvul2_4wskX8n6bzpWbyg77BZi2FTyrNAuTJo3CTIIvRMPExTjnovRb0DeZEFKaUJqMIII)
 
-That amount of time on page seems respectable! Let’s look at the actual underlying distribution of data points.
+The amount of time on page above seems respectable! Let’s look at the actual underlying distribution of data points.
 
 ![Avg Time on Page Distribution](https://lh3.googleusercontent.com/77guS8Qb6XFje9gfYYMkrEN4ks5fu5hrnMqwb6CztpaYD8Lw4h7jcv0AyQcz_OSrGjygC81A83kzx0RZXYV1awQCNF-SNpw9-So_8q8mA4GpCHqALrnWr5hkSfOJqoqbtrKPKWDP)
 
-Here we can see most people are under 2 minutes, and we have some outliers that are affecting the average time on page. Your data could be fairly normally distributed and then the average represents this underlying data well:
+Here we can see most people are on the page for under 2 minutes, and we have some outliers that are affecting the average time on page. The statistic (Avg Time On Page) doesn’t represent the actual data well. On the other hand, if your data is fairly normally distributed, then the average will represent the underlying data well:
 
 ![Avg Time On Page Normally Distributed](https://lh6.googleusercontent.com/ZR2RUhkRTT_YVArsfyXXHXV6lx4LpCKZ1RqbFZx8bsECCJXvWkXySCNtdGqxbh32Boz2l9ZiODjUfl17A7FpavoM642LpMKHby7vMxWcWCQr3_fHjC-K0P9SNaJEhKZU20uUhgYJ)
 
@@ -43,9 +43,9 @@ FROM Traffic;
 
 Creating a distribution is a bit more complex. First you have to create buckets for the data, which means you need to organize “evenly sized” ranges for your numeric data to fit into.
 
-If you had the numbers 1,2,3,3,6,6 You could bucket them into two groups. 1-3 and 4-6. The first bucket 1-3 would have 4 values in it 1,2,3,3 and the second bucket 4-6 would have two values in it 6,6. You could bucket them into three groups which would be 1-2, 3-4, and 5-6.
+If you had the numbers {1,2,3,3,6,6}, you could bucket them into two groups: 1-3 and 4-6. The first bucket 1-3 would have 4 values in it {1,2,3,3} and the second bucket 4-6 would have two values in it {6,6}. You could also bucket them into three groups which would be 1-2, 3-4, and 5-6.
 
-Bucketing can be done using CASE WHEN. Bucket size should be the same with the exception that the last bucket can have an open ended upper limit if there are extreme outliers. Figuring out the correct bucket size to use takes some trial and error to capture the right amount of variation in the data.
+Bucketing can be done using CASE WHEN. Bucket sizes should be the same with the exception that the last bucket can have an open ended upper limit if there are extreme outliers. Figuring out the correct bucket size to use takes some trial and error to capture the right amount of variation in the data.
 
 Put the buckets into a [Common Table Expression](https://www.essentialsql.com/introduction-common-table-expressions-ctes/) and then use a COUNT aggregation on your newly created column.
 
@@ -70,19 +70,21 @@ In many BI tools creating a histogram is a built-in type of chart that can take 
 
 ![Right Skewed Distribution](https://lh3.googleusercontent.com/77guS8Qb6XFje9gfYYMkrEN4ks5fu5hrnMqwb6CztpaYD8Lw4h7jcv0AyQcz_OSrGjygC81A83kzx0RZXYV1awQCNF-SNpw9-So_8q8mA4GpCHqALrnWr5hkSfOJqoqbtrKPKWDP)
 
-**Right Skewed** - Most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.- Most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
+**Right Skewed** - Since most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.- Most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
 
 ![Left Skewed Distribution](https://lh5.googleusercontent.com/mebThBvJihLFhpUOt1-4lTT_Viokx7Xfthkv2uciw_yXzLXHCYglRF9yoMSvd7OFczZPkvc8Vp8CPWmb7a9YXKuNxC2Zp83uCelXDQlL42CSUIWynRSyRm4-wXGw1KXenN-A7-7U)
 
-**Left Skewed** - Most of the data is higher than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
+**Left Skewed** - Since most of the data is higher than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
 
 ![Normal Distribution](https://lh6.googleusercontent.com/ZR2RUhkRTT_YVArsfyXXHXV6lx4LpCKZ1RqbFZx8bsECCJXvWkXySCNtdGqxbh32Boz2l9ZiODjUfl17A7FpavoM642LpMKHby7vMxWcWCQr3_fHjC-K0P9SNaJEhKZU20uUhgYJ)
 
 **Normal** - Using an average or median here is acceptable because they both fall within the middle of the data.
 
+Note: This is technically a **unimodal** symmetrical distribution, but often people will refer to distributions that looks like this as a normal distribution. To be a real [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), it needs to have a very specific set of criteria that this distribution does not have.
+
 ![Bimodal Distribution](https://lh6.googleusercontent.com/JDTWxbaFzKc2iteajySZkm4oy_y4mHur6qv7r9TjCCiYqv18P0pwRhFxn3sMgUaBtcrEBSAmXwiarV1gpKOsiMD074psSrIqLW1g8VdPGad_Mzn6KYoDp1gJJ9xbi-dqYS1otXtg)
 
-**Bi-Modal** - Neither an average or median is representative because there is more than one peak in the data. Split the data in half and then report a summary stat on each section of the data.
+**Bi-Modal** - Neither an average or median is representative because there is more than one peak in the data. Split the data between the peaks and then report a summary stat on each section of the data.
 
 We can look closer at the peak on the lower end by making the bucket size smaller and filtering the data to be less than 10 minutes on the page.
 
@@ -96,11 +98,11 @@ By splitting and re-bucketing we can see in greater detail what the underlying d
 
 While statistics such as a mean or median are commonly used and easy to understand, a distribution adds more nuance and clarity to the data. Even if you do not end up displaying your distribution, you should look at it to know how well your summary stat represents it.
 
-* Always look at the distribution of the underlying data
-* Verify that the high level statistic accurately represent the underlying data
+* Always look at the distribution of the underlying data.
+* Verify that the high level statistic accurately represent the underlying data.
 * There are many types of distributions:
   * Right Skewed
   * Left Skewed
   * Normal
-  * Bi-modal
+  * Bimodal
   * [And more](https://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/)

@@ -63,6 +63,10 @@ fields:
     class="img-no-border")
   default: false
 pages:
+- dataschool/_chapters/misrepresenting-data/survivorship-bias.md
+- dataschool/_chapters/misrepresenting-data/selection-bias.md
+- dataschool/_chapters/misrepresenting-data/confirmation-bias.md
+- dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/metric-vs-metrics.md
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md

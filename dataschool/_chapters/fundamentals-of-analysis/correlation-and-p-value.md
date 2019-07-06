@@ -53,7 +53,7 @@ P(5 heads and 5 tails) = 10C5 * (½)5 * (½)5 = 0.24609375
 
 Similarly, let’s generate the probabilities of all other possible combinations of heads and tails:
 
-![](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations3.png)
+![Probabilities of heads and tails](/assets/images/fundamentals-of-analysis/correlation_p_value/correlations3.png)
 
 Let’s plot the probabilities to understand the intuition behind the above calculation:
 
