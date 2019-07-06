@@ -8,12 +8,13 @@ number: 2
 authors:
 - _people/matt.md
 reviewers:
+- _people/mike-yi.md
+- _people/matthew-layne.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1byPf-heJlgKYJwkghvWrPgEC7HbFtBESGx37cHsYoIk/edit?usp=sharing
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 Selection Bias is the tendency to analyze groups that are not representative of the population you are interested in measuring. There are two types of selection bias:
