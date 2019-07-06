@@ -2,7 +2,8 @@
 section: Cognitive Bias
 title: Selection Bias
 meta_title: How Selection Bias Affects your Analysis
-description: ''
+description: Selection bias affects analysis. Learn how to detect Selection Bias and
+  how to avoid this cognitive bias.
 number: 2
 authors:
 - _people/matt.md
