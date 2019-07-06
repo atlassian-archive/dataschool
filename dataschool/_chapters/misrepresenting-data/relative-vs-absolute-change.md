@@ -31,13 +31,13 @@ Relative changes on small numbers can appear to be more significant than they ar
 
 So if I got a $50 dollar return on my $10 investment, my relative change was a 400% increase.
 
-![](https://lh5.googleusercontent.com/x0cZCFNLTmzfbhIJbgkwAlyFM-Nvgnc4IY_vuWGnletihMiTsGzMfG7sNEGAtZdsbFxDZir9XSfYiRuA2CJ3NcthbFZPioGAVmkZuUWy_8eQ1UK_g9Slstui75BLeeWgYUiAK9-v =624x361)
+![](https://lh5.googleusercontent.com/x0cZCFNLTmzfbhIJbgkwAlyFM-Nvgnc4IY_vuWGnletihMiTsGzMfG7sNEGAtZdsbFxDZir9XSfYiRuA2CJ3NcthbFZPioGAVmkZuUWy_8eQ1UK_g9Slstui75BLeeWgYUiAK9-v)
 
 There is also some variation in how relative changes are reported. Here we have a 400% increase which is also the same as saying 5 times as much. This becomes more confusing when a relative change is negative. Something that is 5 times as small is an 80% decrease from the original amount.
 
 Relative changes on big numbers can appear less significant. This is because any absolute change in the number needs to be large to show a large relative change. Even when the absolute change may be large, if it occurs and a much larger number the relative change will be small. Let’s say that the national deficit increased by 5%. This may seem small, but the actual increase or absolute change to the $20,000,000,000,000 budget is 1 trillion dollars.
 
-![](https://lh6.googleusercontent.com/f0Xvfq6AocQnYlTMnv-j8hL9yzD729VeKcTQ_zD1SdM36n0oxZSH52YmFw-L_QGin4b_r_M2irSK92xPiQYer2mmc80NrBeP3n9T-0mcSL7QGA4KgiqXjdA121J0A0tbrE08pK3k =624x361)
+![](https://lh6.googleusercontent.com/f0Xvfq6AocQnYlTMnv-j8hL9yzD729VeKcTQ_zD1SdM36n0oxZSH52YmFw-L_QGin4b_r_M2irSK92xPiQYer2mmc80NrBeP3n9T-0mcSL7QGA4KgiqXjdA121J0A0tbrE08pK3k)
 
 ### Absolute changes
 
@@ -64,15 +64,15 @@ To get a clearer idea if an absolute or relative change is significant compare i
 
 Let’s look at an example of changes in share price to demonstrate how the change in price could be represented in different ways.
 
-![](https://lh6.googleusercontent.com/rS5eRzlQruuC90x4A8d4rcZ7CnA8LTQx0_MWZGUKrIDaYL96vGgGH4HCiDgE6RNuKOr3zD9n4necQvjE8c8-HAxxpHYR9GQHeDXZw0cDmOsTwNHR1bzQsNFZhcqzrOQgHEa1n9UM =624x305)
+![](https://lh6.googleusercontent.com/rS5eRzlQruuC90x4A8d4rcZ7CnA8LTQx0_MWZGUKrIDaYL96vGgGH4HCiDgE6RNuKOr3zD9n4necQvjE8c8-HAxxpHYR9GQHeDXZw0cDmOsTwNHR1bzQsNFZhcqzrOQgHEa1n9UM)
 
 Here we can see the absolute change in price everyday. There is a lot of variance which can distract from the relative and absolute returns of the investment. If we bought the stock on May 1st we could look at the return per share in absolute terms.
 
-![](https://lh6.googleusercontent.com/d7N4OXQv-QTl5GdF8Cd_NKuvUJu4rXqW49Z_iEEISlm6NS6tfn7g2HpPt0-1mH2GYPwIxuttLq_MDl6NYoMiZ-lRhWogOxaz5OfqjPKzkxjaY9qQF-NLO2TVwV-f7YifGG_hoq6V =263x175)
+![](https://lh6.googleusercontent.com/d7N4OXQv-QTl5GdF8Cd_NKuvUJu4rXqW49Z_iEEISlm6NS6tfn7g2HpPt0-1mH2GYPwIxuttLq_MDl6NYoMiZ-lRhWogOxaz5OfqjPKzkxjaY9qQF-NLO2TVwV-f7YifGG_hoq6V)
 
 Now this may not look like that much money but when we look at the relative change from our starting positions we can see we got a high relative return on our money.
 
-![](https://lh3.googleusercontent.com/br2t-dCyFXJ29XGLVeeMMh-pQRtY6mebAfRymEJa7NnmYsnesermn-5e8QF8GQE-jB1UYmbHTkfJF91EqyvwB9EXXoHocU23i1Eyd73fZLSjplsK6e8vVhOOuQuGyC8WzJoZlkOP =263x175)
+![](https://lh3.googleusercontent.com/br2t-dCyFXJ29XGLVeeMMh-pQRtY6mebAfRymEJa7NnmYsnesermn-5e8QF8GQE-jB1UYmbHTkfJF91EqyvwB9EXXoHocU23i1Eyd73fZLSjplsK6e8vVhOOuQuGyC8WzJoZlkOP)
 
 Next time we would want to put more money in so that the absolute return would be bigger.
 
