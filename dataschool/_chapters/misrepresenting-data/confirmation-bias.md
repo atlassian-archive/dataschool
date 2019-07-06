@@ -2,7 +2,8 @@
 section: Cognitive Biases
 title: Confirmation Bias
 meta_title: How Confirmation Bias Affects your Analysis
-description: Confirmation bias affects analysis. It can
+description: Confirmation bias affects analysis. Learn how to detect Confirmation
+  Bias and how to avoid this cognitive bias.
 number: 1
 authors:
 - _people/matt.md
