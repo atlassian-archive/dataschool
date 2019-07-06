@@ -1,7 +1,7 @@
 ---
 section: Cognitive Bias
 title: Selection Bias
-meta_title: ''
+meta_title: How Selection Bias Affects your Analysis
 description: ''
 number: 2
 authors:
