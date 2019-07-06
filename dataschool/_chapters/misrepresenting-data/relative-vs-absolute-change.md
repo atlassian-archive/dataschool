@@ -8,12 +8,13 @@ number: 10
 authors:
 - _people/matt.md
 reviewers:
+- _people/matthew-layne.md
+- _people/blake.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/19CxIad3qImMHu8T9Yjn2nOr8K_x9y8jhLXex_7ixGcs/edit?usp=sharing
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 ## The problem with Relative vs Absolute changes
