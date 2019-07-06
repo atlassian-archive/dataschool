@@ -1,7 +1,7 @@
 ---
 section: Cognitive Bias
 title: Survivorship Bias
-meta_title: ''
+meta_title: How Survivorship Bias Affects your Analysis
 description: ''
 number: 3
 authors:
