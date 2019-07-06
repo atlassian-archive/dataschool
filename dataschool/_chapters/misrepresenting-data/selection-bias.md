@@ -26,7 +26,7 @@ Selection Bias is the tendency to analyze groups that are not representative of 
 
 You choose a group of people to analyze in a way that is not representative of the population. These groups are usually chosen because of convenience.
 
-![](https://lh5.googleusercontent.com/O745UXlEkTJe8ng02Q7VWjwxW5caQo8q01upic4UrerlZxjkEiRUWHA5SU7yMc7dmHJruEvhifx01aAo6cm6erQNCPgWwCV8w30pPNY6Lq1manqVG7HKR9f1pyuQX8EbM-XAdu1M =398x285)
+![](https://lh5.googleusercontent.com/O745UXlEkTJe8ng02Q7VWjwxW5caQo8q01upic4UrerlZxjkEiRUWHA5SU7yMc7dmHJruEvhifx01aAo6cm6erQNCPgWwCV8w30pPNY6Lq1manqVG7HKR9f1pyuQX8EbM-XAdu1M)
 
 Example:
 
@@ -42,7 +42,7 @@ Common Biased Selections:
 
 The group of people who opt in to be analyzed have characteristics that are not representative of the whole population.
 
-![](https://lh4.googleusercontent.com/n_OFKiOyWjeWJxscxc-QA_VsNdk-R44CsmwduVyG2rL0kez3dyYdM5dshnjA_cG8t7YK_XBOzdYL3-arjGX_EZ6JRXxtYfDLpr18zY4LlPx76tkqF667G9txw_PnGKR5YAxK3AMQ =443x311)
+![](https://lh4.googleusercontent.com/n_OFKiOyWjeWJxscxc-QA_VsNdk-R44CsmwduVyG2rL0kez3dyYdM5dshnjA_cG8t7YK_XBOzdYL3-arjGX_EZ6JRXxtYfDLpr18zY4LlPx76tkqF667G9txw_PnGKR5YAxK3AMQ)
 
 Example:
 
