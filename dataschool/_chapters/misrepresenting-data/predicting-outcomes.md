@@ -20,7 +20,7 @@ published: false
 
 #### How many jellybeans are in the plastic box?
 
-![](https://lh5.googleusercontent.com/F4Yb4voN1kL45xcH3jN1eXh3fwxzZMccLnLHfU7_WSznqWBV5qwKH1ZsuhwSm-jbfM73sYkofhDDJDyvtp97qNaFsmMPVM3I29-Ck0bzndaIcUsQvHlKTA4QPMNMjdd1D6r4Kq4d =242x388)
+![](https://lh5.googleusercontent.com/F4Yb4voN1kL45xcH3jN1eXh3fwxzZMccLnLHfU7_WSznqWBV5qwKH1ZsuhwSm-jbfM73sYkofhDDJDyvtp97qNaFsmMPVM3I29-Ck0bzndaIcUsQvHlKTA4QPMNMjdd1D6r4Kq4d)
 
 \-------------
 
@@ -72,7 +72,7 @@ Think through how feature could go wrong and whether it affects your confidence 
 
 Create a dashboard ahead of the product or feature where you have your predictions laid out. A bullet chart can be great for many metrics since there are multiple zones allowing you to define a range of outcomes.
 
-![](https://lh6.googleusercontent.com/y2lRBNoYASQO3U8nVVlaHqINyQI9fki8CCtuPCNAstQp_PaGdbS_VezbKtRTq5RRRee-2dLlFyPv07u9R5leiBbL9AcIym0fEk690YPjDfUEIbS3NzTnMuCHmDSVcfGBSo78avmQ =439x169)
+![](https://lh6.googleusercontent.com/y2lRBNoYASQO3U8nVVlaHqINyQI9fki8CCtuPCNAstQp_PaGdbS_VezbKtRTq5RRRee-2dLlFyPv07u9R5leiBbL9AcIym0fEk690YPjDfUEIbS3NzTnMuCHmDSVcfGBSo78avmQ)
 
 Here we can see the gray areas defining the range of outcomes we predicted with the blue bar representing the actual value of the metric.
 

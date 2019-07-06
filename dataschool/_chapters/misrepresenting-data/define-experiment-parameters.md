@@ -32,7 +32,7 @@ Not setting these parameters in the beginning allows people to move these around
 
 Let’s talk through each of these pieces and some important considerations.
 
-## ![](https://lh4.googleusercontent.com/2SG70d47fkpWI43Ddhw7kociObqYXwKgSqRp63nult4aT6rwQS-z12mkgtT-quZJInW4V5ZWXLse9zarZI9cfzOWk0Xd8KrYnbIrPGU138Nr7ESwk4MFmmhEbxUkbuec2oGtUEOM =624x375)
+## ![](https://lh4.googleusercontent.com/2SG70d47fkpWI43Ddhw7kociObqYXwKgSqRp63nult4aT6rwQS-z12mkgtT-quZJInW4V5ZWXLse9zarZI9cfzOWk0Xd8KrYnbIrPGU138Nr7ESwk4MFmmhEbxUkbuec2oGtUEOM)
 
 ## Cohort
 
@@ -45,7 +45,7 @@ Questions to ask yourself:
 
 If the answer is yes to either you need to find a different cohort.
 
-## ![](https://lh3.googleusercontent.com/xffu0qSqbegmRsfZFNi4TcNrgyGPPWCDPZofnJpBh9GrHqYIOR6eh3SVNHpRzLUdvFUXHaVJeh70Ev4enKOZWqq_NKz3BRspbbfIaXaTbwF7pSnDIfBw7ijekSIneq2gW-xGxp4f =624x416)
+## ![](https://lh3.googleusercontent.com/xffu0qSqbegmRsfZFNi4TcNrgyGPPWCDPZofnJpBh9GrHqYIOR6eh3SVNHpRzLUdvFUXHaVJeh70Ev4enKOZWqq_NKz3BRspbbfIaXaTbwF7pSnDIfBw7ijekSIneq2gW-xGxp4f)
 
 ## Timeline
 
@@ -58,7 +58,7 @@ Before the product or feature launches ask and answer yourself two questions:
 
 Most launches inevitably have a bit of marketing surrounding them so the first day or first week is not usually reliable data. You do not want a spike and then a return to normal, you want a sustained increase. Pick a date before launch to review and share the impact of the data.
 
-## ![](https://lh5.googleusercontent.com/sYxshaVXKovwlfwL1PPDM25l2QMrernDOP4OTGi8sCcKw1aQV9TGysMvbtmCSx_LI7ee-JB39yMA-1liqaqQiI86LHxpRSrdHMzl7TIe4hQEJ0D_6t3N_kRGVYTi67N9O4rYiCYA =624x416)
+## ![](https://lh5.googleusercontent.com/sYxshaVXKovwlfwL1PPDM25l2QMrernDOP4OTGi8sCcKw1aQV9TGysMvbtmCSx_LI7ee-JB39yMA-1liqaqQiI86LHxpRSrdHMzl7TIe4hQEJ0D_6t3N_kRGVYTi67N9O4rYiCYA)
 
 ## Controls
 

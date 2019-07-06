@@ -20,7 +20,7 @@ published: false
 ---
 We just launched our new feature and our metrics look like they have improved. How should be feel about the following graph?:
 
-![](https://lh6.googleusercontent.com/lXoakF7mcFOkE-ieSnpR8ff0ixWFKQy_-ICu7NoMZDsITcvU8lJ79iqd-I_lDjj0b_h-BmXjg_3Q6i_k7zpT0rJ0iX05AjPBUy34hjo4CoooBwITd2ocAEEDDXQpyEiFaKJyYaD7 =624x305)
+![](https://lh6.googleusercontent.com/lXoakF7mcFOkE-ieSnpR8ff0ixWFKQy_-ICu7NoMZDsITcvU8lJ79iqd-I_lDjj0b_h-BmXjg_3Q6i_k7zpT0rJ0iX05AjPBUy34hjo4CoooBwITd2ocAEEDDXQpyEiFaKJyYaD7)
 
 We should feel skeptical! Start asking questions!
 
@@ -34,19 +34,19 @@ Remember all the analysis mistakes and mental biases covered in this book. It is
 
 When data changes dramatically we want to take credit if it was a positive change and deny responsibility if it was a negative change. Ultimately we should want to know _why_ it changed. To figure this out we need to investigate a few common ways data changes.
 
-### ![](https://lh4.googleusercontent.com/g2FumyuS96KpEAM_x-T-pXrJGZWNsaC8T0iKGp2GIquC4rbOEf8KOKmPNODEyUcLF5MG26QfX8b03FECuK4i-R4xrYnc6KmwI0fO3p1rxpMBSI-fO2dOJMRxAdT3aJk_FVIOLJor =624x416)
+### ![](https://lh4.googleusercontent.com/g2FumyuS96KpEAM_x-T-pXrJGZWNsaC8T0iKGp2GIquC4rbOEf8KOKmPNODEyUcLF5MG26QfX8b03FECuK4i-R4xrYnc6KmwI0fO3p1rxpMBSI-fO2dOJMRxAdT3aJk_FVIOLJor)
 
 ### Marketing
 
 A lot of times we are focused on the work we are doing and do not see what other parts of the company are doing to influence buyers and users. One of the most common reasons for any spike is there being a marketing push that day or that week. Reach out to that team to confirm no additional spend/effort has been going on to remove this potential reason.
 
-![](https://lh6.googleusercontent.com/JG252NePE_GtPA99FtlieGo3cmIvG5eVMVnp7pZlkTKe-hcn52WA6Zmh6nYJJqnWXr5viQUxUBtm9MBlPS8sqR1Hnl1Q63UtHxN9pPSY_MOL2I1UZjVH5bRiV02wJMP_VOwLG4yh =624x416)
+![](https://lh6.googleusercontent.com/JG252NePE_GtPA99FtlieGo3cmIvG5eVMVnp7pZlkTKe-hcn52WA6Zmh6nYJJqnWXr5viQUxUBtm9MBlPS8sqR1Hnl1Q63UtHxN9pPSY_MOL2I1UZjVH5bRiV02wJMP_VOwLG4yh)
 
 ### Technical Reasons
 
 Did the site go down? Did a data point stop being tracked?Is there a mistake in the tracking? (e.g. double-counting of hits, etc.) Simple technical problems can have huge impacts on data especially in the negative direction. It is important to reach out to the development team to establish if they might have had an impact.
 
-![](https://lh6.googleusercontent.com/rSf-Mr6woFSkx1xL98bPn2mT6XEDuBso6APLgzjaHBoESsxJg90z4ZO6t_bqzQYuW6siPH4baxOL2i2wH89mjCiCorq9R7r_vvefxuvqpYMbDLHhTdI3a_cCDTAg16SrkDqe7dMy =624x416)
+![](https://lh6.googleusercontent.com/rSf-Mr6woFSkx1xL98bPn2mT6XEDuBso6APLgzjaHBoESsxJg90z4ZO6t_bqzQYuW6siPH4baxOL2i2wH89mjCiCorq9R7r_vvefxuvqpYMbDLHhTdI3a_cCDTAg16SrkDqe7dMy)
 
 ### Cohort Influence
 
