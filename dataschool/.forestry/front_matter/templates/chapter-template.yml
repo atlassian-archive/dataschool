@@ -63,6 +63,7 @@ fields:
     class="img-no-border")
   default: false
 pages:
+- dataschool/_chapters/predict-outcomes.md
 - dataschool/_chapters/misrepresenting-data/relative-vs-absolute-change.md
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/misrepresenting-data/survivorship-bias.md
