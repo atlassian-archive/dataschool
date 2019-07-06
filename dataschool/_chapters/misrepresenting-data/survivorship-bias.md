@@ -8,13 +8,13 @@ number: 3
 authors:
 - _people/matt.md
 reviewers:
+- _people/mike-yi.md
 - _people/blake.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1GEPlIvZXMCyMcLKrUYtqg9D0DchLM3vW3RAi6SAoW3Y/edit?usp=sharing
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 Survivorship bias is the tendency to draw inaccurate conclusions based on things that have survived. There are two main ways people reach erroneous conclusions through survivorship bias.
