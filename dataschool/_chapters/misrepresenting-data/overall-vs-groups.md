@@ -13,7 +13,6 @@ feedback_doc_url: https://docs.google.com/document/d/1TrqcSIOq3d8ItC637ub2FOQAV9
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 ## The problem with overall statistics
