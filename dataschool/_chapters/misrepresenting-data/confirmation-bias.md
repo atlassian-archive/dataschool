@@ -8,6 +8,8 @@ number: 1
 authors:
 - _people/matt.md
 reviewers:
+- _people/blake.md
+- _people/matthew-layne.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1fa1CwUh0NySYMTQILVAZBIzHaW_dkqV43VOGX7a9ECw/edit?usp=sharing
 image: ''
