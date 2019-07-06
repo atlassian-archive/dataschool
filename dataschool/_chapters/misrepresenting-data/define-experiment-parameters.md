@@ -15,7 +15,6 @@ feedback_doc_url: https://docs.google.com/document/d/1tF58nHDntAcN3MZNjLqF2KqBcp
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 Even if a metric was chosen for a new feature or product, important parameters about how that metric will be measured and evaluated might not be set.
