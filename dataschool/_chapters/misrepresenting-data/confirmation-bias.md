@@ -15,7 +15,6 @@ feedback_doc_url: https://docs.google.com/document/d/1fa1CwUh0NySYMTQILVAZBIzHaW
 image: ''
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 ## What is Confirmation Bias
