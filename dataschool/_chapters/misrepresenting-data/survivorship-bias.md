@@ -1,5 +1,5 @@
 ---
-section: Cognitive Bias
+section: Cognitive Biases
 title: Survivorship Bias
 meta_title: How Survivorship Bias Affects your Analysis
 description: Survivorship bias affects analysis. Learn how to detect Survivorship

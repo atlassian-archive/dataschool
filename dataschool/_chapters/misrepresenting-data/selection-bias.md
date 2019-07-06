@@ -1,5 +1,5 @@
 ---
-section: Cognitive Bias
+section: Cognitive Biases
 title: Selection Bias
 meta_title: How Selection Bias Affects your Analysis
 description: Selection bias affects analysis. Learn how to detect Selection Bias and
