@@ -18,7 +18,7 @@ You simply need to find mistake and fix it!  The error responses are usually fai
 
 Sometimes you select a column that doesn't exist in the database. Often this just means you've got a typo somewhere.  The error message should help lead you to where that may be, and will sometimes even give you a helpful HINT!
 
-Can you fix the misspelling in our query to collect two artist *name*s?
+Can you fix the misspelling in our query to collect two artist *names*?
 
 <sqlbox
   initial="SELECT naXme FROM artists LIMIT 2;"

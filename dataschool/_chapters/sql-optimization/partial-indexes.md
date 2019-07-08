@@ -22,9 +22,9 @@ Creating indexes is a common practice to optimize data warehouses, as explored i
 
 ## Basic Partial Index
 
-A partial index can be as simple as an index that stores data on a subsection of a column. Take for example data.gov’s dataset on [traffic violations](https://catalog.data.gov/dataset/traffic-violations-56dda) in Montgomery County, MD. This table has many columns that could benefit from partial indexing. Columns that have many distinct groups in them are good for partial indexes as there is a large amount of data in the column. This is because columns like this are often filtered for one particular group.
+A partial index can be as simple as an index that stores data on a subsection of a column. Take for example data.gov's dataset on [traffic violations](https://catalog.data.gov/dataset/traffic-violations-56dda) in Montgomery County, MD. This table has many columns that could benefit from partial indexing. Columns that have many distinct groups in them are good for partial indexes as there is a large amount of data in the column. This is because columns like this are often filtered for one particular group.
 
-One example of this is the column **dlstate** (the state that the driver has a driver’s license from). There are 71 distinct values (Includes out of country plates like QC for Quebec and includes XX for no plate) in the database for this column. Say you are studying how many Virginia driver’s are involved in Montgomery County traffic violations.
+One example of this is the column **dlstate** (the state that the driver has a driver's license from). There are 71 distinct values (Includes out of country plates like QC for Quebec and includes XX for no plate) in the database for this column. Say you are studying how many Virginia driver's are involved in Montgomery County traffic violations.
 
 We are going to be filtering all our queries to where **dlstate** = “VA” so applying a partial index on the **dlstate** state column where **dlstate** = “VA” will make subsequent queries much faster. For this example we will focus on Virgina:
 
@@ -39,7 +39,7 @@ ANALYZE;
 ```
 ![Shows the creation of a partial index and running analyze afterwords](/assets/images/sql-optimization/partialIndexing/partialIndex_1.png)
 
-Let’s now look at querying a sample of the data to see why Partial Indexing is much faster than querying the full table or an indexed version of the table.
+Let's now look at querying a sample of the data to see why Partial Indexing is much faster than querying the full table or an indexed version of the table.
 
 Lets use a subset of the data and run the following query:
 
@@ -65,11 +65,11 @@ ON [table name (column name(s))] [WHERE [Filter]];
 
 ## Time Comparisons
 
-Now that the index has been created, and we have an understanding as to how the different types of indexes will be traversed let’s compare the query times where there is no index, a full index, and a partial index on the full data set:
+Now that the index has been created, and we have an understanding as to how the different types of indexes will be traversed let's compare the query times where there is no index, a full index, and a partial index on the full data set:
 
 ### No Index
 
-* The speed of running a COUNT aggregation where the dlstate=’VA’ with a **No Index** is:
+* The speed of running a COUNT aggregation where the dlstate='VA' with a **No Index** is:
 
 ```sql
 EXPLAIN ANALYZE SELECT COUNT(*)
@@ -81,7 +81,7 @@ Speed: 1.79 sec or 1784 ms
 
 ### With Traditional Index
 
-* The speed of running a COUNT aggregation where the dlstate=’VA’ with a **Traditional Index** is:
+* The speed of running a COUNT aggregation where the dlstate='VA' with a **Traditional Index** is:
 
 ```sql
 EXPLAIN ANALYZE SELECT COUNT(*)
@@ -93,7 +93,7 @@ Speed: 0.06 sec or 59.7 ms
 
 ### With Partial Index
 
-* The speed of running a COUNT aggregation where the dlstate=’VA’ with a **Partial Index** is:
+* The speed of running a COUNT aggregation where the dlstate='VA' with a **Partial Index** is:
 
 ```sql
 EXPLAIN ANALYZE SELECT COUNT(*)
@@ -127,7 +127,7 @@ Unique to Partial Indexes
 
 It is important to balance how specific the partial index with the frequency of queries that can use it. If the partial index is too specific, it will not be used often and simply be a waste of memory.
 
-For example, a partial index could be created on a column with multiple filters such as the column ‘arresttype’ where the incident takes place from 4-4:30AM and zipcodes=’12’:
+For example, a partial index could be created on a column with multiple filters such as the column 'arresttype' where the incident takes place from 4-4:30AM and zipcodes='12':
 
 ![Shows the creation of an overly specific partial index](/assets/images/sql-optimization/partialIndexing/partialIndex_6.png)
 

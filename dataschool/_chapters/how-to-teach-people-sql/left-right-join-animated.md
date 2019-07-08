@@ -54,7 +54,7 @@ LEFT JOIN linkedin
 ON facebook.name = linkedin.name
 ```
 
-However let’s look at the process of a RIGHT JOIN in order to see how it works. It changes which table SQL evaluates from.
+However let's look at the process of a RIGHT JOIN in order to see how it works. It changes which table SQL evaluates from.
 
 ![Shows how a right join iterates through the tables](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_3.gif)
 
@@ -62,7 +62,7 @@ Here we can RIGHT JOIN similar to the LEFT JOIN bring in rows from the RIGHT (or
 
 ![Shows how the tight join adds nulls when a right value has no match](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_4.gif)
 
-Why use a LEFT JOIN or RIGHT JOIN vs an INNER JOIN? To help understand, Let’s think about the different questions they are asking.
+Why use a LEFT JOIN or RIGHT JOIN vs an INNER JOIN? To help understand, Let's think about the different questions they are asking.
 
 
 * **LEFT join:** How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)

@@ -18,7 +18,7 @@ img_border_on_default: false
 ---
 Dbt is a great tool for creating, storing, and then running queries against a database. These queries can be for any purpose but we will be talking about how they can be used to create and update simplified tables and views. This allows you to create a set of table and views that are more easily queryable by the rest of your organization so they can find insights faster. Making data easier to use is an important piece of optimizing your SQL and Data Warehouse because this is where most of the time is spent, determining the right query to run.
 
-You can automate these queries that simplify the data to run on a schedule with [dbt Cloud](https://cloud.getdbt.com/). In order to use dbt Cloud you need to set up dbt linked to a GitHub repository and a data warehouse. If you have not done this already you can check out The Data School’s article on dbt and BigQuery here.
+You can automate these queries that simplify the data to run on a schedule with [dbt Cloud](https://cloud.getdbt.com/). In order to use dbt Cloud you need to set up dbt linked to a GitHub repository and a data warehouse. If you have not done this already you can check out The Data School's article on dbt and BigQuery here.
 
 ## Setting up dbt Repository
 
@@ -28,7 +28,7 @@ Now, in your dbt folder run these commands:
 
 'git init.'
 'git add .'
-'git commit -m ‘commit message’'
+'git commit -m 'commit message''
 'git remote add (the URL you saved)'
 'git push -u origin master'
 

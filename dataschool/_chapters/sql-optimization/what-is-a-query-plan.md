@@ -41,7 +41,7 @@ In order to find a particular tool, there are several possible queries that coul
 ```sql
 SELECT *
 FROM tools
-WHERE name=‘Screwdriver’;
+WHERE name='Screwdriver';
 ```
 Will return the same thing as the query:
 

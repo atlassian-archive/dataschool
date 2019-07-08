@@ -39,7 +39,7 @@ Keeping data accurate is very difficult. Imagine updating the following sheet:
 
 ![Sample data set](/assets/images/how-to-teach-people-sql/whyDatabase/whyDBs_2.png)
 
-Now Imagine if the city of San Francisco (SF) made the horrible choice to officially change it’s name to Frisco (F). Now while we might disagree with this decision when we go to update the spreadsheet we have to update the value in multiple places. This creates an opportunity for error. Perhaps we missed one.
+Now Imagine if the city of San Francisco (SF) made the horrible choice to officially change it's name to Frisco (F). Now while we might disagree with this decision when we go to update the spreadsheet we have to update the value in multiple places. This creates an opportunity for error. Perhaps we missed one.
 
 In a spreadsheet we could do ctrl F or use the Find and Replace but this might break down if data is spread across multiple sheets, it would be easy to miss one. In databases using SQL and 3rd Normal Form(more on this later) we can make these updates easily and accurately.
 
@@ -53,7 +53,7 @@ To access the data within a database you will need to use SQL. While this is a f
 
 Another pain point with working with data in a database is getting access. In many companies the amount of people who can run queries is fairly limited. Typically you will need to request access from the data team or your IT group.
 
-Data is structured differently than in a spreadsheet. It is stored in what’s called 3rd Normal Form. This means that the data you want is typically spread out across multiple tables which you will need to join together.
+Data is structured differently than in a spreadsheet. It is stored in what's called 3rd Normal Form. This means that the data you want is typically spread out across multiple tables which you will need to join together.
 
 ## Basic database vocabulary
 

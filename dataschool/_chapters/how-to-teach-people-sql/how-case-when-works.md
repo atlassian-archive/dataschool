@@ -28,7 +28,7 @@ Note: CASE WHEN statements will always output new values to a new column which i
 
 ![How case when works: adds value to new column](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen3.png)
 
-Now let’s see what the full query would have looked like for that CASE WHEN statement, notice the title of the output column at the end of the CASE WHEN statement.
+Now let's see what the full query would have looked like for that CASE WHEN statement, notice the title of the output column at the end of the CASE WHEN statement.
 
 ```sql
 SELECT City,
@@ -38,7 +38,7 @@ END AS "Updated City"
 FROM friends
 ```
 
-Let’s break down each component of the CASE WHEN statement:
+Let's break down each component of the CASE WHEN statement:
 
 * **CASE**: indicates a condition loop has been started and that the conditions will follow.
 * **WHEN**: indicates the start of a condition that should be checked by the query.
@@ -117,7 +117,7 @@ Remember you can cast any of your values in order to make the data types match. 
 
 This example uses the Chinook database with PostgreSQL 11. The “Track” table in the Chinook database is a large, informational table on many different songs by many different artists.
 
-The “TrackId” in the table below is unique for each entry. However, the “GenreId” column is a reference to another table that links each id number to a genre of music. Let’s say you lost the “Genre” table (indicated with the red X through it). Now you could not JOIN in Genre Names, How could we replace the GenreId in the Track table?
+The “TrackId” in the table below is unique for each entry. However, the “GenreId” column is a reference to another table that links each id number to a genre of music. Let's say you lost the “Genre” table (indicated with the red X through it). Now you could not JOIN in Genre Names, How could we replace the GenreId in the Track table?
 
 ![Showing lost table](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen8.png)
 

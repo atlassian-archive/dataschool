@@ -66,7 +66,7 @@ Window functions are very similar to aggregation functions, in fact every window
 * Aggregations are applied to data that is grouped categorically or across the whole data set.
 * Window functions are applied to the data within a window. The window can scale in size with each row, be constrained to a specific amount of rows, or can fit groups.
 
-Let’s look at the first example above if we applied an aggregation instead of a window function to it.
+Let's look at the first example above if we applied an aggregation instead of a window function to it.
 
 Window Function:
 

@@ -28,7 +28,7 @@ After teaching thousands of students the basics of SQL I understand their main s
 * What to do about errors
 * How to approach optimization
 
-Understanding these abstract ideas comes naturally to engineers and analysts who work with code everyday. Business people tend to struggle with understanding what code is doing. They can’t quite conceptualize how the data is being transformed. They only see input and output.
+Understanding these abstract ideas comes naturally to engineers and analysts who work with code everyday. Business people tend to struggle with understanding what code is doing. They can't quite conceptualize how the data is being transformed. They only see input and output.
 
 This book will provide many graphics, animations, and explanations to help convey SQL to others. Use this book to better understand what will help other people at your organization learn SQL and use it as a resource to point them to when they get stuck.
 

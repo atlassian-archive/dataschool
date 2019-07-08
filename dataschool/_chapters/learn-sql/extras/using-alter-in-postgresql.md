@@ -4,14 +4,14 @@ meta_title: ALTER in PostgreSQL
 description: Learn the different potential uses of the ALTER command in PSQL. Add
   and drop columns from tables. Rename and change schemas and more.
 section: Extras
-number: 
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1CEOlXDZAoDMGhhwFmZ2q4aStSulRmmIWLjqBBvcZU0U/edit?usp=sharing
-image: 
+image:
 is_featured: false
 img_border_on_default: false
 
@@ -31,7 +31,7 @@ ALTER TABLE traffic
 ADD COLUMN nameofdriver VARCHAR;
 ```
 
-This query will **add a column** called ‘nameofdriver’.
+This query will **add a column** called 'nameofdriver'.
 
 This column can be **dropped** by using ALTER as well. To do this:
 

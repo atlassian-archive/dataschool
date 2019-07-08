@@ -20,7 +20,7 @@ Data Modeling sounds really scary, like a big chore and months of work.
 
 But it is not so bad and you can get started in less than 10 minutes.
 
-For this example we use BigQuery and dbt. BigQuery is one of Google’s cloud database offerings. dbt which stands for Data Build Tool is a data modeling tool created by Fishtown Analytics.
+For this example we use BigQuery and dbt. BigQuery is one of Google's cloud database offerings. dbt which stands for Data Build Tool is a data modeling tool created by Fishtown Analytics.
 
 ![Image result for big query logo](/assets/images/sql-optimization/start_modeling_data/data1.png)
 
@@ -28,7 +28,7 @@ For this example we use BigQuery and dbt. BigQuery is one of Google’s cloud da
 
 BigQuery comes with a set of public data sets that are great for practicing data modeling on. I will be using the Stack Overflow data set they have.
 
-You can start using Google Cloud's various services for free but you will need to upgrade the billing so that you can connect dbt to Google Cloud. If you have not signed up for Google Cloud platform services before they will give you a $300 credit (which is more than enough to run this test thousands of times) so don’t worry about the costs in trying this out.
+You can start using Google Cloud's various services for free but you will need to upgrade the billing so that you can connect dbt to Google Cloud. If you have not signed up for Google Cloud platform services before they will give you a $300 credit (which is more than enough to run this test thousands of times) so don't worry about the costs in trying this out.
 
 ## Installing dbt
 

@@ -26,7 +26,7 @@ CROSS JOIN linkedin
 
 ![gif showing how cross joins work on tables](/assets/images/how-to-teach-people-sql/crossJoin/crossJoin_1.gif)
 
-Why use a CROSS JOIN vs a UNION, LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let’s think about the different questions they are asking.
+Why use a CROSS JOIN vs a UNION, LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let's think about the different questions they are asking.
 
 
 * **CROSS JOIN:** How many combinations of friends and connections do I have?

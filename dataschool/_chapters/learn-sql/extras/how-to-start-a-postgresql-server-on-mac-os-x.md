@@ -101,7 +101,7 @@ This will start the server. Details on the server can be found by opening the se
 
 This interface shows all the essential information regarding the server. It also allows the port to be changed very easily. This is useful because multiple PostgreSQL servers can
 
-Note: To change the port in the terminal, the ‘postgres.conf’ file (which can be found in the data directory) must be edited. This looks like the following:
+Note: To change the port in the terminal, the 'postgres.conf' file (which can be found in the data directory) must be edited. This looks like the following:
 
 ![shows how to edit the port in the command line interface by editing the .conf file](/assets/images/learn-sql/extras/Start_MacOS_Server/editingTheConfFile.png)
 
@@ -111,7 +111,7 @@ Once the app has been downloaded, command line tools can be used as well. These 
 ```sql
     /Applications/Postgres.app/Contents/Versions/latest/bin/[Tool Name][Options and/or Arguments]
 ```
-For example, the ‘postgres’ database on the server can be connected to using the psql tool with postgres as an argument:
+For example, the 'postgres' database on the server can be connected to using the psql tool with postgres as an argument:
 ```sql
     /Applications/Postgres.app/Contents/Versions/latest/bin/psql postgres
 ```
@@ -119,7 +119,7 @@ Rather than typing out the full path each time however, the path can be added to
 ```sql
 sudo mkdir -p /etc/paths.d && echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
 ```
-Once this is done, the ‘postgres’ database can be accessed by simply typing:
+Once this is done, the 'postgres' database can be accessed by simply typing:
 ```sql
     psql postgres
 ```

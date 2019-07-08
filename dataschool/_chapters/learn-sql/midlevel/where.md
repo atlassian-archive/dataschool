@@ -11,7 +11,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: 
+image:
 is_featured: false
 
 ---
@@ -25,7 +25,7 @@ SELECT * FROM artists WHERE [Filter Conditions];
 
 Conditions are simply statements that are either true or false.  The database takes these statements and evaluates them across all the rows as it scans through your tables and only returns the results that are true.
 
-Let’s say for instance that we’d like to see the name of the artist who’s id is 85.  The condition would be `id = 85`.  Try the condition by running the following query:
+Let's say for instance that we'd like to see the name of the artist who's id is 85.  The condition would be `id = 85`.  Try the condition by running the following query:
 
 <sqlbox
   initial="SELECT * FROM artists WHERE id = 85;"

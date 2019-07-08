@@ -19,7 +19,7 @@ topics:
 ---
 Alright, let's get down to some SQL!!  The first command we're going to learn is SELECT as it's the first instruction you need for any SQL statement that's fetching data. There are other starting commands like INSERT and CREATE, but most interactions with databases are SELECTing data.
 
-Let’s start with the most simple query and just select a value back.  The SQL Box is there for you to try running your SQL in.  You can put any SQL you want in there, and don't be afraid as you're not going to break anything.  Try whatever you'd like.  Experimentation is the best way to learn! Here's an example query we'll start with:
+Let's start with the most simple query and just select a value back.  The SQL Box is there for you to try running your SQL in.  You can put any SQL you want in there, and don't be afraid as you're not going to break anything.  Try whatever you'd like.  Experimentation is the best way to learn! Here's an example query we'll start with:
 
 ```sql
 SELECT 42;
@@ -45,7 +45,7 @@ SELECT 'We are just getting started.';
 <sqlbox
 ></sqlbox>
 
-Note that each query needs to end in a semi-colon.  That’s just how the database knows that you’re done giving it instructions.  The SQL Box isn't picky about it so you can get away without using it, but other tools you use may be a bit more strict.
+Note that each query needs to end in a semi-colon.  That's just how the database knows that you're done giving it instructions.  The SQL Box isn't picky about it so you can get away without using it, but other tools you use may be a bit more strict.
 
 ## Math
 

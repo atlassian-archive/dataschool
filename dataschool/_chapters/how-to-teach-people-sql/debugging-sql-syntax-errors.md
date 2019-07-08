@@ -39,7 +39,7 @@ Double quotes indicate you are referencing a table name or a field.
 
 ![table for a similar but Unfiltered query](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_2.png)
 
-Different types of SQL handle a single quote ‘ and a double quote “ differently so if you get an error such as “ERROR: column “age” does not exist,” try switching to using the other type of quotation around the text and if that does not work consult the documentation for that specific type of SQL.
+Different types of SQL handle a single quote ' and a double quote “ differently so if you get an error such as “ERROR: column “age” does not exist,” try switching to using the other type of quotation around the text and if that does not work consult the documentation for that specific type of SQL.
 
 ## Capitalization
 
