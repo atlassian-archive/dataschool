@@ -30,18 +30,18 @@ In SQL there are two main database types:
   * These are optimized for the performance of analyses like aggregations.
   * Uses [Column Store](https://dataschool.com/data-modeling-101/row-vs-column-oriented-databases/)
 
-Snowflake is designed to be an OLAP database system. One of snowflake’s signature features is its separation of storage and processing:
+Snowflake is designed to be an OLAP database system. One of snowflake's signature features is its separation of storage and processing:
 
 * Storage is handled by Amazon S3. The data is stored in Amazon servers that are then accessed and used for analytics by processing nodes.
 * Processing nodes are nodes that take in a problem and return the solution. These nodes are grouped into clusters.
 
-The cluster uses MPP (massively parallel processing) to compute any task that it is given. MPP is where the task is given to the cluster’s lead node, which divides the task up into many smaller tasks which are then sent out to processing nodes. The nodes each solve their portion of the task. These portions are then pulled together by the lead node to create the full solution:
+The cluster uses MPP (massively parallel processing) to compute any task that it is given. MPP is where the task is given to the cluster's lead node, which divides the task up into many smaller tasks which are then sent out to processing nodes. The nodes each solve their portion of the task. These portions are then pulled together by the lead node to create the full solution:
 
 ![This image shows how a task is divided between processing nodes and reassembled](/assets/images/sql-optimization/snowflake/snowflake_0.png)
 
 Since the data is stored in S3, snowflake will have slightly longer initial query times. This will speed up as the data warehouse is used however due to caching and updated statistics.
 
-## Snowflake’s Architecture
+## Snowflake's Architecture
 
 Snowflake has a specialized [architecture](https://www.snowflake.com/product/architecture/) that is divided into three layers: storage, compute, and services.![Graphic showing the three layers in the snowflake architecture](/assets/images/sql-optimization/snowflake/snowflake_1.png)
 
@@ -57,7 +57,7 @@ The Compute Layer:
 * Caching: Snowflake will temporarily cache results from the storage layer in the compute layer. This will allow similar queries to run much faster once the database has been “warmed up.”
 * ACID Compliance: Snowflake is [ACID compliant](https://www.lifewire.com/the-acid-model-1019731). This means that it follows a set of standards to ensure that their databases have:
   * **Atomicity:** If a part of a transaction fails, the whole transaction fails.
-  * **Consistency:** Data can not be written to the database if it breaks the databases’ rules.
+  * **Consistency:** Data can not be written to the database if it breaks the databases' rules.
   * **Isolation:** Multiple Transaction blocks can not interfere with each other and be run concurrently.
   * **Durability:** Ensures that data from completed transactions will not be lost in transmission.
 

@@ -26,7 +26,7 @@ GROUP BY state);
 
 The core concept to grasp is that the subquery (the part highlighted in blue inside the parentheses) is a separate SQL query that produces a table that is then used in the main query.
 
-Let’s break the example above up and do the subquery first by itself.
+Let's break the example above up and do the subquery first by itself.
 
 Subquery:
 

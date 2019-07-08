@@ -35,7 +35,7 @@ Indexes allow us to create sorted lists without having to create all new sorted 
 
 ## **What Exactly is an Index?**
 
-An index is a structure that holds the field the index is sorting and a pointer from each record to their corresponding record in the original table where the data is actually stored. Indexes are used in things like a contact list where the data may be physically stored in the order you add people’s contact information but it is easier to find people when listed out in alphabetical order.
+An index is a structure that holds the field the index is sorting and a pointer from each record to their corresponding record in the original table where the data is actually stored. Indexes are used in things like a contact list where the data may be physically stored in the order you add people's contact information but it is easier to find people when listed out in alphabetical order.
 
 Let's look at the index from the previous example and see how it maps back to the original Friends table:
 
@@ -56,7 +56,7 @@ Both clustered and non-clustered indexes are stored and searched as B-trees, a d
 
 Here is a B-tree of the index we created. Our smallest entry is the leftmost entry and our largest is the rightmost entry. All queries would start at the top node and work their way down the tree, if the target entry is less than the current node the left path is followed, if greater the right path is followed. In our case it checked against Matt, then Todd, and then Zack.
 
-To increase efficiency, many B-trees will limit the number of characters you can enter into an entry. The B-tree will do this on it’s own and does not require column data to be restricted. In the example above the B-tree below limits entries to 4 characters.
+To increase efficiency, many B-trees will limit the number of characters you can enter into an entry. The B-tree will do this on it's own and does not require column data to be restricted. In the example above the B-tree below limits entries to 4 characters.
 
 ### **Clustered Indexes**
 
@@ -106,7 +106,7 @@ You can create many non-clustered indexes. As of 2008, you can have up to 999 no
 
 #### **Creating Non-Clustered Databases(PostgreSQL)**
 
-To create an index to sort our friends’ names alphabetically:
+To create an index to sort our friends' names alphabetically:
 
 ```sql
 CREATE INDEX friends_name_asc ON friends(name ASC);
@@ -178,7 +178,7 @@ This output will tell you which method of search from the query plan was chosen 
 
 Only create one index at a time because not all indexes will decrease query time.
 
-* PostgreSQL’s query planning is pretty efficient, so adding a new index may not affect how fast queries are performed.
+* PostgreSQL's query planning is pretty efficient, so adding a new index may not affect how fast queries are performed.
 * Adding an index will always mean storing more data
 * Adding an index will increase how long it takes your database to fully update after a write operation.
 

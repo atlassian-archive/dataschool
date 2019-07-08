@@ -4,13 +4,13 @@ meta_title: Copying Data Between Tables in a Postgres Database
 description: This article discusses how to copy data from a table or query into another
   table using the INSERT command in psql.
 section: Extras
-number: 
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/blake.md
 - _people/matt.md
-image: 
+image:
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/13CikUhX31sfe_ouqeKRCZPr14TIxi45wzQksXs9yaJE/edit?usp=sharing
@@ -39,7 +39,7 @@ Take for example a shopkeeper who needs to create a master list of all the items
 
 ![List of available Tables](/assets/images/learn-sql/extras/copying_data_between_tables/copyingBetweenTables_1.png)
 
-In order to create a master list that contains all of the store’s items and prices the shopkeeper needs to create the table for all items and copy the data from each of the departments into the new table.
+In order to create a master list that contains all of the store's items and prices the shopkeeper needs to create the table for all items and copy the data from each of the departments into the new table.
 
 ### Creating the table
 
@@ -57,7 +57,7 @@ With this done, the shopkeeper now has the following tables:
 
 ### INSERT INTO command
 
-Now that the shopkeeper’s master list has been created and structured, the data needs to be inserted into the table. This can be done using the INSERT command. This command inserts specified values into a specified table. It is often used to insert single values into tables by running the command as such:
+Now that the shopkeeper's master list has been created and structured, the data needs to be inserted into the table. This can be done using the INSERT command. This command inserts specified values into a specified table. It is often used to insert single values into tables by running the command as such:
 
 ![Inserting an element manually](/assets/images/learn-sql/extras/copying_data_between_tables/copyingBetweenTables_4.png)
 
@@ -85,7 +85,7 @@ Each SELECT statement can also have its own where statement for table specific c
 
 * To copy create a pre-structured table:
   * CREATE TABLE \[Table to copy **To**\] AS \[Table to copy **From**\] WITH NO DATA;
-  * Table will be pre structured to handle data from the ‘table to copy from’
+  * Table will be pre structured to handle data from the 'table to copy from'
 * Copy into pre-existing table:
   * INSERT INTO \[Table to copy **To**\]
     SELECT \[Columns to Copy\]

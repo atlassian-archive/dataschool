@@ -70,7 +70,7 @@ FROM linkedin
 
 ![gif showing how the union runs through each table to build the result](/assets/images/how-to-teach-people-sql/union/union_2.gif)
 
-Why use a UNION vs a LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let’s think about the different questions they are asking.
+Why use a UNION vs a LEFT JOIN, RIGHT JOIN, INNER JOIN, FULL OUTER JOIN? To help understand, Let's think about the different questions they are asking.
 
 
 * **INNER join:** How many friends and connections do my friends who are on both on Facebook and LinkedIn have?

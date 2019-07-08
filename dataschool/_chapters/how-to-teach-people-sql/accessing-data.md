@@ -22,7 +22,7 @@ Making this part of onboarding at your company will save numerous headaches. Oth
 
 Once people have access they might need help understanding how to ask a question of the database. People are used to typing half thought out things into Google and getting a pretty satisfying answer. Unfortunately this is not currently possible within a company. Instead you have to write more specific questions to get the data you want.
 
-Let’s start with an everyday life question that we type into Google.
+Let's start with an everyday life question that we type into Google.
 
 _What age is Obama?_
 
@@ -105,6 +105,6 @@ LIMIT 2
 ## Summary
 
 * Access to a database needs to be provided to you by someone on the data or IT team
-* Asking a question of a company’s data is similar to googling a question but requires you to ask it in a very particular way
+* Asking a question of a company's data is similar to googling a question but requires you to ask it in a very particular way
 * Writing out the table you wish you had is an easy way to help you write the query you want
 * Finding which tables the data you need is in can be challenging but using SELECT * and LIMIT you can quickly explore tables in a schema

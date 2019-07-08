@@ -28,9 +28,9 @@ For Server-Side Export:
 ```sql
 COPY [Table/Query] to '[Absolute Path/filename.csv]' csv header;
 ```
-Example Absolute Path: ‘/Users/matt/Desktop/filename.csv’
+Example Absolute Path: '/Users/matt/Desktop/filename.csv'
 
-Example Relative Path: ‘Desktop/filename.csv’
+Example Relative Path: 'Desktop/filename.csv'
 
 Key words:
 
@@ -43,7 +43,7 @@ Comma Separated Value (CSV) files are a useful format for storing data. Many too
 
 In psql there are two commands that can do this, both slightly different.
 
-The first is the _\\copy_ [meta-command](https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql/) which is used to generate a client CSV file. This command takes the specified table or query results and writes them to the client’s computer.
+The first is the _\\copy_ [meta-command](https://chartio.com/resources/tutorials/how-to-list-databases-and-tables-in-postgresql-using-psql/) which is used to generate a client CSV file. This command takes the specified table or query results and writes them to the client's computer.
 
 The second command, _COPY_, generates a CSV file on the server where the database is running.
 
@@ -65,17 +65,17 @@ This means that if the file name “myTools.csv” is used as the \[Relative Pat
 
 ![Showing \copy running and the corresponding file that was created](/assets/images/learn-sql/extras/export/export_2.png)
 
-The file can also be saved elsewhere by entering a specific relative path. For example, if _‘/Desktop/\[Filename\].csv’_ is entered as the path, the file will be saved to the desktop.
+The file can also be saved elsewhere by entering a specific relative path. For example, if _'/Desktop/\[Filename\].csv'_ is entered as the path, the file will be saved to the desktop.
 
-Following the Relative Path in the command is the text _‘csv header;’_ This text does two things. The _‘csv’_ specifies that the data should be stored in the CSV format. Other possible formats are ‘text’ and ‘Binary.’
+Following the Relative Path in the command is the text _'csv header;'_ This text does two things. The _'csv'_ specifies that the data should be stored in the CSV format. Other possible formats are 'text' and 'Binary.'
 
-The _‘header’_ specifies that, when the data is copied to a csv file, the names of each column should be saved on the first line as shown here:
+The _'header'_ specifies that, when the data is copied to a csv file, the names of each column should be saved on the first line as shown here:
 
 ![comparing a csv with and without a header](/assets/images/learn-sql/extras/export/export_3.png)
 
 ### **The _COPY_ command**
 
-The _COPY_ command also requires the user to specify a Table/Query to copy. Unlike _\\copy_ however, the _COPY_ command requires an absolute path. The absolute path is . This is because _COPY_ is for copying a database from a server to another location on the same server; not to a client computer. The _\\! pwd_ is very useful for finding the absolute path if you do not know where to save the file. In order to save to the desktop using \\copy _‘Desktop/\[Filename\].csv’_ would be used. In order to do this with _COPY_, _‘/Users/\[Username\]/Desktop/\[Filename\].csv’_ would need to be used as shown below:
+The _COPY_ command also requires the user to specify a Table/Query to copy. Unlike _\\copy_ however, the _COPY_ command requires an absolute path. The absolute path is . This is because _COPY_ is for copying a database from a server to another location on the same server; not to a client computer. The _\\! pwd_ is very useful for finding the absolute path if you do not know where to save the file. In order to save to the desktop using \\copy _'Desktop/\[Filename\].csv'_ would be used. In order to do this with _COPY_, _'/Users/\[Username\]/Desktop/\[Filename\].csv'_ would need to be used as shown below:
 
 ![Shows using COPY to copy a csv file](/assets/images/learn-sql/extras/export/export_4.png)
 
@@ -84,7 +84,7 @@ The _COPY_ command also requires the user to specify a Table/Query to copy. Unli
 * To copy a table or query to a csv file, use either the _\\copy_ command or the _COPY_ command.
 * _\\copy_ should be used for a copy to local systems
   * _\\copy_ uses a relative path
-* _COPY_ should be used to create a csv on the server’s side.
+* _COPY_ should be used to create a csv on the server's side.
   * _COPY_ uses an absolute path.
 
 **Resources**

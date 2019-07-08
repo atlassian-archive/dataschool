@@ -26,7 +26,7 @@ Redshift has many advantages for companies looking to consolidate their data all
 
 Amazon Redshift is fully managed, meaning that Redshift does all of the backend work for their customers. This includes setting up, managing, and scaling up the database. This means that Redshift will monitor and back up your data clusters, download and install Redshift updates, and other minor upkeep tasks.
 
-This means data analytics experts don’t have to spend time monitoring databases and continuously looking for ways to optimize their query performance. However, data analysts do have the option of fully controlling Redshift, this just means they have to spend the time to learn all of Redshift’s functionality and how to use it optimally for themselves.
+This means data analytics experts don't have to spend time monitoring databases and continuously looking for ways to optimize their query performance. However, data analysts do have the option of fully controlling Redshift, this just means they have to spend the time to learn all of Redshift's functionality and how to use it optimally for themselves.
 
 ### Very Fast
 
@@ -49,9 +49,9 @@ There are two types of processing nodes:
 
 There are several tiers of processing nodes that have varying levels of storage and memory capacities. As databases grow or become more heavily queried, Redshift will upgrade the node tiers to maintain performance levels. More information on [node type and pricing can be found here.](https://aws.amazon.com/redshift/pricing/)
 
-Data is stored across processing nodes in smaller subsections of a processing node which are known as **slices**. Slices are assigned a portion of the processing node’s memory, the quick access store used to hold data while it is in use, and storage, the long term storage location for the database, to manage queries on.
+Data is stored across processing nodes in smaller subsections of a processing node which are known as **slices**. Slices are assigned a portion of the processing node's memory, the quick access store used to hold data while it is in use, and storage, the long term storage location for the database, to manage queries on.
 
-Data is assigned to the processing node’s slices by the leader node and is stored evenly across all of the processing nodes in the database.
+Data is assigned to the processing node's slices by the leader node and is stored evenly across all of the processing nodes in the database.
 
 Following this structure, Redshift has had to optimize their queries to be run across multiple nodes concurrently. Query plans generated in Redshift are designed to split up the workload between the processing nodes to fully leverage hardware used to store database, greatly reducing processing time when compared to single processed workloads.
 
@@ -86,7 +86,7 @@ As databases grow, the settings used to create the database initially may no lon
 
 ### AWS Platform
 
-AWS is an ever expanding cloud platform provided by Amazon. AWS is widely used in the business space to host websites, run virtual servers, and much more. Redshift is a part of Amazon’s ecosystem which means it can be easily linked with other Amazon services like: S3, DynamoDB, and Amazon EMR using Multiple Parallel Processing(MPP). MPP is the process of using multiple process nodes to speed up the transfer of data. When all of your services are on AWS you can optimize more than just your data queries by improving transfer times to other databases or buckets on your AWS account.
+AWS is an ever expanding cloud platform provided by Amazon. AWS is widely used in the business space to host websites, run virtual servers, and much more. Redshift is a part of Amazon's ecosystem which means it can be easily linked with other Amazon services like: S3, DynamoDB, and Amazon EMR using Multiple Parallel Processing(MPP). MPP is the process of using multiple process nodes to speed up the transfer of data. When all of your services are on AWS you can optimize more than just your data queries by improving transfer times to other databases or buckets on your AWS account.
 
 Another benefit of being on the AWS platform is the security. AWS allows you to grant very specific security clearances to their AWS instances and the same goes for Redshift. You can create a variety of “Security Groups” and “[IAM”(Identity and Access Management)](https://aws.amazon.com/iam/) settings to lock down your data and keep it safe from outside groups. This optimizes time savings by freeing users from having to maintain third party security settings.
 

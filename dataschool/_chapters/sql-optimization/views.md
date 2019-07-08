@@ -23,13 +23,13 @@ Views are a way to store a long query for easier access. When a view is created,
 For example, instead of typing:
 
 ```sql
-SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state=’MD’;
+SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state='MD';
 ```
 
 Every time that details about a vehicle are needed, you can create a view:
 
 ```sql
-CREATE VIEW vehicle_details AS SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state=’MD’;
+CREATE VIEW vehicle_details AS SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state='MD';
 ```
 
 Once a view is created, the details about the vehicle can be accessed through the view:
@@ -53,7 +53,7 @@ CREATE VIEW [view name] AS [SELECT statement/Query to store] [(optional) WHERE [
 In the first example, a view was created on the details of a vehicle. For this view, the name vehicle_details was used and the query used to create the view was:
 
 ```sql
-SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state=’MD’;
+SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state='MD';
 ```
 
 The view will store the query above. This means that when the view is used, the query that is stored in the view will be accessed and run. In other words running a standard view is no different from running the query it was created on in terms of execution. The only difference is the length of the query that needs to be written by the user. As such, creating views is mainly for simplifying the writing of queries, not the running of queries.
@@ -66,7 +66,7 @@ Views can be used in a variety of ways and with several optional parameters:
 
 ### TEMP/TEMPORARY
 
-Adding TEMP or TEMPORARY to the creation of a view creates a view that is automatically dropped at the end of the user’s session.
+Adding TEMP or TEMPORARY to the creation of a view creates a view that is automatically dropped at the end of the user's session.
 
 Example:
 ```sql
@@ -75,7 +75,7 @@ CREATE TEMP VIEW myView AS SELECT serial_id FROM traffic;
 
 ### WITH CHECK OPTION
 
-Adding ‘WITH CHECK OPTION’ to the end of a CREATE VIEW statement ensures that, if the view is updated, the update does not conflict with the view. For example, if a column is created on a view where dlstate must be ‘MD’, then the user cannot INSERT a row into the view where the dlstate is ‘VA.’
+Adding 'WITH CHECK OPTION' to the end of a CREATE VIEW statement ensures that, if the view is updated, the update does not conflict with the view. For example, if a column is created on a view where dlstate must be 'MD', then the user cannot INSERT a row into the view where the dlstate is 'VA.'
 
 It will return an error :
 ```sql
@@ -133,7 +133,7 @@ Pros:
 
 * Faster - Aggregations and Joins are run beforehand
 * Can be Indexed for even greater speed
-* Does not update after each run: saves server’s time by preventing unnecessary refreshing
+* Does not update after each run: saves server's time by preventing unnecessary refreshing
 
 Cons:
 

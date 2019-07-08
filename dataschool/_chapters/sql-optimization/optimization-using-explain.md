@@ -68,7 +68,7 @@ ANALYZE;
 
 This shows that when using an index, the execution time drops from 13024.774 ms to 0.587 ms (that is a 99.99549**%** decrease in time). This is a dramatic decrease in execution time. The planning time does rise by 3.72 ms because the query planner needs to access the index and decide if using it would be efficient before it can start the execution. However the rise in planning time is negligible compared to the change in execution time.
 
-Not all indexes will have the same amount of impact on queries. It is important to use explain analyze before and after implementing an Index to see what the impact was. Read Blake Barnhill’s [article on indexing](https://dataschool.com/learn/how-indexing-works) for more information.
+Not all indexes will have the same amount of impact on queries. It is important to use explain analyze before and after implementing an Index to see what the impact was. Read Blake Barnhill's [article on indexing](https://dataschool.com/learn/how-indexing-works) for more information.
 
 Indexes are not always the answer. There will be times when a sequential scan is better than an index scan. This is the case for small tables, large data types, or tables that already have enough indexes to the specified query.
 
@@ -96,8 +96,8 @@ This index will only store data relating to motorcycle violations, which will be
 Here are a few final tips about indexing:
 
 1. Remember to **_ANALYZE_**: it is important to run **_ANALYZE;_** after creating an index in order to update the statistics on the index. This lets the query planner make the most informed decision on when to use an index)
-2. Remember to **_VACUUM_**: It is important to run **_VACUUM ANALYZE_** after significant modifications to the table. This command will clean up the index’s statistics, throwing away old values and adding new values. This command will run automatically periodically, however it is useful to run this command after heavy modifications for quicker results.
-3. Make sure your query can use the index: avoid using [Regex patterns](https://dataschool.com/learn/how-regex-in-sql-works) with a wild card at the beginning such as **_LIKE ‘%\[pattern\]%’_** this makes the query planner unable to use an index. You can use Regex patterns with wildcards at the end such as **_LIKE ‘\[pattern\]%’_**.
+2. Remember to **_VACUUM_**: It is important to run **_VACUUM ANALYZE_** after significant modifications to the table. This command will clean up the index's statistics, throwing away old values and adding new values. This command will run automatically periodically, however it is useful to run this command after heavy modifications for quicker results.
+3. Make sure your query can use the index: avoid using [Regex patterns](https://dataschool.com/learn/how-regex-in-sql-works) with a wild card at the beginning such as **_LIKE '%\[pattern\]%'_** this makes the query planner unable to use an index. You can use Regex patterns with wildcards at the end such as **_LIKE '\[pattern\]%'_**.
 
 ## Data Types
 
@@ -110,7 +110,7 @@ Different data types can have drastically different storage sizes as shown by th
 The dataset of traffic violations contains 1,521,919 rows in it (found using the **COUNT** [aggregation](https://chartio.com/learn/sql/aggregate/)). We need to consider the data type that requires the least amount of space that can store the data we want. We added a serial column to the data, which starts at 0 and increments by one each row. Since the data is 1,521,919 rows long we need a data type that can store at least that amount of data:
 
 * **smallserial** is the best choice If the numbers of rows is under 32768 rows.
-* **serial** is the best choice if the number of rows is more than small serial’s max or less than bigserials minimum.
+* **serial** is the best choice if the number of rows is more than small serial's max or less than bigserials minimum.
 * **bigserial** is the appropriate choice if there are more than 2,147,483,647 rows.
 
 1,521,919 is greater than the **smallserial** limit (32,768) and less than the limit for **serial** (2,147,483,647), so **serial** should be used.
@@ -142,12 +142,12 @@ As we can see from the images above, the time to aggregate on the original table
   * Best when created on unique ordered values
   * Remember to ANALYZE after creating
   * Remember to VACUUM ANALYZE
-  * Remember to write queries so that indexes can be used (e.g. use: LIKE ‘string%’ Don’t use: LIKE ‘%string%’)
+  * Remember to write queries so that indexes can be used (e.g. use: LIKE 'string%' Don't use: LIKE '%string%')
 * Partial Indexes
   * Can be used for frequently queried subsections of a table
 * Data Types
   * Ensure that the smallest data type is used
-    * Be careful of this on tables with high throughput. Tables may grow past the data type’s size which will cause an error.
+    * Be careful of this on tables with high throughput. Tables may grow past the data type's size which will cause an error.
 
 ### References:
 

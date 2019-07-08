@@ -11,7 +11,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: 
+image:
 is_featured: false
 
 ---
@@ -134,4 +134,4 @@ The following query will fetch all *tracks* where the *composer* IS NOT NULL.  T
 
 The above describes the main toolset of operators you'll need, but if you're interested in learning more checkout the [full list of {{ page.database }} operators](https://www.postgresql.org/docs/9.0/static/functions.html).
 
-You've learned a huge chunk of SQL so far, keep it up!  Are you seeing how SQL is almost english like, or at least like an advanced Google search?  I hope it’s starting to make sense and is getting less intimidating.  A few more concepts and a bit of practice and you’ll be quite fluent in no time!
+You've learned a huge chunk of SQL so far, keep it up!  Are you seeing how SQL is almost english like, or at least like an advanced Google search?  I hope it's starting to make sense and is getting less intimidating.  A few more concepts and a bit of practice and you'll be quite fluent in no time!
