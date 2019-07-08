@@ -16,6 +16,14 @@ While at The Data School let us know if you find any of the following:
 * Any mistakes or errors
 * Topics you want to contribute to
 
+### Comment on our Google Docs
+
+There are links to the Google Doc version of each chapter at the bottom of the page:
+
+![](/assets/images/Screen Shot 2019-07-08 at 12.04.42 PM.png)
+
+### Reach out on Slack
+
 We have channels for each of these in our Slack:
 
 * #book-expansion
@@ -25,6 +33,10 @@ We have channels for each of these in our Slack:
 [Go here to join the Data School Slack](https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY)
 
 If you want to contribute more substantially to a book or help write our next one please reach out to me (@MattDavid) in The Data School’s Slack.
+
+### Make a Pull Request
+
+Our whole site is public and open to contributors. Feel free to make a pull request: [https://github.com/chartio/dataschool](https://github.com/chartio/dataschool "https://github.com/chartio/dataschool")
 
 ## Code of Conduct
 
