@@ -107,38 +107,38 @@ threads: 1
 keyfile: /users/matt/BigQuerykeyfile.json
 timeout_seconds: 300
 ```
-
 Now I will mark where you will need to update with your own info with **bold**.
 
+
 * `my-bigquery-db:`
-  * This is the name which will be used to link the profile (account details/login info) to the project.
-  * I think this name makes sense but feel free to change it to whatever name you would like.
+    * This is the name which will be used to link the profile (account details/login info) to the project.
+    * I think this name makes sense but feel free to change it to whatever name you would like.
 * `type: bigquery`
-  * The type of database, no surprises here.
+    * The type of database, no surprises here.
 * `method: service-account`
-  * How you will connect. This is specific to the database chosen, for bigquery this is how you do it.
+    * How you will connect. This is specific to the database chosen, for bigquery this is how you do it.
 * `project: healthy-terrain-239904`
-  * **update with your own info**
-  * This is the project name, it will be a weirdly named thing inside of BigQuery on the left. ![Image showing big query's interface and the project name](/assets/images/sql-optimization/start_modeling_data/data4.png)
-  * Replace **healthy-terrain-239904** with your project name.
-  * You may need to create a new project in BigQuery but there should be a default one which is fine to use for this example
+    * **update with your own info**
+    * This is the project name, it will be a weirdly named thing inside of BigQuery on the left. ![Image showing big query's interface and the project name](/assets/images/sql-optimization/start_modeling_data/data4.png)
+    * Replace **healthy-terrain-239904** with your project name.
+    * You may need to create a new project in BigQuery but there should be a default one which is fine to use for this example
 * `dataset: soCleaned`
-  * **update with your own info**
-  * The name of Schema (Schema are called datasets in BigQuery) you will be putting the modeled data in ![Image showing the creation of a dataset in big query](/assets/images/sql-optimization/start_modeling_data/data5.png)
-  * Inside of BigQuery click on your project (healthy-terrain-239904)
-  * On the right you will see Create Data Set, click that
-  * The Dataset ID will be the name of the schema
-  * Replace **soCleaned** with your schema name that you put in the Dataset ID
+    * **update with your own info**
+    * The name of Schema (Schema are called datasets in BigQuery) you will be putting the modeled data in ![Image showing the creation of a dataset in big query](/assets/images/sql-optimization/start_modeling_data/data5.png)
+    * Inside of BigQuery click on your project (healthy-terrain-239904)
+    * On the right you will see Create Data Set, click that
+    * The Dataset ID will be the name of the schema
+    * Replace **soCleaned** with your schema name that you put in the Dataset ID
 * `keyfile: /users/matt/BigQuerykeyfile.json`
-  * **update with your own info**
-  * You do this by going to IAM & admin in BigQuery (hidden in the hamburger menu on the left) ![Image showing the contents of IAM & admin > Service Accounts](/assets/images/sql-optimization/start_modeling_data/data6.png)
-  * Click Service Accounts
-  * Click Create Service Account
-  * Create a name for it (a name like dbt)
-  * Select Role - BigQuery Admin
-  * Create key - JSON
-  * This will download the key to your computer
-  * You will need to put the file path in the yml file so place it somewhere that makes sense to you
+    * **update with your own info**
+    * You do this by going to IAM & admin in BigQuery (hidden in the hamburger menu on the left) ![Image showing the contents of IAM & admin > Service Accounts](/assets/images/sql-optimization/start_modeling_data/data6.png)
+    * Click Service Accounts
+    * Click Create Service Account
+    * Create a name for it (a name like dbt)
+    * Select Role - BigQuery Admin
+    * Create key - JSON
+    * This will download the key to your computer
+    * You will need to put the file path in the yml file so place it somewhere that makes sense to you
 
 Once you update all of those fields in your dbt profile (profiles.yml) you now need to link that profile to the project we created.
 
@@ -175,7 +175,6 @@ Go to terminal, make sure you are in the project folder of the dbt project and t
 ```code
 dbt run
 ```
-
 Boom, refresh BigQuery and see the new table. You can query it with a simple.
 
 ```sql

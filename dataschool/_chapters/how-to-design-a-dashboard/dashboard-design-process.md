@@ -62,11 +62,11 @@ Use the visualization that best presents the metrics clearly and accurately. Eve
 
 ### Dashboards
 
-There are best practices for taking the visualizations and composing them together in a dashboard. In fact some composition choices might actually make you change what visualization you had selected as optimal before. We cover best practices for arranging dashboards in [Arranging Your Visualizations as a Dashboard\](/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard/).
+There are best practices for taking the visualizations and composing them together in a dashboard. In fact some composition choices might actually make you change what visualization you had selected as optimal before. We cover best practices for arranging dashboards in [Arranging Your Visualizations as a Dashboard](/how-to-design-a-dashboard/arranging-your-charts-as-a-dashboard/).
 
 ### Sketching and Iteration
 
-At this stage it is recommended that the visualizations and dashboards be sketched out on paper or using a lo fi tool that is not connected to any real data. The reason for this is that it allows you to quickly throw out bad ideas without worrying about the time investment. It also allows you to focus on design instead of checking if the numbers are right. We talk through visualization and dashboard prototyping strategies in [Dashboard Prototyping and Feedback\](/how-to-design-a-dashboard/dashboard-prototyping-and-feedback/)
+At this stage it is recommended that the visualizations and dashboards be sketched out on paper or using a lo fi tool that is not connected to any real data. The reason for this is that it allows you to quickly throw out bad ideas without worrying about the time investment. It also allows you to focus on design instead of checking if the numbers are right. We talk through visualization and dashboard prototyping strategies in [Dashboard Prototyping and Feedback](/how-to-design-a-dashboard/dashboard-prototyping-and-feedback/)
 
 ## 3. Build
 
