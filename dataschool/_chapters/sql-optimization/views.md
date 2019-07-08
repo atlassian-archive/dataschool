@@ -47,7 +47,7 @@ As we can see, the two queries return the same result. The only difference betwe
 Creating a view follows this form:
 
 ```sql
-CREATE VIEW \[view name\] AS \[SELECT statement / Query to store\] \[(optional) WHERE \[condition\]\];
+CREATE VIEW [view name] AS [SELECT statement / Query to store] \[(optional) WHERE [condition]];
 ```
 
 In the first example, a view was created on the details of a vehicle. For this view, the name vehicle_details was used and the query used to create the view was:
@@ -69,6 +69,7 @@ Views can be used in a variety of ways and with several optional parameters:
 Adding TEMP or TEMPORARY to the creation of a view creates a view that is automatically dropped at the end of the user’s session.
 
 Example:
+
 ```sql
 CREATE TEMP VIEW myView AS SELECT serial_id FROM traffic;
 ```
@@ -78,8 +79,9 @@ CREATE TEMP VIEW myView AS SELECT serial_id FROM traffic;
 Adding ‘WITH CHECK OPTION’ to the end of a CREATE VIEW statement ensures that, if the view is updated, the update does not conflict with the view. For example, if a column is created on a view where dlstate must be ‘MD’, then the user cannot INSERT a row into the view where the dlstate is ‘VA.’
 
 It will return an error :
+
 ```sql
-ERROR: new row violates check option for view \[name of view\]
+ERROR: new row violates check option for view [name of view]
 ```
 
 Example: ![Shows the creation of a view using the 'WITH CHECK OPTION' parameter. It is followed by an example of an insert into the view failing due to said parameter.](/assets/images/sql-optimization/views/views_1.png)
@@ -89,6 +91,7 @@ Example: ![Shows the creation of a view using the 'WITH CHECK OPTION' parameter.
 Adding LOCAL or CASCADED to CHECK OPTION will designate the scope for the CHECK OPTION. If LOCAL is added, the CHECK only applies to that specific view. CASCADED on the other hand, applies the CHECK to all views that the current view is dependant on.
 
 Example:
+
 ```sql
 CREATE VIEW myView AS SELECT serial_id FROM traffic WITH LOCAL CHECK OPTION;
 ```
@@ -98,18 +101,19 @@ CREATE VIEW myView AS SELECT serial_id FROM traffic WITH LOCAL CHECK OPTION;
 To see the definition (underlying query) of a view, you can use:
 
 ```sql
-\\d+ \[view name\]
+\d+ [view name]
 ```
-![Shows the execution of \d+ vehicle_details and where to view the definition](/assets/images/sql-optimization/views/views_2.png)
+
+![Shows the execution of \\d+ vehicle](/assets/images/sql-optimization/views/views_2.png)
 
 ## Updating Views
 
 Views can be updated by using the following syntax:
 
 ```sql
-UPDATE \[Name of View\]
-SET \[Column Name\]=\[Value to set to\], \[Column Name\]=\[Value to set to\], etc
-WHERE \[condition\];
+UPDATE [Name of View]
+SET [Column Name]=[Value to set to], [Column Name]=[Value to set to], etc
+WHERE [condition];
 ```
 
 Views can only be updated if they follow these criteria:
@@ -151,13 +155,13 @@ Cons:
 To create a materialized view, add the MATERIALIZED keyword:
 
 ```sql
-CREATE MATERIALIZED VIEW myView AS \[Query\];
+CREATE MATERIALIZED VIEW myView AS [Query];
 ```
 
 To refresh the view manually use the following command:
 
 ```sql
-REFRESH MATERIALIZED VIEW \[view name\]
+REFRESH MATERIALIZED VIEW [view name]
 ```
 
 ## Summary
