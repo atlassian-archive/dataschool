@@ -7,7 +7,7 @@ description: We want to JOIN people ON data by creating the best resources for b
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
 
-At Chartio we describe our mission in four words which, not coincidentally, can be understood by both people and machines. Our mission is to:
+At [Chartio](https://chartio.com/) we describe our mission in four words which, not coincidentally, can be understood by both people and machines. Our mission is to:
 
 ## JOIN people ON data
 
@@ -19,6 +19,6 @@ Build a powerful, flexible product for working with data that’s simple enough 
 Promote data literacy via prolific, relevant and useful education.
 There are two parts, because no matter how simple or intuitive of a product we make, there will always be more work to educate the world on interpreting and understanding data correctly. These two parts of our mission result in our two domains:
 
-* **Chartio.com** – Our self-service BI tool that is continuously ranked highest in all of the key product areas of usability, time to value and ROI.
+* **Chartio** – Our self-service BI tool that is continuously ranked highest in all of the key product areas of usability, time to value and ROI.
 
-* **‍DataSchool.com** – Our free, open, online platform where we share original educational material about any and all things data related.
+* **‍The Data School** – Our free, open, online platform where we share original educational material about any and all things data related.
