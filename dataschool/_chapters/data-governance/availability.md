@@ -8,7 +8,7 @@ number: 20
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url: 
+feedback_doc_url:
 image: "/assets/images/data-governance/availability/availability_1.png"
 is_featured: false
 img_border_on_default: false
@@ -32,7 +32,7 @@ According to [Forbes](https://www.forbes.com/sites/larrymyler/2017/07/11/better-
 
 ## How do we make data available?
 
-![](/assets/images/data-governance/availability/availability_2.png)
+![The data availability process](/assets/images/data-governance/availability/availability_2.png)
 
 Data can be collected and made readily available by using the following steps:
 

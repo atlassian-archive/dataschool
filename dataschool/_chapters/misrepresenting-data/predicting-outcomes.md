@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1EN9jLWcWilsrw3z7eWCiEN3fx-VY_MSTRynGGLCk3N4/edit?usp=sharing
-image: ''
+image: /assets/images/misrepresenting-data/predictingOutcomes/predict_0.jpg
 is_featured: false
 img_border_on_default: false
 
@@ -19,7 +19,7 @@ img_border_on_default: false
 
 #### How many jellybeans are in the plastic box?
 
-![](https://lh5.googleusercontent.com/F4Yb4voN1kL45xcH3jN1eXh3fwxzZMccLnLHfU7_WSznqWBV5qwKH1ZsuhwSm-jbfM73sYkofhDDJDyvtp97qNaFsmMPVM3I29-Ck0bzndaIcUsQvHlKTA4QPMNMjdd1D6r4Kq4d)
+![Container full of Jelly Beans](/assets/images/misrepresenting-data/predictingOutcomes/predict_0.jpg)
 
 \-------------
 
@@ -71,7 +71,7 @@ Think through how feature could go wrong and whether it affects your confidence 
 
 Create a dashboard ahead of the product or feature where you have your predictions laid out. A bullet chart can be great for many metrics since there are multiple zones allowing you to define a range of outcomes.
 
-![](https://lh6.googleusercontent.com/y2lRBNoYASQO3U8nVVlaHqINyQI9fki8CCtuPCNAstQp_PaGdbS_VezbKtRTq5RRRee-2dLlFyPv07u9R5leiBbL9AcIym0fEk690YPjDfUEIbS3NzTnMuCHmDSVcfGBSo78avmQ)
+![Monthly Recurring Revenue](/assets/images/misrepresenting-data/predictingOutcomes/predict_1.png)
 
 Here we can see the gray areas defining the range of outcomes we predicted with the blue bar representing the actual value of the metric.
 

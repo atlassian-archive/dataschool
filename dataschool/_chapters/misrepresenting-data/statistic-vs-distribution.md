@@ -11,7 +11,7 @@ reviewers:
 - _people/blake.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1QPvkbgXwiIPgZlU81-kiSZe2mrqhsgoQ44C62hSPbnM/edit?usp=sharing
-image: ''
+image: /assets/images/misrepresenting-data/statVsDist/statVsDist_6.png
 is_featured: false
 img_border_on_default: false
 
@@ -20,15 +20,15 @@ img_border_on_default: false
 
 Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While this high-level stats can be informative, relying on them to accurately represent the underlying data can be problematic because they can hide important patterns in the underlying data.
 
-![High Level Statistic](https://lh6.googleusercontent.com/GSSSDck5R8x0PL2bpS4lAcfd_WPTvYK-Q4FVh08tzuV4ExhjzJPq85-kU27LhNrABBNvul2_4wskX8n6bzpWbyg77BZi2FTyrNAuTJo3CTIIvRMPExTjnovRb0DeZEFKaUJqMIII)
+![High Level Statistic](/assets/images/misrepresenting-data/statVsDist/statVsDist_0.png)
 
 The amount of time on page above seems respectable! Let’s look at the actual underlying distribution of data points.
 
-![Avg Time on Page Distribution](https://lh3.googleusercontent.com/77guS8Qb6XFje9gfYYMkrEN4ks5fu5hrnMqwb6CztpaYD8Lw4h7jcv0AyQcz_OSrGjygC81A83kzx0RZXYV1awQCNF-SNpw9-So_8q8mA4GpCHqALrnWr5hkSfOJqoqbtrKPKWDP)
+![Avg Time on Page Distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_1.png)
 
 Here we can see most people are on the page for under 2 minutes, and we have some outliers that are affecting the average time on page. The statistic (Avg Time On Page) doesn’t represent the actual data well. On the other hand, if your data is fairly normally distributed, then the average will represent the underlying data well:
 
-![Avg Time On Page Normally Distributed](https://lh6.googleusercontent.com/ZR2RUhkRTT_YVArsfyXXHXV6lx4LpCKZ1RqbFZx8bsECCJXvWkXySCNtdGqxbh32Boz2l9ZiODjUfl17A7FpavoM642LpMKHby7vMxWcWCQr3_fHjC-K0P9SNaJEhKZU20uUhgYJ)
+![Avg Time On Page Normally Distributed](/assets/images/misrepresenting-data/statVsDist/statVsDist_2.png)
 
 Distributions help you tell a much more nuanced story than a single metric.
 
@@ -68,29 +68,29 @@ In many BI tools creating a histogram is a built-in type of chart that can take 
 
 ## Interpret a Distribution
 
-![Right Skewed Distribution](https://lh3.googleusercontent.com/77guS8Qb6XFje9gfYYMkrEN4ks5fu5hrnMqwb6CztpaYD8Lw4h7jcv0AyQcz_OSrGjygC81A83kzx0RZXYV1awQCNF-SNpw9-So_8q8mA4GpCHqALrnWr5hkSfOJqoqbtrKPKWDP)
+![Right Skewed Distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_3.png)
 
 **Right Skewed** - Since most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.- Most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
 
-![Left Skewed Distribution](https://lh5.googleusercontent.com/mebThBvJihLFhpUOt1-4lTT_Viokx7Xfthkv2uciw_yXzLXHCYglRF9yoMSvd7OFczZPkvc8Vp8CPWmb7a9YXKuNxC2Zp83uCelXDQlL42CSUIWynRSyRm4-wXGw1KXenN-A7-7U)
+![Left Skewed Distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_4.png)
 
 **Left Skewed** - Since most of the data is higher than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
 
-![Normal Distribution](https://lh6.googleusercontent.com/ZR2RUhkRTT_YVArsfyXXHXV6lx4LpCKZ1RqbFZx8bsECCJXvWkXySCNtdGqxbh32Boz2l9ZiODjUfl17A7FpavoM642LpMKHby7vMxWcWCQr3_fHjC-K0P9SNaJEhKZU20uUhgYJ)
+![Normal Distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_5.png)
 
 **Normal** - Using an average or median here is acceptable because they both fall within the middle of the data.
 
 Note: This is technically a **unimodal** symmetrical distribution, but often people will refer to distributions that looks like this as a normal distribution. To be a real [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), it needs to have a very specific set of criteria that this distribution does not have.
 
-![Bimodal Distribution](https://lh6.googleusercontent.com/JDTWxbaFzKc2iteajySZkm4oy_y4mHur6qv7r9TjCCiYqv18P0pwRhFxn3sMgUaBtcrEBSAmXwiarV1gpKOsiMD074psSrIqLW1g8VdPGad_Mzn6KYoDp1gJJ9xbi-dqYS1otXtg)
+![Bimodal Distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_6.png)
 
 **Bi-Modal** - Neither an average or median is representative because there is more than one peak in the data. Split the data between the peaks and then report a summary stat on each section of the data.
 
 We can look closer at the peak on the lower end by making the bucket size smaller and filtering the data to be less than 10 minutes on the page.
 
-![Left half of Bimodal distribution](https://lh5.googleusercontent.com/0zQwqOqPQnV2N74bry5ABHxG-Js2vgwYdBjQgfg5gW7nhQ0Fef8EGlntVbIWZEZAp8CJMFfIffJXt7ZDyleZFkzqxgxUIeugkmM-p0NbUWqMOWOJFOUmJacz4zKUm6hTUZllRyDT)It looks to be normally distributed, now we can look at the higher end peak by making the bucket size smaller and filtering the data to be greater than 10 minutes.
+![Left half of Bimodal distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_7.png)It looks to be normally distributed, now we can look at the higher end peak by making the bucket size smaller and filtering the data to be greater than 10 minutes.
 
-![Right half of Bimodal distribution](https://lh4.googleusercontent.com/-FBin4u8tEQFyyt0pZ5Uey_9WAJoHizn8Ik3DdrOmw8e4UNhVhEGDTUfaGTIhFPQiJuBaKARbguuXe41DF1KqJbjyxvW-F-DLmOXPUPGbqyoV5xyqBlWCuYoSqhi1lAIO6zOpSye)
+![Right half of Bimodal distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_8.png)
 
 By splitting and re-bucketing we can see in greater detail what the underlying data looks like and which statistics would be a better representation of the actual data.
 

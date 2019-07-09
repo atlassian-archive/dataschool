@@ -8,7 +8,7 @@ number: 30
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url: 
+feedback_doc_url:
 image: "/assets/images/data-governance/usability/usability_1.png"
 is_featured: false
 img_border_on_default: false
@@ -24,7 +24,7 @@ img_border_on_default: false
 
 ## The 5 key features of usable data
 
-![](/assets/images/data-governance/usability/usability_2.png)
+![Accuracy/precision, Connectivity, Population, Standardization, and Metadata](/assets/images/data-governance/usability/usability_2.png)
 
 ### 1. Accuracy and Precision
 

@@ -8,7 +8,7 @@ number: 40
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url: 
+feedback_doc_url:
 image: "/assets/images/data-governance/integrity/integrity_1.png"
 is_featured: false
 img_border_on_default: false
@@ -29,7 +29,7 @@ Data integrity refers to the fact that data must be reliable and accurate over i
 
 ## Types of data integrity
 
-![](/assets/images/data-governance/integrity/integrity_2.png)
+![The types of data integrity](/assets/images/data-governance/integrity/integrity_2.png)
 
 * **Physical Integrity:** It deals with challenges in correctly storing and fetching data. Key challenges in physical integrity include material corrosion, electromechanical faults and power outages. Ensuring physical integrity includes methods such as redundant hardware, an uninterruptible power supply or use of a clustered file system to avoid a single point of failure.
 * **Logical Integrity** It deals with the accuracy and rationality of the data. Key challenges include software bugs, design flaws and human errors. Logical Integrity ensures that the data always makes perfect sense, given its environment.
