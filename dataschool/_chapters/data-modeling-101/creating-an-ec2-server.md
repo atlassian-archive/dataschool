@@ -30,11 +30,11 @@ If you do not have an AWS account, you will need one for the rest of the steps. 
 
 On the product page, find the section labeled “Compute” and click on “EC2”:
 
-![](/assets/images/data-modeling-101/ec2_article/EC2.png)
+![Location on AWS of the "EC2" Button](/assets/images/data-modeling-101/ec2_article/EC2.png)
 
 From there click “Launch Instance” to begin creating an EC2 server:
 
-![](/assets/images/data-modeling-101/ec2_article/launchInstance.png)
+![Location on AWS of the "Launch Instance" Button](/assets/images/data-modeling-101/ec2_article/launchInstance.png)
 
 ### Step 3: Picking an operating system
 
@@ -42,19 +42,19 @@ EC2 has a large variety of operating system available and you are free to pick w
 
 For the purpose of this tutorial we will using Ubuntu Server 18.04:
 
-![](/assets/images/data-modeling-101/ec2_article/ubuntu.png)
+![How to select the server's OS](/assets/images/data-modeling-101/ec2_article/ubuntu.png)
 
 ### Step 4: Choosing an instance type
 
 The instance type of your server will determine how much hardware is dedicated to your server. The more vCPUs and Memory, the faster your server will process requests. For this example we will be using the free “t2.micro” tier, providing 750 hours (which are the number of hours in a month) of uptime per month for your first year using AWS:
 
-![](/assets/images/data-modeling-101/ec2_article/microInstance.png)
+![Selection of Instance Type (how much computational power it has)](/assets/images/data-modeling-101/ec2_article/microInstance.png)
 
 ### Step 5: Review and Launch
 
 Unless you want to increase the capabilities of your EC2 server or provide more functionality, your basic EC2 instance is ready to launch:
 
-![](/assets/images/data-modeling-101/ec2_article/reviewInstance.png)
+![Review and Launch page on AWS](/assets/images/data-modeling-101/ec2_article/reviewInstance.png)
 
 On this page you will notice that you can edit things:
 
@@ -65,11 +65,11 @@ Once you have changed those to suit your needs click “Launch” on the bottom 
 
 ### Step 6: Creating an SSH key
 
-![](/assets/images/data-modeling-101/ec2_article/existingPair.png)
+!["Choose existing key pair" Button](/assets/images/data-modeling-101/ec2_article/existingPair.png)
 
 When prompted to create an SSH key, you must “Create a new key pair” and download the pair to finish creating your EC2 instance:
 
-![](/assets/images/data-modeling-101/ec2_article/newPair.png)
+!["Create new Key Pair" Button](/assets/images/data-modeling-101/ec2_article/newPair.png)
 
 This SSH key pair will allow you to connect remotely to your server from the command line. In order to do this you may have to change the permissions for your key file. This can be done with:
 
