@@ -30,7 +30,7 @@ These roles may be fulfilled by the same person but typically they are not.
 
 This is the person that is responsible for creating the dashboard, and managing the project. As you are the one reading this book this is likely you. Since you will be involved in all steps you should be in charge of coordinating all efforts of the project.
 
-Author responsibilities:
+Designer responsibilities:
 
 * Define the stakeholders
 * Metric calculation
