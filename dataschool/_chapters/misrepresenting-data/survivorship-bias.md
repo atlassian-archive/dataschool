@@ -29,13 +29,13 @@ Example:
 
 #### Present Day
 
-![](https://lh4.googleusercontent.com/-OGyw1ENo8rajdZgaSdcUzCLZuyTUkKQqxnbH9J1mqC5zf4yTIzp3n7JUD08O72CxsN1lrdJvrXKWERE716o_HtpAMc8lB-LYDV6r1ih1fNTEj1b2-WzhX7Ia_bsLsND9yfFam4g)
+![Present day we only see castles that were made of stone](https://lh4.googleusercontent.com/-OGyw1ENo8rajdZgaSdcUzCLZuyTUkKQqxnbH9J1mqC5zf4yTIzp3n7JUD08O72CxsN1lrdJvrXKWERE716o_HtpAMc8lB-LYDV6r1ih1fNTEj1b2-WzhX7Ia_bsLsND9yfFam4g)
 
 All we see is the surviving stone castle
 
 #### Medieval Times
 
-![](https://lh4.googleusercontent.com/-OGyw1ENo8rajdZgaSdcUzCLZuyTUkKQqxnbH9J1mqC5zf4yTIzp3n7JUD08O72CxsN1lrdJvrXKWERE716o_HtpAMc8lB-LYDV6r1ih1fNTEj1b2-WzhX7Ia_bsLsND9yfFam4g)
+![Back in Medieval times there were many wooden castles as well](https://lh4.googleusercontent.com/-OGyw1ENo8rajdZgaSdcUzCLZuyTUkKQqxnbH9J1mqC5zf4yTIzp3n7JUD08O72CxsN1lrdJvrXKWERE716o_HtpAMc8lB-LYDV6r1ih1fNTEj1b2-WzhX7Ia_bsLsND9yfFam4g)
 
 We can see the same stone castle but also the more numerous wooden castles
 
@@ -49,7 +49,7 @@ Example:
 
 “Men get tough fighting in the coliseum” vs “only tough men survive the coliseum.”
 
-### ![](https://lh4.googleusercontent.com/BqlHjtRbttUOpl_ooiKq-OvVPa8LEITUQfgaNRluhPel8Ev_4hI1sVUUlBl_d7i0gqz7Es6_DO-nbCza6Z3A6wom2cGp0byssSXDKpNXIo38rRCWqzdEVLW_6WGiMs0_3IS_Qr_D)
+### ![Strong survive because they are strong. They do not get string from the coliseum](https://lh4.googleusercontent.com/BqlHjtRbttUOpl_ooiKq-OvVPa8LEITUQfgaNRluhPel8Ev_4hI1sVUUlBl_d7i0gqz7Es6_DO-nbCza6Z3A6wom2cGp0byssSXDKpNXIo38rRCWqzdEVLW_6WGiMs0_3IS_Qr_D)
 
 People assume the competition in the coliseum caused the outcome but actually it filtered out the weak people and the strong people survived.
 
