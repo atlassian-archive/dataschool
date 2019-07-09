@@ -86,7 +86,7 @@ Example: ![Shows the creation of a view using the 'WITH CHECK OPTION' parameter.
 
 ### LOCAL and CASCADED
 
-Adding LOCAL or CASCADED to CHECK OPTION will designate the scope for the CHECK OPTION. If LOCAL is added, the CHECK only applies to that specific view. CASCADED on the other hand, applies the CHECK to all views that the current view is dependant on.
+Adding LOCAL or CASCADED to CHECK OPTION will designate the scope for the CHECK OPTION. If LOCAL is added, the CHECK only applies to that specific view. CASCADED on the other hand, applies the CHECK to all views that the current view is dependent on.
 
 Example:
 ```sql
