@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1TrqcSIOq3d8ItC637ub2FOQAV9yArf6Q0A2QNHJREuU/edit?usp=sharing
-image: ''
+image: /assets/images/misrepresenting-data/overallVsGroups/origVsGroups_1.png
 is_featured: false
 img_border_on_default: false
 
@@ -22,10 +22,10 @@ Overall statistics that describe all of your users or visitors can be misleading
 
 Let’s start with the same high-level statistic:
 
-![](https://lh4.googleusercontent.com/FRkQCJEzOhdjk2ag7DCDkXv2p_kypJZ1OX4dQ85J6w7CykJnPBbhVz-3lCZeL5F2Qtmv_4_CqP6BZ4B2clzF80LUHqsn7De4sRYND1qiJ5NM0eB5DO1n5ClXHPTtxr_jRvX5EiDp)  
+![High level statistic](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_0.png)  
 When you group this high level metric of AVG Time on Page by different countries you can see how it varies:
 
-![](https://lh6.googleusercontent.com/WJTTs7ev07c5oBLC2dGw-7LIWPhfGu0thPIkL0E3au1YF4d74eYdVNueqwu1TQKZHSSU1kjPvz-nZSBExirQs8_H3q41Y3ZcMy8o_Ia4p47jJV2HMs-sj5SJKWnVZ_QkYOrgte-0)
+![AVG time on page by Country](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_1.png)
 
 The AVG Time on Page is much higher for France and is lower for the other countries. Why is this the case? This is a tough question to answer since the data only shows you what is going on and not why it is happening. However, this is the right question to be asking and the sort of question that you only come to once you start grouping the data.
 
@@ -78,11 +78,11 @@ Once data is grouped, the statistics for each group vary. How much they vary can
 
 ### Low Variance
 
-![](https://lh6.googleusercontent.com/wpf7oiDJiBBLLz6_79KzFjeycL3PE_9RVwiMcxc2QuwPSIxa4l2-I5of3pB31DspRguuIBGBTkNHvzKLlEv5uq0APdGX_97Zq8mNb3G0uy1nC1cgs1HJWXXnFpYvufsYD3fPpgFA)
+![Overall Statistic](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_2.png)
 
 Grouped by Device
 
-![](https://lh3.googleusercontent.com/Tcan_3Ub_Q1lQ4IBfC96TJOUr49R2Ht3t5NngSMQ8t6XHQnwu5GCgvaIEr4yQHqTzu4v_hv5HuKHir4tmHpY-1_eQSphw_c5O8sNpJwMOjUZAgkqld0Ic-EqnXolwAHmFUqm8suB)
+![low variation](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_3.png)
 
 There is not a meaningful difference between these statistics and the overall statistic does a good job of representing these groups. However this might also be an indication that this type of grouping might not be the most informative. Try grouping the data in a few different ways before feeling confident in the overall statistic.
 
@@ -90,7 +90,7 @@ There is not a meaningful difference between these statistics and the overall st
 
 Grouped by Age
 
-![](https://lh6.googleusercontent.com/Tto0VPyXHVJGyzX7l1XgYertRIcyw4ibsiil-25frH6H9W7jW5GptylzVoW5kYV5WkXMTSlevPo5e9PFfBcXnAM7CFkOJbPKGca-qazj3Y1voWgC7g1zHOd0q-ctIcAG5FVLU9Ix)
+![medium variation](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_4.png)
 
 There are meaningful differences here but they still revolve around the same overall statistic. These differences might be large enough to investigate outlier groups more closely. It is a common practice to report a high level stat and provide a margin around how much it varies. Providing this extra context can help you feel more confident in the overall statistic
 
@@ -98,7 +98,7 @@ There are meaningful differences here but they still revolve around the same ove
 
 Grouped by Country
 
-![](https://lh4.googleusercontent.com/kLby9F5YuVkjUlluyFTuA6qUs929M2LzKKb5bAdA8zxmodrtFnXPKnFQc5pFdGO3VBW-2Dfn-CWHQJiX4_Yomrai3ZmWzZVVEINthYnjvODHdWdFr1wSwmNRbbW8Tg5nC0uFMlyw)
+![high Variance](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_5.png)
 
 Returning to the original example, the overall statistic is not representative of this data. Do not use an overall statistic when the variance between groups is high. You should investigate the largest outliers to determine what is going on. You can choose to isolate any outlier groups or you can perform separate analyses of the data similar to how you would address a bimodal distribution.
 
@@ -106,11 +106,11 @@ Returning to the original example, the overall statistic is not representative o
 
 Grouped by Gender
 
-![](https://lh6.googleusercontent.com/x0jDNbFcWAMePSlzFtQFXQ-LxbM65aMeQgqIhteVAVuzmSqHEXmwznJBh9s7ZDgqX1cAIMrJ4SBop_DU9VBM3Yn1rnACmKSNpw5PBzl92wRwv-4sZts960YHd28q-HfCRmFTHIl8)
+![Overall stat where females are higher](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_6.png)
 
 Females have an overall higher average Time on Page. However when we group by Gender and then by Device we see that in every category females have a lower average time on page than males.
 
-![](https://lh4.googleusercontent.com/QstfHNSoCG5IvQkBzoFp5HEj2NG0XP2RwIQwpL31XbZK4Nhz7q_pdreB8bBHCvvI-JbFPXRZa-_N1hK5PU1CTDzDFULhuXQ0s4MfX6cuB2804kYf0tuci6OlBkItch408k3aGepx)
+![breakdown of stats where females are lower in all sections](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_7.png)
 
 Even though females had a lower average time on page than males for every device they still have a higher overall time on page, how is this possible?
 

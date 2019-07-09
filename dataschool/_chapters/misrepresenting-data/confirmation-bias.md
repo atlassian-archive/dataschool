@@ -12,7 +12,7 @@ reviewers:
 - _people/matthew-layne.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1fa1CwUh0NySYMTQILVAZBIzHaW_dkqV43VOGX7a9ECw/edit?usp=sharing
-image: ''
+image: /assets/images/misrepresenting-data/confBias/confBias_0.jpg
 is_featured: false
 img_border_on_default: false
 
@@ -23,7 +23,7 @@ Confirmation bias is the tendency to **seek out data that confirm beliefs you al
 
 In a business context, this means you might be ignoring data that is suggesting that some aspect of your feature/product is not working because you found another metric that seems to suggest that it is working. Confirmation bias pressures you to ignore the negative signs and focus on the positive.
 
-![Graphic of confirmation bias](https://lh6.googleusercontent.com/auXkABQJTiGSWlnBjFxD9I9YUvjBYDsgUOoBvyCQbDxN5QUK7BuVZNnYvsqehLCUcYKZi8Xyl7QPtYybGt4ilQsEY_aHtK__WqnDKmTitFgv7n3h_3seV5VCq8uBjIXwYTaoyy3Z)
+![Graphic of confirmation bias](/assets/images/misrepresenting-data/confBias/confBias_0.jpg)
 
 ## How to Detect Confirmation Bias
 
