@@ -93,20 +93,20 @@ To check for blank values we can use:
 ```sql
 SELECT COUNT(*)
 FROM table
-WHERE field = ‘’ or field = ‘ ’
+WHERE field = '' or field = ' '
 ```
 
 You need to evaluate how to treat missing values.
 
 * **Ignore:** leave the values as they are
-    * This is the most common approach to dealing with missing data, you note the amount of missing values that exist and move on.
-    * If there are high amounts of missing data in a field it is not recommended to use it in a calculation since it may no longer be representative of that field.
+  * This is the most common approach to dealing with missing data, you note the amount of missing values that exist and move on.
+  * If there are high amounts of missing data in a field it is not recommended to use it in a calculation since it may no longer be representative of that field.
 * **Delete:** remove any records with missing data
-    * Deletion is only recommended if the records are a very small minority of the data set so it does not skew the data.
-    * One legitimate reason for removing a record due to a missing value is if it has missing values in multiple fields.
+  * Deletion is only recommended if the records are a very small minority of the data set so it does not skew the data.
+  * One legitimate reason for removing a record due to a missing value is if it has missing values in multiple fields.
 * **Impute:** replace the missing value with a value
-    * If the data is relatively normally distributed replacing the value with the average or median can be done if there are only a few records missing the value.
-    * In some cases it is clear that leaving a field blank might indicate that the answer is 0, in these cases it is appropriate to impute with a 0
+  * If the data is relatively normally distributed replacing the value with the average or median can be done if there are only a few records missing the value.
+  * In some cases it is clear that leaving a field blank might indicate that the answer is 0, in these cases it is appropriate to impute with a 0
 
 Regardless of which option you choose be sure to have the decision documented so others can reproduce the calculation and understand if they should take the data they are seeing to be 100% accurate or not.
 
@@ -131,13 +131,13 @@ This will quickly surface values that are way off if they are in the field.
 In text fields this is more difficult to detect, however there are some tricks here as well. They are more use case oriented tips.
 
 * Phone Number
-    * Common fake numbers 123-456-7890, 000-000-0000, 867-5309, and 999-999-9999
+  * Common fake numbers 123-456-7890, 000-000-0000, 867-5309, and 999-999-9999
 * Name
-    * Common fake names: John Doe, Jane Doe,
-    * Repetitive letters such as ‘aa’,’bb’
+  * Common fake names: John Doe, Jane Doe,
+  * Repetitive letters such as ‘aa’,’bb’
 * Birthday
-    * Too old: pre 1919
-    * Too young: 2014 and above
+  * Too old: pre 1919
+  * Too young: 2014 and above
 
 ### Potentially Wrong Values
 
