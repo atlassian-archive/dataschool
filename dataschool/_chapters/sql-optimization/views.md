@@ -97,7 +97,7 @@ CREATE VIEW myView AS SELECT serial_id FROM traffic WITH LOCAL CHECK OPTION;
 
 To see the definition (underlying query) of a view, you can use:
 
-```sql
+```code
 \d+ [view name]
 ```
 ![Shows the execution of \d+ vehicle_details and where to view the definition](/assets/images/sql-optimization/views/views_2.png)
