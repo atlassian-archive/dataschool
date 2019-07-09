@@ -23,13 +23,16 @@ Views are a way to store a long query for easier access. When a view is created,
 For example, instead of typing:
 
 ```sql
-SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state='MD';
+SELECT state, vehicletype, year, make, model, color FROM traffic
+WHERE state='MD';
 ```
 
 Every time that details about a vehicle are needed, you can create a view:
 
 ```sql
-CREATE VIEW vehicle_details AS SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state='MD';
+CREATE VIEW vehicle_details AS
+SELECT state, vehicletype, year, make, model, color FROM traffic
+WHERE state='MD';
 ```
 
 Once a view is created, the details about the vehicle can be accessed through the view:
@@ -47,13 +50,15 @@ As we can see, the two queries return the same result. The only difference betwe
 Creating a view follows this form:
 
 ```sql
-CREATE VIEW [view name] AS [SELECT statement/Query to store] [(optional) WHERE [condition]];
+CREATE VIEW [view name] AS [SELECT statement/Query to store]
+[(optional) WHERE [condition]];
 ```
 
 In the first example, a view was created on the details of a vehicle. For this view, the name vehicle_details was used and the query used to create the view was:
 
 ```sql
-SELECT state, vehicletype, year, make, model, color FROM traffic WHERE state='MD';
+SELECT state, vehicletype, year, make, model, color FROM traffic
+WHERE state='MD';
 ```
 
 The view will store the query above. This means that when the view is used, the query that is stored in the view will be accessed and run. In other words running a standard view is no different from running the query it was created on in terms of execution. The only difference is the length of the query that needs to be written by the user. As such, creating views is mainly for simplifying the writing of queries, not the running of queries.
@@ -86,18 +91,19 @@ Example: ![Shows the creation of a view using the 'WITH CHECK OPTION' parameter.
 
 ### LOCAL and CASCADED
 
-Adding LOCAL or CASCADED to CHECK OPTION will designate the scope for the CHECK OPTION. If LOCAL is added, the CHECK only applies to that specific view. CASCADED on the other hand, applies the CHECK to all views that the current view is dependant on.
+Adding LOCAL or CASCADED to CHECK OPTION will designate the scope for the CHECK OPTION. If LOCAL is added, the CHECK only applies to that specific view. CASCADED on the other hand, applies the CHECK to all views that the current view is dependent on.
 
 Example:
 ```sql
-CREATE VIEW myView AS SELECT serial_id FROM traffic WITH LOCAL CHECK OPTION;
+CREATE VIEW myView AS SELECT serial_id FROM traffic
+WITH LOCAL CHECK OPTION;
 ```
 
 ### VIEW definition
 
 To see the definition (underlying query) of a view, you can use:
 
-```sql
+```code
 \d+ [view name]
 ```
 ![Shows the execution of \d+ vehicle_details and where to view the definition](/assets/images/sql-optimization/views/views_2.png)
