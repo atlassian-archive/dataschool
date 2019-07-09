@@ -49,7 +49,7 @@ Example:
 
 “Men get tough fighting in the coliseum” vs “only tough men survive the coliseum.”
 
-### ![Strong survive because they are strong. They do not get string from the coliseum](/assets/images/misrepresenting-data/surviveBias/survive_2.jpg)
+### ![Strong survive because they are strong. They do not get string from the coliseum](/assets/images/misrepresenting-data/surviveBias/survive_2.png)
 
 People assume the competition in the coliseum caused the outcome but actually it filtered out the weak people and the strong people survived.
 

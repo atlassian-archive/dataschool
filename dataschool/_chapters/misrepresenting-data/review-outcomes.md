@@ -33,19 +33,19 @@ Remember all the analysis mistakes and mental biases covered in this book. It is
 
 When data changes dramatically we want to take credit if it was a positive change and deny responsibility if it was a negative change. Ultimately we should want to know _why_ it changed. To figure this out we need to investigate a few common ways data changes.
 
-### ![Marketing in a subway station](/assets/images/misrepresenting-data/reviewOutcomes/review_1.png)
+### ![Marketing in a subway station](/assets/images/misrepresenting-data/reviewOutcomes/review_1.jpg)
 
 ### Marketing
 
 A lot of times we are focused on the work we are doing and do not see what other parts of the company are doing to influence buyers and users. One of the most common reasons for any spike is there being a marketing push that day or that week. Reach out to that team to confirm no additional spend/effort has been going on to remove this potential reason.
 
-![Technical image of a computer screen](/assets/images/misrepresenting-data/reviewOutcomes/review_2.png)
+![Technical image of a computer screen](/assets/images/misrepresenting-data/reviewOutcomes/review_2.jpg)
 
 ### Technical Reasons
 
 Did the site go down? Did a data point stop being tracked?Is there a mistake in the tracking? (e.g. double-counting of hits, etc.) Simple technical problems can have huge impacts on data especially in the negative direction. It is important to reach out to the development team to establish if they might have had an impact.
 
-![Image of a group of people](/assets/images/misrepresenting-data/reviewOutcomes/review_3.png)
+![Image of a group of people](/assets/images/misrepresenting-data/reviewOutcomes/review_3.jpg)
 
 ### Cohort Influence
 

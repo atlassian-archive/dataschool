@@ -71,7 +71,7 @@ Think through how feature could go wrong and whether it affects your confidence 
 
 Create a dashboard ahead of the product or feature where you have your predictions laid out. A bullet chart can be great for many metrics since there are multiple zones allowing you to define a range of outcomes.
 
-![Monthly Recurring Revenue](/assets/images/misrepresenting-data/predictingOutcomes/predict_1.jpg)
+![Monthly Recurring Revenue](/assets/images/misrepresenting-data/predictingOutcomes/predict_1.png)
 
 Here we can see the gray areas defining the range of outcomes we predicted with the blue bar representing the actual value of the metric.
 
