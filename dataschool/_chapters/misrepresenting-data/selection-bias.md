@@ -2,8 +2,8 @@
 section: Cognitive Biases
 title: Selection Bias
 meta_title: How Selection Bias Affects your Analysis
-description: Selection bias affects analysis. Learn how to detect Selection Bias and
-  how to avoid this cognitive bias.
+description: Selection bias negatively affects your analysis. Learn how to detect
+  Selection Bias and how to avoid this cognitive bias.
 number: 2
 authors:
 - _people/matt.md
@@ -12,7 +12,7 @@ reviewers:
 - _people/matthew-layne.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1byPf-heJlgKYJwkghvWrPgEC7HbFtBESGx37cHsYoIk/edit?usp=sharing
-image: /assets/images/misrepresenting-data/selectBias/selectBias_0.png
+image: "/assets/images/misrepresenting-data/selectBias/selectBias_0.png"
 is_featured: false
 img_border_on_default: false
 

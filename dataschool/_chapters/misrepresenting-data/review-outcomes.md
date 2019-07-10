@@ -3,7 +3,7 @@ section: Experiment Design
 title: Review Outcomes
 meta_title: Review Outcomes of Feature Releases
 description: Review Outcomes of Feature Releases to evaluate their impact and to create
-  institutional knowledge.
+  institutional knowledge. Learn how to interpret results accurately.
 number: 13
 authors:
 - _people/matt.md
@@ -12,7 +12,7 @@ reviewers:
 - _people/blake.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1T-RDM2NDtgsp-ZNn5F_Ls9PGyJdvzLe6_5iTIjRHnqE/edit?usp=sharing
-image: /assets/images/misrepresenting-data/reviewOutcomes/review_0.png
+image: "/assets/images/misrepresenting-data/reviewOutcomes/review_0.png"
 is_featured: false
 img_border_on_default: false
 
