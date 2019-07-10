@@ -3,7 +3,7 @@ section: Analysis Mistakes
 title: Relative vs Absolute Change
 meta_title: Relative vs Absolute Change - Analysis Mistakes
 description: Relative and Absolute changes can bias your interpretation of data you
-  are analyzing. Learn how to identify and report these changes appropriately.
+  are analyzing. Learn to interpret them correctly.
 number: 10
 authors:
 - _people/matt.md
@@ -12,7 +12,7 @@ reviewers:
 - _people/blake.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/19CxIad3qImMHu8T9Yjn2nOr8K_x9y8jhLXex_7ixGcs/edit?usp=sharing
-image: /assets/images/misrepresenting-data/relVsAbsChange/relVsAbsChange_0.png
+image: "/assets/images/misrepresenting-data/relVsAbsChange/relVsAbsChange_0.png"
 is_featured: false
 img_border_on_default: false
 
