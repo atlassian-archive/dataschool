@@ -2,13 +2,14 @@
 section: book
 title: Availability
 meta_title: Availability of Data in Organizations
-description: Data has to be made accessible to be looked at holistically throughout
-  the organization. Learn how to implement processes to enable analysis.
+description: Data Governance helps more people in your organization access data. Data
+  has to be made accessible to be looked at holistically throughout the organization.
+  Learn how to implement processes to enable analysis.
 number: 20
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url:
+feedback_doc_url: 
 image: "/assets/images/data-governance/availability/availability_1.png"
 is_featured: false
 img_border_on_default: false
