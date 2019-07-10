@@ -3,7 +3,7 @@ section: Column and Table Optimizations
 title: Partial Indexes
 meta_title: What are Partial Indexes
 description: Partial indexes are an advanced database optimization technique. Learn
-  how to create Partial Indexes and measure their performance increase on SQL queries.
+  how to create Partial Indexes and measure their performance.
 number: 70
 authors:
 - _people/matthew-layne.md
