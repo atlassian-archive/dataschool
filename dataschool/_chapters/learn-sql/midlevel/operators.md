@@ -2,16 +2,15 @@
 title: Operators
 short: Operators
 meta_title: SQL - Operators
-description: Learn about Operator in SQL, which are used to specify conditions in
-  a SQL statement and as conjunctions for multiple conditions in a SQL statement.
-  In this interactive SQL tutorial, learn how to use an Operator in a SQL query.
+description: Learn about Operators in SQL and how to use them in Postgres. Operators
+  are used to specify conditions in a SQL statement.
 number: 65
 section: Mid-Level
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image:
+image: 
 is_featured: false
 
 ---
