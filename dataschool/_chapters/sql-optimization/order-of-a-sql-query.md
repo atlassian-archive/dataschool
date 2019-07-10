@@ -1,6 +1,6 @@
 ---
 section: Query Optimizations
-title: Order of a SQL query
+title: Order of a SQL Query
 meta_title: Learn the Order of a SQL Query
 description: Learn the order of the SQL query to understand where you can optimize
   a query. Learn to prioritize FROM, JOIN, and WHERE.
@@ -15,9 +15,9 @@ is_featured: false
 img_border_on_default: false
 
 ---
-## Order of a SQL query
+The way to make a query run faster is to reduce the number of calculations that the software must perform. To do this, you'll need some understanding of how SQL executes a query. 
 
-This tutorial will provide some tips and tricks for anyone working with SQL databases who want to increase the efficiency of their queries. The way to make a query run faster is to reduce the number of calculations that the software must perform. To do this, first you'll need some understanding of how SQL actually executes a query. Let's take a look at a sample SQL query :
+Let's take a look at a sample SQL query :
 
     SELECT DISTINCT column, AGGREGATE(column)
     FROM table1
