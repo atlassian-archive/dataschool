@@ -2,7 +2,8 @@
 section: book
 title: Creating an EC2 Server
 meta_title: EC2-server
-description: Learn how to quickly set up an EC2 server
+description: Learn how to quickly set up an EC2 server on AWS. Follow along with screenshots
+  and instructions.
 number: 30
 authors:
 - _people/blake.md
@@ -12,7 +13,7 @@ feedback_doc_url: https://docs.google.com/document/d/1rZJjWr3QnktTxRBUCdS6FIEoh9
 image: "/assets/images/data-modeling-101/ec2_article/EC2.png"
 is_featured: false
 img_border_on_default: false
-published: true
+
 ---
 ## What is an EC2 Server?
 

@@ -1,14 +1,13 @@
 ---
 title: Dashboard Design Process
 meta_title: Design Thinking Process for Dashboards
-description: Overview of all the steps in a dashboard design process. See how design
-  thinking principals map to dashboard design. Define, Prototype, Build, and Deploy
-  Dashboards.
+description: See how design thinking principals map to dashboard design. Define, Prototype,
+  Build, and Deploy Dashboards.
 section: book
 number: 40
 authors:
 - _people/matt.md
-reviewers:
+reviewers: 
 image: "/assets/images/how-to-design-a-dashboard/dashboard-design-process/dash-design-process-overview.jpg"
 is_featured: false
 img_border_on_default: false
