@@ -7,7 +7,7 @@ image: "/assets/images/people/matt.jpg"
 is_contributor: true
 job_title: Editor of the Data School
 company: Chartio
-linkedin: ''
+linkedin: https://www.linkedin.com/in/matthewcharlesdavid/
 twitter: ''
 website: ''
 bio: ''
