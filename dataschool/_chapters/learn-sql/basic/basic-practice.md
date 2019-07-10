@@ -2,9 +2,8 @@
 title: Basic SQL Practice Grounds
 short: Practice
 meta_title: Practice Basic SQL Commands
-description: Now that you've gone through our PostgreSQL interactive SQL tutorials,
-  you've got the basic SQL fundamentals that you can apply to your data and databases.
-  Put that knowledge to use in these SQL practice exercises.
+description: After you've got the basic SQL fundamentals. Put that knowledge to the
+  test in these interactive SQL practice exercises.
 number: 59
 section: Basic
 authors:
