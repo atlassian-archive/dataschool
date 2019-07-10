@@ -1,7 +1,8 @@
 ---
 title: Drew Banin
 meta_title: Contributor - Drew Banin
-description: Drew is an Analytics Consultant and writes about dbt
+description: Drew is an Analytics Consultant and writes about dbt. He is a co-founder
+  at Fishtown Analytics and an open source maintainer of dbt (data build tool).
 image: "/assets/images/people/drew.jpg"
 linkedin: https://www.linkedin.com/in/drewbanin/
 twitter: 
