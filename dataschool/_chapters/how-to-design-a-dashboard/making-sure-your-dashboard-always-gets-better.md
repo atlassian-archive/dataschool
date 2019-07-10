@@ -2,8 +2,8 @@
 section: Deploy
 title: Making Sure Your Dashboard Always Gets Better
 meta_title: Iterating on Dashboards
-description: Keep iterating on dashboards. Once a dashboard is built and shared it
-  is not done. You should maintain it and improve it by using audience feedback.
+description: Use feedback loops from your audience to keep iterating on dashboards
+  you create. Learn to improve it's usability and performance.
 number: 140
 authors:
 - _people/tim.md
