@@ -9,7 +9,7 @@ reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1G55ZE0TMKLPoTd8TWh-t-3BoFDd9HADBjbzVoWHYHMA/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/debugging-0-rows/noRows_1.gif"
 description: 'Learn the most common reasons you will get 0 rows returned from your
-  SQL query. See how JOINing on the wrong column and over filtering may be the problem. '
+  SQL query. See how JOINs and over filtering may be the problem. '
 is_featured: false
 img_border_on_default: false
 
