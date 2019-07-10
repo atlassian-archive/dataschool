@@ -1,7 +1,8 @@
 ---
 title: How to Design a Dashboard
 meta_title: How to Design a Dashboard web book
-description: Learn to Apply Design Thinking to the Dashboard Creation Process
+description: Learn to apply Design Thinking techniques to the Dashboard Creation Process.
+  This will increase the impact your dashboard will have in your company.
 book_slug: how-to-design-a-dashboard
 book_sort_number: 1
 authors: _people/matt.md
