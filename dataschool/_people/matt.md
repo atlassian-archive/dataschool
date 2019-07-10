@@ -1,7 +1,8 @@
 ---
 title: Matt David
 meta_title: Contributor - Matt David
-description: Writes about all things data
+description: Matt has over 7 years industry experience using data and currently the
+  Editor of the Data School @ Chartio.
 image: "/assets/images/people/matt.jpg"
 is_contributor: true
 job_title: Editor of the Data School
