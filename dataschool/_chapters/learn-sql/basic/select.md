@@ -3,11 +3,11 @@ title: SELECT
 short: SELECT
 meta_title: SQL - SELECT
 description: Learn the SELECT SQL statement with your PostgreSQL database in this
-  interactive SQL data tutorial. The SELECT statement is a basic SQL command that
-  easily allows you to interact with the data in your PostgreSQL database.
+  interactive SQL data tutorial. The SELECT statement is a basic SQL command to access
+  data.
 number: 20
 section: Basic
-image:
+image: 
 authors:
 - _people/dave.md
 reviewers:
