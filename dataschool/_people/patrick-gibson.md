@@ -1,7 +1,8 @@
 ---
 title: Patrick Gibson
 meta_title: Contributor - Patrick Gibson
-description: Writes about the data industry
+description: Patrick Gibson is a Virginia Tech student majoring in Computer Modeling
+  and Data Analytics (CMDA). He writes about how to explore and analyze data.
 image: "/assets/images/people/patrick.jpg"
 linkedin: https://www.linkedin.com/in/patrick-gibson-536b1a86/
 twitter: 
