@@ -1,7 +1,8 @@
 ---
 title: Blake Barnhill
 meta_title: Contributor - Blake Barnhill
-description: Blake writes about coding and data analysis
+description: Blake is an undergraduate in Computer Science at Virginia Tech with a
+  passion for teaching others the intricacies of computer coding and analytical thinking.
 image: "/assets/images/people/blake.png"
 is_contributor: true
 job_title: Marketing Intern

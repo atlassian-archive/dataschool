@@ -1,12 +1,13 @@
 ---
 title: Tim Miller
 meta_title: Contributor - Tim Miller
-description: Tim writes about Dashboard design and SQL
+description: Tim is a Senior Data Advisor at Chartio and brings 10+ years of Data
+  Analysis experience.
 image: "/assets/images/people/tim.jpg"
 is_contributor: true
 job_title: Senior Data Advisor
 company: Chartio
-linkedin: 
+linkedin: https://www.linkedin.com/in/timothy-j-miller-04404799/
 twitter: ''
 website: 
 
