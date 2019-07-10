@@ -8,7 +8,7 @@ is_contributor: true
 job_title: Editor of the Data School
 company: Chartio
 linkedin: https://www.linkedin.com/in/matthewcharlesdavid/
-twitter: ''
+twitter: https://twitter.com/fronofro
 website: ''
 bio: ''
 
