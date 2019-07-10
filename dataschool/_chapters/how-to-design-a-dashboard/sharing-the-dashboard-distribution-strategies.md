@@ -2,8 +2,8 @@
 section: Deploy
 title: Sharing the Dashboard – Distribution Strategies
 meta_title: Dashboard Distribution Strategies
-description: Learn the best practices and common pitfalls of sharing out dashboards
-  to a wide audience. Distributing your dashboard is critical to it being useful.
+description: Learn the best practices and common pitfalls of sharing out dashboards.
+  Distributing your dashboard is critical to it being useful.
 number: 120
 authors:
 - _people/tim.md
