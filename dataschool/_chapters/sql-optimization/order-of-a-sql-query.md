@@ -40,7 +40,7 @@ Each part of the query is executed sequentially, so it's important to understand
 7. **ORDER BY:** If an order is specified by the ORDER BY clause, the rows are then sorted by the specified data in either ascending or descending order.
 8. **LIMIT:** Finally, the rows that fall outside the range specified by the LIMIT are discarded, leaving the final set of rows to be returned from the query.
 
-Now that we understand the basic structure and order of a SQL query, we can take a look at the tips to optimize them for faster processing.
+Now that we understand the basic structure and order of a SQL query, we can take a look at the tips to optimize them for faster processing in the next chapter.
 
 ## Resources
 
