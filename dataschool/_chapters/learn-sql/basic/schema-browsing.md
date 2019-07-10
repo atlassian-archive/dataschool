@@ -2,9 +2,8 @@
 title: Browsing the SCHEMA
 short: SCHEMA
 meta_title: Browse the SCHEMA in a Database
-description: The word SCHEMA is used to describe a collection of tables and their
-  relationships in your database. In this interactive SQL tutorial, learn how to browse
-  the SCHEMA in a PostgreSQL database by using SQL to query your data.
+description: SCHEMA is the collection of tables and relationships in your database.
+  In this interactive SQL tutorial, learn how to browse a SCHEMA with PostgreSQL.
 number: 55
 section: Basic
 authors:
