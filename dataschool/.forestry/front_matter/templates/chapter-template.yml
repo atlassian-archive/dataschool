@@ -63,6 +63,7 @@ fields:
     class="img-no-border")
   default: false
 pages:
+- dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/misrepresenting-data/define-experiment-parameters.md
 - dataschool/_chapters/misrepresenting-data/predicting-outcomes.md
