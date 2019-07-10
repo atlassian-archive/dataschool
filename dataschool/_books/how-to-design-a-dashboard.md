@@ -4,11 +4,8 @@ meta_title: How to Design a Dashboard web book
 description: Learn to Apply Design Thinking to the Dashboard Creation Process
 book_slug: how-to-design-a-dashboard
 book_sort_number: 1
-authors:
-- _people/matt.md
-- _people/tim.md
-reviewers:
-- _people/tim.md
+authors: _people/matt.md
+reviewers: _people/tim.md
 cover_image: "/assets/images/book-covers/how-to-design-a-dashboard.png"
 main_color: "#145776"
 status: released
