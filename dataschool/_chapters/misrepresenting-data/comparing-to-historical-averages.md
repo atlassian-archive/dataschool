@@ -3,7 +3,7 @@ section: Analysis Mistakes
 title: Comparing to Historical Averages
 meta_title: Compare Data to Historical Statistics
 description: Historical Averages can be misleading because they hide trends in the
-  data. Learn how to identify when a historical statistic is being used correctly
+  data. Learn to identify misleading historical statistics.
 number: 6
 authors: []
 reviewers: []
