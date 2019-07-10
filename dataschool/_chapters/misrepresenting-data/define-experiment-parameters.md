@@ -2,8 +2,8 @@
 section: Experiment Design
 title: Define Experiment Parameters
 meta_title: Define Experiment Parameters to Improve your Analysis
-description: Defining Experiment Parameters improves analysis and trust in your organization
-  when results are shared.
+description: Defining Experiment Parameters improves analysis and increases trust
+  in results that are shared in an organization.
 number: 12
 authors:
 - _people/matt.md
@@ -12,7 +12,7 @@ reviewers:
 - _people/matthew-layne.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1tF58nHDntAcN3MZNjLqF2KqBcpMz1LrygZumdg7WUdw/edit?usp=sharing
-image: /assets/images/misrepresenting-data/defineParams/defineParams_2.jpg
+image: "/assets/images/misrepresenting-data/defineParams/defineParams_2.jpg"
 is_featured: false
 img_border_on_default: false
 
