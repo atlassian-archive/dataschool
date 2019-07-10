@@ -2,16 +2,16 @@
 title: Aggregate Functions
 short: Aggregate
 meta_title: SQL - Aggregate Functions
-description: Learn about the COUNT function in SQL. The COUNT command is a commonly
-  used aggregation function that takes whatever you give it and returns the count
-  of how many there are. This interactive SQL tutorial will teach you how to COUNT.
+description: Learn about the COUNT function in SQL. The COUNT command is used to returns
+  the count of how many rows there are. This interactive SQL tutorial will teach you
+  how to COUNT.
 number: 70
 section: Mid-Level
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image:
+image: 
 is_featured: false
 
 ---
