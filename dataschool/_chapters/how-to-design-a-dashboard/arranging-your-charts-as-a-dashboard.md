@@ -3,8 +3,7 @@ section: Prototype
 title: Arranging Your Charts as a Dashboard
 meta_title: How to Arrange Charts in a Dashboard
 description: Maximize understanding of a dashboard by arranging data visualizations
-  intelligently. Arraignment not only impacts understand, it effects how much the
-  dashboard will be used.
+  intelligently. Learn common design patterns to improve readability.
 number: 80
 authors:
 - _people/tim.md
