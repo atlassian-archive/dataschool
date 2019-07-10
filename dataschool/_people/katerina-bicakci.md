@@ -1,7 +1,8 @@
 ---
 title: Katerina Bicakci
 meta_title: Contributor - Katerina Bicakci
-description: Writes about Data Analysis
+description: Katerina is a data analyst with extensive experience teaching others
+  as a consultant to data programs at Udacity.
 image: "/assets/images/people/katerina.png"
 linkedin: 
 twitter: 
