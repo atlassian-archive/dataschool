@@ -3,7 +3,7 @@ section: Analysis Mistakes
 title: Statistic vs Distribution
 meta_title: Examine Distributions before using Statistics
 description: Distributions provide much more nuance to the data than a statistic does.
-  Learn how to query to get distributions and then interpret them correctly
+  Learn how to query to get distributions and then interpret them.
 number: 4
 authors:
 - _people/matt.md
@@ -11,7 +11,7 @@ reviewers:
 - _people/blake.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1QPvkbgXwiIPgZlU81-kiSZe2mrqhsgoQ44C62hSPbnM/edit?usp=sharing
-image: /assets/images/misrepresenting-data/statVsDist/statVsDist_6.png
+image: "/assets/images/misrepresenting-data/statVsDist/statVsDist_6.png"
 is_featured: false
 img_border_on_default: false
 
