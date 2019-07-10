@@ -1,8 +1,9 @@
 ---
-section: book
+section: Query Optimizations
 title: Order of a SQL query
-meta_title: ''
-description: ''
+meta_title: Learn the Order of a SQL Query
+description: Learn the order of the SQL query to understand where you can optimize
+  a query. Learn to prioritize FROM, JOIN, and WHERE.
 number: 2
 authors:
 - _people/rohan-joseph.md
@@ -41,3 +42,8 @@ Each part of the query is executed sequentially, so it's important to understand
 8. **LIMIT:** Finally, the rows that fall outside the range specified by the LIMIT are discarded, leaving the final set of rows to be returned from the query.
 
 Now that we understand the basic structure and order of a SQL query, we can take a look at the tips to optimize them for faster processing.
+
+## Resources
+
+1. [https://sqlbolt.com/lesson/select_queries_order_of_execution](https://sqlbolt.com/lesson/select_queries_order_of_execution "https://sqlbolt.com/lesson/select_queries_order_of_execution")
+2. [https://www.sisense.com/blog/8-ways-fine-tune-sql-queries-production-databases/](https://www.sisense.com/blog/8-ways-fine-tune-sql-queries-production-databases/ "https://www.sisense.com/blog/8-ways-fine-tune-sql-queries-production-databases/")
