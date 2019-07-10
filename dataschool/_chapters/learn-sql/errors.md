@@ -2,8 +2,7 @@
 title: Help with Common PostgreSQL Errors
 short: Errors
 description: When working with SQL you’re going to run into a lot of errors. This
-  is a guide to help you with common PostgreSQL database errors when writing SQL queries.  Continue
-  reading to troubleshoot your errors and fix them.
+  is a guide to help you with common PostgreSQL database errors.
 authors:
 - _people/dave.md
 meta_title: Common PostgreSQL Errors
