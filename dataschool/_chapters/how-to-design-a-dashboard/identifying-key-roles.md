@@ -2,8 +2,7 @@
 title: Identifying Key Roles
 meta_title: Identifying Key Roles in Dashboard Design
 description: Learn the key stakeholders for a dashboard design process. Learn how
-  to work with Designers, Developers, and your audience to make useful Dashboards.
-  Learn more.
+  to work with Designers, Developers, and your audience.
 section: Define
 number: 50
 authors:
