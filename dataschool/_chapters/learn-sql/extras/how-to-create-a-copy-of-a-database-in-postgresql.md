@@ -1,14 +1,14 @@
 ---
 title: How to Create a Copy of a Database in PostgreSQL
 meta_title: Create a copy of a Database in PostgreSQL
-description: Create a copy of a database in postgres using psql
+description: Learn how to create a copy of a database in postgres using psql.
 section: Extras
-number:
+number: 
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
-image:
+image: 
 img_border_on_default: false
 is_featured: false
 
