@@ -2,7 +2,8 @@
 section: book
 title: Conclusion
 meta_title: Use Design Thinking to Create Dashboards
-description: Quick visual review of designing a dashboard
+description: To create a Dashboard you need to define stakeholders and metrics, prototype
+  designs, use SQL and a BI tool, and finally share it with the company.
 number: 150
 authors:
 - _people/matt.md
