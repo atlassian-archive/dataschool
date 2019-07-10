@@ -1,7 +1,8 @@
 ---
 title: How to Teach People SQL
 mata_title: How to Teach People SQL web book
-description: Learn the Mental Models to make SQL Intuitive
+description: Learn the mental models of how SQL works with visuals and gifs. This
+  makes SQL intuitive to explain to others in your organization.
 book_slug: how-to-teach-people-sql
 book_sort_number: 1
 authors: _people/matt.md
