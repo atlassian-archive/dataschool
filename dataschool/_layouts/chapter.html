@@ -5,9 +5,9 @@ layout: default
   <header class="mb-4">
     <h1 class="title">{{ page.title | escape }}</h1>
     <p>
-      <em>Last modified: {{ page.last_modified_at | date: '%B %d, %Y' }}</em>   •  
+      <em>Last modified: {{ page.last_modified_at | date: '%B %d, %Y' }}</em>
       {% if page.reading_time %}
-        <em>Reading Time: {{page.reading_time}} minutes</em>
+        <em> • Reading Time: {{page.reading_time}} minutes</em>
       {% endif %}
      </p>
   </header>
