@@ -64,13 +64,13 @@ JOINing in the WHERE clause can be confusion since this is not it’s typical pu
 ```sql
 SELECT *
 FROM facebook, linkedin
-WHERE facebook.name = linkedin.name AND (facebook.name = Matt OR linkedin.city = “SF”)
+WHERE facebook.name = linkedin.name AND (facebook.name = Matt OR linkedin.city = "SF")
 
 SELECT *
 FROM facebook
 JOIN linkedin
 ON facebook.name = linkedin.name
-WHERE facebook.name = Matt OR linkedin.city = “SF”
+WHERE facebook.name = Matt OR linkedin.city = "SF"
 ```
 
 Even though the first query has fewer characters than the second it is not as easily understood.
@@ -97,12 +97,12 @@ Let’s evaluate how readable each option is, these two queries will produce the
 SELECT *
 JOIN linkedin
 ON facebook.name = linkedin.name
-WHERE facebook.city = ‘SF’
+WHERE facebook.city = 'SF'
 
 SELECT *
 FROM facebook
 JOIN linkedin
-ON facebook.name = linkedin.name AND facebook.city = ‘SF’
+ON facebook.name = linkedin.name AND facebook.city = 'SF'
 ```
 
 ![Comparison a hard to read and easy to read query](/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/namesAndCities.png)
@@ -125,7 +125,7 @@ WHERE facebook.city = 'SF'
 
 In a LEFT JOIN it brings in every row from the first table “facebook” and joins wherever the join condition is true (facebook.name = linkedin.name) this would be true for both Matt and Dave. So the interim table would have been.
 
-![Left Join table before filtering](/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/Filtering.png)
+![Left Join table before filtering](/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/filtering.png)
 
 Then the WHERE clause filters these result to rows where facebook.city = ‘SF’, leaving the one row.
 
@@ -135,7 +135,7 @@ Then the WHERE clause filters these result to rows where facebook.city = ‘SF�
 SELECT *
 FROM facebook
 LEFT JOIN linkedin
-ON facebook.name = linkedin.name AND facebook.city = ‘SF’
+ON facebook.name = linkedin.name AND facebook.city = 'SF'
 ```
 
 ![More filtered left join](/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/moreFiltering.png)
