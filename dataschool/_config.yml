@@ -138,7 +138,7 @@ defaults:
       number: 999999
       needs_sqlbox: true
       permalink: "/learn-sql/:slug/"
-      image: static/books/images/learn-sql.jpg  # TODO set a real default image
+      image: /assets/images/book-covers/learn-sql.png  # TODO set a real default image
 
 
 gems:
