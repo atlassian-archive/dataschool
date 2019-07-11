@@ -73,6 +73,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/misrepresenting-data/define-experiment-parameters.md
@@ -85,7 +86,6 @@ pages:
 - dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/metric-vs-metrics.md
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
-- dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/sql-optimization/views.md
 - dataschool/_chapters/sql-optimization/optimizing-data-queries-with-redshift.md
 - dataschool/_chapters/sql-optimization/snowflake.md
