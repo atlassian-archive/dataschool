@@ -73,6 +73,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
