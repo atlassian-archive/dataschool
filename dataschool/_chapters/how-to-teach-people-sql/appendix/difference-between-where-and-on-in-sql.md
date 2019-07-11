@@ -6,7 +6,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1jWCNjEHDpkTAuR1UaGAmKBmw9bkD7TxOQe-2GvAZ5jA/edit?usp=sharing
-image:
+image: /assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/filtering.png
 description: Understand how filtering and joining can be done in both the ON and WHERE
   clauses in SQL. Choose the best strategy for JOINing data in SQL.
 is_featured: false
