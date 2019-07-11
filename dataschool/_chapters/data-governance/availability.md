@@ -5,7 +5,7 @@ meta_title: Availability of Data in Organizations
 description: Data Governance helps more people in your organization access data. Data
   has to be made accessible to be looked at holistically throughout the organization.
   Learn how to implement processes to enable analysis.
-number: 20
+number: 2
 authors:
 - _people/rohan-joseph.md
 reviewers: []
