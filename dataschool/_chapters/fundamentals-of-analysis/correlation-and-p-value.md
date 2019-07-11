@@ -8,7 +8,7 @@ authors:
 - _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''
-image: ''
+image: /assets/images/fundamentals-of-analysis/correlation_p_value/correlations2.jpeg
 summary: ''
 is_featured: false
 img_border_on_default: false
