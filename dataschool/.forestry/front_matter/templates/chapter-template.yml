@@ -62,6 +62,16 @@ fields:
   description: Toggle on to add borders to all images in this chapter (override with
     class="img-no-border")
   default: false
+- name: reading_time
+  type: number
+  label: Reading Time
+  description: Minutes to read
+  default: 0
+  required: true
+  config:
+    min: '0'
+    max: 
+    step: '1'
 pages:
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
