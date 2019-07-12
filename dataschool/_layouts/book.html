@@ -37,7 +37,7 @@ layout: default
      {% if currentsection != 'book' %}<h3 class="mb-3 mt-4">{{ currentsection }}</h3>{% endif %}
   {% endif %}
       <li class="mb-2">
-       <a href="{{ chapter.url }}">{{ chapter.title }}</a>
+       <a href="{{ chapter.url }}">{{ chapter.title }}</a> {% if chapter.is_under_construction %}<em>(In progress)</em>{% endif %}
       </li>
 {% endfor %}
 </ul>

@@ -11,18 +11,11 @@ feedback_doc_url: https://docs.google.com/document/d/1tfPf3aQHUwHPY_LT_leT6OE3IY
 image: ''
 is_featured: false
 img_border_on_default: false
+is_under_construction: true
 
 ---
-## Contribute to Data School
 
-We are actively working on this chapter. We are looking for two types of contributions:
-
-1. Help writing this chapter
-2. Share your story about working through this problem at work
-
-Please reach out to @Matt David on [our slack](https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY) to discuss what you want to contribute.
-
-## Metric vs Metrics In Progress Overview
+## Comparing to Historical Averages In Progress Overview
 
 We work with hundreds of companies who are trying to get valuable insights out of their data. We see companies comparing the success of their product or feature as compared to a historical average.
 

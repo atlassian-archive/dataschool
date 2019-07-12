@@ -183,6 +183,19 @@ a.header-link {
   text-overflow: ellipsis;
 }
 
+.under-construction-blurb {
+  background: $secondary-light;
+  margin: 0 -1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  h2 {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 /* styles for Hubspot forms */
 form.hs-form {
   display: grid;
