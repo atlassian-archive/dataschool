@@ -4,16 +4,18 @@ title: Trends
 meta_title: The Problem with Trends in Data
 description: Trend in data can be misleading depending on what time frame you are
   looking at it. Learn how to accurately interpret trends.
-number: 8
+number: 7
 authors:
 - _people/matt.md
 reviewers:
 - _people/matthew-layne.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1ZDh4zs4M_srmPSZnmtSQk6N1fmTem9N84tCij33wpb0/edit?usp=sharing
-image: /assets/images/misrepresenting-data/trends/trends_1.png
+image: "/assets/images/misrepresenting-data/trends/trends_1.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+reading_time: 
 
 ---
 ## The problem with trends

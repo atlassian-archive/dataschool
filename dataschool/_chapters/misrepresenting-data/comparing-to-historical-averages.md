@@ -4,7 +4,7 @@ title: Comparing to Historical Averages
 meta_title: Compare Data to Historical Statistics
 description: Historical Averages can be misleading because they hide trends in the
   data. Learn to identify misleading historical statistics.
-number: 6
+number: 8
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1tfPf3aQHUwHPY_LT_leT6OE3IYczwfXVCt8u9AtPdJo/edit?usp=sharing
@@ -12,9 +12,9 @@ image: ''
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
-reading_time:
----
+reading_time: 
 
+---
 ## Comparing to Historical Averages In Progress Overview
 
 We work with hundreds of companies who are trying to get valuable insights out of their data. We see companies comparing the success of their product or feature as compared to a historical average.
