@@ -4,7 +4,7 @@ title: Metric vs Metrics
 meta_title: Why you should use multiple metrics
 description: A single Metric can be misleading. Learn how to use multiple Metrics
   to avoid misleading yourself and others. Learn more
-number: 5
+number: 6
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1JszhGxLjjc07yT3a1bCA8ci1fp8xScC-2BF1kvoFHLM/edit?usp=sharing
@@ -12,6 +12,7 @@ image: ''
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
+reading_time: 
 
 ---
 ## Metric vs Metrics In Progress Overview
