@@ -5,7 +5,7 @@ meta_title: The Problem with Overall Statistics
 description: Overall statistics in data can be misleading because there may be distinct
   groups within the data that have very different statistics. Learn to avoid this
   analysis mistake.
-number: 7
+number: 5
 authors:
 - _people/ben-jones.md
 - _people/matt.md
@@ -15,6 +15,8 @@ feedback_doc_url: https://docs.google.com/document/d/1TrqcSIOq3d8ItC637ub2FOQAV9
 image: "/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_1.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+reading_time: 
 
 ---
 ## The problem with overall statistics
