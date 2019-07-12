@@ -75,56 +75,56 @@ defaults:
       type: "chapters"
     values:
       book_slug: data-governance
-      image: assets/images/book-covers/data-governance.png  # TODO set a real default image
+      image: /assets/images/book-covers/data-governance.png  # Set to book's cover
       permalink: "/data-governance/:slug/"
   - scope:
       path: "_chapters/data-modeling-101"
       type: "chapters"
     values:
       book_slug: data-modeling-101
-      image: assets/images/book-covers/data-modeling-101.png  # TODO set a real default image
+      image: /assets/images/book-covers/data-modeling-101.png  # Set to book's cover
       permalink: "/data-modeling-101/:slug/"
   - scope:
       path: "_chapters/fundamentals-of-analysis"
       type: "chapters"
     values:
       book_slug: fundamentals-of-analysis
-      image: assets/images/book-covers/fundamentals-of-analysis.png  # TODO set a real default image
+      image: /assets/images/book-covers/fundamentals-of-analysis.png  # Set to book's cover
       permalink: "/fundamentals-of-analysis/:slug/"
   - scope:
       path: "_chapters/how-to-design-a-dashboard"
       type: "chapters"
     values:
       book_slug: how-to-design-a-dashboard
-      image: assets/images/book-covers/how-to-design-a-dashboard.png  # TODO set a real default image
+      image: /assets/images/book-covers/how-to-design-a-dashboard.png  # Set to book's cover
       permalink: "/how-to-design-a-dashboard/:slug/"
   - scope:
       path: "_chapters/how-to-teach-people-sql"
       type: "chapters"
     values:
       book_slug: how-to-teach-people-sql
-      image: assets/images/book-covers/how-to-teach-people-sql.png  # TODO set a real default image
+      image: /assets/images/book-covers/how-to-teach-people-sql.png  # Set to book's cover
       permalink: "/how-to-teach-people-sql/:slug/"
   - scope:
       path: "_chapters/sql-optimization"
       type: "chapters"
     values:
       book_slug: sql-optimization
-      image: assets/images/book-covers/sql-optimization.png  # TODO set a real default image
+      image: /assets/images/book-covers/sql-optimization.png  # Set to book's cover
       permalink: "/sql-optimization/:slug/"
   - scope:
       path: "_chapters/misrepresenting-data"
       type: "chapters"
     values:
       book_slug: misrepresenting-data
-      image: assets/images/book-covers/misrepresenting-data.png  # TODO set a real default image
+      image: /assets/images/book-covers/misrepresenting-data.png  # Set to book's cover
       permalink: "/misrepresenting-data/:slug/"
   - scope:
       path: "_chapters/dictionary"
       type: "chapters"
     values:
       book_slug: dictionary
-      image: assets/images/book-covers/dictionary.png
+      image: /assets/images/book-covers/data-school-dictionary.png
       layout: dictionary
 
   - scope:
@@ -138,7 +138,7 @@ defaults:
       number: 999999
       needs_sqlbox: true
       permalink: "/learn-sql/:slug/"
-      image: /assets/images/book-covers/learn-sql.png  # TODO set a real default image
+      image: /assets/images/book-covers/learn-sql.png  # Set to book's cover
 
 
 gems:
