@@ -26,7 +26,7 @@ fields:
   config:
     use_select: true
     min: ''
-    max:
+    max: 
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -35,8 +35,8 @@ fields:
   type: list
   config:
     use_select: true
-    min:
-    max:
+    min: 
+    max: 
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -65,7 +65,8 @@ fields:
 - name: is_under_construction
   type: boolean
   label: Is under construction
-  description: Toggle this on to signify to visitors a chapter is in progress and can use help!
+  description: Toggle this on to signify to visitors a chapter is in progress and
+    can use help!
   default: false
 - name: reading_time
   type: number
@@ -75,7 +76,7 @@ fields:
   required: true
   config:
     min: '0'
-    max:
+    max: 
     step: '1'
 pages:
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
