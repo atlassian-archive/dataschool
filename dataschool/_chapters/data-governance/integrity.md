@@ -4,11 +4,11 @@ title: Integrity
 meta_title: How to Maintain Data Integrity
 description: Data profiling, standardization, enrichment, and constant monitoring
   is required.
-number: 40
+number: 4
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url:
+feedback_doc_url: 
 image: "/assets/images/data-governance/integrity/integrity_1.png"
 is_featured: false
 img_border_on_default: false

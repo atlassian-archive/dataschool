@@ -12,7 +12,7 @@ image: ''
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
-
+reading_time:
 ---
 
 ## Comparing to Historical Averages In Progress Overview

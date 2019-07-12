@@ -4,7 +4,7 @@ title: Implementation
 meta_title: Implement Data Governance Best Practices
 description: Determine data components and the rules that govern this data across
   applications.
-number: 60
+number: 6
 authors:
 - _people/rohan-joseph.md
 reviewers: []
