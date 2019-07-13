@@ -79,9 +79,9 @@ fields:
     max: 
     step: '1'
 pages:
-- dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
-- dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
+- dataschool/_chapters/misrepresenting-data/trends.md
+- dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
 - dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
