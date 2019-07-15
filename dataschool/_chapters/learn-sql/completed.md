@@ -10,7 +10,7 @@ authors:
 reviewers:
 meta_title: PostgreSQL tutorial Ending
 is_hidden: true
-
+image: /assets/images/book-covers/learn-sql.png
 ---
 # Congratulations!  
 
