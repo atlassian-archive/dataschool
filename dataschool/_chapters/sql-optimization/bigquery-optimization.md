@@ -1,24 +1,24 @@
 ---
-section: book
+section: Databases
 title: BigQuery Optimization
-meta_title: ''
-description: ''
-number: 
+meta_title: Optimizations of BigQuery Databases
+description: Learn how BigQuery optimizes your database.
+number: 130
 authors:
 - _people/blake.md
 reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1OV-Vkj9M700ZQQX_2fDrt5hXpSfoQDjBTKbfyFBHRS8/edit?usp=sharing
-image: ''
+image: /assets/images/sql-optimization/bigquery/bigQuery.png
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time: 
-published: false
+reading_time: 5
+published: true
 
 ---
-# ![](https://lh4.googleusercontent.com/H5nuqqRCCAsv-gptrerbAZ5Isg6qfNmMn3ltt-twUFY_6xfm1UHX1rP8mRtUTYuo1o-e_gLQrQ4hub96W4no_ueCgIToIbIL5JcLujVr-94hnlzkDglTbhT2vbCYHQzGlMddjFqc =344x146)
+![](/assets/images/sql-optimization/bigquery/bigQuery.png)
 
 [BigQuery](https://cloud.google.com/bigquery/?gclid=EAIaIQobChMI0eqlj_aT4wIVmonICh3t9QbPEAAYASABEgKjxPD_BwE&tab=tab2) is a fully managed cloud database hosted by Google. BigQuery is highly-scalable and elastic, allowing for high speed queries on large amounts of data. It handles optimizing your warehouse for you. Let’s explore how it does this.
 
