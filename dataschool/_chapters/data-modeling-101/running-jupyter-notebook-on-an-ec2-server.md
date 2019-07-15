@@ -1,21 +1,20 @@
 ---
 section: book
 title: Running Jupyter Notebook on an EC2 Server
-meta_title: ''
-description: ''
-number: 
+meta_title: Running Jupyter Notebook on an EC2 Server
+description: Learn how to run a Jupyter Notebook on an AWS EC2 Server and the advantages of this.
+number: 40
 authors:
 - _people/blake.md
 reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
-feedback_doc_url: ''
-image: ''
+feedback_doc_url: https://docs.google.com/document/d/1HpR9gGG7l7Jgr6FjFEWOogD17pAewG0pE5_KesFoNQA/edit?usp=sharing
+image: /assets/images/data-modeling-101/jupyter_article/jupyterLoggedIn.png
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time: 
-published: false
+reading_time:
 
 ---
 ## What is Jupyter?
@@ -36,25 +35,25 @@ There are two ways to use Jupyter on your own computer:
 
 * In the browser at [Jupyter.org](https://jupyter.org/)
 * On your computer
-  * Two ways to install Jupyter to your computer, both can be found [here](https://jupyter.org/install).
+* Two ways to install Jupyter to your computer, both can be found [here](https://jupyter.org/install).
 
 These options work just fine for personal use but you can also install Jupyter onto an AWS server so that it can run be accessed from anywhere. To do so requires a little more work on the front end but allows you to access your Jupyter Notebook from any computer as long as you have a network connection.
 
 #### Step 1: Create an EC2 Instance
 
-(link to article on creating EC2 servers)
+[Click here for our tutorial on creating an EC2 Server](https://dataschool.com/data-modeling-101/creating-an-ec2-server/)
 
 #### Step 2: Customize your EC2 server for Jupyter
 
 To run your Jupyter Notebook on your EC2 server, you are going to need to add a new security group. On the EC2 instance page go to the “Security Groups” section:
 
-![](https://lh4.googleusercontent.com/XUjEyngC9oTsY44bGS6RcNMdeyp9Ui0-sUvZ1gysDWlgtd5KACYdvbb-YkcYH6T9CCeB3a7b4vx3_B_eMFvFcIQfMMh51Mv8YuZknx62cZAByZrthH-FBKZpDKMmoeGXNc2Z-PdW =624x453)
+![](/assets/images/data-modeling-101/jupyter_article/createSecurityGroup.png)
 
 Here you need to create a new security group by clicking “Create Security Group” on the top of the page.
 
 From there you need to give the group three properties:
 
-![](https://lh4.googleusercontent.com/BQn519jJ2o6roceLoamCLqp6xxu9nZW_Edsn-xXAEVFHkYZIeXIea5ScB6vQuYhmlz2j367QAemUZEdKeZyiGTy56i8A9dO1AQLuKBmQTmgnCvh5UH34s8H4Ok1yPoqEEmlCp5Ft =624x457)
+![](/assets/images/data-modeling-101/jupyter_article/securityGroups.png)
 
 Use “Add Rule” to add new Security Group rules. You will need three new rules:
 
@@ -68,25 +67,25 @@ Once you have all of that set “Create” this new security group.
 
 Next go back to the “Instances” tab:
 
-![](https://lh4.googleusercontent.com/J955gVPW9cYvvd36fzZhVqKwK9_mabCSVJrTbbuW3JW0BB9FL3kXWj4k__pCU3NbWeJZyxTxzIOuIUaTipueJVrLy436adDu5EM1jTOsW5g-HoFHPMhn9SaGS2DVAMvBGOhY0xdb =624x440)
+![](/assets/images/data-modeling-101/jupyter_article/navToInstances.png)
 
 Select the EC2 instance you are going to be using for your Jupyter Notebook, go into “Actions”, “Networking” and click “Change Security Groups”:
 
-![](https://lh4.googleusercontent.com/uvpgJ0g5cT_DZdKbLjrkS_eQT6Cw7np_BS6HItFQa95O7Ew6FvQbnaGSFDESE3TeCtfoNl1z5csvhI_AuyJSDLOob1ToGsYmLsMLsvsflAiWk-ZYY8N55vDmZYW6_IOvBweXR4P_ =624x455)
+![](/assets/images/data-modeling-101/jupyter_article/navToSecurityGroups.png)
 
 In this menu, select the security group that you just created and then click “Assign Security Group”:
 
-![](https://lh6.googleusercontent.com/RpdSvcUp-YSRt1wy3wG_VJ1mANuFl8StxCidTINDAWsQdVzIsx2lKgbJHXYvNXVSESq2JAj9-bKObvN_FE2mQhVKmIpCZP2A7LUu2dNeoE3RcGU82U8WTM_GxU9oL8AuZXWW7UcW =624x455)
+![](/assets/images/data-modeling-101/jupyter_article/securityGroups.png)
 
 #### Step 3: Connecting to your EC2
 
-Before you begin, make sure you followed “Step 6” of the “Creating an EC2 Instance” article and changed the permissions for your \`.pem\` file.
+Before you begin, make sure you followed “Step 6” of the “Creating an EC2 Instance” article and changed the permissions for your `.pem` file.
 
 `sudo chmod 400 /path/YourKey.pem`
 
 By clicking “Connect” at the top of the instances page, Amazon will provide a list of instructions on connecting to your EC2 server:
 
-![](https://lh3.googleusercontent.com/3undu2te7n8qogubQvXQKPkLyjk42ZIyoEN4jpjf0XQJE50r2FiXcVDbQklK35y_Lhz01oZZDO99pC6ut7GB-fkv5qgaYfKTcSnR4j8QYnZXrmHTA7w6ztrmFr8L3LiklLm0_rhS =624x457)
+![](/assets/images/data-modeling-101/jupyter_article/connect.png)
 
 _Note: you will need to have an SSH client on your computer. All Macbooks come with SSH, Window users may have to install an SSH client. On you command line you can check if you have an SSH client by typing “SSH” and hitting enter and checking if your terminal recognizes the command._
 
@@ -94,23 +93,23 @@ You should be able to connect to your instance by copying the “Example” from
 
 You should be greeted with a message:
 
-`Welcome to Ubuntu 18.04.2 LTS` or whatever Operating System you installed.
+"`Welcome to Ubuntu 18.04.2 LTS`" or whatever Operating System you installed.
 
-![](https://lh6.googleusercontent.com/X3AcZ5H98sh8bPJt86Lh1D0H-eNd2sBw4F9qAVAgLhzlzTuGwtiaXMMbugb7vriP2JnINPSm6uM31oKZMFwp708v33amh4dtokyQMYFzcMV9UaWzKygAmwolJ2dF61wmVUCa4yQ6 =624x405)
+![](/assets/images/data-modeling-101/jupyter_article/welcomeUbuntu.png)
 
 #### Step 4: Installing Jupyter Notebook
 
 Once you are connected to your EC2, you now need to install Jupyter. The easiest way to do this is to download the [Anaconda distribution](https://www.anaconda.com/distribution/) that matches your Operating System (if you are following along using Ubuntu, this is the Linux version).
 
-![](https://lh3.googleusercontent.com/koc6EgWeGC6SdeZQtHYITXMuPyHXNJCz2VAiXE3tBgqDW2HhbHXbrqBPoJ7-VeBm35WRfLIpvkKfsRRr80vKJGZxsToFAn_Tr6rAIL4K8nXiL49fxXkIV-wlcSL-W0TEATuEZWvB =624x447)
+![](/assets/images/data-modeling-101/jupyter_article/anaconda.png)
 
 To download the Anaconda distribution to your EC2, copy the “installer” link and run:
 
-`wget ``[https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh](https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh "https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh")`
+`wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh`
 
 (this is the latest version as of writing this article)
 
-Once the file is downloaded run \`bash\` on the file that was downloaded to install it:
+Once the file is downloaded run `bash` on the file that was downloaded to install it:
 
 `bash Anaconda3-2019.03-Linux-x86_64.sh`
 
@@ -120,13 +119,13 @@ First, we need to add Jupyter to the system’s path (you can check if it is alr
 
 `export PATH=/home/ubuntu/anaconda3/bin:$PATH`
 
-![](https://lh6.googleusercontent.com/elv2Fscjr9LyHUKTDLPAOq-0gBFSI1SoGAfjrkp6ChhAyp289YLTgN1dBz8x4ybg16yRmbkd1WlFHZkXINejS__Xaxj-4fL4HS7WVIqGldud4wJOjj1uvgP6LpeT0P-iP09Ycd3S =624x405)
+![](/assets/images/data-modeling-101/jupyter_article/path.png)
 
 After saving this change, you now need to run:
 
 `source .bashrc`
 
-To cause these changes to take effect. Now running \`which python\` should return the path to the python folder in Anaconda.
+To cause these changes to take effect. Now running `which python` should return the path to the python folder in Anaconda.
 
 #### Step 6: Configuring Jupyter Notebook settings
 
@@ -152,21 +151,17 @@ Next go into your jupyter config file:
 
 `cd .jupyter`
 
-`vim jupyter_notebookc``_onfig.py_`
+`vim jupyter_notebook_config.py_`
 
 And add the following code:
 
-\`\`\`code
-
+```code
 conf = get_config()
 
 conf.NotebookApp.ip = '0.0.0.0'
-
-conf.NotebookApp.password = u'**YOUR PASSWORD HASH**'
-
+conf.NotebookApp.password = u'YOUR PASSWORD HASH'
 conf.NotebookApp.port = 8888
-
-\`\`\`
+```
 
 #### Step 7: Create a directory for your notebooks
 
@@ -184,22 +179,21 @@ After Step 7, you should be ready to run your notebook and access your EC2 serve
 
 From there you should be able to access your server by going to:
 
-`https://(``**your aws public dns**``):8888/`
+`https://(your AWS public dns):8888/`
 
 For example it should look like:
 
-`https://``[http://ec2-18-222-233-183.us-east-2.compute.amazonaws.com:8888/](http://ec2-18-222-233-183.us-east-2.compute.amazonaws.com:8888/ "http://ec2-18-222-233-183.us-east-2.compute.amazonaws.com:8888/")`
+`http://ec2-18-222-233-183.us-east-2.compute.amazonaws.com:8888/`
 
 You should be brought to a page like this:
 
-![](https://lh5.googleusercontent.com/q0D5xBW7MlRpRz_PydfJQ18EV1mXEqSzTolRWYqySHFGdb0FmllJ9qJDEeqZf5r3zFveunYPdybDmJFa7x5SWqg_ekCcIbQWRVnKnfS3su79aBHezzMgY49aqU6vlElsQFzcEoUI =624x457)
+![](/assets/images/data-modeling-101/jupyter_article/jupyterLogin.png)
 
 Enter the password you created and you should be greeted with your full Jupyter Notebook system:
 
-![](https://lh6.googleusercontent.com/4qv0IFRyFer-sS0r9Zxy4rGU05qmTM6ZtDAM1pcqbERVUaIOFGbcBIhmz00x1UJla9mcEB5B97drZ9leEbbVcQMwszRmytgt05h6GLpPHSYpZQHKld24GpI6QBRiuInPMbPnH7LS =624x457)
+![](/assets/images/data-modeling-101/jupyter_article/jupyterLoggedIn.png)
 
-References:
+### References:
 
 [https://jupyter.org/](https://jupyter.org/ "https://jupyter.org/")
-
 [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html?icmpid=docs_ec2_console](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html?icmpid=docs_ec2_console "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html?icmpid=docs_ec2_console")
