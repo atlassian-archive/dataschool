@@ -11,7 +11,7 @@ reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
 feedback_doc_url: ''
-image: ''
+image: /assets/images/sql-optimization/scheduling_dbt/jobSchedule.png
 is_featured: false
 img_border_on_default: false
 
