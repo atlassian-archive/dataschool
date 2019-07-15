@@ -11,7 +11,7 @@ reviewers:
 - _people/matt.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1awdAqjjHRME_Q8I7kG4tjQ9snArvRLBFhbLWetXY4hU/edit
-image: ''
+image: /assets/images/sql-optimization/partialIndexing/partialIndex_0.png
 is_featured: false
 img_border_on_default: true
 
