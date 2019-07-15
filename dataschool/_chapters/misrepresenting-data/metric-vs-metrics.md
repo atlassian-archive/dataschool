@@ -8,11 +8,11 @@ number: 6
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1JszhGxLjjc07yT3a1bCA8ci1fp8xScC-2BF1kvoFHLM/edit?usp=sharing
-image: ''
+image: /assets/images/book-covers/misrepresenting-data.png
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
-reading_time: 
+reading_time:
 
 ---
 ## Metric vs Metrics In Progress Overview
