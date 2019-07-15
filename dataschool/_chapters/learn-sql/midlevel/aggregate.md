@@ -11,7 +11,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: 
+image: /assets/images/book-covers/learn-sql.png
 is_featured: false
 
 ---
