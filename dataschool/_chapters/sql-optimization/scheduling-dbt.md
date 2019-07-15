@@ -10,8 +10,13 @@ authors:
 reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
+<<<<<<< HEAD
 feedback_doc_url: https://docs.google.com/document/d/1CDOGxgTlL9b8oI-cLlPzGb8DJG3N37KjE9MznqMNogo/edit?usp=sharing
 image: /assets/images/sql-optimization/scheduling_dbt/connectionType.png
+=======
+feedback_doc_url: ''
+image: /assets/images/sql-optimization/scheduling_dbt/jobSchedule.png
+>>>>>>> f5abccdaec891e049b72b86a7e5d51cc74c1f536
 is_featured: false
 img_border_on_default: false
 
