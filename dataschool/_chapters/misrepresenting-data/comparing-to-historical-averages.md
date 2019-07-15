@@ -8,11 +8,11 @@ number: 8
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1tfPf3aQHUwHPY_LT_leT6OE3IYczwfXVCt8u9AtPdJo/edit?usp=sharing
-image: ''
+image: /assets/images/book-covers/misrepresenting-data.png
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
-reading_time: 
+reading_time:
 
 ---
 ## Comparing to Historical Averages In Progress Overview
