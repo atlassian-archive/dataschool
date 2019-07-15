@@ -7,7 +7,7 @@ authors:
 - _people/dave.md
 meta_title: Common PostgreSQL Errors
 is_hidden: true
-
+image: /assets/images/book-covers/learn-sql.png
 ---
 When working with SQL you're going to run into a lot of errors.  Don't stress out about them.  They can look intimidating and seem like you broke something you didn't.  SQL is just very picky and if everything isn't spelled correctly, things are in the wrong order, or you're missing a quotation mark it's going to come back to you with an error.
 
