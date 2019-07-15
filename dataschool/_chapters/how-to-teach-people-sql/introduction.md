@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1ojOfxqpWfUJTrfYqGxyZO9JJuM9H2L9J8onArYucnOI/edit?usp=sharing
-image:
+image: /assets/images/book-covers/how-to-teach-people-sql.png
 is_featured: false
 img_border_on_default: false
 

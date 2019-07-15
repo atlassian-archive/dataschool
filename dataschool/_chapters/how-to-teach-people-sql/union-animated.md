@@ -7,7 +7,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/12dp24i8H3q4v_IbGIbJKF-yZirvhtHmEQ6AvC9K91gw/edit?usp=sharing
-image:
+image: /assets/images/book-covers/how-to-teach-people-sql.png
 description: Visualize how SQL is joining two tables using a Union All join. See animated
   visualizations of the data being Unioned in SQL. Learn more.
 is_featured: false

@@ -11,6 +11,7 @@ reviewers:
 description: Learn how Regex works in SQL and how to use it in your queries. See the
   Regex process visualized in gifs. Learn more.
 feedback_doc_url: https://docs.google.com/document/d/1MgGrt9nqanxNvJ3FLZNoBP5R0nlzksrsOQp6g5R5fcc/edit?usp=sharing
+image: /assets/images/how-to-teach-people-sql/appendix/how_regex_works/RegexGif.gif
 img_border_on_default: true
 meta_title: How to use Regex in SQL
 

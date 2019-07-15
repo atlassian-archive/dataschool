@@ -11,7 +11,7 @@ reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKbyR5n24yeJbuuyAmsk/edit?usp=sharing
-image: 
+image: /assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen1.png
 is_featured: false
 img_border_on_default: true
 

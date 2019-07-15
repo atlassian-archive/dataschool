@@ -8,7 +8,7 @@ authors:
 - _people/patrick-gibson.md
 reviewers: []
 feedback_doc_url: ''
-image: ''
+image: /assets/images/book-covers/fundamentals-of-analysis.png
 summary: ''
 is_featured: false
 img_border_on_default: false
