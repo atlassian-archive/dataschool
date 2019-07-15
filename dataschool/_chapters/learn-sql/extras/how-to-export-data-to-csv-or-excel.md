@@ -5,12 +5,12 @@ meta_title: Export PostgreSQL Data to a CSV or Excel File
 description: Learn how to export PostgreSQL data to a CSV or Excel file. Follow these
   instructions to copy tables, copy a query results, and open CSV files.
 section: Extras
-number: 
+number:
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: 
+image: /assets/images/book-covers/learn-sql.png
 img_border_on_default: false
 is_featured: false
 

@@ -11,7 +11,7 @@ reviewers:
 - _people/blake.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1UcOvqq_7wwxeztReW9WIBY8cJpvCapQtqYfe54JzDmc/edit?usp=sharing
-image:
+image: /assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_2.png
 is_featured: false
 img_border_on_default: false
 

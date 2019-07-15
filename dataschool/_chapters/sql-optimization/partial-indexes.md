@@ -11,7 +11,7 @@ reviewers:
 - _people/matt.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1awdAqjjHRME_Q8I7kG4tjQ9snArvRLBFhbLWetXY4hU/edit
-image: ''
+image: /assets/images/sql-optimization/partialIndexing/partialIndex_0.png
 is_featured: false
 img_border_on_default: true
 
@@ -26,7 +26,7 @@ A partial index can be as simple as an index that stores data on a subsection of
 
 One example of this is the column **dlstate** (the state that the driver has a driver's license from). There are 71 distinct values (Includes out of country plates like QC for Quebec and includes XX for no plate) in the database for this column. Say you are studying how many Virginia driver's are involved in Montgomery County traffic violations.
 
-We are going to be filtering all our queries to where **dlstate** = “VA” so applying a partial index on the **dlstate** state column where **dlstate** = “VA” will make subsequent queries much faster. For this example we will focus on Virgina:
+We are going to be filtering all our queries to where **dlstate** = “VA” so applying a partial index on the **dlstate** state column where **dlstate** = “VA” will make subsequent queries much faster. For this example we will focus on Virginia:
 
 ![Shows the creation of a partial index from a table as well as its traditional index counter part](/assets/images/sql-optimization/partialIndexing/partialIndex_0.png)
 

@@ -10,7 +10,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: 
+image: /assets/images/learn-sql/midlevel/joins/sql-tutorial-join-primary-keys.png
 is_featured: false
 
 ---

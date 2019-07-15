@@ -7,7 +7,7 @@ section: Extras
 number:
 authors: []
 reviewers: []
-image:
+image: /assets/images/book-covers/learn-sql.png
 img_border_on_default: false
 is_featured: false
 published: false

@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1CDOGxgTlL9b8oI-cLlPzGb8DJG3N37KjE9MznqMNogo/edit?usp=sharing
 image: /assets/images/sql-optimization/scheduling_dbt/jobSchedule.png
 is_featured: false
 img_border_on_default: false

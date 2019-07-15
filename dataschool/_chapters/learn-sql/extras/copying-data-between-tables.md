@@ -4,13 +4,13 @@ meta_title: Copying Data Between Tables in a Postgres Database
 description: Learn to copy data from a table or query into another table using the
   INSERT command in psql.
 section: Extras
-number: 
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/blake.md
 - _people/matt.md
-image: 
+image: /assets/images/learn-sql/extras/copying_data_between_tables/copyingBetweenTables_3.png
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/13CikUhX31sfe_ouqeKRCZPr14TIxi45wzQksXs9yaJE/edit?usp=sharing

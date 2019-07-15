@@ -10,7 +10,7 @@ reviewers:
 - _people/blake.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/17cO2KNHGF5Tnaxg5LPnl6HSEcwnlz-bNGA-DccflcN8/edit?usp=sharing
-image: ''
+image: /assets/images/book-covers/learn-sql.png
 is_featured: false
 img_border_on_default: false
 published: false
