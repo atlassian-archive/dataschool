@@ -10,7 +10,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
-image:
+image: /assets/images/book-covers/how-to-teach-people-sql.png
 is_featured: false
 img_border_on_default: false
 
