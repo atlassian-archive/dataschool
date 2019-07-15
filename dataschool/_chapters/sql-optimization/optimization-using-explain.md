@@ -11,7 +11,7 @@ reviewers:
 - _people/matt.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1nWKtuIgW_cjeYTvKDv8QabP9IFaWR46hK5ELYFCwM90/edit#heading=h.odjivoxapqnt
-image: ''
+image: /assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_4.png
 is_featured: false
 img_border_on_default: true
 
