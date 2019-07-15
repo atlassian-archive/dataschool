@@ -79,6 +79,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/sql-optimization/bigquery-optimization.md
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
