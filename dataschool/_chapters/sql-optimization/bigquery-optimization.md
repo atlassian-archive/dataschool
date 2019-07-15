@@ -2,7 +2,7 @@
 section: Databases
 title: BigQuery Optimization
 meta_title: Optimizations of BigQuery Databases
-description: Learn how BigQuery optimizes your database.
+description: Learn how BigQuery optimizes your database through specific hardware optimization strategies.
 number: 130
 authors:
 - _people/blake.md
@@ -18,7 +18,7 @@ reading_time: 5
 published: true
 
 ---
-![](/assets/images/sql-optimization/bigquery/bigQuery.png)
+![BigQuery Logo](/assets/images/sql-optimization/bigquery/bigQuery.png)
 
 [BigQuery](https://cloud.google.com/bigquery/?gclid=EAIaIQobChMI0eqlj_aT4wIVmonICh3t9QbPEAAYASABEgKjxPD_BwE&tab=tab2) is a fully managed cloud database hosted by Google. BigQuery is highly-scalable and elastic, allowing for high speed queries on large amounts of data. It handles optimizing your warehouse for you. Let’s explore how it does this.
 
