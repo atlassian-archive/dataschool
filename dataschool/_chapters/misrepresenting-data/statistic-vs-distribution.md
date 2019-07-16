@@ -14,7 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1QPvkbgXwiIPgZlU81-kiSZe2mr
 image: "/assets/images/misrepresenting-data/statVsDist/statVsDist_6.png"
 is_featured: false
 img_border_on_default: false
-reading_time: 4
+reading_time: 5
 is_under_construction: false
 
 ---
