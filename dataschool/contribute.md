@@ -43,3 +43,17 @@ Our whole site is public and open to contributors. Feel free to make a pull requ
 This is a collaborative project to create the best resource for creating data driven organizations.
 
 So by definition this means that we need to be open and helpful to everyone here to accomplish our goal. This is what we expect of everyone. If there is any behavior here you find in conflict with that please reach out to me directly.
+
+
+
+{% assign in_progress_chapters = site.chapters | where:'is_under_construction', 'true' | sort: 'last_modified' %}
+{% if in_progress_chapters %}
+  <h2 class="mt-5">{{ in_progress_chapters | size }} Chapters need Contribution</h2>
+  <ul>
+  {% for chapter in in_progress_chapters %}
+    <li class="mb-2">
+     <a href="{{ chapter.url }}">{{ chapter.title }}</a> {% if chapter.is_under_construction %}<em>(In progress)</em>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+{% endif %}
