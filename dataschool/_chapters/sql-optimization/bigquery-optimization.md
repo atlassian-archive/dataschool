@@ -2,7 +2,8 @@
 section: Databases
 title: BigQuery Optimization
 meta_title: Optimizations of BigQuery Databases
-description: Learn how BigQuery optimizes your database through specific hardware optimization strategies.
+description: Learn how BigQuery optimizes your database through specific hardware
+  optimization strategies.
 number: 130
 authors:
 - _people/blake.md
@@ -10,12 +11,11 @@ reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1OV-Vkj9M700ZQQX_2fDrt5hXpSfoQDjBTKbfyFBHRS8/edit?usp=sharing
-image: /assets/images/sql-optimization/bigquery/bigQuery.png
+image: "/assets/images/sql-optimization/bigquery/bigQuery.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time: 5
-published: true
+reading_time: 
 
 ---
 ![BigQuery Logo](/assets/images/sql-optimization/bigquery/bigQuery.png)
