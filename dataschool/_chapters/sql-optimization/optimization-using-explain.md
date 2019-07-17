@@ -4,16 +4,18 @@ title: Optimization with EXPLAIN ANALYZE
 meta_title: Optimization using EXPLAIN ANALYZE in Postgres
 description: 'The EXPLAIN shows the query plan for SQL queries in Postgres. Learn
   how to interpret the results from EXPLAIN and use it to optimize your SQL queries. '
-number: 60
+number: 5
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1nWKtuIgW_cjeYTvKDv8QabP9IFaWR46hK5ELYFCwM90/edit#heading=h.odjivoxapqnt
-image: /assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_4.png
+image: "/assets/images/sql-optimization/optimizationUsingExplainAnalyze/optimizeUsingExplain_4.png"
 is_featured: false
 img_border_on_default: true
+is_under_construction: false
+reading_time: 
 
 ---
 Querying postgres databases, when done properly, can result in extremely efficient results and provide powerful insights. Sometimes however, queries are written in less than optimal ways, causing slow response times. Because of this, it is important to be able to analyze how queries execute and find the most optimized ways to run them.
