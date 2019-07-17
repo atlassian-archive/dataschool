@@ -47,13 +47,13 @@ These options work just fine for personal use but you can also install Jupyter o
 
 To run your Jupyter Notebook on your EC2 server, you are going to need to add a new security group. On the EC2 instance page go to the “Security Groups” section:
 
-![](/assets/images/data-modeling-101/jupyter_article/createSecurityGroup.png)
+![Image showing how to begin creating a security group](/assets/images/data-modeling-101/jupyter_article/createSecurityGroup.png)
 
 Here you need to create a new security group by clicking “Create Security Group” on the top of the page.
 
 From there you need to give the group three properties:
 
-![](/assets/images/data-modeling-101/jupyter_article/securityGroups.png)
+![Image showing how to modify security groups](/assets/images/data-modeling-101/jupyter_article/securityGroups.png)
 
 Use “Add Rule” to add new Security Group rules. You will need three new rules:
 
@@ -67,15 +67,15 @@ Once you have all of that set “Create” this new security group.
 
 Next go back to the “Instances” tab:
 
-![](/assets/images/data-modeling-101/jupyter_article/navToInstances.png)
+![Image showing how to navigate to instances](/assets/images/data-modeling-101/jupyter_article/navToInstances.png)
 
 Select the EC2 instance you are going to be using for your Jupyter Notebook, go into “Actions”, “Networking” and click “Change Security Groups”:
 
-![](/assets/images/data-modeling-101/jupyter_article/navToSecurityGroups.png)
+![Image showing how to change security groups](/assets/images/data-modeling-101/jupyter_article/navToSecurityGroups.png)
 
 In this menu, select the security group that you just created and then click “Assign Security Group”:
 
-![](/assets/images/data-modeling-101/jupyter_article/securityGroups.png)
+![Image showing how to assign a security group](/assets/images/data-modeling-101/jupyter_article/securityGroups.png)
 
 #### Step 3: Connecting to your EC2
 
@@ -85,7 +85,7 @@ Before you begin, make sure you followed “Step 6” of the “Creating an EC2 
 
 By clicking “Connect” at the top of the instances page, Amazon will provide a list of instructions on connecting to your EC2 server:
 
-![](/assets/images/data-modeling-101/jupyter_article/connect.png)
+![Image showing how to connect to an instance](/assets/images/data-modeling-101/jupyter_article/connect.png)
 
 _Note: you will need to have an SSH client on your computer. All Macbooks come with SSH, Window users may have to install an SSH client. On you command line you can check if you have an SSH client by typing “SSH” and hitting enter and checking if your terminal recognizes the command._
 
@@ -95,13 +95,13 @@ You should be greeted with a message:
 
 "`Welcome to Ubuntu 18.04.2 LTS`" or whatever Operating System you installed.
 
-![](/assets/images/data-modeling-101/jupyter_article/welcomeUbuntu.png)
+![Image showing welcome message once the instance is connected to](/assets/images/data-modeling-101/jupyter_article/welcomeUbuntu.png)
 
 #### Step 4: Installing Jupyter Notebook
 
 Once you are connected to your EC2, you now need to install Jupyter. The easiest way to do this is to download the [Anaconda distribution](https://www.anaconda.com/distribution/) that matches your Operating System (if you are following along using Ubuntu, this is the Linux version).
 
-![](/assets/images/data-modeling-101/jupyter_article/anaconda.png)
+![How to download Anocanda](/assets/images/data-modeling-101/jupyter_article/anaconda.png)
 
 To download the Anaconda distribution to your EC2, copy the “installer” link and run:
 
@@ -119,7 +119,7 @@ First, we need to add Jupyter to the system’s path (you can check if it is alr
 
 `export PATH=/home/ubuntu/anaconda3/bin:$PATH`
 
-![](/assets/images/data-modeling-101/jupyter_article/path.png)
+![Image showing the added line ](/assets/images/data-modeling-101/jupyter_article/path.png)
 
 After saving this change, you now need to run:
 
@@ -187,11 +187,11 @@ For example it should look like:
 
 You should be brought to a page like this:
 
-![](/assets/images/data-modeling-101/jupyter_article/jupyterLogin.png)
+![Jupyter log in page](/assets/images/data-modeling-101/jupyter_article/jupyterLogin.png)
 
 Enter the password you created and you should be greeted with your full Jupyter Notebook system:
 
-![](/assets/images/data-modeling-101/jupyter_article/jupyterLoggedIn.png)
+![Jupyter page once logged in](/assets/images/data-modeling-101/jupyter_article/jupyterLoggedIn.png)
 
 ### References:
 
