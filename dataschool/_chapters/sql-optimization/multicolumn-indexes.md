@@ -1,10 +1,10 @@
 ---
-section: book
+section: Column and Table Optimizations
 title: Multicolumn Indexes
 meta_title: Creating Multicolumn Indexes in SQL
 description: This article walks through what multicolumn indexes are, how to make
   them, and when to use them.
-number: 80
+number: 8
 authors:
 - _people/matthew-layne.md
 reviewers:
@@ -24,11 +24,12 @@ Standard [indexes](https://dataschool.com/sql-optimization/how-indexing-works/) 
 
 ## Syntax
 
-\`\`\`sql
+```sql
 
-CREATE INDEX **\[index name\]** ON **\[Table name\]**(**\[column1, column2, column3,...\]**);
+CREATE INDEX [index name]
+ON [Table name]([column1, column2, column3,...]);
 
-\`\`\`
+```
 
 Multicolumn indexes can:
 
@@ -40,13 +41,16 @@ Multicolumn indexes can:
 
 Multicolumn indexes are indexes that store data on up to 32 columns. When creating a multicolumn index, the column order is very important. This is due to the structure that multicolumn indexes possess. Multicolumn indexes are structured to have a hierarchical structure. Take for example this table:
 
-![](https://lh3.googleusercontent.com/97cMxdX3Pxw45SQK7YxjMM9ywSvYPsC27036UXcS82EqaI-RmrXrjNrsCxUFAMEkf94SeUq4xMMscBX0-_TtK_YVCs-6FkFlli8Tu0_HD6irWpYmE1U3qn_ybzVGKNIJFG5Vi-AZ =492x196)
+![Table that will be used as an example](/assets/images/sql-optimization/multicolumn/multiCol_0.png)
 
-A traditional index on this table would look like this:![](https://lh6.googleusercontent.com/vON61f8_409JipXG8cJrn6c5KFfX-S6C0-m6IKhnbkYoSOVpfA9HTx2xn7SIprXN37J1Zwvfop8sQNEsDMQ-PvvNyQKtj9SwT-faqc94x8E0ajk0c6A5PljQv7Z0KY_aSVWZujK4 =522x364)
+A traditional index on this table would look like this:
+![](/assets/images/sql-optimization/multicolumn/multiCol_1.png)
 
-The index points back to the table and is sorted by year. Adding a second column to the index looks like this:![](https://lh6.googleusercontent.com/oJ5x6pzW9g-fOGx349-TTCEkM9zkn3q2YXfvFP_JoJRKH2X9QBBDbimIG_X5QDFnCp7NUIkWnLdZymzr4qkgM8bjuIGKbgqv88Q_AA0W9egl_TB5QbEyAzml4XIZ9O1G_fOmWosu =624x341)
+The index points back to the table and is sorted by year. Adding a second column to the index looks like this:
+![](/assets/images/sql-optimization/multicolumn/multiCol_2.png)
 
-Now the index has pointers to a secondary reference table that is sorted by make. Adding a third column to the index causes the index to look like this:![](https://lh4.googleusercontent.com/KBrqEK4hJUEMk-5kIfOW-ZYfVttbLOc_ChHjbNiGb9O56_VWJe5ok33LVVIrE96f_7UCe3xR43YCiszDiC8I2pK1DVy9nzd36Ber9H1FvjRJ10LaccXe1giSFzMNazipq5v6BuMh =706x259)
+Now the index has pointers to a secondary reference table that is sorted by make. Adding a third column to the index causes the index to look like this:
+![](/assets/images/sql-optimization/multicolumn/multiCol_3.png)
 
 In a three column index we can see that the main index stores pointers to both the original table and the reference table on make, which in turn has pointers to the reference table on model.
 
@@ -54,27 +58,25 @@ When the multicolumn index is accessed, the main portion of the index (the index
 
 Multicolumn indexes work similarly to traditional indexes. You can see in the gifs below how using a multicolumn index compares to using both a sequential table scan and a traditional index scan for the following query:
 
-\`\`\`sql
-
+```sql
 SELECT * FROM myTable
-
 WHERE year=2017
+AND make='ACURA'
+AND model='TL';
+```
 
-AND make=’ACURA’
-
-AND model=‘TL’;
-
-\`\`\`
-
-### Table Scan![](https://lh3.googleusercontent.com/FXRyMgLY4SNyBXnFQRKkZbsXyChc0XYfGMf7Tf9frG95HXwoR3tVD7HrfxYd8c75pkcxzn3ZXaT68XU7Bir0u94wVKIv0_miYLIJB5pabE1bL81g8UllyAVDbw33XpdMq8_CTcfU =624x168)
+### Table Scan
+![gif of a table scan](/assets/images/sql-optimization/multicolumn/multiCol_4.gif)
 
 * Scans every row for correct entry or entries
 
 ### Traditional Index
+![gif of a traditional index scan](/assets/images/sql-optimization/multicolumn/multiCol_5.gif)
 
 * Can filter out wrong years using the index, but must scan all rows with the proper year.
 
 ### Multicolumn Index
+![gif of a multicolumn index scan](/assets/images/sql-optimization/multicolumn/multiCol_6.gif)
 
 * Can filter by all 3 columns allowing for much fewer steps on large data sets
 
@@ -82,7 +84,8 @@ From these gifs you can see how multicolumn indexes work and how they could be u
 
 ## Performance
 
-Multicolumn indexes are so useful because, when looking at the performance of a normal index versus a multicolumn index, there is little to no difference when sorting by just the first column. For an example look at the following [query plans](https://dataschool.com/sql-optimization/what-is-a-query-plan/):![](https://lh3.googleusercontent.com/b4lhkQtj8QrWVyjDYM_lvRwH1bCXd5e2Caf58wjKJo5DKrakmXyFO-T08GRcn3FjpGxmGUzKfEeuYBl6saGtmG1b2WEP4ZZ93yBlXcOif7LdGykUYThtNwV2b6AjDunsM8a1nThy =439x297)
+Multicolumn indexes are so useful because, when looking at the performance of a normal index versus a multicolumn index, there is little to no difference when sorting by just the first column. For an example look at the following [query plans](https://dataschool.com/sql-optimization/what-is-a-query-plan/):
+![image comparing query plans and run times between traditional and multicolumn index scans on a single filter query](/assets/images/sql-optimization/multicolumn/multiCol_7.png)
 
 These two query plans show that there is little to no difference in the execution time between the standard and multicolumn indexes.
 
@@ -90,31 +93,27 @@ Multicolumn indexes are very useful, however, when filtering by multiple columns
 
 Create standard index:
 
-\`\`\`sql
-
+```sql
 CREATE INDEX standard_index_vehicle_year ON traffic_data(year);
-
-\`\`\`
+```
 
 Create multicolumn index:
 
-\`\`\`sql
-
+```sql
 CREATE INDEX mult_col_idx_vehicle ON traffic_data(year, make, model);
-
-\`\`\`
+```
 
 Query run in Images:
 
-\`\`\`sql
+```sql
 
 EXPLAIN ANALYZE SELECT * FROM traffic_data
 
-WHERE year=’2001’ AND make=’CHEVROLET’ AND model=’TAHOE’;
+WHERE year='2001' AND make='CHEVROLET' AND model='TAHOE';
 
-\`\`\`
+```
 
-![](https://lh3.googleusercontent.com/cD4OdIHGv8JvC5dBLoN1GwWY10OXp_MKPVJlszJx3fBMUe0hT8rqI3goJiTSPdraVwitJLxKrCNkCSnJM4v-kMNeft32kKMGF9Kd-jHLhskQSFX8IPoCPa4fG6Ynv2b7tTY2DsaC =654x553)
+![Comparison between all 3 scans on a query with three filters](/assets/images/sql-optimization/multicolumn/multiCol_8.png)
 
 The table above shows the execution times of each index on the given query. It shows clearly that, in the right situation a multicolumn index can be exactly what is needed.
 
