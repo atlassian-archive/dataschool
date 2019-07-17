@@ -2,7 +2,7 @@
 title: Indexing
 short: How Indexing Works
 section: Column and Table Optimizations
-number: 50
+number: 6
 authors:
 - _people/blake.md
 reviewers:
@@ -11,7 +11,7 @@ reviewers:
 description: Indexing is a critical part of database optimization. Indexing can dramatically
   increase query speed. See how indexes work and learn to build indexes with SQL.
 feedback_doc_url: https://docs.google.com/document/d/1S7AJ4rsaPnio2bK-opfz_fAIMZ214UpdMUYdhwlsQrg/edit?usp=sharing
-image: /assets/images/sql-optimization/how_to_index/Index_pointsTo_table.png
+image: "/assets/images/sql-optimization/how_to_index/Index_pointsTo_table.png"
 img_border_on_default: true
 meta_title: How to use Indexing to Improve Database Queries
 
