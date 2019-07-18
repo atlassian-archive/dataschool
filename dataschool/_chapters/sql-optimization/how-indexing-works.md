@@ -129,9 +129,9 @@ The details of our friends table now look like this:
 
 **Query providing details on the friends table**: \\d friends;
 
-![Using \d to show clustered and non clustered indexes](/assets/images/sql-optimization/how_to_index/IndexesList.png)
+![Using \\d to show clustered and non clustered indexes](/assets/images/sql-optimization/how_to_index/IndexesList.png)
 
-Looking at the above image, the “friends_name_asc” is now an associated index of the “friends” table. That means the [query plan](/how-to-teach-people-sql/what-is-a-query-plan/), the plan that SQL creates when determining the best way to perform a query, will begin to use the index when queries are being made. Notice that “friends_pkey” is listed as an index even though we never declared that as an index. That is the **clustered index** that was referenced earlier in the article that is automatically created based off of the primary key.
+Looking at the above image, the “friends_name_asc” is now an associated index of the “friends” table. That means the [query plan](https://dataschool.com/sql-optimization/what-is-a-query-plan/), the plan that SQL creates when determining the best way to perform a query, will begin to use the index when queries are being made. Notice that “friends_pkey” is listed as an index even though we never declared that as an index. That is the **clustered index** that was referenced earlier in the article that is automatically created based off of the primary key.
 
 We can also see there is a “friends_city_desc” index. That index was created similarly to the names index:
 
@@ -193,7 +193,7 @@ DROP INDEX friends_name_asc;
 
 The outline of the database now looks like:
 
-![Shows that the index was dropped and no longer appears in \d+ friends](/assets/images/sql-optimization/how_to_index/indexesAfterDrop.png)
+![Shows that the index was dropped and no longer appears in \\d+ friends](/assets/images/sql-optimization/how_to_index/indexesAfterDrop.png)
 
 Which shows the successful removal of the index for searching names.
 
