@@ -7,7 +7,7 @@ description: Learn the SELECT SQL statement with your PostgreSQL database in thi
   data.
 number: 20
 section: Basic
-image: assets/images/book-covers/learn-sql.png
+image: /assets/images/book-covers/learn-sql.png
 authors:
 - _people/dave.md
 reviewers:

@@ -51,6 +51,7 @@
           padding: 0;
           a {
             color: $text-color;
+            display: block;
           }
           &.book-section {
             a.dropdown-toggle {

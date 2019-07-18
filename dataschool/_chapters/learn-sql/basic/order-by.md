@@ -12,7 +12,7 @@ authors:
 reviewers:
 - _people/matt.md
 is_featured: false
-image: assets/images/book-covers/learn-sql.png
+image: /assets/images/book-covers/learn-sql.png
 topics:
 - _chapters/dictionary/sql.md
 

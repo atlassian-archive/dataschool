@@ -64,6 +64,9 @@
   background-size: cover;
   border: 1px solid $gray-400;
 }
+.book-index-chapter .chapter-thumbnail-img {
+  height: 6rem;
+}
 .book-list {
   list-style: none;
   li {

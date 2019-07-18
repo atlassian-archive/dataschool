@@ -3,41 +3,48 @@ layout: default
 ---
 
 <p><a href="/books/">Web Books</a></p>
-<h1 class="mega-title">{{ page.title }}</h1>
-
-<p>
-  Written by:
-  {% for author_path in page.authors %}
-    {% assign a = site.people | where: 'path', author_path %}
-    {% assign author = a[0] %}
-    <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
-  {% endfor %}
-  <br>
-  {% if page.reviewers %}
-    Reviewed by:
-    {% for reviewer_path in page.reviewers %}
-      {% assign a = site.people | where: 'path', reviewer_path %}
-      {% assign reviewer = a[0] %}
-      <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
-      {% if forloop.last != true %},{% endif %}
+<div class="mb-5">
+  <h1 class="mega-title">{{ page.title }}</h1>
+  <p>
+    Written by:
+    {% for author_path in page.authors %}
+      {% assign a = site.people | where: 'path', author_path %}
+      {% assign author = a[0] %}
+      <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
     {% endfor %}
-  {% endif %}
-</p>
+    <br>
+    {% if page.reviewers %}
+      Reviewed by:
+      {% for reviewer_path in page.reviewers %}
+        {% assign a = site.people | where: 'path', reviewer_path %}
+        {% assign reviewer = a[0] %}
+        <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
+        {% if forloop.last != true %},{% endif %}
+      {% endfor %}
+    {% endif %}
+  </p>
+  <p>{{ content }}</p>
+</div>
 
-<p>{{ content }}</p>
-
-<h2 class="mb-4">Contents</h2>
 <ul class="d-none">
 {% assign bookchapters = site.chapters | where:'book_slug', page.slug | where:'is_hidden', false | sort: 'number' %}
 {% for chapter in bookchapters %}
   {% if currentsection != chapter.section %}
      {% assign currentsection = chapter.section %}
      </ul>
-     <ul id="{{currentsection}}" class="no-pad-list">
-     {% if currentsection != 'book' %}<h3 class="mb-3 mt-4">{{ currentsection }}</h3>{% endif %}
+     <ul id="{{currentsection}}" class="no-pad-list list-unstyled">
+     {% if currentsection != 'book' %}<h2 class="mt-5 mb-4">{{ currentsection }}</h2>{% endif %}
   {% endif %}
-      <li class="mb-2">
-       <a href="{{ chapter.url }}">{{ chapter.title }}</a> {% if chapter.is_under_construction %}<em>(In progress)</em>{% endif %}
+      <li class="book-index-chapter mb-1">
+        <div class="row">
+          <div class="col-sm-8 chapter-info">
+            <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
+            <p>{{ chapter.description }}</p>
+          </div>
+          <div class="col-sm-4">
+            <a href="{{ chapter.url }}" class="chapter-thumbnail-img" style="background-image: url('{% if chapter.image == page.cover_image %}/assets/images/chapter-img-placeholder.png{% else %} {{chapter.image}} {% endif %}');"></a>
+          </div>
+        </div>
       </li>
 {% endfor %}
 </ul>

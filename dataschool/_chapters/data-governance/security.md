@@ -9,7 +9,7 @@ authors:
 - _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''
-image: assets/images/book-covers/data-governance.png
+image: /assets/images/book-covers/data-governance.png
 is_featured: false
 img_border_on_default: false
 reading_time:

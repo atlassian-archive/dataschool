@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/matt.md
 is_featured: false
-image: "/assets/images/learn-sql/basic/schema-browsing/schema-browsing/"
+image: /assets/images/learn-sql/basic/schema-browsing/schema-browsing.png
 topics:
 - _chapters/dictionary/sql.md
 
