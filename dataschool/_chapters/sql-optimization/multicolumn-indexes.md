@@ -10,12 +10,12 @@ authors:
 reviewers:
 - _people/blake.md
 - _people/matt.md
-feedback_doc_url: https://www.quora.com/How-do-you-export-to-CSV-from-PostgreSQL
-image: ''
+feedback_doc_url: https://docs.google.com/document/d/1VN1sAdJYshvQLdkoEJftrBDMFLKQypB2jEh3Pr6Soow/edit?usp=sharing
+image: /assets/images/sql-optimization/multicolumn/multiCol_2.png
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time: 
+reading_time:
 
 ---
 Multicolumn indexes (also known as composite indexes) are similar to standard indexes. They both store a sorted “table” of pointers to the main table. Multicolumn indexes however can store additional sorted pointers to other columns.
@@ -25,10 +25,8 @@ Standard [indexes](https://dataschool.com/sql-optimization/how-indexing-works/) 
 ## Syntax
 
 ```sql
-
 CREATE INDEX [index name]
 ON [Table name]([column1, column2, column3,...]);
-
 ```
 
 Multicolumn indexes can:
@@ -44,13 +42,13 @@ Multicolumn indexes are indexes that store data on up to 32 columns. When creati
 ![Table that will be used as an example](/assets/images/sql-optimization/multicolumn/multiCol_0.png)
 
 A traditional index on this table would look like this:
-![](/assets/images/sql-optimization/multicolumn/multiCol_1.png)
+![Image of a Traditional Index on the table](/assets/images/sql-optimization/multicolumn/multiCol_1.png)
 
 The index points back to the table and is sorted by year. Adding a second column to the index looks like this:
-![](/assets/images/sql-optimization/multicolumn/multiCol_2.png)
+![Image of a two column index](/assets/images/sql-optimization/multicolumn/multiCol_2.png)
 
 Now the index has pointers to a secondary reference table that is sorted by make. Adding a third column to the index causes the index to look like this:
-![](/assets/images/sql-optimization/multicolumn/multiCol_3.png)
+![Image of a three column index](/assets/images/sql-optimization/multicolumn/multiCol_3.png)
 
 In a three column index we can see that the main index stores pointers to both the original table and the reference table on make, which in turn has pointers to the reference table on model.
 
@@ -106,11 +104,8 @@ CREATE INDEX mult_col_idx_vehicle ON traffic_data(year, make, model);
 Query run in Images:
 
 ```sql
-
 EXPLAIN ANALYZE SELECT * FROM traffic_data
-
 WHERE year='2001' AND make='CHEVROLET' AND model='TAHOE';
-
 ```
 
 ![Comparison between all 3 scans on a query with three filters](/assets/images/sql-optimization/multicolumn/multiCol_8.png)
