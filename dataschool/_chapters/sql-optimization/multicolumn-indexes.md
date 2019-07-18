@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/blake.md
 - _people/matt.md
-feedback_doc_url: https://www.quora.com/How-do-you-export-to-CSV-from-PostgreSQL
+feedback_doc_url: https://docs.google.com/document/d/1VN1sAdJYshvQLdkoEJftrBDMFLKQypB2jEh3Pr6Soow/edit?usp=sharing
 image: /assets/images/sql-optimization/multicolumn/multiCol_2.png
 is_featured: false
 img_border_on_default: false
