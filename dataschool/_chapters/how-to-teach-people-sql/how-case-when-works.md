@@ -189,4 +189,4 @@ FROM Track LIMIT 10;
 
 [https://www.w3schools.com/sql/sql_case.asp](https://www.w3schools.com/sql/sql_case.asp "https://www.w3schools.com/sql/sql_case.asp")
 
-[https://www.postgresql.org/docs/7.4/functions-conditional.html](https://www.postgresql.org/docs/7.4/functions-conditional.html "https://www.postgresql.org/docs/7.4/functions-conditional.html")
+[https://www.postgresql.org/docs/7.4/functions-conditional.html](https://www.postgresql.org/docs/7.4/functions-conditional.html "https://www.postgresql.org/docs/7.4/functions-conditional.html") 
