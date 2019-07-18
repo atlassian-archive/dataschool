@@ -11,7 +11,7 @@ reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKbyR5n24yeJbuuyAmsk/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen1.png
+image: "/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen1.png"
 is_featured: false
 img_border_on_default: true
 
@@ -73,7 +73,7 @@ _Note: you do not have to show all of the columns, or any columns besides the CA
 
 Time to complete a query can be a problem. There is no defined maximum for the number of WHEN conditions you can have within a CASE WHEN statement. CASE WHEN queries can become very slow because the query has to check each condition for every row until it finds a case where it satisfies the condition. This can dramatically increase the query time.
 
-If queries are taking a long time to finish, consider finding ways to optimize your query. More on [optimizing queries from Data School here](/how-to-teach-people-sql/optimize-your-sql-query/).
+If queries are taking a long time to finish, consider finding ways to optimize your query. More on [optimizing queries from Data School here](https://dataschool.com/sql-optimization/optimize-your-sql-query/).
 
 ### Data Types
 
@@ -111,7 +111,7 @@ Remember you can cast any of your values in order to make the data types match. 
 \d "Track"
 ```
 
-![details on the column types using \d "Track"](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen7.png)
+![details on the column types using \\d "Track"](/assets/images/how-to-teach-people-sql/appendix/case_when/caseWhen7.png)
 
 ## **In Depth Example**
 
