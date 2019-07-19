@@ -8,7 +8,7 @@ number: 4
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url: 
+feedback_doc_url:
 image: "/assets/images/data-governance/integrity/integrity_1.png"
 is_featured: false
 img_border_on_default: false
@@ -41,7 +41,7 @@ Data integrity refers to the fact that data must be reliable and accurate over i
 
 Data Integrity is a fundamental component of data governance and it is sometimes used as a proxy term for data quality. The overall intent of any data integrity method is same : to ensure data is recorded exactly as intended. Any changes to data as the result of a storage, retrieval or processing operation, hardware failure or human error is a failure of data integrity.
 
-## Resources
+## References
 
 1. [http://www.itprotoday.com/microsoft-sql-server/sql-design-four-integrities](http://www.itprotoday.com/microsoft-sql-server/sql-design-four-integrities "http://www.itprotoday.com/microsoft-sql-server/sql-design-four-integrities")
 2. [https://docs.oracle.com/cd/B19306_01/server.102/b14220/data_int.htm](https://docs.oracle.com/cd/B19306_01/server.102/b14220/data_int.htm "https://docs.oracle.com/cd/B19306_01/server.102/b14220/data_int.htm")
