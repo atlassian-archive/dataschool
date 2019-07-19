@@ -7,7 +7,7 @@ book_sort_number: 1
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-cover_image: "/assets/images/book-covers/data-governance.png"
+cover_image: "/assets/images/data-governance.png"
 main_color: "#261974"
 is_featured: false
 status: in_progress
