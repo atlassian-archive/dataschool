@@ -87,7 +87,7 @@ The _COPY_ command also requires the user to specify a Table/Query to copy. Unli
 * _COPY_ should be used to create a csv on the server's side.
   * _COPY_ uses an absolute path.
 
-**Resources**
+## References
 
 1. [https://www.postgresql.org/docs/9.2/app-psql.html#APP-PSQL-META-COMMANDS-COPY](https://www.postgresql.org/docs/9.2/app-psql.html#APP-PSQL-META-COMMANDS-COPY "https://www.postgresql.org/docs/9.2/app-psql.html#APP-PSQL-META-COMMANDS-COPY")
 2. [https://www.postgresql.org/docs/9.2/sql-copy.html](https://www.postgresql.org/docs/9.2/sql-copy.html "https://www.postgresql.org/docs/9.2/sql-copy.html")
