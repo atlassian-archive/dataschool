@@ -138,7 +138,7 @@ Once this is done, the 'postgres' database can be accessed by simply typing:
   * Start Server
   * (Optional) Add path so that command line tools are easy to access
 
-## Resources
+## References
 
 1. [https://www.postgresql.org/docs/10/app-initdb.html](https://www.postgresql.org/docs/10/app-initdb.html "https://www.postgresql.org/docs/10/app-initdb.html")
 2. [https://postgresapp.com](https://postgresapp.com "https://postgresapp.com")
