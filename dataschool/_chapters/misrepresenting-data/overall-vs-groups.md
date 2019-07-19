@@ -126,7 +126,6 @@ Since the female mobile group was so disproportionately large it dragged the ave
 
 We can visualize this more clearly by mapping number of people behind a statistic with the size of a circle and increase the saturation of a color to show the increase in the AVG time on page:
 
-  
 ![Simpsons Paradox visually explained with circles and colors](https://gm1.ggpht.com/iFqlO6AFwISRPTEKSkDoGWS6rnbl9_phbe0y6tlL8BkilwzQPYS0_tGotMu5Y27eHJAZLoo29a6QCoHqSgEO0D8tAiK-V5frI7dnfJiy1cvbpPx8oASLKfv5X0UPPK_2ZzzoMgrwtUAk7WhoR2BNTPaPAHSZWNGd-UZI0KMCivxnkRxzbY_mJ1BwjM7CmUY7rsnKahMODbbErmT8faWf6e1m5MqQ2fopQz5qav4hmYdm31uC4eDVIeBRjZum9FhbogPchBIOaGKXVi-bOfvH_iU_Rsa1Jr4MBiMbfsB_C8n25jOLtHCrnrQkiTZXDnXz95cSuhDh1BHnRznVi7KSRDJ1wjr9NounRlOp6jZ_9RP8eikoKwtZWzyune5Mqlecz0xrzC_JL2stSR7Mit9Y3bA5PX7A_m2_sBfMF4zwZTIRYHBTeMswPTIFx0ObFI_dQtCEbn1JCdogpFPlQ2dIemY4NJerydA23n9nQzKZB6wdZlzWQL6NO91Y2o1OzmgoyqaW7Je0t1W2cBNU8CDnvzEJ3csk_W8cds-F4NeCtI5X3l7sZQid6M1eRNThJNtkw3gMqs7tuYq7_v-aayzWB7Ym5qKhCYCLhtoKjoXb5vtfOG_yrNRJmfHX1xbrDdMlD_J_Z1Qd7J8fvg8qKWXulbkeVualP1IpMo6KH9J_eO_73jTuj4tLuk22ChMr7yuK2HQUka38a6BNQHJokxNnJmE2mYwB_b30Jwiu29k=s0-l75-ft-l75-ft "Simpsons Paradox")
 
 This phenomenon is important to consider when comparing groups: you should examine what the total number of observations are behind any statistic. For scenarios like this neither the overall statistic nor grouped statistics are sufficient explanations of the underlying data by themselves. You should present all of this data so that people understand the patterns at play.
