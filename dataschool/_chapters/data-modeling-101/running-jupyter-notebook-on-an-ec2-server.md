@@ -193,7 +193,7 @@ Enter the password you created and you should be greeted with your full Jupyter 
 
 ![Jupyter page once logged in](/assets/images/data-modeling-101/jupyter_article/jupyterLoggedIn.png)
 
-### References:
+## References:
 
 [https://jupyter.org/](https://jupyter.org/ "https://jupyter.org/")
 [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html?icmpid=docs_ec2_console](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html?icmpid=docs_ec2_console "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html?icmpid=docs_ec2_console")
