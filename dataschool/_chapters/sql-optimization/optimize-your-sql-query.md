@@ -60,4 +60,4 @@ When optimizing your database server, you need to tune the performance of indivi
 ## Resources
 
 1. [https://sqlbolt.com/lesson/select_queries_order_of_execution](https://sqlbolt.com/lesson/select_queries_order_of_execution "https://sqlbolt.com/lesson/select_queries_order_of_execution")
-2. [https://www.sisense.com/blog/8-ways-fine-tune-sql-queries-production-databases/](https://sqlbolt.com/lesson/select_queries_order_of_execution "https://sqlbolt.com/lesson/select_queries_order_of_execution")
+2. [https://www.sisense.com/blog/8-ways-fine-tune-sql-queries-production-databases/](https://www.sisense.com/blog/8-ways-fine-tune-sql-queries-production-databases/)
