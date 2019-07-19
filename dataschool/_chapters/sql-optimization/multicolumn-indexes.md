@@ -125,8 +125,8 @@ The table above shows the execution times of each index on the given query. It s
 
 ### References
 
-[http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/](http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/ "http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/")
+[http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/](http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/)
 
-[https://medium.com/pgmustard/multi-column-indexes-4d17bac764c5](http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/ "http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/")
+[https://medium.com/pgmustard/multi-column-indexes-4d17bac764c5](https://medium.com/pgmustard/multi-column-indexes-4d17bac764c5)
 
-[https://www.bennadel.com/blog/3467-the-not-so-dark-art-of-designing-database-indexes-reflections-from-an-average-software-engineer.htm](http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/ "http://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/")
+[https://www.bennadel.com/blog/3467-the-not-so-dark-art-of-designing-database-indexes-reflections-from-an-average-software-engineer.htm](https://www.bennadel.com/blog/3467-the-not-so-dark-art-of-designing-database-indexes-reflections-from-an-average-software-engineer.htm)
