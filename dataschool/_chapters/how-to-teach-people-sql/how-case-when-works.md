@@ -1,6 +1,6 @@
 ---
 section: Advanced
-title: How CASE WHEN works
+title: How CASE WHEN Works
 meta_title: How CASE WHEN works in SQL with animated Gifs
 description: CASE WHEN is a SQL function that works a lot like IF THEN in other programming
   languages. Learn to use CASE WHEN in SQL.
@@ -189,4 +189,4 @@ FROM Track LIMIT 10;
 
 [https://www.w3schools.com/sql/sql_case.asp](https://www.w3schools.com/sql/sql_case.asp "https://www.w3schools.com/sql/sql_case.asp")
 
-[https://www.postgresql.org/docs/7.4/functions-conditional.html](https://www.postgresql.org/docs/7.4/functions-conditional.html "https://www.postgresql.org/docs/7.4/functions-conditional.html") 
+[https://www.postgresql.org/docs/7.4/functions-conditional.html](https://www.postgresql.org/docs/7.4/functions-conditional.html "https://www.postgresql.org/docs/7.4/functions-conditional.html")
