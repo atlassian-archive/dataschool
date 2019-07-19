@@ -82,6 +82,6 @@ Potential uses:
 (any other articles using EC2)
 \-->
 
-References:
+## References:
 
 [https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html "https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html")
