@@ -119,12 +119,12 @@ Snowflake is designed for ease-of-use and easy hands-off optimization. Perhaps t
 
 [https://www.snowflake.com/](https://www.snowflake.com/ "https://www.snowflake.com/")
 
-[https://aptitive.com/blog/what-is-snowflake-and-how-is-it-different/](https://www.snowflake.com/ "https://www.snowflake.com/")
+[https://aptitive.com/blog/what-is-snowflake-and-how-is-it-different/](https://aptitive.com/blog/what-is-snowflake-and-how-is-it-different/)
 
-[https://youtu.be/XpaN-PqSczM](https://www.snowflake.com/ "https://www.snowflake.com/")
+[https://youtu.be/XpaN-PqSczM](https://youtu.be/XpaN-PqSczM)
 
-[https://www.lifewire.com/the-acid-model-1019731](https://www.snowflake.com/ "https://www.snowflake.com/")
+[https://www.lifewire.com/the-acid-model-1019731](https://www.lifewire.com/the-acid-model-1019731)
 
-[https://www.w3schools.in/dbms/database-languages/](https://www.snowflake.com/ "https://www.snowflake.com/")
+[https://www.w3schools.in/dbms/database-languages/](https://www.w3schools.in/dbms/database-languages/)
 
-[https://www.youtube.com/embed/Qzge2Mt84rs?autoplay=1](https://www.snowflake.com/ "https://www.snowflake.com/")
+[https://www.youtube.com/embed/Qzge2Mt84rs?autoplay=1](https://www.youtube.com/embed/Qzge2Mt84rs?autoplay=1)
