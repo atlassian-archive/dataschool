@@ -79,6 +79,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-modeling-101/using-jupyter-notebooks.md
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/sql-optimization/partial-indexes.md
 - dataschool/_chapters/sql-optimization/optimization-using-explain.md
