@@ -37,6 +37,9 @@
   }
 }
 .book-info, .chapter-info {
+  &:hover {
+    text-decoration: none;
+  }
   h2, h3 {
     margin-top: 0.5rem;
     i {
@@ -50,7 +53,10 @@
       }
     }
   }
-  em, p {
+  p {
+    color: $text-color;
+  }
+  em.from-book, p {
     display: block;
     margin-bottom: 0.5rem;
   }

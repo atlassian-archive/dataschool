@@ -13,8 +13,9 @@ layout: default
     <div class="col-sm-8">
       <a href="{{ book.url }}" class="book-info">
         <h2 class="mt-0">{{ book.title }} <i class="fas fa-arrow-right"></i></h2>
+        <p>{{ book.content }}{% if book.status == "in_progress" %}<p>(In progress)</p>{% endif %}</p>
       </a>
-      {{ book.content }}
+
     </div>
     <div class="col-sm-4 book-cover">
       <a href="{{ book.url }}" class="hover-link">

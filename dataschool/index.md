@@ -44,7 +44,7 @@ description: A community driven school to help people create data driven organiz
         <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
         {% assign book = site.books | where:'slug', chapter.book_slug %}
         {% assign book = book[0] %}
-        <em>From <a href="{{ book.url }}">{{ book.title }}</a></em>
+        <em class="from-book">From <a href="{{ book.url }}">{{ book.title }}</a></em>
         <p>{{ chapter.description }}</p>
       </div>
       <div class="col-sm-4">

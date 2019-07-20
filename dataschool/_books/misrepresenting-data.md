@@ -8,6 +8,7 @@ authors: _people/matt.md
 cover_image: "/assets/images/book-covers/misrepresenting-data.png"
 main_color: ''
 reviewers: _people/blake.md
+status: in_progress
 
 ---
 There is so much data you have access to within a company. Communicating accurate insights from it is challenging. This book covers the mental biases and common mistakes that people make when analyzing data. It then provides guidance on how to prevent and avoid these costly errors.
