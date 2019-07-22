@@ -10,12 +10,12 @@ authors:
 reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
-feedback_doc_url: https://docs.google.com/document/d/1CzDVFgPT8CtoFbkt5H58WVRykmCkZO30Uav38IHQVqY/edit
-image: /assets/images/data-modeling-101/use_jupyter_NB/useJupyterNB_0.png
+feedback_doc_url: https://docs.google.com/document/d/1CzDVFgPT8CtoFbkt5H58WVRykmCkZO30Uav38IHQVqY/edit?usp=sharing
+image: "/assets/images/data-modeling-101/use_jupyter_NB/useJupyterNB_0.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time:
+reading_time: 
 
 ---
 Now that you have learned [how to install Jupyter notebooks on an EC2 server](http://dataschool.com/data-modeling-101/running-jupyter-notebook-on-an-ec2-server), it is time to learn how to use Jupyter notebooks. Jupyter Notebook provides a portable development environment for easy collaboration and sharing of coding projects. Running your notebook on a server allows you to run queries from any computer that has access to your server.
@@ -72,7 +72,7 @@ The basic steps of performing a data analytics project in python are:
 3. Use `numpy` to create a readable array.
 4. Use `numpy` again to perform an aggregation of that array.
 
-A full [list of `numpy` functions can be found here](https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html).
+A full [list of ](https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html)`[numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html)`[ functions can be found here](https://jakevdp.github.io/PythonDataScienceHandbook/02.04-computation-on-arrays-aggregates.html).
 
 ### Following Along
 
@@ -97,17 +97,13 @@ You can then use the `read_csv()` method from `pandas`to read in a `.csv` file. 
 You can then use `numpy` to read from the file and creates an instance of a Python datatype, `ndarray`, from one of the columns. In this case we are selecting the price column from the shop.csv. To do that, use the method `array` and pass the column you want to perform aggregations on as the parameter of the method.
 
 ```code
-
 avgPrices = np.mean(prices);
-
 ```
 
 You can then use the `mean` method from `numpy` to find the mean of all of the data in the ‘Prices’ column of the table. This value is then saved to the `avgPrices` variable.
 
 ```code
-
 print(avgPrices);
-
 ```
 
 The value of `avgPrices` is then printed to the console with the `print` command.
