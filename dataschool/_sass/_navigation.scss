@@ -129,17 +129,38 @@
 .sidebar {
   left: -250px;
 }
+.content > .container {
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 30rem) {
+  .content > .container {
+    margin-top: 2rem;
+  }
+}
 .content {
   left: 0;
   width: 100vw;
+  .content-wrapper {
+    border: 6px solid $white;
+  }
+  &.community-story-content {
+    .content-wrapper {
+      border: 0.25rem solid $primary-light;
+    }
+  }
+  &.under-construction-content {
+    .content-wrapper {
+      border: 0.25rem solid $secondary-light;
+    }
+  }
 }
 #sidebar-collapse {
   position: fixed;
-  top: 0.25rem;
+  top: 0.5rem;
   left: 0;
   z-index: 100;
   background: none;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 0.75em 0.5em 1em;
   background: $gray-300;
   border-radius: 0 0.25rem 0.25rem 0;
   opacity: 0.6;

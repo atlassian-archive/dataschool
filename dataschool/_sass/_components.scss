@@ -171,6 +171,14 @@
     margin-left: 1rem;
   }
 }
+.story-author-blurb {
+  display: flex;
+  img.contributor-headshot {
+    width: 8rem;
+    height: 100%;
+    margin: 0 1rem 0 0;
+  }
+}
 
 .book-title {
   margin-bottom: 5rem;
@@ -195,6 +203,18 @@ a.header-link {
 .under-construction-blurb {
   background: $secondary-light;
   margin: 0 -1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  h2 {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+.chapter-story-intro-blurb {
+  background: $primary-light;
+  margin: 0 -1rem 2rem;
   padding: 1rem;
   border-radius: 0.25rem;
   h2 {
@@ -279,7 +299,7 @@ form.hs-form {
 
 .social-btn-group {
   position: fixed;
-  top: 0.25rem;
+  top: 0.5rem;
   right: 0.5rem;
   display: flex;
   flex-direction: column;

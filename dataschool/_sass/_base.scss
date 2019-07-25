@@ -146,13 +146,13 @@ section.page {
   max-width: 28rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
-@media only screen and (min-width: 30rem) {
-  section.page {
-    margin-top: 4rem;
-  }
-}
+// @media only screen and (min-width: 30rem) {
+//   section.page {
+//     margin-top: 4rem;
+//   }
+// }
 article, .home-hero {
   font-size: 1.2em;
 }
@@ -167,7 +167,18 @@ article {
     padding-left: 1rem;
   }
 }
-// END TYPOGRAPHY
+
+a {
+  text-decoration: underline;
+}
+a.btn {
+  text-decoration: none;
+}
+nav.sidebar, .chapter-info, ul.contributors-list {
+  a {
+    text-decoration: none;
+  }
+}
 
 .btn {
   font-weight: 600;

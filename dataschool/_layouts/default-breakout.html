@@ -6,7 +6,7 @@ layout: base
   {% include navigation.html %}
   <!-- End Nav Sidebar -->
   <!-- Page Content -->
-  <div class="content">
+  <div class="content{% if page.is_community_story %} community-story-content{% endif %}{% if page.is_under_construction %} under-construction-content{% endif %}">
     <button type="button" id="sidebar-collapse" class="btn">
       <span class="navbar-toggler-icon">
         <i class="fas fa-bars"></i>
@@ -18,6 +18,8 @@ layout: base
       <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <!-- <a href="#"><i class="fas fa-print"></i></a> -->
     </div>
-    {{ content }}
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
   </div>
 </div>

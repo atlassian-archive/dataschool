@@ -14,6 +14,9 @@ layout: default
   {% if page.is_under_construction %}
     {% include chapter-under-construction-blurb.html %}
   {% endif %}
+  {% if page.is_community_story %}
+    {% include chapter-story-intro-blurb.html %}
+  {% endif %}
   {{ content }}
   <p class="mt-4 mb-5">
     Written by:
@@ -26,8 +29,8 @@ layout: default
     {% if page.reviewers %}
       Reviewed by:
       {% for reviewer_path in page.reviewers %}
-        {% assign a = site.people | where: 'path', reviewer_path %}
-        {% assign reviewer = a[0] %}
+        {% assign r = site.people | where: 'path', reviewer_path %}
+        {% assign reviewer = r[0] %}
         <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
         {% if forloop.last != true %},{% endif %}
       {% endfor %}

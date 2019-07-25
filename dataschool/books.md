@@ -10,10 +10,10 @@ layout: default
 {% assign books = site.books | sort: 'book_sort_number' %}
 {% for book in books %}
   {% if book.published != 'false' %}<div class="row mb-5">
-    <div class="col-sm-8">
-      <a href="{{ book.url }}" class="book-info">
+    <div class="col-sm-8 chapter-info">
+      <a href="{{ book.url }}">
         <h2 class="mt-0">{{ book.title }} <i class="fas fa-arrow-right"></i></h2>
-        <p>{{ book.content }}{% if book.status == "in_progress" %}<p>(In progress)</p>{% endif %}</p>
+        <p>{{ book.content }}{% if book.status == "in_progress" %}<em>(In progress)</em>{% endif %}</p>
       </a>
 
     </div>

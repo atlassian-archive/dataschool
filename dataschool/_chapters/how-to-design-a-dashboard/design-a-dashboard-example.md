@@ -1,6 +1,6 @@
 ---
 section: book
-title: Design a Dashboard example
+title: Design a Dashboard Example
 meta_title: Designing a Dashboard example
 description: Example of how applying design thinking improves dashboard design
 number: 160
@@ -11,6 +11,8 @@ reviewers:
 feedback_doc_url: https://docs.google.com/document/d/1nidfueJfQutx96f0A_oXVsRwb9nuKa5qQ18REVA22TQ/edit?usp=sharing
 image: "/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/wholeDashboard.png"
 is_featured: false
+is_community_story: true
+story_intro_blurb: "I wrote this to illustrate how having a few simple metrics helps people make the transition from physical to the digital world."
 img_border_on_default: true
 
 ---
