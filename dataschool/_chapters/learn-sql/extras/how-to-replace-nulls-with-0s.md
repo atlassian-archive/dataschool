@@ -1,31 +1,26 @@
 ---
-section: book
+section: Extras
 title: How to Replace Nulls with 0s
 meta_title: How to Use Update to Clean Nulls in Data
 description: This article talks about how to use the UPDATE statement to clean data.
-number: 
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/11TBqvGWfMYDVjak_DDfyGRrd7Y5cpUzR6ICxlC5EVNc/edit?usp=sharing
-image: ''
+image: assets/images/book-covers/learn-sql.png
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time: 
-published: false
+reading_time:
 
 ---
-\`\`\`sql
-
-UPDATE \[table\]
-
-SET \[column\]=0
-
-WHERE \[column\] IS NULL;
-
-\`\`\`
+```sql
+UPDATE [table]
+SET [column]=0
+WHERE [column] IS NULL;
+```
 
 This query is a simple Data Modification Language (DML) query which will search a column for nulls and replace them with 0s.
 
@@ -41,37 +36,28 @@ Update can be used for a lot of different problems. For example:
 
 To add 1 to every value in a column you can run:
 
-\`\`\`sql
-
-UPDATE \[table\]
-
-SET \[column\]=\[column\]+1;
-
-\`\`\`
+```sql
+UPDATE [table]
+SET [column]=[column]+1;
+```
 
 Takes the values in a column and adds 1 to them.
 
-To set every value to a random integer on the interval \[1,10\]:
+To set every value to a random integer on the interval \[1,10]:
 
-\`\`\`sql
+```sql
+UPDATE [table]
+SET [column]=1+random()*9::int;
+```
 
-UPDATE \[table\]
-
-SET \[column\]=1+random()*9::int;
-
-\`\`\`
-
-Generates a random double precision (float8) type number from \[0,1), multiplies it by 9, and adds 1 to that value and casts it to an integer type for each row.
+Generates a random double precision (float8) type number from [0,1), multiplies it by 9, and adds 1 to that value and casts it to an integer type for each row.
 
 To set values to 0 for even 1 for odd:
 
-\`\`\`sql
-
-UPDATE \[table\]
-
-SET \[column\]=MOD(\[column\],2);
-
-\`\`\`
+```sql
+UPDATE [table]
+SET [column]=MOD([column],2);
+```
 
 Uses MOD to set the column values to the remainder of the column values divided by 2.
 
