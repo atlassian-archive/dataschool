@@ -33,7 +33,7 @@ Viewers belief in the Accuracy of the dashboard can be affected in multiple ways
 
 #### Is the data being displayed correct?
 
-The answer to this question should always be yes. If for some reason the answer is no immediately flag the dashboard as needing to be fixed so people do not use incorrect information for their decisions. Viewers will assume any dashboard they come across to be accurate unless properly flagged otherwise. Use bracketed language [BROKEN\] or perhaps emoji’s to make the status of the dashboard clear.
+The answer to this question should always be yes. If for some reason the answer is no immediately flag the dashboard as needing to be fixed so people do not use incorrect information for their decisions. Viewers will assume any dashboard they come across to be accurate unless properly flagged otherwise. Use bracketed language \[BROKEN\] or perhaps emoji’s to make the status of the dashboard clear.
 
 ![Use of emojis and bracketed language to make message clear](/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cab72d78a07165da8e775e9_Screen Shot 2019-04-08 at 8.59.39 AM.png)‍
 
