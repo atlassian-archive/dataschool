@@ -61,7 +61,7 @@ SET [column]=MOD([column],2);
 
 Uses MOD to set the column values to the remainder of the column values divided by 2.
 
-## Conclusion:
+## Summary
 
 * To replace Nulls with 0s use the UPDATE command.
 * Can use filters to only edit certain rows within a column
