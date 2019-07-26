@@ -1,10 +1,10 @@
 ---
-section: book
+section: Extras
 title: Increase Ecommerce Sales with Metrics
 meta_title: How to use Multiple Metrics to increase Ecommerce Sales
 description: 'Learn why using a single metric prevents you from being able to increase
   ecommerce sales. See how to use multiple metrics to get more sales. '
-number: 
+number: 20
 authors:
 - _people/allen-hillery.md
 reviewers:
