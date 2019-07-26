@@ -13,7 +13,6 @@ is_featured: false
 img_border_on_default: false
 is_under_construction: true
 reading_time: 
-published: false
 
 ---
 ## Data Warehouse Data Stack In Progress Overview
