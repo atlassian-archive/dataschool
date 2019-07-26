@@ -10,12 +10,14 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: ''
+image: '/assets/images/Frame-1.png'
 is_featured: false
-img_border_on_default: false
 is_under_construction: false
 reading_time: 6
-published: false
+published: true
+is_community_story: true
+story_intro_blurb: "I chose this story because I've encountered many examples where some metrics stayed because they have always been used, they are reported up to the &quot;street&quot; and as business changes they might not tell the whole story. A change in business may some time mean a change in how performance is measured."
+img_border_on_default: true
 
 ---
 ## The problem with a single metric
@@ -50,13 +52,13 @@ When I regrouped with my client, I used brick and mortar analogies to walk him t
 
 **Visits**
 
-  
+
 I explained that marketing uses this metric to measure how many customers they are bringing to the “store”. This equates to 6M visits on average per month coming to the e-commerce site’s homepage.  
 ![](/assets/images/Visits.png)
 
 **Unique Visitors**
 
-  
+
 While the site has 6M visits a month only 2M represent unique visitors. We have 2M individual customers on average per month coming to the e-commerce homepage. So a customer can make multiple visits but they are one customer coming to the “store”. When we divide visits by unique visitors, we get 6/2 = 3 visits/unique visitors on average per month. So the average online customer is making 3 visits to the site per month.
 
 ![](/assets/images/Unique Visitors.png)
