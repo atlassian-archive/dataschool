@@ -8,7 +8,7 @@ is_contributor: true
 job_title: Senior Data Advisor
 company: Chartio
 linkedin: https://www.linkedin.com/in/timothy-j-miller-04404799/
-twitter: ''
+twitter: https://twitter.com/timmiller716
 website: 
 
 ---
