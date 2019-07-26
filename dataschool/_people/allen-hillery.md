@@ -8,7 +8,7 @@ is_contributor: true
 job_title: Adjunct Professor
 company: Columbia University
 linkedin: https://www.linkedin.com/in/allenhillery/
-twitter: "@AlDataVizGuy"
+twitter: https://twitter.com/AlDatavizguy
 website: https://medium.com/@alglobehopper
 
 ---
