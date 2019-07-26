@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains person.path" | sort: 'last_modified' %}
+{% assign reviewed_chapters = site.chapters | where_exp:'item', "item.reviewers contains page.path" | sort: 'last_modified' %}
 {% if reviewed_chapters %}
   <h2 class="mt-5">Reviewer of {{ reviewed_chapters | size }} chapters</h2>
   {% for chapter in reviewed_chapters %}
