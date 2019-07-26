@@ -1,8 +1,8 @@
 ---
-section: book
-title: Export to CSV from PSQL
-meta_title: Export to CSV from PSQL
-description: This article discusses how to export data from psql to a csv file
+section: Extras
+title: Export to CSV with \copy
+meta_title: Export to CSV from PSQL using \copy
+description: This article discusses how to export data from psql to a csv file using COPY and \copy
 number:
 authors:
 - _people/matthew-layne.md
@@ -13,7 +13,6 @@ feedback_doc_url: https://docs.google.com/document/d/17cO2KNHGF5Tnaxg5LPnl6HSEcw
 image: /assets/images/book-covers/learn-sql.png
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 ## **The Commands:**
