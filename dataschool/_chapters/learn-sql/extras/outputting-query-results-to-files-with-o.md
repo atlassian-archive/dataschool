@@ -17,7 +17,8 @@ is_under_construction: false
 reading_time:
 
 ---
-```sql
+
+```code
 \o [filename].txt
 [Query or Queries to write to file];
 \o
