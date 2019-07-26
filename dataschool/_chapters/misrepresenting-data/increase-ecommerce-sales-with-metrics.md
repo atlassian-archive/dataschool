@@ -9,14 +9,16 @@ authors:
 - _people/allen-hillery.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: ''
-image: '/assets/images/Frame-1.png'
+feedback_doc_url: https://docs.google.com/document/d/18oO7ujw8tU8V6D6uh-U4nRZ5Hyz77h50y21BUoY0O-E/edit?usp=sharing
+image: "/assets/images/Frame-1.png"
 is_featured: false
 is_under_construction: false
 reading_time: 6
-published: true
 is_community_story: true
-story_intro_blurb: "I chose this story because I've encountered many examples where some metrics stayed because they have always been used, they are reported up to the &quot;street&quot; and as business changes they might not tell the whole story. A change in business may some time mean a change in how performance is measured."
+story_intro_blurb: I chose this story because I've encountered many examples where
+  some metrics stayed because they have always been used, they are reported up to
+  the &quot;street&quot; and as business changes they might not tell the whole story.
+  A change in business may some time mean a change in how performance is measured.
 img_border_on_default: true
 
 ---
