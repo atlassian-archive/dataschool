@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/11TBqvGWfMYDVjak_DDfyGRrd7Y5cpUzR6ICxlC5EVNc/edit?usp=sharing
-image: assets/images/book-covers/learn-sql.png
+image: /assets/images/book-covers/learn-sql.png
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
