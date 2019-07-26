@@ -4,6 +4,29 @@ layout: default-breakout
 <div class="container">
   <section class="page">
     {{ content }}
+    <div class="row mt-5">
+      <div class="col">
+        <ul class="list-unstyled mb-0">
+          <li><a href="/">Home</a></li>
+          <li><a href="/books/">Web Books</a></li>
+          <li><a href="/people/">Contributors</a></li>
+          <li><a href="/mission/">Mission</a></li>
+          <li><a href="/contribute/">Contribute</a></li>
+          <li><a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY" target="_blank">Slack Community</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <span>Our Web Books</span>
+        {% assign books = site.books | sort: 'book_sort_number' %}
+        <ul class="list-unstyled mb-0">
+        {% for book in books %}
+          {% if book.published != 'false' %}
+              <li><a href="{{ book.url }}">{{ book.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
   </section>
 </div>
 <div class="footer">

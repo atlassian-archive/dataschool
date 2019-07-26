@@ -320,7 +320,16 @@ form.hs-form {
     }
   }
 }
-
+.chapter-followup .centered, .homepage-signup .centered {
+    background: $gray-200;
+    padding: 1rem 1rem 0;
+    p.faux-header, h2 {
+      margin: 0.5rem 0;
+    }
+}
+.chapter-followup .centered {
+  margin: 0 -1rem 2rem;
+}
 .footer-links {
   margin-bottom: 2rem;
   h4 {

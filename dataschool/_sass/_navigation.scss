@@ -19,9 +19,9 @@
         padding: 0 0.5rem;
         display: block;
         text-align: center;
-        opacity: 0.85;
+        opacity: 1;
         &:hover {
-          opacity: 1;
+          opacity: 0.85;
         }
       }
       ul.components.main-nav > li, ul.components li.book-section > ul > li {
