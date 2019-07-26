@@ -71,7 +71,7 @@ Running this query will look like:![Running the final query](/assets/images/lear
 
 The message COPY 31 indicates that 31 rows were successfully copied from the CSV file to the specified table.
 
-## Summary:
+## Summary
 
 * Make a table to store the data
 * Determine what delimiter was used

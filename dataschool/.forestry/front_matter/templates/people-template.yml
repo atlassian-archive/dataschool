@@ -33,5 +33,6 @@ fields:
   name: website
   label: website
 pages:
+- dataschool/_people/allen-hillery.md
 - dataschool/_people/ben-jones.md
 - dataschool/_people/mike-yi.md

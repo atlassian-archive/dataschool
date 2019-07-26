@@ -12,7 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/1nidfueJfQutx96f0A_oXVsRwb9
 image: "/assets/images/how-to-design-a-dashboard/design_a_dashboard_example/wholeDashboard.png"
 is_featured: false
 is_community_story: true
-story_intro_blurb: "I wrote this to illustrate how having a few simple metrics helps people make the transition from physical to the digital world."
+story_intro_blurb: "I wrote this to how iteration can drastically improve the usefulness of a dashboard. It helped us figure out how much we didn't need and what was really important"
 img_border_on_default: true
 
 ---

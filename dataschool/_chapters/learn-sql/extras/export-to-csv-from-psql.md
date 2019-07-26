@@ -1,8 +1,8 @@
 ---
-section: book
-title: Export to CSV from PSQL
-meta_title: Export to CSV from PSQL
-description: This article discusses how to export data from psql to a csv file
+section: Extras
+title: Export to CSV with \copy
+meta_title: Export to CSV from PSQL using \copy
+description: This article discusses how to export data from psql to a csv file using COPY and \copy
 number:
 authors:
 - _people/matthew-layne.md
@@ -13,7 +13,6 @@ feedback_doc_url: https://docs.google.com/document/d/17cO2KNHGF5Tnaxg5LPnl6HSEcw
 image: /assets/images/book-covers/learn-sql.png
 is_featured: false
 img_border_on_default: false
-published: false
 
 ---
 ## **The Commands:**
@@ -21,11 +20,11 @@ published: false
 In order to export a table or query to csv use one of the following commands:
 
 For Client-Side Export:
-```sql
+```code
 \copy [Table/Query] to '[Relative Path/filename.csv]' csv header;
 ```
 For Server-Side Export:
-```sql
+```code
 COPY [Table/Query] to '[Absolute Path/filename.csv]' csv header;
 ```
 Example Absolute Path: '/Users/matt/Desktop/filename.csv'
@@ -50,7 +49,7 @@ The second command, _COPY_, generates a CSV file on the server where the databas
 ### **The _\\copy_ command**
 
 The _\\copy_ meta-command is used for exporting to a client computer. It is useful for copying a database that may have somewhat restricted access and for creating a personal copy of the data. For example, a user may want to generate a csv so that they can analyse financial data in excel. The format of a _\\copy_ to csv is as follows:
-```sql
+```code
 \copy [Table/Query] to [Relative Path] csv header;
 ```
 The \[Table/Query\] section can be filled with a table or query. For example to copy all entries from a table, the table name can be put here. To copy all entries that contain “saw” in their names from the table of tools to a csv, the following commands could be run:![using \copy with a subquery to select entries that have 'saw' in them](/assets/images/learn-sql/extras/export/export_0.png)
