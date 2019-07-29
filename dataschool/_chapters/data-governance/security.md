@@ -1,18 +1,21 @@
 ---
-section: book
+section: Five Pillars of Data Governance
 title: Security
 meta_title: Security of Data in Organizations
 description: Data Governance helps secure the data your organization has access to.
   Learn the best practices to securely manage data..
-number: 5
+number: 25
 authors:
 - _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''
-image: /assets/images/book-covers/data-governance.png
+image: "/assets/images/book-covers/data-governance.png"
 is_featured: false
 img_border_on_default: false
-reading_time:
+reading_time: 
+is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
 
 ---
 ## **What is data security?**

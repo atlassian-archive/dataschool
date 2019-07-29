@@ -1,14 +1,14 @@
 ---
-section: book
+section: Five Pillars of Data Governance
 title: Integrity
 meta_title: How to Maintain Data Integrity
 description: Data profiling, standardization, enrichment, and constant monitoring
   is required.
-number: 4
+number: 24
 authors:
 - _people/rohan-joseph.md
 reviewers: []
-feedback_doc_url:
+feedback_doc_url: 
 image: "/assets/images/data-governance/integrity/integrity_1.png"
 is_featured: false
 img_border_on_default: false
