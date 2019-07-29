@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
