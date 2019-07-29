@@ -111,7 +111,7 @@ In addition, if you want to maintain access to old/unused data sources you can l
 
 Enforcing naming conventions and style guides helps people analyze data consistently because it clarifies what every column is and how it can be used. Here are some conventions we at Chartio follow:
 
-![](https://lh3.googleusercontent.com/OlyW2N-5NJP9CWy1mpMMsnwizRDFECE-jhYVcjLfODb8ZrcuCzmEmaj6uDSUirMfIV2fuzJCQ0s3MUGWoNOJxzj34wWURbajOnGMajUmwv2N1MI3X6ESn8sde2TCfEdEeyPv5Uph =654x374)
+![](https://lh3.googleusercontent.com/OlyW2N-5NJP9CWy1mpMMsnwizRDFECE-jhYVcjLfODb8ZrcuCzmEmaj6uDSUirMfIV2fuzJCQ0s3MUGWoNOJxzj34wWURbajOnGMajUmwv2N1MI3X6ESn8sde2TCfEdEeyPv5Uph)
 
 Publish this style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
 
