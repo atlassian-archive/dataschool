@@ -46,7 +46,7 @@ Permission issues happen because access is restricted at the source level and in
 
 Access is typically defined at the data source level. You work on the sales team, you have access to all the salesforce data. While this makes sense at first pass, it does not account for any cross-departmental analysis to be done or if there is sensitive data in there and some of it should be restricted. Access restrictions can be at many different points in the data stack. Each data source might have its own permission gate.
 
-![](https://lh5.googleusercontent.com/jXUEP9KLfNQaeKGzIDYHmkoZE6qniEdKHoLi_DzgELr0ys86iSW3CcTVjVyXZxzzvJRxXkdtyEe0jTwEnplt2w75Me8_Tkc03DrZixE47JCM2uH5yG6SGvmdMoSeJOS5dgOxfXrG =340x338)
+![](https://lh5.googleusercontent.com/jXUEP9KLfNQaeKGzIDYHmkoZE6qniEdKHoLi_DzgELr0ys86iSW3CcTVjVyXZxzzvJRxXkdtyEe0jTwEnplt2w75Me8_Tkc03DrZixE47JCM2uH5yG6SGvmdMoSeJOS5dgOxfXrG)
 
 Restricting analytical teams to specific tables and structuring your data in that way will help smooth out the permission process because there will fewer elements in the data source that need to be cleaned and maintained on a regular base.
 
@@ -60,7 +60,7 @@ The goal is to ensure that everyone in your company has access to the data they 
 
 Permission issues are solved by moving to a SSoT because it provides a single point to grant or remove access.
 
-![](https://lh6.googleusercontent.com/xk3A0_MBgUbcDItmVDR_-pgv3kFtn3tmQqSDB2hSwv396qKggnOWHtpL4h_Jm_8BoIRG11VT08zAYNWM5SwTiSBJZOPxJFE4_tQbduf_2Ol2k1oAsWaCfG6EXOyUxLHU-qPzSDD1 =484x345)
+![](https://lh6.googleusercontent.com/xk3A0_MBgUbcDItmVDR_-pgv3kFtn3tmQqSDB2hSwv396qKggnOWHtpL4h_Jm_8BoIRG11VT08zAYNWM5SwTiSBJZOPxJFE4_tQbduf_2Ol2k1oAsWaCfG6EXOyUxLHU-qPzSDD1)
 
 What we mean here, is that you can remove almost all of the user accounts for the various data sources, cloud or otherwise, that your organization has signed up for. You will likely still be using those data sources, but will only need a few admin accounts in order to access the data for the ETL/ELT process to get them off of the cloud and into the Data Lake. At that point, you can begin the process of getting the data into the Data Warehouse that you are designing to best fit your org's data analysis needs.
 
@@ -101,11 +101,11 @@ Creating a single source of truth removes peoples access from outdated sources s
 
 When your company has used multiple tools to track the same type of data, if you can, migrate the data from the previous tools into the latest tool. If this is not an option use the data warehouse create a table which unions the data from both sources so that the historical record is not lost and to have one place to go to for the relevant metrics. This will require some renaming and cleaning to accomplish.
 
-![](https://lh3.googleusercontent.com/2lYcpPybNxRonNK47QTjqBJwhyvzUpkTbmE44W6rAzL3CAi0Mu8Ju7NFyf7t9DC95WWQnsHGtvtSbTsDpCXlI_WdUV9W6SzEo4kkE5vXJQ5DaSCs6JkSAHY1-Jli0OJt9BpXBHN1 =502x406)
+![](https://lh3.googleusercontent.com/2lYcpPybNxRonNK47QTjqBJwhyvzUpkTbmE44W6rAzL3CAi0Mu8Ju7NFyf7t9DC95WWQnsHGtvtSbTsDpCXlI_WdUV9W6SzEo4kkE5vXJQ5DaSCs6JkSAHY1-Jli0OJt9BpXBHN1)
 
 In addition, if you want to maintain access to old/unused data sources you can label data sources as deprecated or approved to help guide people during their analysis.
 
-![](https://lh4.googleusercontent.com/QDYMYdwpgJ4ZeBGGER3xvoheuRcVTspcnTcXydpoKikOaxp_40Hths0ogD2QYgMc8f0sRB3fWoDj_4ZEPvSx8CKyt1NssmIUfSqsSoT1srGVUBaKU8ZTawhwUPnXvHnzDsQ1Xs-j =624x340)
+![](https://lh4.googleusercontent.com/QDYMYdwpgJ4ZeBGGER3xvoheuRcVTspcnTcXydpoKikOaxp_40Hths0ogD2QYgMc8f0sRB3fWoDj_4ZEPvSx8CKyt1NssmIUfSqsSoT1srGVUBaKU8ZTawhwUPnXvHnzDsQ1Xs-j)
 
 #### Naming convention and style guide
 
@@ -119,7 +119,7 @@ Publish this style guide and distribute it among all of your employees, adoption
 
 To define the calculation of a metric create a Dashboard with this metric in it and provide text on the dashboard to explain how it was calculated and what has been filtered out. Make this easily searchable!
 
-![](https://lh6.googleusercontent.com/bN2vx477c1-Chuk09AmPpVdM4f4ddSH_T8oeLamBGj2R3Lv2UzT88-GLZjEdrC8xpkXLkbmQgznFPXh2RLrV3zOIDJzd-hfSzzAjIzURy6YvFmjcmwgong3-ZFjGGY4Mbf-Cjio3 =624x375)
+![](https://lh6.googleusercontent.com/bN2vx477c1-Chuk09AmPpVdM4f4ddSH_T8oeLamBGj2R3Lv2UzT88-GLZjEdrC8xpkXLkbmQgznFPXh2RLrV3zOIDJzd-hfSzzAjIzURy6YvFmjcmwgong3-ZFjGGY4Mbf-Cjio3)
 
 Another approach is to create the metric inside the Single Source of Truth database. We recommend doing this through SQL based modeling using a tool such as dbt or Dataform. Defining the metric in the database will remove most, if not all, of the confusion.
 
