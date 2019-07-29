@@ -4,7 +4,7 @@ title: Data Warehouse Single Source of Truth
 meta_title: Data Warehouse Single Source of Truth
 description: Learn why you should build a Single Source of Truth in your Data Warehouse.
   Overcome common obstacles and empower your colleagues
-number: 
+number: 2
 authors:
 - _people/tim.md
 reviewers:
