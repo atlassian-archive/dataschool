@@ -13,7 +13,7 @@ is_featured: false
 status: released
 topics:
 - _chapters/dictionary/sql.md
-meta_title: Learn How to Teach People SQL
+meta_title: 'How to Teach People SQL: Gifs and Visuals for SQL'
 
 ---
 So you want your company to learn SQL?
