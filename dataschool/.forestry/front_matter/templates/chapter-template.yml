@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/misrepresenting-data/metric-vs-metrics.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
@@ -101,7 +102,6 @@ pages:
 - dataschool/_chapters/sql-optimization/optimization-using-explain.md
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md
 - dataschool/_chapters/data-modeling-101/running-jupyter-notebook-on-an-ec2-server.md
-- dataschool/_chapters/misrepresenting-data/metric-vs-metrics.md
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
 - dataschool/_chapters/sql-optimization/bigquery-optimization.md
 - dataschool/_chapters/misrepresenting-data/trends.md

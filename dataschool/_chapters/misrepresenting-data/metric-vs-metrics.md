@@ -8,11 +8,13 @@ number: 6
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1JszhGxLjjc07yT3a1bCA8ci1fp8xScC-2BF1kvoFHLM/edit?usp=sharing
-image: /assets/images/book-covers/misrepresenting-data.png
+image: "/assets/images/book-covers/misrepresenting-data.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
-reading_time:
+reading_time: 
+is_community_story: false
+story_intro_blurb: ''
 
 ---
 ## Metric vs Metrics In Progress Overview
@@ -34,3 +36,5 @@ We want to show how single metrics can be misleading for a business. Do they rea
 #### Interpret multiple metrics
 
 * Analyze a dashboard containing multiple metrics for a nuanced view of the data
+
+Check out our community story about using multiple metrics: [https://dataschool.com/misrepresenting-data/increase-ecommerce-sales-with-metrics/](https://dataschool.com/misrepresenting-data/increase-ecommerce-sales-with-metrics/ "https://dataschool.com/misrepresenting-data/increase-ecommerce-sales-with-metrics/")
