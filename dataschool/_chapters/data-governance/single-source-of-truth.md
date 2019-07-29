@@ -99,18 +99,19 @@ When your company has used multiple tools to track the same type of data, if you
 ![Using multiple tools in conjunction](/assets/images/data-governance/singleSource/singleSource_2.png)
 In addition, if you want to maintain access to old/unused data sources you can label data sources as deprecated or approved to help guide people during their analysis.
 ![Deprecated data source](/assets/images/data-governance/singleSource/singleSource_3.png)
+
 #### Naming convention and style guide
 
 Enforcing naming conventions and style guides helps people analyze data consistently because it clarifies what every column is and how it can be used. Here are some conventions we at Chartio follow:
 
-| Best Practice  | Reason         |
-| :------------- | :------------- |
-|Plural Table Names|A table of Leads should be titled "Leads" not Lead.  When there are more than two words on the last needs to be pluralized: opportunity_histories|
-|id as primary key|A simple numeric primary key labeled id should be standard for all tables.|
-|foreign keys follow \<tablename>_\<id>|ForeignKeys should follow this format to make it very clear on where the table is linking to.  If there are two foreign keys to the same table you can preopend a name to them following the format \<uniquename>\_\<tablename>\_\<id>. An accounts table linking to a users table with both a billing contact and a main owner would look like this:<br>Accounts<br><br>owner_user_id<br>billing_contact_user_id|
-|Start columns with a _ if they are needed but should be hidden for Visual mode.|If there are columns you need in the model for joining or other purposes but don’t want visible by default in visual mode you can prefix them. They will otherwise be treated just as any other column.<br><br>Let’s say you didn’t think the foreign keys in the accounts table above needed to be shown in Visual mode. You can simply prefix them as shown below. The relationships will still be detected. It’s a best practice not to show the foreign keys visually.<br><br>Accounts<br> id<br> name<br> _owner_user_id<br> _billing_contact_user_id<br><br>This should not be used for columns you're on the fence about needing. Those just shouldn't be included. These are for columns that are needed for querying purposes but have no use in a Visual setting - primarily foreign keys.|
-|Lower case, underscored naming|Our data model needs to be easily editable in SQL mode so we should follow conventions that make editing raw SQL easier. Therefore, we should attempt to have column names like id, first_name, last_name, and last_login_type instead of more human readable forms in the model. Chartio will handle that conversion.|
-|||
+| Best Practice | Reason |
+| :--- | :--- |
+| Plural Table Names | A table of Leads should be titled "Leads" not Lead.  When there are more than two words on the last needs to be pluralized: opportunity_histories |
+| id as primary key | A simple numeric primary key labeled id should be standard for all tables. |
+| foreign keys follow <tablename>_<id> | ForeignKeys should follow this format to make it very clear on where the table is linking to.  If there are two foreign keys to the same table you can preopend a name to them following the format <uniquename>_<tablename>_<id>. An accounts table linking to a users table with both a billing contact and a main owner would look like this:<br>Accounts<br><br>owner_user_id<br>billing_contact_user_id |
+| Start columns with a _ if they are needed but should be hidden for Visual mode. | If there are columns you need in the model for joining or other purposes but don’t want visible by default in visual mode you can prefix them. They will otherwise be treated just as any other column.<br><br>Let’s say you didn’t think the foreign keys in the accounts table above needed to be shown in Visual mode. You can simply prefix them as shown below. The relationships will still be detected. It’s a best practice not to show the foreign keys visually.<br><br>Accounts<br> id<br> name<br> _owner_user_id<br> _billing_contact_user_id<br><br>This should not be used for columns you're on the fence about needing. Those just shouldn't be included. These are for columns that are needed for querying purposes but have no use in a Visual setting - primarily foreign keys. |
+| Lower case, underscored naming | Our data model needs to be easily editable in SQL mode so we should follow conventions that make editing raw SQL easier. Therefore, we should attempt to have column names like id, first_name, last_name, and last_login_type instead of more human readable forms in the model. Chartio will handle that conversion. |
+|  |  |
 
 Publish this style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
 
@@ -132,4 +133,4 @@ Putting the metric in the database through modeling allows you to control change
 
 References.
 
-* Getdbt.com
+* [Getdbt.com](Getdbt.com)
