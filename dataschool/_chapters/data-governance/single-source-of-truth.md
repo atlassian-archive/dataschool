@@ -45,9 +45,7 @@ Permission issues happen because access is restricted at the source level and in
 #### Source level access
 
 Access is typically defined at the data source level. You work on the sales team, you have access to all the salesforce data. While this makes sense at first pass, it does not account for any cross-departmental analysis to be done or if there is sensitive data in there and some of it should be restricted. Access restrictions can be at many different points in the data stack. Each data source might have its own permission gate.
-
-![](https://lh5.googleusercontent.com/jXUEP9KLfNQaeKGzIDYHmkoZE6qniEdKHoLi_DzgELr0ys86iSW3CcTVjVyXZxzzvJRxXkdtyEe0jTwEnplt2w75Me8_Tkc03DrZixE47JCM2uH5yG6SGvmdMoSeJOS5dgOxfXrG)
-
+![Many access restrictions in the data stack](/assets/images/data-governance/singleSource/singleSource_0.png)
 Restricting analytical teams to specific tables and structuring your data in that way will help smooth out the permission process because there will fewer elements in the data source that need to be cleaned and maintained on a regular base.
 
 #### Default Permissions
@@ -59,9 +57,7 @@ The goal is to ensure that everyone in your company has access to the data they 
 ### How do companies solve permission issues?
 
 Permission issues are solved by moving to a SSoT because it provides a single point to grant or remove access.
-
-![](https://lh6.googleusercontent.com/xk3A0_MBgUbcDItmVDR_-pgv3kFtn3tmQqSDB2hSwv396qKggnOWHtpL4h_Jm_8BoIRG11VT08zAYNWM5SwTiSBJZOPxJFE4_tQbduf_2Ol2k1oAsWaCfG6EXOyUxLHU-qPzSDD1)
-
+![Single access Restriction on the Single Source of Truth](/assets/images/data-governance/singleSource/singleSource_1.png)
 What we mean here, is that you can remove almost all of the user accounts for the various data sources, cloud or otherwise, that your organization has signed up for. You will likely still be using those data sources, but will only need a few admin accounts in order to access the data for the ETL/ELT process to get them off of the cloud and into the Data Lake. At that point, you can begin the process of getting the data into the Data Warehouse that you are designing to best fit your org's data analysis needs.
 
 Once you have moved into the Data Warehouse, you can then address access issues within a single data source. Here, you will be able to grant users access to certain tables, schemas, and views. These will be likely the only tables, schemas, and views that they will need access to for analytical and reporting purposes.
@@ -100,27 +96,28 @@ Creating a single source of truth removes peoples access from outdated sources s
 #### Consolidate Data Sources
 
 When your company has used multiple tools to track the same type of data, if you can, migrate the data from the previous tools into the latest tool. If this is not an option use the data warehouse create a table which unions the data from both sources so that the historical record is not lost and to have one place to go to for the relevant metrics. This will require some renaming and cleaning to accomplish.
-
-![](https://lh3.googleusercontent.com/2lYcpPybNxRonNK47QTjqBJwhyvzUpkTbmE44W6rAzL3CAi0Mu8Ju7NFyf7t9DC95WWQnsHGtvtSbTsDpCXlI_WdUV9W6SzEo4kkE5vXJQ5DaSCs6JkSAHY1-Jli0OJt9BpXBHN1)
-
+![Using multiple tools in conjunction](/assets/images/data-governance/singleSource/singleSource_2.png)
 In addition, if you want to maintain access to old/unused data sources you can label data sources as deprecated or approved to help guide people during their analysis.
-
-![](https://lh4.googleusercontent.com/QDYMYdwpgJ4ZeBGGER3xvoheuRcVTspcnTcXydpoKikOaxp_40Hths0ogD2QYgMc8f0sRB3fWoDj_4ZEPvSx8CKyt1NssmIUfSqsSoT1srGVUBaKU8ZTawhwUPnXvHnzDsQ1Xs-j)
-
+![Deprecated data source](/assets/images/data-governance/singleSource/singleSource_3.png)
 #### Naming convention and style guide
 
 Enforcing naming conventions and style guides helps people analyze data consistently because it clarifies what every column is and how it can be used. Here are some conventions we at Chartio follow:
 
-![](https://lh3.googleusercontent.com/OlyW2N-5NJP9CWy1mpMMsnwizRDFECE-jhYVcjLfODb8ZrcuCzmEmaj6uDSUirMfIV2fuzJCQ0s3MUGWoNOJxzj34wWURbajOnGMajUmwv2N1MI3X6ESn8sde2TCfEdEeyPv5Uph)
+| Best Practice  | Reason         |
+| :------------- | :------------- |
+|Plural Table Names|A table of Leads should be titled "Leads" not Lead.  When there are more than two words on the last needs to be pluralized: opportunity_histories|
+|id as primary key|A simple numeric primary key labeled id should be standard for all tables.|
+|foreign keys follow \<tablename>_\<id>|ForeignKeys should follow this format to make it very clear on where the table is linking to.  If there are two foreign keys to the same table you can preopend a name to them following the format \<uniquename>\_\<tablename>\_\<id>. An accounts table linking to a users table with both a billing contact and a main owner would look like this:<br>Accounts<br><br>owner_user_id<br>billing_contact_user_id|
+|Start columns with a _ if they are needed but should be hidden for Visual mode.|If there are columns you need in the model for joining or other purposes but don’t want visible by default in visual mode you can prefix them. They will otherwise be treated just as any other column.<br><br>Let’s say you didn’t think the foreign keys in the accounts table above needed to be shown in Visual mode. You can simply prefix them as shown below. The relationships will still be detected. It’s a best practice not to show the foreign keys visually.<br><br>Accounts<br> id<br> name<br> _owner_user_id<br> _billing_contact_user_id<br><br>This should not be used for columns you're on the fence about needing. Those just shouldn't be included. These are for columns that are needed for querying purposes but have no use in a Visual setting - primarily foreign keys.|
+|Lower case, underscored naming|Our data model needs to be easily editable in SQL mode so we should follow conventions that make editing raw SQL easier. Therefore, we should attempt to have column names like id, first_name, last_name, and last_login_type instead of more human readable forms in the model. Chartio will handle that conversion.|
+|||
 
 Publish this style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
 
 #### Create Standard Metrics
 
 To define the calculation of a metric create a Dashboard with this metric in it and provide text on the dashboard to explain how it was calculated and what has been filtered out. Make this easily searchable!
-
-![](https://lh6.googleusercontent.com/bN2vx477c1-Chuk09AmPpVdM4f4ddSH_T8oeLamBGj2R3Lv2UzT88-GLZjEdrC8xpkXLkbmQgznFPXh2RLrV3zOIDJzd-hfSzzAjIzURy6YvFmjcmwgong3-ZFjGGY4Mbf-Cjio3)
-
+![Formula's listed on the dashboard for clarity](/assets/images/data-governance/singleSource/singleSource_4.png)
 Another approach is to create the metric inside the Single Source of Truth database. We recommend doing this through SQL based modeling using a tool such as dbt or Dataform. Defining the metric in the database will remove most, if not all, of the confusion.
 
 To eliminate any remaining confusion on using the metric in your analysis, many SQL based modeling tools can add a data dictionary to the data model. This allows the author of the data model to write out the calculation and filtering as mentioned in the dashboard method.
