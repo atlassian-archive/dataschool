@@ -1,15 +1,15 @@
 ---
-section: book
+section: Five Pillars of Data Governance
 title: Why is Data Governance Important?
 meta_title: Why is Data Governance Important to your Company
 description: Data grows in complexity within organizations. Data governance allows
   you to manage that complexity as you company scales.
-number: 1
+number: 21
 authors:
 - _people/rohan-joseph.md
 reviewers: []
 feedback_doc_url: ''
-image: /assets/images/book-covers/data-governance.png
+image: "/assets/images/book-covers/data-governance.png"
 is_featured: false
 img_border_on_default: false
 

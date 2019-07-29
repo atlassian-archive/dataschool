@@ -1,10 +1,10 @@
 ---
-section: book
+section: Five Pillars of Data Governance
 title: Usability
 meta_title: What Makes Data Usable
 description: Data Governance enable more people to use data. Users need to discover
   data assets, understand what they contain, and how they work.
-number: 3
+number: 23
 authors:
 - _people/rohan-joseph.md
 reviewers: []
