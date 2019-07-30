@@ -18,5 +18,3 @@ meta_title: 'How to Teach People SQL: Gifs and Visuals for SQL'
 ---
 So you want your company to learn SQL?
 This book will help you empathize with people learning SQL for the first time. It focuses on the areas where most people get stuck or give up. The book then gives visuals and animations to help people build mental models of the abstract processes behind SQL queries.
-
-### ![SQL JOINs](https://dataschool.com/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png)[Start Learning](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/)
