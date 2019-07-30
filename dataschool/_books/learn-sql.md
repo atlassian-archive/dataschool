@@ -14,4 +14,12 @@ topics:
 status: released
 
 ---
-An interactive SQL Tutorial by example! Quickly pick learn how to access data via SQL and aggregate it to find useful insights.
+Welcome to our PostgreSQL interactive SQL Tutorial! We’ve designed this specifically for tech-savvy folks to learn enough SQL to be able to do their own analysis and data fetching.
+
+We’ve added a big innovation to our tutorial that makes it quite different: Because we believe the best way to learn SQL is by playing around, we’ve created an interactive **SQLBox** for you to follow along and play with writing queries from the very start. The SQLBox takes your input and runs it against a live PostgreSQL database that we’re hosting.
+
+The SQLBox is embedded right in to the lessons themselves. Some of them have a checkbox to their left. These are ones that have a correct answer to them. See if you can get all of them correct!
+
+![figure 1](https://chartio.com/assets/645863/tutorials/sql-tutorials/d3f733f4fbd24c4145b13eb2799f249ff490eb10008a2a3708afbf6790f65122/sql-tutorial-sqlbox.gif)
+
+Best of luck to you! I hope you learn a great amount from our lessons here. If you have any comments, feedback, suggestions, etc. please [**drop us a line in our The Data School Slack**](https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY)
