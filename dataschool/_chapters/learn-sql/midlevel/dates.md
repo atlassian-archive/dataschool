@@ -6,12 +6,12 @@ description: DATE and TIME values in PostgreSQL have a whole special set of func
   and operators for their proper use. Learn how to use dates in PostgreSQL in this
   interactive SQL tutorial, so you can get the DATE and TIME of your data analysis.
 number: 110
-section: Mid-Level
+section: Mid-Level SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 
 ---

@@ -6,13 +6,13 @@ description: This interactive SQL tutorial will explain the FROM command with sy
   and use cases on how to interact with your data in the PostgreSQL database. Learn
   how to use the SQL FROM command by following the steps in this interactive tutorial.
 number: 30
-section: Basic
+section: Basic SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
 is_featured: false
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 topics:
 - _chapters/dictionary/sql.md
 

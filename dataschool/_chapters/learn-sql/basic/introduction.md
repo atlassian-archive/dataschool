@@ -6,7 +6,7 @@ description: Learn how to use SQL with your PostgreSQL database. In this interac
   SQL data tutorial, get an introduction that is designed to get you querying your
   PostgreSQL database as quickly as possible. Learn SQL basics, tables and SQLbox.
 number: 10
-section: Basic
+section: Basic SQL
 authors:
 - _people/dave.md
 reviewers:

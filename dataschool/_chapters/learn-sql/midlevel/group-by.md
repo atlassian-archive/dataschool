@@ -6,12 +6,12 @@ description: The GROUP BY SQL statement is used to aggregate functions like COUN
   MAX, MIN, SUM and AVG. In this interactive SQL tutorial, learn to use the GROUP
   BY .
 number: 80
-section: Mid-Level
+section: Mid-Level SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 
 ---

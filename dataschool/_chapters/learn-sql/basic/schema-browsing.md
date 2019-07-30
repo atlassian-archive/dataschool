@@ -5,13 +5,13 @@ meta_title: Browse the SCHEMA in a Database
 description: SCHEMA is the collection of tables and relationships in your database.
   In this interactive SQL tutorial, learn how to browse a SCHEMA with PostgreSQL.
 number: 55
-section: Basic
+section: Basic SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
 is_featured: false
-image: /assets/images/learn-sql/basic/schema-browsing/schema-browsing.png
+image: "/assets/images/learn-sql/basic/schema-browsing/schema-browsing.png"
 topics:
 - _chapters/dictionary/sql.md
 

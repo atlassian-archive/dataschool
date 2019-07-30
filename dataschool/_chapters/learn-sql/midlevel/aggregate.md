@@ -6,12 +6,12 @@ description: Learn about the COUNT function in SQL. The COUNT command is used to
   the count of how many rows there are. This interactive SQL tutorial will teach you
   how to COUNT.
 number: 70
-section: Mid-Level
+section: Mid-Level SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 
 ---
