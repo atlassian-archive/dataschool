@@ -5,12 +5,12 @@ meta_title: SQL - JOIN Relationships and JOINing Tables
 description: A JOIN SQL statement combines two data from two tables together. In this
   interactive SQL tutorial, learn the most common JOIN statements.
 number: 90
-section: Mid-Level
+section: Mid-Level SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: /assets/images/learn-sql/midlevel/joins/sql-tutorial-join-primary-keys.png
+image: "/assets/images/learn-sql/midlevel/joins/sql-tutorial-join-primary-keys.png"
 is_featured: false
 
 ---

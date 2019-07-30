@@ -5,12 +5,12 @@ meta_title: Practice Mid Level SQL Commands
 description: After you've mastered mid-level SQL fundamentals, put that knowledge
   to the test in these interactive SQL practice exercises.
 number: 150
-section: Mid-Level
+section: Mid-Level SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 
 ---

@@ -5,12 +5,12 @@ meta_title: SQL - Operators
 description: Learn about Operators in SQL and how to use them in Postgres. Operators
   are used to specify conditions in a SQL statement.
 number: 65
-section: Mid-Level
+section: Mid-Level SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 
 ---

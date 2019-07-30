@@ -5,12 +5,12 @@ meta_title: SQL - WHERE
 description: Learn how to use the WHERE command in PostgreSQL. In this interactive
   SQL tutorial, learn the best practices of the WHERE command for analysis and exploration.
 number: 60
-section: Mid-Level
+section: Mid-Level SQL
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 
 ---
