@@ -1,14 +1,18 @@
 ---
 title: AND OR Boolean Logic
-meta_title: 
-description: 
+meta_title: Boolean logic and Truth tables
+description: This post goes into detail on how Boolean logic works and how Boolean
+  logic can be molded with truth tables
 section: Extras
 number: 
-authors: []
-reviewers: []
+authors:
+- _people/matthew-layne.md
+reviewers:
+- _people/matt.md
 image: 
 img_border_on_default: false
 is_featured: false
+feedback_doc_url: https://docs.google.com/document/d/1nCpMs3F4_irNxKL7Fo4a69tlM3v4mWb-cgDUi_j24G8/edit?usp=sharing
 published: false
 
 ---
