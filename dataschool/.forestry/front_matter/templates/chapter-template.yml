@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
 - dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
@@ -101,7 +102,6 @@ pages:
 - dataschool/_chapters/sql-optimization/optimizing-data-queries-with-redshift.md
 - dataschool/_chapters/sql-optimization/scheduling-dbt.md
 - dataschool/_chapters/sql-optimization/optimization-using-explain.md
-- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
