@@ -12,6 +12,7 @@ feedback_doc_url:
 image: "/assets/images/data-governance/usability/usability_1.png"
 is_featured: false
 img_border_on_default: false
+published: false
 
 ---
 ![Five Pillars: Usability](/assets/images/data-governance/usability/usability_1.png)

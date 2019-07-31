@@ -12,6 +12,7 @@ feedback_doc_url:
 image: "/assets/images/data-governance/integrity/integrity_1.png"
 is_featured: false
 img_border_on_default: false
+published: false
 
 ---
 ![Five Pillars: Integrity](/assets/images/data-governance/integrity/integrity_1.png)

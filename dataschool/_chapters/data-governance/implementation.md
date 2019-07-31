@@ -12,6 +12,7 @@ feedback_doc_url: ''
 image: "/assets/images/data-governance/implementation/implementation_1.png"
 is_featured: false
 img_border_on_default: false
+published: false
 
 ---
 ![Five Pillars: Implementation](/assets/images/data-governance/implementation/implementation_1.png)
