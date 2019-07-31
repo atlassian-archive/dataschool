@@ -4,7 +4,7 @@ meta_title: Lu Wang Data School Contributor
 description: Lu is a results-oriented analytics and consulting specialist who is passionate
   about helping companies and teams adopt evidence-driven decision making.
 image: "/assets/images/Lu.jpeg"
-is_contributor: false
+is_contributor: true
 job_title: CEO and Founder
 company: Komodo Technologies
 data_school_slack_handle: Lu Wang
