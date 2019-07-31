@@ -107,7 +107,7 @@ The **Name** field is a VARCHAR and cannot be compared to an INTEGER.
 
 Remember you can cast any of your values in order to make the data types match. More on casting from [intersystems here](https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=RSQL_cast). To determine what data type is used in a column you can use the “\\d (Table name)” command and look for the “Type” column:
 
-```sql
+```code
 \d "Track"
 ```
 
