@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
 - dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
