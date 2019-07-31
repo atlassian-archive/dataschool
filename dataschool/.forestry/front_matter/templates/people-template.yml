@@ -36,6 +36,7 @@ fields:
   name: website
   label: website
 pages:
+- dataschool/_people/drew-banin.md
 - dataschool/_people/lu-wang.md
 - dataschool/_people/brian-kinney.md
 - dataschool/_people/mike-yi.md
@@ -46,7 +47,6 @@ pages:
 - dataschool/_people/matthew-layne.md
 - dataschool/_people/matt.md
 - dataschool/_people/katerina-bicakci.md
-- dataschool/_people/drew-banin.md
 - dataschool/_people/blake.md
 - dataschool/_people/allen-hillery.md
 - dataschool/_people/ben-jones.md
