@@ -17,9 +17,7 @@ img_border_on_default: false
 ---
 ## Use ORDER BY
 
-A fast way to identify outliers is to sort the relevant values in both ascending and descending order. This allows you to quickly skim through the highest and lowest values. If you have a sense of what you are expecting from your data, this can help you quickly identify any unexpected values.
-
-If we were looking at the ages of friends, we’d expect to see values that fall into the range of ages for adults. Let’s take a look at what we see in the example below.
+A fast way to identify outliers is to sort the relevant values in both ascending and descending order.
 
 To sort our values, we could use the following query.
 
@@ -30,13 +28,11 @@ FROM friends
 ORDER BY age
 ```
 
-Here’s what a sample query could look like.
+Here’s what a sample output could look like.
 
 ![Sample of query sorted by age](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_1.png)
 
-By sorting we can easily identify anomalies within the data. We don’t expect any of our friends to have an age of 1, so this outlier is likely an error.
-
-Because this is a small dataset, we can also view the final lines in our results. An age of 999 is not a possible value for the age of our friends, and we can see that we have a missing value.
+By sorting we can easily identify anomalies within the data. We don’t expect any of our friends to have an age of 1 or 999, so these outliers are likely an error. Because this is a small dataset, we can also view the final lines in our results. 
 
 If we had a larger dataset but wanted to quickly view the end of our data, we could do so by adding DESC to our ORDER BY statement.
 
@@ -47,9 +43,7 @@ FROM friends
 ORDER BY age DESC
 ```
 
-This method can be great for identifying obvious outliers that quickly stand out. However, it may miss some other details in the data. For example, if we have less knowledge of the expected values in our dataset, there may be enough outliers that they don’t stand out with just a quick look at the high and low values.
-
-It’s often helpful to be able to use a more statistical method for identifying outliers.
+This method can be great for identifying obvious outliers that quickly stand out. However, it may miss some other details in the data. It’s often helpful to be able to use a more statistical method for identifying outliers.
 
 ## Using NTILE
 
@@ -57,12 +51,13 @@ One statistical method of identifying outliers is through the use of the interqu
 
 SQL has a function that allows us to easily separate our values into our four quartiles. When we use NTILES() we separate our data into the same number of groups as the value inside the brackets. Therefore, if we want to separate our data into quartiles we would use NTILE(4).
 
-NTILE is used in conjunction with a window function. If we use a similar example of friends’ ages, this is what the syntax would look like this:
+NTILE is used in conjunction with a [window function](https://dataschool.com/how-to-teach-people-sql/how-window-functions-work/). If we use a similar example of friends’ ages, this is what the syntax would look like this:
 
 ```sql
-SELECT full_name,
-age,
-NTILE(4) OVER (ORDER BY age) AS age_quartile
+SELECT 
+	full_name,
+	age,
+	NTILE(4) OVER (ORDER BY age) AS age_quartile
 FROM friends
 ```
 
@@ -73,12 +68,15 @@ When using NTILE() in SQL, if we have an odd number of values in each of our qua
 In our case, the Q1 value is 31, and the Q2 value is 35. We can easily identify these values using a subquery.
 
 ```sql
-SELECT age_quartile,
-MAX(age) AS quartile_break
-FROM(SELECT full_name,
-age,
-NTILE(4) OVER (ORDER BY age) AS age_quartile
-FROM friends) AS quartiles
+SELECT 
+	age_quartile,
+	MAX(age) AS quartile_break
+FROM(
+	SELECT 
+    	full_name,
+		age,
+		NTILE(4) OVER (ORDER BY age) AS age_quartile
+	FROM friends) AS quartiles
 WHERE age_quartile IN (1, 3)
 GROUP BY age_quartile
 ```
@@ -114,49 +112,52 @@ It can be helpful to be able to run a single query that pulls the results. Here�
 
 ```sql
 with orderedList AS (
-SELECT full_name,
-age,
-ROW_NUMBER() OVER (ORDER BY age) AS row_n
+SELECT 
+	full_name,
+	age,
+	ROW_NUMBER() OVER (ORDER BY age) AS row_n
 FROM friends
 ),
 iqr AS (
-SELECT age, full_name,
-(
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*)
-FROM friends)*0.75)
-) AS q_three,
-(
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*)
-FROM friends)*0.25)
-) AS q_one,
-1.5 * ((
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*)
-FROM friends)*0.75)
-) - (
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*)
-FROM friends)*0.25)
-)) AS outlier_range
-FROM orderedList
+SELECT 
+	age, 
+    full_name,
+	(
+		SELECT age AS quartile_break
+		FROM orderedList
+		WHERE row_n = FLOOR((SELECT COUNT(*)
+			FROM friends)*0.75)
+			) AS q_three,
+	(
+		SELECT age AS quartile_break
+		FROM orderedList
+		WHERE row_n = FLOOR((SELECT COUNT(*)
+			FROM friends)*0.25)
+			) AS q_one,
+	1.5 * ((
+		SELECT age AS quartile_break
+		FROM orderedList
+		WHERE row_n = FLOOR((SELECT COUNT(*)
+			FROM friends)*0.75)
+			) - (
+			SELECT age AS quartile_break
+			FROM orderedList
+			WHERE row_n = FLOOR((SELECT COUNT(*)
+				FROM friends)*0.25)
+			)) AS outlier_range
+	FROM orderedList
 )
 
 SELECT full_name, age
 FROM iqr
 WHERE age >= ((SELECT MAX(q_three)
-FROM iqr) +
-(SELECT MAX(outlier_range)
-FROM iqr)) OR
-age <= ((SELECT MAX(q_one)
-FROM iqr) -
-(SELECT MAX(outlier_range)
-FROM iqr))
+	FROM iqr) +
+	(SELECT MAX(outlier_range)
+		FROM iqr)) OR
+		age <= ((SELECT MAX(q_one)
+	FROM iqr) -
+	(SELECT MAX(outlier_range)
+		FROM iqr))
 ```
 
 This query uses ROW_NUMBER and FLOOR (always rounds down) to find the Q1 (at the row 25% of the way through) and Q3 (at the row 75% of the way through) values. From there, we can calculate the IQR x 1.5 and used these as reference for our outliers.
