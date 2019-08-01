@@ -17,27 +17,30 @@ topics:
 - _chapters/dictionary/sql.md
 
 ---
-So far all of our queries have brought back all the rows in the table.  That's okay for our example database with just a few hundred rows of data, but on other databases that can often be A LOT more data than needed.  If want to LIMIT the number of results that are returned you can simply use the LIMIT command at the end of the query to specify.
+If want to LIMIT the number of results that are returned you can simply use the LIMIT command with a number of rows to LIMIT by.
 
 ```sql
 SELECT * FROM artists LIMIT [Number to Limit By];
 ```
+
 For example
 
 ```sql
 SELECT * FROM artists LIMIT 3;
 ```
 
-ensures only the first 3 results are returned.  Besides returning less results, LIMITing queries can greatly reduce the time they take to run and make your database administrator a lot less angry with you.  Give it a try by fetching yourself the first *6* rows of the *artists* table:
+ensures only the first 3 results are returned.  Besides returning less results, LIMITing queries can greatly reduce the time they take to run and make your database administrator a lot less angry with you.  Give it a try by fetching yourself the first _6_ rows of the _artists_ table:
 
-<sqlbox
-  answer='SELECT * FROM artists LIMIT 6'
-  correct_message="Great. Now you can query much less data."
-></sqlbox>
+<sqlbox initial="SELECT * FROM artists LIMIT 6;"
+
+answer='SELECT * FROM artists LIMIT 6'
+correct_message="Great. Now you can query much less data."
+
+> </sqlbox>
 
 ## OFFSET
 
-You can also specify an OFFSET from where to start returning data.  
+You can also specify an OFFSET from where to start returning data.
 
 ```sql
 SELECT * FROM artists LIMIT 5 OFFSET [Number of rows to skip];
@@ -52,8 +55,9 @@ SELECT * FROM artists LIMIT 5 OFFSET 2;
 Here's a challenge for you.  Write a query to fetch the Artists in rows 10 through 20:
 
 <sqlbox
-  answer='SELECT * FROM artists LIMIT 11 OFFSET 9;'
-  correct_message="Well done.  You're getting the hang of this!"
-  hint="You want to skip the first 9 and then only return 11 (10 through 20) results."
-  show_incorrect="true"
-></sqlbox>
+answer='SELECT * FROM artists LIMIT 11 OFFSET 9;'
+correct_message="Well done.  You're getting the hang of this!"
+hint="You want to skip the first 9 and then only return 11 (10 through 20) results."
+show_incorrect="true"
+
+> </sqlbox>
