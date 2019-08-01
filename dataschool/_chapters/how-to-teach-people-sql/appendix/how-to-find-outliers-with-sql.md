@@ -15,7 +15,7 @@ is_featured: false
 img_border_on_default: false
 
 ---
-Use ORDER BY
+## Use ORDER BY
 
 A fast way to identify outliers is to sort the relevant values in both ascending and descending order. This allows you to quickly skim through the highest and lowest values. If you have a sense of what you are expecting from your data, this can help you quickly identify any unexpected values.
 
@@ -160,7 +160,6 @@ FROM iqr))
 ```
 
 This query uses ROW_NUMBER and FLOOR (always rounds down) to find the Q1 (at the row 25% of the way through) and Q3 (at the row 75% of the way through) values. From there, we can calculate the IQR x 1.5 and used these as reference for our outliers.
-
 
 ### Technical Note
 
