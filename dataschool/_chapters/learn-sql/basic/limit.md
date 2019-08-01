@@ -29,7 +29,9 @@ For example
 SELECT * FROM artists LIMIT 3;
 ```
 
-ensures only the first 3 results are returned.  Besides returning less results, LIMITing queries can greatly reduce the time they take to run and make your database administrator a lot less angry with you.  Give it a try by fetching yourself the first _6_ rows of the _artists_ table:
+This ensures only the first 3 results are returned. Besides returning less results, LIMITing queries can greatly reduce the time they take to run and make your database administrator a lot less angry with you.  
+
+Give it a try by fetching yourself the first _6_ rows of the _artists_ table:
 
 <sqlbox initial="SELECT * FROM artists LIMIT 6;"
 
