@@ -10,14 +10,12 @@ authors:
 reviewers:
 - _people/blake.md
 - _people/matt.md
-image: /assets/images/learn-sql/extras/Start_MacOS_Server/startServerFromCLI.png
+image: "/assets/images/learn-sql/extras/Start_MacOS_Server/startServerFromCLI.png"
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/1MfBqyfJXD9x4iaI_2Lmt-yCoPqD_jDbDEULMJ7NaavU/edit?usp=sharing
 
 ---
-# **How to Start a PostgreSQL Server on Mac OS X**
-
 There are two main ways to install PostgreSQL on mac OS X.
 
 1. [The homebrew package manager](https://dataschool.com/learn-sql/how-to-start-a-postgresql-server-on-mac-os-x/#using-homebrew)
@@ -46,9 +44,11 @@ pg_ctl -D /usr/local/var/postgres start
 This will start up a postgres server hosted locally on port 5432. The server will be run out of the directory `/usr/local/var/postgres`.
 
 It can now be accessed by typing the following command:
+
 ```sql
 psql postgres
 ```
+
 This will connect to the server and access the postgres database. Once this is done:
 
 * Schemas and tables can be created
@@ -84,9 +84,11 @@ The server will only start if the port is free. If the default server is running
 ![Shows a conflict between two servers where one is on port 5432 so the second cannot start on port 5432 as well](/assets/images/learn-sql/extras/Start_MacOS_Server/serverPortConflict.png)
 
 Once started, it can be connected to the same way as before using:
+
 ```sql
 psql postgres
 ```
+
 ## **Using PostgreSQL App**
 
 To run a server through the postgres app, the first step is to download the program. The app can be downloaded on [postgresapp.com](https://postgresapp.com/). Once the app is downloaded and moved into the applications folder, the app can be opened.
@@ -111,18 +113,24 @@ Once the app has been downloaded, command line tools can be used as well. These 
 ```code
 /Applications/Postgres.app/Contents/Versions/latest/bin/[Tool Name][Options and/or Arguments]
 ```
+
 For example, the 'postgres' database on the server can be connected to using the psql tool with postgres as an argument:
+
 ```sql
 /Applications/Postgres.app/Contents/Versions/latest/bin/psql postgres
 ```
+
 Rather than typing out the full path each time however, the path can be added to a file that will allow significantly easier access to the tools, allowing the tools be accessed from any directory on the computer. To do this, the following command can be run in the terminal:
 ```code
 sudo mkdir -p /etc/paths.d && echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
 ```
+
 Once this is done, the 'postgres' database can be accessed by simply typing:
+
 ```sql
 psql postgres
 ```
+
 ## Summary
 
 * Homebrew:
