@@ -40,12 +40,12 @@ To see if the WHERE or HAVING clause is too restrictive simply remove it from th
 
 ## How to debug an SQL query
 
-Whenever you get a result you do not expect in SQL take a second and break down the query into smaller bits. Remove or comment clauses out one by one to find where the query stopped making sense. To comment out a part of you SQL query review the documentation for the syntax. In PostgreSQL all you do is add two dashes — in front of a line of SQL
+Whenever you get a result you do not expect in SQL take a second and break down the query into smaller bits. Remove or comment clauses out one by one to find where the query stopped making sense. To comment out a part of you SQL query review the documentation for the syntax. In PostgreSQL all you do is add two dashes -- in front of a line of SQL
 
 ```sql
 SELECT *
 FROM facebook
-WHERE # of Friends > 1000
+--WHERE # of Friends > 1000
 ```
 
 This concept of breaking queries into small pieces also works when you are initially creating the query. Start with a query that only contains SELECT, FROM, and LIMIT. Then layer on each additional SQL clause 1 at a time and run it to see if there are any issues. While this practice is slow you are much less likely to run into an issue in your query that you don't know the cause of.
