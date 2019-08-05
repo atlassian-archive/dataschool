@@ -25,13 +25,17 @@ reading_time:
 In order to export a table or query to csv use one of the following commands:
 
 For Client-Side Export:
+
 ```code
 \copy [Table/Query] to '[Relative Path/filename.csv]' csv header;
 ```
+
 For Server-Side Export:
+
 ```code
 COPY [Table/Query] to '[Absolute Path/filename.csv]' csv header;
 ```
+
 Example Absolute Path: '/Users/matt/Desktop/filename.csv'
 
 Example Relative Path: 'Desktop/filename.csv'
@@ -54,22 +58,24 @@ The second command, _COPY_, generates a CSV file on the server where the databas
 ### **The _\\copy_ command**
 
 The _\\copy_ meta-command is used for exporting to a client computer. It is useful for copying a database that may have somewhat restricted access and for creating a personal copy of the data. For example, a user may want to generate a csv so that they can analyse financial data in excel. The format of a _\\copy_ to csv is as follows:
+
 ```code
 \copy [Table/Query] to [Relative Path] csv header;
 ```
-The \[Table/Query\] section can be filled with a table or query. For example to copy all entries from a table, the table name can be put here. To copy all entries that contain “saw” in their names from the table of tools to a csv, the following commands could be run:![using \copy with a subquery to select entries that have 'saw' in them](/assets/images/learn-sql/extras/export/export_0.png)
+
+The \[Table/Query\] section can be filled with a table or query. For example to copy all entries from a table, the table name can be put here. To copy all entries that contain “saw” in their names from the table of tools to a csv, the following commands could be run:![using \\copy with a subquery to select entries that have 'saw' in them](/assets/images/learn-sql/extras/export/export_0.png)
 
 The \[Relative Path\] is the path from where psql is currently saving files to where you want to save the file. The location that psql is currently saving can be found by using the _\\! pwd_ command.
 
 Note: The _\\!_ meta-command takes whatever arguments it is given and runs them as a bash command within psql.
 
-The pwd command prints the current working directory. The meta-command \\! pwd and \\! ls are shown being used below:![using \! to run ls and pwd](/assets/images/learn-sql/extras/export/export_1.png)
+The pwd command prints the current working directory. The meta-command \\! pwd and \\! ls are shown being used below:![using ! to run ls and pwd](/assets/images/learn-sql/extras/export/export_1.png)
 
 This means that if the file name “myTools.csv” is used as the \[Relative Path\], it will be saved in _/Users/matt/_ as can be seen below:
 
-![Showing \copy running and the corresponding file that was created](/assets/images/learn-sql/extras/export/export_2.png)
+![Showing \\copy running and the corresponding file that was created](/assets/images/learn-sql/extras/export/export_2.png)
 
-The file can also be saved elsewhere by entering a specific relative path. For example, if _'/Desktop/\[Filename\].csv'_ is entered as the path, the file will be saved to the desktop.
+The file can also be saved elsewhere by entering a specific relative path. For example, if _'/Desktop/\[Filename\].csv'_ is entered as the path, the file will be saved to the desktop. 
 
 Following the Relative Path in the command is the text _'csv header;'_ This text does two things. The _'csv'_ specifies that the data should be stored in the CSV format. Other possible formats are 'text' and 'Binary.'
 
