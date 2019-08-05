@@ -54,7 +54,7 @@ Let’s look at an example of `\o` being used:
 
 As you can see, the output of `\dt` and the `SELECT` query are not shown on the console. This indicates that they are being logged in the file. We can confirm this if we check the file. This can be done manually outside of psql or through psql using the `\!` meta command:![the output from the previously run commands](/assets/images/learn-sql/extras/outputtingWithMetacommand/outputtingWithMeta_1.png)
 
-`\!` allows the user to use terminal commands and see the results without leaving the psql environment. As such, the file contents can be checked quickly using commands like `cat` which displays the contents of the text file to the screen.
+`\!` allows the user to use terminal commands and see the results without leaving the psql environment. As such, the file contents can be checked quickly using commands like `cat` which displays the contents of the text file to the screen. 
 
 ## Summary
 
