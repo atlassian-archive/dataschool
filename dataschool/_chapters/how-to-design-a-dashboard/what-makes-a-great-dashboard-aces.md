@@ -105,22 +105,22 @@ The colors used in the visualizations need to contrast the background enough to 
 We can examine some different color palette choices below and better alternatives.
 
 ![random darkness of blue](/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cd37779eb189664d0cb76c0_chart5948124 (1).png)
-❌
+<p style="text-align: center;">❌</p>
 
 This is difficult to see which part of the bar belongs to which category
 
 ![ordered darkness of blue](/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cd3771984b35c2362118771_chart5948124.png)
-❌
+<p style="text-align: center;">❌</p>
 
 This shows the difference between the categories but the last part of the chart is too saturated and grabs your attention so this is not ideal unless you are trying to highlight that section.
 
 ![Different colors](/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cd377b1eb18968542cb8325_chart5948158.png)
-✅
+<p style="text-align: center;">✅</p>
 
 This differentiation is clear but some of the colors are very far apart on the color wheel and could become a bit distracting if these colors are used too much on the dashboard.
 
 ![2 similar colors gradient](/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5cd377be84b35c49d911af94_chart5948177.png)
-✅
+<p style="text-align: center;">✅</p>
 
 These colors show the difference between the categories without overweighting one of the categories. Most dashboarding tools will default you to a color scheme that delineates categories clearly. If for some reason they do not, then customize your color selection so that evaluations of the data can be made at a glance.
 
