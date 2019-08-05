@@ -87,6 +87,8 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/data-mart-maintenance.md
+- dataschool/_chapters/data-governance/data-mart-implementation.md
 - dataschool/_chapters/data-governance/data-mart-design.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-implementation.md
