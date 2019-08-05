@@ -132,7 +132,7 @@ Occasionally an executive wants to receive a printed out version of the dashboar
 
 ![Schedule your posts](/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/clock.jpeg)
 
-Scheduling should mimic the pace at which decisions need to be made. If the decisions that are made based on a dashboard are ad hoc then do not send out scheduled emails about the dashboard instead provide them links and let them check it whenever they need to. If people need to have context every morning of what is going on to start making decisions then sending a daily email at 8:00am with the dashboard is appropriate.
+Scheduling should mimic the pace at which decisions need to be made. If the decisions that are made based on a dashboard are ad hoc then do not send out scheduled emails about the dashboard instead provide them links and let them check it whenever they need to. If people need to have context every morning of what is going on to start making decisions, then sending a daily email at 8:00am with the dashboard is appropriate.
 
 Finally, if people do not need to view the dashboard to make a decision unless a metric changes dramatically, set up an alert. Most dashboarding software supports being able to set a level on a chart that once it is crossed an alert will go out to an email of your choosing. Be careful with setting these, if you choose an artificially low number people could start receiving a lot of alert emails.
 
