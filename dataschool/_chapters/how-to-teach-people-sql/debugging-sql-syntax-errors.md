@@ -79,9 +79,9 @@ The query below will produce an error because the data type of 27 in the WHERE c
 
 ![query that will fail due to missing quotation marks around 27](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_10.png)
 
-To get the answer we expect we must put 27 in double quotes “27”
+To get the answer we expect we must put 27 in single quotes '27'
 
-![corrected version of the previous query](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_11.png)
+![](/assets/images/syntax_11-2.png)
 
 ![output of the query above](/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_12.png)
 
