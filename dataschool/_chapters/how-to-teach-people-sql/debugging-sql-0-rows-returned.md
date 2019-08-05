@@ -40,7 +40,7 @@ To see if the WHERE or HAVING clause is too restrictive simply remove it from th
 
 ## How to debug an SQL query
 
-Whenever you get a result you do not expect in SQL take a second and break down the query into smaller bits. Remove or comment clauses out one by one to find where the query stopped making sense. To comment out a part of you SQL query review the documentation for the syntax. In PostgreSQL all you do is add two dashes -- in front of a line of SQL
+Whenever you get a result you do not expect in SQL take a second and break down the query into smaller bits. Remove or comment clauses out one by one to find where the query stopped making sense. To comment out a part of you SQL query review the documentation for the syntax. In PostgreSQL all you do is add two dashes in front of a line of SQL
 
 ```sql
 SELECT *
