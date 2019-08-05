@@ -1,10 +1,10 @@
 ---
 section: Extras
 title: Outputting Query Results to Files with \o
-meta_title: Using \o to Export Output to Files
+meta_title: Using the o command to Export Output to Files
 description: This article discusses how to use the \o meta command to output to a
   text file
-number:
+number: 
 authors:
 - _people/matthew-layne.md
 reviewers:
@@ -14,10 +14,11 @@ image: "/assets/images/learn-sql/extras/outputtingWithMetacommand/outputtingWith
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time:
+reading_time: 
+is_community_story: false
+story_intro_blurb: ''
 
 ---
-
 ```code
 \o [filename].txt
 [Query or Queries to write to file];

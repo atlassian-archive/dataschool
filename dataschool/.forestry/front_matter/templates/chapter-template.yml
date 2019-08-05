@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/learn-sql/extras/export-to-csv-from-psql.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
@@ -123,7 +124,6 @@ pages:
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md
 - dataschool/_chapters/data-modeling-101/using-jupyter-notebooks.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
-- dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/data-governance/source-data-stack.md
 - dataschool/_chapters/data-governance/data-warehouse-data-stack.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
