@@ -2,8 +2,8 @@
 section: Extras
 title: Outputting Query Results to Files with \o
 meta_title: Using the o command to Export Output to Files
-description: This article discusses how to use the \o meta command to output to a
-  text file
+description: This article discusses how to use the o meta command to output to a text
+  file
 number: 
 authors:
 - _people/matthew-layne.md
