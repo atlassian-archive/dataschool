@@ -12,11 +12,17 @@ reviewers:
 - _people/blake.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/19CxIad3qImMHu8T9Yjn2nOr8K_x9y8jhLXex_7ixGcs/edit?usp=sharing
-image: "/assets/images/misrepresenting-data/relVsAbsChange/relVsAbsChange_0.png"
+image: "/assets/images/Frame (57)-1.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
+reading_time: 
 
 ---
+![](/assets/images/Frame (57).png)
+
 ## The problem with Relative vs Absolute changes
 
 When numbers change people can report how big that change was in relative or absolute terms.
