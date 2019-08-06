@@ -15,6 +15,10 @@ feedback_doc_url: https://docs.google.com/document/d/1byPf-heJlgKYJwkghvWrPgEC7H
 image: "/assets/images/misrepresenting-data/selectBias/selectBias_0.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
+reading_time: 
 
 ---
 Selection Bias is the tendency to analyze groups that are not representative of the population you are interested in measuring. There are two types of selection bias:
@@ -26,9 +30,7 @@ Selection Bias is the tendency to analyze groups that are not representative of 
 
 You choose a group of people to analyze in a way that is not representative of the population. These groups are usually chosen because of convenience.
 
-![An example graphic where a small group wants to face left but are the only ones represented](/assets/images/misrepresenting-data/selectBias/selectBias_0.png)
-
-Example:
+![An example graphic where a small group wants to face left but are the only ones represented](/assets/images/02 selection bias.png)Example:
 
 You ask three of your friends if your new feature is valuable. While easy to ask them, are they actually representative of your customer base?
 
@@ -42,7 +44,7 @@ Common Biased Selections:
 
 The group of people who opt in to be analyzed have characteristics that are not representative of the whole population.
 
-![Problem of self Selection](/assets/images/misrepresenting-data/selectBias/selectBias_1.png)
+![Problem of self Selection](/assets/images/04 selectionbias2.png)
 
 Example:
 
