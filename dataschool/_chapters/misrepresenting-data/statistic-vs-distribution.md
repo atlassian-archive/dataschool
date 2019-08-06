@@ -11,13 +11,17 @@ reviewers:
 - _people/blake.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1QPvkbgXwiIPgZlU81-kiSZe2mrqhsgoQ44C62hSPbnM/edit?usp=sharing
-image: "/assets/images/misrepresenting-data/statVsDist/statVsDist_6.png"
+image: "/assets/images/06 statistic vs distribution-1.png"
 is_featured: false
 img_border_on_default: false
 reading_time: 5
 is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
 
 ---
+![](/assets/images/06 statistic vs distribution.png)
+
 ## The problem with a single statistic
 
 Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While this high-level stats can be informative, relying on them to accurately represent the underlying data can be problematic because they can hide important patterns in the underlying data.
