@@ -12,7 +12,7 @@ reviewers:
 - _people/blake.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1GEPlIvZXMCyMcLKrUYtqg9D0DchLM3vW3RAi6SAoW3Y/edit?usp=sharing
-image: "/assets/images/misrepresenting-data/surviveBias/survive_0and1.jpg"
+image: "/assets/images/05 survivorship2-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -51,7 +51,7 @@ Example:
 
 “Men get tough fighting in the coliseum” vs “only tough men survive the coliseum.”
 
-### ![Strong survive because they are strong. They do not get string from the coliseum](/assets/images/misrepresenting-data/surviveBias/survive_2.png)
+### ![](/assets/images/3 survivorship1.png)
 
 People assume the competition in the coliseum caused the outcome but actually it filtered out the weak people and the strong people survived.
 
