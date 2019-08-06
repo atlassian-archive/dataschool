@@ -3,7 +3,7 @@ section: Extras
 title: Export to CSV with \copy
 meta_title: Export to CSV from PSQL using the copy command
 description: This article discusses how to export data from psql to a csv file using
-  COPY and \copy
+  the copy commands
 number: 
 authors:
 - _people/matthew-layne.md
