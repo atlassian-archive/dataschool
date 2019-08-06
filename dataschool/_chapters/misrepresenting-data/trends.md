@@ -11,7 +11,7 @@ reviewers:
 - _people/matthew-layne.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1ZDh4zs4M_srmPSZnmtSQk6N1fmTem9N84tCij33wpb0/edit?usp=sharing
-image: "/assets/images/Frame (56)-1.png"
+image: "/assets/images/Frame 2.5.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
