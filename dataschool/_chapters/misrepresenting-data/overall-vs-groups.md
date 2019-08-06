@@ -12,13 +12,17 @@ authors:
 reviewers:
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1TrqcSIOq3d8ItC637ub2FOQAV9yArf6Q0A2QNHJREuU/edit?usp=sharing
-image: "/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_1.png"
+image: "/assets/images/Frame (54)-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 reading_time: 
+is_community_story: false
+story_intro_blurb: ''
 
 ---
+![](/assets/images/Frame (54).png)
+
 ## The problem with overall statistics
 
 Overall statistics that describe all of your users or visitors can be misleading, the overall statistic does not show you nuanced patterns about the underlying data. As you saw in [statistic vs distribution](https://dataschool.com/misrepresenting-data/statistic-vs-distribution/) you know that distributions help you see these patterns but there are multiple ways to examine the underlying data. Another method is to group the data by different categories.
@@ -128,4 +132,4 @@ We can visualize this more clearly by mapping number of people behind a statisti
 
 ![Simpsons Paradox visually explained with circles and colors](/assets/images/simpsonsParadox.png "Simpsons Paradox")
 
-This phenomenon is important to consider when comparing groups: you should examine what the total number of observations are behind any statistic. For scenarios like this neither the overall statistic nor grouped statistics are sufficient explanations of the underlying data by themselves. You should present all of this data so that people understand the patterns at play. 
+This phenomenon is important to consider when comparing groups: you should examine what the total number of observations are behind any statistic. For scenarios like this neither the overall statistic nor grouped statistics are sufficient explanations of the underlying data by themselves. You should present all of this data so that people understand the patterns at play.
