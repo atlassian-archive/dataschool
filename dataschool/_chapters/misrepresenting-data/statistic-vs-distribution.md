@@ -20,7 +20,7 @@ is_community_story: false
 story_intro_blurb: ''
 
 ---
-![](/assets/images/06 statistic vs distribution.png)
+![Distribution of an average](/assets/images/Frame (53).png)
 
 ## The problem with a single statistic
 
