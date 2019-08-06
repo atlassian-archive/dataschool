@@ -15,6 +15,10 @@ feedback_doc_url: https://docs.google.com/document/d/1GEPlIvZXMCyMcLKrUYtqg9D0Dc
 image: "/assets/images/misrepresenting-data/surviveBias/survive_0and1.jpg"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
+reading_time: 
 
 ---
 Survivorship bias is the tendency to draw inaccurate conclusions based on things that have survived. There are two main ways people reach erroneous conclusions through survivorship bias.
@@ -27,15 +31,13 @@ Example:
 
 “Most castles were made of stone” vs “most castles were made of wood but were destroyed by fire or withered away over time.”
 
-#### Present Day
+![Present day we only see castles that were made of stone](/assets/images/05 survivorship2.png)
 
-![Present day we only see castles that were made of stone](/assets/images/misrepresenting-data/surviveBias/survive_0and1.jpg)
+#### Present Day
 
 All we see is the surviving stone castle
 
 #### Medieval Times
-
-![Back in Medieval times there were many wooden castles as well](/assets/images/misrepresenting-data/surviveBias/survive_0and1.jpg)
 
 We can see the same stone castle but also the more numerous wooden castles
 
