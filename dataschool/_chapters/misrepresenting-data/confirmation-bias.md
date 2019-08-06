@@ -12,7 +12,7 @@ reviewers:
 - _people/matthew-layne.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1fa1CwUh0NySYMTQILVAZBIzHaW_dkqV43VOGX7a9ECw/edit?usp=sharing
-image: "/assets/images/01 confirmation bias-1.png"
+image: "/assets/images/Frame 2 (9).png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
