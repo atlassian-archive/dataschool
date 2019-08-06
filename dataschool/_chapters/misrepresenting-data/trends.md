@@ -11,13 +11,17 @@ reviewers:
 - _people/matthew-layne.md
 - _people/blake.md
 feedback_doc_url: https://docs.google.com/document/d/1ZDh4zs4M_srmPSZnmtSQk6N1fmTem9N84tCij33wpb0/edit?usp=sharing
-image: "/assets/images/misrepresenting-data/trends/trends_1.png"
+image: "/assets/images/Frame (56)-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 reading_time: 
+is_community_story: false
+story_intro_blurb: ''
 
 ---
+![](/assets/images/Frame (56).png)
+
 ## The problem with trends
 
 When we look at a trend, the size of the time period we examine can drastically alter the conclusion about whether some number is trending up, down or is relatively stable. All three of the following graphs come from the same data:

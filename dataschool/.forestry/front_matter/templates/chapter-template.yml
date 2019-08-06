@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/misrepresenting-data/selection-bias.md
@@ -106,7 +107,6 @@ pages:
 - dataschool/_chapters/data-modeling-101/creating-an-ec2-server.md
 - dataschool/_chapters/sql-optimization/snowflake.md
 - dataschool/_chapters/sql-optimization/views.md
-- dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/sql-optimization/bigquery-optimization.md
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
 - dataschool/_chapters/data-modeling-101/running-jupyter-notebook-on-an-ec2-server.md
