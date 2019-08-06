@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/misrepresenting-data/predicting-outcomes.md
 - dataschool/_chapters/misrepresenting-data/define-experiment-parameters.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
@@ -118,7 +119,6 @@ pages:
 - dataschool/_chapters/sql-optimization/scheduling-dbt.md
 - dataschool/_chapters/sql-optimization/optimizing-data-queries-with-redshift.md
 - dataschool/_chapters/misrepresenting-data/metric-vs-metrics.md
-- dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
 - dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md

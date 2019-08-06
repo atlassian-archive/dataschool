@@ -15,8 +15,14 @@ feedback_doc_url: https://docs.google.com/document/d/1T-RDM2NDtgsp-ZNn5F_Ls9PGyJ
 image: "/assets/images/misrepresenting-data/reviewOutcomes/review_0.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
+reading_time: 
 
 ---
+![Review outcomes of product launches](/assets/images/Frame (61)-2.png)
+
 We just launched our new feature and our metrics look like they have improved. How should be feel about the following graph?:
 
 ![Large growth in page visits after feature launch](/assets/images/misrepresenting-data/reviewOutcomes/review_0.png)
@@ -33,19 +39,13 @@ Remember all the analysis mistakes and mental biases covered in this book. It is
 
 When data changes dramatically we want to take credit if it was a positive change and deny responsibility if it was a negative change. Ultimately we should want to know _why_ it changed. To figure this out we need to investigate a few common ways data changes.
 
-### ![Marketing in a subway station](/assets/images/misrepresenting-data/reviewOutcomes/review_1.jpg)
-
 ### Marketing
 
-A lot of times we are focused on the work we are doing and do not see what other parts of the company are doing to influence buyers and users. One of the most common reasons for any spike is there being a marketing push that day or that week. Reach out to that team to confirm no additional spend/effort has been going on to remove this potential reason.
-
-![Technical image of a computer screen](/assets/images/misrepresenting-data/reviewOutcomes/review_2.jpg)
+A lot of times we are focused on the work we are doing and do not see what other parts of the company are doing to influence buyers and users. One of the most common reasons for any spike is there being a marketing push that day or that week. Reach out to that team to confirm no additional spend/effort has been going on to remove this potential reason
 
 ### Technical Reasons
 
 Did the site go down? Did a data point stop being tracked?Is there a mistake in the tracking? (e.g. double-counting of hits, etc.) Simple technical problems can have huge impacts on data especially in the negative direction. It is important to reach out to the development team to establish if they might have had an impact.
-
-![Image of a group of people](/assets/images/misrepresenting-data/reviewOutcomes/review_3.jpg)
 
 ### Cohort Influence
 
