@@ -61,7 +61,7 @@ Before the product or feature launches ask and answer yourself two questions:
 
 Most launches inevitably have a bit of marketing surrounding them so the first day or first week is not usually reliable data. You do not want a spike and then a return to normal, you want a sustained increase. Pick a date before launch to review and share the impact of the data.
 
-## ![](/assets/images/Frame (62).png)
+## ![Control your data](/assets/images/Frame (62).png)
 
 ## Controls
 
