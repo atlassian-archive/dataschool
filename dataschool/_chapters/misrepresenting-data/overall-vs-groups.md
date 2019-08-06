@@ -12,7 +12,7 @@ authors:
 reviewers:
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1TrqcSIOq3d8ItC637ub2FOQAV9yArf6Q0A2QNHJREuU/edit?usp=sharing
-image: "/assets/images/Frame (54)-1.png"
+image: "/assets/images/Frame 2 (8).png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
