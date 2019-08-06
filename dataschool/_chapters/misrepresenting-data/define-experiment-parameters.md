@@ -12,9 +12,13 @@ reviewers:
 - _people/matthew-layne.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1tF58nHDntAcN3MZNjLqF2KqBcpMz1LrygZumdg7WUdw/edit?usp=sharing
-image: "/assets/images/misrepresenting-data/defineParams/defineParams_2.jpg"
+image: "/assets/images/Frame (59)-1.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
+reading_time: 
 
 ---
 Even if a metric was chosen for a new feature or product, important parameters about how that metric will be measured and evaluated might not be set.
@@ -31,7 +35,7 @@ Not setting these parameters in the beginning allows people to move these around
 
 Let’s talk through each of these pieces and some important considerations.
 
-## ![Image of a crowd of people](/assets/images/misrepresenting-data/defineParams/defineParams_0.jpg)
+## ![Image of a crowd of people](/assets/images/Frame (59).png)
 
 ## Cohort
 
@@ -44,7 +48,7 @@ Questions to ask yourself:
 
 If the answer is yes to either you need to find a different cohort.
 
-## ![Image of a planner](/assets/images/misrepresenting-data/defineParams/defineParams_1.jpg)
+## ![Image of a planner](/assets/images/Frame (60).png)
 
 ## Timeline
 
