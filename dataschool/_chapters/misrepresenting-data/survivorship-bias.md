@@ -12,7 +12,7 @@ reviewers:
 - _people/blake.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1GEPlIvZXMCyMcLKrUYtqg9D0DchLM3vW3RAi6SAoW3Y/edit?usp=sharing
-image: "/assets/images/05 survivorship2-1.png"
+image: "/assets/images/Frame 2.2.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
