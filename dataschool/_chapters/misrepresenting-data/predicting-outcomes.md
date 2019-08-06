@@ -10,16 +10,20 @@ authors:
 reviewers:
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1EN9jLWcWilsrw3z7eWCiEN3fx-VY_MSTRynGGLCk3N4/edit?usp=sharing
-image: /assets/images/misrepresenting-data/predictingOutcomes/predict_0.jpg
+image: "/assets/images/misrepresenting-data/predictingOutcomes/predict_0.jpg"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
+is_community_story: false
+story_intro_blurb: ''
+reading_time: 
 
 ---
 ### Here is a simple question:
 
 #### How many jellybeans are in the plastic box?
 
-![Container full of Jelly Beans](/assets/images/misrepresenting-data/predictingOutcomes/predict_0.jpg)
+![](/assets/images/Frame (58).png)
 
 \-------------
 
