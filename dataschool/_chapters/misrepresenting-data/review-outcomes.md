@@ -12,7 +12,7 @@ reviewers:
 - _people/blake.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1T-RDM2NDtgsp-ZNn5F_Ls9PGyJdvzLe6_5iTIjRHnqE/edit?usp=sharing
-image: "/assets/images/misrepresenting-data/reviewOutcomes/review_0.png"
+image: "/assets/images/Frame (61)-3.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
