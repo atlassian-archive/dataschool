@@ -4,7 +4,7 @@ title: Data Warehouse Implementation
 meta_title: How to Create a Data Warehouse
 description: Learn how to setup a Data Warehouse. Model and transform data to make
   it easy to analyze.
-number: 35
+number: 34
 authors: []
 reviewers: []
 feedback_doc_url: ''
