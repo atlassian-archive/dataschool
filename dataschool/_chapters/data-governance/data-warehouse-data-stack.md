@@ -15,6 +15,7 @@ is_under_construction: true
 reading_time: 
 is_community_story: false
 story_intro_blurb: ''
+published: false
 
 ---
 ## Data Warehouse Data Stack In Progress Overview

@@ -4,7 +4,7 @@ title: Evaluating Data Stack Technologies
 meta_title: Evaluate Data Tools for your Data Stack
 description: Learn the various functions a Data Stack needs to perform in order to
   select the correct data tools to take raw data and turn it into insight.
-number: 
+number: 1
 authors: []
 reviewers: []
 feedback_doc_url: ''
