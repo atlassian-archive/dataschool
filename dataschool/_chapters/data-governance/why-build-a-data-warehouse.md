@@ -15,7 +15,7 @@ img_border_on_default: false
 is_under_construction: true
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 2
+reading_time: 
 
 ---
 ## Why Build a Data Warehouse In Progress Overview
