@@ -4,7 +4,7 @@ title: Usability
 meta_title: What Makes Data Usable
 description: Data Governance enable more people to use data. Users need to discover
   data assets, understand what they contain, and how they work.
-number: 23
+number: ''
 authors:
 - _people/rohan-joseph.md
 reviewers: []

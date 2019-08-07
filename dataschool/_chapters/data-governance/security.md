@@ -4,7 +4,7 @@ title: Security
 meta_title: Security of Data in Organizations
 description: Data Governance helps secure the data your organization has access to.
   Learn the best practices to securely manage data..
-number: 25
+number: 
 authors:
 - _people/rohan-joseph.md
 reviewers: []
