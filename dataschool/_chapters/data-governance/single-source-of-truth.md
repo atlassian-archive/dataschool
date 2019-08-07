@@ -1,5 +1,5 @@
 ---
-section: book
+section: Data Warehouse
 title: Data Warehouse Single Source of Truth
 meta_title: Data Warehouse Single Source of Truth
 description: Learn why you should build a Single Source of Truth in your Data Warehouse.
