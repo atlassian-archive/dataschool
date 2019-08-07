@@ -4,7 +4,7 @@ title: Defining a Data Govenor
 meta_title: Learn what a Data Governor is and isnt
 description: Data Governors maintain the database so that is remains valuable to an
   organization. This involves security, education, and modeling.
-number: 
+number: 34
 authors: []
 reviewers: []
 feedback_doc_url: ''

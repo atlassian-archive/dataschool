@@ -4,7 +4,7 @@ title: What Database to Use
 meta_title: What Database to use for a Data Warehouse
 description: Learn the pros and cons of the modern database options to build your
   Data Warehouse on.
-number: 
+number: 33
 authors: []
 reviewers: []
 feedback_doc_url: ''
