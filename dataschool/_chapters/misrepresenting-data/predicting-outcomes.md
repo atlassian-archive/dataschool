@@ -19,19 +19,13 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-### Here is a simple question:
-
-#### How many jellybeans are in the plastic box?
+#### How many jellybeans are in the jar?
 
 ![](/assets/images/Frame (58).png)
 
-\-------------
+#### The answer: 103 Jelly Beans
 
-### Answer:
-
-#### 53 Jelly Beans
-
-If you guessed before looking at the answer, great: you are a scientist! You made a hypothesis and then looked to see if you were right. If you did not guess, then you might be saying to yourself: “53 makes sense.” or “I would’ve guessed something like that around 50.”
+If you guessed before looking at the answer, great: you are acting like a scientist! You made a hypothesis and then looked to see if you were right. If you did not guess, then you might be saying to yourself: “103 makes sense.” or “I would’ve guessed something like that around 100.”
 
 ## The problem with not making predictions
 
