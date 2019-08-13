@@ -21,15 +21,17 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-## What is Confirmation Bias
+## What is Confirmation Bias?
 
-Confirmation bias is the tendency to **seek out data that confirm beliefs you already hold**. This does not sound inherently bad. The problem is that people do this to the exclusion of data that disconfirms their beliefs. This hinders people from learning new things about the world since they continually reinforce their existing beliefs because of this bias.
+Confirmation bias is the tendency to **seek out or interpret data to confirm beliefs you already hold**. It does this to the exclusion of contrary evidence. 
 
-In a business context, this means you might be ignoring data that is suggesting that some aspect of your feature/product is not working because you found another metric that seems to suggest that it is working. Confirmation bias pressures you to ignore the negative signs and focus on the positive.
+In a business context, this means ignoring data that is suggesting that some aspect of your feature/product is not working because you found another metric that seems to suggest that it is working. 
+
+Confirmation bias pressures you to ignore the negative signs and focus on the positive.
 
 ![Graphic of confirmation bias](/assets/images/01 confirmation bias.png)
 
-## How to Detect Confirmation Bias
+## How to Detect Confirmation Bias?
 
 There are 3 common signs that confirmation bias is influencing the data you are looking at.
 
@@ -49,7 +51,7 @@ Usually people present a few metrics because they are trying to be brief and tha
 
 Many times we cannot measure exactly what we want so we have to settle for proxy metrics. As these metrics become more and more abstracted our confidence in them should diminish. If people are confidently sharing convoluted proxy metrics they are likely looking for ways to find positive signals in the data.
 
-## What to do about confirmation bias
+## What to do about confirmation bias?
 
 ### Institutionalized disconfirmation
 
