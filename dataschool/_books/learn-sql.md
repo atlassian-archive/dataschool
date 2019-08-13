@@ -8,7 +8,7 @@ authors: _people/dave.md
 reviewers: _people/matt.md
 cover_image: "/assets/images/book-covers/learn-sql.png"
 main_color: "#762314"
-is_featured: true
+is_featured: false
 topics:
 - _chapters/dictionary/sql.md
 status: released
