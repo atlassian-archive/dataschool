@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: 
+image: "/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_1.png"
 is_featured: false
 img_border_on_default: false
 
