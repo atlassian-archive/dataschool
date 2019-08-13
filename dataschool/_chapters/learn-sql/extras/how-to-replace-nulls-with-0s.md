@@ -24,13 +24,13 @@ SET [column]=0
 WHERE [column] IS NULL;
 ```
 
-This query is a simple Data Modification Language (DML) query which will search a column for nulls and replace them with 0s.
+Null Values can be replaced in SQL by using UPDATE, SET, and WHERE to search a column in a table for nulls and replace them. In the example above it replaces them with 0.
 
-Cleaning data is important for analytics because messy data can lead to incorrect analysis. Null values can be a common form of messy data. In aggregation functions they are ignored from the calculation so you need to make sure this is the behavior you are expecting, otherwise you need to replace null values with relevant values. To clean up this data we use the UPDATE command.
+Cleaning data is important for analytics because messy data can lead to incorrect analysis. Null values can be a common form of messy data. In aggregation functions they are ignored from the calculation so you need to make sure this is the behavior you are expecting, otherwise you need to replace null values with relevant values.
 
 ## How to use the UPDATE command?
 
-The UPDATE command, as mentioned before, is a DML command as opposed to a DDL (Data Definition Language), DCL (Data Control Language), or TCL (Transaction Control Language) command. This means that it is used for modifying preexisting data. Other DML commands include: SELECT, INSERT, DELETE, etc.
+The UPDATE command is a DML command as opposed to a DDL (Data Definition Language), DCL (Data Control Language), or TCL (Transaction Control Language) command. This means that it is used for modifying preexisting data. Other DML commands include: SELECT, INSERT, DELETE, etc.
 
 UPDATE takes a table and uses the SET keyword to control what row to change and what value to set it to. The WHERE keyword checks a condition and, if true, the SET portion is run and that row is set to the new value. If false, it is not set to the new value.
 
