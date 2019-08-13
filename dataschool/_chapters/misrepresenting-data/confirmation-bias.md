@@ -23,13 +23,13 @@ reading_time:
 ---
 ## What is Confirmation Bias?
 
-Confirmation bias is the tendency to **seek out or interpret data to confirm beliefs you already hold**. It does this to the exclusion of contrary evidence. 
+Confirmation bias is the tendency to **seek out or interpret data to confirm beliefs you already hold**. It does this to the exclusion of contrary evidence.
 
-In a business context, this means ignoring data that is suggesting that some aspect of your feature/product is not working because you found another metric that seems to suggest that it is working. 
+In a business context, this means ignoring data that is suggesting that some aspect of your feature/product is not working because you found another metric that seems to suggest that it is working.
 
 Confirmation bias pressures you to ignore the negative signs and focus on the positive.
 
-![Graphic of confirmation bias](/assets/images/01 confirmation bias.png)
+![Graphic of confirmation bias](/assets/images/01 confirmation bias.png "Confirmation Bias")
 
 ## How to Detect Confirmation Bias?
 
