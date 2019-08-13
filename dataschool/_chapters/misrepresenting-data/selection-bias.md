@@ -21,20 +21,22 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-Selection Bias is the tendency to analyze groups that are not representative of the population you are interested in measuring. There are two types of selection bias:
+Selection Bias is when the group chosen to be analyzed is not representative of the population you are trying to draw conclusions about.
 
-* Selection
+How do you get an unrepresentative group accidentally?
+
+* Convenience
 * Self Selection
 
-## Selection
+## Convenience
 
-You choose a group of people to analyze in a way that is not representative of the population. These groups are usually chosen because of convenience.
+You choose a group of people to analyze in a way that is not representative of the population because they were convenient to measure.
 
 ![An example graphic where a small group wants to face left but are the only ones represented](/assets/images/02 selection bias.png)Example:
 
 You ask three of your friends if your new feature is valuable. While easy to ask them, are they actually representative of your customer base?
 
-Common Biased Selections:
+Convenient Biases Selections:
 
 * Engaged customers
 * Latest cohort of users
@@ -81,5 +83,5 @@ If you do send out a large email and most of the people who respond are early ad
 
 * Selection Bias
   * Make sure the group of people you test something on is representative of the population you want to impact. Do this by randomizing your sample.
-* Self Selection Bias
+* Self Selection
   * Make sure the people who voluntarily participate in something you are analyzing are representative of the population you want to analyze. Do this by having qualifying questions.
