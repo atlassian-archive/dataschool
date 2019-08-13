@@ -21,7 +21,11 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-Survivorship bias is the tendency to draw inaccurate conclusions based on things that have survived. There are two main ways people reach erroneous conclusions through survivorship bias.
+## What is Survivorship Bias?
+
+Survivorship bias is the tendency to draw conclusions based on things that have survived some selection process and ignore things that did not survive. It is a cognitive bias and is a form of selection bias.
+
+There are two main ways people reach erroneous conclusions through survivorship bias, inferring a norm and inferring causality.
 
 ### Inferring a norm
 
@@ -33,15 +37,15 @@ Example:
 
 ![Present day we only see castles that were made of stone](/assets/images/05 survivorship2.png)
 
-#### Present Day
+#### Present
 
 All we see is the surviving stone castle
 
-#### Medieval Times
+#### Past
 
-We can see the same stone castle but also the more numerous wooden castles
+In the past we see the same stone castle but also the more numerous wooden castles. The wood castles did not survive to the present.
 
-People assume that what they see or have concrete evidence of are the only things that have ever existed. When in fact most of the things that have existed in the past have never seen before.
+People assume that what they see or have concrete evidence of in the present are the only things that have ever existed. When in fact most of the things that have existed in the past do not exist in the present.
 
 ### Inferring causality
 
@@ -53,7 +57,7 @@ Example:
 
 ### ![](/assets/images/3 survivorship1.png)
 
-People assume the competition in the coliseum caused the outcome but actually it filtered out the weak people and the strong people survived.
+People assume the competition in the coliseum caused the outcome but actually it filtered out the weak people and the strong people survived. People did not necessarily grow from their experience in the coliseum so much as it exposed who was the most fit for the coliseum
 
 ## Survivorship Bias in Business
 
