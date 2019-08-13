@@ -15,7 +15,7 @@ is_featured: false
 img_border_on_default: false
 
 ---
-## Use ORDER BY
+## Use ORDER BY to find Outliers
 
 A fast way to identify outliers is to sort the relevant values in both ascending and descending order.
 
@@ -32,7 +32,7 @@ Here’s what a sample output could look like.
 
 ![Sample of query sorted by age](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_1.png)
 
-By sorting we can easily identify anomalies within the data. We don’t expect any of our friends to have an age of 1 or 999, so these outliers are likely an error. Because this is a small dataset, we can also view the final lines in our results. 
+By sorting we can easily identify anomalies within the data. We don’t expect any of our friends to have an age of 1 or 999, so these outliers are likely an error. Because this is a small dataset, we can also view the final lines in our results.
 
 If we had a larger dataset but wanted to quickly view the end of our data, we could do so by adding DESC to our ORDER BY statement.
 
@@ -45,7 +45,7 @@ ORDER BY age DESC
 
 This method can be great for identifying obvious outliers that quickly stand out. However, it may miss some other details in the data. It’s often helpful to be able to use a more statistical method for identifying outliers.
 
-## Using NTILE
+## Using NTILE to find Outliers
 
 One statistical method of identifying outliers is through the use of the interquartile range, or IQR. When we find values that fall outside of 1.5 times the range between our first and third quartiles, we typically consider these to be outliers.
 
