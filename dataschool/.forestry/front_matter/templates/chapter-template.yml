@@ -87,17 +87,17 @@ fields:
     max: 
     step: '1'
 pages:
-- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
+- dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
+- dataschool/_chapters/data-governance/what-database-to-use.md
+- dataschool/_chapters/data-governance/data-warehouse-maintenance.md
+- dataschool/_chapters/data-governance/single-source-of-truth.md
+- dataschool/_chapters/data-governance/data-warehouse-implementation.md
+- dataschool/_chapters/data-governance/defining-a-data-govenor.md
+- dataschool/_chapters/data-modeling-101/sqlbox-test-do-not-publish.md
 - dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/data-governance/source-data-stack.md
 - dataschool/_chapters/data-governance/data-warehouse-data-stack.md
-- dataschool/_chapters/data-governance/data-warehouse-implementation.md
-- dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
-- dataschool/_chapters/data-governance/data-warehouse-maintenance.md
-- dataschool/_chapters/data-governance/defining-a-data-govenor.md
-- dataschool/_chapters/data-governance/what-database-to-use.md
-- dataschool/_chapters/data-modeling-101/sqlbox-test-do-not-publish.md
 - dataschool/_chapters/misrepresenting-data/predicting-outcomes.md
 - dataschool/_chapters/misrepresenting-data/relative-vs-absolute-change.md
 - dataschool/_chapters/misrepresenting-data/trends.md
