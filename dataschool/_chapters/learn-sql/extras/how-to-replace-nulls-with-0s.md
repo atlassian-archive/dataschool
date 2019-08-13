@@ -1,19 +1,21 @@
 ---
 section: Extras
-title: How to Replace Nulls with 0s
-meta_title: How to Use Update to Clean Nulls in Data
+title: How to Replace Nulls with 0s in SQL
+meta_title: How to Use Update in SQL to replace Nulls
 description: This article talks about how to use the UPDATE statement to clean data.
-number:
+number: 
 authors:
 - _people/matthew-layne.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/11TBqvGWfMYDVjak_DDfyGRrd7Y5cpUzR6ICxlC5EVNc/edit?usp=sharing
-image: /assets/images/book-covers/learn-sql.png
+image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time:
+reading_time: 
+is_community_story: false
+story_intro_blurb: ''
 
 ---
 ```sql
@@ -26,7 +28,7 @@ This query is a simple Data Modification Language (DML) query which will search 
 
 Cleaning data is important for analytics because messy data can lead to incorrect analysis. Null values can be a common form of messy data. In aggregation functions they are ignored from the calculation so you need to make sure this is the behavior you are expecting, otherwise you need to replace null values with relevant values. To clean up this data we use the UPDATE command.
 
-## UPDATE
+## How to use the UPDATE command?
 
 The UPDATE command, as mentioned before, is a DML command as opposed to a DDL (Data Definition Language), DCL (Data Control Language), or TCL (Transaction Control Language) command. This means that it is used for modifying preexisting data. Other DML commands include: SELECT, INSERT, DELETE, etc.
 
@@ -43,14 +45,14 @@ SET [column]=[column]+1;
 
 Takes the values in a column and adds 1 to them.
 
-To set every value to a random integer on the interval \[1,10]:
+To set every value to a random integer on the interval \[1,10\]:
 
 ```sql
 UPDATE [table]
 SET [column]=1+random()*9::int;
 ```
 
-Generates a random double precision (float8) type number from [0,1), multiplies it by 9, and adds 1 to that value and casts it to an integer type for each row.
+Generates a random double precision (float8) type number from \[0,1), multiplies it by 9, and adds 1 to that value and casts it to an integer type for each row.
 
 To set values to 0 for even 1 for odd:
 
