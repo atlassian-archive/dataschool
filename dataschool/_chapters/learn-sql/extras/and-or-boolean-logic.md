@@ -32,7 +32,7 @@ autorun="true;"
 
 ></sqlbox>
 
-To get more technical boolean logic is a way of representing how bits in a computer are processed. Let’s explore more about these conditional statements (e.g. if-else, [where](https://dataschool.com/learn-sql/where/), or [case-when](https://dataschool.com/how-to-teach-people-sql/how-case-when-works/) statements) with truth tables to understand how precisely boolean logic works.
+To get more technical, boolean logic is a way of representing how bits in a computer are processed. Let’s explore more about these conditional statements (e.g. if-else, [where](https://dataschool.com/learn-sql/where/), or [case-when](https://dataschool.com/how-to-teach-people-sql/how-case-when-works/) statements) with truth tables to understand how precisely boolean logic works.
 
 ## Truth Tables
 
@@ -42,7 +42,7 @@ If: `A and B`
 
 Then: `C`
 
-This returns the value C, when the values A and B are true. We can represent this using something called a truth table. A truth table is a way of representing every possible input and it’s corresponding output. A truth table for this AND statement looks like this:
+This returns the value C, when the values A and B are true. We can represent this using something called a truth table. A truth table is a way of representing every possible input and it’s corresponding output. The truth table for this AND statement looks like this:
 
 | A | B | C |
 | 1 | 1 | 1 |
@@ -97,7 +97,7 @@ As expected, when the table is filled out, the only true output is when all 3 in
 
 ## Short Circuit Logic
 
-Because of the way AND and OR logic works, programming languages can use something called short circuit logic. This is when not all inputs are evaluated, because the computer can guess the answer from the first input that was checked. To see how this works, look at the AND truth table again:
+Because of the way `AND` and `OR` logic works, programming languages can use something called "short circuit logic". This is when not all inputs are evaluated, because the computer can guess the answer from the first input that was checked. To see how this works, look at the AND truth table again:
 
 | A | B | C |
 | 1 | 1 | 1 |
@@ -108,7 +108,7 @@ Because of the way AND and OR logic works, programming languages can use somethi
 
 Notice that, when A is False (`0`), C is also always False. This is because C is only true when both inputs are true, therefore a single false means C is false.
 
-If a computer is using an AND condition and the first input is false, then the second input, B, will never be checked. OR will evaluate as true without checking the second input when the first input is true. This ability for the computer to invalidate later boolean logic steps can save a lot of unneeded processing power for your query.
+If a computer is using an `AND` condition and the first input is false, then the second input, B, will never be checked. OR will evaluate as true without checking the second input when the first input is true. This ability for the computer to invalidate later boolean logic steps can save a lot of unneeded processing power for your query.
 
 ## Examples in SQL
 
@@ -130,7 +130,7 @@ Example of a `CASE-WHEN` Statement
 
 CASE
 
-WHEN [column A]=21 AND [column B]=7 THEN [Action]
+WHEN [column A]=21 OR [column B]=7 THEN [Action]
 
 END
 
