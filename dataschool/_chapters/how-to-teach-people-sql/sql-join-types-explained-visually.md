@@ -78,4 +78,4 @@ Cross Joins will likely only be used when your tables contain single values that
 
 ## Summary cheat sheet
 
-![SQL JOINs](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png)
+![SQL JOINs type cheat sheet](/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png "SQL JOINs")
