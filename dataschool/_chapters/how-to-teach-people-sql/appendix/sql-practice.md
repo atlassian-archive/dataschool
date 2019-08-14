@@ -3,6 +3,7 @@ title: SQL Practice
 authors:
 - _people/matt.md
 number: 100
+section: Appendix
 
 ---
 Good luck!
