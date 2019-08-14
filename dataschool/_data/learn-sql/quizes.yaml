@@ -144,7 +144,7 @@ mid-level:
     references:
       - "joins"
       - "limit"
-  - question: "Get the first 5 albums JOINed with thier artists info."
+  - question: "Get the first 5 albums JOINed with their artists info."
     answer: "SELECT * FROM albums JOIN artists ON albums.artist_id = artists.id LIMIT 5;"
     hint: "JOIN artists ON albums.artist_id = artists.id"
     references:
@@ -188,3 +188,85 @@ mid-level:
     references:
       - 'dates'
       - "aggregate"
+slideshow:
+  - question: "Fetch the all track names and what genre they are"
+    answer: "SELECT tracks.name as "TrackName", genres.name as "GenreName" FROM tracks INNER JOIN genres on genres.id = tracks.genre_id"
+    hint: ""
+    references:
+      - "joins"
+  - question: "Fetch the *id* and [other things requiring a join] for the artist 'Miles Davis'."
+    answer: "SELECT id FROM artists WHERE name = 'Miles Davis';"
+    hint: ""
+    references:
+      - "joins"
+  - question: "Get all the *tracks* with *gerne_id* of 20 [make this actually the genre so a join is needed] from longest to shortest."
+    answer: "SELECT * FROM tracks WHERE genre_id = 20 ORDER BY milliseconds DESC;"
+    hint: ""
+    references:
+      - "joins"
+  - question: "Get the *artists* who have sold more than average."
+    answer: "SELECT * FROM artists WHERE id <= 55 AND >= 98"
+    hint: "use a subquery to determine the average first."
+    references:
+      - subquery
+  - question: "Get all the *tracks* except those with sales that are less than the average."
+    answer: "SELECT * FROM tracks WHERE genre_id != 15 AND genre_id != 18;"
+    hint: "use a cte to determine the average first"
+    references:
+      - cte
+  - question: "Correct the query so that it gets all the *tracks* that were composed by just Miles Davis"
+    answer: "SELECT * FROM track WHERE composer = 'Miles Davis';"
+    hint: "composer = 'Miles Davis'"
+    references:
+      - spelling
+  - question: "Correct the query so that it gets all the *tracks* that Miles Davis had a part in composing."
+    answer: "SELECT * WHERE composer LIKE '%Miles Davis%' FROM tracks;"
+    hint: "use the LIKE operator with the pattern '%Miles Davis%'"
+    correct_message: "He seemed to compose most of them alone."
+    references:
+      - order of operations
+  - question: "Correct the query so that it gets the *name*s of the *tracks* with the word 'wild' in it, regardless of case"
+    answer: "SELECT name FROM tracks WHERE name ILIKE "%wild%";"
+    hint: "use ILIKE"
+    references:
+      - quotation marks
+  - question: "How many *tracks* did Little Richard helped compose?"
+    answer: "SELECT count(*) FROM tracks WHERE composer LIKE '%Little Richard%'"
+    hint: "return the count of tracks where composer is LIKE '%Little Richard%'"
+    correct_message: Not too much Little Richard in this data.
+    references:
+      - operators
+      - "aggregate"
+  - question: "How many *tracks* with *genre_id* of 1 have composers listed?"
+    answer: "SELECT COUNT(composer) FROM tracks WHERE genre_id = 1;"
+    hint: "do a COUNT of the composer column"
+    references:
+      - "aggregate"
+  - question: "How many unique composers are there in the *tracks* table with the *genre_id* of 1."
+    answer: "SELECT COUNT(DISTINCT composer) FROM tracks WHERE genre_id = 1;"
+    hint: "do a COUNT DISTINCT of composer"
+    refrences:
+      - "aggregate"
+  - question: "What is the average length for tracks with *genre_ids* of either 5, 7 or 10?"
+    answer: "SELECT AVG(milliseconds) FROM tracks WHERE genre_id = 5 OR genre_id = 7 OR genre_id = 10;"
+    hint: "take the AVG of milliseconds and use OR to combine all the genre_id conditions"
+    references:
+      - operators
+      - "aggregate"
+  - question: Get a list of *genre_id*s and the number of tracks in each.
+    answer: "SELECT genre_id, COUNT(*) FROM tracks GROUP BY genre_id;"
+    hint: "group by genre_id and do a COUNT"
+    references:
+      - "group-by"
+  - question: Return each *customer_id* and the *total* of all of their *invoices*.
+    answer: "SELECT customer_id, SUM(total) FROM invoices GROUP BY customer_id;"
+    hint: "SUM(total) and GROUP BY customer_id on the invoices table"
+    references:
+      - "group-by"
+      - "aggregate"
+  - question: There is a foreign key *customer_id* that relates *invoices* to the *customers* table.  Fetch the company name in the *company* column of the *customers* table and the *total* amount that each has been invoiced by joining these tables."
+    answer: "SELECT company, SUM(total) FROM customers JOIN invoices ON customers.id = invoices.customer_id GROUP BY company;"
+    references:
+      - "group-by"
+      - "aggregate"
+      - "joins"
