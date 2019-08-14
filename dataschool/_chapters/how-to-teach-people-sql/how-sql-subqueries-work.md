@@ -20,11 +20,11 @@ A SQL subquery can look complicated:
 ```sql
 SELECT *
 FROM (SELECT State, SUM (# of friends)
-FROM facebook
-GROUP BY state);
+	  FROM facebook
+	  GROUP BY state);
 ```
 
-The core concept to grasp is that the subquery (the part highlighted in blue inside the parentheses) is a separate SQL query that produces a table that is then used in the main query.
+The core concept to grasp is that the subquery (the part inside the parentheses) is a separate SQL query that produces a table that is then used in the main query.
 
 Let's break the example above up and do the subquery first by itself.
 
@@ -73,6 +73,7 @@ FROM linkedin)
 ![Gif showing a subquery that uses the max function](/assets/images/how-to-teach-people-sql/subqueries/subqueries_5.gif)
 
 Multi-value subquery tables will result in an error since it would try to compare a single field to every row in a column or every cell within table at once.
+
 ```sql
 SELECT *
 FROM facebook
