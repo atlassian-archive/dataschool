@@ -6,7 +6,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1jWCNjEHDpkTAuR1UaGAmKBmw9bkD7TxOQe-2GvAZ5jA/edit?usp=sharing
-image: /assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/filtering.png
+image: "/assets/images/how-to-teach-people-sql/appendix/difference_between_where_and_on_in_sql/filtering.png"
 description: Understand how filtering and joining can be done in both the ON and WHERE
   clauses in SQL. Choose the best strategy for JOINing data in SQL.
 is_featured: false
@@ -14,9 +14,9 @@ img_border_on_default: false
 meta_title: Difference between WHERE and ON in SQL to JOIN data
 
 ---
-Q: Is there a difference between the WHERE and ON clause?
+## Is there a difference between the WHERE and ON clause?
 
-Yes. ON should be used to define the join condition and WHERE should be used to filter the data. Notice I used the word should, meaning this is not a hard rule. The splitting of these purposes with their respective clauses makes the query the most readable, it also prevents incorrect data being retrieved when using JOINs types other than INNER JOIN.
+Yes. ON should be used to define the join condition and WHERE should be used to filter the data. I used the word should because this is not a hard rule. The splitting of these purposes with their respective clauses makes the query the most readable, it also prevents incorrect data being retrieved when using JOINs types other than INNER JOIN.
 
 To go more in depth we will cover the two use cases that either WHERE or ON can support:
 

@@ -20,11 +20,11 @@ A SQL subquery can look complicated:
 ```sql
 SELECT *
 FROM (SELECT State, SUM (# of friends)
-FROM facebook
-GROUP BY state);
+	FROM facebook
+	GROUP BY state);
 ```
 
-The core concept to grasp is that the subquery (the part highlighted in blue inside the parentheses) is a separate SQL query that produces a table that is then used in the main query.
+The core concept to grasp is that the subquery (the part inside the parentheses) is a separate SQL query that produces a table that is then used in the main query.
 
 Let's break the example above up and do the subquery first by itself.
 
@@ -67,17 +67,18 @@ Single value subquery table:
 SELECT *
 FROM facebook
 WHERE # of friends = (SELECT MAX(# of connections)
-FROM linkedin)
+	FROM linkedin)
 ```
 
 ![Gif showing a subquery that uses the max function](/assets/images/how-to-teach-people-sql/subqueries/subqueries_5.gif)
 
 Multi-value subquery tables will result in an error since it would try to compare a single field to every row in a column or every cell within table at once.
+
 ```sql
 SELECT *
 FROM facebook
 WHERE # of friends = (SELECT # of connections
-FROM linkedin)
+	FROM linkedin)
 ```
 
 ![Full SQL Subquery Animation in WHERE Statement](/assets/images/how-to-teach-people-sql/subqueries/subqueries_6.gif)
@@ -88,7 +89,7 @@ Multi-value subquery tables can be used with logical operators such as IN which 
 SELECT *
 FROM facebook
 WHERE # of friends IN (SELECT # of connections
-FROM linkedin)
+	FROM linkedin)
 ```
 
 ![SQL Subquery with Logical Operators Animation](/assets/images/how-to-teach-people-sql/subqueries/subqueries_7.gif)
@@ -102,17 +103,17 @@ Subquery in the Query:
 ```sql
 SELECT *
 FROM (SELECT State, SUM (# of friends)
-FROM facebook
-GROUP BY state)
+	FROM facebook
+    GROUP BY state)
 ```
 
 Subquery in a WITH statement:
 
 ```sql
 WITH subQ AS (
-SELECT State, SUM (# of friends)
-FROM facebook
-GROUP BY state)
+	SELECT State, SUM (# of friends)
+	FROM facebook
+	GROUP BY state)
 SELECT *
 FROM subQ
 ```
