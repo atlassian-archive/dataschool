@@ -4,6 +4,9 @@ authors:
 - _people/matt.md
 number: 100
 section: Appendix
+meta_title: SQL practice on JOINs, Aggregations, and Subqueries
+description: Test your SQL skills by performing complex JOINs, different types of
+  aggregations, and Subqueries
 
 ---
 Good luck!
