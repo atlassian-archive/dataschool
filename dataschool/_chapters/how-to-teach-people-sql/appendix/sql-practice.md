@@ -1,3 +1,10 @@
+---
+title: SQL Practice
+authors:
+- _people/matt.md
+number: 100
+
+---
 Good luck!
 
 {% for quiz in site.data.learn-sql.quizes.slideshow %}
