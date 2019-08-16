@@ -188,6 +188,7 @@ mid-level:
     references:
       - 'dates'
       - "aggregate"
+
 slideshow:
   - question: "Fetch the all track names and what genre they are"
     answer: "SELECT tracks.name as "TrackName", genres.name as "GenreName" FROM tracks INNER JOIN genres on genres.id = tracks.genre_id"
