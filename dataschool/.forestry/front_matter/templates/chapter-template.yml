@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/misrepresenting-data/survivorship-bias.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
 - dataschool/_chapters/misrepresenting-data/predicting-outcomes.md
@@ -95,7 +96,6 @@ pages:
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
 - dataschool/_chapters/data-governance/what-database-to-use.md
-- dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md
