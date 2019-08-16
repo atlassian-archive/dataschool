@@ -2,8 +2,8 @@
 section: Data Warehouse
 title: Data Warehouse Maintenance
 meta_title: How to Maintain a Data Warehouse
-description: Learn how the best practices to maintain a Data Warehouse. Keep it simple
-  to use and analyze.
+description: Learn the best practices to maintain a Data Warehouse. Learn how to add
+  new data, remove deprecated data, and optimize for performance..
 number: 35
 authors:
 - _people/jaime-flores-lovo.md
