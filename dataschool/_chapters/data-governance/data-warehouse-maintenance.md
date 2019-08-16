@@ -5,7 +5,8 @@ meta_title: How to Maintain a Data Warehouse
 description: Learn how the best practices to maintain a Data Warehouse. Keep it simple
   to use and analyze.
 number: 35
-authors: []
+authors:
+- _people/jaime-flores-lovo.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
