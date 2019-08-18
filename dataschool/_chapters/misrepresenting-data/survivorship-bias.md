@@ -74,23 +74,21 @@ Why might these conclusions be wrong?
 
 ### My BI tool resonates with data analysts (inferring a norm)
 
-Without examining the people who stopped using the too, we do not know if that group of people in the trial had data analysts in it as well. Let’s say everyone that started the trial was a data analyst and you had more people give up than keep engaging. This challenges us to do more investigative work to find out why some data analysts kept using the BI tool when others didn’t.
+Without examining the people who stopped using the tool, we do not know if that group of people in the trial had data analysts in it as well. Let’s say everyone that started the trial was a data analyst and you had more people give up than keep engaging. This would directly contradict your previous conclusion. 
 
-Just because all of your engaged users are data analysts does not mean your product resonates with all data analysts.
+We need to do more investigative work to find out about those that did not survive the free trial process before drawing conclusions. Just because all of your engaged users are data analysts does not mean your product resonates with all data analysts.
 
 #### How to reach a more informed conclusion:
 
-Analyze everyone who started the trial to find patterns that truly separate cohorts. Maybe there is something unique about those who engaged and those that did not continue the trial
-
-This type of analysis can also be done pre-trial. Are there other tools people are using that resonate with them. If there are multiple tools that are used by data analyst, then there are likely a variety of needs to be met within the data analyst community. Why are data analyst buying different products? This question can help uncover these differences within a group.
+Analyze everyone who started the trial to find patterns that truly separate cohorts. Maybe there is something unique about those who engaged and those that did not continue the trial, but we must look at the non survivors before inferring a norm.
 
 ### My BI tool empowers deep analysis (inferring causality)
 
-Right now you are not comparing your users' capabilities against a control. They may be doing the most advanced thing in your BI tool, but they might be capable of even more advanced analysis when using other BI tools. Without comparing the ease at which these analysts perform these types of analyses using other tools, you cannot determine whether your product is more useful to them than alternatives. They might be very skilled analysts and succeeding in spite of your design, not because of it. (change the word succeeding)
+Right now you are not comparing your users' capabilities against a control. They may be doing the most advanced thing in your BI tool, but they might be capable of even more advanced analysis when using other BI tools. They might be very skilled analysts and succeeding in spite of your design, not because of it.
 
 #### How to reach a more informed conclusion
 
-Do a pre-assessment of users skill level to see if your product/features are actually adding value. Run tests of people performing similar tasks with the tools they currently use These tests become a great PR piece for your product or feature if you can cite a positive benefit: “Users complete BI analysis 2 times faster on our tool than our leading competitor’s tool”.
+Do a pre-assessment of users skill level to see if your product/features are actually adding value. Run tests of people performing similar tasks with the tool(s) they currently use to accomplish this analysis. These tests become a great PR piece for your product or feature if you can cite a positive benefit: “Users complete BI analysis 2 times faster on our tool than our leading competitor’s tool”.
 
 ## Summary
 
