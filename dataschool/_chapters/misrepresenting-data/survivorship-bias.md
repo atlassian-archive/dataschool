@@ -23,7 +23,7 @@ reading_time:
 ---
 ## What is Survivorship Bias?
 
-Survivorship bias is the tendency to draw conclusions based on things that have survived some selection process and ignore things that did not survive. It is a cognitive bias and is a form of selection bias.
+Survivorship bias is the tendency to draw conclusions based on things that have survived some selection process and to ignore things that did not survive. It is a cognitive bias and is a form of selection bias.
 
 There are two main ways people reach erroneous conclusions through survivorship bias, inferring a norm and inferring causality.
 
