@@ -25,7 +25,7 @@ reading_time:
 
 Confirmation bias is the tendency to **seek out or interpret data to confirm beliefs you already hold**. It does this to the exclusion of contrary evidence.
 
-In a business context, this means ignoring data that is suggesting that some aspect of your feature/product is not working because you found another metric that seems to suggest that it is working.
+In a business context, this means ignoring data that is suggesting that some aspect of your feature, product, or business is not working because you found another metric that seems to suggest that it is working.
 
 Confirmation bias pressures you to ignore the negative signs and focus on the positive.
 
@@ -45,17 +45,17 @@ If the only news is good news confirmation bias is probably hiding some inconven
 
 ### Limited metrics reported
 
-Usually people present a few metrics because they are trying to be brief and that is desirable in most cases. What they need to be careful of is if in their brevity they are not highlighting important pieces of data that might not fit their story. If they only show one metric in their presentation of the data there is important data being left out.
+Usually people present a few metrics because they are trying to be brief and that is desirable in most cases. However it is unethical to not present data that contradicts their story if they have it. If someone shows a single  metric in their presentation, more often than not important contradictory data is being left out.
 
 ### Obscure metrics being used
 
-Many times we cannot measure exactly what we want so we have to settle for proxy metrics. As these metrics become more and more abstracted our confidence in them should diminish. If people are confidently sharing convoluted proxy metrics they are likely looking for ways to find positive signals in the data.
+Many times we cannot measure exactly what we want so we have to settle for proxy metrics. As these metrics become more and more abstracted our confidence in them should diminish in how accurately they represent what we want to be measuring. If people are confidently sharing convoluted proxy metrics they are likely looking for ways to find positive signals in the data.
 
 ## What to do about confirmation bias?
 
 ### Institutionalized disconfirmation
 
-Institutionalized disconfirmation is how academia addresses the confirmation bias problem. Anytime you want to publish a paper on a finding it typically has to be peer reviewed. So you have many other self interested scientists making sure that what you submitted has sound logic and analysis behind it.
+Institutionalized disconfirmation is how academia addresses the confirmation bias problem. Anytime you want to publish a paper it typically has to be peer reviewed. So you have many other self interested scientists making sure that what you submitted has sound logic and analysis behind it.
 
 However academia is finding that this level of review is insufficient, especially in the social sciences. Too many professional articles report data that does not hold up in subsequent trials. In fact it has been dubbed the [Reproducibility Crisis](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970). Reproducibility is a much higher bar than examining the analysis, it provides more data to confirm what the paper has laid out.
 
@@ -65,7 +65,7 @@ The first step is to create a peer review process. Before an analysis is present
 
 ### 3rd party audit
 
-Hiring a 3rd party audit is how government tends to address the confirmation bias problem. They have different organizations randomly audited by a 3rd party (in this case the Government Accountability Office) to see if records are accurate and to determine how the company is really doing. Is money being spent properly, and are they actually achieving the results they claim.
+Hiring a 3rd party audit is how government tends to address the confirmation bias problem. They have different organizations randomly audited by a 3rd party (the Government Accountability Office) to see if records are accurate and to determine how the organization is really doing. Is money being spent properly, and are they actually achieving the results they claim?
 
 At times, a journalist can serve as the 3rd party who investigates and exposes shortcomings of government agencies and companies.
 
@@ -77,16 +77,18 @@ You can also hire consultants to come in and audit what is going on in your comp
 
 ### Insurance rules
 
-This is one way business tries to address the confirmation bias problem. It does not prevent confirmation bias so much as put a monthly cost on it to make it less risky. It places the burden on the insurance company to carry the cost of a mistake the company didn’t find. However, this comes with additional oversight by the insurance company. They will enforce rules for what the business can and can’t do, and charge the business monthly for holding this liability.
+This is one way business tries to address the confirmation bias problem. It does not prevent confirmation bias so much as it places rules on the company to prevent certain errors from happening. For instance it may require an inspector (3rd party audit) before u can get a policy on a house. Or it will not cover your life insurance if you choose to skydive. These rules can prevent certain silly mistakes from happening.
 
-_How can you apply this practice to your company?_
+**How can you apply this practice to your company?**
 
-Create parameters of what people can claim with their data. Restrict certain types of phrases such as anything causal. If they make claims that exist outside of those parameters, it does not have approval to be shared.
+Create parameters of what people can and can't claim with their data. Restrict certain types of phrases such as anything causal. If they make claims that exist outside of those parameters, it does not have approval to be shared and so claim is not "insured" by the company.
 
 ### Culture
 
 This is another way businesses tries to address the confirmation bias problem. They create a culture in which failure is not expected but is understood and does not cost the employee large consequences. This has been done most famously in Toyota, where any employee can stop the whole production line if they notice a mistake and in Google X where they celebrate a projects failure with champagne and bonuses.
 
-_How can you apply this practice to your company?_
+This culture helps you to second guess your motives for only showing successful metrics.
+
+**How can you apply this practice to your company?**
 
 Emphasize the mission of your company. Show that the mission is more important than feeling good about the success of a product or feature. To make real progress toward the goal we are going to mess up a lot and we need to know how we messed up so we can make better decisions in the future.
