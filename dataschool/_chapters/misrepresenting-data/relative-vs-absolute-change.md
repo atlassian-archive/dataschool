@@ -42,7 +42,7 @@ So if I got a $50 dollar return on my $10 investment, my relative change was a 4
 
 There is also some variation in how relative changes are reported. Here we have a 400% increase which is also the same as saying 5 times as much. This becomes more confusing when a relative change is negative. Something that is 5 times as small is an 80% decrease from the original amount.
 
-Relative changes on big numbers can appear less significant. This is because any absolute change in the number needs to be large to show a large relative change. Even when the absolute change may be large, if it occurs and a much larger number the relative change will be small. Let’s say that the national deficit increased by 5%. This may seem small, but the actual increase or absolute change to the $20,000,000,000,000 budget is 1 trillion dollars.
+Relative changes on big numbers can appear less significant. This is because any absolute change in the number needs to be large to show a large relative change. Even when the absolute change is large, if it is a change on a larger number the relative change can be small. Let’s say that the national deficit increased by 5%. This may seem small, but the actual increase or absolute change to the $20,000,000,000,000 budget is 1 trillion dollars.
 
 ![4 blocks as a 6.25% increase](/assets/images/misrepresenting-data/relVsAbsChange/relVsAbsChange_1.png)
 
