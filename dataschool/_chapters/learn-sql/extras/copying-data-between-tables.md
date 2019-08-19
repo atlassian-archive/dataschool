@@ -45,7 +45,7 @@ In order to create a master list that contains all of the store's items and pric
 
 The shopkeeper needs to first make a new table to contain the data. The master list needs to have the same table structure (columns, data-types, etc.). The easiest way to create a table with the same table structure as a different table is to use:
 ```sql
-    CREATE TABLE [New Table] AS TABLE [Old Table] WITH NO DATA;
+CREATE TABLE [New Table] AS TABLE [Old Table] WITH NO DATA;
 ```
 Once filled out, this command will create a new table with the same table structure, but without any data. The shopkeeper can use this to create his master list:
 
@@ -77,7 +77,7 @@ This gives the shopkeeper the desired result so that he can begin his audit:
 
 Copying data with INSERT INTO can also be done with conditions. For example, if the shopkeeper is only interested in items over $50 these values can be copied by using:
 ```sql
-    INSERT INTO masterlist [SELECT statements] WHERE price>money(50);
+INSERT INTO masterlist [SELECT statements] WHERE price>money(50);
 ```
 Each SELECT statement can also have its own where statement for table specific conditions. After the table is created and filled it can be manipulated, added to or removed from without affecting the tables the data was copied from.
 
