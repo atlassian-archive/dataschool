@@ -77,7 +77,7 @@ You can also hire consultants to come in and audit what is going on in your comp
 
 ### Insurance rules
 
-This is one way business tries to address the confirmation bias problem. It does not prevent confirmation bias so much as it places rules on the company to prevent certain errors from happening. For instance it may require an inspector (3rd party audit) before u can get a policy on a house. Or it will not cover your life insurance if you choose to skydive. These rules can prevent certain silly mistakes from happening.
+This is one way business tries to address the confirmation bias problem. It does not prevent confirmation bias so much as it places rules on the company to prevent certain errors from happening. For instance it may require an inspector (3rd party audit) before u can get a policy on a house. Or it will not cover your life insurance if you choose to skydive or engage in other behavior that is unpredictable and risky. These rules can be overly burdensome but they do prevent certain silly mistakes from happening.
 
 **How can you apply this practice to your company?**
 
