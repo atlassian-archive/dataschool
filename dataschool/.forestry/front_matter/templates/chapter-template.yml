@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/relative-vs-absolute-change.md
 - dataschool/_chapters/misrepresenting-data/confirmation-bias.md
 - dataschool/_chapters/misrepresenting-data/survivorship-bias.md
@@ -104,7 +105,6 @@ pages:
 - dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/data-governance/source-data-stack.md
 - dataschool/_chapters/data-governance/data-warehouse-data-stack.md
-- dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/misrepresenting-data/define-experiment-parameters.md
