@@ -66,8 +66,8 @@ Join the Artist and the Album table with an outer join in the SQL box below:
 
 <sqlbox
 
-answer="SELECT * FROM artists OUTER JOIN albums ON albums.artist_id = artists.id"
+answer="SELECT * FROM artists FULL OUTER JOIN albums ON albums.artist_id = artists.id"
 
-hint='Try using OUTER JOIN'
+hint='Try using FULL OUTER JOIN'
 
 correct_message='Correct! We can simply replace inner with outer to perform this type of join.'></sqlbox>
