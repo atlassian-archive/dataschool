@@ -94,7 +94,21 @@ Fix the following queries:
 
 <sqlbox
 
-initial='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
+initial='SELECT * FROM album JOIN albums ON artists.artist_id=artists.id;'
+
+autorun="true"
+
+answer='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
+
+hint='Try using INNER JOIN'
+
+correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox>
+
+<sqlbox
+
+initial='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.ids;'
+
+autorun="true"
 
 answer='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
 
