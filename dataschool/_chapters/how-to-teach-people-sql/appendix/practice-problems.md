@@ -1,5 +1,5 @@
 ---
-section: book
+section: Appendix
 title: Practice Problems
 meta_title: ''
 description: ''
@@ -14,7 +14,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
-published: false
 
 ---
 <sqlbox
