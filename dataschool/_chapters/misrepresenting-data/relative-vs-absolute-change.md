@@ -51,7 +51,7 @@ Relative changes on big numbers can appear less significant. This is because any
 Absolute changes work the other way:
 
 * Absolute changes on small numbers can look small even if their relative changes are large. I earned $40 on my investment.
-* Absolute changes on big numbers can look big even if their relative changes are large small. The deficit has increased by 1 trillion dollars.
+* Absolute changes on big numbers can look big even if their relative changes are small. The deficit has increased by 1 trillion dollars.
 
 ## When to use Relative vs Absolute change
 
