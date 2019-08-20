@@ -56,21 +56,17 @@ Join the Artist and the Album table with an inner join in the SQL box below:
 
 <sqlbox
 
-answer='SELECT * FROM artist JOIN albums;'
+answer='SELECT * FROM artist JOIN albums ON albums.artist_id=artist.id;'
 
-hint='Try using SELECT *'
+hint='Try using INNER JOIN'
 
-correct_message='Correct! SELECT * can be used to return all of the columns from any table you have access to.'></sqlbox>
+correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox>
 
-Select all columns from the albums table where the album title is 'Let There Be Rock' in the SQL box below:
+Join the Artist and the Album table with an outer join in the SQL box below:
 
 <sqlbox
 
-answer="SELECT * 
-
-FROM albums 
-
-WHERE albums.TITLE = 'Let There Be Rock'"
+answer="SELECT * FROM artist OUTER JOIN albums ON albums.artist_id=artist.id"
 
 hint='Try using SELECT *'
 
