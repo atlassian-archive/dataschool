@@ -1,10 +1,11 @@
 ---
 section: Extras
 title: Additional Practice
-meta_title: ''
-description: ''
-number: 1000
-authors: []
+meta_title: Additional SQL Pracitce
+description: Practice common SQL commands with simple questions.
+number: 10000
+authors:
+- _people/matt.md
 reviewers: []
 feedback_doc_url: ''
 image: ''
