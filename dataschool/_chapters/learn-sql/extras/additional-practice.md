@@ -72,8 +72,8 @@ FROM artists
 
 OUTER JOIN albums 
 
-ON albums.artist_id=artists.id"
+ON albums.artist_id = artists.id"
 
-hint='Try using SELECT *'
+hint='Try using OUTER JOIN'
 
 correct_message='Correct! We can simply replace inner with outer to perform this type of join.'></sqlbox>
