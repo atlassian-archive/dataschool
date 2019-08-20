@@ -62,6 +62,16 @@ hint='Try using INNER JOIN'
 
 correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox>
 
+Join the Artist and the Album table with an left join in the SQL box below:
+
+<sqlbox
+
+answer="SELECT * FROM artists LEFT JOIN albums ON albums.artist_id = artists.id"
+
+hint='Try using LEFT JOIN'
+
+correct_message='Correct! We can simply replace inner with outer to perform this type of join.'></sqlbox>
+
 Join the Artist and the Album table with an outer join in the SQL box below:
 
 <sqlbox
