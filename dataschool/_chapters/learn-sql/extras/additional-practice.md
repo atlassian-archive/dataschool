@@ -52,32 +52,52 @@ correct_message='Correct! WHERE can be used to filter the rows returned.'></sqlb
 
 ## Join Questions
 
-Join the Artist and the Album table with an inner join in the SQL box below:
+Join the Artist and the Album table with an **inner join** in the SQL box below:
 
 <sqlbox
 
-answer='SELECT * FROM artists JOIN albums ON albums.artist_id=artists.id;'
+answer='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
 
 hint='Try using INNER JOIN'
 
 correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox>
 
-Join the Artist and the Album table with an left join in the SQL box below:
+Join the Artist and the Album table with an **left join** in the SQL box below:
 
 <sqlbox
 
-answer="SELECT * FROM artists LEFT JOIN albums ON albums.artist_id = artists.id"
+answer="SELECT * FROM albums LEFT JOIN artists ON albums.artist_id = artists.id"
 
 hint='Try using LEFT JOIN'
 
-correct_message='Correct! We can simply replace inner with outer to perform this type of join.'></sqlbox>
+correct_message='Correct! We can simply replace INNER with LEFT to perform this type of join.'></sqlbox>
 
-Join the Artist and the Album table with an outer join in the SQL box below:
+Join the Artist and the Album table with an **outer join** in the SQL box below:
 
 <sqlbox
 
-answer="SELECT * FROM artists FULL OUTER JOIN albums ON albums.artist_id = artists.id"
+answer="SELECT * FROM albums FULL OUTER JOIN artists ON albums.artist_id = artists.id"
 
 hint='Try using FULL OUTER JOIN'
 
-correct_message='Correct! We can simply replace inner with outer to perform this type of join.'></sqlbox>
+correct_message='Correct! We can simply replace INNER or LEFT with outer to perform this type of join.'></sqlbox>
+
+The INNER JOIN found every instance where the albums.artist_id equalled an artists.id and joined the data together to create a row in the final table.
+
+The LEFT JOIN performed an INNER JOIN and then also added rows to the final table where the left table (albums) did not have matches.
+
+The OUTER JOIN performed both an INNER and LEFT JOIN and then also added rows to the final table where the right table (artists) did not have matches.
+
+## Common Errors Questions
+
+Fix the following queries:
+
+<sqlbox
+
+initial='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
+
+answer='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
+
+hint='Try using INNER JOIN'
+
+correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox>
