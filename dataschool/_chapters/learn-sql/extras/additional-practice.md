@@ -56,7 +56,7 @@ Join the Artist and the Album table with an inner join in the SQL box below:
 
 <sqlbox
 
-answer='SELECT * FROM artist JOIN albums ON albums.artist_id=artist.id;'
+answer='SELECT * FROM artists JOIN albums ON albums.artist_id=artists.id;'
 
 hint='Try using INNER JOIN'
 
@@ -66,7 +66,13 @@ Join the Artist and the Album table with an outer join in the SQL box below:
 
 <sqlbox
 
-answer="SELECT * FROM artist OUTER JOIN albums ON albums.artist_id=artist.id"
+answer="SELECT * 
+
+FROM artists 
+
+OUTER JOIN albums 
+
+ON albums.artist_id=artists.id"
 
 hint='Try using SELECT *'
 
