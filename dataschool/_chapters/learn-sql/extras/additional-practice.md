@@ -20,6 +20,10 @@ For practicing we will be using a online music store database. Here is the entit
 
 ![](/assets/images/Frame (64).png)
 
+\*note all primary key columns are just ID. ArtistId in the artists table is ID
+
+\**any two word combination column name is separated by an underscore FirstName is first_name
+
 Feel free to explore the data by using SELECT * FROM \[table name\] in the SQL editor below:
 
 <sqlbox></sqlbox>
