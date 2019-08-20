@@ -70,4 +70,4 @@ answer="SELECT * FROM artist OUTER JOIN albums ON albums.artist_id=artist.id"
 
 hint='Try using SELECT *'
 
-correct_message='Correct! WHERE can be used to filter the rows returned.'></sqlbox>
+correct_message='Correct! We can simply replace inner with outer to perform this type of join.'></sqlbox>
