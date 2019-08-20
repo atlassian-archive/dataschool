@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/how-to-teach-people-sql/appendix/practice-problems.md
 - dataschool/_chapters/misrepresenting-data/relative-vs-absolute-change.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/misrepresenting-data/trends.md
