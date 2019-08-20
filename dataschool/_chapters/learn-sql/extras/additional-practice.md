@@ -40,11 +40,11 @@ Select all columns from the albums table where the album is  in the SQL box belo
 
 <sqlbox
 
-answer='SELECT * 
+answer="SELECT * 
 
 FROM albums 
 
-WHERE albums.TITLE = 'Let There Be Rock''
+WHERE albums.TITLE = 'Let There Be Rock'"
 
 hint='Try using SELECT *'
 
