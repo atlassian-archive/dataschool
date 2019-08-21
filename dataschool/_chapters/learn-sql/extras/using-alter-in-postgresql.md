@@ -56,7 +56,7 @@ Another usage of ALTER TABLE is to **add table constraints**. For example, if a 
 
 ```sql
 ALTER TABLE traffic
-ADD CONSTRAINT unique_seqid UNIQUE seqid;
+ADD CONSTRAINT unique_seqid UNIQUE (seqid);
 ```
 
 This command can also be used to add a constraint to the whole table.
