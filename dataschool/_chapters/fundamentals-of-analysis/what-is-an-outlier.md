@@ -3,7 +3,7 @@ section: book
 title: What is an Outlier?
 meta_title: What is an Outlier and how to find them
 description: Learn how to detect Outliers in different types of data and scenarios.
-number:
+number: 3
 authors:
 - _people/rebecca-barnes.md
 reviewers:

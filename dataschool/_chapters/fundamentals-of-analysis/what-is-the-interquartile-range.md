@@ -1,10 +1,10 @@
 ---
 section: book
-title: What is the Interquartile Range
+title: What is the Interquartile Range?
 meta_title: What is the Interquartile Range (IQR)
 description: Learn what the Interquartile Range (IQR) is and how to use it to determine
   outliers.
-number:
+number: 4
 authors:
 - _people/rebecca-barnes.md
 reviewers:
