@@ -181,7 +181,7 @@ If we want to look at different distributions of outliers we can plot different 
 
 For more detailed information on how outliers are found using the IQR, and how to use this method in SQL, check out these articles:
 
-* What is IQR?
+* [What is IQR?](https://dataschool.com/fundamentals-of-analysis/what-is-the-interquartile-range/)
 * [How to Find Outliers with SQL](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/)
 
 # Conclusion
