@@ -24,6 +24,9 @@ Below is an example query plan for a given query:
 
 This query plan shows the particular steps taken to execute the given command. It also specifies the expected cost for each section.
 
+## Video
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1qVp8ePIMjs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## The Query Optimizer
 
 SQL is a declarative language. This means that SQL queries describe what the user wants and then the query is transformed into executable commands by the Query Optimizer. Those executable commands are known as Query Plans.
