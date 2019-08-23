@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-an-outlier.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md
