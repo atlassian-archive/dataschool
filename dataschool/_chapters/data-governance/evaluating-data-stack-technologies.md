@@ -38,7 +38,7 @@ Every software tool spins off data, your application, google analytics, salesfor
 
 Normally the elements of a Data Stack are composed to perform these functions in this order, with raw data flowing into the ingestion point and becoming more and more refined until it finally is prepared enough for people to understand. We will use a visual to show how different BI tools map to these functions and what level of capabilities they have for that function. Here is an example graph:
 
-![](https://lh5.googleusercontent.com/ac1ih-u0yL-gwHYNVNXPMGrGfGzVonaPPptyICwqnsEcwoWS48QYbwQ0_zsWP6iXctI9GmKOjRXoiliX5DfAH9tdiPvr9BCvAoCxMlVUdwmeaT6xA4CWvjA_TtMM-tlWJ77u0b7Q =624x187)
+![](https://lh5.googleusercontent.com/ac1ih-u0yL-gwHYNVNXPMGrGfGzVonaPPptyICwqnsEcwoWS48QYbwQ0_zsWP6iXctI9GmKOjRXoiliX5DfAH9tdiPvr9BCvAoCxMlVUdwmeaT6xA4CWvjA_TtMM-tlWJ77u0b7Q)
 
 ## Fitting Technologies Into the Data Stack
 
@@ -48,7 +48,7 @@ Technologies such as Microsoft Excel could be your entire Data Stack. It has the
 
 It can ingest a csv, store an xlsx file, convert the data to be more usable, recall the data so it can be used, compute aggregations on the data, and visually present the information in a chart. Let’s take a look at how well it performs each part of the Data Stack:
 
-![](https://lh5.googleusercontent.com/a0uMQ9bWJcHH3veQyFjeUyh4SNOnB-kDIOOqAk-xCJRyJWbdKfOhwnrfjhKg1Z5S08IJDHmmYgfDVNBfAqp56XOmkMch9YuP1Zf3q9IaNaF7w2mZ1j5Qm0A1ZRUkd2PgBkB_1PFZ =624x187)
+![](https://lh5.googleusercontent.com/a0uMQ9bWJcHH3veQyFjeUyh4SNOnB-kDIOOqAk-xCJRyJWbdKfOhwnrfjhKg1Z5S08IJDHmmYgfDVNBfAqp56XOmkMch9YuP1Zf3q9IaNaF7w2mZ1j5Qm0A1ZRUkd2PgBkB_1PFZ)
 
 Let’s examine why we rated **ingest** low and **present** high
 
@@ -63,7 +63,7 @@ Let’s examine why we rated **ingest** low and **present** high
 
 ### Postgres
 
-![](https://lh5.googleusercontent.com/HP5QDG8TWs3PcKchKWavBEM1Hp1SfZlnstckOHkm1EbehI0YXwCe1fBFzTXukWctIDZqXqqfGtO7mq8iXHQNFnYJkDgwewKT7WZXiuPBoACJBN61avRRfDITL1tEmRHIOLHht-mw =624x187)
+![](https://lh5.googleusercontent.com/HP5QDG8TWs3PcKchKWavBEM1Hp1SfZlnstckOHkm1EbehI0YXwCe1fBFzTXukWctIDZqXqqfGtO7mq8iXHQNFnYJkDgwewKT7WZXiuPBoACJBN61avRRfDITL1tEmRHIOLHht-mw)
 
 Why does Postgres do a better job at **Store** and **Compute**?
 
@@ -81,7 +81,7 @@ At this point many readers might be thinking that Excel has advantages in Comput
 
 ### Chartio
 
-![](https://lh6.googleusercontent.com/o3LhH7_Y81sezc_3VZ486SApchqzoqcBXwrp5zXdZGLYllXypiza5c4d2MaW_BJabrXlf68-Irq2CyyZq71u9R-HapLetp0GpnhUrsq7EmPp1xAMgu-TGes71Ofu0tEzaJPcCAad =624x187)
+![](https://lh6.googleusercontent.com/o3LhH7_Y81sezc_3VZ486SApchqzoqcBXwrp5zXdZGLYllXypiza5c4d2MaW_BJabrXlf68-Irq2CyyZq71u9R-HapLetp0GpnhUrsq7EmPp1xAMgu-TGes71Ofu0tEzaJPcCAad)
 
 From the above we see that Postgres does not have any ability to **Present** data. A tool like Chartio can help with this:
 
@@ -100,11 +100,11 @@ The combination of collection of meaningful data sets from a database and produc
 
 Suppose that a mobile game developer wants to track user behavior within the context of the mobile app. This might require tracking of dozens of distinct events per session that might represent actions like completing a level, viewing a screen, or clicking on a banner ad. If this game attracts thousands of users per day, the volume of raw activity data will exceed Excel’s capability in short order. A detailed analysis of the requirements might produce a rough profile such as this:
 
-![](https://lh3.googleusercontent.com/EgMIRT3ptYVrbtdeTYATypEXHJGTBnt-zTev0Ao7fBWIgf954QZTcMhTdRPoY2vcSPiaSZKlJVvuriWLBSsoTiyurt9p_ZMcQ8t7cJc9yig-ukCxDYCaL6D3n_FTXePfc8Vfd7PJ =624x187)
+![](https://lh3.googleusercontent.com/EgMIRT3ptYVrbtdeTYATypEXHJGTBnt-zTev0Ao7fBWIgf954QZTcMhTdRPoY2vcSPiaSZKlJVvuriWLBSsoTiyurt9p_ZMcQ8t7cJc9yig-ukCxDYCaL6D3n_FTXePfc8Vfd7PJ)
 
 Where the need in excess of Excel’s capabilities is largely due to raw data volume. Naturally this suggests that a solution that can handle a greater volume of data would be appropriate. A simple combination of Postgres and Chartio might have combined capabilities that look roughly like this:
 
-![](https://lh3.googleusercontent.com/b2o00YDFgMsSC5EL10GsSBX51o3lH7iwx3OOBvbhXNBEJlX3jfpHWc5RBwH6CuwVyZNuBUQH14-wruWHieYb3Yn8Y8J1cfSYkKo1SaRrQKAE3CRLgnBLIdAK-X9r1y3bX1zKA-FS =624x187)
+![](https://lh3.googleusercontent.com/b2o00YDFgMsSC5EL10GsSBX51o3lH7iwx3OOBvbhXNBEJlX3jfpHWc5RBwH6CuwVyZNuBUQH14-wruWHieYb3Yn8Y8J1cfSYkKo1SaRrQKAE3CRLgnBLIdAK-X9r1y3bX1zKA-FS)
 
 ## Growing with the Business
 
