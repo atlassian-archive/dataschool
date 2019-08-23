@@ -3,7 +3,7 @@ section: book
 title: What is an Outlier?
 meta_title: What is an Outlier and how to find them
 description: Learn how to detect Outliers in different types of data and scenarios.
-number: 
+number:
 authors:
 - _people/rebecca-barnes.md
 reviewers:
@@ -22,15 +22,15 @@ An outlier is a value or point that [differs substantially from the rest of the 
 
 Outliers can look like this:
 
-![](https://lh4.googleusercontent.com/QMOX7liGjtovgT1Y-KxjRTBHBPv_aCyLnwSOFtUQL1LKhRyQ6BJaTG9toFfqeoZv_skFxTTVWeADpF_kqR3UXoPDsL0RM7hzJXgu2vV9n1YamfuZdljlMx5_JI9-MJC8Mfjci9p4 =616x301)
+![](https://lh4.googleusercontent.com/QMOX7liGjtovgT1Y-KxjRTBHBPv_aCyLnwSOFtUQL1LKhRyQ6BJaTG9toFfqeoZv_skFxTTVWeADpF_kqR3UXoPDsL0RM7hzJXgu2vV9n1YamfuZdljlMx5_JI9-MJC8Mfjci9p4)
 
 This:
 
-![](https://lh4.googleusercontent.com/mV89QgedmvVy27O_EmgpJcYk2Wrhr_-jRQceOCWxoKvHui0RPxNvaUfdHksAzX1YDcJ0cQLFc2L2yAmOCn-nsFZBKNnlV1oTaaUzYI0hkvBdzuTnDjXX0Fzs4Ah2L7BEs0G8aYX3 =604x294)
+![](https://lh4.googleusercontent.com/mV89QgedmvVy27O_EmgpJcYk2Wrhr_-jRQceOCWxoKvHui0RPxNvaUfdHksAzX1YDcJ0cQLFc2L2yAmOCn-nsFZBKNnlV1oTaaUzYI0hkvBdzuTnDjXX0Fzs4Ah2L7BEs0G8aYX3)
 
 Or this:
 
-![](https://lh5.googleusercontent.com/P_vV21kBHWByEHkbYrVJMttt3mkEROe-aVZH3E4aLYjL8DhfPxTL-qnayt7eBfHfkYOjJtiUnq8AaR8S2i_-09IdWclcjXcDoEc3AVCDQDVjPKVix13kqESQs_rOwL5FhJD4LU35 =600x289)
+![](https://lh5.googleusercontent.com/P_vV21kBHWByEHkbYrVJMttt3mkEROe-aVZH3E4aLYjL8DhfPxTL-qnayt7eBfHfkYOjJtiUnq8AaR8S2i_-09IdWclcjXcDoEc3AVCDQDVjPKVix13kqESQs_rOwL5FhJD4LU35)
 
 Sometimes outliers might be errors that we want to exclude or an anomaly that we don’t want to include in our analysis. But at other times it can reveal insights into special cases in our data that we may not otherwise notice.
 
@@ -40,7 +40,7 @@ There is not a hard and fast rule about how much a data point needs to differ to
 
 ## Use of Domain Knowledge
 
-![](https://lh5.googleusercontent.com/zTcr-oSDWe2Yxk3KTA0GykF6qjgCP2s4oTGv6Da6t2Zg6qbHwyjkBhYs9JVMteqhV6vgv7JXD96NfT14ZRciKVKs9g2kCO11Kps6BsxIusHaQvrwyi-_wfXBeWrQqY1wDUMROvj1 =148x377)
+![](https://lh5.googleusercontent.com/zTcr-oSDWe2Yxk3KTA0GykF6qjgCP2s4oTGv6Da6t2Zg6qbHwyjkBhYs9JVMteqhV6vgv7JXD96NfT14ZRciKVKs9g2kCO11Kps6BsxIusHaQvrwyi-_wfXBeWrQqY1wDUMROvj1)
 
 Sometimes, the typical ranges of a value are known. For example, when measuring blood pressure, your doctor likely has a good idea of what is considered to be within the normal blood pressure range. If they were looking at the values above, they would identify that all of the values that are highlighted orange indicate high blood pressure. As a result, they may advise some course of action.
 
@@ -54,11 +54,11 @@ There are two common statistical indicators that can be used:
 
 1. Distance from the mean in standard deviations
 
-![](https://lh5.googleusercontent.com/ahsVrhQu03Fc9y7LRRyBn9uo6ai2wJbBEiOOhuE-aEilTD1p2DgEKUY1yvkGBWXe_yEbjJreKyKclbSqyYvuvKIAiBuCsrcPVqeIL91f7wyLo_M2FEfXEHiBBsC6kgOx5XTSXREo =387x349)
+![](https://lh5.googleusercontent.com/ahsVrhQu03Fc9y7LRRyBn9uo6ai2wJbBEiOOhuE-aEilTD1p2DgEKUY1yvkGBWXe_yEbjJreKyKclbSqyYvuvKIAiBuCsrcPVqeIL91f7wyLo_M2FEfXEHiBBsC6kgOx5XTSXREo)
 
 1. Distance from the interquartile range by a multiple of the interquartile range
 
-![](https://lh3.googleusercontent.com/tsBGlM-zrlUsS-bL62F49byYDV4RDumxYyAfx02XLDKTAsk8hJzyuKmZv4GD9jxutZ1ch2IWzTlcWLmh9gmCaruOiOtEbrDpjrjR0T6eanYd8DyFaGTGpmWHDZ_ws2fUbGG6NtJ1 =359x410)
+![](https://lh3.googleusercontent.com/tsBGlM-zrlUsS-bL62F49byYDV4RDumxYyAfx02XLDKTAsk8hJzyuKmZv4GD9jxutZ1ch2IWzTlcWLmh9gmCaruOiOtEbrDpjrjR0T6eanYd8DyFaGTGpmWHDZ_ws2fUbGG6NtJ1)
 
 For the purposes of our exploration, we’re going to use the interquartile range, but for more information about using the mean and the standard deviation, you can check out this [article](https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/).
 
@@ -123,13 +123,13 @@ When outliers exist in our data, it can affect the typical measures that we use 
 
 For example, if we had five friends with the ages of 23, 25, 27, and 30, the average age would be 26.25.
 
-![](https://lh4.googleusercontent.com/shLtcG6mWP-RQVBLuEj50OUhV9hTMljyy-ckmC2yFQbLkF8G7uViHP9ClNNQPvyeqwtYj-L715-9VSwo2K8xIbNtDljt1Q-7-YxCb1_7nvn2QEh_cw8YjeZJgJJOklpHdCC07QaP =624x167)
+![](https://lh4.googleusercontent.com/shLtcG6mWP-RQVBLuEj50OUhV9hTMljyy-ckmC2yFQbLkF8G7uViHP9ClNNQPvyeqwtYj-L715-9VSwo2K8xIbNtDljt1Q-7-YxCb1_7nvn2QEh_cw8YjeZJgJJOklpHdCC07QaP)
 
 In this case we can have high confidence that the average of our data is a good representation of the age of a “typical” friend.
 
 However, if we then change the value final value and we had friends with the ages of 23, 25, 27, and 70, the average age is now 36.25. This is quite a large increase, even though the majority of our friends are under 30 (mind the change in scale of the graphic).
 
-![](https://lh4.googleusercontent.com/s0MCRfkfDt7sBVqw8ZCgbLiQ-lyxigKS2E5ckQao3HpXwnWzzPpwpPU689CBXtWDdyItp8yQg0YK1T51OA1u4h_-u2k_vXMmIUinCURrrA2aRTt0ljXxg_CSwC8vzeHSMcEvaW2V =624x153)
+![](https://lh4.googleusercontent.com/s0MCRfkfDt7sBVqw8ZCgbLiQ-lyxigKS2E5ckQao3HpXwnWzzPpwpPU689CBXtWDdyItp8yQg0YK1T51OA1u4h_-u2k_vXMmIUinCURrrA2aRTt0ljXxg_CSwC8vzeHSMcEvaW2V)
 
 In this case, we have much less confidence that the average is a good representation of a typical friend and we may need to do something about this.
 
@@ -143,7 +143,7 @@ Identifying outliers can also help to determine what we should focus on in our a
 
 For example, let’s say we’re looking at our web traffic and we notice that we have some peaks that are much higher than others.
 
-![](https://lh6.googleusercontent.com/L3hIhN8DVppfk928ntJ9_HQrkz0Ukd9_Rn7Ip3t2mPeP45CkFyQKFAAL5bEe2BSB23r2zNK93EWADsGqqN888sLE-B5CMXu6EcV9E6VH8sPFv75YXR7KwQCcJZq0Cep14-zKnY_J =624x307)
+![](https://lh6.googleusercontent.com/L3hIhN8DVppfk928ntJ9_HQrkz0Ukd9_Rn7Ip3t2mPeP45CkFyQKFAAL5bEe2BSB23r2zNK93EWADsGqqN888sLE-B5CMXu6EcV9E6VH8sPFv75YXR7KwQCcJZq0Cep14-zKnY_J)
 
 It can be helpful to try to understand the cause of these peaks. Did we start a new ad campaign on that day? Do these peaks always happen when we start an ad campaign? Are there some ad campaigns that have been associated with higher peaks than others? What can we learn from this? When presenting the information, we can add annotations that highlight the outliers and provide a brief explanation to help convey the key implications of the outliers.
 
@@ -151,7 +151,7 @@ It can be helpful to try to understand the cause of these peaks. Did we start a 
 
 If something is particularly poor, it may alert us that there is an issue that needs to be addressed. For example, if you run four stores and in a quarter three are doing well in sales and one is not, this may be something to look into.
 
-![](https://lh3.googleusercontent.com/BrVw7woJptTDTO-i9g6KA4lIkgn3IbNcdaMCpc2oaNj5lXW7AAOTZ4JThohqkczGhash63RNCnPw-ITMalXUfRaIDNkxv7V8nxVQaSKF7zaQKidXK8dAZL7Y5QOedJlPf7kWGWgD =571x278)
+![](https://lh3.googleusercontent.com/BrVw7woJptTDTO-i9g6KA4lIkgn3IbNcdaMCpc2oaNj5lXW7AAOTZ4JThohqkczGhash63RNCnPw-ITMalXUfRaIDNkxv7V8nxVQaSKF7zaQKidXK8dAZL7Y5QOedJlPf7kWGWgD)
 
 Is this consistent performance for the store? Was there something happening in the local neighborhood, such as construction on the street where it is located, that could have contributed to the lower sales? Are there practices that are implemented in the other stores that could be adopted here? Or, is it that this is a brand new store and it is still building up its customer base?
 
@@ -161,7 +161,7 @@ All outliers are not created equal! If we do identify them it’s important to a
 
 Visualizing data gives an overall sense of the spread of the data. Outliers in visualizations can dramatically skew the visualization making it hard to interpret the rest of the data.
 
-![](https://lh3.googleusercontent.com/daivtcv6GY6S-uFjjr3F1GMa9-Yr6zkIAt6UGthypkBYI0ZbEPH4KVN_Z2fh_rd6kxs_YttXjU-HKLXaNe4SNURiK5JLmPlcNaSQh9i-h6zf66J94v6VwmyHjAEh0-rb6SgliQbq =558x272)
+![](https://lh3.googleusercontent.com/daivtcv6GY6S-uFjjr3F1GMa9-Yr6zkIAt6UGthypkBYI0ZbEPH4KVN_Z2fh_rd6kxs_YttXjU-HKLXaNe4SNURiK5JLmPlcNaSQh9i-h6zf66J94v6VwmyHjAEh0-rb6SgliQbq)
 
 In the above visualization, it is difficult to fully understand the fluctuation of the number of site visits because of one abnormal day.
 
@@ -169,7 +169,7 @@ There are visualizations that can handle outliers more gracefully. One such meth
 
 In a box plot we segment our data into four buckets or quartiles. The value that describes the threshold between the first and second quartile is called Q1 and the value that describes the threshold between the third and fourth quartiles is called Q3. The difference between the two is called the interquartile range, or IQR.
 
-![](https://lh5.googleusercontent.com/s0FxoD2J-qIgCUNWeuJdR3dgG1lgApObm1u7bHUGmJH6deIfpPOA2s2B5CqvOSuOVBPLs5EzVb0IoEzsRRb4lFdkVg8OzAOkFQx0cPW7KYrqAI2vzvFPmSfnoyGrTAEG_Bq3CrkB =311x328)
+![](https://lh5.googleusercontent.com/s0FxoD2J-qIgCUNWeuJdR3dgG1lgApObm1u7bHUGmJH6deIfpPOA2s2B5CqvOSuOVBPLs5EzVb0IoEzsRRb4lFdkVg8OzAOkFQx0cPW7KYrqAI2vzvFPmSfnoyGrTAEG_Bq3CrkB)
 
 The boundaries of Q1 and Q3 create our box, and Q2 or the median is visualized as a line through the box.
 
@@ -177,7 +177,7 @@ From here, we add lines above and below the box, or “whiskers”. To easily vi
 
 If we want to look at different distributions of outliers we can plot different categories together:
 
-![](https://lh4.googleusercontent.com/Knbja34DiZd84ApKH_nZqNMIM5r7ZbRDJ-E_IGYfCypmSUz2UeiHqKbEjJDb23RXKZjaPbmhdw4S-_O4-7bNhZEgoAranCp5RwKB5umm0UVXzCyRiLDCqG4g3PhKIhqROYUxT74Q =259x366)
+![](https://lh4.googleusercontent.com/Knbja34DiZd84ApKH_nZqNMIM5r7ZbRDJ-E_IGYfCypmSUz2UeiHqKbEjJDb23RXKZjaPbmhdw4S-_O4-7bNhZEgoAranCp5RwKB5umm0UVXzCyRiLDCqG4g3PhKIhqROYUxT74Q)
 
 For more detailed information on how outliers are found using the IQR, and how to use this method in SQL, check out these articles:
 
