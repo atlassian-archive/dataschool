@@ -3,7 +3,7 @@ section: Extras
 title: How to Replace Nulls with 0s in SQL
 meta_title: How to Use Update in SQL to replace Nulls
 description: This article talks about how to use the UPDATE statement to clean data.
-number: 
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
@@ -13,7 +13,7 @@ image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time: 
+reading_time:
 is_community_story: false
 story_intro_blurb: ''
 
@@ -27,6 +27,9 @@ WHERE [column] IS NULL;
 Null Values can be replaced in SQL by using UPDATE, SET, and WHERE to search a column in a table for nulls and replace them. In the example above it replaces them with 0.
 
 Cleaning data is important for analytics because messy data can lead to incorrect analysis. Null values can be a common form of messy data. In aggregation functions they are ignored from the calculation so you need to make sure this is the behavior you are expecting, otherwise you need to replace null values with relevant values.
+
+## Video
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/3PF8mWmOlYI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## How to use the UPDATE command?
 
