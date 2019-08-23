@@ -56,7 +56,7 @@ There are two common statistical indicators that can be used:
 
 ![](https://lh5.googleusercontent.com/ahsVrhQu03Fc9y7LRRyBn9uo6ai2wJbBEiOOhuE-aEilTD1p2DgEKUY1yvkGBWXe_yEbjJreKyKclbSqyYvuvKIAiBuCsrcPVqeIL91f7wyLo_M2FEfXEHiBBsC6kgOx5XTSXREo =387x349)
 
-2. Distance from the interquartile range by a multiple of the interquartile range
+1. Distance from the interquartile range by a multiple of the interquartile range
 
 ![](https://lh3.googleusercontent.com/tsBGlM-zrlUsS-bL62F49byYDV4RDumxYyAfx02XLDKTAsk8hJzyuKmZv4GD9jxutZ1ch2IWzTlcWLmh9gmCaruOiOtEbrDpjrjR0T6eanYd8DyFaGTGpmWHDZ_ws2fUbGG6NtJ1 =359x410)
 
@@ -143,7 +143,6 @@ Identifying outliers can also help to determine what we should focus on in our a
 
 For example, let’s say we’re looking at our web traffic and we notice that we have some peaks that are much higher than others.
 
-  
 ![](https://lh6.googleusercontent.com/L3hIhN8DVppfk928ntJ9_HQrkz0Ukd9_Rn7Ip3t2mPeP45CkFyQKFAAL5bEe2BSB23r2zNK93EWADsGqqN888sLE-B5CMXu6EcV9E6VH8sPFv75YXR7KwQCcJZq0Cep14-zKnY_J =624x307)
 
 It can be helpful to try to understand the cause of these peaks. Did we start a new ad campaign on that day? Do these peaks always happen when we start an ad campaign? Are there some ad campaigns that have been associated with higher peaks than others? What can we learn from this? When presenting the information, we can add annotations that highlight the outliers and provide a brief explanation to help convey the key implications of the outliers.
@@ -182,9 +181,8 @@ If we want to look at different distributions of outliers we can plot different 
 
 For more detailed information on how outliers are found using the IQR, and how to use this method in SQL, check out these articles:
 
-### What is the Interquartile Range? - link
-
-### Finding Outliers with SQL - link
+* What is IQR?
+* [How to Find Outliers with SQL](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/)
 
 # Conclusion
 
