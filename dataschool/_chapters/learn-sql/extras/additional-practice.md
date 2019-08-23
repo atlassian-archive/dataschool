@@ -113,9 +113,9 @@ answer="SELECT COUNT(*) FROM(
 
 SELECT artists.name, Count(albums.id) as num
 
-FROM albums 
+FROM albums
 
-JOIN artists ON albums.artist_id = artists.id 
+JOIN artists ON albums.artist_id = artists.id
 
 GROUP BY 1) as sub
 
@@ -151,4 +151,4 @@ answer='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
 
 hint='Try using INNER JOIN'
 
-correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox>
+correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox> 
