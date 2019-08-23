@@ -119,4 +119,4 @@ There are some key factors to keep in mind when building your Stack in a growing
 
 More powerful Data Stacks tend to be more complicated, and this complication naturally makes it harder to understand things well enough to know how to contribute or how to evaluate risk. With a written out Data Stack, it is easier to explain how the various technologies work in concert to accomplish the end goal.
 
-This model presents a fairly simplified view of the journey of data from raw feeds to presentation. It allows more people in the organization to understand the problems and solutions of data analytics from a high level.
+This model presents a fairly simplified view of the journey of data from raw feeds to presentation. It allows more people in the organization to understand the problems and solutions of data analytics from a high level. 
