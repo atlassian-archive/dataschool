@@ -35,6 +35,9 @@ Multicolumn indexes can:
 * be used for [partial indexing](https://dataschool.com/sql-optimization/partial-indexes/)
 * only use: [b-tree, GIN, BRIN, and GiST structures](https://www.postgresql.org/docs/current/indexes-types.html)
 
+## Video
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/--c8TnI1Sws?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## What is a multicolumn index?
 
 Multicolumn indexes are indexes that store data on up to 32 columns. When creating a multicolumn index, the column order is very important. This is due to the structure that multicolumn indexes possess. Multicolumn indexes are structured to have a hierarchical structure. Take for example this table:
