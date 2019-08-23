@@ -23,7 +23,7 @@ There are many alterable things in postgreSQL heavily discussed in the PostgreSQ
 **Warning:** Altering tables and databases alters critical parts of their structure. As such, queries that ran on tables/databases that were altered may no longer work and may need to be rewritten.
 
 ## Video
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BrSDzg_QFwE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/BrSDzg_QFwE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ALTER TABLE
 
