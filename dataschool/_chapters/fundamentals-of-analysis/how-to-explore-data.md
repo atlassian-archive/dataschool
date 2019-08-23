@@ -4,7 +4,7 @@ title: How to Explore Data
 meta_title: Learn How to Explore Data
 description: Explore any Database with SQL to find insights using univariate and multivariate
   exploration techniques.
-number: 10
+number: 2
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1VHuOtEuYzIl7YprxxZuyT2V5pcR4wk1BexvXKlE_BTg/edit?usp=sharing

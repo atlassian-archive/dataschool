@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-an-outlier.md
@@ -134,6 +135,5 @@ pages:
 - dataschool/_chapters/data-modeling-101/using-jupyter-notebooks.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
-- dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
 - dataschool/_chapters/dictionary/sql-optimization.md
 - dataschool/_chapters/dictionary/sql-errors.md
