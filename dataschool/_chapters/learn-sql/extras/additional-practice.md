@@ -45,15 +45,27 @@ Select all columns from the albums table where the album title is 'Let There Be 
 
 <sqlbox
 
-answer="SELECT * 
+answer="SELECT *
 
-FROM albums 
+FROM albums
 
 WHERE albums.TITLE = 'Let There Be Rock'"
 
 hint='Try using SELECT *'
 
 correct_message='Correct! WHERE can be used to filter the rows returned.'></sqlbox>
+
+What are all the genres of the music in this database?
+
+<sqlbox
+
+answer="SELECT *
+
+FROM genres"
+
+hint='Try using SELECT *'
+
+correct_message='Correct!'></sqlbox>
 
 ## Join Questions
 
@@ -92,6 +104,26 @@ The INNER JOIN found every instance where the albums.artist_id equalled an artis
 The LEFT JOIN performed an INNER JOIN and then also added rows to the final table where the left table (albums) did not have matches.
 
 The OUTER JOIN performed both an INNER and LEFT JOIN and then also added rows to the final table where the right table (artists) did not have matches.
+
+How many Artists have more than 1 Album:
+
+<sqlbox
+
+answer="SELECT COUNT(*) FROM(
+
+SELECT artists.name, Count(albums.id) as num
+
+FROM albums 
+
+JOIN artists ON albums.artist_id = artists.id 
+
+GROUP BY 1) as sub
+
+WHERE num >1"
+
+hint='Try using FULL OUTER JOIN'
+
+correct_message='Correct! We can simply replace INNER or LEFT with outer to perform this type of join.'></sqlbox>
 
 ## Common Errors Questions
 
