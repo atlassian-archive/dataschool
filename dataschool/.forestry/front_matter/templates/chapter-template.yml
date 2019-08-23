@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/sql-optimization/multicolumn-indexes.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
 - dataschool/_chapters/misrepresenting-data/relative-vs-absolute-change.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
@@ -128,7 +129,6 @@ pages:
 - dataschool/_chapters/sql-optimization/optimizing-data-queries-with-redshift.md
 - dataschool/_chapters/misrepresenting-data/metric-vs-metrics.md
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
-- dataschool/_chapters/sql-optimization/multicolumn-indexes.md
 - dataschool/_chapters/data-modeling-101/using-jupyter-notebooks.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
