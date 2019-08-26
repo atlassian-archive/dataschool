@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/13xrMu9mfJQR2qtugCn4eP7RubEDL_bAEqwnrHDrgiuM/edit?usp=sharing
-image: ''
+image: "/assets/images/Outlier.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
