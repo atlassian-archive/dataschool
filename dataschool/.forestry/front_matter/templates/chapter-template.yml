@@ -87,9 +87,10 @@ fields:
     max: 
     step: '1'
 pages:
-- dataschool/_chapters/data-governance/what-database-to-use.md
+- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
 - dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
+- dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-an-outlier.md
@@ -97,7 +98,6 @@ pages:
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md
 - dataschool/_chapters/misrepresenting-data/relative-vs-absolute-change.md
-- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/misrepresenting-data/confirmation-bias.md
 - dataschool/_chapters/misrepresenting-data/survivorship-bias.md
