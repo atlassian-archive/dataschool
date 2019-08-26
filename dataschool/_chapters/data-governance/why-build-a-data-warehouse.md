@@ -22,31 +22,14 @@ reading_time: 5
 ---
 A data warehouse is a database setup for analytical ad hoc querying.
 
-## Five reasons to build a Data Warehouse
+## Six reasons to build a Data Warehouse
 
-* **Easier** to understand and query - simplified single model
-
-No more duplicate tables, confusing column names, or mysterious values
-
-* **Faster** to work with for the data team
-
-Less time is needed to clean and transform data to perform analysis
-
-* **Approachable** to work with for Business Users
-
-Complex joins have been reduced and the correct column to us is obvious
-
-* **Trusted**, consistent source of answers
-
-Everyone generates insights from the same data, no more two different answers to the same question
-
-* **Maintainable** with less time and effort
-
-After adopting naming conventions and a style guide you can maintain as you add data
-
-* **Separated** from transactional data schema
-
-Queries don’t affect app performance, and aren’t affected by rapid changes in the data
+1. **Easier** to understand and query - simplified single model. No more duplicate tables, confusing column names, or mysterious values
+2. **Faster** to work with for the data team. Less time is needed to clean and transform data to perform analysis
+3. **Approachable** to work with for Business Users. Complex joins have been reduced and the correct column to us is obvious
+4. **Trusted**, consistent source of answers. Everyone generates insights from the same data, no more two different answers to the same question
+5. **Maintainable** with less time and effort. After adopting naming conventions and a style guide you can maintain as you add data
+6. **Separated** from transactional data schema. Queries don’t affect app performance, and aren’t affected by rapid changes in the data
 
 This section of the Data Governance book will explain why you should create a data warehouse, and how to implement it so that you get all the benefits it can deliver your business. Before we dive in deep let’s look at the data issues you are facing with a data lake.
 
