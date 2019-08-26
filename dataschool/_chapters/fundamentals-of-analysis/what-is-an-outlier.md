@@ -90,17 +90,12 @@ At times, when values are unknown, the person entering the data might use a valu
 
 For all but the numeric values, often you won’t be able to directly sort your data. However, if you complete a grouped count of these fields, it is often easy to identify “default” values. Because most of these are quite unique, if default values are used, they will often have much higher counts. You can quickly identify these counts using this type of query:
 
-\`\`\`SQL
-
+```sql
 SELECT field_name, COUNT(*) AS value_counts
-
 FROM my_table
-
 GROUP BY 1
-
 ORDER BY 2 DESC
-
-\`\`\`
+```
 
 #### Data entry/recording errors
 
