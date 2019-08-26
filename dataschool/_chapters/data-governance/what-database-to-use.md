@@ -34,7 +34,7 @@ When selecting the right data warehouse for your organization, you may also cons
 
 ## Warehouse Engines
 
-Here are the four main choices for a modern data warehouse on the cloud. Note - all of these are similar and based on the c-store paper.
+Here are the four main choices for a modern data warehouse on the cloud. Note - [all of these are similar and based on the c-store paper.](https://dataschool.com/data-modeling-101/row-vs-column-oriented-databases/)
 
 ### Amazon Redshift
 
