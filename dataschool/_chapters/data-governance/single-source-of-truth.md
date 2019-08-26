@@ -46,11 +46,11 @@ Imagine you were tracking sign-ups via Hubspot and then after a year started usi
 
 When your company has used multiple tools to track the same type of data, if you can, migrate the data from the previous tools into the latest tool. If this is not an option, use the data warehouse to create a table which unions the data from both sources so that the historical record is not lost and to have one place to go to for the relevant metrics. This will require some renaming and cleaning to accomplish.
 
-![](https://lh5.googleusercontent.com/QeJLs7zZHh01xpwnfDoY_fh-0tx25R3oMCpLDpn7znIUNuP9V-y7ncl6TP42dztFq4813d8G-dpsb7ZY2-slncBSwNsmn3wdqCHAilMy01vaxdaWSRuw_R4O7_pBCBkRrt4WVsdp =502x406)
+![](https://lh5.googleusercontent.com/QeJLs7zZHh01xpwnfDoY_fh-0tx25R3oMCpLDpn7znIUNuP9V-y7ncl6TP42dztFq4813d8G-dpsb7ZY2-slncBSwNsmn3wdqCHAilMy01vaxdaWSRuw_R4O7_pBCBkRrt4WVsdp)
 
 In addition, if you want to maintain access to old/unused data sources from your Data Lake in your Data Warehouse, you can label data sources as deprecated or approved to help guide people during their analysis.
 
-![](https://lh3.googleusercontent.com/qmlE0lA9TL7LyBpOfAq3DNjB1yBggNEWF4QmDnKgVLzf-8_A6dgoNyo3xlnlob0_Q2hDVKbHoXWqTKgLf2t_ZCpjsmpQQnrzIoPRN6C97cE4P3RWwWmKesJeBndVOX41OzcB4U5c =624x340)
+![](https://lh3.googleusercontent.com/qmlE0lA9TL7LyBpOfAq3DNjB1yBggNEWF4QmDnKgVLzf-8_A6dgoNyo3xlnlob0_Q2hDVKbHoXWqTKgLf2t_ZCpjsmpQQnrzIoPRN6C97cE4P3RWwWmKesJeBndVOX41OzcB4U5c)
 
 ## Simplify Schema
 
@@ -70,7 +70,7 @@ When going through and recreating the schema with views of the relevant tables y
 
 Here are some naming conventions we follow at Chartio:
 
-![](https://lh5.googleusercontent.com/E_l0K01z4nrIz7Pf00zFHcirNqLkxi4I2Kj2TaEKZAqHN4LxVWpdZ8kww8IfWC0Cv8ECPYNSRCaJ-wXXsoPMfKagM05de2xyWDXAiQsHPZ1Kav2FtFr7PBWvJgMkeL02rAzJRahN =624x357)
+![](https://lh5.googleusercontent.com/E_l0K01z4nrIz7Pf00zFHcirNqLkxi4I2Kj2TaEKZAqHN4LxVWpdZ8kww8IfWC0Cv8ECPYNSRCaJ-wXXsoPMfKagM05de2xyWDXAiQsHPZ1Kav2FtFr7PBWvJgMkeL02rAzJRahN)
 
 Publish this style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
 
@@ -91,7 +91,7 @@ Another more subtle problem with metrics are their abbreviations. If Monthly Act
 
 To define the calculation of a metric, create a Dashboard with this metric in it and provide text on the dashboard to explain how it was calculated and what has been filtered out. Make this easily searchable!
 
-![](https://lh6.googleusercontent.com/VOMVWgVUqeFi8fa6VxPOa7Z_qEAEqUg2-IChyiIO0CoD0JUXbB1GDZVn-Pci2TUs4yIzMs5Va2Zft2Byv93YTka8C-Q7GASiE8aX-U29cKdYR84X6q6Hqtoc8Q68V611HEom092y =624x375)
+![](https://lh6.googleusercontent.com/VOMVWgVUqeFi8fa6VxPOa7Z_qEAEqUg2-IChyiIO0CoD0JUXbB1GDZVn-Pci2TUs4yIzMs5Va2Zft2Byv93YTka8C-Q7GASiE8aX-U29cKdYR84X6q6Hqtoc8Q68V611HEom092y)
 
 Another approach is to pre-calculate the metric in a view that is part of the Single Source of Truth database. We recommend doing this through a SQL based modeling tool such as dbt or Dataform. Defining the metric in the database will remove most, if not all, of the confusion.
 
