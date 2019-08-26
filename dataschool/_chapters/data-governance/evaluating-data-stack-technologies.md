@@ -23,11 +23,11 @@ reading_time: 5
 
 In software development, a Stack is a combination of technologies that together solve a problem. Rarely does one technology solve it on its own. Stacks are usually given names relevant to the problem that they solve. For example, a Web Stack is the set of technologies that host an application that can be accessed via a website. We need to know about the front end technologies used and the back end. We could say “our Web Stack is Cassandra, Django, React” which gives them a high level overview.
 
-While using Stack for the Web is well known, it has now begun to be used to describe the tools involved in working with analytics. The Data Stack addresses the problem of taking data from a raw form to an insight.
+We can apply the Stack concept to describe solutions in domains other than web development. Here we will describe the Data Stack, which takes data from a raw form to an insight.
 
 ## The Data Analytics Problem
 
-Every software tool spins off data, your application, google analytics, salesforce. In order to use this data to find insights you need a Data Stack that performs the following functions:
+Every software tool spins off data: your application, Google Analytics, Salesforce, and so on. In order to use this data to find insights you need a Data Stack that performs the following functions:
 
 1. Ingestion - Accept new data
 2. Storage - Store and retain data
@@ -119,4 +119,4 @@ There are some key factors to keep in mind when building your Stack in a growing
 
 More powerful Data Stacks tend to be more complicated, and this complication naturally makes it harder to understand things well enough to know how to contribute or how to evaluate risk. With a written out Data Stack, it is easier to explain how the various technologies work in concert to accomplish the end goal.
 
-This model presents a fairly simplified view of the journey of data from raw feeds to presentation. It allows more people in the organization to understand the problems and solutions of data analytics from a high level. 
+This model presents a fairly simplified view of the journey of data from raw feeds to presentation. It allows more people in the organization to understand the problems and solutions of data analytics from a high level.
