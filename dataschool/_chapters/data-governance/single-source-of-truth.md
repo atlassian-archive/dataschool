@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1OTMitbsvp76MoOw6whTNpUDBc9_u6eXHFLtfJ6yZFbA/edit?usp=sharing
-image: ''
+image: "/assets/images/Consolidate Data Sources.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -83,38 +83,21 @@ When going through and recreating the schema with views of the relevant tables y
 
 It's quite common for raw data to be extremely complex. Data was typically meant to be consumed by applications and not directly by business users. By taking some time to simplify data, we can greatly improve business user success when querying.
 
-| --- | --- |
-| Best Practice | Reason |
-| Only include fields with obvious analytical purpose | It's best to start modeling with only the most relevant columns, excluding any columns that has no immediate or obvious analytical purpose. |
-| Extract relevant data from complex data types | Application data sources may contain JSON, arrays, hstore and other complex data types. These are typically hard to query from business intelligence tooling and should have relevant data extracted into new columns.Example:Suppose a table books contains an id column and the following JSON column.{ title: "Moby Dick", author: "Herman Melville", genres: \["novel", "fiction"\]}The resulting modeled books table would contain an id, title, and author columns. Genres could be modeled as an independent table, reduced to a single genre based on custom rules, or some other method. |
-| Change flags and crypto abbreviations to meaningful values | It's common for application databases to have flags or cryptic abbreviations in columns that work well for the application and terrible for a business user. It's important to transform these values into easy, human readable values. Some examples:Boolean values 0 and 1 should be transformed to relevant strings, such as true and false or on and off.Flag values should be transformed into relevant strings. If a column billing_status has three numeric values (i.e. 0, 1, 2) that represent some status, they should be transformed into a relevant business concept such as Active, Not Active, Delinquent.Cryptic values should also be transformed into easy to understand business concepts. |
-| De-normalize where possible | Applications typically have highly normalized tables to prevent duplicates, reduce space, and make modification easier. This typically makes it harder for business users to browser the schema however because the complexity of the joins may be hard to follow. Build wider tables where appropriate, collapsing common concepts into a single table. Some examples could be:Combine the sources, sources_redshift, sources_postgres, and sources_myself tables into a single sources table with the lowest common denominator of values that make sense for a business user.Combine the users and addresses tables into a single users table since addresses are meaningless on their own.This simplification requires trial and error and you may not always get it right. |
+![](/assets/images/Screen Shot 2019-08-27 at 10.56.25 AM.png)
 
 #### Cleaning
 
 Data is messy and requires some cleaning to ensure accurate results. Cleaning prevents common problems that might cause a query to produce incorrect results.
 
-| --- | --- |
-| Best Practice | Reason |
-| Attempt to eliminate NULLs | NULL values have unexpected consequences in SQL (is "string" <> NULL?). It's best to remove all nulls with values. Some examples:Change all NULL values in the first_name column to the string Blank.Change all NULL values in the last_login_type column to the string Never Logged In for customers that have never logged in. |
-| Fix common data inconsistencies | Bad data always makes its way into raw data sources. Whether it is misspellings or just junk data, it is important to clean up the data as much as possible. Some examples:State names that have a mix of abbreviations, full names, and junk data should be transformed into a single, consistent format such as the full state name.Phone numbers might be garbage text entered by users to avoid getting phone calls. |
-| Follow Naming Conventions | Schemas, tables, and columns should all be named in accordance with naming conventions listed below. At a minimum, names should be human readable and be representative of the data type and values stored. |
-| Remove irrelevant data | Rows that are irrelevant for various reasons should be removed entirely from the data set. Some examples could be:Employee testingFraud or spamInactiveObviously, if analysis is being done on fraud or spam, that data should not be removed but in most causes, if a row would always be excluded from a query, go ahead and remove it in modeling. |
-| Change Data Types | Modeling is a great time to change data types to more appropriate types. Unix timestamps could be converted from int columns to datetime for example. |
+![](/assets/images/Screen Shot 2019-08-27 at 10.56.34 AM.png)
 
 #### Naming Conventions
 
 Data is messy and requires some cleaning to ensure accurate results. Cleaning prevents common problems that might cause a query to produce incorrect results.
 
-| --- | --- |
-| Best Practice | Reason |
-| Plural Table Names | A table of Leads should be titled "Leads" not Lead. When there are more than two words on the last needs to be pluralized: opportunity_histories |
-| id as primary key | A simple numeric primary key labeled id should be standard for all tables. |
-| foreign keys follow <tablename>_<id> | ForeignKeys should follow this format to make it very clear on where the table is linking to. If there are two foreign keys to the same table you can preopend a name to them following the format <uniquename>_<tablename>_<id>. An accounts table linking to a users table with both a billing contact and a main owner would look like this:Accounts owner_user_id billing_contact_user_id |
-| Start columns with a _ if they are needed but should be hidden for Visual mode. | If there are columns you need in the model for joining or other purposes but don’t want visible by default in visual mode you can prefix them. They will otherwise be treated just as any other column. Let’s say you didn’t think the foreign keys in the accounts table above needed to be shown in Visual mode. You can simply prefix them as shown below. The relationships will still be detected. It’s a best practice not to show the foreign keys visually.Accounts id name _owner_user_id _billing_contact_user_idThis should not be used for columns you're on the fence about needing. Those just shouldn't be included. These are for columns that are needed for querying purposes but have no use in a Visual setting - primarily foreign keys. |
-| Lower case, underscored naming | Our data model needs to be easily editable in SQL mode so we should follow conventions that make editing raw SQL easier. Therefore, we should attempt to have column names like id, first_name, last_name, and last_login_type instead of more human readable forms in the model. Chartio will handle that conversion. |
+![](/assets/images/Screen Shot 2019-08-27 at 10.56.42 AM.png)
 
-Publish this style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
+Publish a style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
 
 ## Metrics
 
