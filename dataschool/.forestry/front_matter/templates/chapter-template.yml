@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/fundamentals-of-analysis/choosing-metrics-for-product-launch.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
