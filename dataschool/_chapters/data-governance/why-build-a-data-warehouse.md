@@ -63,10 +63,12 @@ Let's take the table above and apply some simple transformations to it.
 
 ![](/assets/images/DataWarehouse Cleaning.png)
 
-We can see how dropping columns, adding columns, filtering rows and clarifying columns make the data much more straightforward to use and interpret. Now, people without experience with the data have a much easier time coming up to speed and will make less mistakes. Lets look at the final table without all the editing markup.
+We can see how dropping columns, adding columns, filtering rows and clarifying columns make the data much more straightforward to use and interpret. Now, people without experience with the data have a much easier time coming up to speed and will make less mistakes. Let's look at the final table without all the editing markup.
 
   
 ![](/assets/images/Data Warehouse Table.png)
+
+This is the promise of a Data Warehouse, clear tables that can be used by anyone without having to dramatically alter the schema.
 
 ## Summary
 
