@@ -45,13 +45,13 @@ Take an example of a database tracking a product’s users and usage data. The r
 
 Example Data Lake Schema:
 
-![](https://lh3.googleusercontent.com/dSlp2nvWeDCB8TiBYfOBvcvxsh7SK4cNmbU2111hAM8THCM14iN5SD-HQyL1Wb8562UJzAr0vIAg4BTUm3lpfkZ4x1R9c7CpNlMoB0xCKZ5XphQVsW2TyTEr2om54PudMtfJjiXa =624x500)
+![](/assets/images/Transactional Schema.png)
 
 It was designed as a transactional schema not for analysis. Without a tool such as Chartio, navigating this schema for analysis would be incredibly challenging. However with Chartio you only need to focus on cleaning up tables to get much more value out of your data. Focus on making data lake tables easy to understand.
 
 Example Data Lake table:
 
-![](https://lh4.googleusercontent.com/DxbuacizkJerC9KSygs-RlZIedFYGw6MGRXklCraPWhTurNDTUicKqL6yysfb1zjd3-LB7ppOI-Rqi6yEWe4RjyLiHMCOrh2yeAyas-HS4JO9LtQCEE1qqjG778kvZNEYL8e-LfJ =624x297)
+![](/assets/images/Data Lake Table with issues.png)
 
 We can see multiple columns with issues that would be difficult for an analyst to understand or make use of. Lets see how this table could be reconfigured to become useful for analytics.
 
@@ -59,15 +59,14 @@ We can see multiple columns with issues that would be difficult for an analyst t
 
 Use modeling to create a clean version of the schema where all of the above inconsistency and points of confusion are addressed. This will be your company’s Data Warehouse. It will enable more users to understand and use the data. You can remove a few irrelevant tables for analysis but most of the focus should be on cleaning up columns.
 
-Lets take the table above and apply some simple transformations to it.
+Let's take the table above and apply some simple transformations to it.
 
-![](https://lh4.googleusercontent.com/L5ZeLRir-Vszw38RGUBQdv-NzWrzI1GwUoMm9SDiLYDqVc5J-PRsFrE8K7PckCNL8tKD0vKWzeKU-6t7IZ-wsYtrkpwP0M9jOwS25h4vIhaApm6cU2zS33ageX4AiJIu3lF_JJhn =624x316)
+![](/assets/images/DataWarehouse Cleaning.png)
 
 We can see how dropping columns, adding columns, filtering rows and clarifying columns make the data much more straightforward to use and interpret. Now, people without experience with the data have a much easier time coming up to speed and will make less mistakes. Lets look at the final table without all the editing markup.
 
-![](https://lh4.googleusercontent.com/h8_sEMJquYANolG0y01wpW5PPg7ysdqhfDm9HCNUPQbwUJgR1UtU4FvPFzHi5Lm5jQFZvUXD6xGxJAgNzGJVl3QVwjK5SRuDp9MB3Y_uQg_NFHcxXVu5PHnPPpf36MCMndefJkfV =624x267)
-
-This is the promise of a Data Ware, clear tables that can be used by anyone without having to dramatically alter the schema.
+  
+![](/assets/images/Data Warehouse Table.png)
 
 ## Summary
 
@@ -81,4 +80,4 @@ Data Warehouses makes your data:
 
 Data Lake data is pile of products in your building
 
-Data Warehouse is those products sorted, shelved, and tagged.
+Data Warehouse is those products sorted, shelved, and tagged
