@@ -18,13 +18,13 @@ story_intro_blurb: ''
 reading_time: 6
 
 ---
-As more people begin to depend on business data in their daily workflow, organizations are pressured to think critically about Data Governance. With that, they’re being forced away from a centralized data organization to a decentralized one. The demand for data cannot be sufficiently served by a small technical group.
+As more people depend on data in their daily workflow, organizations are pressured to think critically about the quality of data being provided. Having a small team field all data questions will not scale so companies must move from a centralized data organization to a decentralized one. 
 
-Just as companies move through the [stages of data analytics](https://blog.chartio.com/posts/the-four-stages-of-data-analytics), from KPI pulls to Centralized to Decentralized, so does the responsibility of Data Governance. The knowledge, capabilities and access to data must be spread throughout the organization.
+## Why do you need a Data Governor
 
-## Why do you Need a Data Governor
+According to [Gartner](https://www.gartner.com/webinar/1884416), Data Governance is an effective program to manage and control the ever-growing amount of data in order to improve business outcomes. It helps ensure the quality of data is high and compliance standards are adhered to. This does not happen with process alone, you need a Data Governor to drive and maintain Data Governance principles.
 
-According to [Gartner](https://www.gartner.com/webinar/1884416), Data Governance is an effective program to manage and control the ever-growing amount of data in order to improve business outcomes. If your organization has built a data warehouse and has any of the following data services or restrictions we strongly recommend appointing at least one Data Governor:
+If your organization has built a data warehouse and has any of the following data services or restrictions we strongly recommend appointing at least one Data Governor:
 
 * Self-service dashboards
 * Operate in an industry with regulations and compliance procedures
