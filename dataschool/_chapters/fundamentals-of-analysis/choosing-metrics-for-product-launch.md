@@ -114,7 +114,7 @@ Once again, these metrics allow the business to make decisions about when and ho
 
 ## Summary
 
-In conclusion, companies and teams that put in the time to visualize potential outcomes and default actions, determine what matters to the business, and decide what can be changed under which circumstances will reap significant benefits. 
+In conclusion, companies and teams that put in the time to visualize potential outcomes and default actions, determine what matters to the business, and decide what can be changed under which circumstances will reap significant benefits.
 
 There is no shortage of important decisions for product companies approaching a launch. And with every decision, it can feel like the stakes could not be any higher, but whenever possible remind yourself that your company's success has more to do with the overall quality of data-driven decisions made than any single analysis. Whether your next big data-driven decision comes in a quarter or in a week, take care to improve your process and appreciate the clarity, growth, and excitement that comes from a decision well made.
 
