@@ -20,6 +20,8 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
+## What is a data warehouse?
+
 A data warehouse is a database setup for analytical ad hoc querying.
 
 ## Six reasons to build a Data Warehouse
