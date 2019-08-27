@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
@@ -106,7 +107,6 @@ pages:
 - dataschool/_chapters/misrepresenting-data/predicting-outcomes.md
 - dataschool/_chapters/misrepresenting-data/selection-bias.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
-- dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-modeling-101/sqlbox-test-do-not-publish.md
 - dataschool/_chapters/data-governance/security.md
 - dataschool/_chapters/data-governance/source-data-stack.md
