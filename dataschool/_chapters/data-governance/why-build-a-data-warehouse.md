@@ -53,7 +53,7 @@ Example Data Lake table:
 
 ![](/assets/images/Data Lake Table with issues.png)
 
-We can see multiple columns with issues that would be difficult for an analyst to understand or make use of. Lets see how this table could be reconfigured to become useful for analytics.
+We can see multiple columns with issues that would be difficult for an analyst to understand or make use of. Let's see how this table could be reconfigured to become useful for analytics.
 
 ## How Data Warehouses are different than Data Lakes
 
