@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: ''
+image: "/assets/images/snowflake.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -38,6 +38,8 @@ Here are the four main choices for a modern data warehouse on the cloud. Note - 
 
 ### Amazon Redshift
 
+![Image result for redshift](https://www.blazeclan.com/wp-content/uploads/2013/08/Amazon-Redshift-%E2%80%93-11-Key-Points-to-Remember.png)
+
 #### Pros
 
 Redshift has the benefits of ease of use, speed, and cost. Being a part of AWS, there is full service integration for the wide range of AWS services such as S3 for storage and CloudWatch for infrastructure monitoring. Redshift is generally cheaper than Snowflake or BigQuery, with a couple pricing options such as paying hourly per node or paying by number of bytes scanned with Redshift Spectrum. And it’s simple to set up and scale by increasing storage and performance by adding nodes to your cluster.
@@ -50,6 +52,8 @@ Users can often run into concurrency issues with Redshift if it isn’t set up p
 
 ### Google BigQuery
 
+![Image result for bigquery](https://miro.medium.com/max/1000/1*A8liBoeAwAZg7rDu394jYg.png)
+
 #### Pros
 
 BigQuery is not bound by cluster capacity of storage or compute resources, so it scales and performs very well with increasing demands for concurrency ie. more people/queries accessing the database. As a fully managed warehouse, BigQuery handles vacuums and resizing on its own which can save time for your data engineers and makes it easy to use and maintain. For businesses using Google products, BigQuery integrates well with Google Drive and Google Analytics.
@@ -60,11 +64,13 @@ Cost is determined per query byte, making it difficult to budget or regulate if 
 
 ### Snowflake
 
+![Image result for snowflake data warehouse](https://miro.medium.com/max/1088/0*AmYXrtpALhMlQcZI.png)
+
 #### Pros
 
 Like BigQuery, Snowflake has an architecture that separates the compute query engine from data storage. As a result, it is highly scalable at any amount of volume and concurrency. Pricing is based on the storage and compute used on a time-basis with their virtual warehouses instead of per bytes scanned. Tuning, indexes, and distribution keys aren’t required for queries to be optimized and performant. Because of these reasons, it can be said that Snowflake has many of the benefits of both Redshift and Big Query.
 
-Also is very similar to Posgres.
+Also is very similar to Postgres.
 
 #### Cons
 
@@ -73,6 +79,8 @@ Snowflake is a relatively new data warehouse in the market, so if you are famili
 ## Database Engines
 
 ### PostgreSQL
+
+![Image result for postgresql](https://miro.medium.com/max/5040/1*115cqXTggxGeZq5m-yFnrw.png)
 
 #### Pros
 
@@ -93,6 +101,8 @@ Remember all of the data warehouses are built on the same c-store architecture s
 Once you have selected your data warehouse solution, you will need to decide how to set up your ETL or ELT to load data from your data lake into your data warehouse and convert the raw data into something meaningful. ETL has been the traditional method for data warehouses, however ELT has been growing in popularity due to its compatibility with cloud systems.
 
 ### View and dbt
+
+![Image result for get dbt](https://aws1.discourse-cdn.com/standard11/uploads/getdbt/original/1X/0a05220c3d18b60eff99ae9922c00325cfadf12e.png)
 
 Doing an ETL/ELT in the same place, such as if you are using Redshift for both your database and data warehouse, simplifies your process and keeps your data stack lean. This is desirable because you will have less environments and tools to manage and your data will be housed in one location. You can just do it without having to extract and load. Transform only!
 
