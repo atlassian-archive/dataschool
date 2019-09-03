@@ -9,7 +9,7 @@ reviewers:
 - _people/dave.md
 - _people/matt.md
 feedback_doc_url: ''
-image: ''
+image: "/assets/images/Frame-4.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -18,9 +18,9 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-At the warehouse stage, there are commonly more groups than just a centralized data team with access. You must use data governance to safeguard certain pieces of sensitive information from being accessed by the wrong people in your organization. Many regulations have been passed such as GDPR that you must comply with and many companies have industry standard compliance rules as well such as SOC and HIPA that they have to adhere to. 
+At the warehouse stage, there are commonly more groups than just a centralized data team with access. You must use data governance to safeguard certain pieces of sensitive information from being accessed by the wrong people in your organization. Many regulations have been passed such as GDPR that you must comply with and many companies have industry standard compliance rules as well such as SOC and HIPA that they have to adhere to.
 
-Whether it is PII or financial information, sensitive data is much more prevalent throughout a product’s journey and your data warehouse than one might think. Preventing the exposure of such information is key and can be approached in a variety of ways.
+Whether it is personally identifiable information (PII) or financial information, sensitive data is much more prevalent throughout a product’s journey and your data warehouse than one might think. Preventing the exposure of such information is key and can be approached in a variety of ways.
 
 Every company stores information that cannot be exposed to everyone who works in the company. When moving from a Data Lake to a Data Warehouse more people will gain access to data. You need to ensure that sensitive information is aligned to what is being stored and how it is restricted in the data warehouse and can be accessed via your BI tools.
 
@@ -36,11 +36,13 @@ Within large companies, often times everything is confidential and departments a
 
 ## How to secure sensitive data on the database
 
+![](/assets/images/Frame-2.png)
+
 The most direct way to limit access to the proper people is to enforce rules on the database level. This can be done through creating slave read only replicas or creating custom users so that the only data people have access to is already cleaned or you can set row level permissioning to keep it extra secure.
 
 ### Slave Read Only
 
-Setup your warehouse that will be queried by everyone to by default be read only. This prevents any dangerous SQL queries from being executed on your data.
+Setup your warehouse that will be queried by everyone to be read only by default. This prevents any dangerous SQL queries from being executed on your data.
 
 ### Custom Users
 
