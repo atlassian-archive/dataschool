@@ -4,7 +4,8 @@ title: Data Warehouse Security
 meta_title: Data Warehouse Security Best Practices
 description: Learn how to secure sensitive data on your database and BI platform.
 number: 32
-authors: []
+authors:
+- _people/aaron-aihini.md
 reviewers:
 - _people/dave.md
 - _people/matt.md
