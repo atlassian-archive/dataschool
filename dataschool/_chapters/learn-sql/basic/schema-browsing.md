@@ -100,4 +100,6 @@ If you're using psql as your connection to your database there are a number of h
 | \\l | list of all databases |
 | \\z | list tables with access privileges |
 
-![figure 4](/assets/images/learn-sql/basic/schema-browsing/sql-tutorial-schema-diagram-chartio.png)
+Also if you want to refer to visual representation of the schema we have provided it here:
+
+![](/assets/images/Chinook ERD.png)
