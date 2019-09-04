@@ -18,7 +18,7 @@ story_intro_blurb: ''
 reading_time: 6
 
 ---
-As more people depend on data in their daily workflow, organizations are pressured to think critically about the quality of data being provided. Having a small team field all data questions will not scale so companies must move from a centralized data organization to a decentralized one. 
+As more people depend on data in their daily workflow, organizations are pressured to think critically about the quality of data being provided. Having a small team field all data questions will not scale so companies must move from a centralized data organization to a decentralized one.
 
 ## Why do you need a Data Governor
 
@@ -57,7 +57,7 @@ Data is going to exist in many different places inside of your organization. A b
 
 For most companies the team collecting the data were the ones reporting on the data. These people knew all the ins and outs of the data and could, for the most part, always remember where the data they needed was and what tricky conditionals they’d have to put in each query to remember for example not to count deleted or expired accounts.
 
-But when organizations grow and the need to have access grows, the people exploring aren’t always the ones that put the data there. So you have to clean up that data, and keep that non technical data explorer in mind. 
+But when organizations grow and the need to have access grows, the people exploring aren’t always the ones that put the data there. So you have to clean up that data, and keep that non technical data explorer in mind.
 
 Some BI products have ways to do this internally, but often it’s best and more reusable to do this on the database level. Just create new schemas in your database with a file full of your chosen views for that consumer. This is both a usability best practice and a security best practice.
 
@@ -73,7 +73,7 @@ Again, the people exploring the data are no longer the people who put it there i
 
 This can be done with a Wiki or even by leaving [comments](https://www.postgresql.org/docs/9.1/static/sql-comment.html) inside the database schema.
 
-#### **2. Permissions and Organization**
+#### 2. Permissions and Organization
 
 Data security is obviously incredibly important. But besides that, Permissions can be leveraged for proper organization. Data projects can get messy fast. Not everyone needs access to absolutely everything especially if there is a clear process for requesting what additional is needed.
 
