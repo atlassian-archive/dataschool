@@ -8,7 +8,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: ''
-image: ''
+image: "/assets/images/Chinook ERD.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -17,13 +17,9 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-For practicing we will be using a online music store database. Here is the entity relationship diagram of the schema.
+For practicing we will be using an online music store database. Here is the entity relationship diagram of the schema.
 
-![](/assets/images/Frame (64).png)
-
-\*note all primary key columns are just ID. ArtistId in the artists table is ID
-
-\**any two word combination column name is separated by an underscore FirstName is first_name
+![](/assets/images/Chinook ERD.png)
 
 Feel free to explore the data by using SELECT * FROM \[table name\] in the SQL editor below:
 
@@ -151,4 +147,4 @@ answer='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
 
 hint='Try using INNER JOIN'
 
-correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox> 
+correct_message='Correct! The default join type is an inner join so you could use INNER JOIN or JOIN'></sqlbox>

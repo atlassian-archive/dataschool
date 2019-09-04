@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/learn-sql/extras/additional-practice.md
 - dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
@@ -97,7 +98,6 @@ pages:
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-an-outlier.md
-- dataschool/_chapters/learn-sql/extras/additional-practice.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md
