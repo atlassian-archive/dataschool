@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: ''
+image: "/assets/images/old metrics.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -72,7 +72,7 @@ New View*
 * No view that is relevant is aggregated in a way that fits how this metric should be aggregated without the view
 * Complex join paths would make it difficult for people to query the new metric accurately
 
-\*(typically it will be added to an existing table as well but it will be queried from the View)
+\*typically it will be added to an existing table as well but it will be queried from the View
 
 #### Backfilling Data
 
