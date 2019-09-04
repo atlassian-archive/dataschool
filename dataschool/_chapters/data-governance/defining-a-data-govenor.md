@@ -9,7 +9,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1v-NJdR3zSyfn4tNtvoTLM_52SJbS2lVLudaSVxlRXdw/edit?usp=sharing
-image: ''
+image: "/assets/images/Frame (1) (1).png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
