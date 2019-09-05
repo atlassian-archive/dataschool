@@ -45,6 +45,10 @@ Key words:
 * csv: this tells the copy command that the file being created should be a CSV file.
 * header: this tells copy command to include the headers at the top of the document.
 
+## Using the Commands
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nbV0zUmkEHU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## **CSV Files**
 
 Comma Separated Value (CSV) files are a useful format for storing data. Many tools support importing data from CSV files because it is an easy to read format that is plain text and not metadata dependent.
