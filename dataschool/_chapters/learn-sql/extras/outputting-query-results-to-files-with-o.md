@@ -4,7 +4,7 @@ title: Outputting Query Results to Files with \o
 meta_title: Using the o command to Export Output to Files
 description: This article discusses how to use the o meta command to output to a text
   file
-number: 
+number:
 authors:
 - _people/matthew-layne.md
 reviewers:
@@ -14,7 +14,7 @@ image: "/assets/images/learn-sql/extras/outputtingWithMetacommand/outputtingWith
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time: 
+reading_time:
 is_community_story: false
 story_intro_blurb: ''
 
@@ -28,6 +28,9 @@ story_intro_blurb: ''
 Outputting query results to a file instead of the terminal allows the data to be saved later analysis. The results can be shared easily and provide a snapshot of the data at the time of the query.
 
 In order to output to a file, several methods can be employed. In this article the `\o` method of writing to files will be explored. One other method is using either `\copy` or `COPY` which are discussed in [this article](https://dataschool.com/learn-sql/export-to-csv-from-psql/).
+
+## Video
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/euUcYD3nw78?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The \\o metacommand
 
@@ -54,7 +57,7 @@ Let’s look at an example of `\o` being used:
 
 As you can see, the output of `\dt` and the `SELECT` query are not shown on the console. This indicates that they are being logged in the file. We can confirm this if we check the file. This can be done manually outside of psql or through psql using the `\!` meta command:![the output from the previously run commands](/assets/images/learn-sql/extras/outputtingWithMetacommand/outputtingWithMeta_1.png)
 
-`\!` allows the user to use terminal commands and see the results without leaving the psql environment. As such, the file contents can be checked quickly using commands like `cat` which displays the contents of the text file to the screen. 
+`\!` allows the user to use terminal commands and see the results without leaving the psql environment. As such, the file contents can be checked quickly using commands like `cat` which displays the contents of the text file to the screen.
 
 ## Summary
 
