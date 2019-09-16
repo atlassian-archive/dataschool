@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
 - dataschool/_chapters/learn-sql/extras/export-to-csv-from-psql.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
@@ -116,7 +117,6 @@ pages:
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/misrepresenting-data/define-experiment-parameters.md
-- dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-governance/data-mart-implementation.md
