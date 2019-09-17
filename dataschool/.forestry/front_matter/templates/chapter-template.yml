@@ -87,8 +87,8 @@ fields:
     max: 
     step: '1'
 pages:
-- dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
+- dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/learn-sql/extras/export-to-csv-from-psql.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md

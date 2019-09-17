@@ -41,7 +41,7 @@ So, getting their role information into the same table as contact and some basic
 
 That query might look like this:
 
-![](https://lh4.googleusercontent.com/vrmJIEUSMBZ2dVagpzfY4v-Diq3PpAXtaWILkFq_nkBFKYWdniYKx2cE719wmUi_R1vxcae0uaYd68Rm-42549m4Y-uji4Di_Oyr-7Bh51sqRMTgR-z84kUAKV-zegJE9YBHCGT8 =624x275)
+![](https://lh4.googleusercontent.com/vrmJIEUSMBZ2dVagpzfY4v-Diq3PpAXtaWILkFq_nkBFKYWdniYKx2cE719wmUi_R1vxcae0uaYd68Rm-42549m4Y-uji4Di_Oyr-7Bh51sqRMTgR-z84kUAKV-zegJE9YBHCGT8)
 
 We are choosing a subset of the total possible columns and rolling/denormalizing the table a bit to make it easier for others to query. To make this code into SQL that builds our Data Warehouse, we need to add CREATE VIEW. So the query would actually be:
 
@@ -66,11 +66,11 @@ FROM
 
 If we go back to the example first introduced in the [Why Build a Data Warehouse](https://dataschool.com/data-governance/why-build-a-data-warehouse/) article we can walk through all of the transformations described in one SQL query. So let’s look at that messy table with all of the hard to understand/query fields.
 
-![](https://lh3.googleusercontent.com/Zw69zpYEdxtew4Jo8SPm7BuYtUa4vOCXK6otFT-QYOKhreNAYYfRHc_qC07kysGpxCb6mJ4uD8lqWXrOonp61V73ki7HJQLR5IctR2NQedLtXg-au052ZoyYoBxZtXpxWf2l17-n =624x297)
+![](https://lh3.googleusercontent.com/Zw69zpYEdxtew4Jo8SPm7BuYtUa4vOCXK6otFT-QYOKhreNAYYfRHc_qC07kysGpxCb6mJ4uD8lqWXrOonp61V73ki7HJQLR5IctR2NQedLtXg-au052ZoyYoBxZtXpxWf2l17-n)
 
 We then want to make all of the following changes to that data:
 
-![](https://lh5.googleusercontent.com/hakg1_x4UQrluGSL4M2gzCwH3bb_LGsGv9Amf-7W87AhkH2nIYkM-StIPmiuOmCtsWUJwyLq7em3Bwol4_iNa5veUP5hH0u6wziQ8xmmBX9C41OgRpfUMPqPtDZmLzpLRscz4w9Y =624x316)
+![](https://lh5.googleusercontent.com/hakg1_x4UQrluGSL4M2gzCwH3bb_LGsGv9Amf-7W87AhkH2nIYkM-StIPmiuOmCtsWUJwyLq7em3Bwol4_iNa5veUP5hH0u6wziQ8xmmBX9C41OgRpfUMPqPtDZmLzpLRscz4w9Y)
 
 We can create this as a series of SQL statements in a dbt file of common table expressions with a final CREATE VIEW query at the bottom:
 
@@ -139,7 +139,7 @@ For a given table we suggest managing all transformations step by step in common
 
 We now have a clean view of the original data
 
-![](https://lh5.googleusercontent.com/CaWn4e5HYzbUpSUSD33Sf0xUoUGfVT8TT-z-4VNED6ubfbHyKXMwhx5DSnHyjTmwfRVtMMuN-mVOZbGC3SKRQktX_vfZYBt_SK36_Y5q8wOpnwNA8StGWqI3YeadPUF1TRKZph7s =624x267)
+![](https://lh5.googleusercontent.com/CaWn4e5HYzbUpSUSD33Sf0xUoUGfVT8TT-z-4VNED6ubfbHyKXMwhx5DSnHyjTmwfRVtMMuN-mVOZbGC3SKRQktX_vfZYBt_SK36_Y5q8wOpnwNA8StGWqI3YeadPUF1TRKZph7s)
 
 A data warehouse may still have a few issues in the data but the vast majority should be handled with obvious work arounds.
 
