@@ -32,6 +32,9 @@ There are a few things to keep in mind when copying data from a csv file to a ta
 2. **Determine the Delimiter:** While CSV files usually separate values using commas, this is not always the case. Values can be separated using '\|'s or tabs (\\t) among other characters. (NOTE: for tab delimited CSV files (also known as TSV files however the CSV command is still used for TSV) use: “DELIMITER E'\\t' ” The 'E' allows for the tab character to be used)
 3. **Does the Data Have a Header:** Some CSV files will have Headers while others will not. A Header is a file which contains the column names as the first line of values in the file. If a header is present, include **HEADER** at the end of the query. If there is not a header in the data, do not include **HEADER**.
 
+## Video:
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/l-v6FodULk0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Example:
 
 Take this list of items as an example:
