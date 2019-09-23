@@ -4,8 +4,8 @@ meta_title: Data Governance web book
 description: Learn how to apply Data Governance techniques to optimize your data stack
 book_slug: data-governance
 book_sort_number: 1
-authors: _people/tim.md
-reviewers: _people/matt.md
+authors: _people/matt.md
+reviewers: _people/dave.md
 cover_image: "/assets/images/book-covers/data-governance.png"
 main_color: "#143676"
 is_featured: false
