@@ -19,7 +19,7 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-At the warehouse stage, there are commonly more groups than just a centralized data team with access. You must use data governance to safeguard certain pieces of sensitive information from being accessed by the wrong people in your organization. Many regulations have been passed such as GDPR that you must comply with and many companies have industry standard compliance rules as well such as SOC and HIPA that they have to adhere to.
+At the warehouse stage, there are commonly more groups than just a centralized data team with access. You must use data governance to safeguard certain pieces of sensitive information from being accessed by the wrong people in your organization. Many regulations have been passed such as GDPR that you must comply with and many companies have industry standard compliance rules as well such as SOC and HIPAA that they have to adhere to.
 
 Whether it is personally identifiable information (PII) or financial information, sensitive data is much more prevalent throughout a product’s journey and your data warehouse than one might think. Preventing the exposure of such information is key and can be approached in a variety of ways.
 
@@ -49,11 +49,11 @@ Setup your warehouse that will be queried by everyone to be read only by default
 
 Regardless of if you create the slave read only warehouse, create a new user group that has read access only. You can choose to exclude access to specific tables or columns of data from that new user group. In addition you can restrict access to row specific data. Row level permissioning allows you to give full access to tables containing sensitive information but restricts which rows and values the person querying can see. Depending on the underlying database, it will be slightly different to set row level permissioning.
 
-A great example for row level permissioning is needed for HIPA compliance would be a hospital’s dataset. Each doctor within this hospital has access to their own patients’ records for analysis and review. What happens when every doctor has access to every patients medical records?Implementing access controls at the row level based on account/patient ownership, whether that is patient id, patient name, etc will prevent doctors from having the chance to access patient’s personal information they don’t need. You can apply this example to other scenarios such as sales teams, customer tracking, etc.
+A great example for row level permissioning is needed for HIPAA compliance would be a hospital’s dataset. Each doctor within this hospital has access to their own patients’ records for analysis and review. What happens when every doctor has access to every patients medical records?Implementing access controls at the row level based on account/patient ownership, whether that is patient id, patient name, etc will prevent doctors from having the chance to access patient’s personal information they don’t need. You can apply this example to other scenarios such as sales teams, customer tracking, etc.
 
 ### Encrypt Columns
 
-If you you need to group or aggregate by sensitive data you can create encrypted versions of the data. Then users can create summary tables where things like financial data can be aggregated to a level that is appropriate for different departments to see and analyze. These type of decisions will limit what type of analysis can be performed on the data but does ensure that the sensitive data is protected.
+If you need to group or aggregate by sensitive data you can create encrypted versions of the data. Then users can create summary tables where things like financial data can be aggregated to a level that is appropriate for different departments to see and analyze. These type of decisions will limit what type of analysis can be performed on the data but does ensure that the sensitive data is protected.
 
 ## How to secure sensitive data on a BI platform
 
