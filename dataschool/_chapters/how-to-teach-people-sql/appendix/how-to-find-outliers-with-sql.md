@@ -17,7 +17,9 @@ img_border_on_default: false
 ---
 ## Use ORDER BY to find Outliers
 
-A fast way to identify outliers is to sort the relevant values in both ascending and descending order.
+A fast way to identify outliers is to sort the relevant values in both ascending and descending order. This allows you to quickly skim through the highest and lowest values. If you have a sense of what you are expecting from your data, this can help you quickly identify any unexpected values.
+
+If we were looking at the ages of friends, we’d expect to see values that fall into the range of ages for adults. Let’s take a look at what we see in the example below.
 
 To sort our values, we could use the following query.
 
@@ -43,7 +45,9 @@ FROM friends
 ORDER BY age DESC
 ```
 
-This method can be great for identifying obvious outliers that quickly stand out. However, it may miss some other details in the data. It’s often helpful to be able to use a more statistical method for identifying outliers.
+This method can be great for identifying obvious outliers that quickly stand out. However, it may miss some other details in the data. For example, if we have less knowledge of the expected values in our dataset, there may be enough outliers that they don’t stand out with just a quick look at the high and low values. 
+
+It’s often helpful to be able to use a more statistical method for identifying outliers.
 
 ## Using NTILE to find Outliers
 
@@ -104,7 +108,7 @@ WHERE age < 25 OR age > 41
 
 ![Values returned by the sql written above](/assets/images/how-to-teach-people-sql/appendix/outliers/outliers_4.png)
 
-## Fully Query
+## Full Query
 
 While the above is great for explaining what we’re doing when finding outliers, it does have some issues. It works if the number of values in each half are odd, but we would need to make adjustments if it was even. Also, it requires us to write two different queries to get our results.
 
@@ -174,65 +178,82 @@ To do this, the above query can be adjusted as follows:
 
 ```sql
 with orderedList AS (
-SELECT full_name,
-age,
-ROW_NUMBER() OVER (ORDER BY age) AS row_n
+SELECT 
+	full_name,
+	age,
+	ROW_NUMBER() OVER (ORDER BY age) AS row_n
 FROM friends
 ),
 
 quartile_breaks AS (
-SELECT age, full_name,
-(
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75)
-) AS q_three_lower,
-(
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75) + 1
-) AS q_three_upper,
-(
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25)
-) AS q_one_lower,
-(
-SELECT age AS quartile_break
-FROM orderedList
-WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25) + 1
-) AS q_one_upper
-FROM orderedList
-),
+SELECT 
+	age, 
+    full_name,
+	(
+	SELECT age AS quartile_break
+	FROM orderedList
+	WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75)
+	) AS q_three_lower,
+	(
+	SELECT age AS quartile_break
+	FROM orderedList
+	WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.75) + 1
+	) AS q_three_upper,
+	(
+	SELECT age AS quartile_break
+	FROM orderedList
+	WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25)
+	) AS q_one_lower,
+	(
+	SELECT age AS quartile_break
+	FROM orderedList
+	WHERE row_n = FLOOR((SELECT COUNT(*) FROM friends)*0.25) + 1
+	) AS q_one_upper
+	FROM orderedList
+	),
 
 iqr AS (
-SELECT age, full_name,
-(
-(SELECT MAX(q_three_lower) FROM quartile_breaks) +
-(SELECT MAX(q_three_upper) FROM quartile_breaks)
-)/2 AS q_three,
-(
-(SELECT MAX(q_one_lower) FROM quartile_breaks) +
-(SELECT MAX(q_one_upper) FROM quartile_breaks)
-)/2 AS q_one,
-1.5 * ((
-(SELECT MAX(q_three_lower) FROM quartile_breaks) +
-(SELECT MAX(q_three_upper) FROM quartile_breaks)
-)/2 - (
-(SELECT MAX(q_one_lower) FROM quartile_breaks) +
-(SELECT MAX(q_one_upper) FROM quartile_breaks)
-)/2) AS outlier_range
+SELECT 
+	age, 
+    full_name,
+	(
+	(SELECT MAX(q_three_lower) 
+    	FROM quartile_breaks) +
+	(SELECT MAX(q_three_upper) 
+    	FROM quartile_breaks)
+	)/2 AS q_three,
+	(
+	(SELECT MAX(q_one_lower) 
+    	FROM quartile_breaks) +
+	(SELECT MAX(q_one_upper) 
+    	FROM quartile_breaks)
+	)/2 AS q_one,
+	1.5 * ((
+	(SELECT MAX(q_three_lower) 
+    	FROM quartile_breaks) +
+	(SELECT MAX(q_three_upper) 
+    	FROM quartile_breaks)
+	)/2 - (
+	(SELECT MAX(q_one_lower) 
+    	FROM quartile_breaks) +
+	(SELECT MAX(q_one_upper) 
+    	FROM quartile_breaks)
+	)/2) AS outlier_range
 FROM quartile_breaks
 )
 
-SELECT full_name, age
+SELECT 
+	full_name, 
+    age
 FROM iqr
-WHERE age >= ((SELECT MAX(q_three)
-FROM iqr) +
-(SELECT MAX(outlier_range)
-FROM iqr)) OR
-age <= ((SELECT MAX(q_one)
-FROM iqr) -
-(SELECT MAX(outlier_range)
-FROM iqr))
+WHERE age >= 
+	((SELECT MAX(q_three)
+		FROM iqr) +
+	(SELECT MAX(outlier_range)
+		FROM iqr)) 
+ OR age <= 
+ 	((SELECT MAX(q_one)
+		FROM iqr) -
+	(SELECT MAX(outlier_range)
+		FROM iqr))
 ```
