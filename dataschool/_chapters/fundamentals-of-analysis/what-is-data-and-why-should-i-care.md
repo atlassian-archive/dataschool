@@ -2,8 +2,8 @@
 section: book
 title: What is Data and Why Should I Care
 meta_title: Why should you care about data
-description: Learn about why data is relevant to all people. It is the basis to answer
-  questions scientifically
+description: Learn about why data is relevant to all people. Data is the basis to
+  answer any question scientifically
 number: 
 authors:
 - _people/stewart-hillhouse.md
