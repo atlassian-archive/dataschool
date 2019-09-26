@@ -36,6 +36,7 @@ fields:
   name: website
   label: website
 pages:
+- dataschool/_people/stewart-hillhouse.md
 - dataschool/_people/aaron-aihini.md
 - dataschool/_people/tracy-chow.md
 - dataschool/_people/jaime-flores-lovo.md
