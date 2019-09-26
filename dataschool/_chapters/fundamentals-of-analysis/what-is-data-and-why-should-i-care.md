@@ -15,9 +15,7 @@ is_featured: false
 img_border_on_default: false
 is_under_construction: false
 is_community_story: true
-story_intro_blurb: Stewart Hillhouse is a contributing writer to Data School. He’s
-  the co-founder of GoDo, a data experience studio. To get more, check out Connect
-  With Data, his blog helping to demystify the complexities of data.
+story_intro_blurb: ''
 reading_time: 5
 
 ---
@@ -81,3 +79,7 @@ Our brains work better when the information we’re presented realties to our wo
 **Pro Tip:** You know you’ve applied enough context to a question if the answer can be said in one sentence. Ex. I am 166 cm tall as of September 5, 2019.
 
 Keeping those tips in mind, you’re now ready to get out and begin playing around with data. Don’t worry if it gets confusing, practice will make perfect over time. Much like learning to read, it takes practice to begin working with data. Don’t forget to celebrate the small wins and don’t get discouraged if you get confused. I’m only a tweet away [@stew_hillhouse](https://twitter.com/stew_hillhouse?lang=en) if you’ve got any questions.
+
+***
+
+Stewart Hillhouse is a contributing writer to Data School. He’s the co-founder of GoDo, a data experience studio. To get more, check out [Connect With Data](https://connectwithdata.com/101ways), his blog helping to demystify the complexities of data.
