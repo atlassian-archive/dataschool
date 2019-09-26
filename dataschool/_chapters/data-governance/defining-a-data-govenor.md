@@ -7,7 +7,8 @@ description: Data Governors maintain the database so that is remains valuable to
 number: 34
 authors:
 - _people/matt.md
-reviewers: []
+reviewers:
+- _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1v-NJdR3zSyfn4tNtvoTLM_52SJbS2lVLudaSVxlRXdw/edit?usp=sharing
 image: "/assets/images/Frame (1) (1).png"
 is_featured: false
