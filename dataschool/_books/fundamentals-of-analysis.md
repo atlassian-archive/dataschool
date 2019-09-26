@@ -4,9 +4,8 @@ meta_title: Fundamentals of Analysis web book
 description: Learn how to get insights out of data
 book_slug: fundamentals-of-analysis
 book_sort_number: 1
-authors:
-- _people/rohan-joseph.md
-reviewers: []
+authors: _people/matt.md
+reviewers: _people/dave.md
 cover_image: "/assets/images/book-covers/fundamentals-of-analysis.png"
 main_color: "#75185C"
 is_featured: false
