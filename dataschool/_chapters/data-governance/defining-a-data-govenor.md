@@ -105,8 +105,8 @@ Here are the things you must educate your organization on:
 1. What’s in the models
 2. How to use the tool
 3. Your process for prioritizing data requests, process for data sharing and access
-4. Data Basics in databases, tables, data structures and SQL
+4. [Data Basics in databases, tables, data structures and SQL](https://dataschool.com/how-to-teach-people-sql/)
 5. Quality versus Vanity Metrics
-6. Chart best practices
+6. [Chart best practices](https://dataschool.com/how-to-design-a-dashboard/what-makes-a-great-dashboard-aces/)
 
 Remember to organize and communicate how people should come to you with integrity issues, data needs, access, training, etc.
