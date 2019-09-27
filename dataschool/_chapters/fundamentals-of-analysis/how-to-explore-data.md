@@ -8,7 +8,7 @@ number: 2
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1VHuOtEuYzIl7YprxxZuyT2V5pcR4wk1BexvXKlE_BTg/edit?usp=sharing
-image: ''
+image: "/assets/images/agence-olloweb-d9ILr-dbEdg-unsplash.jpg"
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
