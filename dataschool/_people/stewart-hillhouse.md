@@ -6,7 +6,7 @@ image: "/assets/images/stewart.jpeg"
 is_contributor: true
 job_title: Co-Founder and COO
 company: GoDo
-data_school_slack_handle: ''
+data_school_slack_handle: "@Stewart Hillhouse "
 linkedin: https://www.linkedin.com/in/stewarthillhouse/
 twitter: https://twitter.com/stew_hillhouse?lang=en
 website: ''
