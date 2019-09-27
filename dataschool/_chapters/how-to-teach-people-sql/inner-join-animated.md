@@ -14,7 +14,7 @@ is_featured: false
 img_border_on_default: false
 
 ---
-This is the default type of JOIN in SQL, in fact you do not even need to specify INNER JOIN when writing a query. Only writing JOIN is an INNER JOIN.
+This is the default type of [JOIN in SQL](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/), in fact you do not even need to specify INNER JOIN when writing a query. Only writing JOIN is an INNER JOIN.
 
 ```sql
 SELECT *
