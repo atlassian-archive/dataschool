@@ -10,14 +10,14 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
-image: /assets/images/book-covers/how-to-teach-people-sql.png
+image: "/assets/images/book-covers/how-to-teach-people-sql.png"
 is_featured: false
 img_border_on_default: false
 
 ---
 ## Left Join
 
-This is the second most common type of JOIN in SQL. Left refers to the first table, or the table you will be joining to. So in this case it would be the facebook table since it comes before linkedin table in the query.
+This is the second most common type of [JOIN in SQL](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/). Left refers to the first table, or the table you will be joining to. So in this case it would be the facebook table since it comes before linkedin table in the query.
 
 ```sql
 SELECT *
@@ -63,7 +63,6 @@ Here we can RIGHT JOIN similar to the LEFT JOIN bring in rows from the RIGHT (or
 ![Shows how the tight join adds nulls when a right value has no match](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_4.gif)
 
 Why use a LEFT JOIN or RIGHT JOIN vs an INNER JOIN? To help understand, Let's think about the different questions they are asking.
-
 
 * **LEFT join:** How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)
 * **RIGHT join:** How many friends and connections do my LinkedIn connections have? (Regardless of if they are on facebook)
