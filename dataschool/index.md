@@ -69,7 +69,7 @@ description: A community driven school to help people create data driven organiz
 <li><a href="/people/">Contributors</a></li>
 <li><a href="/mission/">Mission</a></li>
 <li><a href="/contribute/">Contribute</a></li>
-<li><a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY" target="_blank">Slack Community</a></li>
+<li><a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWY4YWI1YzBkOTAwZmQ4Y2Q4N2U4MWE1Njg3OWJhNmU2NGRiYTI0MDEzMmQ1MzllMTczMGFhMTEwZTBlYmQxYjY" target="_blank">Slack Community</a></li>
 </ul>
 </div>
 <div class="col">
