@@ -7,14 +7,15 @@ section: JOINs
 number: 70
 authors:
 - _people/matt.md
-reviewers: []
+reviewers:
+- _people/tim.md
 feedback_doc_url: https://docs.google.com/document/d/1xA160gXkrjyrlrygTqNAVnUYaEA3-oMFPTmxgvyuZxY/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif"
 is_featured: false
 img_border_on_default: false
 
 ---
-This is the third most common type of JOIN in SQL. FULL OUTER refers to the first table, or the table you will be joining to. So in this case it would be the facebook table since it comes before linkedin table in the query.
+This is the third most common type of [JOIN in SQL](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/). FULL OUTER refers to the first table, or the table you will be joining to. So in this case it would be the facebook table since it comes before linkedin table in the query.
 
 ```sql
 SELECT *
@@ -32,7 +33,6 @@ However after completing the LEFT join of the data then there is essentially RIG
 ![gif showing subsequent adding of values that were not copied from the table](/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_2.gif)
 
 Why use a FULL OUTER JOIN vs LEFT JOIN or RIGHT JOIN vs an INNER JOIN? To help understand, Let’s think about the different questions they are asking.
-
 
 * **FULL OUTER join:** How many friends and connections do my Facebook friends or LinkedIn connections have?
 * **LEFT join:** How many friends and connections do my Facebook friends have? (Regardless of if they are on LinkedIn)

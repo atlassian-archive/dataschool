@@ -8,7 +8,8 @@ section: JOINs
 number: 60
 authors:
 - _people/matt.md
-reviewers: []
+reviewers:
+- _people/tim.md
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
 image: "/assets/images/book-covers/how-to-teach-people-sql.png"
 is_featured: false

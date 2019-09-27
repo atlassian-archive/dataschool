@@ -7,7 +7,8 @@ section: JOINs
 number: 50
 authors:
 - _people/matt.md
-reviewers: []
+reviewers:
+- _people/tim.md
 feedback_doc_url: https://docs.google.com/document/d/1BW7SJQIwigKWFxFe9mf17GCimXZOPKgigRELKteosVE/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/innerJoin/innerJoin_1.png"
 is_featured: false
