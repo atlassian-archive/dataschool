@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1qvyMVS7awmG9ZKLA-ZBvYQTIxO9tksgm9I-V1Bdtrh8/edit?usp=sharing
-image: ''
+image: "/assets/images/patrick-perkins-ETRPjvb0KM0-unsplash.jpg"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
