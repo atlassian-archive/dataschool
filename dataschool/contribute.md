@@ -30,7 +30,7 @@ We have channels for each of these in our Slack:
 * #book-edits
 * #book-contribute
 
-[Go here to join the Data School Slack](https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWVhNGQ5NWE1NzBiMTYyZDAxMTA0OWEwZTg5NDQ4MTA2YTIwZWEzMTBiNGNkZmFhODEzNGZmYTBjYzk1NjMyZTY)
+[Go here to join the Data School Slack](https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWY4YWI1YzBkOTAwZmQ4Y2Q4N2U4MWE1Njg3OWJhNmU2NGRiYTI0MDEzMmQ1MzllMTczMGFhMTEwZTBlYmQxYjY)
 
 If you want to contribute more substantially to a book or help write our next one please reach out to me (@MattDavid) in The Data School’s Slack.
 
