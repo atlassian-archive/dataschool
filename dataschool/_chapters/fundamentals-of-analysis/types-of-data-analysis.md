@@ -6,9 +6,10 @@ description: There are different types of analysis. Each is suited to different 
   within a company, analyst, executive, data scientists, etc.
 authors:
 - _people/patrick-gibson.md
-reviewers: []
+reviewers:
+- _people/matt.md
 feedback_doc_url: ''
-image: "/assets/images/book-covers/fundamentals-of-analysis.png"
+image: "/assets/images/davide-ragusa-slgtMF8EjYE-unsplash.jpg"
 summary: ''
 is_featured: false
 img_border_on_default: false
