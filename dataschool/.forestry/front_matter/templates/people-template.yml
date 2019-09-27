@@ -36,11 +36,11 @@ fields:
   name: website
   label: website
 pages:
+- dataschool/_people/matt.md
 - dataschool/_people/stewart-hillhouse.md
 - dataschool/_people/aaron-aihini.md
 - dataschool/_people/tracy-chow.md
 - dataschool/_people/jaime-flores-lovo.md
-- dataschool/_people/matt.md
 - dataschool/_people/blake.md
 - dataschool/_people/katerina-bicakci.md
 - dataschool/_people/matthew-layne.md
