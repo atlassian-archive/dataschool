@@ -19,7 +19,7 @@ description: A community driven school to help people create data driven organiz
 <div class="book-cover">
 <h5 class="mt-3">This month's featured web book</h5>
 {% assign book = site.books | where:'is_featured', 'true' %}
-{% assign book = book\[0\] %}
+{% assign book = book[0] %}
 <div class="smallbook">
 <a href="{{ book.url }}" class="hover-link">
 <img class="hover-img" src="{{ book.cover_image }}" alt="{{ book.title }} Data School web book cover" title="Read the {{ book.title }} web book">
@@ -43,7 +43,7 @@ description: A community driven school to help people create data driven organiz
 <div class="col-sm-8 chapter-info">
 <a href="{{ chapter.url }}"><h3>{{ chapter.title }} <i class="fas fa-arrow-right"></i></h3></a>
 {% assign book = site.books | where:'slug', chapter.book_slug %}
-{% assign book = book\[0\] %}
+{% assign book = book[0] %}
 <em class="from-book">From <a href="{{ book.url }}">{{ book.title }}</a></em>
 <p>{{ chapter.description }}</p>
 </div>
