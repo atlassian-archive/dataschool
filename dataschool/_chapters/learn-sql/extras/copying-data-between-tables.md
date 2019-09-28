@@ -81,6 +81,9 @@ INSERT INTO masterlist [SELECT statements] WHERE price>money(50);
 ```
 Each SELECT statement can also have its own where statement for table specific conditions. After the table is created and filled it can be manipulated, added to or removed from without affecting the tables the data was copied from.
 
+## Video example
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Viia9B2EEEw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Summary
 
 * To copy create a pre-structured table:
