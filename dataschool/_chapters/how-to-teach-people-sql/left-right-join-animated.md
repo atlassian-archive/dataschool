@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/tim.md
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
-image: "/assets/images/leftJoin_1.gif"
+image: "/assets/images/leftJoin_2.webp"
 is_featured: false
 img_border_on_default: false
 
@@ -33,7 +33,7 @@ This query finds matches and adds them to a newly created table in the same way 
 
 However there is a large difference in how SQL treats the LEFT table (first table; in this case the facebook table). For any rows in the first (or LEFT) table that did not have a match, it will still add this row to the new table and put in nulls for the columns from the other table.
 
-![Shows the Left join adding nulls when a left value has no matching value on the right](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_2.gif))
+![Shows the Left join adding nulls when a left value has no matching value on the right](/assets/images/how-to-teach-people-sql/leftJoin/leftJoin_2.gif)
 
 ## Right Join
 
