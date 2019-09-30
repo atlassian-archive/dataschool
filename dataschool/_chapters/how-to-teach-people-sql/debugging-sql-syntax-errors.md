@@ -7,7 +7,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1gviTDfo7zo2KOm2IlgH4kaa2RB7iE17oOdwIzOdhHKE/edit?usp=sharing
-image: "/assets/images/how-to-teach-people-sql/debugging-syntax/syntax_1.png"
+image: "/assets/images/Frame - 2019-09-30T122614.131.png"
 description: Learn the most common reasons for SQL errors due to syntax. Spelling
   errors, Quotation marks, Capitalization, Data Types, and more.
 is_featured: false
