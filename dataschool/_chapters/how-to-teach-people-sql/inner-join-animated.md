@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/tim.md
 feedback_doc_url: https://docs.google.com/document/d/1BW7SJQIwigKWFxFe9mf17GCimXZOPKgigRELKteosVE/edit?usp=sharing
-image: "/assets/images/how-to-teach-people-sql/innerJoin/innerJoin_1.png"
+image: "/assets/images/innerJoin_3-1.gif"
 is_featured: false
 img_border_on_default: false
 
