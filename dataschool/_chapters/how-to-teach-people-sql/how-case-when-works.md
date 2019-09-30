@@ -11,7 +11,7 @@ reviewers:
 - _people/matt.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKbyR5n24yeJbuuyAmsk/edit?usp=sharing
-image: "/assets/images/caseWhen3.png"
+image: "/assets/images/Frame - 2019-09-30T123134.565.png"
 is_featured: false
 img_border_on_default: true
 
