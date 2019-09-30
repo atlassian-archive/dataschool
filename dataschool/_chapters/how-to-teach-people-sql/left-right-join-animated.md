@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/tim.md
 feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3dWsUYQ1JCq8jhmcLk/edit?usp=sharing
-image: "/assets/images/book-covers/how-to-teach-people-sql.png"
+image: "/assets/images/leftJoin_1.gif"
 is_featured: false
 img_border_on_default: false
 
