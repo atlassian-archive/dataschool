@@ -9,7 +9,7 @@ authors:
 - _people/matt.md
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1A3KNPov7-oBuOVWh553DTYXZxip6tw7NvW1q_ED3fI4/edit?usp=sharing
-image: "/assets/images/how-to-teach-people-sql/accessingData/accessing_1.png"
+image: "/assets/images/Frame (99).png"
 is_featured: false
 img_border_on_default: false
 
