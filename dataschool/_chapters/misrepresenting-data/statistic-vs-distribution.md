@@ -24,7 +24,7 @@ story_intro_blurb: ''
 
 ## The problem with a single statistic
 
-Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While this high-level stats can be informative, relying on them to accurately represent the underlying data can be problematic because they can hide important patterns in the underlying data.
+Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While high-level stats can be informative, relying on them to accurately represent the underlying data can be problematic because they can hide important patterns in the underlying data.
 
 ![High Level Statistic](/assets/images/misrepresenting-data/statVsDist/statVsDist_0.png)
 
@@ -111,4 +111,4 @@ While statistics such as a mean or median are commonly used and easy to understa
   * Left Skewed
   * Normal
   * Bimodal
-  * [And more](https://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/)
+  * [And more](https://medium.com/@srowen/common-probability-distributions-347e6b945ce4)
