@@ -16,7 +16,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
-published: false
 
 ---
 ## What is a Data Mart?
