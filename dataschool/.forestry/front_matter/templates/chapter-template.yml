@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-governance/why-build-a-data-mart.md
 - dataschool/_chapters/data-governance/data-mart-implementation.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
@@ -129,7 +130,6 @@ pages:
 - dataschool/_chapters/misrepresenting-data/overall-vs-groups.md
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/misrepresenting-data/define-experiment-parameters.md
-- dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-implementation.md
 - dataschool/_chapters/data-modeling-101/creating-an-ec2-server.md
 - dataschool/_chapters/sql-optimization/snowflake.md
