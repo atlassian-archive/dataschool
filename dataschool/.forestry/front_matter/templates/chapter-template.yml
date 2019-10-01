@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/etl-vs-elt.md
 - dataschool/_chapters/data-governance/data-lake-security.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
 - dataschool/_chapters/data-governance/why-build-a-data-lake.md
