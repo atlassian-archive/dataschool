@@ -3,7 +3,7 @@ section: Data Lake
 title: ETL vs ELT
 meta_title: Use ELT for Data Lakes
 description: Learn why you should use an ELT over a ETL process for your Data Lake
-number: 
+number: 7
 authors: []
 reviewers:
 - _people/dave.md
