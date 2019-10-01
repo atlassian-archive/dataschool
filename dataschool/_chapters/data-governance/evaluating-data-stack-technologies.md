@@ -1,10 +1,10 @@
 ---
-section: book
+section: Extras
 title: Evaluating Data Stack Technologies
 meta_title: Evaluate Data Tools for your Data Stack
 description: Learn the various functions a Data Stack needs to perform in order to
   select the correct data tools to take raw data and turn it into insight.
-number: 1
+number: 1000
 authors:
 - _people/brian-kinney.md
 reviewers:
