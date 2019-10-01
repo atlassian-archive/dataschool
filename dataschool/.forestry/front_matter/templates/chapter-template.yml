@@ -87,10 +87,10 @@ fields:
     max: 
     step: '1'
 pages:
-- dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
-- dataschool/_chapters/data-governance/source-data-tools.md
-- dataschool/_chapters/data-governance/source-data-architecture.md
 - dataschool/_chapters/data-governance/source-data-best-practices.md
+- dataschool/_chapters/data-governance/source-data-architecture.md
+- dataschool/_chapters/data-governance/source-data-tools.md
+- dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
 - dataschool/_chapters/fundamentals-of-analysis/choosing-metrics-for-product-launch.md

@@ -4,7 +4,7 @@ title: Source Data Best Practices
 meta_title: Learn Source Data Best Practices
 description: Learn how to manage queries, model in a BI tool, and use drag and drop
   query interfaces.
-number: 
+number: 3
 authors:
 - _people/matt.md
 reviewers:

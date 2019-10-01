@@ -4,7 +4,7 @@ title: Source Data Architecture
 meta_title: Setup Source Data Architecture
 description: Learn how to configure your data base and leverage flexible BI tools
   to analyze source data.
-number: 
+number: 2
 authors:
 - _people/matt.md
 reviewers:
