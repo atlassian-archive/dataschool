@@ -3,7 +3,7 @@ section: Data Mart
 title: Why Build a Data Mart
 meta_title: Top 5 Reasons to build a Data Mart
 description: Learn the best reasons to build a data mart on top of your data warehouse
-number: 20
+number: 40
 authors:
 - _people/matt.md
 reviewers:

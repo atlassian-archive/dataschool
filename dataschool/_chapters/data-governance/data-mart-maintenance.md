@@ -4,7 +4,7 @@ title: Data Mart Maintenance
 meta_title: How to Maintain a Data Mart
 description: Learn Best Practices for Maintaining a a Data Mart, such as handling
   errors and incorporating new data sources.
-number: 22
+number: 42
 authors:
 - _people/matt.md
 reviewers:

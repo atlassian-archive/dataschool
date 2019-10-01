@@ -3,7 +3,7 @@ section: Data Mart
 title: Data Mart Implementation
 meta_title: How to build a Data Mart
 description: Learn the best practices for building a Data Mart
-number: 21
+number: 41
 authors:
 - _people/matt.md
 reviewers:
