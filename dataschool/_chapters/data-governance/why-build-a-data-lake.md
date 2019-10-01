@@ -17,7 +17,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
-published: false
 
 ---
 ## What is a Data Lake?
@@ -96,12 +95,16 @@ PhoneNumbers
 
 ELT tools move data into a lake and provide ways of getting your data into a SQL format so it can be queried easily. This is also a big step towards creating your single source of truth for your data
 
-## Example 
+## Example
 
 ### Data Lake with multiple Schemas
 
 ![](https://lh3.googleusercontent.com/wNrelG2LDYcr-x4TxXi2ywcE84GgzkTOjLbE8APoOQqOb3jkzBN7RlRdjxvxpzMZtpqs4Hl4rn15b4c9aTwigrmbeJx2umKZFDEgaFY-vhvVFKGQpdBXh0zQ8U17nLTfx1kzEHKP)
 
+We can see a variety of data sources and schemas we can query from.
+
 ### Example query across Data Lake Schemas
 
 ![](https://lh6.googleusercontent.com/9y3tOyaQc-dQ27wOgbKJLj8MkXjIUaw8Lqf4-HE_HvxMIhxM0uKWqVmbIlsp-7ZADN0RKwzlsCV5UAOI3xD9vxLSC9ARiS1XBP_a8vcz4k9QV4A6nZ0-VlqaBpCcjLlQarYeTy_6)
+
+Combining datasets can be tricky. Having a flexible BI tool such as Chartio allows you to navigate this with relative ease.
