@@ -38,7 +38,7 @@ There are two main configuration options to work with your production database, 
 
 If you are going to analyze data on your production server create and use a read only user account. This will prevent you from making any updates to the data during your analysis by accident. Granted this unlikely but it is a good precaution to use. It also make it possible to grant other people access for analysis purposes and guard against their errors.
 
-![](https://lh3.googleusercontent.com/7FXwkEtLZdFCtfW6a1nZEgp5QNSmIAkX7bffxmGalmKfhaIJLiLkce66m6tTkpUcqxeF2IVRDcm4OpdePesV_YuHAYcJTfqO7owwsFtUdB-o_Gmzo4w5BdJA9FNv4Bel6gwR1ixx =439x229)
+![](https://lh3.googleusercontent.com/7FXwkEtLZdFCtfW6a1nZEgp5QNSmIAkX7bffxmGalmKfhaIJLiLkce66m6tTkpUcqxeF2IVRDcm4OpdePesV_YuHAYcJTfqO7owwsFtUdB-o_Gmzo4w5BdJA9FNv4Bel6gwR1ixx)
 
 This functionality exists across database providers.
 
@@ -60,7 +60,7 @@ Now that we have safe access to the database we need to get the data out in ways
 
 Running one off queries can be useful to understand what is going on in the data but needing to export data into another tool like excel can be cumbersome especially if you are trying to have real time visibility. Using a SQL based BI product will allow you to create visualizations and dashboards that can be refreshed automatically, you wont have to manually fetch your data. Additionally some SQL based BI tools such as Chartio allow you to connect to data sources such as google analytics, that you might otherwise not be able to.
 
-![](https://lh5.googleusercontent.com/hq_Gp6vTdJzXIPBRD7U2fkh0ME9jPwwHdJWi-YBDzJVNx8A1jvGyp3epOYTZQm68KnYrWHA81CHm8REoq1_2m5MSalmh4-VdXkC_PdWlcj6Af-VbN2SS0sbt9o3NVukEENMcfXOz =494x562)
+![](https://lh5.googleusercontent.com/hq_Gp6vTdJzXIPBRD7U2fkh0ME9jPwwHdJWi-YBDzJVNx8A1jvGyp3epOYTZQm68KnYrWHA81CHm8REoq1_2m5MSalmh4-VdXkC_PdWlcj6Af-VbN2SS0sbt9o3NVukEENMcfXOz)
 
 Being able to blend this data is a way to have the benefits of a data lake with out architecting one. This will help you produce better insights.
 
@@ -81,7 +81,7 @@ Another option is to use an IDE. While it does not provide as much functionality
 * HeidiSQL
 * SQL Workbench
 
-![](https://lh3.googleusercontent.com/nGX5gdLBIhRZANBZflKRyKUsVtPLtm5yiwOXYYkccVzwkOo0Gn6aRObIizI0oX89xR0bsDKo5gjPVId0J-rtlycPB1s5K66aYR8LBUhg26T267aL3nyWF2EssWIupdl_kgLxPOF4 =624x363)
+![](https://lh3.googleusercontent.com/nGX5gdLBIhRZANBZflKRyKUsVtPLtm5yiwOXYYkccVzwkOo0Gn6aRObIizI0oX89xR0bsDKo5gjPVId0J-rtlycPB1s5K66aYR8LBUhg26T267aL3nyWF2EssWIupdl_kgLxPOF4)
 
 #### Excel
 

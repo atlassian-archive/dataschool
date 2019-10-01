@@ -47,18 +47,18 @@ Most applications allow you to export your data into csv files. You can take thi
 
 For data sources such as your production database you can query it directly from the command line but this can get messy and hard to keep track of queries and results. We suggest setting up an IDE such as PG admin to better handle querying data within a Schema.
 
-![](https://lh5.googleusercontent.com/M0Sv1u4JugdXuJ8kF0eIz9UOXvodNuIFZtSZQhj-d3zpY89llsjSO9gP7hYxtY0JgC60_VTBlmKHfA-RujYO4eigRywC_-PgqeOo2lsSbKKPakX6L-ua2KWL4vZQTidE-J3ZsI8f =624x356)
+![](https://lh5.googleusercontent.com/M0Sv1u4JugdXuJ8kF0eIz9UOXvodNuIFZtSZQhj-d3zpY89llsjSO9gP7hYxtY0JgC60_VTBlmKHfA-RujYO4eigRywC_-PgqeOo2lsSbKKPakX6L-ua2KWL4vZQTidE-J3ZsI8f)
 
 ### Cloud Dashboarding tool
 
 Tools like Gecko Board or Grow allow you to bring in data via api’s to visualize data in simple ways. This allows you to combine data from multiple places into a single dashboard with simple visualizations to be viewed.
 
-![](https://lh5.googleusercontent.com/iYU4tKzB-RWRr5cHTIyQl0aBYcp26XQdfpTUOCiidFTP4_RSkWE6xB9J3pivIUCAzEW43xVVSqzCXQuSnpzF_vsXag_Q56m7GlzuF8DJDaWOBT-M_klyCujTVRhbgl6q_RVXVBEg =624x363)
+![](https://lh5.googleusercontent.com/iYU4tKzB-RWRr5cHTIyQl0aBYcp26XQdfpTUOCiidFTP4_RSkWE6xB9J3pivIUCAzEW43xVVSqzCXQuSnpzF_vsXag_Q56m7GlzuF8DJDaWOBT-M_klyCujTVRhbgl6q_RVXVBEg)
 
 ### Self Serve BI
 
 Ultimately the best option to analyze source data is to use a flexible self serve BI tool such as Chartio. Tools like Chartio allow you to pull data in large amounts of data from applications and your database. You can then combine them in queries, analyze the data in multiple ways, and produce custom visualizations. It also allows for the queries to be automatically updated so that the information shown on dashboards is up to date.
 
-![](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y =400x359)
+![](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y)
 
 This section will cover different ways to optimize your usage of source data and how you can prepare to transition to creating a data lake to unify your analytics.
