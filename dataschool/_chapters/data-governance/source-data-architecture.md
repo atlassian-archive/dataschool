@@ -17,7 +17,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
-published: false
 
 ---
 When a business is getting started with data it is usually very messy. It is unorganized, often times has bugs in it, and to analyze it might slow down the performance of your application. Some aspects of the data are not worth manipulating at this stage but there are a few architectural and analysis considerations that can greatly improve your access to data.

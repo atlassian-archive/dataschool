@@ -17,7 +17,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
-published: false
 
 ---
 Now that you have setup a read only replica of your database and are using a sql based bi tool to blend and analyze your data, the next step is maintaining it. At this stage it is not recommended to do a lot of modeling or clean up. However do provide warnings about known issues in the data so that others who want to explore the data can do so accurately.
@@ -44,7 +43,7 @@ You can also add text to describe how some metric was calculated to explain busi
 
 Some BI tools allow you to do some renaming within it. This is most common in renaming a field so it is more readable within a chart but some let you rename it so that others can query the data by its new name. Definitely rename fields so that they are more understandable within visualizations and dashboards. Asking people to interpret complex names will not work.
 
-![](https://lh3.googleusercontent.com/zG4ozj43oza7HHf9wKwKVkDmuB7f0XgrCQ6-lPmkgrlyvzF5VeSwfAed6V-lFKRKMSXfGZe32WMTuDwU3gjjJqSwFCFmRsBDVMwgr45Fbmvw5gufFQ09QJBUTTaXslYIGEQyi1aa =363x329.9092526690392)
+![](https://lh3.googleusercontent.com/zG4ozj43oza7HHf9wKwKVkDmuB7f0XgrCQ6-lPmkgrlyvzF5VeSwfAed6V-lFKRKMSXfGZe32WMTuDwU3gjjJqSwFCFmRsBDVMwgr45Fbmvw5gufFQ09QJBUTTaXslYIGEQyi1aa)
 
 ### Drag and Drop
 
@@ -57,7 +56,7 @@ Some BI products with drag and drop data explorers handle complex join paths wit
 
 Whenever you are producing visualizations unexpected or null values can make your analysis incorrect. Always do a quick review of the raw data by sorting each field to see if you need to remove, ignore, or update nulls/outliers so that your analysis is correct.
 
-![](https://lh5.googleusercontent.com/BmGwGhaJuho0fTOdjBVHiT9Mo0VZG7OCj6nQnXrhHhw51hDHng3drTzh0bCH-xxWM_e2MvVf0DmryH0N70u6SCiywucT-6RUKhRhIIUoOkiAcBzmNaMUZ2iem6CdM9Z5-7Afz8PH =499x480)
+![](https://lh5.googleusercontent.com/BmGwGhaJuho0fTOdjBVHiT9Mo0VZG7OCj6nQnXrhHhw51hDHng3drTzh0bCH-xxWM_e2MvVf0DmryH0N70u6SCiywucT-6RUKhRhIIUoOkiAcBzmNaMUZ2iem6CdM9Z5-7Afz8PH)
 
 Read this post on [Finding Outliers with SQL](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/)
 

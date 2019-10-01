@@ -18,7 +18,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 4
-published: false
 
 ---
 Businesses generate tons of data. Product information, customer information, app performance, marketing expenditures etc. You need to start organizing and analyzing data in order to run your business effectively. At the beginning of a business or while a business remains small it is sufficient to work with data from production databases, product apis, and financials all in different applications.
