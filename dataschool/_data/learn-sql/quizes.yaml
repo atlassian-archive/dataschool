@@ -43,7 +43,7 @@ basic:
     references:
       - "order-by"
       - limit
-  - question: "Get the 20 longest tracks."
+  - question: "Get the rows of the 20 longest tracks."
     answer: "SELECT * FROM tracks ORDER BY milliseconds DESC LIMIT 20;"
     hint: "order by milliseconds in descending order"
     references:
@@ -182,7 +182,7 @@ mid-level:
     hint: "TO_CHAR(invoice_date, '&quot;Y&quot;YYYY') AS  &quot;Year&quot; ... GROUP BY  &quot;Year&quot;"
     references:
       - 'dates'
-  - question: "Get the month of *invoices* and the *total* amount that was invoiced for that month."
+  - question: "Get the year and month of *invoices* and the *total* amount that was invoiced for that year and month."
     answer: "SELECT TO_CHAR(invoice_date, 'YYYY-MM') as &quot;Month&quot;, SUM(total) FROM invoices GROUP BY &quot;Month&quot;;"
     hint: "TO_CHAR(invoice_date, 'YYYY-MM') as &quot;Month&quot;, SUM(total) ..."
     references:
