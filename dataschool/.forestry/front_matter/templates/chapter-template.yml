@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/source-data-tools.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
 - dataschool/_chapters/fundamentals-of-analysis/choosing-metrics-for-product-launch.md
