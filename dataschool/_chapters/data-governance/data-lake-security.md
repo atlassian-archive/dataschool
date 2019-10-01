@@ -1,13 +1,15 @@
 ---
 section: book
 title: Data Lake Security
-meta_title: ''
-description: ''
-number: 
-authors: []
-reviewers: []
-feedback_doc_url: ''
-image: ''
+meta_title: Setup Security on a Data Lake
+description: Learn best practices for ensuring data security on a Data Lake database.
+number: 6
+authors:
+- _people/matt.md
+reviewers:
+- _people/dave.md
+feedback_doc_url: https://docs.google.com/document/d/1zJuiI7_bM9rLMBe5yAiI3H7llHsbDk6FEqjk_Tz9Ki0/edit?usp=sharing
+image: "/assets/images/Data Lake Security.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
