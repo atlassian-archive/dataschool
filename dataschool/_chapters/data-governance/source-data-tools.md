@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1RudG3G8RGKgqayeY9R89EcYi1Sob3LclEcGwfBywVlA/edit?usp=sharing
-image: ''
+image: "/assets/images/Screen Shot 2019-09-30 at 9.48.53 PM.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -35,9 +35,9 @@ Data will live in many different places but the methods to analyze them boil dow
 
 ### In app
 
-Many modern SaaS applications come built with the same set of fixed dashboards and visualizations to showcase the data they are capturing. These charts are highly tuned to specific use cases and can be quite informative. In addition there are usually support people from that company who can help you understand them better or figure out issues in the data if you are having a problem.  
-  
-![](https://lh3.googleusercontent.com/cYUkMXdYfWNl55hNUblnfTpB0R99NZM3Han7GDQrJupixsPglDS21yDAyzqgghuIbsUReKmSNAsPybGaOj8FQ3EK8NwotL6E42e7rGHUlipNk7ymhB3o9BPoUvoyIr9BHWxeclv8 =262x247)![](https://lh3.googleusercontent.com/jdWIl5TToEGuIn7ZCAy1p7_NVjTaadtYMPXSCobsalTknnVjJEdUjuQdWFLKVcKDkfgxTIa4WCqO-Ukj9TkxccUvZ3UksU1TvyTikK-VnE3VtGljrBuW0XOLpbVx_35LbaDjoLS8 =322x244)
+Many modern SaaS applications come built with the same set of fixed dashboards and visualizations to showcase the data they are capturing. These charts are highly tuned to specific use cases and can be quite informative. In addition there are usually support people from that company who can help you understand them better or figure out issues in the data if you are having a problem.
+
+![](/assets/images/Screen Shot 2019-09-30 at 9.48.53 PM.png)
 
 ### Excel
 
