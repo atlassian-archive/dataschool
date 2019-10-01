@@ -4,7 +4,7 @@ title: Data Mart Maintenance
 meta_title: How to Maintain a Data Mart
 description: Learn Best Practices for Maintaining a a Data Mart, such as handling
   errors and incorporating new data sources.
-number: 
+number: 22
 authors:
 - _people/matt.md
 reviewers:
@@ -17,7 +17,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 6
-published: false
 
 ---
 Now that you have set up Data Marts, you will still have ongoing maintenance to get the most out of your data. The first step is to establish a mayor per mart, they will then be responsible for carrying out the mart maintenance tasks:
