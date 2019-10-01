@@ -28,7 +28,7 @@ These maintenance activities can be expensive if you extracted and loaded your d
 
 ## Data Sources
 
-The main place where maintenance issues occur is what the data from the sources changes or is not making it into the Data Lake
+The main place where maintenance issues occur is when the data from the sources changes or the data is not making it from the source into the Data Lake.
 
 ### Adding new data sources
 
