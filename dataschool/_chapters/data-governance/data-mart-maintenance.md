@@ -1,19 +1,22 @@
 ---
 section: Data Mart
 title: Data Mart Maintenance
-meta_title: ''
-description: ''
+meta_title: How to Maintain a Data Mart
+description: Learn Best Practices for Maintaining a a Data Mart, such as handling
+  errors and incorporating new data sources.
 number: 
-authors: []
-reviewers: []
+authors:
+- _people/matt.md
+reviewers:
+- _people/dave.md
 feedback_doc_url: ''
-image: ''
+image: "/assets/images/Outlier-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time: 6
 published: false
 
 ---
@@ -68,12 +71,15 @@ FROM USER
 WHERE Trial_Start > NOW()::date - 7 
 	AND Email != “%chartio.com”
 ```
+
 vs
+
 ```sql
 SELECT COUNT *
 FROM USER
 WHERE Trial_Start > NOW()::date - 7
 ```
+
 Often times people’s calculation of a metric will differ because they are calculating it based on a different formula, the data source they are using is different, they might be filtering the data differently, or there is an error in their calculation.
 
 #### Common data errors
@@ -98,6 +104,7 @@ This can also happen when a new option is added to a field and it is encoded in 
 If your query stops producing data after a specific date, you need to investigate. This can be caused by a bug, by a field being renamed, or by the data source changing. This is more common than you would think, for instance if you update a url the data associated with the previous name will cut off. You can work around this within your SQL query.
 
 For example when Chartio moved it’s url from Chart.io to Chartio.com we needed to use CASE WHEN statements to maintain our tracking accurately:
+
 ```sql
 SELECT
 CASE WHEN page_tracking.url LIKE 'www.chart.io' 
@@ -110,6 +117,7 @@ FROM page_tracking
 GROUP BY 1
 ORDER BY 2 ASC
 ```
+
 Or you can implement this as a more permanent fix in the data warehouse stage. One note of warning here is sometimes you want to preserve this cut off to remember the name was changed, so think through before making this modeling decision. If you aren’t sure why it cut off consult the data governor or engineers to track down what is going on.
 
 ##### All queries on a data source are erroring out
