@@ -16,7 +16,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
-published: false
 
 ---
 Prior to having a data lake, all analysis had to be done by working with data in many different places. These tools required individual logins which are hard to track and maintain the appropriate levels of access.

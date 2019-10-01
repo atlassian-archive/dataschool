@@ -17,7 +17,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
-published: false
 
 ---
 Data Lakes are inherently not super well organized or maintained. They should be relatively low maintenance but there are 2 areas that will need some attention.
