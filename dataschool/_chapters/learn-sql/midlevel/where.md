@@ -111,7 +111,15 @@ Notice the use of parenthesis making it clear that we only wanted the longer AC/
   initial="SELECT * FROM tracks WHERE (composer = 'Green Day' OR composer = 'AC/DC') AND milliseconds > 240000;"
 ></sqlbox>
 
- Test your skills out and see if you can query for all *tracks* with price greater than a dollar and a genre (*genre_id*) of either 22 or 19;
+ Test your skills out and see if you can query for all *tracks* with price greater than a dollar and a genre (*genre_id*) of  22;
+
+
+<sqlbox
+  answer="SELECT * FROM tracks WHERE unit_price > 1 AND (genre_id = 22);"
+  hint="unit_price > 1 AND genre_id = 22"
+></sqlbox>
+
+Now see if you can query for all *tracks* with price greater than a dollar and a genre (*genre_id*) of either 22 or 19;
 
 
 <sqlbox
