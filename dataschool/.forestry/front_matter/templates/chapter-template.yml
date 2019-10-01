@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/data-lake-architecture.md
 - dataschool/_chapters/data-governance/why-build-a-data-lake.md
 - dataschool/_chapters/data-governance/source-data-best-practices.md
 - dataschool/_chapters/data-governance/source-data-architecture.md
