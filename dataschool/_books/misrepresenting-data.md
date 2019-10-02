@@ -12,4 +12,4 @@ status: in_progress
 is_featured: true
 
 ---
-There is so much data you have access to within a company. Communicating accurate insights from it is challenging. This book covers the mental biases and common mistakes that people make when analyzing data. It then provides guidance on how to prevent and avoid these costly errors.
+There is so much data you have access to within a company. Communicating accurate insights from company data is challenging. This book covers the mental biases and common mistakes that people make when analyzing data. It then provides guidance on how to prevent and avoid these costly errors.
