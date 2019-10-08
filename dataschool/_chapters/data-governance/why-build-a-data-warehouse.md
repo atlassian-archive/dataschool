@@ -20,28 +20,26 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
-## What is a data warehouse?
+## What is a Data Warehouse?
 
-A data warehouse is a database setup for analytical ad hoc querying.
+A Data Darehouse is a database setup for analytical ad hoc querying.
 
 ## Six reasons to build a Data Warehouse
 
-1. **Easier** to understand and query - simplified single model. No more duplicate tables, confusing column names, or mysterious values
-2. **Faster** to work with for the data team. Less time is needed to clean and transform data to perform analysis
-3. **Approachable** to work with for Business Users. Complex joins have been reduced and the correct column to us is obvious
-4. **Trusted**, consistent source of answers. Everyone generates insights from the same data, no more two different answers to the same question
-5. **Maintainable** with less time and effort. After adopting naming conventions and a style guide you can maintain as you add data
-6. **Separated** from transactional data schema. Queries don’t affect app performance, and aren’t affected by rapid changes in the data
+1. **Easier** to understand and query - simplified single model. No more duplicate tables, confusing column names, or mysterious values.
+2. **Faster** to work with for the data team. Less time is needed to clean and transform data to perform analysis.
+3. **Approachable** to work with for business users. Complex joins have been reduced and the correct column to us is obvious.
+4. **Trusted**, consistent source of answers. Everyone generates insights from the same data; no more varying answers to the same question
+5. **Maintainable** with less time and effort. After adopting naming conventions and a style guide you can maintain as you add data.
+6. **Separated** from transactional data schema. Queries don’t affect app performance, and aren’t affected by rapid changes in the data.
 
-This section of the Data Governance book will explain why you should create a data warehouse, and how to implement it so that you get all the benefits it can deliver your business. Before we dive in deep let’s look at the data issues you are facing with a data lake.
+This section of the Data Governance book will explain why you should create a Data Warehouse, and how to implement it so that you get all the benefits it can deliver to your business. Before we dive in deep, let’s look at the data issues you face with a Data Lake.
 
 ## The Problem with Data Lakes
 
-Typically organizations reach roadblocks in making sense of the data in their data lake. When the amount of data in your data lake reaches a level of complexity with irrelevant, unstructured data, it will be too confusing and messy for non-data analysts to use. Data is inconsistent and unstructured, so it can be error prone with users using the wrong columns or calculating metrics incorrectly.
+Typically, organizations reach roadblocks in making sense of the data in their Data Lake. When the amount of data in your Data Lake reaches a level of complexity with irrelevant, unstructured data, it will be too confusing and messy for non-data analysts to use. Data is inconsistent and unstructured, so it can be error-prone with users using the wrong columns or calculating metrics incorrectly.
 
-When organizations have an initiative to empower users outside of the data science or engineering team to leverage data, they will move to a data warehouse.
-
-What differentiates a data warehouse from a data lake or other source is that the data warehouse will provide a cleaner view of the data, it’s easier for users to query. Imagine all of your inventory is finally under one roof but its in a big pile, unsorted, some of it is rotten. You may know where everything is in the pile but if you want to work with others you must organize it. You need to put inventory on shelves in an order that makes sense to have a proper warehouse.
+When organizations have an initiative to empower users outside of the data science or engineering team to leverage data, they will move to a Data Warehouse. What differentiates a Data Warehouse from a Data Lake or other source is that the Data Warehouse will provide a cleaner view of the data and it’s easier for users to query. Imagine all of your inventory is finally under one roof but it’s in a big pile, unsorted, some of it is rotten. You may know where everything is in the pile but if you want to work with others you must organize it. You need to put inventory on shelves in an order that makes sense to have a proper warehouse.
 
 Take an example of a database tracking a product’s users and usage data. The raw data may be difficult to understand for the average user because of things such as bad naming conventions, complex data types, data inconsistencies, irrelevant data and highly normalized tables.
 
@@ -49,7 +47,7 @@ Example Data Lake Schema:
 
 ![](/assets/images/Transactional Schema.png)
 
-It was designed as a transactional schema not for analysis. Without a tool such as Chartio, navigating this schema for analysis would be incredibly challenging. However with Chartio you only need to focus on cleaning up tables to get much more value out of your data. Focus on making data lake tables easy to understand.
+It was designed as a transactional schema not for analysis. Without a tool such as Chartio, navigating this schema for analysis would be incredibly challenging. However with Chartio you only need to focus on cleaning up tables to get much more value out of your data. Focus on making Data Lake tables easy to understand.
 
 Example Data Lake table:
 
@@ -57,9 +55,9 @@ Example Data Lake table:
 
 We can see multiple columns with issues that would be difficult for an analyst to understand or make use of. Let's see how this table could be reconfigured to become useful for analytics.
 
-## How Data Warehouses are different than Data Lakes
+## How Data Warehouses are different from Data Lakes
 
-Use modeling to create a clean version of the schema where all of the above inconsistency and points of confusion are addressed. This will be your company’s Data Warehouse. It will enable more users to understand and use the data. You can remove a few irrelevant tables for analysis but most of the focus should be on cleaning up columns.
+Use modeling to create a clean version of the schema where all of the above inconsistencies and points of confusion are addressed. This will be your company’s Data Warehouse. It will enable more users to understand and use the data. You can remove a few irrelevant tables for analysis but most of the focus should be on cleaning up columns.
 
 Let's take the table above and apply some simple transformations to it.
 
@@ -67,14 +65,13 @@ Let's take the table above and apply some simple transformations to it.
 
 We can see how dropping columns, adding columns, filtering rows and clarifying columns make the data much more straightforward to use and interpret. Now, people without experience with the data have a much easier time coming up to speed and will make less mistakes. Let's look at the final table without all the editing markup.
 
-  
 ![](/assets/images/Data Warehouse Table.png)
 
 This is the promise of a Data Warehouse, clear tables that can be used by anyone without having to dramatically alter the schema.
 
 ## Summary
 
-Data Warehouses makes your data:
+Data warehouses make your data:
 
 * Easier to understand and query - simplified single model
 * Faster to work with for the data team
@@ -82,6 +79,6 @@ Data Warehouses makes your data:
 * Trusted, consistent source of answers
 * Easier and less timely to maintain
 
-Data Lake data is pile of products in your building
+Data Lake data is the pile of products in your building
 
 Data Warehouse is those products sorted, shelved, and tagged
