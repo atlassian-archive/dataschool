@@ -21,7 +21,7 @@ reading_time: 5
 ---
 ## What is a Data Stack?
 
-In software development, a Stack is a combination of technologies that together solve a problem. Rarely does one technology solve it on its own. Stacks are usually given names relevant to the problem that they solve. For example, a Web Stack is the set of technologies that host an application that can be accessed via a website. We need to know about the front end technologies used and the back end. We could say “our Web Stack is Cassandra, Django, React” which gives them a high level overview.
+In software development, a Stack is a combination of technologies that together solve a problem. Rarely does one technology solve it on its own. Stacks are usually given names relevant to the problem that they solve. For example, a Web Stack is the set of technologies that host an application that can be accessed via a website. We need to know about the front end technologies used and the back end. We could say “our Web Stack is Cassandra, Django, React” which gives them a high-level overview.
 
 We can apply the Stack concept to describe solutions in domains other than web development. Here we will describe the Data Stack, which takes data from a raw form to an insight.
 
@@ -50,16 +50,16 @@ It can ingest a csv, store an xlsx file, convert the data to be more usable, rec
 
 ![](https://lh5.googleusercontent.com/a0uMQ9bWJcHH3veQyFjeUyh4SNOnB-kDIOOqAk-xCJRyJWbdKfOhwnrfjhKg1Z5S08IJDHmmYgfDVNBfAqp56XOmkMch9YuP1Zf3q9IaNaF7w2mZ1j5Qm0A1ZRUkd2PgBkB_1PFZ)
 
-Let’s examine why we rated **ingest** low and **present** high
+Let’s examine why we rated **ingest** low and **present** high.
 
 #### Ingest
 
-* Capacity - Being a desktop application, Excel can not handle significant volumes of data, it is limited by the computer it is installed on and Excel itself has a maximum row count of 1 million. When tasked with processing a low volume of data Excel can do quite well and is frequently used for analytics.
-* Data Formats - Excel can easily work with excel files and comma or tab separated files but it does not work well with JSON, XML, or many other file types.
+* Capacity - Being a desktop application, Excel cannot handle significant volumes of data. It is limited by the computer it is installed on and Excel itself has a maximum row count of 1 million. When tasked with processing a low volume of data Excel can do quite well and is frequently used for analytics.
+* Data Formats - Excel can easily work with excel files and comma or tab separated files, but it does not work well with JSON, XML, or many other file types.
 
 #### Presentation
 
-* Data Visualization - When it comes to Presentation, Excel has most data visualization types. It also can be used to present interactive calculations and tables of data for people to consume. Excel’s scale limitations are not an issue for this phase alone because visualizations are not built directly from large data sets: a chart that includes thousands of data points will likely be unreadable.
+* Data Visualization - When it comes to presentation, Excel has most data visualization types. It also can be used to present interactive calculations and tables of data for people to consume. Excel’s scale limitations are not an issue for this phase alone because visualizations are not built directly from large data sets: a chart that includes thousands of data points will likely be unreadable.
 
 ### Postgres
 
@@ -108,7 +108,7 @@ Where the need in excess of Excel’s capabilities is largely due to raw data vo
 
 ## Growing with the Business
 
-As a business or product grows it is natural for demands on the Data Stack to change. One way to accommodate changing requirements is to make the Stack more capable in key areas by adding or replacing technologies in the Stack. In the next chapters of this book, we will explore an evolution of a Data Stack in more detail. We will explore which technologies enhance each other and which are incompatible.
+As a business or product grows it is natural for demands on the Data Stack to change. One way to accommodate changing requirements is to make the Stack more capable in key areas by adding or replacing technologies in the Stack. In the next chapters of this book, we will explore the evolution of a Data Stack in more detail. We will explore which technologies enhance each other and which are incompatible.
 
 There are some key factors to keep in mind when building your Stack in a growing organization:
 
