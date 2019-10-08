@@ -26,15 +26,15 @@ The biggest decision to make when moving from a lake to a warehouse is what data
 * Performance/Scale
 * Maintenance
 
-There are a variety of database pricing models for data warehouse from being based on storage to being based on the amount of data queried. If your company is strictly using Amazon or Google as your software vendors, this can dictate your vendor choice as well.
+There are a variety of database pricing models for Data Warehouse from being based on storage to being based on the amount of data queried. If your company is strictly using Amazon or Google as your software vendors, this can dictate your vendor choice as well.
 
-The architecture of the data warehouse has implications on how it’ll help your operations scale. Differences in different warehouses entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your data warehouse you will want to know that as well.
+The architecture of the Data Warehouse has implications on how it’ll help your operations scale. Differences in different warehouses entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your Data Warehouse you will want to know that as well.
 
-When selecting the right data warehouse for your organization, you may also consider whether you want an on-premise or cloud solution. More and more businesses are moving to cloud solutions to take advantage of the “as a service” model and save on hardware costs so we will focus on cloud databases in this section.
+When selecting the right Data Warehouse for your organization, you may also consider whether you want an on-premise or cloud solution. More and more businesses are moving to cloud solutions to take advantage of the “as a service” model and save on hardware costs so we will focus on cloud databases in this section.
 
 ## Warehouse Engines
 
-Here are the four main choices for a modern data warehouse on the cloud. Note - [all of these are similar and based on the c-store paper.](https://dataschool.com/data-modeling-101/row-vs-column-oriented-databases/)
+Here are the four main choices for a modern Data Warehouse on the cloud. Note - [all of these are similar and based on the c-store paper.](https://dataschool.com/data-modeling-101/row-vs-column-oriented-databases/)
 
 ### Amazon Redshift
 
@@ -48,7 +48,7 @@ Most popular, though losing ground. Very similar to Postgres.
 
 #### Cons
 
-Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many people in an organization accessing the database. Ongoing maintenance may need to be required with Redshift to resize clusters, define sort keys, and vacuuming data. Like many AWS services there are many ways to customize your configuration with workload management, compression, and partitioning. But these advanced features are not very out of the box. So although it is powerful it may require a dedicated resource from your data engineering team.
+Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many people in an organization accessing the database. Ongoing maintenance may be required with Redshift to resize clusters, define sort keys, and vacuuming data. Like many AWS services there are many ways to customize your configuration with workload management, compression, and partitioning. But these advanced features are not very out of the box. So although it is powerful it may require a dedicated resource from your data engineering team.
 
 ### Google BigQuery
 
@@ -60,7 +60,7 @@ BigQuery is not bound by cluster capacity of storage or compute resources, so it
 
 #### Cons
 
-Cost is determined per query byte, making it difficult to budget or regulate if you have users running ad hoc queries against the data warehouse. To work around this, you can leverage BigQuery’s cost controls but it can still restrict the amount of analysis you can perform because it limits the queries you can run.
+Cost is determined per query byte, making it difficult to budget or regulate if you have users running ad hoc queries against the Data Warehouse. To work around this, you can leverage BigQuery’s cost controls but it can still restrict the amount of analysis you can perform because it limits the queries you can run.
 
 ### Snowflake
 
@@ -70,11 +70,11 @@ Cost is determined per query byte, making it difficult to budget or regulate if 
 
 Like BigQuery, Snowflake has an architecture that separates the compute query engine from data storage. As a result, it is highly scalable at any amount of volume and concurrency. Pricing is based on the storage and compute used on a time-basis with their virtual warehouses instead of per bytes scanned. Tuning, indexes, and distribution keys aren’t required for queries to be optimized and performant. Because of these reasons, it can be said that Snowflake has many of the benefits of both Redshift and Big Query.
 
-Also is very similar to Postgres.
+It is also very similar to Postgres.
 
 #### Cons
 
-Snowflake is a relatively new data warehouse in the market, so if you are familiar with SQL functions supported by databases like Redshift or Postgres you may find some inconsistencies in the SQL syntax. Snowflake also is more expensive
+Snowflake is a relatively new Data Warehouse in the market, so if you are familiar with SQL functions supported by databases like Redshift or Postgres you may find some inconsistencies in the SQL syntax. Snowflake also is more expensive
 
 ## Database Engines
 
@@ -84,7 +84,7 @@ Snowflake is a relatively new data warehouse in the market, so if you are famili
 
 #### Pros
 
-Unlike the options above, PostgreSQL is an open source database that is free to download. It can easily be spun up on your local server or hosted on various cloud services such as AWS. Postgres also has an ANSI compliant SQL library and supports an extensive library of third-party and user-defined functions. Very fast writes as its a tranasctional DB. Also fast reads below \~100M rows
+Unlike the options above, PostgreSQL is an open source database that is free to download. It can easily be spun up on your local server or hosted on various cloud services such as AWS. Postgres also has an ANSI compliant SQL library and supports an extensive library of third-party and user-defined functions. It has very fast writes as it is a transactional DB. It also has fast reads below \~100M rows
 
 #### Cons
 
@@ -92,7 +92,7 @@ Postgres is a straightforward, flexible solution that’s different from Snowfla
 
 ### Recommendation
 
-Selecting a data warehouse can be dependent on a number of factors that should be considered before making the investment. If you prefer a cheap, straightforward data warehouse you may be tempted to go with PostgreSQL, however it will have trouble scaling as a data warehouse. Redshift is a good choice as a standard cloud data warehouse if you have the capacity for a dedicated DBA. BigQuery and Snowflake are both highly scalable solutions considering their architecture. However, if cost or concurrency limits will be an issue for you then Snowflake would be more suitable for your organization.
+Selecting a Data Warehouse can be dependent on a number of factors that should be considered before making the investment. If you prefer a cheap, straightforward Data Warehouse you may be tempted to go with PostgreSQL, however it will have trouble scaling as a Data Warehouse. Redshift is a good choice as a standard cloud Data Warehouse if you have the capacity for a dedicated DBA. BigQuery and Snowflake are both highly scalable solutions considering their architecture. However, if cost or concurrency limits will be an issue for you then Snowflake would be more suitable for your organization.
 
 Remember all of the data warehouses are built on the same c-store architecture so the differences will not be severe in performance. However we do recommend checking out [benchmarking on the different warehouses](https://fivetran.com/blog/warehouse-benchmark).
 
