@@ -49,7 +49,7 @@ correct_message="Rock and Roll All Nite!"
 
 > </sqlbox>
 
-And another quiz: return the _id_ from one of my favorite ablums in High School, 'American Idiot'.
+And another quiz: return the _id_ from one of my favorite albums in High School, 'American Idiot'.
 
 <sqlbox
 answer="SELECT id FROM albums WHERE title = 'American Idiot';"
