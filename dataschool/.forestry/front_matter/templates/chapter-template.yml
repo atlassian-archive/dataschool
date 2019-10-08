@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/data-warehouse-implementation.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
@@ -107,7 +108,6 @@ pages:
 - dataschool/_chapters/fundamentals-of-analysis/what-is-data-and-why-should-i-care.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
-- dataschool/_chapters/data-governance/data-warehouse-implementation.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/learn-sql/extras/export-to-csv-from-psql.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md

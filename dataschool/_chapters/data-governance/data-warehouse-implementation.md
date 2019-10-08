@@ -19,7 +19,7 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
-Now that we've established what type of changes we want to make and decided on what engine to use for our data warehouse, let's go through the process of getting data from the Lake into the Warehouse. While this sounds complicated it is only comprised of using SQL to create Views.
+Now that we've established what type of changes we want to make and decided on what engine to use for our Data Warehouse, let's go through the process of getting data from the Lake into the Warehouse. While this sounds complicated it is only comprised of using SQL to create Views.
 
 ## Why SQL
 
@@ -27,17 +27,17 @@ We recommend using SQL to perform all transformations. It is the standard langua
 
 ## Why Views
 
-Views allow us to quickly reformat what the data looks like for people querying without needing to build a new data warehouse or incurring costs from storing any additional data. Unless you are dealing with massive amounts of data there are not significant performance gains in creating new tables or materializing the views.
+Views allow us to quickly reformat what the data looks like for people querying without needing to build a new Data Warehouse or incurring costs from storing any additional data. Unless you are dealing with massive amounts of data there are not significant performance gains in creating new tables or materializing the views.
 
 ### Use a Modeling tool: dbt
 
-Instead of writing the views directly on the database (which is an option) we recommend using dbt for creating your SQL views. dbt provides many features to help you keep a clean data warehouse such as version control, logging, and much more.
+Instead of writing the views directly on the database (which is an option) we recommend using dbt for creating your SQL views. dbt provides many features to help you keep a clean Data Warehouse such as version control, logging, and much more.
 
 ## Data Lake to Data Warehouse View Examples
 
-Here is an example of applying a transformation to move from Data Lake to Data Warehouse. First we build a query to combine a couple of salesforce objects into a single table. For example, using information about an individual and their role within a client company can give you more insight into how you may want to interact with that person.
+Here is an example of applying a transformation to move from Data Lake to Data Warehouse. First, we build a query to combine a couple of salesforce objects into a single table. For example, using information about an individual and their role within a client company can give you more insight into how you may want to interact with that person.
 
-So, getting their role information into the same table as contact and some basic demographic information about the user, will save the end user some time in querying the data warehouse.
+So, getting information on that person’s role into the same table as his/her contact along with some basic demographic information, will save the end user some time in querying the Data Warehouse.
 
 That query might look like this:
 
@@ -141,7 +141,7 @@ We now have a clean view of the original data
 
 ![](https://lh5.googleusercontent.com/CaWn4e5HYzbUpSUSD33Sf0xUoUGfVT8TT-z-4VNED6ubfbHyKXMwhx5DSnHyjTmwfRVtMMuN-mVOZbGC3SKRQktX_vfZYBt_SK36_Y5q8wOpnwNA8StGWqI3YeadPUF1TRKZph7s)
 
-A data warehouse may still have a few issues in the data but the vast majority should be handled with obvious work arounds.
+A Data Warehouse may still have a few issues in the data but the vast majority should be handled with obvious work arounds.
 
 ## Summary
 
