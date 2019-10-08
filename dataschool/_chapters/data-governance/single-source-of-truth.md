@@ -19,7 +19,7 @@ story_intro_blurb: ''
 reading_time: 9
 
 ---
-When multiple people ask the same question and use data to get answers that aren’t the same, it creates doubt in all of the data in your organization. This is demoralizing for everyone and time consuming to figure out who if either was actually right. Unfortunately, this is typical when data has not been cleaned up into a Single Source of Truth.
+When multiple people ask the same question using the same data and get varying answers, it creates doubt in all of the data in your organization. Additionally, it is demoralizing for everyone and time-consuming to figure out the right answer. Unfortunately, this is typical when data has not been cleaned up into a Single Source of Truth.
 
 People get inconsistent results because:
 
@@ -30,21 +30,21 @@ People get inconsistent results because:
 
 ## What is a Data Warehouse Architecture?
 
-A Data Warehouse is a database where the data is accurate and is used by everyone in a company when querying for data.
+A Data Warehouse is a database where the data is accurate and is used by everyone in a company when querying data.
 
-**_The promise of a Single Source of Truth is accuracy across your organization._**
+**_The promise of a Single Source of Truth, therefore is accuracy across your organization._**
 
-This is an obvious thing that a company want but a lot of companies struggle to ever deliver this. Creating a Single Source of Truth requires data engineering effort. Let’s explore the problems that SSoT solves, where it often goes wrong, and best practices:
+This is an obvious thing that any company wants, yet a lot of companies struggle to deliver. Creating a Single Source of Truth requires data engineering effort. Let’s explore the problems that a Single Source of Truth solves, issues to watch out for and best practices.
 
 ## Data Sources
 
-Before you have built a single source of truth, your company will likely have data sources that overlap in terms of what they track. You will also have data from data sources in your data lake that the company don’t use anymore, but the data is still needed for certain analyses.
+Before you even build a Single Source of Truth, your company will likely have data sources that overlap in terms of what they track. You will also have data from data sources in your Data Lake that is dormant, but is still needed for certain analyses.
 
-Imagine you were tracking sign-ups via Hubspot and then after a year started using Salesforce to track sign-ups. The Salesforce data will be empty before the date you started using it and the google analytics data might not be as well maintained going forward. To an analyst, when they go to query for sign ups it will be unclear which data source they should use.
+Imagine you were tracking sign-ups via Hubspot and after a year you decided to switch to Salesforce. That means that prior to your switch, the Salesforce data will be empty. Moreover, the google analytics data might not be as well synchronized between your Hubspot data and your Salesforce data. To an analyst, when they go to query for sign-ups it will be unclear which data source they should use.
 
 #### Consolidate Data Sources
 
-When your company has used multiple tools to track the same type of data, if you can, migrate the data from the previous tools into the latest tool. If this is not an option, use the data warehouse to create a table which unions the data from both sources so that the historical record is not lost and to have one place to go to for the relevant metrics. This will require some renaming and cleaning to accomplish.
+When your company has used multiple tools to track the same type of data, if you can, migrate the data from the previous tools into the latest tool. If this is not an option, use the data warehouse to create a table which UNIONs the data from both sources so that the historical record is not lost and to have one place to go to for the relevant metrics. This will require some renaming and cleaning to accomplish.
 
 ![](https://lh5.googleusercontent.com/QeJLs7zZHh01xpwnfDoY_fh-0tx25R3oMCpLDpn7znIUNuP9V-y7ncl6TP42dztFq4813d8G-dpsb7ZY2-slncBSwNsmn3wdqCHAilMy01vaxdaWSRuw_R4O7_pBCBkRrt4WVsdp)
 
@@ -54,11 +54,11 @@ In addition, if you want to maintain access to old/unused data sources from your
 
 ## Simplify Schema
 
-In a Data Lake the schema reflects in transactional logic of an application and follows best practices such a 3rd normal form so that updating values will not produce errors. This type of schema can be difficult to navigate and many tables will never be used in an analysis. In the past books recommended using dimensional modeling to reduce the schema complexity to make it easier to query and more performant. Due to advances in BI tools such as Chartio and Data Warehouse technologies dimensional modeling is no longer worth the effort.
+In a Data Lake the schema reflects in transactional logic of an application and follows best practices such as a 3rd normal form so that updating values will not produce errors. But this type of schema can be difficult to navigate and many tables will never be used in an analysis. In the past, books recommended using dimensional modeling to reduce the schema complexity and make it easier to run queries and enhance performance. Today, due to advances in BI tools such as Chartio and Data Warehouse technologies, dimensional modeling is no longer worth the effort.
 
 #### Simple Schema
 
-We create a single source of truth by creating views on top of the existing schema. There is no need to move away from 3rd normal form. The main thing we want to do to simplify the schema is to not include tables in the new views that only contain app specific logic and are not useful for analysis. However if you do want to make it even easier to work with a specific set of data you can create a wide table (view) that does all the joins. This can sit alongside the cleaned up normalized version of the data warehouse.
+We create a Single Source of Truth by creating views on top of the existing schema. There is no need to move away from 3rd normal form. The main thing we want to do to simplify the schema is to not include tables in the new views that only contain app specific logic and are not useful for analysis. However, if you do want to make it even easier to work with a specific set of data you can create a wide table (view) that does all the joins. This can sit alongside the cleaned up normalized version of the Data Warehouse.
 
 ## Simplify Tables and Columns
 
@@ -66,18 +66,18 @@ Table and column names are typically created by engineers to be used by the appl
 
 ![](https://lh4.googleusercontent.com/orujeq0VhTYWnajkOgRA9FbWHGhyEZRrJPZfF-bUZx_KlwNLQY2Z9G3cOW07hpu0JvqMLf_1Boq5ysGmzwSin7LQS5WhUAcb638oNbLm9hz8vaU_qtts4NJd7TwW1cBiunB9N7Ux)
 
-* Having multiple Id columns can be confusing
-* Nulls can produce [unexpected results during aggregations](https://dataschool.com/how-to-teach-people-sql/how-sql-aggregations-work/)
-* Inconsistent naming reduces confidence that the data is correct, and makes it hard to aggregate and group by
-* Column names and values that aren’t descriptive will require the analyst to ask an engineer what it means
-* Most analysts are not able to use regex to parse out valuable information from JSON data
-* Deprecated data flags are often missed by analyst so this will make their aggregations incorrect
+* Having multiple Id columns can be confusing.
+* Nulls can produce [unexpected results during aggregations](https://dataschool.com/how-to-teach-people-sql/how-sql-aggregations-work/).
+* Inconsistent naming reduces confidence that the data is correct, and makes it hard to aggregate and group the data.
+* Column names and values that are not descriptive will require the analyst to ask an engineer what they mean.
+* Most analysts are not able to use regex to parse out valuable information from JSON data.
+* Deprecated data flags are often missed by analyst so this will make their aggregations incorrect.
 
 To address these issues we need to keep the analyst/business user in mind and make all of the fields easy for them to interpret. The first step is to develop guidelines for how you want to clear up the data
 
 ### Naming convention and style guide
 
-When going through and recreating the schema with views of the relevant tables you should also clean up what is in each table. Do not include irrelevant columns and rename any columns that are confusing. Naming conventions help people analyze data consistently because it clarifies what every column is and how it can be used.
+When going through and recreating the schema with views of the relevant tables you should also clean up what is in each table. Do not include irrelevant columns and rename any columns that are confusing. Naming conventions helps people analyze data consistently because it clarifies what every column is and how it can be used.
 
 #### Simplify
 
@@ -108,7 +108,7 @@ There are a lot of different ways to measure how a business is performing. Some 
 * Non product-related page visits
 * Users that are no longer employed by a client company
 
-Not filtering out the right data will affect your analysis negatively. If presented to others and they have a conflicting analysis it will cause everyone to lose trust in the data.
+Not filtering out the right data will negatively affect your analysis. If presented to others and they have a conflicting analysis it will cause everyone to lose trust in the data.
 
 Another more subtle problem with metrics are their abbreviations. If Monthly Active Users is abbreviated as MAU in the database, it may be misinterpreted in someone else's analysis. Do not assume everyone understands the abbreviation for the metrics you are reporting.
 

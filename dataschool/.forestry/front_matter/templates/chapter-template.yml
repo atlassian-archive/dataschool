@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
 - dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
@@ -112,7 +113,6 @@ pages:
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/learn-sql/extras/export-to-csv-from-psql.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
-- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-an-outlier.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
