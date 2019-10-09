@@ -35,7 +35,7 @@ We recommend ELT because
 
 Light transformation of the data before loading the data into the lake might still be necessary:
 
-* **Column Selection:** Select the data that really matters. For example, not everything on Salesforce needs to synced.
+* **Column Selection:** Select the data that really matters. For example, not everything in Salesforce needs to be synced.
 * **Privacy reasons:** for example, filtering out columns that contain PII (personally identifiable information). Instead of filtering, you might want to hash PII data so they can be used for your analytics.
 
 The above transformation cases can be included in the ELT paradigm and are offered by most commercially available ELT vendors.
