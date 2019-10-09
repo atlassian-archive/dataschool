@@ -19,94 +19,96 @@ reading_time: 7
 published: false
 
 ---
-By definition, a Data Lake is a system or repository of data stored in its natural/raw format \[[1](https://en.wikipedia.org/wiki/Data_lake)\]. There are a number of reasons that Data Lakes make sense in today’s tech landscape. Even small at early stage companies can experience the variety of data that can be generated. Data that is coming from sales, marketing and production systems, all these even if the volume is not big are coming from many different systems and generated much faster than can be consumed by the company.
+How should you get your various data sources into the data lake? Well there are two common paradigms for this.
 
-So, a Data Lake allows a company to store effectively both in technical and financial terms their data, in their original most raw format until it can be decided how to proceed with their consumption.
+1. **ETL** is the legacy way, where transformations of your data happen on the way to the lake.
+2. **ELT** is the modern approach, where the transformation step is saved until _after_ the data is in the lake. The transformations really happen when moving from the Data Lake to the Data Warehouse.
 
-Let’s consider a typical scenario of data generation inside a company.
+ETL was developed when there were no data lakes; the staging area for the data that was being transformed acted as a virtual data lake. Now that storage and compute is relatively cheap, we can have an actual data lake and a virtual data warehouse built on top of it.
 
-1. We have all the data that our product is generating. These might be stored into noSQL databases like MongoDB or in a relational database like PostgreSQL.
-2. We have data that is generated from all the external SaaS apps the company is using and each one of them contains both behavioral and operational data. E.g. SalesForce, Marketo and Zendesk.
-3. Data that is coming from our infrastructure, e.g. Logs from our web servers that might even contain important data about our visitors behavior.
+We recommend ELT because
 
-On this typical scenario we can add even more exotic data sources that are becoming more and more common, like Edge collected IoT data and data sets acquired for training ML models.
-
-It’s quite obvious that we have to deal with data that are coming in different forms, for example, how do we work with time series data compared to transactional date? Or, how do we combine them together?
-
-Different serializations, like CSV, JSON, Binary, Avro, Parquet etc.
-
-Different complexities, Salesforce has a couple hundred tables available while Mixpanel is exposing events that can be completely customized by the user.
-
-Different volumes, compare the volume of logs to the data coming from Zendesk, hopefully you don’t have more tickets to handle that Apache HTTP logs entries.
-
-Different velocities, data on salesforce does not change as often as a clickstream of events coming from a popular B2C product using Mixpanel to track everything.
-
-Data Lakes, allow us to handle all the above by using in most cases the most versatile of the storage methods that we have, which is the file system. The most common implementation of data lakes happens on distributed file systems like S3 \[[2](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/amazon-s3-data-lake-storage-platform.html)\] and Azure Data Lake Storage \[[3](https://azure.microsoft.com/en-us/services/storage/data-lake-storage/)\], where high throughput, fault tolerance and high scalability is guaranteed.
-
-But a data lake does not have to happen only on a file system. Although a distributed file system is probably the most versatile of the possible solutions to use, depending on your use case you can even build a data lake on your Data Warehouse directly. Especially if all the data that you are going to work with are structured data and the data variability is pretty low.
-
-At the end, as in everything in engineering, you have to judge well your current needs and not over engineer a solution. You can always start small and simple and move forward to more scalable solutions as your needs grow.
-
-## E-T-L vs E-L-T Data Lakes
-
-No matter how your data lake is going to be implemented, you will need to move data into it. So the first question is always how to get the data into the lake and what paradigm to use.
-
-Based on the definition of data lakes where we want as complete as possible data on its rawest possible form, ELT seems to make more sense as a choice.
-
-1. We care more about Extracting and Loading the data on the Lake.
-2. In any case the data on a lake will go through heavy transformations during their lifecycle, so need for complex logic before the data is loaded.
+1. We care more about Extracting and Loading the data into a common place at the Data Lake stage.
+2. Data on a lake will go through heavy transformations during the next stage, so there is no need for complex logic before the data is loaded. The transformation step of ELT happens in the data warehouse.
 3. We can end up with a much simpler architecture which means less problems and less maintenance.
-4. Data lineage become easier to track as complex transformations are not happening prior to loading the data into the lake.
 
-Regardless of the above, transforming the data before loading the data into the lake might still be necessary but it’s probably much much simpler in terms of expressivity. Some reasons that transformation is needed:
+4. Data lineage becomes easier to track as complex transformations are not happening prior to loading the data into the lake.
 
-1. Select the data that really matters. For example, not everything on SalesForce needs to synced.
-2. Privacy reasons, for example, filter out columns that contain PII data.
-3. Instead of filtering, you might want to hash PII data so they can be used for your analytics.
+Light transformation of the data before loading the data into the lake might still be necessary:
 
-The above transformation cases can be included even in ELT solutions and are offered by most of the commercially available ELT vendors.
+* **Column Selection:** Select the data that really matters. For example, not everything on Salesforce needs to synced.
 
-After the data has been loaded into your data lake, you can transform your data and you have a number of options there. Two of them, using Amazon technologies, listed below as an example:
+* **Privacy reasons:** for example, filtering out columns that contain PII (personally identifiable information). Instead of filtering, you might want to hash PII data so they can be used for your analytics.
 
-1. In the case of S3 as a data lake. You can use Amazon Spectrum \[[4](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html)\] to transform your data from S3 and load it into Amazon Redshift using SQL queries.
-2. In the case where you use Redshift both as a data warehouse and a lake, you can use a technology like dbt\[[5](https://getdbt.com/)\] to transform your data and expose it inside Redshift as views.
+The above transformation cases can be included in the ELT paradigm and are offered by most commercially available ELT vendors.
 
-Keep in mind that in the case where a filesystem is used as a Data Lake, you can use the same ELT platform to extract data from it and load it into your Data Warehouse.
+## Transforming for Analytics
 
-## How to E-L-T to a Data Lake
+While we do not recommend much transformation occuring at the Data Lake stage, there are a few scenarios where light changes are useful.
+
+### Using a file system
+
+In the case of S3 as a data lake, you can use Amazon Spectrum \[[4](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html)\] to transform your data from S3 and load it into Amazon Redshift using SQL queries. You will then be able to run analytical queries in your BI tool.
+
+![](https://lh4.googleusercontent.com/f7KfBJoglxNjJu_1FiuZ4jfW9ooQEAqP05ZanTvm8KRHkNjSL1324KTO87v2ukfRK-tvD7y63rYwdSUo2iA4-gFCiG4BHsdB1G1LWDXx93STa8iu5PgTZUpseStZB2LVbwWP18Cl =624x144)
+
+### Difficult data
+
+In the case where you use a data warehouse database such as Redshift for your data lake, you can use a technology like dbt\[[5](https://getdbt.com/)\] to transform your data to make it more easily queried by your BI tool.
+
+![](https://lh4.googleusercontent.com/lN8Ds8IuGx4LwhtEsoGohpMYvcmUb13Moid_ZYACKsP91EW7ilSVUPSKIAK1b-2qHvqjse-dIYCIm0JoEO-lgE11oPSMv_XL-7kyoOWEy-ab3m3Lde7aWq7Bqifm3OBFKzdWCCIF =624x285)
+
+Keep in mind that you can use these same transformation tools to extract data from the Data Lake and load it into your Data Warehouse.
+
+# How to ELT to a Data Lake
 
 There are many options if you want to move your data into a Data Lake, regardless of the source it comes from.
 
-1. Use an ELT vendor like Fivetran\[[6](https://fivetran.com/)\], Stitch Data\[[7](https://stitchdata.com)\] and Blendo\[[8](https://www.blendo.co)\]
-2. Still want to ETL? You can use something like Xplenty \[[9](https://www.xplenty.com/)\] or Amazon Glue \[[10](https://aws.amazon.com/glue/)\]
-3. DIY. If you go this direction, please use at least a framework like Apache AirFlow \[[1](https://airflow.apache.org/)\]. The last thing you want is a mess of scripts and cron jobs deployed everywhere around.
+1. Use an ELT vendor like Fivetran\[[6](https://fivetran.com/)\], Stitch Data\[[7](https://stitchdata.com)\] or Blendo\[[8](https://www.blendo.co)\]
+2. If you want to perform ETL, you can use something like Xplenty \[[9](https://www.xplenty.com/)\] or Amazon Glue \[[10](https://aws.amazon.com/glue/)\]
+3. DIY. If you go this direction, please use at least a framework like Apache AirFlow \[[1](https://airflow.apache.org/)\]. The last thing you want is a mess of scripts and cron jobs deployed haphazardly.
 
-The DIY should probably be avoided, you will dedicate precious engineering resources to something that can be done at a fraction of the cost and time using a cloud solution for ELT. Your data engineers can work on more important data projects related to your overall data infrastructure and product.
+### Don’t do DIY
 
-If you decide to do it on your own then you should invest in creating the right infrastructure for extracting, loading and transforming your data. ETL/ELT always seems something simple at the beginning but it gets very complicated fast as you progress and you try to ensure the quality of the data and the ELT processes that you run.
+The DIY should be avoided, you will dedicate precious engineering resources to something that can be done at a fraction of the cost and time using a cloud solution for ELT. Your data engineers can work on more important data projects related to your overall data infrastructure and product.
 
-All ELT providers mentioned above, offer a simple experience for extracting and loading your data into your data lake. The process usually involves the setup of a pipeline where credentials are given for both the destination and the datasource and some configuration where light transformation is performed, e.g. selecting what tables and fields to sync, hiding some values for privacy reasons etc. This process can be performed with minimal engineering effort in most cases.
+### Use an ELT Vendor
 
-When we are moving data into a Data Lake, we have a couple of different strategies on both how we extract data from the sources and how we load the data into the Lake.
+All ELT providers mentioned above offer a simple experience for extracting and loading your data into your data lake. The process usually involves the setup of a pipeline where credentials are given for both the destination and the data source and some configuration where light transformation is performed, e.g. selecting what tables and fields to sync, hiding some values for privacy reasons, etc. This process can be performed with minimal engineering effort in most cases.
 
-### Extract
+## Extract and Load Options
 
-First about the extraction. We can do a complete extraction of every data available, everytime we run a sync. This is a complete dump of your data. It’s the easiest way to do it but it has two disadvantages. The first is that you end up with a lot of duplicate data and the second is that you remove complexity from extraction but you increase the complexity of the next steps in your analytics stack. Somehow at some point you will have to figure out what data you need, when you do full dumps, it will require more complex logic to do it and more processing.
+When we move data into a Data Lake, we have a couple of different strategies on both how we extract data from the sources and how we load the data into the Lake.
 
-All the cloud ELT vendors allow incremental extractions from your sources.
+### Extraction
 
-\[Incremental vs dump graphic\]
+Extraction is the phase of pulling data from a data source, through APIs or SQL. We can do a complete extraction of all data available, or we can do an incremental extraction every time we run a sync. A complete extraction will extract all the data from the data source. An incremental extraction will only extract updated records from the data source.
+
+#### Complete Extraction
+
+A complete extraction is the easiest way since no configuration is required but it has two big disadvantages.
+
+1. You end up with a lot of duplicate data in your data lake
+2. You increase the complexity of the next steps in your analytics stack
+
+You will have to figure out what data you actually need in the data lake, so it will require more complex logic to do it and more processing.
+
+#### Incremental Extraction
+
+The preferred alternative is to do incremental extractions. This is more challenging since you need to check for new or updated rows and account for changing schemas. However, it is typically preferred because much less data being processed and fewer updates will need to be made in the data lake. All the cloud ELT vendors support incremental extractions from your sources.
+
+The main downside to incremental extraction is deletions in a data source. It's not easy to detect and implement deletions in the general case. ELT providers do not guarantee consistency under deletions in most cases, in some cases it can be done or it is implemented by the source, e.g. data is never deleted but flagged as \`is_deleted\` instead.
+
+A complete dump would guarantee that you have always an exact replica of the source state. Keep in mind that in analytics this is not important in the general case, but keeping the deleted records might also be something that is required.
 
 ### Load
 
-Then about how to load your data on a Lake. Even if capture changes on your data source, you need to decide how these changes will be reflected on your destination. If you are using a database system as a data lake, then you can update the data with the pushed changes. This will end up having a close replica of the data from the source system to your Data Lake and it optimizes storage.
+However you extract data from your data sources, you need to decide how these changes will be reflected on your destination. You can push changes through to existing data in the data lake or you can store this new data separate from existing data.
 
-The other way is to save the changes without updating the records. This is pretty much the only way you can do it if you use file systems if you don’t want to add a lot of complexity on your data lake but on a database it’s not the default behavior. The benefit of doing this is that you have a track of all the changes that happened on your data, something that it might be important for some tasks.
+#### Push Changes
 
-\[updating records vs saving changes graphic\]
+If you are using a database system as a data lake, then you can update the data with the pushed changes. This will end up having a close replica of the data from the source system to your Data Lake and it optimizes storage.
 
-# Conclusion
+#### Store Separate
 
-Handling the data a company generates is not an easy task. The paradigm of combining a Data Lake with a Data Warehouse and platforms like Cloud based ELT platforms, can provide a great combination of flexibility and easiness while keeping costs low.
-
-You can use an ELT vendor to move your data into your data lake and even out of it and into your data warehouse, without having to worry about the complexities of building and maintaining an ELT/ETL infrastructure. At the same time you can exploit the flexibility the Data Lake architecture provides and optimize your Data Warehouse and data analytics tasks while focusing on what really matters, which how to understand your data and extract value out of it.
+The other way is to save the changes without updating the records. This is pretty much the only way you can do it if you use a file system and don’t want to add a lot of complexity on your data lake. The benefit of doing this is that you have a history of all the changes that happened on your data.
