@@ -10,14 +10,13 @@ reviewers:
 - _people/dave.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1OTGslZaat0-XI74tzWy6kVDyZ21-4kUVzRLqYH-1nQ4/edit?usp=sharing
-image: ''
+image: "/assets/images/data lake.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 7
-published: false
 
 ---
 How should you get your various data sources into the data lake? Well there are two common paradigms for this.
