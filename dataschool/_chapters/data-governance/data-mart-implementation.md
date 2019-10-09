@@ -31,8 +31,8 @@ For most companies there is no need to materialize views as the performance shou
 You should create simple views that are not too different from the Data Warehouse if possible. The Data Mart is mostly a filtering of what is available in the Data Warehouse:
 
     CREATE VIEW 
-    	SELECT * 
-        FROM DataWarehouse.View
+    SELECT * 
+    FROM DataWarehouse.View
 
 Most if not all of the cleaning should have occurred when going from the Lake to the Warehouse. The big difference here is which views and columns you are pulling in from the warehouse.
 
