@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/why-build-a-data-lake.md
 - dataschool/_chapters/data-governance/source-data-best-practices.md
 - dataschool/_chapters/data-governance/etl-vs-elt.md
 - dataschool/_chapters/data-governance/why-build-a-data-mart.md
@@ -104,7 +105,6 @@ pages:
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/source-data-architecture.md
 - dataschool/_chapters/data-governance/data-mart-maintenance.md
-- dataschool/_chapters/data-governance/why-build-a-data-lake.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
