@@ -31,13 +31,11 @@ We recommend ELT because
 1. We care more about Extracting and Loading the data into a common place at the Data Lake stage.
 2. Data on a lake will go through heavy transformations during the next stage, so there is no need for complex logic before the data is loaded. The transformation step of ELT happens in the data warehouse.
 3. We can end up with a much simpler architecture which means less problems and less maintenance.
-
 4. Data lineage becomes easier to track as complex transformations are not happening prior to loading the data into the lake.
 
 Light transformation of the data before loading the data into the lake might still be necessary:
 
 * **Column Selection:** Select the data that really matters. For example, not everything on Salesforce needs to synced.
-
 * **Privacy reasons:** for example, filtering out columns that contain PII (personally identifiable information). Instead of filtering, you might want to hash PII data so they can be used for your analytics.
 
 The above transformation cases can be included in the ELT paradigm and are offered by most commercially available ELT vendors.
