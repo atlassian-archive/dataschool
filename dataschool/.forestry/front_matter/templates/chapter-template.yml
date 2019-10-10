@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/learn-sql/extras/list-the-tables-in-sqlite-opened-with-attach.md
 - dataschool/_chapters/learn-sql/extras/update-with-join-in-sql.md
 - dataschool/_chapters/learn-sql/extras/hierarchical-data-in-sql.md
 - dataschool/_chapters/learn-sql/extras/what-is-the-difference-between-union-and-union-all.md
