@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/how-to-teach-people-sql/appendix/third-normal-form.md
 - dataschool/_chapters/learn-sql/extras/sql-cheat-sheet.md
 - dataschool/_chapters/learn-sql/extras/show-tables-in-postgres.md
 - dataschool/_chapters/learn-sql/extras/exclude-a-column.md
