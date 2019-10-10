@@ -16,7 +16,7 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-Data School wants a comprehensive post to help people show their tables in Postgres. Please use stack overflow to understand the many variations but map the answers to Postgres: [https://stackoverflow.com/questions/769683/show-tables-in-postgresql](https://stackoverflow.com/questions/769683/show-tables-in-postgresql "https://stackoverflow.com/questions/769683/show-tables-in-postgresql")
+Data School wants a comprehensive post to help people show their tables in Postgres. Please use stack overflow to understand the variations: [https://stackoverflow.com/questions/769683/show-tables-in-postgresql](https://stackoverflow.com/questions/769683/show-tables-in-postgresql "https://stackoverflow.com/questions/769683/show-tables-in-postgresql")
 
 The structure of the post should be
 
