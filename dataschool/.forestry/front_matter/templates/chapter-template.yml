@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/learn-sql/extras/insert-multiple-rows.md
 - dataschool/_chapters/learn-sql/extras/drop-all-tables-postgres.md
 - dataschool/_chapters/learn-sql/extras/find-duplicates.md
 - dataschool/_chapters/learn-sql/extras/if-in-the-select.md
