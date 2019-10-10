@@ -15,11 +15,9 @@ is_under_construction: true
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
-published: false
 
 ---
-
-Data School wants a comprehensive post with visuals to help people understand this difference. Please use stack overflow to understand the many variations: [https://stackoverflow.com/questions/49925/what-is-the-difference-between-union-and-union-all](https://stackoverflow.com/questions/49925/what-is-the-difference-between-union-and-union-all "https://stackoverflow.com/questions/49925/what-is-the-difference-between-union-and-union-all")
+Data School wants a comprehensive post with visuals to help people understand this difference. Please use stack overflow to understand the many variations: [https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database](https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database "https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database")
 
 The structure of the post should be
 
