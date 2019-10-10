@@ -88,8 +88,8 @@ fields:
     step: '1'
 pages:
 - dataschool/_chapters/learn-sql/extras/update-with-join-in-sql.md
-- dataschool/_chapters/learn-sql/extras/what-is-the-difference-between-union-and-union-all.md
 - dataschool/_chapters/learn-sql/extras/hierarchical-data-in-sql.md
+- dataschool/_chapters/learn-sql/extras/what-is-the-difference-between-union-and-union-all.md
 - dataschool/_chapters/data-governance/data-mart-implementation.md
 - dataschool/_chapters/data-governance/why-build-a-data-lake.md
 - dataschool/_chapters/data-governance/source-data-best-practices.md

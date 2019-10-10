@@ -17,7 +17,7 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-Data School wants a comprehensive post with visuals to help people understand this difference. Please use stack overflow to understand the many variations: [https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database](https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database "https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database")
+Data School wants a comprehensive post with visuals to help people understand storing hierarchical data. Please use stack overflow to understand the various methods: [https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database](https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database "https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database")
 
 The structure of the post should be
 
