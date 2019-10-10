@@ -3,7 +3,7 @@ section: 'Appendix '
 title: Third Normal Form
 meta_title: Why is data in Third Normal Form
 description: Learn why data is stored in third normal form in a SQL database
-number: 
+number: 210
 authors: []
 reviewers: []
 feedback_doc_url: ''

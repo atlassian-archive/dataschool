@@ -3,7 +3,7 @@ section: Appendix
 title: Syntax Conventions
 meta_title: SQL Style Guide
 description: Learn the most important syntax conventions and styles to writing SQL
-number: 
+number: 211
 authors: []
 reviewers: []
 feedback_doc_url: ''
