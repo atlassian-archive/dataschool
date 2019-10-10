@@ -1,5 +1,5 @@
 ---
-section: book
+section: Extras
 title: What is the difference between UNION and UNION ALL
 meta_title: Difference between UNION and UNION ALL
 description: Learn when to use UNION and when to use UNION ALL in SQL.
