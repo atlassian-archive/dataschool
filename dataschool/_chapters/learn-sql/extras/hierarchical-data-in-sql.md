@@ -1,5 +1,5 @@
 ---
-section: book
+section: Extras
 title: Hierarchical data in SQL
 meta_title: Storing Hierarchical data in SQL
 description: Learn what are the options for storing hierarchical data in a relational
