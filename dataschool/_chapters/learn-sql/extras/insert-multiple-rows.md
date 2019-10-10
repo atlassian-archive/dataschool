@@ -14,7 +14,6 @@ is_under_construction: true
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
-published: false
 
 ---
 Data School wants a comprehensive post with visuals to help people understand how to insert multiple rows in a single query. Please use stack overflow to understand the many variations but map the answers to Postgres: [https://stackoverflow.com/questions/452859/inserting-multiple-rows-in-a-single-sql-query](https://stackoverflow.com/questions/452859/inserting-multiple-rows-in-a-single-sql-query "https://stackoverflow.com/questions/452859/inserting-multiple-rows-in-a-single-sql-query")
