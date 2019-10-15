@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
@@ -116,7 +117,6 @@ pages:
 - dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
 - dataschool/_chapters/data-governance/source-data-tools.md
 - dataschool/_chapters/data-governance/data-lake-security.md
-- dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/source-data-architecture.md
 - dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md

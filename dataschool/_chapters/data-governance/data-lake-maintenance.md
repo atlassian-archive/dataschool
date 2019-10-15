@@ -19,7 +19,7 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
-Data Lakes are inherently not super well organized or maintained. They should be relatively low maintenance but there are 2 areas that will need some attention.
+Data Lakes are inherently not super well organized or maintained. They should be relatively low maintenance but there are two areas that will need some attention.
 
 * Data Sources
 * Performance
@@ -54,13 +54,13 @@ Occasionally you will need to manually reconfigure things. If a data source adds
 
 ![](/assets/images/Screen Shot 2019-09-30 at 10.35.51 PM.png)
 
-In this case we need to consult the datasource and update the field name in the query. In this case we updated cost to campaign_cost to fix the query.
+As shown in the case above, we need to consult the datasource and update the field name in the query. Therefore, to fix the query, we updated "cost" to "campaign_cost" as shown below.
 
 ![](/assets/images/Screen Shot 2019-09-30 at 10.36.18 PM.png)
 
 ## Performance
 
-At the data lake stage you should focus your optimization at the dashboard or query level.
+At the Data Lake stage you should focus your optimization at the dashboard or query level.
 
 ### Optimize individual queries
 
