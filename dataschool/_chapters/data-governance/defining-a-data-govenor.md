@@ -86,7 +86,7 @@ It happens all the time, two people exploring the data end up with two different
 
 There’s no way of stopping this, but it can be minimized. If the data is kept clean and well documented this problem should hopefully rarely come up. If it does, it should be really simple to clear up. The best way to deal with it is to educate everyone on the fact that the problem does happen and they should expect and embrace it. Just as every product has bugs, every dataset does as well. So be excited that some inconsistency has been discovered and eagerly seek to fix/solve/clarify it as soon as possible.
 
-Ensure there’s a clear process for people to r[esolve these integrity issues](https://blog.chartio.com/posts/the-boy-scout-rule-for-data?__hstc=113363352.6920fcda53fdf2ee28039771c1e0c8c6.1550863621442.1569617804976.1569624716821.265&__hssc=113363352.9.1569624716821&__hsfp=863061177). Be available to them and helpful when it’s reported. Be sure to thank them for reporting and be kind even when it was an error of theirs.
+Ensure there’s a clear process for people to [resolve these integrity issues](https://blog.chartio.com/posts/the-boy-scout-rule-for-data?__hstc=113363352.6920fcda53fdf2ee28039771c1e0c8c6.1550863621442.1569617804976.1569624716821.265&__hssc=113363352.9.1569624716821&__hsfp=863061177). Be available to them and helpful when it’s reported. Be sure to thank them for reporting and be kind even when it was an error of theirs.
 
 Maintaining a dataset is like maintaining a garden. There will always be weeds growing and more to do. It will never be perfect, but it can be beautiful.
 

@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
@@ -111,7 +112,6 @@ pages:
 - dataschool/_chapters/data-governance/data-warehouse-security.md
 - dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
-- dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/data-governance/evaluating-data-stack-technologies.md
 - dataschool/_chapters/data-governance/source-data-tools.md
