@@ -1,0 +1,6 @@
+User-Agent: *
+
+Sitemap: https://dataschool.com/sitemap.xml
+
+Disallow:/404.html
+Disallow:/downloads/
