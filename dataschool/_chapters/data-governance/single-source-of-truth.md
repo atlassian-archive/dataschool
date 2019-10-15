@@ -93,7 +93,7 @@ Data is messy and requires some cleaning to ensure accurate results. Cleaning pr
 
 #### Naming Conventions
 
-Data is messy and requires some cleaning to ensure accurate results. Cleaning prevents common problems that might cause a query to produce incorrect results.
+Initially there will be a variety of naming conventions used for tables, columns, and values. Creating a standard for all of these makes it easier for others to find and understand the data they are looking for.
 
 ![](/assets/images/Screen Shot 2019-08-27 at 10.56.42 AM.png)
 
