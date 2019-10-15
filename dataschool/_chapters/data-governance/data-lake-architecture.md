@@ -34,7 +34,7 @@ Getting your raw data from these apps into an unstructured repository of raw dat
 
 ![](https://lh6.googleusercontent.com/Smv_Jd_N7cdYmQWyNFLwWvzHvmL0KQjKQUbWvTrRIfzqVAMiJETrPrIFkawaO2MACqNuLoAWeOaR3CL126GC9AjMvqZwceggWECxAfpqAIW40IiEO_3gr8ErxWQ68fR0QXsLDx33)
 
-Some recommend cleansing, sanitizing, or even aggregating your data at this stage however we think it is important to separate that step since there are many business considerations to be made. For now, just bring the data into one place, and if easy make non sql based data sql. we cover cleaning data at the next level of sophistication, the Data Warehouse.
+Some recommend cleansing, sanitizing, or even aggregating your data at this stage however we think it is important to separate that step since there are many business considerations to be made. For now, just bring the data into one place, and if easy make non sql based data sql. Later in the [Data Governance book](https://dataschool.com/data-governance/), it covers [cleaning data](https://dataschool.com/data-governance/data-warehouse-implementation/) at the next level of sophistication, the Data Warehouse.
 
 ## Multiple Schemas
 
