@@ -22,7 +22,7 @@ Before we start piping various data sources into a Data Lake we need to understa
 
 ## How to get data in one place (the lake)
 
-Most apps businesses use to run their day to day operations produce data. This data could be useful to improving operations, customer support, or many other parts of your business. Unfortunately to analyze this data within their tool you are limited to pre-designed dashboards and limited analysis capabilities.
+Most apps businesses use to run their day to day operations produce data. This data could be useful for improving operations, customer support, or many other parts of your business. Unfortunately to analyze this data within their tool you are limited to pre-designed dashboards and limited analysis capabilities.
 
 The biggest drawback with this siloed data, is that you cannot compare data from Salesforce with data from another app or service like ZenDesk or Hubspot. Comparing this data together can give you much more powerful insights into customer lifecycle or behavior. Using a Data Lake to host all that data in one place is the first step in creating yourself a data infrastructure that is complete.
 
