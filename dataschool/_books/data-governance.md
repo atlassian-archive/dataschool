@@ -8,7 +8,7 @@ authors: _people/matt.md
 reviewers: _people/dave.md
 cover_image: "/assets/images/data-governance.png"
 main_color: "#143676"
-is_featured: false
+is_featured: true
 status: in_progress
 
 ---
