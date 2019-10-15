@@ -92,7 +92,7 @@ Maintaining a dataset is like maintaining a garden. There will always be weeds g
 
 #### 4. Tool Selection
 
-The Data Governor has to make a calls on what your organization needs. Be mindful of tools that have high learning curves or have proprietary languages that lock you into a tool. Consider all the pieces of your [data analytics stack](https://dataschool.com/data-governance/evaluating-data-stack-technologies/) and make sure tools you are selecting work well together.
+The Data Governor has to make calls on what your organization needs. Be mindful of tools that have high learning curves or have proprietary languages that lock you into a tool. Consider all the pieces of your [data analytics stack](https://dataschool.com/data-governance/evaluating-data-stack-technologies/) and make sure tools you are selecting work well together.
 
 #### 5. Education/Enablement
 
