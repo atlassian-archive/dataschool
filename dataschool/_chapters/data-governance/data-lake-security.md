@@ -18,7 +18,7 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-Prior to having a data lake, all analysis had to be done by working with data in many different places. These tools required individual logins which are hard to track and maintain the appropriate levels of access.
+Prior to having a Data Lake, all analysis had to be done by working with data in many different places. These tools required individual logins which are hard to track and maintain the appropriate levels of access.
 
 Data Lakes provide a way to centralize access to data and make it simpler to manage permissions.
 
@@ -32,15 +32,15 @@ Remove access from individual tools, move all access to Data Lake. This will cut
 
 ## Permission tiers
 
-Now that you can easily grant anyone access to data, you will have more people accessing data. While this is advantageous for analysis and exploration you do need to be mindful of what schemas and tables they can see.  
-  
-Start out by creating two users groups on the data lake.
+Now that you can easily grant anyone access to data, you will have more people accessing data. While this is advantageous for analysis and exploration you do need to be mindful of what schemas and tables they can see.
+
+Start out by creating two users groups on the Data Lake as follows:
 
 1. For admin and engineers
 2. For analysts and business users
 
-You can prevent the 2nd group from accessing sensitive data in the data lake by having their group not have access to the schemas or tables with that type of data.
+You can prevent the second group from accessing sensitive data in the Data Lake by having that group not have access to the schemas or tables with that type of data.
 
 ![](https://lh5.googleusercontent.com/EBZLvI4bTX2xhZPvfxfa2esMvquX_lw4aTEo86YdP0S2LFGHW2zHDK9-maTlML1TE4WSsAysisBALWmVm3IZyn_AP1jtMzrXJoMvXJiY_Rvgxo4BmL5EUc72N5Q_T6lsrRV5KzW5)
 
-In general set broad controls so it is easy to manage. As you grow in sophistication and turn your data lake into a data warehouse and mart you can create more refined permissions settings.
+In general set broad controls so it is easy to manage. As you grow in sophistication and turn your Data Lake into a Data Warehouse and Data Mart you can create more refined permissions settings.
