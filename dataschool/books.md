@@ -4,7 +4,7 @@ meta_title: The Data School Web Book Library
 description: Read our web books on topics such as SQL, data visualization, and dashboard
   design. Learn how to make your company more data driven.
 layout: default
-
+pdf: true
 ---
 <h1 class="title centered mb-5">{{page.title}}</h1>
 {% assign books = site.books | sort: 'book_sort_number' %}

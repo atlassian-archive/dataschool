@@ -36,6 +36,13 @@ collections:
   chapters:
     output: true
 
+plugins:
+      - jekyll-last-modified-at
+      - jekyll-sitemap
+      - jekyll-feed
+      # - jekyll-pdf
+
+
 # Set defaults for YAML Front Matter variables
 defaults:
   - scope:
@@ -139,12 +146,11 @@ defaults:
       needs_sqlbox: true
       permalink: "/learn-sql/:slug/"
       image: /assets/images/book-covers/learn-sql.png  # Set to book's cover
+  - scope:
+      path: "downloads/"
+    values:
+      layout: book-full
 
-
-gems:
-  - jekyll-last-modified-at
-  - jekyll-sitemap
-  - jekyll-feed
 
 
 feed:
