@@ -6,7 +6,7 @@ book_slug: data-governance
 book_sort_number: 1
 authors: _people/matt.md
 reviewers: _people/dave.md
-cover_image: "/assets/images/book-covers/data-governance.png"
+cover_image: "/assets/images/data-governance.png"
 main_color: "#143676"
 is_featured: false
 status: in_progress
