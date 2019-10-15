@@ -22,7 +22,7 @@ reading_time: 5
 ---
 ## What is a Data Warehouse?
 
-A Data Darehouse is a database setup for analytical ad hoc querying.
+A Data Warehouse is a database setup for analytical ad hoc querying.
 
 ## Six reasons to build a Data Warehouse
 
