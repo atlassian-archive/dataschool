@@ -42,6 +42,6 @@ When the data is piped into the Data Lake it will exist in separate schemas on y
 
 ![](https://lh4.googleusercontent.com/9GJBs6EPMTmaV7dEW8kMCVYy1fu2B89xDpQZ5YjIkQcjnU9QOyI77nFwI_oRRIE5BveHhGe4P98iIJ_m7C5KLW0g3vF6VI7fBse36fljPLKtGxRJiiTsLW2-yxjC61aTSEtLO0rt)
 
-In addition to combining data within a query to produce an insight you can also create separate charts per schema and “combine” them by placing them in a single dashboard. Having a dashboard with charts from different apps can give you a powerful way to find insights.    
+In addition to combining data within a query to produce an insight you can also create separate charts per schema and “combine” them by placing them in a single dashboard. Having a dashboard with charts from different apps can give you a powerful way to find insights.  
 
 ![](https://lh3.googleusercontent.com/ybnO4tjHmgDrUd_oeMgbE5u8c32MRd-cXorxTtN26MvuevB2GHIR-PZ0VGw2ByciKmGeIIM5cVRr8FFSyOzc3PMgcqxV6dzLTdFnu6FWpGFEm4uULg0-9xvTDmbBj33ySzaIf8rI)
