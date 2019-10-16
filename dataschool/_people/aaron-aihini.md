@@ -14,4 +14,4 @@ twitter: ''
 website: ''
 
 ---
-Customer Success professional with strong analytical, SQL, and relationship management skills. Aaron has 7 years of both analytics and finance experience. Knowing the pitfalls a customer may face along their customer journey is crucial to their success. Aaron understands the importance of prescriptive customer care and where analytics can play a role in a customer's growth.
+Customer Success professional with strong analytical, SQL, and relationship management skills. Aaron has 7 years of both analytics and finance experience. Knowing the pitfalls a customer may face along their customer journey is crucial to their success. Aaron understands the importance of prescriptive customer care and where analytics can play a role in a customer's growth.  
