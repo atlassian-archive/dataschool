@@ -19,7 +19,7 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
-Now that you have setup a read only replica of your database and are using a sql based bi tool to blend and analyze your data, the next step is maintaining it. At this stage it is not recommended to do a lot of modeling or clean up. However do provide warnings about known issues in the data so that others who want to explore the data can do so accurately.
+Now that you have setup a read only replica of your database and are using a SQL based BI tool to blend and analyze your data, the next step is maintaining it. At this stage it is not recommended to do a lot of modeling or clean up. However, do provide warnings about known issues in the data so that others who want to explore the data can do so accurately.
 
 These issues should be addressed in a regularly updated wiki or within your BI tool:
 
@@ -35,17 +35,17 @@ Keep a dashboard or file of saved queries to be re-used and built on:
 
 ![](/assets/images/Screen Shot 2019-09-30 at 9.42.25 PM.png)
 
-You can also add text to describe how some metric was calculated to explain business logic to viewers. While this is simple, it is much better than people always asking you how to write a query. This will also be the basis for data models at later stages of data sophistication.
+You can also add text to describe how some metric was calculated to explain business logic to viewers. This is not only simple, but it is also much better than people always asking you how to write a query. This will also be the basis for data models at later stages of data sophistication.
 
 ## BI Layer Meta Modeling
 
-Some BI tools allow you to do some renaming within it. This is most common in renaming a field so it is more readable within a chart but some let you rename it so that others can query the data by its new name. Definitely rename fields so that they are more understandable within visualizations and dashboards. Asking people to interpret complex names will not work.
+Some BI tools allow you to do some internal renaming. While this is most common in renaming a field so that it is more readable within a chart, some let you rename it so that others can query the data by its new name. Definitely rename fields so that they are more understandable within visualizations and dashboards. Asking people to interpret complex names will not work.
 
 ![](https://lh3.googleusercontent.com/zG4ozj43oza7HHf9wKwKVkDmuB7f0XgrCQ6-lPmkgrlyvzF5VeSwfAed6V-lFKRKMSXfGZe32WMTuDwU3gjjJqSwFCFmRsBDVMwgr45Fbmvw5gufFQ09QJBUTTaXslYIGEQyi1aa)
 
 ## Drag and Drop
 
-Some BI products with drag and drop data explorers handle complex join paths with ease. In Chartio for instance if you use their visual SQL interface it joins the data automatically.
+Some BI products with drag and drop data explorers handle complex join paths with ease. For instance, if you use Chartio’s visual SQL interface it joins the data automatically.
 
 ![](/assets/images/Screen Shot 2019-09-30 at 9.44.02 PM.png)This might be preferable for people to use when querying their data instead of needing to remember how to join many tables for their analytical queries.
 
@@ -70,4 +70,4 @@ Analyzing source data can be tricky since it has not been cleaned or modeled how
 * Double check the data before visualization
 * Keep an eye on query performance if you are hitting the production database
 
-Lastly you should start exploring tools to pipe in multiple sources of data that are not handled by your sql based BI tool to build your data lake.
+Lastly, you should start exploring tools to pipe in multiple sources of data that are not handled by your SQL based BI tool to build your Data Lake.
