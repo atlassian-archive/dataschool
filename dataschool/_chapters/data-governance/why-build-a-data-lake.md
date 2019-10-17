@@ -27,7 +27,7 @@ The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast 
 
 ## Top 3 reasons to build a Data Lake
 
-1. **Unified** - make it easy to query and combine data from various sources to find valuable insights
+1. **Unified** - makes it easy to query and combine data from various sources to find valuable insights
 2. **Performance** - after getting data out of their respective tools you can optimize storage, schema, and queries to get the data you need fast.
 3. **Progress** - building towards a single source of truth
 
@@ -39,7 +39,7 @@ It can be challenging to do complex analysis since you only have access to the d
 
 ![](https://lh5.googleusercontent.com/IFl5w3cTjoaoo-y-SSjfORC7_eSYarRtf1jVSiMuEDx0WteFndawE4wnaGNSLoM7FIzhm1T-jrOEd40vKxgO_2UhfqwR_ImRj9KYGWEHXvdYanztutwMOCcI4Qv6oPn31QbOiXAv)
 
-In a Data Lake, all data can be combined so it can be analyzed together. This makes finding insights easier and provides more depth for exploring the data. Often times to use BI tools it is necessary to get all the data together first.
+In a Data Lake, all data can be combined so it can be analyzed together. This makes finding insights easier and provides more depth for exploring the data. Often-times to use BI tools it is necessary to get all the data together first.
 
 ### 2) Performance
 
@@ -47,7 +47,7 @@ Source data might be from the actual production database which could affect the 
 
 ![](https://lh3.googleusercontent.com/VGqHkCo7QOLEwh4OllUsgiS5F9U4vDglYn-uZLM_u0UCGNvWz7U6e55QSZftDW2OxW0L_CwvrNszzDQ6FPgOomoH4wWK57EcA0HNCxThBDceqztEDM4cK-UloxJKqDjVHnBNeeeH)
 
-Data Lakes are built to handle these types of ad hoc analytical queries independently of the production environment. You can scale up resources on a data lake to be able to query data even faster.
+Data Lakes are built to handle these types of ad hoc analytical queries independently of the production environment. You can scale up resources on a Data Lake to be able to query data even faster.
 
 ### 3) Progress
 
