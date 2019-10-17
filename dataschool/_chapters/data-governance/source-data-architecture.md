@@ -31,11 +31,11 @@ Source data architecture is a set of data tools and configurations that allow yo
 
 ### Data Prep
 
-There are two main configuration options to work with your production database, create a read only user or you can create a read only replica.
+There are two main configuration options to work with your production database namely, creating a read only user or creating a read only replica.
 
 #### Read Only User
 
-If you are going to analyze data on your production server create and use a read only user account. This will prevent you from making any updates to the data during your analysis by accident. Granted this unlikely but it is a good precaution to use. It also make it possible to grant other people access for analysis purposes and guard against their errors.
+If you are going to analyze data on your production server create and use a read only user account. This will prevent you from making any updates to the data during your analysis by accident. Granted this is unlikely but it is a good precaution to use. It also makes it possible to grant other people access for analysis purposes and guard against their errors.
 
 ![](https://lh3.googleusercontent.com/7FXwkEtLZdFCtfW6a1nZEgp5QNSmIAkX7bffxmGalmKfhaIJLiLkce66m6tTkpUcqxeF2IVRDcm4OpdePesV_YuHAYcJTfqO7owwsFtUdB-o_Gmzo4w5BdJA9FNv4Bel6gwR1ixx)
 
@@ -43,7 +43,7 @@ This functionality exists across database providers.
 
 #### Read Only Replica
 
-If you’re worried about read performance of your DB and want to query the data without impacting the performance of your application create a read only replicate of the production database. This also makes it possible for people not as familiar with the data to query it since there are little consequences of running an incorrect or large query.
+If you’re worried about read performance of your DB and want to query the data without impacting the performance of your application, create a read only replica of the production database. This also makes it possible for people not as familiar with the data to query it since there are little consequences of running an incorrect or large query.
 
 ![](/assets/images/Screen Shot 2019-09-30 at 9.36.54 PM.png)
 
@@ -57,11 +57,11 @@ Now that we have safe access to the database we need to get the data out in ways
 
 #### SQL based BI product
 
-Running one off queries can be useful to understand what is going on in the data but needing to export data into another tool like excel can be cumbersome especially if you are trying to have real time visibility. Using a SQL based BI product will allow you to create visualizations and dashboards that can be refreshed automatically, you wont have to manually fetch your data. Additionally some SQL based BI tools such as Chartio allow you to connect to data sources such as google analytics, that you might otherwise not be able to.
+Running one-off queries can be useful to understand what is going on in the data but needing to export data into another tool like Excel can be cumbersome especially if you are trying to have real time visibility. Using a SQL based BI product will allow you to create visualizations and dashboards that can be refreshed automatically. You won’t have to manually fetch your data. Additionally, some SQL based BI tools such as Chartio allow you to connect to data sources such as Google Analytics, that you might otherwise not be able to.
 
 ![](https://lh5.googleusercontent.com/hq_Gp6vTdJzXIPBRD7U2fkh0ME9jPwwHdJWi-YBDzJVNx8A1jvGyp3epOYTZQm68KnYrWHA81CHm8REoq1_2m5MSalmh4-VdXkC_PdWlcj6Af-VbN2SS0sbt9o3NVukEENMcfXOz)
 
-Being able to blend this data is a way to have the benefits of a data lake with out architecting one. This will help you produce better insights.
+Being able to blend this data is a way to have the benefits of a Data Lake without architecting one. This will help you produce better insights.
 
 To reiterate the benefits of a modern SQL based BI product are:
 
@@ -84,7 +84,7 @@ Another option is to use an IDE. While it does not provide as much functionality
 
 #### Excel
 
-Finally you can copy data out into a csv and then analyze it within excel. While this may be the most comfortable for new data users there are many drawbacks. The data is not live and updating a sheet with new data can get tricky. Excel can be good for one of analyses but is not effective for ongoing monitoring or analysis of data.
+Finally you can copy data out into a csv and then analyze it within Excel. While this may be the most comfortable for new data users there are many drawbacks. The data is not live and updating a sheet with new data can get tricky. Excel can be good for one-off analyses but is not effective for ongoing monitoring or analysis of data.
 
 ### Performance
 
@@ -101,5 +101,5 @@ In addition to performance, there will likely be data integrity issues that will
 Small teams should work directly with their data sources. The steps are quite simple:
 
 1. Create a Read Only Replica or Read Only User for your database
-2. Setup a SQL Based BI tool
+2. Setup a SQL based BI tool
 3. Keep dashboards and queries simple
