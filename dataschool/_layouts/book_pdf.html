@@ -1,0 +1,64 @@
+<html lang="en">
+  {%- include head.html -%}
+  <body>
+
+{% assign bookchapters = site.chapters | where:'book_slug', page.book_slug | where:'is_hidden', false | sort: 'number' %}
+{% assign books = site.books | where:'book_slug', page.book_slug %}
+{% assign book = books[0] %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mb-5">
+      <h1 class="mega-title">{{ book.title }}</h1>
+
+      <p>
+        Written by:
+        {% for author_path in book.authors %}
+          {% assign a = site.people | where: 'path', author_path %}
+          {% assign author = a[0] %}
+          <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
+        {% endfor %}
+        <br>
+        {% if book.reviewers %}
+          Reviewed by:
+          {% for reviewer_path in book.reviewers %}
+            {% assign a = site.people | where: 'path', reviewer_path %}
+            {% assign reviewer = a[0] %}
+            <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
+            {% if forloop.last != true %},{% endif %}
+          {% endfor %}
+        {% endif %}
+      </p>
+
+      <h2>Table of Contents</h2>
+
+      <ul class="d-none">
+      {% for chapter in bookchapters %}
+        {% if currentsection != chapter.section %}
+           {% assign currentsection = chapter.section %}
+           </ul>
+           <ul id="{{currentsection}}" class="no-pad-list list-unstyled">
+           {% if currentsection != 'book' %}<h4 class="mb-2">{{ currentsection }}</h4>{% endif %}
+        {% endif %}
+            <li class="book-index-chapter mb-1">
+              <a href="#{{ chapter.title | slugify }}">{{ chapter.title }}{% if chapter.is_under_construction %} <em class="small-font">(In&nbsp;progress)</em>{% endif %}</a>
+            </li>
+      {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+  {% for chapter in bookchapters %}
+  <div class="row">
+    <div class="col-md-12 mb-5" style="page-break-before: always;">
+    <h1 class="title">{{ chapter.title | escape }}</h1>
+    <p>
+      {{ chapter.content }}
+    </p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+  </body>
+</html>
