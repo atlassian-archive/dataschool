@@ -20,7 +20,7 @@ story_intro_blurb: ''
 reading_time: 4
 
 ---
-Businesses generate tons of data. Product information, customer information, app performance, marketing expenditures etc. You need to start organizing and analyzing data in order to run your business effectively. At the beginning of a business or while a business remains small it is sufficient to work with data from production databases, product apis, and financials all in different applications.
+Businesses generate tons of data. Product information, customer information, app performance, marketing expenditures etc. You need to start organizing and analyzing data in order to run your business effectively. At the beginning of a business or while a business remains small it is sufficient to work with data from production databases, product APIs, and financials all in different applications.
 
 ## Tools to Analyze Source Data
 
@@ -30,7 +30,7 @@ Data will live in many different places but the methods to analyze them boil dow
 * Excel
 * IDE
 * Cloud Dashboarding tool
-* Self Serve BI product
+* Self-Service BI product
 
 ### In app
 
@@ -50,14 +50,14 @@ For data sources such as your production database you can query it directly from
 
 ### Cloud Dashboarding tool
 
-Tools like Gecko Board or Grow allow you to bring in data via api’s to visualize data in simple ways. This allows you to combine data from multiple places into a single dashboard with simple visualizations to be viewed.
+Tools like Gecko Board or Grow allow you to bring in data via APIs to visualize data in simple ways. This allows you to combine data from multiple places into a single dashboard with simple visualizations to be viewed.
 
 ![](https://lh5.googleusercontent.com/iYU4tKzB-RWRr5cHTIyQl0aBYcp26XQdfpTUOCiidFTP4_RSkWE6xB9J3pivIUCAzEW43xVVSqzCXQuSnpzF_vsXag_Q56m7GlzuF8DJDaWOBT-M_klyCujTVRhbgl6q_RVXVBEg)
 
-### Self Serve BI
+### Self-Service BI
 
-Ultimately the best option to analyze source data is to use a flexible self serve BI tool such as Chartio. Tools like Chartio allow you to pull data in large amounts of data from applications and your database. You can then combine them in queries, analyze the data in multiple ways, and produce custom visualizations. It also allows for the queries to be automatically updated so that the information shown on dashboards is up to date.
+Ultimately the best option to analyze source data is to use a flexible self-service BI tool such as Chartio. Tools like Chartio allow you to pull data in large amounts from applications and your database. You can then combine them in queries, analyze the data in multiple ways, and produce custom visualizations. It also allows for the queries to be automatically updated so that the information shown on dashboards is up to date.
 
 ![](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y)
 
-This section will cover different ways to optimize your usage of source data and how you can prepare to transition to creating a data lake to unify your analytics.
+This section will cover different ways to optimize your usage of source data and how you can prepare to transition to creating a Data Lake to unify your analytics.
