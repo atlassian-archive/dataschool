@@ -18,7 +18,7 @@ story_intro_blurb: ''
 reading_time: 3
 
 ---
-As companies grow the amount of data and the number of sources will increase. This leads to your data warehouse having numerous schemas that can become difficult to navigate. Moving from a Data Warehouse to Data Marts reduces the scope of access to make it easier for users to find the data they need. We can create Marts in 5 steps.
+As companies grow the amount of data, the number of sources will also increase. This leads to your Data Warehouse having numerous schemas that can become difficult to navigate. Moving from a Data Warehouse to Data Marts reduces the scope of access and makes it easier for users to find the data they need. Data Marts can be created in five steps.
 
 ## 1 Views
 
@@ -28,7 +28,7 @@ For most companies there is no need to materialize views as the performance shou
 
 ## 2 Use the Data Warehouse
 
-You should create simple views that are not too different from the Data Warehouse if possible. The Data Mart is mostly a filtering of what is available in the Data Warehouse:
+You should avoid making any new views if possible. You should instead use the Data Mart, which is mostly a filtering of the views available in the Data Warehouse:
 
     CREATE VIEW 
     SELECT * 
@@ -36,7 +36,7 @@ You should create simple views that are not too different from the Data Warehous
 
 Most if not all of the cleaning should have occurred when going from the Lake to the Warehouse. The big difference here is which views and columns you are pulling in from the warehouse.
 
-If you do want to create aggregations for performance reasons that is fine, and if you want to combine data together we recommend using the wide table approach versus implementing something more complex like star schema.
+If you do want to create aggregations for performance reasons that is fine, and if you want to combine data we recommend using the wide table approach versus implementing something more complex like star schema.
 
 ## 3 No Star Schema
 
@@ -56,7 +56,7 @@ Create a matrix that contains the table names and the segments you are splitting
 
 ## 5 Access Update
 
-Prior to implementing marts you likely had provided all of these groups access to the data warehouse. You should remove everyones data warehouse access by default and grant them access to the mart or marts they belong to. A few people might need to retain access to both, let them ask so that you know who has access to what. These people may still want to query the data warehouse when they want to analyze data that would span multiple marts.
+Prior to implementing Data Marts, you likely had provided all of these groups access to the Data Warehouse. You should remove everyone’s Data Warehouse access by default and grant them access to the mart or marts they belong to. A few people might need to retain access to both, let them ask so that you know who has access to what. These people may still want to query the Data Warehouse when they want to analyze data that would span multiple marts.
 
 ## Summary
 
