@@ -13,7 +13,7 @@ pdf: true
     <div class="col-sm-8 chapter-info">
       <a href="{{ book.url }}">
         <h2 class="mt-0">{{ book.title }} <i class="fas fa-arrow-right"></i></h2>
-        <p>{{ book.snippet }}{% if book.status == "in_progress" %}<em>(In progress)</em>{% endif %}</p>
+        <p>{{ book.snippet }}</p>{% if book.status == "in_progress" %}<em>(In progress)</em>{% endif %}
       </a>
 
     </div>
