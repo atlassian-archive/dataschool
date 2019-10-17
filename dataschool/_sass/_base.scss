@@ -148,6 +148,9 @@ section.page {
   margin-right: auto;
   padding-top: 3rem;
 }
+section.page-wide {
+  max-width: none;
+}
 // @media only screen and (min-width: 30rem) {
 //   section.page {
 //     margin-top: 4rem;

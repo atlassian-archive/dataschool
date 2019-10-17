@@ -12,14 +12,15 @@
   </ul>
   <!-- showing current book -->
   {% if page.layout == "chapter" or page.layout == "book" %}
-  {% assign book = site.books | where:'slug', page.book_slug %}
-  {% assign book = book[0] %}
-    {% include smallbook.html %}
+    {% assign book = site.books | where:'slug', page.book_slug %}
+    {% assign book = book[0] %}
+    <a href="{{ book.url }}" class="hover-link book-title">
+      <span>{{ book.title }}</span>
+    </a>
   {% endif %}
   <!-- building the chapter list -->
-  {% if page.layout == "chapter" %}
-
-  {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | where:'is_hidden', false | sort: 'number' %}
+  {% if page.layout == "chapter" or page.layout == "book" %}
+    {% assign bookchapters = site.chapters  | where:'book_slug', page.book_slug | where:'is_hidden', false | sort: 'number' %}
     <ul class="list-unstyled components">
       <li class="d-none">
         <ul>
@@ -30,7 +31,7 @@
                 </li>
                 <li class="book-section ">
                   <a href="#{{currentsection | remove:' '}}" data-target="#{{currentsection | remove:' '}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle {% if currentsection == 'book' %}d-none{% endif %}">{{ currentsection | capitalize }}</a>
-                  <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection | remove:' '}}">
+                  <ul class="collapse list-unstyled {% if currentsection == page.section or page.layout == 'book'  %}show{% endif %}" id="{{currentsection | remove:' '}}">
             {% endif %}
             <li {% if page.url == chapter.url %}class="active"{% endif %}>
               <a href="{{ chapter.url }}">

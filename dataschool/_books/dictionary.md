@@ -12,6 +12,7 @@ main_color: "#762314"
 is_featured: false
 status: released
 published: false
+snippet: This is a dictionary of all the terms and topics we speak about in The Data School.
 
 ---
 This is a dictionary of all the terms and topics we speak about in The Data School.

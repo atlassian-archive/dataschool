@@ -14,7 +14,7 @@ status: released
 topics:
 - _chapters/dictionary/sql.md
 meta_title: 'How to Teach People SQL: Gifs and Visuals for SQL'
-
+snippet: This book will help you empathize with people learning SQL for the first time. It focuses on the areas where most people get stuck or give up. The book then gives visuals and animations to help people build mental models of the abstract processes behind SQL queries.
 ---
 So you want your company to learn SQL?
 This book will help you empathize with people learning SQL for the first time. It focuses on the areas where most people get stuck or give up. The book then gives visuals and animations to help people build mental models of the abstract processes behind SQL queries.

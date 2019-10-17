@@ -1,0 +1,44 @@
+---
+layout: default-breakout
+---
+<div class="container">
+  <section class="page page-wide">
+    {{ content }}
+    <div class="row mt-5">
+      <div class="col">
+        <ul class="list-unstyled mb-0">
+          <li><a href="/">Home</a></li>
+          <li><a href="/books/">Web Books</a></li>
+          <li><a href="/people/">Contributors</a></li>
+          <li><a href="/mission/">Mission</a></li>
+          <li><a href="/contribute/">Contribute</a></li>
+          <li><a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWY4YWI1YzBkOTAwZmQ4Y2Q4N2U4MWE1Njg3OWJhNmU2NGRiYTI0MDEzMmQ1MzllMTczMGFhMTEwZTBlYmQxYjY" target="_blank">Slack Community</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <span>Our Web Books</span>
+        {% assign books = site.books | sort: 'book_sort_number' %}
+        <ul class="list-unstyled mb-0">
+        {% for book in books %}
+          {% if book.published != 'false' %}
+              <li><a href="{{ book.url }}">{{ book.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col centered">
+        <div class="footer-links">
+          <h4>Created by</h4>
+          <img src="/assets/images/chartio-logo-black-tbg.svg" alt="Chartio logo" class="height-3">
+          <p class="small-font">©2019 All Rights Reserved • <a href="https://chartio.com/about/legal/">Terms</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

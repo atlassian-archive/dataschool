@@ -28,12 +28,6 @@
         padding: 0.25rem 0.75rem 0.25rem 0.75rem;
         border-right: 0.25rem solid $background-color;
         background: $background-color;
-        // &:first-child {
-        //   padding-top: 0.5rem;
-        // }
-        // &:last-child {
-        //   padding-bottom: 0.5rem;
-        // }
         &.active {
           border-color: $secondary;
           > a, a[aria-expanded="true"] {
@@ -89,31 +83,12 @@
                 }
               }
             }
-            // > ul > li {
-            //   padding: 0.25rem 0.75rem;
-            //   border-left: 0.125rem solid $background-color;
-            //   background: $background-color;
-            //   &:first-child {
-            //     padding-top: 0.5rem;
-            //   }
-            //   &:last-child {
-            //     padding-bottom: 0.5rem;
-            //   }
-            //   &.active {
-            //     border-color: $secondary;
-            //     > a, a[aria-expanded="true"] {
-            //     }
-            //   }
-            // }
           }
         }
       }
-      // ul.main-nav {
-      //   padding-bottom: 0.5rem;
-      //   li {
-      //     padding: 0.25rem 0;
-      //   }
-      // }
+      ul.list-unstyled.components:last-child {
+        padding: 0 0 0.5rem;
+      }
     }
     .sidebar, .content {
       position: absolute;

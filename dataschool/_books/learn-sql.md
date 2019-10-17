@@ -12,7 +12,7 @@ is_featured: false
 topics:
 - _chapters/dictionary/sql.md
 status: released
-
+snippet: Welcome to our PostgreSQL interactive SQL Tutorial! We’ve designed this specifically for tech-savvy folks to learn enough SQL to be able to do their own analysis and data fetching.
 ---
 Welcome to our PostgreSQL interactive SQL Tutorial! We’ve designed this specifically for tech-savvy folks to learn enough SQL to be able to do their own analysis and data fetching.
 
