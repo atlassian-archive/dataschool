@@ -1,5 +1,5 @@
 ---
-section: 'Stage 1: Source'
+section: Stage 1 - Source
 title: Source Data Best Practices
 meta_title: Learn Source Data Best Practices
 description: Learn how to manage queries, model in a BI tool, and use drag and drop

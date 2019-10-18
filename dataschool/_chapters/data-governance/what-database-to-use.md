@@ -1,5 +1,5 @@
 ---
-section: 'Stage 3: Warehouse'
+section: Stage 3 - Warehouse
 title: What Database to Use
 meta_title: What Database to use for a Data Warehouse
 description: Learn the pros and cons of the modern database options to build your
