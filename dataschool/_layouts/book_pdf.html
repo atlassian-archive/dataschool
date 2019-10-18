@@ -7,7 +7,13 @@
 {% assign book = books[0] %}
 
 <div class="container">
-  <div class="row">
+  <div class="row" style="page-break-before: always;">
+    <div class="col-md-12 mb-5">
+      <img src="{{ book.cover_image }}" style='width: 100%; margin-top: 140px;'/>
+    </div>
+  </div>
+
+  <div class="row" style="page-break-before: always;">
     <div class="col-md-12 mb-5">
       <h1 class="mega-title">{{ book.title }}</h1>
 
@@ -50,6 +56,16 @@
   </div>
   {% for chapter in bookchapters %}
   <div class="row">
+    {% if currentsection != chapter.section %}
+       {% assign currentsection = chapter.section %}
+       {% if currentsection != 'book' %}
+       <div class="col-md-12 mb-5" style="page-break-before: always;">
+        <h1 class="mega-title">{{ currentsection }}</h1>
+        <img src="/assets/images/DataSophisticationStages.png" style='margin-top: 300px;'>
+      </div>
+       {% endif %}
+    {% endif %}
+
     <div class="col-md-12 mb-5" style="page-break-before: always;">
     <h1 class="title">{{ chapter.title | escape }}</h1>
     <p>
