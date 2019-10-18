@@ -1,5 +1,5 @@
 ---
-section: Data Warehouse
+section: 'Stage 3: Warehouse'
 title: Why Build a Data Warehouse
 meta_title: Learn why you should build a Data Warehouse
 description: Data inside of Data Lakes is challenging to work with, because it is
