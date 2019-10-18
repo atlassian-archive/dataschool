@@ -1,5 +1,5 @@
 ---
-section: 'Stage 1 - Source'
+section: Stage 1 - Source
 title: Source Data Architecture
 meta_title: Setup Source Data Architecture
 description: Learn how to configure your data base and leverage flexible BI tools

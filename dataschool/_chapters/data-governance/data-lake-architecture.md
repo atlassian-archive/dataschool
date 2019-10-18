@@ -1,5 +1,5 @@
 ---
-section: 'Stage 2 - Lake'
+section: Stage 2 - Lake
 title: Data Lake Architecture
 meta_title: Modern Data Lake Architecture Best Practices
 description: Learn to unify data sources and work with multiple schemas

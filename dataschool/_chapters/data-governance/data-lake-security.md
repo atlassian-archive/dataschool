@@ -1,5 +1,5 @@
 ---
-section: 'Stage 2 - Lake'
+section: Stage 2 - Lake
 title: Data Lake Security
 meta_title: Setup Security on a Data Lake
 description: Learn best practices for ensuring data security on a Data Lake database.

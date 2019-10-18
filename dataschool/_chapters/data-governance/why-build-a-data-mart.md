@@ -1,5 +1,5 @@
 ---
-section: 'Stage 4 - Mart'
+section: Stage 4 - Mart
 title: Why Build a Data Mart
 meta_title: Top 5 Reasons to build a Data Mart
 description: Learn the best reasons to build a data mart on top of your data warehouse

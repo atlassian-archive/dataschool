@@ -1,5 +1,5 @@
 ---
-section: 'Stage 3 - Warehouse'
+section: Stage 3 - Warehouse
 title: Data Warehouse Architecture
 meta_title: Data Warehouse Architecture Principles
 description: Learn why you should build a Single Source of Truth in your Data Warehouse.
