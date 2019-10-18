@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/data-governance/why-build-a-data-mart.md
 - dataschool/_chapters/data-governance/why-build-a-data-lake.md
 - dataschool/_chapters/data-governance/what-database-to-use.md
@@ -104,7 +105,6 @@ pages:
 - dataschool/_chapters/data-governance/data-lake-security.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
-- dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/third-normal-form.md
 - dataschool/_chapters/data-governance/introduction-to-modern-data-governance.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/syntax-conventions.md
