@@ -1,5 +1,5 @@
 ---
-section: Data Lake
+section: 'Stage 2: Lake'
 title: Data Lake Maintenance
 meta_title: Maintain a Data Lake
 description: Learn best practices for data lake maintenance. Handle Data Source updates

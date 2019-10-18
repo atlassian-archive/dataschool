@@ -1,5 +1,5 @@
 ---
-section: Data Lake
+section: 'Stage 2: Lake'
 title: Why Build a Data Lake
 meta_title: Top 3 reasons to build a Data Lake
 description: Learn why you should build a data lake to improve analytics at your company.
