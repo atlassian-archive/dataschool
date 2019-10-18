@@ -1,5 +1,5 @@
 ---
-section: 'Stage 3: Warehouse'
+section: 'Stage 3 - Warehouse'
 title: Data Warehouse Maintenance
 meta_title: How to Maintain a Data Warehouse
 description: Learn the best practices to maintain a Data Warehouse. Learn how to add
