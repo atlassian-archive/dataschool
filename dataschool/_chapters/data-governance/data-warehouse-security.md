@@ -1,5 +1,5 @@
 ---
-section: 'Stage 3: Warehouse'
+section: Stage 3 - Warehouse
 title: Data Warehouse Security
 meta_title: Data Warehouse Security Best Practices
 description: Learn how to secure sensitive data on your database and BI platform.

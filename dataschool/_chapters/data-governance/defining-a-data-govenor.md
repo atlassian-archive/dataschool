@@ -1,5 +1,5 @@
 ---
-section: 'Stage 3: Warehouse'
+section: Stage 3 - Warehouse
 title: Defining a Data Govenor
 meta_title: Learn what a Data Governor is and isnt
 description: Data Governors maintain the database so that is remains valuable to an
