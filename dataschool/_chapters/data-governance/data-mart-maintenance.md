@@ -1,5 +1,5 @@
 ---
-section: 'Stage 4: Mart'
+section: Stage 4 - Mart
 title: Data Mart Maintenance
 meta_title: How to Maintain a Data Mart
 description: Learn Best Practices for Maintaining a a Data Mart, such as handling

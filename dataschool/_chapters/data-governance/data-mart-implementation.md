@@ -1,5 +1,5 @@
 ---
-section: 'Stage 4: Mart'
+section: Stage 4 - Mart
 title: Data Mart Implementation
 meta_title: How to build a Data Mart
 description: Learn the best practices for building a Data Mart
