@@ -61,7 +61,18 @@
        {% if currentsection != 'book' %}
        <div class="col-md-12 mb-5" style="page-break-before: always;">
         <h1 class="mega-title">{{ currentsection }}</h1>
-        <img src="/assets/images/DataSophisticationStages.png" style='margin-top: 300px;'>
+          {% if currentsection == 'Stage 1 - Source' %}
+            <img src="/assets/images/DataSophisticationStage1.png" style='width: 100%; margin-top: 300px;'>
+          {% endif %}
+          {% if currentsection == 'Stage 2 - Lake' %}
+            <img src="/assets/images/DataSophisticationStage2.png" style='width: 100%; margin-top: 300px;'>
+          {% endif %}
+          {% if currentsection == 'Stage 3 - Warehouse' %}
+            <img src="/assets/images/DataSophisticationStage3.png" style='width: 100%; margin-top: 300px;'>
+          {% endif %}
+          {% if currentsection == 'Stage 4 - Mart' %}
+            <img src="/assets/images/DataSophisticationStage4.png" style='width: 100%; margin-top: 300px;'>
+          {% endif %}
       </div>
        {% endif %}
     {% endif %}
