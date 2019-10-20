@@ -31,7 +31,7 @@ This stage is ideal for new companies or teams with minimal data needs.  It is i
  - You only have data in a few small sources
  - The only people who need to make new visuals are fairly technical
 
-### Move to the next stage if
+### You've outgrown this stage if
 
  - You have data you need access to in multiple places/applications
  - You need unique or combined charts/dashboards for cloud application sources like SalesForce
@@ -39,7 +39,6 @@ This stage is ideal for new companies or teams with minimal data needs.  It is i
  - You're struggling with performance issues
  - You have a set of data that's getting too big for a transactional database
  - Non-technical users need to create their own charts
-
 
 ## Tools to Analyze Source Data
 
@@ -67,14 +66,14 @@ For data sources such as your production database you can query it directly from
 
 ### Cloud dashboarding tools
 
-Tools like Geckoboard or Grow allow you to bring in data via APIs to visualize data in simple ways. This allows you to combine data from multiple places into a single dashboard with simple visualizations to be viewed.
+Tools like Geckoboard or Grow allow you to bring in data from cloud applications via APIs to visualize data in simple ways. This allows you to combine data from multiple places into a single dashboard with simple visualizations to be viewed.
 
 ![](https://lh5.googleusercontent.com/iYU4tKzB-RWRr5cHTIyQl0aBYcp26XQdfpTUOCiidFTP4_RSkWE6xB9J3pivIUCAzEW43xVVSqzCXQuSnpzF_vsXag_Q56m7GlzuF8DJDaWOBT-M_klyCujTVRhbgl6q_RVXVBEg)
 
-### Self-Service BI
+They often come with some nice default dashboards setup automatically for you and can look great and be great for showing on TV's around your office - keeping teams aware of what's going on.  They will be limited in the ease and possibilities of their customizations.
 
-Ultimately the best option to analyze source data is to use a flexible self-service BI tool such as Chartio. Tools like Chartio allow you to pull data in large amounts from applications and your database. You can then combine them in queries, analyze the data in multiple ways, and produce custom visualizations. It also allows for the queries to be automatically updated so that the information shown on dashboards is up to date.
+### Business Intelligence
 
-![](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y)
+For the most power in working with source data use a flexible self-service Business Intelligence (BI).  For this stage be sure to choose an agile product, that allows direct SQL queries when necessary and ideally the ability to connect to and blend data from multiple sources.  Those features will be necessary as your data hasn't been consolidated into a single source yet, nor has it been organized in a clean enough way to not need occasional power of a complex SQL query.  We're obviously biased, but Chartio is a great choice here.  
 
-This section will cover different ways to optimize your usage of source data and how you can prepare to transition to creating a Data Lake to unify your analytics.
+![Self-service Business Intelligence example - Chartio](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y)
