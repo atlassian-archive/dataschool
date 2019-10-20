@@ -17,7 +17,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
-
 ---
 The biggest decision to make when moving from a lake to a warehouse is what database you will use for the warehouse. Most people consider:
 

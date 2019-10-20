@@ -6,14 +6,14 @@
   <ul class="list-unstyled main-nav components">
     <li {% if page.url == '/books.html' or page.layout == "book" %}class="active"{% endif %}><a href="/books/">Web Books</a></li>
     <li {% if page.url == '/contribute.html' %}class="active"{% endif %}><a href="/contribute/">Contribute</a></li>
-    <li><a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWY4YWI1YzBkOTAwZmQ4Y2Q4N2U4MWE1Njg3OWJhNmU2NGRiYTI0MDEzMmQ1MzllMTczMGFhMTEwZTBlYmQxYjY" target="_blank">Slack Community</a></li>
+    <li><a href="{{ site.slack_url }}" target="_blank">Slack Community</a></li>
   </ul>
   <!-- showing current book -->
   {% if page.layout == "chapter" or page.layout == "book" %}
     {% assign book = site.books | where:'slug', page.book_slug %}
     {% assign book = book[0] %}
-    <a href="{{ book.url }}" class="hover-link book-title">
-      <span>{{ book.title }}</span>
+    <a href="{{ book.url }}" class="book-title">
+      <span><b>{{ book.title }}</b></span>
     </a>
   {% endif %}
   <!-- building the chapter list -->
@@ -28,7 +28,7 @@
                 </ul>
                 </li>
                 <li class="book-section ">
-                  <a href="#{{currentsection | remove:' '}}"  {% if currentsection == 'book' %}class="d-none"{% else %}data-target="#{{currentsection | remove:' '}}" aria-expanded="true" class="dropdown-toggle"  data-toggle="collapse" {% endif %}>{{ currentsection | capitalize }}</a>
+                  <a href="#{{currentsection | remove:' '}}" aria-expanded="true" {% if currentsection == 'book' %}class="d-none"{% else %}data-target="#{{currentsection | remove:' '}}"  class="dropdown-toggle"  data-toggle="collapse" {% endif %}>{{ currentsection | capitalize }}</a>
                   <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection | remove:' '}}">
             {% endif %}
             <li {% if page.url == chapter.url %}class="active"{% endif %}>

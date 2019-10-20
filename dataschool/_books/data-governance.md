@@ -13,7 +13,7 @@ authors:
 - _people/aaron-aihini.md
 reviewers:
 - _people/dave.md
-- _people/matt.md 
+- _people/matt.md
 cover_image: "/assets/images/data-governance.png"
 main_color: "#143676"
 is_featured: true

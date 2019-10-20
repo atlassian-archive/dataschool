@@ -20,6 +20,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://dataschool.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dataschool
 github_username:  chartio
+slack_url: "https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWY4YWI1YzBkOTAwZmQ4Y2Q4N2U4MWE1Njg3OWJhNmU2NGRiYTI0MDEzMmQ1MzllMTczMGFhMTEwZTBlYmQxYjY"
 
 sqlboxurl: "https://sqlbox.herokuapp.com/"
 #sqlboxurl: "http://localhost:8084" # localhost sqlbox
