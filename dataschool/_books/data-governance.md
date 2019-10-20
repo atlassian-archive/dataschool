@@ -14,7 +14,7 @@ authors:
 reviewers:
 - _people/dave.md
 - _people/matt.md
-cover_image: "/assets/images/data-governance.png"
+cover_image: "/assets/images/book-covers/data-governance.png"
 main_color: "#143676"
 is_featured: true
 status: in_progress

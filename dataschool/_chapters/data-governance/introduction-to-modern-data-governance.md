@@ -41,7 +41,7 @@ This book is organized by these 4 sequential stages which are:
 
 ![Ideal data stack for effective data governance](https://lh3.googleusercontent.com/vG0lYBnPTtL9BCt4qn1lhoBvYvAWRAw21_R9C-U5Lu-q_5tmPzIBfdcuA2MGXF7CyX9VFM1OTKJp4rLoSCNJDuNHQpceM_CcihX1LefCw2tovbrhHtmQkYbZr56UEJctIBva9QbT)
 
-Each vertical stage in the above diagram is a valid stack to operate from, depending on your resources, size, important and needs of data within your organization.  Each has unique benefits, pitfalls and best practices that we'll cover stage by stage.
+Each vertical stage in the above diagram is a valid stack to operate from, depending on your resources, size, importance and needs of data within your organization.  Each has unique benefits, pitfalls and best practices that we'll cover stage by stage.
 
 Your company may not yet need the entirety of this book, but as a growing company's data needs expand, it will be incredibly valuable — and perhaps pivotal — to advance all the way through each of these stages to the Mart stage.
 
