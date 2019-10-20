@@ -1,6 +1,7 @@
 ---
 section: book
 title: Acknowledgments & Contributions
+short: Acknowledgements
 meta_title: Acknowledgments for Modern Data Governance Book
 description: This is a community driven book - with contributions from many different people and organizations.  Help keep it relevant and continually improving.  
 number: 9999999

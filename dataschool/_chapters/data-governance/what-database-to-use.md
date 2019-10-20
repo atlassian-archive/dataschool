@@ -1,9 +1,9 @@
 ---
 section: Stage 3 - Warehouse
-title: What Database to Use
-meta_title: What Database to use for a Data Warehouse
-description: Learn the pros and cons of the modern database options to build your
-  Data Warehouse on.
+title: What Warehouse Engine to Use
+short: Choosing a Warehouse
+meta_title: How to choose an for your Data Warehouse
+description: Learn the pros and cons of the modern database options like Snowflake, Redshift and BigQuery to build your Data Warehouse on.
 number: 33
 authors:
 - _people/tracy-chow.md

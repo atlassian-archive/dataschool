@@ -1,10 +1,11 @@
 ---
 section: book
 title: Data Warehouse Data Stack
+short: Warehouse Stack
 meta_title: How to Build a Data Warehouse Data Stack
 description: Learn how to build an optimal data stack for a Data Warehouse. Learn
   how you should move data and empower analysis.
-number: 
+number:
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/16ailclPK0HuLDJxM_atN7fXcalVophuDr2Phuf5Ti7Q/edit?usp=sharing
@@ -12,7 +13,7 @@ image: ''
 is_featured: false
 img_border_on_default: false
 is_under_construction: true
-reading_time: 
+reading_time:
 is_community_story: false
 story_intro_blurb: ''
 published: false

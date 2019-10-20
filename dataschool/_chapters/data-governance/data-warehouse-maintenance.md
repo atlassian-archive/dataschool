@@ -1,6 +1,7 @@
 ---
 section: Stage 3 - Warehouse
 title: Data Warehouse Maintenance
+short: Maintaining
 meta_title: How to Maintain a Data Warehouse
 description: Learn the best practices to maintain a Data Warehouse. Learn how to add
   new data, remove deprecated data, and optimize for performance..
@@ -16,7 +17,7 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time:
 
 ---
 Now that you’ve setup a Data Warehouse, the next and ongoing step is maintenance. This involves making sure the Data Warehouse objects; columns, tables, views, and schemas are accurate and up-to-date. Maintaining your Data Warehouse is an integral part of easing the ability for users in your organization to gain insights into your data. If it is not maintained people will query the wrong data and get conflicting results.

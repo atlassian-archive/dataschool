@@ -1,6 +1,7 @@
 ---
 section: Stage 3 - Warehouse
-title: Defining a Data Govenor
+title: Defining a Data Governor
+short: The Data Governor
 meta_title: Learn what a Data Governor is and isnt
 description: Data Governors maintain the database so that is remains valuable to an
   organization. This involves security, education, and modeling.

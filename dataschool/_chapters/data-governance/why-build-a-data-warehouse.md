@@ -1,6 +1,7 @@
 ---
 section: Stage 3 - Warehouse
 title: Why Build a Data Warehouse
+short: Why Build a Warehouse
 meta_title: Learn why you should build a Data Warehouse
 description: Data inside of Data Lakes is challenging to work with, because it is
   messy and not optimized for ad hoc querying. Data in a Data Warehouse is clean,
