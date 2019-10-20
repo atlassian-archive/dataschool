@@ -45,15 +45,15 @@ That our experience for this book has been gained by working with well over a th
 
 ## Influences
 
-The main books on setting up data stacks are over a decade old, most being pre-cloud and especially pre C-Store warehouses.  The state of modern data governance today is largely self-taught, which is what lead us to write this book.  
+The main books on setting up data stacks are over a decade old, most being pre-cloud and especially pre C-Store warehouses.  The state of modern data governance today is largely self-taught and unguided, a reality which is what lead us to write this book.  
 
 This book, starting from Chartio, is primarily influenced by first hand experiences and directly working with hundreds of modern cloud-based customers over a decade in BI.  The second largest influence is working with our many vendor and consulting partners.  Third, are the many community shared posts from a lot of different companies on blogs and in data slack channels.  And lastly, it's worth noting some classic books that have influenced (sometimes negatively but mostly positively) the data community.  
 
- - [Agile Data Warehouse Design](https://www.amazon.com/Agile-Data-Warehouse-Design-Collaborative/dp/0956817203/) - by Lawrence Corr
+ - [Agile Data Warehouse Design](https://www.amazon.com/Agile-Data-Warehouse-Design-Collaborative/dp/0956817203/) by Lawrence Corr
  - [The Data Warehouse Toolkit](https://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/) by Ralph Kimball
- - [Information Dashboard Design](https://www.amazon.com/Information-Dashboard-Design-At-Glance/dp/1938377001/) by [Stephen Few](https://www.perceptualedge.com/about.php) ([my review here](https://chartio.com/blog/informationdashboarddesign/))
+ - [Information Dashboard Design](https://www.amazon.com/Information-Dashboard-Design-At-Glance/dp/1938377001/) by [Stephen Few](https://www.perceptualedge.com/about.php) - ([my review here](https://chartio.com/blog/informationdashboarddesign/))
 
- ## How this book was written
+## How this book was written
 
  Community driven books aren't that common and we found it was important to setup some guidelines in writing this book:
 
@@ -62,6 +62,8 @@ This book, starting from Chartio, is primarily influenced by first hand experien
  *Heavily edited* - To keep that voice and a flow to the book, it undergoes continually heavy edits.  At this point it is still a bit chunky and we're working continually to improve that.  We'd love any help with that as you read through (see [How to contribute](#how-to-contribute)).
 
  *No new vocabulary* - There is already a lot of jargon in the data world, often created by very talented vendor marketing teams.  We try to stick with the most common and simple words here that are already in use.
+
+ *Stay modern* - There are a lot of books for the old way, on old stacks, to work with data.  We're defining the current and next gen best practices here.  This book we hope to continually edit and improve with increased community involvement - so that it always stays modern.
 
  *Share examples* - Right now this book is fairly light on specific examples.  We'd love to add more as we know this is one of the most effective ways of learning.  If you have stories to share - [do reach out](mailto:mdavid@dataschool.com).
 
@@ -72,10 +74,10 @@ This book, starting from Chartio, is primarily influenced by first hand experien
  *Stay general* - Every company and data use case is a unique snowflake.  This book tries to write to the needs of the 95+% of snowflakes.  That last 5% is a long tail, and really impossible to cover.  Doing so would incredibly clutter the book.  Here we stay general and expect readers to be confident enough to deviate from our recommendations when they don't fit them.
 
 
+
 ## How to contribute
 
-This is an open, community driven book created by many different people.  It is [hosted on github](https://github.com/chartio/dataschool), and we welcome any and all contributions
-Our goal is to continually make this book better and kept modern.  We would like to expand it, like a wiki, to cover more topics, go more in depth, share more real company examples, and be better reviewed and edited.
+This is an open, community driven book created by many different people.  It is [hosted on github](https://github.com/chartio/dataschool), and we welcome any and all contributions. Our goal is to continually make this book better and kept modern.  We would like to expand it, like a wiki, to cover more topics, go more in depth, share more real company examples, and be better reviewed and edited.
 
 Few are complete "experts" in all of the areas of modern data governance, and the landscape is changing all of the time.  If you have a story to share, or a chapter you think is missing, or a new idea - [email us](mailto:mdavid@dataschool.com) or create a pull request with the edits on our [github repo](https://github.com/chartio/dataschool).
 

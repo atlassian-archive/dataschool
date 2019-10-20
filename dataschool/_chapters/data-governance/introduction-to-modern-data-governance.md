@@ -1,6 +1,6 @@
 ---
 section: book
-title: Introduction to Modern Data Governance
+title: Introduction to Modern Data Governance and the 4 Stages of Sophistication
 meta_title: Stages of Data Sophistication and Modern Data Governance
 description: Learn how Data Governance practices change as the level of data sophistication changes.
 number: -10
@@ -28,9 +28,12 @@ This book is for those organizations that want to gain best practices and visibi
 
 The structure and starting chapters of this book were written by the leadership and Data Advisor teams at Chartio, from the experiences working with hundreds of companies over the past decade.  We continually work with companies, educating them through pitfalls and toward best practices as their needs evolve and have compiled our learnings and open sourced them in this book.
 
+
+## The 4 Stages of Data sophistication
+
 From this experience we recognized four distinct stages of data sophistication. These stages happen to be tied to a new  piece of the data stack needed at each stage, and so we have named these stages after those pieces.  
 
-The book is organized by these 4 stages which are:
+This book is organized by these 4 sequential stages which are:
 
 1. Source
 2. Lake
@@ -45,13 +48,13 @@ As a growing company's data needs expand, it will be incredibly valuable — and
 
 We'll start with an overview of each of these stages:
 
-**Stage 1. Sources**
+### Stage 1. Sources
 
 ![](https://lh4.googleusercontent.com/gQGOiX-JT7DSLZLlkT0fDUfdZm2nITUw6pSF2SrOrmac7mq7HxF-U2bYf5O8uDP-Id9Tay_1k8S1h87iHZLedkpJNYWJABORVnNw9v8AotkwEN1O2KXcsvkYR9IU4kbylh4G5CBE)
 
 When you start working with data, you may only have a few sources of interest. Two common early sources are Google Analytics and your application data in whatever PostgreSQL or MySQL database your product runs on. If only a few people at your company need to work with these sources, you might set them up with direct access; it’s more simple and agile for them to just work with the data directly.
 
-**Stage 2. Lake**
+### Stage 2. Lake
 
 As you start to rely on more data sources, and more frequently need to blend your data, you’ll want to build out a Data Lake—a spot for all of your data to exist together in a unified format.
 
@@ -59,7 +62,7 @@ As you start to rely on more data sources, and more frequently need to blend you
 
 Especially when you need to work with data from applications like Salesforce, Hubspot, Jira, and Zendesk, you’ll want to create a single home for this data so you can access all of it together and with a single SQL syntax, rather than many different APIs.
 
-**Stage 3. Warehouse (Single Source of Truth)**
+### Stage 3. Warehouse (Single Source of Truth)
 
 In the Lake stage, as you bring in more people to work with the data, you have to explain to them the oddities of each schema, what data is where, and what special criteria you need to filter by in each of the tables to get the proper results. This becomes a lot of work, and will leave you frequently fighting integrity issues. Eventually, you’ll want to start cleaning your data into a single, clean source of truth.
 
@@ -67,7 +70,7 @@ In the Lake stage, as you bring in more people to work with the data, you have t
 
 This stage—creating a data Warehouse—has historically been quite a nightmare, and there are many books written on how best to model your data for analytical processing. But these days it’s not that hard—and will not only spare you from having to explain all of your schemas’ oddities to new team members, but will also save you as an individual time in having to repeat, edit and maintain your own messy queries.
 
-**Stage 4. Marts**
+### Stage 4. Marts
 
 When you have clean data and a good BI product on top of it, you should start noticing that many people within your company are able to answer their own questions, and more and more people are getting involved. This is great news: your company is getting increasingly informed, and the business and productivity results should be showing. You’re also less worried about integrity issues because you’ve modeled the data, and you’re continually maintaining it to be a clean, clear source of truth.
 
