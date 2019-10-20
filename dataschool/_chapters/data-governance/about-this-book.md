@@ -74,7 +74,6 @@ This book, starting from Chartio, is primarily influenced by first hand experien
  *Stay general* - Every company and data use case is a unique snowflake.  This book tries to write to the needs of the 95+% of snowflakes.  That last 5% is a long tail, and really impossible to cover.  Doing so would incredibly clutter the book.  Here we stay general and expect readers to be confident enough to deviate from our recommendations when they don't fit them.
 
 
-
 ## How to contribute
 
 This is an open, community driven book created by many different people.  It is [hosted on github](https://github.com/chartio/dataschool), and we welcome any and all contributions. Our goal is to continually make this book better and kept modern.  We would like to expand it, like a wiki, to cover more topics, go more in depth, share more real company examples, and be better reviewed and edited.

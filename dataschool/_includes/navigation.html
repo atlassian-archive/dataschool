@@ -28,7 +28,7 @@
                 </ul>
                 </li>
                 <li class="book-section ">
-                  <a href="#{{currentsection | remove:' '}}" data-target="#{{currentsection | remove:' '}}" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle {% if currentsection == 'book' %}d-none{% endif %}">{{ currentsection | capitalize }}</a>
+                  <a href="#{{currentsection | remove:' '}}"  {% if currentsection == 'book' %}class="d-none"{% else %}data-target="#{{currentsection | remove:' '}}" aria-expanded="true" class="dropdown-toggle"  data-toggle="collapse" {% endif %}>{{ currentsection | capitalize }}</a>
                   <ul class="collapse list-unstyled {% if currentsection == page.section %}show{% endif %}" id="{{currentsection | remove:' '}}">
             {% endif %}
             <li {% if page.url == chapter.url %}class="active"{% endif %}>
