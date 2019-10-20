@@ -2,14 +2,13 @@
 section: Stage 4 - Mart
 title: Democratized or Centralized - choosing your workflow
 meta_title: "Data Governance - Democratized vs Centralized - what's right for you?"
-description: Choosing whether data should be completely run by a centralized team, or efforts should be made into enable others in the organization to work with data is a big choice for companies, with great consequences on both sides.
+description: "Choosing whether data should be completely run by a centralized team, or efforts should be made into enable others in the organization to work with data is a big choice for companies, with great consequences on both sides."
 number: 39
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-feedback_doc_url:
-image: ""
+image:
 is_featured: false
 img_border_on_default: false
 is_under_construction: true

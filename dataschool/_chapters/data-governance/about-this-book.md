@@ -2,8 +2,7 @@
 section: book
 title: About this book
 meta_title: About Modern Data Governance
-description: Learn how Data Governance practices change as the level of data sophistication
-  changes
+description: "Information about who this book is for, who it's not, how we wrote it, disclaimers, influences and how to contribute."
 number: -5
 authors:
 - _people/dave.md
@@ -17,7 +16,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 4
-
 ---
 ## Who this book is for
 
@@ -67,7 +65,7 @@ This book, starting from Chartio, is primarily influenced by first hand experien
 
  *Share examples* - Right now this book is fairly light on specific examples.  We'd love to add more as we know this is one of the most effective ways of learning.  If you have stories to share - [do reach out](mailto:mdavid@dataschool.com).
 
- *It's okay to have an opinion* - Almost every part of this book could be contentious to someone, in some use case, or to some vendor.  In writing this book it is tempting to bring up the caveats everywhere and write what would ultimately be a very defensive and overly explained book. This would be bad and a bummer to read and ultimately way less useful for people reading this book for the advice.  Where we have a strong opinion we don't argue it, we just go with it.  Where we think the user has a legitimate choice to make - we pose those options. 
+ *It's okay to have an opinion* - Almost every part of this book could be contentious to someone, in some use case, or to some vendor.  In writing this book it is tempting to bring up the caveats everywhere and write what would ultimately be a very defensive and overly explained book. This would be bad and a bummer to read and way less useful for people reading this book for the advice.  Where we have a strong opinion we don't argue it, we just go with it.  Where we think the user has a legitimate choice to make - we pose those options.
 
  *Stay out of the weeds* - This book is intended to be a board overview and general guideline of how to setup a data stack.  We intentionally don't get into the weeds of setting up a Redshift instance, or how to use various BI products.  That would clutter the already quite extensive book and repeat a lot of work that is already on the internet.
 
