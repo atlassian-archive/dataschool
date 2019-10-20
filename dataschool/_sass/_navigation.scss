@@ -24,6 +24,10 @@
           opacity: 0.85;
         }
       }
+      a.book-title {
+        color: $text-color;
+        font-weight: bold;
+      }
       ul.components.main-nav > li, ul.components li.book-section > ul > li {
         padding: 0.25rem 0.75rem 0.25rem 0.75rem;
         border-right: 0.25rem solid $background-color;

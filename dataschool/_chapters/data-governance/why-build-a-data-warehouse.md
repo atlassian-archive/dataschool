@@ -39,8 +39,6 @@ A Data Warehouse is a database setup for analytical ad hoc querying.
  - You have projects that require different formats of the source of truth for easier use
  - Having truly informed employees is important to your company's competitive success
 
-
-
 ## Six reasons to build a Data Warehouse
 
 1. **Easier** to understand and query - simplified single model. No more duplicate tables, confusing column names, or mysterious values.
