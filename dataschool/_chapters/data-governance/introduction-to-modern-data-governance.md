@@ -4,7 +4,7 @@ title: Introduction to Modern Data Governance
 meta_title: Stages of Data Sophistication and Modern Data Governance
 description: Learn how Data Governance practices change as the level of data sophistication
   changes
-number: -1
+number: -10
 authors:
 - _people/dave.md
 reviewers:
@@ -21,7 +21,11 @@ reading_time: 4
 ---
 Welcome to the Modern Data Governance Book!
 
-This book will teach a variety of Data Governance techniques for companies at different levels of data sophistication. It progresses from what it is often like at a startup to a mature data driven organization.
+This is a continually improving continually driven book teaching Modern Data Governance techniques for companies at different levels of data sophistication. It progresses from the starting setup of a new startup to a mature data driven enterprise.  It covers architectures, tools, team organizations, common pitfalls and best practices as your data needs expand.
+
+The structure and starting chapters of this book were written by the leadership and Data Advisor teams at Chartio, from the experiences working with hundreds of companies over the past decade.  We continually work with companies, educating them through pitfalls and toward best practices as their needs evolve and have compiled our learnings and open sourced them in this book.
+
+From this experience we have recognized four distinct stages of data sophistication. These stages happen to be tied to a new  piece of the data stack needed at each stage, and so we have named these stages after those pieces.  
 
 We group it into 4 main stages of data sophistication:
 
@@ -32,9 +36,9 @@ We group it into 4 main stages of data sophistication:
 
 ![](https://lh3.googleusercontent.com/vG0lYBnPTtL9BCt4qn1lhoBvYvAWRAw21_R9C-U5Lu-q_5tmPzIBfdcuA2MGXF7CyX9VFM1OTKJp4rLoSCNJDuNHQpceM_CcihX1LefCw2tovbrhHtmQkYbZr56UEJctIBva9QbT)
 
-Each vertical stage in the above diagram is a valid stack to operate from, depending on your resources, size, and the importance of data within your organization.
+Each vertical stage in the above diagram is a valid stack to operate from, depending on your resources, size, important and needs of data within your organization.
 
-As a company grows their data needs expand, it will be incredibly valuable—and perhaps pivotal—to advance all the way through to the Mart stage.
+As a growing company's data needs expand, it will be incredibly valuable — and perhaps pivotal — to advance all the way through each of these stages to the Mart stage.
 
 Let’s dive into a deeper explanation of each stage:
 
