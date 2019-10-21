@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: "/assets/images/old metrics.png"
+image: "/assets/images/WarehouseMaintenance-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -102,7 +102,7 @@ Also business objectives may change. This can affect what data is appropriate fo
 
 If you’re not going to remove columns, tables, or views from user’s access right away, we recommend updating the names for these objects to _deprecated, or, _do_not_use. This makes it clear when browsing or querying that they should not be used.
 
-![](/assets/images/Screen Shot 2019-08-16 at 2.13.22 PM.png)
+![](/assets/images/WarehouseMaintenance.png)
 
 This style for old metrics should be incorporated into your company’s naming convention style guide. It’s also worth letting users know that these metrics are no longer useful through email or with your BI Tool so they’re not caught off guard. Again, naming conventions play an integral role in how we keep users from querying data warehouse objects incorrectly.
 
