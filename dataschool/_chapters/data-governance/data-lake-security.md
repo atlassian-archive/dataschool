@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1zJuiI7_bM9rLMBe5yAiI3H7llHsbDk6FEqjk_Tz9Ki0/edit?usp=sharing
-image: "/assets/images/Data Lake Security.png"
+image: "/assets/images/DataLakeSecurity (1)-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -28,7 +28,7 @@ Data coming in to the Data Lake is likely not cleaned yet so there may still be 
 
 Remove access from individual tools, move all access to Data Lake. This will cut down on tickets requesting access and mishaps where people retain access to information they shouldn’t have.
 
-![](https://lh5.googleusercontent.com/b0yUrkc5tvPF8hvUsSI184etgEeTfxmf62ZJeENI8_YzGYLxjBRcHAwMrHBGeROIlnewRSCjkXR9NIjb0hL2MxfkSiI16AQBwBDy2YegUe8Jd31KrryiAq_Mupb10VAgHo7iXaEP)
+![Move Security from Sources to Lake](/assets/images/DataLakeSecurity (1).png "Data Lake Security")
 
 ## Permission tiers
 
@@ -41,6 +41,6 @@ Start out by creating two users groups on the Data Lake as follows:
 
 You can prevent the second group from accessing sensitive data in the Data Lake by having that group not have access to the schemas or tables with that type of data.
 
-![](https://lh5.googleusercontent.com/EBZLvI4bTX2xhZPvfxfa2esMvquX_lw4aTEo86YdP0S2LFGHW2zHDK9-maTlML1TE4WSsAysisBALWmVm3IZyn_AP1jtMzrXJoMvXJiY_Rvgxo4BmL5EUc72N5Q_T6lsrRV5KzW5)
+![Set Permissions Tiers by Group](/assets/images/PermissionTiers (1).png "Permission Tiers")
 
 In general set broad controls so it is easy to manage. As you grow in sophistication and turn your Data Lake into a Data Warehouse and Data Mart you can create more refined permissions settings.
