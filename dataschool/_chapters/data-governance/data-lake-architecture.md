@@ -44,4 +44,4 @@ When the data is piped into the Data Lake it will exist in separate schemas on y
 
 In addition to combining data within a query to produce an insight you can also create separate charts per schema and “combine” them by placing them in a single dashboard. Having a dashboard with charts from different apps can give you a powerful way to find insights.
 
-![](/assets/images/MultipleAppDataDashboard.png)
+![Data from multiple Sources Chartio](/assets/images/MultipleAppDataDashboard.png "Multiple App Dashboard")
