@@ -21,9 +21,11 @@ reading_time: 4
 ---
 Welcome to the Modern Data Governance Book!
 
-This book will teach a variety of Data Governance techniques for companies at different levels of data sophistication. It progresses from what it is often like at a startup to a mature data driven organization.
+We created this book for companies who are working with data and want best practices to get the most value out it. This book does not cover companies with extreme data needs (petabytes of data per day, streaming data, ML/AI use cases). These require much more customization to accommodate.
 
-We group it into 4 main stages of data sophistication:
+This book will teach a variety of Data Governance techniques for companies at different levels of data stack sophistication. It progresses from what it is often like at a startup to a mature data driven organization.
+
+We group it into 4 main stages of sophistication:
 
 1. Source
 2. Lake
