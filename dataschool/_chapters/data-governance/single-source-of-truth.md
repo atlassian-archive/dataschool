@@ -85,14 +85,6 @@ It's quite common for raw data to be extremely complex. Data was typically meant
 
 ![](/assets/images/Screen Shot 2019-08-27 at 10.56.25 AM.png)
 
-| Best Practice | Reason |
-| --- | --- |
-| Only include fields with obvious analytical purpose | It's best to start modeling with only the most relevant columns, excluding any columns that has no immediate or obvious analytical purpose. |
-| Extract relevant data from complex data types | Application data sources may contain JSON, arrays, hstore and other complex data types. These are typically hard to query from business intelligence tooling and should have relevant data extracted into new columns.Example:Supposed a table books contains an id column and the following JSON column.{ title: "Moby Dick", author: "Herman Melville", genres: \["novel", "fiction"\]}The resulting modeled books table would contain an id, title, and author columns. Genres could be modeled as an independent table, reduced to a single genre based on custom rules, or some other method. |
-| Change flags and crypto abbreviations to meaningful values | It's common for application databases to have flags or cryptic abbreviations in columns that work well for the application and terrible for a business user. It's important to transform these values into easy, human readable values. Some examples:Boolean values 0 and 1 should be transformed to relevant strings, such as true and false or on and off.Flag values should be transformed into relevant strings. If a column billing_status has three numeric values (i.e. 0, 1, 2) that represent some status, they should be transformed into a relevant business concept such as Active, Not Active, Delinquent.Cryptic values should also be transformed into easy to understand business concepts. |
-| De-normalize where possible | Applications typically have highly normalized tables to prevent duplicates, reduce space, and make modification easier. This typically makes it harder for business users to browser the schema however because the complexity of the joins may be hard to follow. Build wider tables where appropriate, collapsing common concepts into a single table. Some examples could be:Combine the sources, sources_redshift, sources_postgres, and sources_myself tables into a single sources table with the lowest common denominator of values that make sense for a business user.Combine the users and addresses tables into a single users table since addresses are meaningless on their own.This simplification requires trial and error and you may not always get it right. |
-|  |  |
-
 #### Cleaning
 
 Data is messy and requires some cleaning to ensure accurate results. Cleaning prevents common problems that might cause a query to produce incorrect results.
