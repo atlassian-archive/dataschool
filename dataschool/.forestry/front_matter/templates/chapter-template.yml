@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/etl-vs-elt.md
@@ -100,7 +101,6 @@ pages:
 - dataschool/_chapters/data-governance/introduction-to-modern-data-governance.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/data-governance/why-build-a-data-mart.md
-- dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
