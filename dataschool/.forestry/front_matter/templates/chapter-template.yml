@@ -87,6 +87,7 @@ fields:
     max: 
     step: '1'
 pages:
+- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/etl-vs-elt.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-security.md
@@ -103,7 +104,6 @@ pages:
 - dataschool/_chapters/data-governance/data-warehouse-security.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
-- dataschool/_chapters/data-governance/single-source-of-truth.md
 - dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-governance/data-mart-implementation.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/third-normal-form.md
