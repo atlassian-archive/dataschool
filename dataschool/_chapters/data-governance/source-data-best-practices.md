@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1skdYsoMVrof7aEo5VsqhpFtC7SwnJC9foTA-2peSx4o/edit?usp=sharing
-image: "/assets/images/Screen Shot 2019-09-30 at 9.42.25 PM.png"
+image: "/assets/images/SnippetDictionaryCover.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
