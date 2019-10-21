@@ -1,6 +1,7 @@
 ---
 section: Stage 4 - Mart
-title: Why Build a Data Mart
+title: Why Build Data Marts
+short: Why build marts
 meta_title: Top 5 Reasons to build a Data Mart
 description: Learn the best reasons to build a data mart on top of your data warehouse
 number: 40
@@ -21,6 +22,18 @@ reading_time: 5
 ## What is a Data Mart?
 
 A Data Mart is a filtered (and sometimes aggregated) subsection of a Data Warehouse to make it easier for a particular group to query data. It provides a smaller schema with only relevant tables to query.
+
+### This stage is right for you if
+
+ - You want to get democratized - and enable others in your company to explore and understand data themselves
+ - You're prepared to teach and enable business users in your company - hopefully using the many resources of the Data school
+ - You have projects that require different formats of the source of truth for easier use
+ - Having truly informed employees is important to your company's competitive success
+
+### You've outgrown this stage if
+
+ - You can't really!  You can make any number of marts, and even put leveling in your marts if you'd like.  Implementing this stage will will result in a complete, well architected and governed stack that will continually evolve and and support your informed competitive company.
+
 
 ## Five reasons to build a Data Mart
 

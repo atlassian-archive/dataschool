@@ -12,7 +12,7 @@ authors:
 - _people/jaime-flores-lovo.md
 - _people/aaron-aihini.md
 reviewers: _people/twange-kasoma.md
-cover_image: "/assets/images/data-governance.png"
+cover_image: "/assets/images/book-covers/data-governance.png"
 main_color: "#143676"
 is_featured: true
 status: in_progress

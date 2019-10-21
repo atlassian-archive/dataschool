@@ -26,7 +26,7 @@ fields:
   config:
     use_select: true
     min: ''
-    max: 
+    max:
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -35,8 +35,8 @@ fields:
   type: list
   config:
     use_select: true
-    min: 
-    max: 
+    min:
+    max:
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -84,7 +84,7 @@ fields:
   required: true
   config:
     min: '0'
-    max: 
+    max:
     step: '1'
 pages:
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md

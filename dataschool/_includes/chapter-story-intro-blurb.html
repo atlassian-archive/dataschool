@@ -11,7 +11,7 @@
           {% if author.job_title %}<em>{{ author.job_title }}{% if author.company %} at {{ author.company }}{% endif %}</em>{% endif %}
         </p>
         <p>{{page.story_intro_blurb}}</p>
-        <p>Please reach out to me, <em>{{ author.data_school_slack_handle }}</em>, on <a href="https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWY4YWI1YzBkOTAwZmQ4Y2Q4N2U4MWE1Njg3OWJhNmU2NGRiYTI0MDEzMmQ1MzllMTczMGFhMTEwZTBlYmQxYjY">our slack</a> to discuss the article.</p>
+        <p>Please reach out to me, <em>{{ author.data_school_slack_handle }}</em>, on <a href="{{ site.slac_url }}">our slack</a> to discuss the article.</p>
       </div>
 
     {% endfor %}

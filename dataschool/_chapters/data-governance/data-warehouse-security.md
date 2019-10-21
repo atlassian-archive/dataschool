@@ -1,6 +1,7 @@
 ---
 section: Stage 3 - Warehouse
 title: Data Warehouse Security
+short: Warehouse Security
 meta_title: Data Warehouse Security Best Practices
 description: Learn how to secure sensitive data on your database and BI platform.
 number: 32
@@ -16,7 +17,7 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time:
 
 ---
 At the warehouse stage, there are commonly more groups than just a centralized data team with access. You must use data governance to safeguard certain pieces of sensitive information from being accessed by the wrong people in your organization. Many regulations have been passed such as GDPR that you must comply with and many companies have industry standard compliance rules as well such as SOC and HIPAA that they have to adhere to.

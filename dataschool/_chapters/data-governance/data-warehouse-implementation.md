@@ -1,6 +1,7 @@
 ---
 section: Stage 3 - Warehouse
 title: Data Warehouse Implementation
+short: Implementing
 meta_title: How to Create a Data Warehouse
 description: Learn how to setup a Data Warehouse. Model and transform data to make
   it easy to analyze.
@@ -96,7 +97,7 @@ t3 AS (
 		WHEN Location = "Texas" THEN "USA"
 		WHEN Location = "Sao Paulo" THEN "Brazil"
 		ELSE Location
-		END AS "Location", 
+		END AS "Location",
         Type, Info, Status, is_deleted
 	FROM t2
 )
@@ -107,7 +108,7 @@ t4 as (
 	CASE WHEN Type = "1" THEN "Can view"
 		WHEN Type = "2" THEN "Can edit"
 		WHEN Type = "3" THEN "Can admin"
-		END AS "Access Level", 
+		END AS "Access Level",
         Info, Status, is_deleted
 FROM t3
 )
@@ -117,7 +118,7 @@ t5 as (
 	SELECT Id, Name, Display Name, Email, Location, Access Level,
 		CASE WHEN Info = "%active" THEN "active"
 			WHEN Info = "%inactive" THEN "inactive"
-			END AS "Status", 
+			END AS "Status",
 		is_deleted
 FROM t4
 )

@@ -1,6 +1,7 @@
 ---
 section: Stage 3 - Warehouse
 title: Why Build a Data Warehouse
+short: Why Build a Warehouse
 meta_title: Learn why you should build a Data Warehouse
 description: Data inside of Data Lakes is challenging to work with, because it is
   messy and not optimized for ad hoc querying. Data in a Data Warehouse is clean,
@@ -23,6 +24,21 @@ reading_time: 5
 ## What is a Data Warehouse?
 
 A Data Warehouse is a database setup for analytical ad hoc querying.
+
+### This stage is right for you if
+
+ - More than a few people are going to be working with this dataset
+ - You want a clean source of truth of your company
+ - You don't like fighting integrity issues
+ - You need to separate the structure of the data from the always changing transactional sources.
+ - You Don't like Repeating Yourself (DRY)
+
+### You've outgrown this stage if
+
+ - You want to get democratized - and enable others in your company to explore and understand data themselves
+ - You're prepared to teach and enable business users in your company - hopefully using the many resources of the Data school
+ - You have projects that require different formats of the source of truth for easier use
+ - Having truly informed employees is important to your company's competitive success
 
 ## Six reasons to build a Data Warehouse
 
