@@ -84,9 +84,9 @@ With a long dashboard, simply checking in on your dashboard to get the latest on
 ![Organized, short dashboards](https://chartio.com/images/blog/best-practice:-keepshorter-dashboards/best-practice:-keep-shorter-dashboards-0.png)
 
 
-## Design first Dashboard Building
+## Design before building
 
-Another common pitfall is starting a dashboard by exploring data first.  We've written a whole other book on this pitfall entitled [How to Design a Dashboard](/how-to-design-a-dashboard/).
+Another common pitfall is starting a dashboard by exploring data first.  When you do this you end up with a collection of what you thought were interesting facts while exploring, but that are in daily monitoring probably quite useless.   We've written a whole other book on this pitfall entitled [How to Design a Dashboard](/how-to-design-a-dashboard/).
 
 [![How to Design a Dashboard](https://dataschool.com/assets/images/book-covers/how-to-design-a-dashboard.png)](/how-to-design-a-dashboard/)
 
