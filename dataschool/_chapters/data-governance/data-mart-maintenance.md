@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: ''
-image: "/assets/images/Outlier-1.png"
+image: "/assets/images/OutlierDataMaintenance.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -33,7 +33,7 @@ This role is similar to the Data Governor for the Data Warehouse. Data Governors
 
 ### Communicate/educate team
 
-Different teams have different needs but some common threads include teaching SQL skills or how to use your BI tool. Mayors should document and share data quirks that show up in a lot of queries. Note, however, that you should try to address these quirks with modeling at the Data Warehouse stage. 
+Different teams have different needs but some common threads include teaching SQL skills or how to use your BI tool. Mayors should document and share data quirks that show up in a lot of queries. Note, however, that you should try to address these quirks with modeling at the Data Warehouse stage.
 
 We wrote a book on [how to teach SQL](https://dataschool.com/how-to-teach-people-sql/) if you need assistance in [explaining how JOINs](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/), [Aggregations](https://dataschool.com/how-to-teach-people-sql/how-sql-aggregations-work/), or [subqueries work](https://dataschool.com/how-to-teach-people-sql/how-sql-subqueries-work/).
 
@@ -46,19 +46,19 @@ There are two types of issues you will need to investigate as a Mayor of a Data 
 
 #### Data that doesn’t make sense
 
-![](https://lh4.googleusercontent.com/PlPywHU0zg0ISjz12Cwm8mnXJADec5fIQpfpiCS2rwv7_RCExwQLOEa2zqiHX9Fo5G0uDqDIdjI_PCY1bh10-frNbJoD6joFKQYD3-258Oh-WV6VJJxDyKFHReLUDkGDxHZVsbfv)
+![](/assets/images/OutlierDataMaintenanceSignal.png)
 
 ##### Spike
 
 Numbers that are much different from the day before but no changes have been made. If traffic to your website doubles in a day it is likely caused by something and not just a fluke. That spike may be caused by a new marketing campaign, a bug, or potentially a google search algorithm update. You should explore these possibilities in that order.
 
-![](https://lh5.googleusercontent.com/j3axTEBypcKPX90sxrC5qgPAQDRGt8CrC7_hGUt-LMg_oNFX_xLaGyFEnwSLpdakogpk8xdwaiJn1dJhqSt3P7LlkMQbFHy4G69wZMSQ9E_Cwqs2Bx3XBmxtE_d0YF0ilozwj7Hp)
+![DAta Mart Maintenance Annotation](/assets/images/AnnotationMaintenance.png "Annotate data")
 
 ##### No Spike
 
 Numbers that are not changing at all even though changes have been made. If you did launch a new marketing campaign and the numbers are not going up that could be due to a bug or poor campaign performance. Again investigate in that order. Often times the tracking was not set up correctly or the link in the advertisement is going to the wrong place.
 
-![](https://lh3.googleusercontent.com/XZq7qe8TuoJeVmBJi41DwnOxPeiQe5ObaGenKjwZgklu_hL8yF3MHzRlM31V6ykO6nwObr5oXESz1x7ZOjGCWxlnK2M9hIaUF-TLiXPBrM9gu_I97g3cxknVBfX8AyO9ZDq5R6-j)
+![Metrics that are different from different people](/assets/images/ConflictingMetrics.png "Conflicting Metrics")
 
 ##### Conflicting numbers
 
@@ -92,11 +92,11 @@ Oftentimes people’s calculation of a metric will differ because of the followi
 
 You will likely be the first to notice when there is a new column in one of your views that is not easily understandable. You should raise this to the Data Governor so that they can apply the necessary cleaning to it at the Data Warehouse stage. Avoid doing additional cleaning at the Mart level because others might need this field as well. Having a single version of it helps make sure analyses are consistent.
 
-![](https://lh5.googleusercontent.com/D-JQKw3Pb2dEzn3HtnPx9BXDR_rvfoK1JODmpoS8L1mHSi0Ti5l3zz6yaTHBPS58jSkV_rfiwyAcT5eCCjvbykaJcyIMtxeb6Ufmh5XBZyoT5xtOSEomqjY1Z9wKC5LM38oBI1Sk)
+![Bad naming for new field](/assets/images/NewField.png "New Field")
 
 This can also happen when a new option is added to a field and it is encoded in an unreadable way. Follow the same process, get it updated at the Data Warehouse level.
 
-##### ![](https://lh4.googleusercontent.com/qHW3iMjZIQuwaGQ7sOY0FDNGHyNRpSbtpWfS1Cg6JupxCnpnNRimYIgk_B3yxy61rovUd0t4VHZntkE_N3d6QOQT4Uvc7QKWtdtBQdJIPnVK3Dxii43rw14b_vjz3asz8K61rvZG)
+##### ![](/assets/images/NoNewData.png)
 
 ##### No new data
 
@@ -125,7 +125,7 @@ This happens for a few reasons, the source has been deprecated, the source had a
 
 ##### Performance
 
-If queries by you or your team start to take over a minute to run you should investigate. Can the query be optimized? Do we need to spin up more clusters? Or, do we need to do some pre-aggregation? 
+If queries by you or your team start to take over a minute to run you should investigate. Can the query be optimized? Do we need to spin up more clusters? Or, do we need to do some pre-aggregation?
 
 These are all fairly advanced solutions. To learn how to optimize the SQL, read our book entitled _SQL Optimization_. To spin up more clusters you will need to consult with engineering and the Data Governor. To do pre-aggregation you should consult with the Data Governor and create a new view at the Data Warehouse level so that others can use this newly formed data.
 

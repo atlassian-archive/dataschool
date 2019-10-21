@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1-kn5Zp9--Pz53acBH1OC-CWn8Mx4Z3oppR-uN0ONprc/edit?usp=sharing
-image: "/assets/images/Read Only.png"
+image: "/assets/images/ReadOnlyUserPermissions (1).png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -37,7 +37,7 @@ There are two main configuration options to work with your production database n
 
 If you are going to analyze data on your production server create and use a read only user account. This will prevent you from making any updates to the data during your analysis by accident. Granted this is unlikely but it is a good precaution to use. It also makes it possible to grant other people access for analysis purposes and guard against their errors.
 
-![](https://lh3.googleusercontent.com/7FXwkEtLZdFCtfW6a1nZEgp5QNSmIAkX7bffxmGalmKfhaIJLiLkce66m6tTkpUcqxeF2IVRDcm4OpdePesV_YuHAYcJTfqO7owwsFtUdB-o_Gmzo4w5BdJA9FNv4Bel6gwR1ixx)
+![Permission Settings for Source Data](/assets/images/ReadOnlyUserPermissions.png "Read Only User Permission")
 
 This functionality exists across database providers.
 
@@ -45,7 +45,7 @@ This functionality exists across database providers.
 
 If you’re worried about read performance of your DB and want to query the data without impacting the performance of your application, create a read only replica of the production database. This also makes it possible for people not as familiar with the data to query it since there are little consequences of running an incorrect or large query.
 
-![](/assets/images/Screen Shot 2019-09-30 at 9.36.54 PM.png)
+![Source Database, Read Only Replica](/assets/images/ReadOnlyReplicaDatabase.png "Read Only Replica Database")
 
 Creating a [read only replica in RDS](https://aws.amazon.com/rds/details/read-replicas/) is easy but can be hard on other platforms
 
@@ -59,7 +59,7 @@ Now that we have safe access to the database we need to get the data out in ways
 
 Running one-off queries can be useful to understand what is going on in the data but needing to export data into another tool like Excel can be cumbersome especially if you are trying to have real time visibility. Using a SQL based BI product will allow you to create visualizations and dashboards that can be refreshed automatically. You won’t have to manually fetch your data. Additionally, some SQL based BI tools such as Chartio allow you to connect to data sources such as Google Analytics, that you might otherwise not be able to.
 
-![](https://lh5.googleusercontent.com/hq_Gp6vTdJzXIPBRD7U2fkh0ME9jPwwHdJWi-YBDzJVNx8A1jvGyp3epOYTZQm68KnYrWHA81CHm8REoq1_2m5MSalmh4-VdXkC_PdWlcj6Af-VbN2SS0sbt9o3NVukEENMcfXOz)
+![Connect your BI tool to many Sources](/assets/images/DataSourceOptions.png "Data Source Options")
 
 Being able to blend this data is a way to have the benefits of a Data Lake without architecting one. This will help you produce better insights.
 
@@ -80,7 +80,7 @@ Another option is to use an IDE. While it does not provide as much functionality
 * HeidiSQL
 * SQL Workbench
 
-![](https://lh3.googleusercontent.com/nGX5gdLBIhRZANBZflKRyKUsVtPLtm5yiwOXYYkccVzwkOo0Gn6aRObIizI0oX89xR0bsDKo5gjPVId0J-rtlycPB1s5K66aYR8LBUhg26T267aL3nyWF2EssWIupdl_kgLxPOF4)
+![Use and IDE to Query your data](/assets/images/IDEexample2.png "IDE Example Query")
 
 #### Excel
 

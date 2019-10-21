@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1edd-_jVBC597JSJG60cNANT7KazukO-hUxKLj74ziKY/edit?usp=sharing
-image: "/assets/images/Data Sources.png"
+image: "/assets/images/DataLakeDiagramCover.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -34,7 +34,7 @@ The main place where maintenance issues occur is when the data from the sources 
 
 Ideally, this is as simple as clicking a few buttons inside of an ELT product. Products such as Fivetran, Stitch, and Blendo have large numbers of connectors for different data sources:
 
-![](https://lh3.googleusercontent.com/lvRcwi8dRbmbWldSPsKMydxah97SNqrem0qwWfQPayBD5dqa7msI2NEJkNbga6tJnm6sJEKADTxY9-uMkhw-ZYvTY6WbaYasqpbDlYBuC10H6C3ZJZRD5yeh0QhTHxHLphylt5eZ)
+![Adding new data sources](/assets/images/NewDataSources (1).png "Data Sources")
 
 [https://fivetran.com/directory](https://fivetran.com/directory "https://fivetran.com/directory")
 
@@ -46,17 +46,17 @@ Ideally, this is as simple as clicking a few buttons inside of an ELT product. P
 
 Sources change all the time, ETL tools handle these for you. This is what they focus on, so they will work to update API calls to make sure the data you are getting is accurate.
 
-![](https://lh4.googleusercontent.com/D3lNT3xQXyuEZzz-6689843AoElOyypifxTSpMMHZBk34SbqyWNNqMHBBB131TjOH6sw1XosafQm18QAWYqSo9JiBZx-5TncV7PT9p3rW77Q-QxDoXSj8vXsGl1rLHEYlhKU0fQT)
+![Data Source Updates from ELT Tool](/assets/images/DataSourceUpdates.png "Data Source Updates")
 
 ### Fixing broken connections
 
 Occasionally you will need to manually reconfigure things. If a data source adds a new field or removes a certain table some of your queries might break. You will need to look into the changes and update your queries to work appropriately.
 
-![](/assets/images/Screen Shot 2019-09-30 at 10.35.51 PM.png)
+![Data Source Update Broken Query](/assets/images/BrokenQuery.png "Broken Query")
 
 As shown in the case above, we need to consult the datasource and update the field name in the query. Therefore, to fix the query, we updated "cost" to "campaign_cost" as shown below.
 
-![](/assets/images/Screen Shot 2019-09-30 at 10.36.18 PM.png)
+![Fix Query after Data Source Updates](/assets/images/FixedQuery (1).png "Fixed Query")
 
 ## Performance
 
@@ -70,13 +70,13 @@ There are simple concepts to keep in mind when optimizing queries. Only join wha
 
 Many BI products allow you to cache data for improved query speeds and less strain on the database itself. While this reduces the real time nature of your analytical query, you can query the data as much as you would like.
 
-![](/assets/images/Screen Shot 2019-09-30 at 10.37.04 PM.png)
+![Caching data in Chartio](/assets/images/CachingData.png "Cache Data")
 
 ### Create limits
 
 Some platforms struggle with concurrency, where lots of people are querying the same source at once. Improve query speed in these scenarios by limiting how many queries people can perform on the database. While this can be a blow to people’s curiosity or analysis it quickly solves this performance problem.
 
-![](https://lh5.googleusercontent.com/9DFpy-EsVALoyHPi9VgSJ2fVCxw5rrhXUU0gdTHKa53SvsXpgAtRRV1MkWXL33OfchJLwwleM4H_KzCn4ay7xUnfXmnnsCattHbcZFGJU0j4QWwD8Y_OX4XY-qpOMg0Iy2kySAYO)
+![Solve Concurrency with limits](/assets/images/QueryLimits.png "Limit Query People")
 
 Queries can be limited in different ways:
 
@@ -84,12 +84,12 @@ Queries can be limited in different ways:
 * Limit queries per day
 * Big Query - Set max bytes
 
-![](https://lh4.googleusercontent.com/cWIU4UojEVcEtiOGQYCaNZTJIuTlNH9rjk_iBu3sedBKASalfahg3sQfleCW2-zFMyv3ZfKssMCiHdo8aKJtaAyLTnWXhCsAHhauUyPw6_z4CtijUjP0_q_l9i66UBa37K2BukVn)
+![Big Query Limit queries](/assets/images/LimitQuery.png "Limit Queries")
 
 ### Scheduling
 
 Examine how your BI product queries the database. Does it do it automatically on a schedule or is it manual. Tools such as Chartio have Smart refresh options to run queries at off peak times to balance the load on the database.
 
-![](/assets/images/Screen Shot 2019-09-30 at 10.37.16 PM.png)
+![Chartio database refresh schedule](/assets/images/ScheduleRefresh.png "Schedule Refresh")
 
 These sorts of tweaks become especially important as more users query the database.

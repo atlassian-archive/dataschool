@@ -11,14 +11,15 @@ authors:
 - _people/tracy-chow.md
 - _people/jaime-flores-lovo.md
 - _people/aaron-aihini.md
-reviewers:
-- _people/dave.md
-- _people/matt.md
+reviewers: _people/twange-kasoma.md
 cover_image: "/assets/images/book-covers/data-governance.png"
 main_color: "#143676"
 is_featured: true
 status: in_progress
-snippet: Learn how to manage your data stack and set up processes to get the most out of your data in your organization. We will cover best practices for when you are still querying production all the way up to setting up data marts for different business lines in your organization.
+snippet: Learn how to manage your data stack and set up processes to get the most
+  out of your data in your organization. We will cover best practices for when you
+  are still querying production all the way up to setting up data marts for different
+  business lines in your organization.
 
 ---
 Learn how to manage your data stack and set up processes to get the most out of your data in your organization. We will cover best practices for when you are still querying production all the way up to setting up data marts for different business lines in your organization.

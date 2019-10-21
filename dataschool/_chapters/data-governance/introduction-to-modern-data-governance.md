@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: "/assets/images/data sopistication stack.png"
+image: "/assets/images/IntroductionToModernDataGovernance.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false

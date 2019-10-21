@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1OTMitbsvp76MoOw6whTNpUDBc9_u6eXHFLtfJ6yZFbA/edit?usp=sharing
-image: "/assets/images/Consolidate Data Sources.png"
+image: "/assets/images/ConsolidateDataSource.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -47,11 +47,11 @@ Imagine you were tracking sign-ups via Hubspot and after a year you decided to s
 
 When your company has used multiple tools to track the same type of data, if you can, migrate the data from the previous tools into the latest tool. If this is not an option, use the data warehouse to create a table which UNIONs the data from both sources so that the historical record is not lost and to have one place to go to for the relevant metrics. This will require some renaming and cleaning to accomplish.
 
-![](https://lh5.googleusercontent.com/QeJLs7zZHh01xpwnfDoY_fh-0tx25R3oMCpLDpn7znIUNuP9V-y7ncl6TP42dztFq4813d8G-dpsb7ZY2-slncBSwNsmn3wdqCHAilMy01vaxdaWSRuw_R4O7_pBCBkRrt4WVsdp)
+![Consolidate Salesforce and Hubspot data](/assets/images/ConsolidateDataSource-1.png "Consolidate Data Sources")
 
 In addition, if you want to maintain access to old/unused data sources from your Data Lake in your Data Warehouse, you can label data sources as deprecated or approved to help guide people during their analysis.
 
-![](https://lh3.googleusercontent.com/qmlE0lA9TL7LyBpOfAq3DNjB1yBggNEWF4QmDnKgVLzf-8_A6dgoNyo3xlnlob0_Q2hDVKbHoXWqTKgLf2t_ZCpjsmpQQnrzIoPRN6C97cE4P3RWwWmKesJeBndVOX41OzcB4U5c)
+![Naming Convention Deprecation](/assets/images/DepracateDataSources.png "Deprecate Data Sources")
 
 ## Simplify Schema
 
@@ -65,7 +65,7 @@ We create a Single Source of Truth by creating views on top of the existing sche
 
 Table and column names are typically created by engineers to be used by the application the data is from. Table names, column names, and even a columns whole purpose for being in the table can be confusing to whoever did not write the code. This makes it challenging for business users to analyze the data without consulting with the engineer. We can review the table in Why Build a Data Warehouse:
 
-![](https://lh4.googleusercontent.com/orujeq0VhTYWnajkOgRA9FbWHGhyEZRrJPZfF-bUZx_KlwNLQY2Z9G3cOW07hpu0JvqMLf_1Boq5ysGmzwSin7LQS5WhUAcb638oNbLm9hz8vaU_qtts4NJd7TwW1cBiunB9N7Ux)
+![](/assets/images/SimplifyTables.png)
 
 * Having multiple Id columns can be confusing.
 * Nulls can produce [unexpected results during aggregations](https://dataschool.com/how-to-teach-people-sql/how-sql-aggregations-work/).
@@ -84,19 +84,19 @@ When going through and recreating the schema with views of the relevant tables y
 
 It's quite common for raw data to be extremely complex. Data was typically meant to be consumed by applications and not directly by business users. By taking some time to simplify data, we can greatly improve business user success when querying.
 
-![](/assets/images/Screen Shot 2019-08-27 at 10.56.25 AM.png)
+![Simplify style guide](/assets/images/Screen Shot 2019-08-27 at 10.56.25 AM.png "Simplify Data")
 
 #### Cleaning
 
 Data is messy and requires some cleaning to ensure accurate results. Cleaning prevents common problems that might cause a query to produce incorrect results.
 
-![](/assets/images/Screen Shot 2019-08-27 at 10.56.34 AM.png)
+![Cleaning data style guide](/assets/images/Screen Shot 2019-08-27 at 10.56.34 AM.png "Clean Data")
 
 #### Naming Conventions
 
 Initially there will be a variety of naming conventions used for tables, columns, and values. Creating a standard for all of these makes it easier for others to find and understand the data they are looking for.
 
-![](/assets/images/Screen Shot 2019-08-27 at 10.56.42 AM.png)
+![Naming Conventions Style Guide](/assets/images/Screen Shot 2019-08-27 at 10.56.42 AM.png "Name Conventions")
 
 Publish a style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
 
@@ -117,7 +117,7 @@ Another more subtle problem with metrics are their abbreviations. If Monthly Act
 
 To define the calculation of a metric, create a Dashboard with this metric in it and provide text on the dashboard to explain how it was calculated and what has been filtered out. Make this easily searchable!
 
-![](https://lh3.googleusercontent.com/6d-LTl0TZQciojSmsNUcjCnurkl92dLqXbCe7FW2RsRCi9uOdJXRZg8sZQXsY9jsa7UmX4WJJTFiV7Tl0pGMtGBYUOmV2tm_keUvBLqx64jNFBkQotzi4QBuFy44E-Phgo3T0kfw)
+![Standard metric dashboard](/assets/images/StandardMetricsDashboard.png "Standard metrics")
 
 Another approach is to pre-calculate the metric in a view that is part of the Single Source of Truth database. We recommend doing this through a SQL based modeling tool such as dbt or Dataform. Defining the metric in the database will remove most, if not all, of the confusion.
 

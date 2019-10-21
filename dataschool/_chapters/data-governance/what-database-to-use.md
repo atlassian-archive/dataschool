@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: "/assets/images/snowflake.png"
+image: "/assets/images/SnowflakeCover.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -37,7 +37,7 @@ Here are the four main choices for a modern Data Warehouse on the cloud. Note - 
 
 ### Amazon Redshift
 
-![Image result for redshift](https://www.blazeclan.com/wp-content/uploads/2013/08/Amazon-Redshift-%E2%80%93-11-Key-Points-to-Remember.png)
+![Logo for Amazon Redshift](/assets/images/AmazonRedshiftLogo.png "Amazon Redshift")
 
 #### Pros
 
@@ -51,7 +51,7 @@ Users can often run into concurrency issues with Redshift if it isn’t set up p
 
 ### Google BigQuery
 
-![Image result for bigquery](https://miro.medium.com/max/1000/1*A8liBoeAwAZg7rDu394jYg.png)
+![Logo for Google BigQuery](/assets/images/GoogleBigQueryLogo.png "Google BigQuery")
 
 #### Pros
 
@@ -63,7 +63,7 @@ Cost is determined per query byte, making it difficult to budget or regulate if 
 
 ### Snowflake
 
-![Image result for snowflake data warehouse](https://miro.medium.com/max/1088/0*AmYXrtpALhMlQcZI.png)
+![](/assets/images/SnowflakeLogo.png)
 
 #### Pros
 
@@ -79,7 +79,7 @@ Snowflake is a relatively new Data Warehouse in the market, so if you are famili
 
 ### PostgreSQL
 
-![Image result for postgresql](https://miro.medium.com/max/5040/1*115cqXTggxGeZq5m-yFnrw.png)
+![Logo for PostgreSQL](/assets/images/PostgreSQLLogo.png "PostgreSQL")
 
 #### Pros
 
@@ -101,7 +101,7 @@ Once you have selected your data warehouse solution, you will need to decide how
 
 ### View and dbt
 
-![Image result for get dbt](https://aws1.discourse-cdn.com/standard11/uploads/getdbt/original/1X/0a05220c3d18b60eff99ae9922c00325cfadf12e.png)
+![Logo for dbt](/assets/images/dbtLogo (1).png "dbt")
 
 Doing an ETL/ELT in the same place, such as if you are using Redshift for both your database and data warehouse, simplifies your process and keeps your data stack lean. This is desirable because you will have less environments and tools to manage and your data will be housed in one location. You can just do it without having to extract and load. Transform only!
 

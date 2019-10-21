@@ -5,12 +5,12 @@ meta_title: Use ELT for Data Lakes
 description: Learn why you should use an ELT over a ETL process for your Data Lake
 number: 7
 authors:
-- _people/dave.md
+- _people/kostas-pardalis.md
 reviewers:
 - _people/dave.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1OTGslZaat0-XI74tzWy6kVDyZ21-4kUVzRLqYH-1nQ4/edit?usp=sharing
-image: "/assets/images/data lake.png"
+image: "/assets/images/ETLvsELTCover (1).png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -48,13 +48,13 @@ While we do not recommend much transformation occuring at the Data Lake stage, t
 
 In the case of S3 as a data lake, you can use Amazon Spectrum \[[4](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html)\] to transform your data from S3 and load it into Amazon Redshift using SQL queries. You will then be able to run analytical queries in your BI tool.
 
-![](https://lh4.googleusercontent.com/f7KfBJoglxNjJu_1FiuZ4jfW9ooQEAqP05ZanTvm8KRHkNjSL1324KTO87v2ukfRK-tvD7y63rYwdSUo2iA4-gFCiG4BHsdB1G1LWDXx93STa8iu5PgTZUpseStZB2LVbwWP18Cl)
+![Data Lake S3 ELT](/assets/images/S3ELT (1).png "S3 ELT")
 
 ### Difficult data
 
 In the case where you use a data warehouse database such as Redshift for your data lake, you can use a technology like dbt\[[5](https://getdbt.com/)\] to transform your data to make it more easily queried by your BI tool.
 
-![](https://lh4.googleusercontent.com/lN8Ds8IuGx4LwhtEsoGohpMYvcmUb13Moid_ZYACKsP91EW7ilSVUPSKIAK1b-2qHvqjse-dIYCIm0JoEO-lgE11oPSMv_XL-7kyoOWEy-ab3m3Lde7aWq7Bqifm3OBFKzdWCCIF)
+![Redshift ELT DBT Chartio](/assets/images/ETLvsELT.png "Redshift ELT")
 
 Keep in mind that you can use these same transformation tools to extract data from the Data Lake and load it into your Data Warehouse.
 

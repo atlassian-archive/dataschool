@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1skdYsoMVrof7aEo5VsqhpFtC7SwnJC9foTA-2peSx4o/edit?usp=sharing
-image: "/assets/images/Screen Shot 2019-09-30 at 9.42.25 PM.png"
+image: "/assets/images/SnippetDictionaryCover (2).png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -37,7 +37,7 @@ Instead, keep a document or wiki page with warnings about known complexities in 
 
 Another useful document to keep is a dictionary of base queries or snippets for common metrics.  When working with data that hasn't been modeled yet, you end up having to repeat a lot of the same filters over and over again.  It's helpful to be able to grab those easily when needed, rather than re-create them each time.  
 
-![Snippet dictionary on a dashboard](/assets/images/Screen Shot 2019-09-30 at 9.42.25 PM.png)
+![Snippet Dashboard and Snippet Query file](/assets/images/SnippetDictionary.png "Snippet Dictionary")
 
 These can be stored on a wiki, .sql file, or even as a dashboard of these queries saved as charts.  With the right BI product, the dashboard method is ideal, as these snippets are rendered as starter charts that can be easily duplicated and adjusted.  
 
@@ -47,7 +47,7 @@ Along with the snippets, it is a best practice to add comments describing how th
 
 Agile BI products will allow you to do some light modeling of the data at the BI layer.  In Chartio for instance there is a Schema Editor, that enables you to quickly rename fields, hide columns, specify join paths, and create custom columns or tables. Time here can be well spent, but if you're doing too much of it, consider moving all the way forward to the [Warehouse stage](/data-governance/why-build-a-data-warehouse/) where your efforts will be more universally applied.   
 
-![](https://lh3.googleusercontent.com/zG4ozj43oza7HHf9wKwKVkDmuB7f0XgrCQ6-lPmkgrlyvzF5VeSwfAed6V-lFKRKMSXfGZe32WMTuDwU3gjjJqSwFCFmRsBDVMwgr45Fbmvw5gufFQ09QJBUTTaXslYIGEQyi1aa)
+![Meta modeling in BI product](/assets/images/BILayerMetaModeling.png "BI Layer Modeling")
 
 If you're using Tableau, they have a feature called Data Interpreter that will do this as well.  
 
@@ -69,7 +69,7 @@ These interfaces will be even more useful on top of cleaned/modeled data in the 
 
 Whenever you are producing visualizations unexpected or null values can make your analysis incorrect. Always do a quick review of the raw data by sorting each field to see if you need to remove, ignore, or update nulls/outliers so that your analysis is correct.
 
-![Double check data results](http://img.chartio.com/3c19cb9722dd/Image%202019-10-20%20at%206.35.31%20PM.png)
+![Check your Query Results](/assets/images/DoubleCheckQueryData.png "Double Check Data")
 
 Read this post on [Finding Outliers with SQL](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/)
 

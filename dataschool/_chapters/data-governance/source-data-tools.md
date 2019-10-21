@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1RudG3G8RGKgqayeY9R89EcYi1Sob3LclEcGwfBywVlA/edit?usp=sharing
-image: "/assets/images/Screen Shot 2019-09-30 at 9.48.53 PM.png"
+image: "/assets/images/StartingWithSourceData.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -68,7 +68,7 @@ For data sources such as your production database you can query it directly from
 
 Tools like Geckoboard or Grow allow you to bring in data from cloud applications via APIs to visualize data in simple ways. This allows you to combine data from multiple places into a single dashboard with simple visualizations to be viewed.
 
-![](https://lh5.googleusercontent.com/iYU4tKzB-RWRr5cHTIyQl0aBYcp26XQdfpTUOCiidFTP4_RSkWE6xB9J3pivIUCAzEW43xVVSqzCXQuSnpzF_vsXag_Q56m7GlzuF8DJDaWOBT-M_klyCujTVRhbgl6q_RVXVBEg)
+![Cloud Dashboarding Tool](/assets/images/CloudDashboardingTool.png "Cloud Dashboard")
 
 They often come with some nice default dashboards setup automatically for you and can look great and be great for showing on TV's around your office - keeping teams aware of what's going on.  They will be limited in the ease and possibilities of their customizations.
 
