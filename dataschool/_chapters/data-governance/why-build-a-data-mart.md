@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1WCqInQvsI3LSBJ3E8Af1Sfmsl2EK5DWlzQgSPeWVmDU/edit?usp=sharing
-image: "/assets/images/Data Mart Schema.png"
+image: "/assets/images/DataMart (1).png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -38,15 +38,15 @@ As an organization scales the amount of data it is tracking, the number of peopl
 
 We want to go from a complex schema:
 
-![](https://lh4.googleusercontent.com/aCGL8MDXzwytGTb2ewvGgT5vVdpNjPXbvzY2GzUF8iBKz44hLIPNlMRoKQgMqkSPEgE5w8G173KYjd6w1n63-5T2YfwfMNzM_8aW8m7gvojVQqZnkG29YrgnlKes8XZyOdQ4y2Td)
+![Large complicated schema example](/assets/images/ComplexSchema.png "Complex Schema")
 
 To a siloed schema, where each department has the data they need:
 
-![](https://lh5.googleusercontent.com/yoWAESu6C73f2sdpA4GzMU8zG0XNK0jTagC6Q7e-8yudgJgObcOIvjMPKWtJ8MlMNfhtUtELBAlE6HE0H7b3TZC8y40elE5shv0MGwJ5ldVY7fSZiBPDB-U-hSVi1x0L4cPMotpH)
+![Sectioning off a complex Schema with Marts](/assets/images/ComplexSchemaDataMart.png "Complex Schema with Marts")
 
 So while going from Lake to Warehouse was mostly about cleaning up tables, going from warehouse to marts is about cleaning up schemas. Different departments need different parts of the Data Warehouse schema.
 
-![](https://lh5.googleusercontent.com/IJ17R4l5ee_IzucFnpl34MYuHhFXoqI6yOtPsYxEGyvN4Rqt8M8GuQzo35kOc86FIfHEeYE42qORp-C6G19KuMquuqM6k0jybTjBKSyoCQnuk7kWJrJcNKWrEgjZ-6J5IwQ8yI7E)
+![Show permissions break down for data marts](/assets/images/DataMartGrid.png "Data Mart Grid")
 
 ## How Data Marts are different from Data Warehouses
 
