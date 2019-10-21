@@ -53,7 +53,7 @@ If you're using Tableau, they have a feature called Data Interpreter that will d
 
 <!--- TODO: Matt, maybe explain a bit more on Tableau? --->
 
-## Drag and Drop
+## Visual, Drag and Drop Exploration
 
 In addition to SQL access some BI products with drag and drop data explorers such as Tableau Desktop or Chartio's Visual SQL will handle writing the SQL for you.  Generally exploring data visually is much faster and intuitive than writing raw SQL.  Visual interfaces will handle changing data format strings, join paths, new groupings, unique dialects, etc. automatically - saving you a lot of googling and debugging.
 
@@ -81,7 +81,7 @@ We've noticed that people have a tendency to keep adding more and more charts to
 
 With a long dashboard, simply checking in on your dashboard to get the latest on one or two of your key charts is going to kick off hundreds of queries.  We've written more on the best practices of [keeping short dashboards here](https://chartio.com/blog/best-practice-keep-shorter-dashboards/), but in short, it's best to organize them in smaller groups and create quick links between them.
 
-![Organized, short dashboards](https://chartio.com/images/blog/best-practice:-keepshorter-dashboards/best-practice:-keep-shorter-dashboards-0.png)
+![Organized, short dashboards](https://chartio.com/images/blog/best-practice:-keep-shorter-dashboards/best-practice:-keep-shorter-dashboards-0.png)
 
 
 ## Design before building
@@ -90,7 +90,7 @@ Another common pitfall is starting a dashboard by exploring data first.  When yo
 
 [![How to Design a Dashboard](https://dataschool.com/assets/images/book-covers/how-to-design-a-dashboard.png)](/how-to-design-a-dashboard/)
 
-In short - for key dashboards that you'll be continually monitoring spend some time in pen and paper first, outlining exactly what you want to see and how.  It will save you a lot of time and result in a considerably more useful dashboard.
+In short - when creating key dashboards that you'll be continually monitoring spend some time in pen and paper first, outlining exactly what you want to see and how.  It will save you a lot of time and result in a considerably more useful dashboard.
 
 ## Summary
 
@@ -99,6 +99,8 @@ Analyzing source data can be tricky since it has not been cleaned or modeled how
 * Keep a short regularly updated snippet dictionary
 * Use BI products to overcome data issues such as weird field names and complex joins
 * Double check the data before visualization
+* Keep shorter Dashboards
+* Design dashboards in pen and paper first
 * Keep an eye on query performance if you are hitting the production database
 
 Lastly, you should start exploring tools to pipe in multiple sources of data that are not handled by your SQL based BI tool to build your Data Lake.
