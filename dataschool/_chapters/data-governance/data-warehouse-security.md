@@ -10,7 +10,7 @@ reviewers:
 - _people/dave.md
 - _people/matt.md
 feedback_doc_url: ''
-image: "/assets/images/Frame-4.png"
+image: "/assets/images/DataWarehouseSecurity.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -37,7 +37,7 @@ Within large companies, often times everything is confidential and departments a
 
 ## How to secure sensitive data on the database
 
-![](/assets/images/Frame-2.png)
+![](/assets/images/DataWarehouseSecurity-1.png)
 
 The most direct way to limit access to the proper people is to enforce rules on the database level. This can be done through creating slave read only replicas or creating custom users so that the only data people have access to is already cleaned or you can set row level permissioning to keep it extra secure.
 
