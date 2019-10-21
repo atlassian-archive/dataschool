@@ -4,6 +4,7 @@ title: About this Book
 meta_title: About Modern Data Governance
 description: "Information about who this book is for, who it's not, how we wrote it, disclaimers, influences and how to contribute."
 number: -5
+image: http://img.chartio.com/3835f24267b8/Image%202019-10-20%20at%205.27.22%20PM.png
 authors:
 - _people/dave.md
 reviewers:
@@ -18,25 +19,27 @@ reading_time: 4
 ---
 ## Who this book is for
 
-This book is for anyone looking to setup an effective, modern (typically cloud based) data stack that will truly enable a company to explore and understand the data it collects to have high visibility into their business.  
+This book is for anyone looking to setup an effective, modern (typically cloud based) data stack that will truly enable a company to explore and understand the data it collects to have high visibility into their business.  It's for people who value their data and realize that a company that is truly informed by their data has significant competitive advantages.
+
+![Democratized data organization](http://img.chartio.com/3835f24267b8/Image%202019-10-20%20at%205.27.22%20PM.png)
 
 It applies to teams setting up either [Centralized or Democratized data workflows](/data-governance/democratized-or-centralized/) with an encouraging bias toward Democratized.   
 
-## Who this is not for
+## Who this is NOT for
 
-At the moment, this book is not focused on the extreme end of what you might call Big Data.  As a general guideline for where that might cut off, we'll call that teams collecting more than 100GB of data per day.  Those teams may still find this book generally useful (especially for the majority of their tables that are usually significantly less than the event streams), as long as they appreciate that the details and recommendations for implementing a data stack at that scale aren't covered here.  
+At the moment, this book is not focused on the extreme end of what you might call *Big Data*.  As a general guideline for where that might cut off, we'll call that teams collecting more than 100GB of data per day.  Those teams may still find this book generally useful (especially for the majority of their tables that are usually significantly less than the event streams), as long as they appreciate that the details and recommendations for implementing a data stack at that scale aren't covered here.  
 
 Our eventual goal is to create "Big Data" section inserts throughout the book that will go into the details that those working with enormous datasets will also have to know, while not cluttering the book for the 99% use case.
 
-This book is also not dealing with AI workflows, or realtime operational use cases.  It is purely to build and maintain a reporting and analysis data stack.
+This book is also not dealing with *AI workflows*, or *realtime operational use cases*.  It is purely to build and maintain a reporting and analysis data stack.
 
-Lastly, this book is not written for long time data experts, vendors and thought leaders.  If it were, we would go into more detail on the pros and cons of each choice and defend why we chose each recommendation.  Doing so would greatly clutter the book ruining the experience for those who really need this book and are trying to understand a clear path to a quality data stack.
+Lastly, this book is not written for long time *data experts, vendors and thought leaders*.  If it were, we would go into more detail on the pros and cons of each choice and defend why we chose each recommendation.  Doing so would greatly clutter the book ruining the experience for those who really need this book and are trying to understand a clear path to a quality data stack.
 
 We instead encourage continued discourse on what constitutes modern and quality data governance practices on blogs, twitter and our [Data School slack channel]({{site.slack_url}}).
 
 ## How to read this book
 
-The book is structured in 4 stages of sophistication: Sources, Lake, Warehouse and Mart.  This is the journey we see companies go through as they setup they grow and their data needs become more sophisticated.  Each section starts with a quick section describing when your company may be a good fit for staying at that stage, and when your company should move on to the next stage.  
+The book is structured in 4 stages of sophistication: [Sources](/data-governance/source-data-tools/), [Lake](/data-governance/why-build-a-data-lake/), [Warehouse](/data-governance/why-build-a-data-warehouse/) and [Mart](/data-governance/why-build-data-marts/).  This is the journey we see companies go through as they setup they grow and their data needs become more sophisticated.  Each section starts with a quick section describing when your company may be a good fit for staying at that stage, and when your company should move on to the next stage.  
 
 If you find you're already at a later stage, you may have a data lake already setup for instance, you may want to skip ahead to that section.  Note though that many best practices are discussed at each stage and are brought up in the stage where they first start to be relevant.  It will be assumed that these are already known at the later stages and they won't be repeated.  So it may benefit you to at least skim those earlier stages even if you and your company are further ahead.
 
@@ -50,7 +53,7 @@ That our experience for this book has been gained by working with well over a th
 
 The main books on setting up data stacks are over a decade old, most being pre-cloud and especially pre C-Store warehouses.  The state of modern data governance today is largely self-taught and unguided, a reality which is what lead us to write this book.  
 
-This book, starting from Chartio, is primarily influenced by first hand experiences and directly working with hundreds of modern cloud-based customers over a decade in BI.  The second largest influence is working with our many vendor and consulting partners.  Third, are the many community shared posts from a lot of different companies on blogs and in data slack channels.  And lastly, it's worth noting some classic books that have influenced (sometimes negatively but mostly positively) the data community.  
+This book, starting from Chartio, is primarily influenced by first hand experiences and directly working with hundreds of [modern cloud-based customers](https://chartio.com/customers/) over a decade in BI.  The second largest influence is working with our many vendor and consulting partners.  Third, are the many community shared posts from a lot of different companies on blogs and in data slack channels.  And lastly, it's worth noting some classic books that have influenced (sometimes negatively but mostly positively) the data community.  
 
  - [Agile Data Warehouse Design](https://www.amazon.com/Agile-Data-Warehouse-Design-Collaborative/dp/0956817203/) by Lawrence Corr
  - [The Data Warehouse Toolkit](https://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/) by Ralph Kimball

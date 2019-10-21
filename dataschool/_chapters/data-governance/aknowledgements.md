@@ -19,7 +19,6 @@ story_intro_blurb: ''
 reading_time: 4
 
 ---
-
 This book has been a large effort by a number of people and continues to evolve with community involvement.  We aim to keep this book always "Modern" with updates, contributions, reviews easily submitted via email or committed through Github - where the source for this whole site is kept.
 
 ## Thank you's

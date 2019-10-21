@@ -23,6 +23,8 @@ reading_time: 5
 
 A Data Lake is a storage repository of multiple sources of raw data in a single location. In the cloud these are typically stored in cloud c-store data warehouses or in S3 buckets, the data can be in a variety of formats and can be structured, semi-structured, unstructured, or even binary.
 
+![Building a Data Lake](http://img.chartio.com/a52373642904/Image%202019-10-20%20at%205.31.17%20PM.png)
+
 The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast the term Data Mart which described orderly, siloed, and refined data. Having all the data in one place made it easier to work with large data sets and to start getting out insights earlier in the data modeling process.
 
 ### This stage is right for you if
