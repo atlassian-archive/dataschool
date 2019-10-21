@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1RudG3G8RGKgqayeY9R89EcYi1Sob3LclEcGwfBywVlA/edit?usp=sharing
-image: "/assets/images/InAppDashboards.png"
+image: "/assets/images/StartingWithSourceData.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
