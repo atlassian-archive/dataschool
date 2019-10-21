@@ -83,19 +83,19 @@ When going through and recreating the schema with views of the relevant tables y
 
 It's quite common for raw data to be extremely complex. Data was typically meant to be consumed by applications and not directly by business users. By taking some time to simplify data, we can greatly improve business user success when querying.
 
-![](/assets/images/Screen Shot 2019-08-27 at 10.56.25 AM.png)
+![Simplify style guide](/assets/images/Screen Shot 2019-08-27 at 10.56.25 AM.png "Simplify Data")
 
 #### Cleaning
 
 Data is messy and requires some cleaning to ensure accurate results. Cleaning prevents common problems that might cause a query to produce incorrect results.
 
-![](/assets/images/Screen Shot 2019-08-27 at 10.56.34 AM.png)
+![Cleaning data style guide](/assets/images/Screen Shot 2019-08-27 at 10.56.34 AM.png "Clean Data")
 
 #### Naming Conventions
 
 Initially there will be a variety of naming conventions used for tables, columns, and values. Creating a standard for all of these makes it easier for others to find and understand the data they are looking for.
 
-![](/assets/images/Screen Shot 2019-08-27 at 10.56.42 AM.png)
+![Naming Conventions Style Guide](/assets/images/Screen Shot 2019-08-27 at 10.56.42 AM.png "Name Conventions")
 
 Publish a style guide and distribute it among all of your employees, adoption of known terms becomes easier and easier.
 
@@ -116,7 +116,7 @@ Another more subtle problem with metrics are their abbreviations. If Monthly Act
 
 To define the calculation of a metric, create a Dashboard with this metric in it and provide text on the dashboard to explain how it was calculated and what has been filtered out. Make this easily searchable!
 
-![](/assets/images/StandardMetricsDashboard.png)
+![Standard metric dashboard](/assets/images/StandardMetricsDashboard.png "Standard metrics")
 
 Another approach is to pre-calculate the metric in a view that is part of the Single Source of Truth database. We recommend doing this through a SQL based modeling tool such as dbt or Dataform. Defining the metric in the database will remove most, if not all, of the confusion.
 
