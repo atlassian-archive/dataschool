@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/dave.md
 feedback_doc_url: https://docs.google.com/document/d/1RudG3G8RGKgqayeY9R89EcYi1Sob3LclEcGwfBywVlA/edit?usp=sharing
-image: "/assets/images/Screen Shot 2019-09-30 at 9.48.53 PM.png"
+image: "/assets/images/InAppDashboards.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -36,7 +36,7 @@ Data will live in many different places but the methods to analyze them boil dow
 
 Many modern SaaS applications come built with the same set of fixed dashboards and visualizations to showcase the data they are capturing. These charts are highly tuned to specific use cases and can be quite informative. In addition there are usually support people from that company who can help you understand them better or figure out issues in the data if you are having a problem.
 
-![](/assets/images/Screen Shot 2019-09-30 at 9.48.53 PM.png)
+![Two examples in app dashboards](/assets/images/InAppDashboards-2.png "In App Dashboards")
 
 ### Excel
 
@@ -46,18 +46,18 @@ Most applications allow you to export your data into csv files. You can take thi
 
 For data sources such as your production database you can query it directly from the command line but this can get messy and hard to keep track of queries and results. We suggest setting up an IDE such as PG admin to better handle querying data within a Schema.
 
-![](https://lh5.googleusercontent.com/M0Sv1u4JugdXuJ8kF0eIz9UOXvodNuIFZtSZQhj-d3zpY89llsjSO9gP7hYxtY0JgC60_VTBlmKHfA-RujYO4eigRywC_-PgqeOo2lsSbKKPakX6L-ua2KWL4vZQTidE-J3ZsI8f)
+![IDE Example, explore schema](/assets/images/IDEexample (1).png "IDE Example")
 
 ### Cloud Dashboarding tool
 
 Tools like Gecko Board or Grow allow you to bring in data via APIs to visualize data in simple ways. This allows you to combine data from multiple places into a single dashboard with simple visualizations to be viewed.
 
-![](https://lh5.googleusercontent.com/iYU4tKzB-RWRr5cHTIyQl0aBYcp26XQdfpTUOCiidFTP4_RSkWE6xB9J3pivIUCAzEW43xVVSqzCXQuSnpzF_vsXag_Q56m7GlzuF8DJDaWOBT-M_klyCujTVRhbgl6q_RVXVBEg)
+![Cloud Dashboarding Tool](/assets/images/CloudDashboardingTool.png "Cloud Dashboard")
 
 ### Self-Service BI
 
 Ultimately the best option to analyze source data is to use a flexible self-service BI tool such as Chartio. Tools like Chartio allow you to pull data in large amounts from applications and your database. You can then combine them in queries, analyze the data in multiple ways, and produce custom visualizations. It also allows for the queries to be automatically updated so that the information shown on dashboards is up to date.
 
-![](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y)
+![Chartio Dashboard Self Service BI](/assets/images/ChartioDashboardExample.png "Chartio Dashboard")
 
 This section will cover different ways to optimize your usage of source data and how you can prepare to transition to creating a Data Lake to unify your analytics.
