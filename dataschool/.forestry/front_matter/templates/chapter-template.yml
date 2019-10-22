@@ -26,7 +26,7 @@ fields:
   config:
     use_select: true
     min: ''
-    max:
+    max: 
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -35,8 +35,8 @@ fields:
   type: list
   config:
     use_select: true
-    min:
-    max:
+    min: 
+    max: 
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -84,7 +84,7 @@ fields:
   required: true
   config:
     min: '0'
-    max:
+    max: 
     step: '1'
 pages:
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md
@@ -92,7 +92,6 @@ pages:
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
 - dataschool/_chapters/misrepresenting-data/statistic-vs-distribution.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
-- dataschool/_chapters/data-governance/data-warehouse-data-stack.md
 - dataschool/_chapters/data-governance/source-data-stack.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
 - dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
@@ -120,7 +119,6 @@ pages:
 - dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-modeling-101/sqlbox-test-do-not-publish.md
 - dataschool/_chapters/data-governance/etl-vs-elt.md
-- dataschool/_chapters/data-governance/source-data-tools.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
 - dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
@@ -133,7 +131,6 @@ pages:
 - dataschool/_chapters/data-governance/introduction-to-modern-data-governance.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
 - dataschool/_chapters/data-governance/why-build-a-data-lake.md
-- dataschool/_chapters/data-governance/why-build-a-data-mart.md
 - dataschool/_chapters/fundamentals-of-analysis/choosing-metrics-for-product-launch.md
 - dataschool/_chapters/learn-sql/extras/what-is-the-difference-between-union-and-union-all.md
 - dataschool/_chapters/learn-sql/extras/hierarchical-data-in-sql.md
@@ -149,6 +146,8 @@ pages:
 - dataschool/_chapters/misrepresenting-data/survivorship-bias.md
 - dataschool/_chapters/misrepresenting-data/confirmation-bias.md
 - dataschool/_chapters/misrepresenting-data/trends.md
+- dataschool/_chapters/data-governance/data-warehouse-data-stack.md
+- dataschool/_chapters/data-governance/source-data-tools.md
 - dataschool/_chapters/sql-optimization/partial-indexes.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
