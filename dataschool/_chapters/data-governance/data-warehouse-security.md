@@ -10,14 +10,14 @@ authors:
 reviewers:
 - _people/dave.md
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1XKPWw5xgZeFPSSu_RbdIQ3yQJM4wEm_xJnkMOEoiZ1k/edit?usp=sharing
 image: "/assets/images/DataWarehouseSecurity.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time:
+reading_time: 
 
 ---
 At the warehouse stage, there are commonly more groups than just a centralized data team with access. You must use data governance to safeguard certain pieces of sensitive information from being accessed by the wrong people in your organization. Many regulations have been passed such as GDPR that you must comply with and many companies have industry standard compliance rules as well such as SOC and HIPAA that they have to adhere to.
