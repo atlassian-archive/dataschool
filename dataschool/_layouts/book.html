@@ -1,31 +1,36 @@
 ---
-layout: default
+layout: default-wide
 ---
 
 <p><a href="/books/">Web Books</a></p>
-<div class="mb-5">
-  <h1 class="mega-title">{{ page.title }}</h1>
-  <p>
-    Written by:
-    {% for author_path in page.authors %}
-      {% assign a = site.people | where: 'path', author_path %}
-      {% assign author = a[0] %}
-      <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
-    {% endfor %}
-    <br>
-    {% if page.reviewers %}
-      Reviewed by:
-      {% for reviewer_path in page.reviewers %}
-        {% assign a = site.people | where: 'path', reviewer_path %}
-        {% assign reviewer = a[0] %}
-        <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
-        {% if forloop.last != true %},{% endif %}
-      {% endfor %}
-    {% endif %}
-  </p>
-  <p>{{ content }}</p>
-</div>
 
+<div class="mb-5 row">
+  <div class="col-sm-4">
+    <img src="{{ page.cover_image }}" alt="Cover of {{page.title}}" class="">
+  </div>
+  <div class="col-sm-8">
+    <h1 class="mega-title">{{ page.title }}</h1>
+    <p>
+      Written by:
+      {% for author_path in page.authors %}
+        {% assign a = site.people | where: 'path', author_path %}
+        {% assign author = a[0] %}
+        <a href="{{ author.url }}">{{ author.title }}</a>{% if forloop.last != true %},{% endif %}
+      {% endfor %}
+      <br>
+      {% if page.reviewers %}
+        Reviewed by:
+        {% for reviewer_path in page.reviewers %}
+          {% assign a = site.people | where: 'path', reviewer_path %}
+          {% assign reviewer = a[0] %}
+          <a href="{{ reviewer.url }}">{{ reviewer.title }}</a>
+          {% if forloop.last != true %},{% endif %}
+        {% endfor %}
+      {% endif %}
+    </p>
+    <p>{{ content }}</p>
+  </div>
+</div>
 <ul class="d-none">
 {% assign bookchapters = site.chapters | where:'book_slug', page.slug | where:'is_hidden', false | sort: 'number' %}
 {% for chapter in bookchapters %}

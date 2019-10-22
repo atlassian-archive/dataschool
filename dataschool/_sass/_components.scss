@@ -226,13 +226,15 @@ a.header-link {
 }
 
 /* styles for Hubspot forms */
+div.chapter-followup form.hs-form, .homepage-signup form.hs-form {
+  padding: 1rem;
+}
 form.hs-form {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
   grid-column-gap: 0;
   grid-row-gap: 1rem;
-  padding: 1rem;
   font-family: 'open sans', sans-serif;
   font-weight: 600;
   border-radius: 0.25rem;

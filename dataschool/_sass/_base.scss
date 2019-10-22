@@ -150,12 +150,9 @@ section.page {
 }
 section.page-wide {
   max-width: none;
+  margin: 0 auto;
+  padding: 3rem 0 0;
 }
-// @media only screen and (min-width: 30rem) {
-//   section.page {
-//     margin-top: 4rem;
-//   }
-// }
 article, .home-hero {
   font-size: 1.2em;
 }
