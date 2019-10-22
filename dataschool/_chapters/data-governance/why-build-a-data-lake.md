@@ -29,7 +29,7 @@ The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast 
 
 ### This stage is right for you if
 
-* You need unique or combined charts/dashboards for cloud application sources like SalesForce
+* You need unique or combined charts/dashboards for cloud application sources like Salesforce
 * Your charts and dashboards will be created by a core set of people who will all be able to learn the in's and outs of the structure of the messy data
 * You're intimidated by data modeling (but just don't be - that's why we have this book)
 * You cannot spare the time for even light data modeling and are okay for now with the technical debt you're taking on
@@ -49,15 +49,15 @@ The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast 
 
 ### 1) Unifying
 
-As your data needs expands it becomes harder and hard to work with data kept in multiple different silo's.  It may make sense from a product perspective for your traffic data to be in Google Analytics, your sales records to be in SalesForce and your trial engagement data to be in some database, but when you need to analyze your funnel and attribution models you need them all together.  
+As your data needs expands it becomes harder and hard to work with data kept in multiple different silo's.  It may make sense from a product perspective for your traffic data to be in Google Analytics, your sales records to be in SalesForce and your trial engagement data to be in some database, but when you need to analyze your funnel and attribution models you need them all together.
 
-In the source stage we discussed blending options, but because blends load all pre-join results into the BI product these are extremely limited in how much data can be joined and are not a scalable solution.   
+In the source stage we discussed blending options, but because blends load all pre-join results into the BI product these are extremely limited in how much data can be joined and are not a scalable solution.
 
 In a Data Lake, all data can be combined so it can be analyzed together. This makes finding insights easier and provides more depth for exploring the data.
 
 ### 2) Full query access
 
-The applications your business uses likely only offer transactional API access to the data.  They're not designed for reporting, so unless the data is exported and put into a format you can easily query, you end up being very limited in what you can pull.  These API's if used directly for reporting, can also become prohibitively expensive.  
+The applications your business uses likely only offer transactional API access to the data.  They're not designed for reporting, so unless the data is exported and put into a format you can easily query, you end up being very limited in what you can pull.  These API's if used directly for reporting, can also become prohibitively expensive.
 
 If you extract that API data with an [ELT product](/data-governance/elt-vs-etl/) and load it into a Data Lake, you'll have all the power and flexibility of SQL or whatever BI product you use - and the cost won't go up considerably with each chart.
 
@@ -75,6 +75,6 @@ Data Lakes are built to handle these types of ad hoc analytical queries independ
 
 ### 4) Progress
 
-Getting the data in one spot, is just a necessary step for progressing to the other stages.  It makes working with data so much easier that many BI products require this stage - as they will only connect to a single warehouse source.  
+Getting the data in one spot, is just a necessary step for progressing to the other stages.  It makes working with data so much easier that many BI products require this stage - as they will only connect to a single warehouse source.
 
-On top of this Lake you will eventually be able to do proper modeling in the Warehouse stage, cleaning the data so more people can use it, less errors happen, you repeat yourself less, and many more benefits.  
+On top of this Lake you will eventually be able to do proper modeling in the Warehouse stage, cleaning the data so more people can use it, less errors happen, you repeat yourself less, and many more benefits.
