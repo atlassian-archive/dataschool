@@ -15,7 +15,7 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time: 3
 
 ---
 UNION and UNION ALL are SQL operators used to concatenate 2 or more result sets. This allows us to write multiple SELECT statements, retrieve the desired results, then combine them together into a final, unified set.
