@@ -43,7 +43,7 @@ The biggest decision to make when moving from a lake to a warehouse is what data
 * Performance/Scale
 * Maintenance
 
-There are a variety of database pricing models for Data Lakes from being based on storage to being based on the amount of data queried. If your company is strictly using Amazon or Google as your software vendors, this can dictate your vendor choice as well.
+There are a variety of database pricing models for Data Lakes, from being based on storage to being based on the amount of data queried. If your company is strictly using Amazon or Google as your software vendors, this can dictate your vendor choice as well.
 
 The architecture of the Data Lake has implications on how it’ll help your operations scale. Differences in different lakes entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your Data Lake you will want to know that as well.
 
@@ -126,7 +126,7 @@ Once you have selected your data warehouse solution, you will need to decide how
 Doing an ETL/ELT in the same place, such as if you are using Redshift for both your database and data warehouse, simplifies your process and keeps your data stack lean. This is desirable because you will have less environments and tools to manage and your data will be housed in one location. You can just do it without having to extract and load. Transform only! -->
 
 <!--
-  
+
 These are handled in other sections already
 
 ### Performance
@@ -139,4 +139,4 @@ In addition to the benefit of accessing the raw data faster, with the transforma
 
 Another thing to consider when choosing between ETL and ELT is seeing who should have access to the data warehouse. If there are non-technical users who will also be accessing the data warehouse, then having them exposed to raw data may not be ideal. In that scenario it would be preferable to have the data engineers or data team do the data manipulation in creating summary tables or materialized views. -->
 
-<!--- TODO: We need to explain file based options for the lake - like S3.  ---> 
+<!--- TODO: We need to explain file based options for the lake - like S3.  --->
