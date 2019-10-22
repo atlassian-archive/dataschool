@@ -8,6 +8,7 @@ authors:
 - _people/dave.md
 reviewers: []
 cover_image: "/assets/images/book-covers/data-school-dictionary.png"
+image: "/assets/images/book-covers/social-dictionary.png"
 main_color: "#762314"
 is_featured: false
 status: released

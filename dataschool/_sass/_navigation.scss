@@ -36,24 +36,11 @@
         a.smallbook-link {
           flex: 0 0 3rem;
           margin: 0 0.5rem 0 0.75rem;
-          // img {
-          //   position: relative;
-          //   transition: bottom 1s;
-          // }
-          // &:hover {
-          //   img {
-          //     bottom: 0.25rem;
-          //     transition: bottom 1s;
-          //   }
-          // }
         }
 
         a.book-title {
           color: $text-color;
           font-weight: bold;
-          // font-family: "Gentium Book Basic", "Times New Roman", serif;
-          // font-style: italic;
-          // font-size: 1.2em;
         }
         a.book-download {
           font-size: 0.8em;

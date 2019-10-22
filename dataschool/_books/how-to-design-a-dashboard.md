@@ -8,6 +8,7 @@ book_sort_number: 1
 authors: _people/matt.md
 reviewers: _people/tim.md
 cover_image: "/assets/images/book-covers/how-to-design-a-dashboard.png"
+image: "/assets/images/book-covers/social-design-dashboard.png"
 main_color: "#145776"
 status: released
 is_featured: false

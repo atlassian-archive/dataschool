@@ -7,7 +7,7 @@ number:
 authors: []
 reviewers: []
 feedback_doc_url: ''
-image: ''
+image: "/assets/images/book-covers/social-data-gov-image.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false

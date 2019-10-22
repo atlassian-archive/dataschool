@@ -9,7 +9,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-image:
+image: "/assets/images/book-covers/social-data-gov-image.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: true

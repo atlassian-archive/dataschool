@@ -9,7 +9,7 @@ number:
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/16ailclPK0HuLDJxM_atN7fXcalVophuDr2Phuf5Ti7Q/edit?usp=sharing
-image: ''
+image: "/assets/images/book-covers/social-data-gov-image.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: true

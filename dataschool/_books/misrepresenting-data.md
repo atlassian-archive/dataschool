@@ -6,6 +6,7 @@ description: Learn what the most common analysis mistakes are and how to avoid t
 book_slug: misrepresenting-data
 authors: _people/matt.md
 cover_image: "/assets/images/book-covers/misrepresenting-data.png"
+image: "/assets/images/book-covers/social-misrepresenting-data.png"
 main_color: ''
 reviewers: _people/blake.md
 status: in_progress
