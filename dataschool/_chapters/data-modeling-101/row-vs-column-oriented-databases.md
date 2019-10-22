@@ -148,4 +148,4 @@ This architecture means that while the data is being updated from the WS to the 
 
 ## Summary
 
-Column Oriented databases came out with [a 2005 paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) explaining the design that Redshift, BigQuery and Snowflake are all built upon. It’s why they all have about the same performance and relative costs. This column oriented database is being used by most major providers of cloud data warehouses. This has become the dominant architecture in relational databases to support OLAP.
+Column Oriented databases came out with [a 2005 paper](http://people.brandeis.edu/~nga/papers/VLDB05.pdf) explaining the design that Redshift, BigQuery and Snowflake are all built upon. It’s why they all have about the same performance and relative costs. This column oriented database is being used by most major providers of cloud data warehouses. This has become the dominant architecture in relational databases to support OLAP.

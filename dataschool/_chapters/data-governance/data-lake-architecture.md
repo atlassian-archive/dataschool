@@ -3,7 +3,7 @@ section: Stage 2 - Lake
 title: Data Lake Architecture
 meta_title: Modern Data Lake Architecture Best Practices
 description: Learn to unify data sources and work with multiple schemas
-number: 5
+number: 5.5
 authors:
 - _people/matt.md
 reviewers:
@@ -15,9 +15,13 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time:
+published: false
 
 ---
+
+<!-- TODO - this post has nothing new in it.  What's really needed here is a post on choosing a data lake.  Deciding on which to do.  --->
+
 Before we start piping various data sources into a Data Lake we need to understand what the is and how it should be designed. The goal of a Data Lake is to make all of your data available to be queried in one place. This allows for easier access, more security, and makes analysis less complicated.
 
 ## How to get data in one place (the lake)
