@@ -147,6 +147,7 @@ pages:
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
+- dataschool/_chapters/learn-sql/extras/union-vs-union-all.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-data-and-why-should-i-care.md
 - dataschool/_chapters/learn-sql/extras/insert-multiple-rows.md
 - dataschool/_chapters/learn-sql/extras/drop-all-tables-postgres.md
