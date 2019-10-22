@@ -104,7 +104,6 @@ pages:
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
 - dataschool/_chapters/sql-optimization/bigquery-optimization.md
 - dataschool/_chapters/misrepresenting-data/predicting-outcomes.md
-- dataschool/_chapters/data-governance/data-lake-implementation.md
 - dataschool/_chapters/data-modeling-101/creating-an-ec2-server.md
 - dataschool/_chapters/sql-optimization/snowflake.md
 - dataschool/_chapters/dictionary/sql-errors.md
@@ -146,7 +145,6 @@ pages:
 - dataschool/_chapters/misrepresenting-data/survivorship-bias.md
 - dataschool/_chapters/misrepresenting-data/confirmation-bias.md
 - dataschool/_chapters/misrepresenting-data/trends.md
-- dataschool/_chapters/data-governance/data-warehouse-data-stack.md
 - dataschool/_chapters/data-governance/source-data-tools.md
 - dataschool/_chapters/sql-optimization/partial-indexes.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md

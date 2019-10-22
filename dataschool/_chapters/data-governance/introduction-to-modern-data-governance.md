@@ -10,7 +10,7 @@ authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1otmCF7Ep4VfcymEDSWn6JWGkl3wVTf8C_d18_oEROVc/edit?usp=sharing
 image: "/assets/images/IntroductionToModernDataGovernance.png"
 is_featured: false
 img_border_on_default: false
