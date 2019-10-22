@@ -2,8 +2,7 @@
 section: Stage 1 - Source
 title: Source Data Connections
 meta_title: Setup Source Data Architecture
-description: Learn how to configure your data base and leverage flexible BI tools
-  to analyze source data.
+description: Learn how to configure your database to analyze source data effectively.
 number: 2
 authors:
 - _people/matt.md
