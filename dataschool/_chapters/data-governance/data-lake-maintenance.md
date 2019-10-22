@@ -9,7 +9,7 @@ authors:
 - _people/tim.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: https://docs.google.com/document/d/1edd-_jVBC597JSJG60cNANT7KazukO-hUxKLj74ziKY/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/16sbj9Kt4mbq8ygb9WGVROH06cBHyiZ-sAzrYa1QjpgA/edit?usp=sharing
 image: "/assets/images/DataLakeDiagramCover.png"
 is_featured: false
 img_border_on_default: false
