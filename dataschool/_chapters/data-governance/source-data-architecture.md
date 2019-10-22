@@ -22,26 +22,26 @@ When a business is getting started with data, people are analyzing it in live sy
 
 ## Database Connections
 
-To use any use any source data in a database you'll want  to create:
+To use any source data in a database you'll want  to create:
 
 1. Read-only Access Users
 2. Read-only Replica (optional)
 
-#### Read Only User
+#### Read-Only User
 
-Create and use a read only user account to analyze data on your production database. This will prevent users from making any updates to the data during your analysis by accident. Granted this is unlikely but it is a good precaution to use. It also makes it possible to grant other people access for analysis purposes and guard against their errors.
+Create and use a read-only user account to analyze data on your production database. This will prevent users from accidentally making any updates to the data during your analysis. Granted this is unlikely but it is still a good precaution. It also makes it possible to grant other people access for analysis purposes and guard against their errors.
 
 ![Permission Settings for Source Data](/assets/images/ReadOnlyUserPermissions.png "Read Only User Permission")
 
 This functionality exists across database providers.
 
-#### Read Only Replica
+#### Read-Only Replica
 
 If you’re worried about read performance of your database and want to query the data without impacting the performance of your application, create a read only replica of the production database. This creates a copy of your data in a new database which can be queried without concern.
 
 ![Source Database, Read Only Replica](/assets/images/ReadOnlyReplicaDatabase.png "Read Only Replica Database")
 
-Creating a [read only replica](https://aws.amazon.com/rds/details/read-replicas/) is easy if you're using cloud providers with hosted databases like RDS but can be hard on other platforms.
+Creating a [read-only replica](https://aws.amazon.com/rds/details/read-replicas/) is easy if you're using cloud providers with hosted databases like RDS but can be hard on other platforms.
 
 These databases may double the cost of your database spend but removes the risk of an analytic query affecting your application.
 
@@ -49,5 +49,5 @@ These databases may double the cost of your database spend but removes the risk 
 
 Even small teams should set up permissions to analyze data:
 
-1. Create Read Only Users for analyzing data in a database
-2. Create a Read Only Replica database to remove the performance impacts to the production database
+1. Create Read-Only Users for analyzing data in a database
+2. Create a Read-Only Replica database to remove the performance impacts to the production database
