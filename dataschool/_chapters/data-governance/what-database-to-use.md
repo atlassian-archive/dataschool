@@ -96,23 +96,3 @@ Postgres is a straightforward, flexible solution that’s different from Snowfla
 Selecting a Data Lake can be dependent on a number of factors that should be considered before making the investment. If you prefer a cheap, straightforward Data Lake you may be tempted to go with PostgreSQL, however it will have trouble scaling as a Data Lake. Redshift is a good choice as a standard cloud Data Lake if you have the capacity for a dedicated DBA. BigQuery and Snowflake are both highly scalable solutions considering their architecture. However, if cost or concurrency limits will be an issue for you then Snowflake would be more suitable for your organization.
 
 Remember all of the data lakes are built on the same c-store architecture so the differences will not be severe in performance. However we do recommend checking out [benchmarking on the different databases](https://fivetran.com/blog/warehouse-benchmark).
-
-## Selecting an ETL/ELT Process
-
-Once you have selected your Data Lake solution, you will need to decide how to set up your ETL or ELT to load data from your source data into your Data Lake and convert the raw data into something meaningful. ETL has been the traditional method for data lakes, however ELT has been growing in popularity due to its compatibility with cloud systems.
-
-### View and dbt
-
-![Logo for dbt](/assets/images/dbtLogo (1).png "dbt")
-
-Doing an ETL/ELT in the same place, such as if you are using Redshift for both your database and data lake, simplifies your process and keeps your data stack lean. This is desirable because you will have less environments and tools to manage and your data will be housed in one location. You can just do it without having to extract and load. Transform only!
-
-### Performance
-
-In an ETL process the data is typically extracted and first put into a staging area, as opposed to an ELT approach which has all the raw data loaded in your system from the get go. In ELT, because the data is already loaded, users don’t need to wait for the entire process to finish before they can access the data.
-
-In addition to the benefit of accessing the raw data faster, with the transformation performed at query runtime, a query can be run concurrently with other queries. With cloud systems that make it easy to scale storage and processing power, ELT also allows for greater flexibility and lower maintenance. Resources can be added as needed for intensive transformation tasks. And because the data is always available, the ETL process does not need to be modified to make changes to your lake.
-
-### Access
-
-Another thing to consider when choosing between ETL and ELT is seeing who should have access to the Data Lake. If there are non-technical users who will also be accessing the Data Lake, then having them exposed to raw data may not be ideal. In that scenario it would be preferable to have the data engineers or data team do the data manipulation in creating summary tables or materialized views.
