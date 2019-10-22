@@ -16,6 +16,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
+published: false
 
 ---
 Before we start piping various data sources into a Data Lake we need to understand what the is and how it should be designed. The goal of a Data Lake is to make all of your data available to be queried in one place. This allows for easier access, more security, and makes analysis less complicated.
