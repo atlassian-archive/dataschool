@@ -3,7 +3,7 @@ title: Twange Kasoma
 meta_title: Contributor - Twange Kasoma
 description: Twange Kasoma is an associate professor in the School of Communication
   at Radford University in Virginia.
-image: "/assets/images/Twange.jpg"
+image: "/assets/images/Twange-1.jpg"
 is_contributor: false
 job_title: Associate Professor
 company: Radford University
