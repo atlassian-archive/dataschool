@@ -5,7 +5,8 @@ meta_title: Difference between UNION and UNION ALL
 description: UNION ALL keeps all of the records from each of the original data sets,
   UNION removes any duplicate records.
 number: 1000
-authors: []
+authors:
+- _people/josiah-faas.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
@@ -51,7 +52,7 @@ UNION or UNION ALL have the same basic requirements of the data being combined:
 
 The next 2 examples shows that we would return results whether we used UNION or UNION ALL since all required criteria are met.
 
-![](https://lh6.googleusercontent.com/hDKBOuGbyC99A_eiEbQLvBBoW9LMOvCA_KncWuMmij3ycxkn7pi63ccWhUzHIHsJ55BAaWdnD2UDfob3WFgecgFS6KU-PQaWarliyhjXddN-SfYnQz08Hc4hAhHhQFg1RykqjOyO =624x316)
+![](https://lh6.googleusercontent.com/hDKBOuGbyC99A_eiEbQLvBBoW9LMOvCA_KncWuMmij3ycxkn7pi63ccWhUzHIHsJ55BAaWdnD2UDfob3WFgecgFS6KU-PQaWarliyhjXddN-SfYnQz08Hc4hAhHhQFg1RykqjOyO)
 
 ![](https://lh4.googleusercontent.com/VxdYnU7yUP6ZAEJ_D53XNh6-2KzXSAifIdUCTGPJ29ufxOPIz5kP8QF1jvYvj6TrzS8A9GD3PlUrESVOi-fILlDkm2Umq9kDbI7LWCcvouzHzpbSv2h6eTmGfjImTO4KWz_6i_VS)
 
