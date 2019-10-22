@@ -3,7 +3,8 @@ section: book
 title: Introduction - Modern Data Governance and the 4 Stages of Sophistication
 short: Introduction
 meta_title: Stages of Data Sophistication and Modern Data Governance
-description: Learn how Data Governance practices change as the level of data sophistication changes.
+description: Learn how Data Governance practices change as the level of data sophistication
+  changes.
 number: -10
 authors:
 - _people/dave.md
@@ -31,7 +32,7 @@ The structure and original chapters of this book were written by the leadership 
 
 ## The 4 Stages of Data sophistication
 
-From our experience working with so many organizations we recognized four distinct stages of data sophistication that successful companies go through. These stages happen to be tied to a new piece of the data stack that is needed at each stage, and so we have named these stages after those pieces.  
+From our experience working with so many organizations we recognized four distinct stages of data sophistication that successful companies go through. These stages happen to be tied to a new piece of the data stack that is needed at each stage, and so we have named these stages after those pieces.
 
 This book is organized by these 4 sequential stages which are:
 
@@ -50,7 +51,7 @@ We'll start with an overview of each of these stages:
 
 ### Stage 1. [Sources](/data-governance/source-data-tools/)
 
-![Source Stage of Data Sophistication](https://lh4.googleusercontent.com/gQGOiX-JT7DSLZLlkT0fDUfdZm2nITUw6pSF2SrOrmac7mq7HxF-U2bYf5O8uDP-Id9Tay_1k8S1h87iHZLedkpJNYWJABORVnNw9v8AotkwEN1O2KXcsvkYR9IU4kbylh4G5CBE)
+![Source Stage of Data Sophistication](/assets/images/StartingWithSourceData (1).png "Source Data")
 
 When you start working with data, you may only have a few sources of interest. Two common early sources are Google Analytics and your application data in whatever PostgreSQL or MySQL database your product runs on. If only a few people at your company need to work with these sources, you might set them up with direct access; it’s more simple and agile for them to just work with the data directly.
 
@@ -58,7 +59,7 @@ When you start working with data, you may only have a few sources of interest. T
 
 As you start to rely on more data sources, and more frequently need to blend your data, you’ll want to build out a Data Lake—a spot for all of your data to exist together in a unified format.
 
-![Lake Stage of Data Sophistication](https://lh6.googleusercontent.com/45iVlzJHp2uIt3rtQxu3KpIGoJIJ1iqTf25p3nU33reggsJDGm9JZyM908pA3x1ugaDWiDXYjSGg72uSRB1MyAKmcXLbT2hhz7jWlPkWp3pPXlav_fc80Vtko3lmgFLOjROkUNXZ)
+![Lake Stage of Data Sophistication](/assets/images/DataLakeDiagram (1).png "Data Lake")
 
 Especially when you need to work with data from applications like Salesforce, Hubspot, Jira, and Zendesk, you’ll want to create a single home for this data so you can access all of it together and with a single SQL syntax, rather than many different APIs.
 
