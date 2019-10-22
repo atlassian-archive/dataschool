@@ -118,7 +118,6 @@ pages:
 - dataschool/_chapters/data-modeling-101/sqlbox-test-do-not-publish.md
 - dataschool/_chapters/data-governance/etl-vs-elt.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
-- dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-security.md
@@ -145,6 +144,7 @@ pages:
 - dataschool/_chapters/sql-optimization/partial-indexes.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
 - dataschool/_chapters/data-governance/source-data-tools.md
+- dataschool/_chapters/data-governance/what-database-to-use.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
