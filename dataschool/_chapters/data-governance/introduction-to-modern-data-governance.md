@@ -22,9 +22,9 @@ reading_time: 4
 ---
 Modern companies run on and compete with data.  Historically businesses had all of the information they needed walking in and out of their store every day.  When customers had requests, frustrations, or buying patterns - the owners and employees were there to ask about them and to directly observe trends.
 
-Over time, companies scaled and most people work for larger, distributed organizations.  We've grown from single shop businesses, to having many locations, and even to having no location at all.  The result is that decision makers no longer have direct access to each customer, and must increasingly rely on their data to improve and compete.
+Over time, companies scaled and most people now work for larger, distributed organizations.  We've grown from single shop businesses, to having many locations, and even to having no location at all.  The result is that decision makers no longer have direct access to each customer, and must increasingly rely on their data to improve and compete.
 
-Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and data stack are essential if a buisness wants to gain visibility into it's information.
+Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and an effective data stack are essential tasks if a buisness wants to gain from it's information.
 
 This book is for organizations that want to gain best practices and visibility into their data.  It is a continually improving community driven book teaching Modern Data Governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
 
