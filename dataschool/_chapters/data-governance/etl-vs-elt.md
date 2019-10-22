@@ -1,15 +1,15 @@
 ---
-section: Stage 2 - Lake
+section: Extras
 title: ETL vs ELT
 meta_title: Use ELT for Data Lakes
 description: Learn why you should use an ELT over a ETL process for your Data Lake
-number: 7
+number: 1001
 authors:
 - _people/kostas-pardalis.md
 reviewers:
 - _people/dave.md
 - _people/matt.md
-feedback_doc_url: https://docs.google.com/document/d/1OTGslZaat0-XI74tzWy6kVDyZ21-4kUVzRLqYH-1nQ4/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/1iT0RwsHsr2pz0FjNtZ13UaQUtjehejEunmAHLTwsQW8/edit?usp=sharing
 image: "/assets/images/ETLvsELTCover (1).png"
 is_featured: false
 img_border_on_default: false
@@ -40,9 +40,11 @@ Light transformation of the data before loading the data into the lake might sti
 
 The above transformation cases can be included in the ELT paradigm and are offered by most commercially available ELT vendors.
 
+
+<!--- TODO: Find a place for some of this it doesn't work too well here
 ## Transforming for Analytics
 
-While we do not recommend much transformation occuring at the Data Lake stage, there are a few scenarios where light changes are useful.
+While we do not recommend much transformation occurring at the Data Lake stage, there are a few scenarios where light changes are useful.
 
 ### Using a file system
 
@@ -58,55 +60,4 @@ In the case where you use a data warehouse database such as Redshift for your da
 
 Keep in mind that you can use these same transformation tools to extract data from the Data Lake and load it into your Data Warehouse.
 
-# How to ELT to a Data Lake
-
-There are many options if you want to move your data into a Data Lake, regardless of the source it comes from.
-
-1. Use an ELT vendor like Fivetran\[[6](https://fivetran.com/)\], Stitch Data\[[7](https://stitchdata.com)\] or Blendo\[[8](https://www.blendo.co)\]
-2. If you want to perform ETL, you can use something like Xplenty \[[9](https://www.xplenty.com/)\] or Amazon Glue \[[10](https://aws.amazon.com/glue/)\]
-3. DIY. If you go this direction, please use at least a framework like Apache AirFlow \[[1](https://airflow.apache.org/)\]. The last thing you want is a mess of scripts and cron jobs deployed haphazardly.
-
-### Don’t do DIY
-
-The DIY should be avoided, you will dedicate precious engineering resources to something that can be done at a fraction of the cost and time using a cloud solution for ELT. Your data engineers can work on more important data projects related to your overall data infrastructure and product.
-
-### Use an ELT Vendor
-
-All ELT providers mentioned above offer a simple experience for extracting and loading your data into your data lake. The process usually involves the setup of a pipeline where credentials are given for both the destination and the data source and some configuration where light transformation is performed, e.g. selecting what tables and fields to sync, hiding some values for privacy reasons, etc. This process can be performed with minimal engineering effort in most cases.
-
-## Extract and Load Options
-
-When we move data into a Data Lake, we have a couple of different strategies on both how we extract data from the sources and how we load the data into the Lake.
-
-### Extraction
-
-Extraction is the phase of pulling data from a data source, through APIs or SQL. We can do a complete extraction of all data available, or we can do an incremental extraction every time we run a sync. A complete extraction will extract all the data from the data source. An incremental extraction will only extract updated records from the data source.
-
-#### Complete Extraction
-
-A complete extraction is the easiest way since no configuration is required but it has two big disadvantages.
-
-1. You end up with a lot of duplicate data in your data lake
-2. You increase the complexity of the next steps in your analytics stack
-
-You will have to figure out what data you actually need in the data lake, so it will require more complex logic to do it and more processing.
-
-#### Incremental Extraction
-
-The preferred alternative is to do incremental extractions. This is more challenging since you need to check for new or updated rows and account for changing schemas. However, it is typically preferred because much less data being processed and fewer updates will need to be made in the data lake. All the cloud ELT vendors support incremental extractions from your sources.
-
-The main downside to incremental extraction is deletions in a data source. It's not easy to detect and implement deletions in the general case. ELT providers do not guarantee consistency under deletions in most cases, in some cases it can be done or it is implemented by the source, e.g. data is never deleted but flagged as `is_deleted` instead.
-
-A complete dump would guarantee that you have always an exact replica of the source state. Keep in mind that in analytics this is not important in the general case, but keeping the deleted records might also be something that is required.
-
-### Load
-
-However you extract data from your data sources, you need to decide how these changes will be reflected on your destination. You can push changes through to existing data in the data lake or you can store this new data separate from existing data.
-
-#### Push Changes
-
-If you are using a database system as a data lake, then you can update the data with the pushed changes. This will end up having a close replica of the data from the source system to your Data Lake and it optimizes storage.
-
-#### Store Separate
-
-The other way is to save the changes without updating the records. This is pretty much the only way you can do it if you use a file system and don’t want to add a lot of complexity on your data lake. The benefit of doing this is that you have a history of all the changes that happened on your data.
+--->

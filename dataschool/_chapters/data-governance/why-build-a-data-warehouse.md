@@ -11,7 +11,7 @@ authors:
 - _people/tracy-chow.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: https://docs.google.com/document/d/135lIKanlJDc1q-KlQwlYzq7kAcPRyi_VZ1oXOrklXW4/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/1IxqvQ53_OMprEsF2rk-VoWXpvzU-Ri-SPaZgrfGBKBg/edit?usp=sharing
 image: "/assets/images/DataWarehouse.png"
 is_featured: false
 img_border_on_default: false
@@ -23,22 +23,26 @@ reading_time: 5
 ---
 ## What is a Data Warehouse?
 
-A Data Warehouse is a database setup for analytical ad hoc querying.
+A Data Warehouse (also commonly called a single source of truth) is a clean, organized, single representation of your data.  Sometimes it is in a completely different data source, but increasingly is structured virtually, as a schema of views ontop of an existing lake.  
+
+![Data Warehouse](http://img.chartio.com/38885f616a2d/Image%202019-10-21%20at%208.54.36%20PM.png)
+
+Having a clean unified source of truth enables you to write easier queries, make less errors, work faster as you're more organized, and repeat yourself much less often.
 
 ### This stage is right for you if
 
- - More than a few people are going to be working with this dataset
- - You want a clean source of truth of your company
- - You don't like fighting integrity issues
- - You need to separate the structure of the data from the always changing transactional sources.
- - You Don't like Repeating Yourself (DRY)
+* More than a few people are going to be working with this dataset
+* You want a clean source of truth of your company
+* You don't like fighting integrity issues
+* You need to separate the structure of the data from the always changing transactional sources.
+* You Don't like Repeating Yourself (DRY)
 
 ### You've outgrown this stage if
 
- - You want to get democratized - and enable others in your company to explore and understand data themselves
- - You're prepared to teach and enable business users in your company - hopefully using the many resources of the Data school
- - You have projects that require different formats of the source of truth for easier use
- - Having truly informed employees is important to your company's competitive success
+* You want to get democratized - and enable others in your company to explore and understand data themselves
+* You're prepared to teach and enable business users in your company - hopefully using the many resources of the Data school
+* You have projects that require different formats of the source of truth for easier use
+* Having truly informed employees is important to your company's competitive success
 
 ## Six reasons to build a Data Warehouse
 

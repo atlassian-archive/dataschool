@@ -9,7 +9,7 @@ authors:
 - _people/matt.md
 reviewers:
 - _people/dave.md
-feedback_doc_url: https://docs.google.com/document/d/1WCqInQvsI3LSBJ3E8Af1Sfmsl2EK5DWlzQgSPeWVmDU/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/1OwP9iL0s75cLiY64JguE6uhC25XCDqh11WNyIVO5hZU/edit?usp=sharing
 image: "/assets/images/DataMart (1).png"
 is_featured: false
 img_border_on_default: false
@@ -25,15 +25,14 @@ A Data Mart is a filtered (and sometimes aggregated) subsection of a Data Wareho
 
 ### This stage is right for you if
 
- - You want to get democratized - and enable others in your company to explore and understand data themselves
- - You're prepared to teach and enable business users in your company - hopefully using the many resources of the Data school
- - You have projects that require different formats of the source of truth for easier use
- - Having truly informed employees is important to your company's competitive success
+* You want to get democratized - and enable others in your company to explore and understand data themselves
+* You're prepared to teach and enable business users in your company - hopefully using the many resources of [The Data School](https://dataschool.com/)
+* You have projects that require different formats of the source of truth for easier use
+* Having truly informed employees is important to your company's competitive success
 
 ### You've outgrown this stage if
 
- - You can't really!  You can make any number of marts, and even put leveling in your marts if you'd like.  Implementing this stage will will result in a complete, well architected and governed stack that will continually evolve and and support your informed competitive company.
-
+* You can't really!  You can make any number of marts, and even put leveling in your marts if you'd like.  Implementing this stage will will result in a complete, well architected and governed stack that will continually evolve and and support your informed competitive company.
 
 ## Five reasons to build a Data Mart
 

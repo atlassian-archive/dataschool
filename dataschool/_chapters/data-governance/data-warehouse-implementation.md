@@ -10,7 +10,7 @@ authors:
 - _people/tim.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1Mh3IHBXXR2JPdBpgw0SvXFkSiJHKF0wqH3u5t0VfOhQ/edit?usp=sharing
 image: "/assets/images/ImplementationCover.png"
 is_featured: false
 img_border_on_default: false
