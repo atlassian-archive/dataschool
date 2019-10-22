@@ -9,7 +9,7 @@ authors:
 - _people/matt.md
 reviewers:
 - _people/dave.md
-feedback_doc_url: https://docs.google.com/document/d/1OYLPpRmleg0U-2_at8aIhstYuAcPW0Kb2n9JaixcFS0/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/1ebtNF2czS1lsUkoNQVPZphOcvgY8SeL9egcPxrVNNp0/edit?usp=sharing
 image: "/assets/images/OutlierDataMaintenance.png"
 is_featured: false
 img_border_on_default: false

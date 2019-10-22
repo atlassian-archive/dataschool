@@ -1,5 +1,5 @@
 ---
-section: book
+section: Extras
 title: Acknowledgments & Contributions
 short: Acknowledgements
 meta_title: Acknowledgments for Modern Data Governance Book
@@ -11,7 +11,7 @@ authors:
 reviewers:
 - _people/matt.md
 image: "/assets/images/Matt.png"
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1SDUk618U8mQrq6P9pCXaePxm7aX953wO28D7FxrZ6_w/edit?usp=sharing
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
