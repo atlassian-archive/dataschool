@@ -22,7 +22,7 @@ Prior to having a Data Lake, all analysis had to be done by working with data in
 
 Data Lakes provide a way to centralize access to data and make it simpler to manage permissions.
 
-Data coming in to the Data Lake is likely not cleaned yet so there may still be sensitive information coming through. Don’t Extract or Load sensitive data/columns, this is configurable within the ELT tools. Also be wary of who you grant access to the Data Lake since it gives much more access to all of the data than giving access to a particular source.
+Data coming in to the Data Lake is likely not cleaned yet so there may still be sensitive information coming through. Don’t [Extract or Load](https://dataschool.com/data-governance/etl-vs-elt/) sensitive data/columns, this is configurable within the ELT tools. Also be wary of who you grant access to the Data Lake since it gives much more access to all of the data than giving access to a particular source.
 
 ## Access in central place
 
@@ -36,8 +36,8 @@ Now that you can easily grant anyone access to data, you will have more people a
 
 Start out by creating two users groups on the Data Lake as follows:
 
-1. For admin and engineers
-2. For analysts and business users
+1. For admin and engineers (Full Access)
+2. For analysts and business users (Relevant Access)
 
 You can prevent the second group from accessing sensitive data in the Data Lake by having that group not have access to the schemas or tables with that type of data.
 
