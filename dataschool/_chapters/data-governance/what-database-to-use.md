@@ -5,7 +5,7 @@ short: Choosing a Warehouse
 meta_title: How to choose a databse for your Data Lake
 description: Learn the pros and cons of the modern database options like Snowflake,
   Redshift and BigQuery to build your Data Lake on.
-number: 23
+number: 5
 authors:
 - _people/tracy-chow.md
 reviewers:
