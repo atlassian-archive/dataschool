@@ -28,13 +28,13 @@ Companies today are quite good at collecting data - but still very poor at organ
 
 This book is for organizations that want to gain best practices and visibility into their data.  It is a continually improving community driven book teaching Modern Data Governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
 
-The structure and original chapters of this book were written by the leadership and Data Advisor teams at Chartio, sharing our experiences working with hundreds of companies over the past decade.  Here we compiled our learnings and open sourced them in an open book format.
+The structure and original chapters of this book were written by the leadership and Data Advisor teams at Chartio, sharing our experiences working with hundreds of companies over the past decade.  Here we've compiled our learnings and open sourced them in a free, open book format.
 
 ## The 4 Stages of Data sophistication
 
 From our experience working with so many organizations we recognized four distinct stages of data sophistication that successful companies go through. These stages happen to be tied to a new piece of the data stack that is needed at each stage, and so we have named these stages after those pieces.
 
-This book is organized by these 4 sequential stages which are:
+This book is organized in sections covering each of these 4 sequential:
 
 1. Source
 2. Lake
@@ -43,11 +43,11 @@ This book is organized by these 4 sequential stages which are:
 
 ![Ideal data stack for effective data governance](https://lh3.googleusercontent.com/vG0lYBnPTtL9BCt4qn1lhoBvYvAWRAw21_R9C-U5Lu-q_5tmPzIBfdcuA2MGXF7CyX9VFM1OTKJp4rLoSCNJDuNHQpceM_CcihX1LefCw2tovbrhHtmQkYbZr56UEJctIBva9QbT)
 
-Each vertical stage in the above diagram is a valid stack to operate from, depending on your resources, size, importance and needs of data within your organization.  Each has unique benefits, pitfalls and best practices that we'll cover stage by stage.
+Each vertical stage pictured is a valid stack to operate from, depending on your resources, size, importance and needs of data within your organization.  Each has unique benefits, pitfalls and best practices that we'll cover stage by stage.
 
 Your company may not yet need the entirety of this book, but as a growing company's data needs expand, it will be incredibly valuable — and perhaps pivotal — to advance all the way through each of these stages to the Mart stage.
 
-We'll start with an overview of each of these stages:
+We'll start with an overview of each:
 
 ### Stage 1. [Sources](/data-governance/source-data-tools/)
 
