@@ -20,20 +20,19 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
-In order to build a Data Lake, we need to choose a database to host it on.  Historically, and still today at massive (> 100GB/day) scale, the Lake was stored in a file system like S3 buckets.  
+In order to build a Data Lake, we need to choose a database to host it on.  Historically, and still today at massive (> 100GB/day) scale, the Lake was stored in a file system like S3 buckets.
 
-Today, with storage being so cheap and warehouses being so scalable, we recommend putting your lake data directly into what is called a Warehouse Engine.  This will make creating the Data Warehouse much simpler as we'll cover once we get to that next stage.  
+Today, with storage being so cheap and warehouses being so scalable, we recommend putting your lake data directly into what is called a Warehouse Engine.  This will make creating the Data Warehouse much simpler as we'll cover once we get to that next stage.
 
 ## What is a Warehouse Engine?
 
-In 2005 a group Brown, Brandeis University and MIT released a ground breaking paper know as the [C-Store paper](http://people.brandeis.edu/~nga/papers/VLDB05.pdf) introducing a new [column store architecture](/data-modeling-101/row-vs-column-oriented-databases/).  The many developments in that paper lead to a new class of cloud based databases that could very powerfully handle large sets of data.  
+In 2005 a group Brown, Brandeis University and MIT released a ground breaking paper know as the [C-Store paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) introducing a new [column store architecture](/data-modeling-101/row-vs-column-oriented-databases/).  The many developments in that paper lead to a new class of cloud based databases that could very powerfully handle large sets of data.
 
-These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counter parts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data.  
+These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counter parts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data.
 
 <!-- TODO: Would be a great visual here I think - draw a semi and a scooter and maybe list "fast, many trips, low payload" vs "slow, few trips, heavy payload"   -->
 
 If these were vehicles, transactional databases would be motorcycle capable of many quick trips and warehouse engines would be semi's doing few trips but hauling large loads.
-
 
 ## Deciding factors
 
@@ -116,8 +115,6 @@ Redshift is a good choice as a standard cloud Data Warehouse if you have the cap
 
 Remember all of the data warehouses are built on the same c-store architecture so the differences will not be severe in performance. If you'd like a full benchmarking (though the same final recommendation) do checkout Fivetran's awesome [warehouse benchmark](https://fivetran.com/blog/warehouse-benchmark).
 
-
-
 <!-- ## Selecting an ETL/ELT Process
 
 Once you have selected your data warehouse solution, you will need to decide how to set up your ETL or ELT to load data from your data lake into your data warehouse and convert the raw data into something meaningful. ETL has been the traditional method for data warehouses, however ELT has been growing in popularity due to its compatibility with cloud systems. -->
@@ -129,9 +126,10 @@ Once you have selected your data warehouse solution, you will need to decide how
 Doing an ETL/ELT in the same place, such as if you are using Redshift for both your database and data warehouse, simplifies your process and keeps your data stack lean. This is desirable because you will have less environments and tools to manage and your data will be housed in one location. You can just do it without having to extract and load. Transform only! -->
 
 <!--
-\
+  
 These are handled in other sections already
- ### Performance
+
+### Performance
 
 In an ETL process the data is typically extracted and first put into a staging area, as opposed to an ELT approach which has all the raw data loaded in your system from the get go. In ELT, because the data is already loaded, users don’t need to wait for the entire process to finish before they can access the data.
 
@@ -141,5 +139,4 @@ In addition to the benefit of accessing the raw data faster, with the transforma
 
 Another thing to consider when choosing between ETL and ELT is seeing who should have access to the data warehouse. If there are non-technical users who will also be accessing the data warehouse, then having them exposed to raw data may not be ideal. In that scenario it would be preferable to have the data engineers or data team do the data manipulation in creating summary tables or materialized views. -->
 
-
-<!--- TODO: We need to explain file based options for the lake - like S3.  --->
+<!--- TODO: We need to explain file based options for the lake - like S3.  ---> 
