@@ -3,13 +3,14 @@ section: Stage 2 - Lake
 title: What engine to use for a Lake
 short: Choosing an Engine
 meta_title: How to choose an engine for your Data Lake and Warehouse
-description: Learn the pros and cons of the modern database options like Snowflake, Redshift and BigQuery to build your Data Warehouse on.
+description: Learn the pros and cons of the modern database options like Snowflake,
+  Redshift and BigQuery to build your Data Warehouse on.
 number: 5.5
 authors:
 - _people/tracy-chow.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1mP-e7OMtS0AjbjAeo1od5U8NdO8Td94fXwoAacCLf2w/edit?usp=sharing
 image: "/assets/images/SnowflakeCover.png"
 is_featured: false
 img_border_on_default: false
