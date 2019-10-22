@@ -18,6 +18,7 @@ is_under_construction: true
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
+feedback_doc_url: https://docs.google.com/document/d/1N-FnKpdUb33ZVEeU5-YsuyVkWVGg2G0H_wlGLCFESak/edit?usp=sharing
 
 ---
 At this stage you really need to make a big choice in your organization - who do you want making the charts and dashboards?  Do you want a centralized workflow where all of the charts and dashboards are created by a core team, or do you want to be largely democratized where business users are enabled to self-serve and create their own charts?
