@@ -18,11 +18,11 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-When a business is getting started with data people are analyzing it in live systems. While this is ok for tools like Salesforce or Google Analytics, we need to take separate precautions for data in a database. 
+When a business is getting started with data, people are analyzing it in live systems. While this is ok for tools like Salesforce or Google Analytics, we need to take separate precautions for data in a database.
 
 ## Database Connections
 
-To use any use any source data in a database you'll want  to create: 
+To use any use any source data in a database you'll want  to create:
 
 1. Read-only Access Users
 2. Read-only Replica (optional)
