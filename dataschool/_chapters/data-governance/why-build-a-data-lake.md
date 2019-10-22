@@ -112,17 +112,3 @@ PhoneNumbers
 | 1 | mobile | 123 456-7890 |
 
 ELT tools move data into a lake and provide ways of getting your data into a SQL format so it can be queried easily. This is also a big step towards creating your single source of truth for your data
-
-## Example Data Lake
-
-### Multiple Schemas
-
-![](/assets/images/MultipleSchemasDataSource.png)
-
-We can see a variety of data sources and schemas we can query from.
-
-### Query Across Schemas
-
-![Join data from multiple sources](/assets/images/QueryMultipleSchemas.png "Query Across Schemas")
-
-Combining datasets can be tricky. Having a flexible BI tool such as Chartio allows you to navigate this with relative ease.
