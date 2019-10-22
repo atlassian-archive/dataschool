@@ -67,7 +67,7 @@ Especially when you need to work with data from applications like Salesforce, Hu
 
 In the Lake stage, as you bring in more people to work with the data, you have to explain to them the oddities of each schema, what data is where, and what special criteria you need to filter by in each of the tables to get the proper results. This becomes a lot of work, and will leave you frequently fighting integrity issues. Eventually, you’ll want to start cleaning your data into a single, clean source of truth.
 
-![Warehouse Stage of Data Sophistication](https://lh3.googleusercontent.com/IIYi4iD4oQgw4CKdR5EAHWXx1MfEuRXCK7gFCx_9Ved3L5hhiSqoNV7p4iqYMwR2Dwfa5_nW4kN6Yx-iTNm_jz63tj0LURWpjiWhmhnkeoMyM5w6FK79z0yTxrXzPn50zDzAAm5G)
+![Warehouse Stage of Data Sophistication](https://lh3.googleusercontent.com/IIYi4iD4oQgw4CKdR5EAHWXx1MfEuRXCK7gFCx_9Ved3L5hhiSqoNV7p4iqYMwR2Dwfa5_nW4kN6Yx-iTNm_jz63tj0LURWpjiWhmhnkeoMyM5w6FK79z0yTxrXzPn50zDzAAm5G "Data Warehouse")
 
 This stage—creating a data Warehouse—has historically been quite a nightmare, and there are many books written on how best to model your data for analytical processing. But these days it’s not that hard—and will not only spare you from having to explain all of your schemas’ oddities to new team members, but will also save you as an individual time in having to repeat, edit and maintain your own messy queries.
 
@@ -77,6 +77,6 @@ When you have clean data and a good BI product on top of it, you should start no
 
 Eventually, however, you’ll have hundreds of tables in that source of truth, and users will become overwhelmed when trying to find the data that’s relevant to them. You may also discover that, depending on the team, department, or use case, different people want to use the same data structured in different ways. For these reasons, you’ll want to start rolling out Data Marts.
 
-![Marts Stage of Data Sophistication](https://lh3.googleusercontent.com/1E7D3_diPh5wYiEElr6_sQeY6qIV0Ri5nkC4LIqm_x5O9jJV_5hODDbdOZWHa8nKl_VcR7CbT_nbXvhRuDkzrOOV3amkVdu41zSeAtHEd-r6yPOqTaRI09ISxDn1rvTOGqjqFdRa)
+![Marts Stage of Data Sophistication](https://lh3.googleusercontent.com/1E7D3_diPh5wYiEElr6_sQeY6qIV0Ri5nkC4LIqm_x5O9jJV_5hODDbdOZWHa8nKl_VcR7CbT_nbXvhRuDkzrOOV3amkVdu41zSeAtHEd-r6yPOqTaRI09ISxDn1rvTOGqjqFdRa "Data Mart")
 
 Data Marts are smaller, more specific sources of truth for a team or topic of investigation. For example, the Sales team may only need 12 or so tables from the main Warehouse, while the Marketing team may need 20 tables—some of them the same, but some different.
