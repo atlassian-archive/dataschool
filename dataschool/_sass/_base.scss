@@ -45,24 +45,17 @@ h4, h5, h6 {
 }
 h1.mega-title, h1.title {
   font-family: $serif-font-loadout;
-  // margin-top: 4rem;
-  // margin-bottom: 3rem;
 }
 h1.mega-title {
-  // font-size: 2.986em;
   font-size: 4.209em;
   font-style: italic;
 }
-// h1.title {font-size: 2.488em;}
 h1.title {font-size: 3.157em;}
 h1 {
   margin-top: 0;
-  // font-size: 2.074em;
   font-size: 2.369em;
 }
-// h2, p.faux-header {font-size: 1.728em;}
 h2, p.faux-header {font-size: 1.77em;}
-// h3 {font-size: 1.22em;}
 h3 {font-size: 1.33em;}
 h4 {font-size: 1.0em;}
 h5 {font-size: .8em; font-style: italic;}
@@ -217,9 +210,6 @@ article.img-border-on-default img, img.img-border {
 }
 article.img-border-on-default img.img-no-border {
   border: none;
-}
-article li {
-  // margin: 0.125rem 0;
 }
 // CUSTOM UTILITY CLASSES
 .centered {
