@@ -5,7 +5,7 @@ description: Tim is a Senior Data Advisor at Chartio and brings 10+ years of Dat
   Analysis experience.
 image: "/assets/images/people/tim.jpg"
 is_contributor: true
-job_title: Senior Data Advisor
+job_title: Sr Data Advisor
 company: Chartio
 linkedin: https://www.linkedin.com/in/timothy-j-miller-04404799/
 twitter: https://twitter.com/timmiller716
