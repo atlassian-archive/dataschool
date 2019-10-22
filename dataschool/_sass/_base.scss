@@ -49,16 +49,21 @@ h1.mega-title, h1.title {
   // margin-bottom: 3rem;
 }
 h1.mega-title {
-  font-size: 2.986em;
+  // font-size: 2.986em;
+  font-size: 4.209em;
   font-style: italic;
 }
-h1.title {font-size: 2.488em;}
+// h1.title {font-size: 2.488em;}
+h1.title {font-size: 3.157em;}
 h1 {
   margin-top: 0;
-  font-size: 2.074em;
+  // font-size: 2.074em;
+  font-size: 2.369em;
 }
-h2, p.faux-header {font-size: 1.728em;}
-h3 {font-size: 1.22em;}
+// h2, p.faux-header {font-size: 1.728em;}
+h2, p.faux-header {font-size: 1.77em;}
+// h3 {font-size: 1.22em;}
+h3 {font-size: 1.33em;}
 h4 {font-size: 1.0em;}
 h5 {font-size: .8em; font-style: italic;}
 h6 {font-size: 0.833em; text-transform: uppercase;}
@@ -154,7 +159,7 @@ section.page-wide {
   padding: 3rem 0 0;
 }
 article, .home-hero {
-  font-size: 1.2em;
+  font-size: 1.33em;
 }
 article {
   margin-bottom: 2rem;

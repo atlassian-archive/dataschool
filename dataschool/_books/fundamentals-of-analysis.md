@@ -7,6 +7,7 @@ book_sort_number: 1
 authors: _people/matt.md
 reviewers: _people/dave.md
 cover_image: "/assets/images/book-covers/fundamentals-of-analysis.png"
+thumbnail_cover_image: "/assets/images/book-covers/fundamentals-of-analysis@thumbnail.png"
 image: "/assets/images/book-covers/social-analysis-fundamentals.png"
 main_color: "#75185C"
 is_featured: false

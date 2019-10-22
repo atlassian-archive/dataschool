@@ -8,6 +8,7 @@ book_sort_number: 1
 authors: _people/matt.md
 reviewers: _people/blake.md
 cover_image: "/assets/images/book-covers/how-to-teach-people-sql.png"
+thumbnail_cover_image: "/assets/images/book-covers/how-to-teach-people-sql@thumbnail.png"
 image: "/assets/images/book-covers/social-teach-sql.png"
 main_color: "#147638"
 is_featured: false

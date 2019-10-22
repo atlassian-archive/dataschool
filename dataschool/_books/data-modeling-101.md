@@ -11,6 +11,7 @@ authors:
 - _people/dave.md
 reviewers: []
 cover_image: "/assets/images/book-covers/data-modeling-101.png"
+thumbnail_cover_image: "/assets/images/book-covers/data-modeling-101@thumbnail.png"
 image: "/assets/images/book-covers/social-data-modeling.png"
 main_color: "#764514"
 is_featured: false

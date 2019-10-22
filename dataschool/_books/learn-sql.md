@@ -7,6 +7,7 @@ book_sort_number: 1
 authors: _people/dave.md
 reviewers: _people/matt.md
 cover_image: "/assets/images/book-covers/learn-sql.png"
+thumbnail_cover_image: "/assets/images/book-covers/learn-sql@thumbnail.png"
 image: "/assets/images/book-covers/social-learn-sql.png"
 main_color: "#762314"
 is_featured: false

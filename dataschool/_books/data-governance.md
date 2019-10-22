@@ -14,6 +14,7 @@ authors:
 - _people/aaron-aihini.md
 reviewers: _people/twange-kasoma.md
 cover_image: "/assets/images/book-covers/data-governance.png"
+thumbnail_cover_image: "/assets/images/book-covers/data-governance@thumbnail.png"
 image: "/assets/images/book-covers/social-data-governance.png"
 main_color: "#143676"
 is_featured: true

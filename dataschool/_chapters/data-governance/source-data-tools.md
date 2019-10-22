@@ -24,14 +24,14 @@ Modern businesses generate tons of data. Product information, customer informati
 
 This stage is ideal for new companies or teams with minimal data needs.  It is inexpensive and relatively easy to tool, implement, and maintain.  It is sometimes exciting to build out a sophisticated data stack, but be sure to start here and check that it doesn't satisfy your needs before moving on - as over-engineering is a costly mistake.
 
-### This stage is right for you if
+## This stage is right for you if
 
  - You have a small team with only a few people using data
  - You have minimal data needs at the moment
  - You only have data in a few small sources
  - The only people who need to make new visuals are fairly technical
 
-### You've outgrown this stage if
+## You've outgrown this stage if
 
  - You have data you need access to in multiple places/applications
  - You need unique or combined charts/dashboards for cloud application sources like SalesForce

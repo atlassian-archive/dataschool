@@ -5,6 +5,7 @@ description: Learn SQL techniques to improve query speed and data warehouse perf
 book_slug: sql-optimization
 authors: _people/matt.md
 cover_image: "/assets/images/book-covers/sql-optimization.png"
+thumbnail_cover_image: "/assets/images/book-covers/sql-optimization@thumbnail.png"
 image: "/assets/images/book-covers/social-sql-optimize.png"
 main_color: ''
 is_featured: false
