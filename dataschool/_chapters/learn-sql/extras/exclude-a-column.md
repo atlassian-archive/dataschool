@@ -35,8 +35,8 @@ Not including columns or deleting columns you don’t want in your SELECT statem
 ```sql
 SELECT
 	column1,
-    --column2,
-    column4_
+	--column2,
+    column4
 FROM
 	table_name;
 ```
@@ -58,12 +58,12 @@ If you will often be querying a table and retrieving most of its columns, then i
 Here is how it would look if we wanted to end up with all of the columns except _column2_:
 
 ```sql
-CREATE VIEW _view_name_ AS
+CREATE VIEW view_name AS
 SELECT
 	column1,
 	column3,
 	column4
-FROM _table_name_;
+FROM table_name;
 ```
 
 This view could then be queried using SELECT *
