@@ -3,7 +3,7 @@ section: Stage 2 - Lake
 title: ETL vs ELT
 meta_title: Use ELT for Data Lakes
 description: Learn why you should use an ELT over a ETL process for your Data Lake
-number: 7
+number: 6
 authors:
 - _people/kostas-pardalis.md
 reviewers:

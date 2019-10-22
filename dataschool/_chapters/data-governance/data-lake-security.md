@@ -3,7 +3,7 @@ section: Stage 2 - Lake
 title: Data Lake Security
 meta_title: Setup Security on a Data Lake
 description: Learn best practices for ensuring data security on a Data Lake database.
-number: 6
+number: 7
 authors:
 - _people/matt.md
 reviewers:
