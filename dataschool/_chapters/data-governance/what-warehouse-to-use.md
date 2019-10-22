@@ -28,10 +28,9 @@ In 2005 a group Brown, Brandeis University and MIT released a ground breaking pa
 
 These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counter parts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data.  
 
-If these were vehicles, transactional databases would be scooters capable of many quick trips and warehouse engines would be semi's doing few trips but hauling large loads.
+<!-- TODO: Would be a great visual here I think - draw a semi and a scooter and maybe list "fast, many trips, low payload" vs "slow, few trips, heavy payload"   -->
 
-<!-- TODO: We need to explain why they should store their lake on a warehouse engine -->
-
+If these were vehicles, transactional databases would be motorcycle capable of many quick trips and warehouse engines would be semi's doing few trips but hauling large loads.
 
 
 ## Deciding factors
