@@ -9,7 +9,7 @@ authors:
 - _people/matt.md
 reviewers:
 - _people/dave.md
-feedback_doc_url: https://docs.google.com/document/d/1ufvuBfjmJXJ2FMTbH-NFF8M6Aa5pI7lhRT948BJD0CA/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/156o09VDLYztmmVwOKXp7XrLnbycn-glQ-LGBLvmIGPc/edit?usp=sharing
 image: "/assets/images/DataLake (1).png"
 is_featured: false
 img_border_on_default: false
@@ -23,25 +23,25 @@ reading_time: 5
 
 A Data Lake is a storage repository of multiple sources of raw data in a single location. In the cloud these are typically stored in cloud c-store data warehouses or in S3 buckets, the data can be in a variety of formats and can be structured, semi-structured, unstructured, or even binary.
 
-![Building a Data Lake](http://img.chartio.com/a52373642904/Image%202019-10-20%20at%205.31.17%20PM.png)
+![](/assets/images/LakeConnection (1).png)
 
 The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast the term Data Mart which described orderly, siloed, and refined data. Having all the data in one place made it easier to work with large data sets and to start getting out insights earlier in the data modeling process.
 
 ### This stage is right for you if
 
- - You need unique or combined charts/dashboards for cloud application sources like SalesForce
- - Your charts and dashboards will be created by a core set of people who will all be able to learn the in's and outs of the structure of the messy data
- - You're intimidated by data modeling (but just don't be - that's why we have this book)
- - You cannot spare the time for even light data modeling and are okay for now with the technical debt you're taking on
- - You have large sets of data and need more performant queries
+* You need unique or combined charts/dashboards for cloud application sources like SalesForce
+* Your charts and dashboards will be created by a core set of people who will all be able to learn the in's and outs of the structure of the messy data
+* You're intimidated by data modeling (but just don't be - that's why we have this book)
+* You cannot spare the time for even light data modeling and are okay for now with the technical debt you're taking on
+* You have large sets of data and need more performant queries
 
 ### You've outgrown this stage if
 
- - More than a few people are going to be working with this dataset
- - You want a clean source of truth of your company
- - You don't like fighting integrity issues
- - You need to separate the structure of the data from the always changing transactional sources.
- - You Don't like Repeating Yourself (DRY)
+* More than a few people are going to be working with this dataset
+* You want a clean source of truth of your company
+* You don't like fighting integrity issues
+* You need to separate the structure of the data from the always changing transactional sources.
+* You Don't like Repeating Yourself (DRY)
 
 ![Move data from Sources to Lake](/assets/images/DataLake (1)-1.png "Data Lake")
 

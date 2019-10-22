@@ -2,6 +2,7 @@
 title: Modern Data Governance
 meta_title: Data Governance web book
 description: Learn how to apply Data Governance techniques to optimize your data stack
+downloadable: true
 book_slug: data-governance
 book_sort_number: 1
 authors:

@@ -10,14 +10,14 @@ authors:
 - _people/jaime-flores-lovo.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1lmeLsqom8CzXhm8i3EneukLjiOdT8V82-aeT5tErD0k/edit?usp=sharing
 image: "/assets/images/WarehouseMaintenance-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time:
+reading_time: 
 
 ---
 Now that you’ve setup a Data Warehouse, the next and ongoing step is maintenance. This involves making sure the Data Warehouse objects; columns, tables, views, and schemas are accurate and up-to-date. Maintaining your Data Warehouse is an integral part of easing the ability for users in your organization to gain insights into your data. If it is not maintained people will query the wrong data and get conflicting results.

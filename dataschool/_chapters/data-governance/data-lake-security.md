@@ -3,12 +3,12 @@ section: Stage 2 - Lake
 title: Data Lake Security
 meta_title: Setup Security on a Data Lake
 description: Learn best practices for ensuring data security on a Data Lake database.
-number: 6
+number: 7
 authors:
 - _people/matt.md
 reviewers:
 - _people/dave.md
-feedback_doc_url: https://docs.google.com/document/d/1zJuiI7_bM9rLMBe5yAiI3H7llHsbDk6FEqjk_Tz9Ki0/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/1no0HYQHZamAPfScdyF3zozPcukMu5EIQYjPa30LMTK0/edit?usp=sharing
 image: "/assets/images/DataLakeSecurity (1)-1.png"
 is_featured: false
 img_border_on_default: false
@@ -22,7 +22,7 @@ Prior to having a Data Lake, all analysis had to be done by working with data in
 
 Data Lakes provide a way to centralize access to data and make it simpler to manage permissions.
 
-Data coming in to the Data Lake is likely not cleaned yet so there may still be sensitive information coming through. Don’t Extract or Load sensitive data/columns, this is configurable within the ELT tools. Also be wary of who you grant access to the Data Lake since it gives much more access to all of the data than giving access to a particular source.
+Data coming in to the Data Lake is likely not cleaned yet so there may still be sensitive information coming through. Don’t [Extract or Load](https://dataschool.com/data-governance/etl-vs-elt/) sensitive data/columns, this is configurable within the ELT tools. Also be wary of who you grant access to the Data Lake since it gives much more access to all of the data than giving access to a particular source.
 
 ## Access in central place
 
@@ -36,8 +36,8 @@ Now that you can easily grant anyone access to data, you will have more people a
 
 Start out by creating two users groups on the Data Lake as follows:
 
-1. For admin and engineers
-2. For analysts and business users
+1. For admin and engineers (Full Access)
+2. For analysts and business users (Relevant Access)
 
 You can prevent the second group from accessing sensitive data in the Data Lake by having that group not have access to the schemas or tables with that type of data.
 

@@ -12,7 +12,7 @@
       border-right: 1px solid $gray-400;
       background: $background-color;
       padding: 0;
-      .sidebar-logo, .smallbook {
+      .sidebar-logo {
         margin: 0.75rem;
       }
       .sidebar-logo {
@@ -24,9 +24,40 @@
           opacity: 0.85;
         }
       }
-      a.book-title {
-        color: $text-color;
-        font-weight: bold;
+      .book-title-links {
+        display: flex;
+        div {
+          margin-right: 0.75rem;
+          a {
+            display: block;
+            margin: 0;
+          }
+        }
+        a.smallbook-link {
+          flex: 0 0 3rem;
+          margin: 0 0.5rem 0 0.75rem;
+          // img {
+          //   position: relative;
+          //   transition: bottom 1s;
+          // }
+          // &:hover {
+          //   img {
+          //     bottom: 0.25rem;
+          //     transition: bottom 1s;
+          //   }
+          // }
+        }
+
+        a.book-title {
+          color: $text-color;
+          font-weight: bold;
+          // font-family: "Gentium Book Basic", "Times New Roman", serif;
+          // font-style: italic;
+          // font-size: 1.2em;
+        }
+        a.book-download {
+          font-size: 0.8em;
+        }
       }
       ul.components.main-nav > li, ul.components li.book-section > ul > li {
         padding: 0.25rem 0.75rem 0.25rem 0.75rem;

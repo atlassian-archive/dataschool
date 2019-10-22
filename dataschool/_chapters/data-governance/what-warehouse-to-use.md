@@ -17,6 +17,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
+
 ---
 In order to build a Data Lake, we need to choose a database to host it on.  Historically, and still today at massive (> 100GB/day) scale, the Lake was stored in a file system like S3 buckets.  
 
@@ -42,9 +43,9 @@ The biggest decision to make when moving from a lake to a warehouse is what data
 * Performance/Scale
 * Maintenance
 
-There are a variety of database pricing models for Data Warehouse from being based on storage to being based on the amount of data queried. If your company is strictly using Amazon or Google as your software vendors, this can dictate your vendor choice as well.
+There are a variety of database pricing models for Data Lakes from being based on storage to being based on the amount of data queried. If your company is strictly using Amazon or Google as your software vendors, this can dictate your vendor choice as well.
 
-The architecture of the Data Warehouse has implications on how it’ll help your operations scale. Differences in different warehouses entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your Data Warehouse you will want to know that as well.
+The architecture of the Data Lake has implications on how it’ll help your operations scale. Differences in different lakes entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your Data Lake you will want to know that as well.
 
 When selecting the right data engine for your organization, you may also consider whether you want an on-premise or cloud solution. More and more businesses are moving to cloud solutions to take advantage of the “as a service” model and save on hardware costs so we will focus on cloud databases in this section.
 
@@ -72,11 +73,11 @@ Users can often run into concurrency issues with Redshift if it isn’t set up p
 
 #### Pros
 
-BigQuery is not bound by cluster capacity of storage or compute resources, so it scales and performs very well with increasing demands for concurrency ie. more people/queries accessing the database. As a fully managed warehouse, BigQuery handles vacuums and resizing on its own which can save time for your data engineers and makes it easy to use and maintain. For businesses using Google products, BigQuery integrates well with Google Drive and Google Analytics.
+BigQuery is not bound by cluster capacity of storage or compute resources, so it scales and performs very well with increasing demands for concurrency ie. more people/queries accessing the database. As a fully managed database, BigQuery handles vacuums and resizing on its own which can save time for your data engineers and makes it easy to use and maintain. For businesses using Google products, BigQuery integrates well with Google Drive and Google Analytics.
 
 #### Cons
 
-Cost is determined per query byte, making it difficult to budget or regulate if you have users running ad hoc queries against the Data Warehouse. To work around this, you can leverage BigQuery’s cost controls but it can still restrict the amount of analysis you can perform because it limits the queries you can run.
+Cost is determined per query byte, making it difficult to budget or regulate if you have users running ad hoc queries against the Data Lake. To work around this, you can leverage BigQuery’s cost controls but it can still restrict the amount of analysis you can perform because it limits the queries you can run.
 
 ### Snowflake
 
@@ -84,13 +85,13 @@ Cost is determined per query byte, making it difficult to budget or regulate if 
 
 #### Pros
 
-Like BigQuery, Snowflake has an architecture that separates the compute query engine from data storage. As a result, it is highly scalable at any amount of volume and concurrency. Pricing is based on the storage and compute used on a time-basis with their virtual warehouses instead of per bytes scanned. Tuning, indexes, and distribution keys aren’t required for queries to be optimized and performant. Because of these reasons, it can be said that Snowflake has many of the benefits of both Redshift and Big Query.
+Like BigQuery, Snowflake has an architecture that separates the compute query engine from data storage. As a result, it is highly scalable at any amount of volume and concurrency. Pricing is based on the storage and compute used on a time-basis with their virtual databases instead of per bytes scanned. Tuning, indexes, and distribution keys aren’t required for queries to be optimized and performant. Because of these reasons, it can be said that Snowflake has many of the benefits of both Redshift and Big Query.
 
 Like Redshift, it's connection and query syntax is also very similar to Postgres.
 
 #### Cons
 
-Snowflake is a relatively new Data Warehouse in the market, so if you are familiar with SQL functions supported by databases like Redshift or Postgres you may find some inconsistencies in the SQL syntax. Snowflake also is more expensive
+Snowflake is a relatively new database in the market, so if you are familiar with SQL functions supported by databases like Redshift or Postgres you may find some inconsistencies in the SQL syntax. Snowflake also is more expensive
 
 ## Database Engines
 
@@ -104,7 +105,7 @@ Unlike the options above, PostgreSQL is an open source database that is free to 
 
 #### Cons
 
-Postgres is a straightforward, flexible solution that’s different from Snowflake, Redshift, and BigQuery because it is a row-oriented database more suited for processing transactional data over analytical queries. It’s a single database connection not architected for parallel processing, so it generally doesn’t perform as well if you have a data volume of over 1 TB. Consequently, Postgres is great as a database, but is not a a good choice for a data warehouse if you have a high volume of data (>1TB).
+Postgres is a straightforward, flexible solution that’s different from Snowflake, Redshift, and BigQuery because it is a row-oriented database more suited for processing transactional data over analytical queries. It’s a single database connection not architected for parallel processing, so it generally doesn’t perform as well if you have a data volume of over 1 TB. Consequently, Postgres is great as a database, but is not a a good choice for a Data Lake if you have a high volume of data (>1TB).
 
 ### Recommendation
 

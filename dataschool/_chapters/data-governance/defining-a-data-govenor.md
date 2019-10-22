@@ -10,7 +10,7 @@ authors:
 - _people/matt.md
 reviewers:
 - _people/dave.md
-feedback_doc_url: https://docs.google.com/document/d/1v-NJdR3zSyfn4tNtvoTLM_52SJbS2lVLudaSVxlRXdw/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/1d87KH-6e5Py5Nsou1RVX_8i452NWtKGupULtY0fzyBA/edit?usp=sharing
 image: "/assets/images/DataGovernerCover.png"
 is_featured: false
 img_border_on_default: false

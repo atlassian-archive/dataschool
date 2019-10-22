@@ -8,7 +8,7 @@ authors:
 - _people/matt.md
 reviewers:
 - _people/dave.md
-feedback_doc_url: https://docs.google.com/document/d/1pdv66jBqwtCPAK_h7Q7h2Z5YKtPg-c9HU1_2yxn_txg/edit?usp=sharing
+feedback_doc_url: https://docs.google.com/document/d/1snJqfEy3W6t50kmdO5wht-uHILmz3t9-0flYcgeu1sc/edit?usp=sharing
 image: "/assets/images/DataMartImplementation.png"
 is_featured: false
 img_border_on_default: false

@@ -3,13 +3,14 @@ section: book
 title: Introduction - Modern Data Governance and the 4 Stages of Sophistication
 short: Introduction
 meta_title: Stages of Data Sophistication and Modern Data Governance
-description: Learn how Data Governance practices change as the level of data sophistication changes.
+description: Learn how Data Governance practices change as the level of data sophistication
+  changes.
 number: -10
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1otmCF7Ep4VfcymEDSWn6JWGkl3wVTf8C_d18_oEROVc/edit?usp=sharing
 image: "/assets/images/IntroductionToModernDataGovernance.png"
 is_featured: false
 img_border_on_default: false
@@ -31,7 +32,7 @@ The structure and original chapters of this book were written by the leadership 
 
 ## The 4 Stages of Data sophistication
 
-From our experience working with so many organizations we recognized four distinct stages of data sophistication that successful companies go through. These stages happen to be tied to a new piece of the data stack that is needed at each stage, and so we have named these stages after those pieces.  
+From our experience working with so many organizations we recognized four distinct stages of data sophistication that successful companies go through. These stages happen to be tied to a new piece of the data stack that is needed at each stage, and so we have named these stages after those pieces.
 
 This book is organized by these 4 sequential stages which are:
 
@@ -50,7 +51,7 @@ We'll start with an overview of each of these stages:
 
 ### Stage 1. [Sources](/data-governance/source-data-tools/)
 
-![Source Stage of Data Sophistication](https://lh4.googleusercontent.com/gQGOiX-JT7DSLZLlkT0fDUfdZm2nITUw6pSF2SrOrmac7mq7HxF-U2bYf5O8uDP-Id9Tay_1k8S1h87iHZLedkpJNYWJABORVnNw9v8AotkwEN1O2KXcsvkYR9IU4kbylh4G5CBE)
+![Source Stage of Data Sophistication](/assets/images/StartingWithSourceData (1).png "Source Data")
 
 When you start working with data, you may only have a few sources of interest. Two common early sources are Google Analytics and your application data in whatever PostgreSQL or MySQL database your product runs on. If only a few people at your company need to work with these sources, you might set them up with direct access; it’s more simple and agile for them to just work with the data directly.
 
@@ -58,7 +59,7 @@ When you start working with data, you may only have a few sources of interest. T
 
 As you start to rely on more data sources, and more frequently need to blend your data, you’ll want to build out a Data Lake—a spot for all of your data to exist together in a unified format.
 
-![Lake Stage of Data Sophistication](https://lh6.googleusercontent.com/45iVlzJHp2uIt3rtQxu3KpIGoJIJ1iqTf25p3nU33reggsJDGm9JZyM908pA3x1ugaDWiDXYjSGg72uSRB1MyAKmcXLbT2hhz7jWlPkWp3pPXlav_fc80Vtko3lmgFLOjROkUNXZ)
+![Lake Stage of Data Sophistication](/assets/images/DataLakeDiagram (1).png "Data Lake")
 
 Especially when you need to work with data from applications like Salesforce, Hubspot, Jira, and Zendesk, you’ll want to create a single home for this data so you can access all of it together and with a single SQL syntax, rather than many different APIs.
 
@@ -66,7 +67,7 @@ Especially when you need to work with data from applications like Salesforce, Hu
 
 In the Lake stage, as you bring in more people to work with the data, you have to explain to them the oddities of each schema, what data is where, and what special criteria you need to filter by in each of the tables to get the proper results. This becomes a lot of work, and will leave you frequently fighting integrity issues. Eventually, you’ll want to start cleaning your data into a single, clean source of truth.
 
-![Warehouse Stage of Data Sophistication](https://lh3.googleusercontent.com/IIYi4iD4oQgw4CKdR5EAHWXx1MfEuRXCK7gFCx_9Ved3L5hhiSqoNV7p4iqYMwR2Dwfa5_nW4kN6Yx-iTNm_jz63tj0LURWpjiWhmhnkeoMyM5w6FK79z0yTxrXzPn50zDzAAm5G)
+![Warehouse Stage of Data Sophistication](https://lh3.googleusercontent.com/IIYi4iD4oQgw4CKdR5EAHWXx1MfEuRXCK7gFCx_9Ved3L5hhiSqoNV7p4iqYMwR2Dwfa5_nW4kN6Yx-iTNm_jz63tj0LURWpjiWhmhnkeoMyM5w6FK79z0yTxrXzPn50zDzAAm5G "Data Warehouse")
 
 This stage—creating a data Warehouse—has historically been quite a nightmare, and there are many books written on how best to model your data for analytical processing. But these days it’s not that hard—and will not only spare you from having to explain all of your schemas’ oddities to new team members, but will also save you as an individual time in having to repeat, edit and maintain your own messy queries.
 
@@ -76,6 +77,6 @@ When you have clean data and a good BI product on top of it, you should start no
 
 Eventually, however, you’ll have hundreds of tables in that source of truth, and users will become overwhelmed when trying to find the data that’s relevant to them. You may also discover that, depending on the team, department, or use case, different people want to use the same data structured in different ways. For these reasons, you’ll want to start rolling out Data Marts.
 
-![Marts Stage of Data Sophistication](https://lh3.googleusercontent.com/1E7D3_diPh5wYiEElr6_sQeY6qIV0Ri5nkC4LIqm_x5O9jJV_5hODDbdOZWHa8nKl_VcR7CbT_nbXvhRuDkzrOOV3amkVdu41zSeAtHEd-r6yPOqTaRI09ISxDn1rvTOGqjqFdRa)
+![Marts Stage of Data Sophistication](https://lh3.googleusercontent.com/1E7D3_diPh5wYiEElr6_sQeY6qIV0Ri5nkC4LIqm_x5O9jJV_5hODDbdOZWHa8nKl_VcR7CbT_nbXvhRuDkzrOOV3amkVdu41zSeAtHEd-r6yPOqTaRI09ISxDn1rvTOGqjqFdRa "Data Mart")
 
 Data Marts are smaller, more specific sources of truth for a team or topic of investigation. For example, the Sales team may only need 12 or so tables from the main Warehouse, while the Marketing team may need 20 tables—some of them the same, but some different.

@@ -2,20 +2,22 @@
 section: book
 title: About this Book
 meta_title: About Modern Data Governance
-description: "Information about who this book is for, who it's not, how we wrote it, disclaimers, influences and how to contribute."
+description: Information about who this book is for, who it's not, how we wrote it,
+  disclaimers, influences and how to contribute.
 number: -5
-image: http://img.chartio.com/3835f24267b8/Image%202019-10-20%20at%205.27.22%20PM.png
+image: "/assets/images/AboutBook (1).png"
 authors:
 - _people/dave.md
 reviewers:
 - _people/matt.md
-feedback_doc_url: ''
+feedback_doc_url: https://docs.google.com/document/d/1OFZoJFdgJWG3Rw8ysYapxC1eBuzBslvVd39eDzSd2Tw/edit?usp=sharing
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 4
+
 ---
 ## Who this book is for
 
@@ -86,4 +88,4 @@ This is an open, community driven book created by many different people.  It is 
 
 Few are complete "experts" in all of the areas of modern data governance, and the landscape is changing all of the time.  If you have a story to share, or a chapter you think is missing, or a new idea - [email us](mailto:mdavid@dataschool.com) or create a pull request with the edits on our [github repo](https://github.com/chartio/dataschool).
 
-Even if you don't know what specifically to share, but you don't mind sharing your story - please reach out as we are particularly interested in adding specific examples from specific companies as they can be the most powerful method of learning.  
+Even if you don't know what specifically to share, but you don't mind sharing your story - please reach out as we are particularly interested in adding specific examples from specific companies as they can be the most powerful method of learning.
