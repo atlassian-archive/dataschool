@@ -26,9 +26,9 @@ Over time, companies scaled and most people now work for larger, distributed org
 
 Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and an effective data stack are essential tasks if a buisness wants to gain from it's information.
 
-This book is for organizations that want to gain best practices and visibility into their data.  It is a continually improving community driven book teaching Modern Data Governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
+This book is for organizations of all sizes that want to build the right data stack for them - one that is both practical and enables them to be as informed as possible.  It is a continually improving community driven book teaching Modern Data Governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
 
-The structure and original chapters of this book were written by the leadership and Data Advisor teams at Chartio, sharing our experiences working with hundreds of companies over the past decade.  Here we've compiled our learnings and open sourced them in a free, open book format.
+The structure and original chapters of this book were written by the leadership and Data Advisor teams at Chartio, sharing our experiences working with hundreds of companies over the past decade.  Here we've compiled our learnings and open sourced them in a free, open book.
 
 ## The 4 Stages of Data sophistication
 
@@ -57,7 +57,7 @@ When you start working with data, you may only have a few sources of interest. T
 
 ### Stage 2. [Lake](/data-governance/why-build-a-data-lake/)
 
-As you start to rely on more data sources, and more frequently need to blend your data, you’ll want to build out a Data Lake—a spot for all of your data to exist together in a unified format.
+As you start to rely on more data sources, and more frequently need to blend your data, you’ll want to build out a Data Lake—a spot for all of your data to exist together in a unified, performant source.
 
 ![Lake Stage of Data Sophistication](/assets/images/DataLakeDiagram (1).png "Data Lake")
 
