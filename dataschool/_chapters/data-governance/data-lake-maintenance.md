@@ -19,12 +19,12 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
-Data Lakes are inherently not super well organized or maintained. They should be relatively low maintenance but there are two areas that will need some attention.
+Data Lakes are inherently not very well organized or maintained. They should be relatively low maintenance but there are two areas that will need some attention.
 
 * Data Sources
 * Performance
 
-These maintenance activities can be expensive if you extracted and loaded your data with custom scripts. You would need in depth knowledge of where data is coming from. You would need to know how to work with their API and data structures and potentially have to write a lot of new code when they make an update. Don’t Extract and Load manually, use tools like Fivetran, Blendo, or Stitch which will automatically handle these data source updates.
+These maintenance activities can be expensive if you extracted and loaded your data with custom scripts. You would need in-depth knowledge of where data is coming from. You would need to know how to work with their API and data structures and potentially have to write a lot of new code when they make an update. Don’t Extract and Load manually, use tools like Fivetran, Blendo, or Stitch which will automatically handle these data source updates.
 
 ## Data Sources
 
@@ -44,13 +44,13 @@ Ideally, this is as simple as clicking a few buttons inside of an ELT product. P
 
 ### Data source updates
 
-Sources change all the time, ETL tools handle these for you. This is what they focus on, so they will work to update API calls to make sure the data you are getting is accurate.
+Sources change all the time, and ETL tools can handle these for you. This is what they focus on, so they will work to update API calls to make sure the data you're getting is accurate.
 
 ![Data Source Updates from ELT Tool](/assets/images/DataSourceUpdates.png "Data Source Updates")
 
 ### Fixing broken connections
 
-Occasionally you will need to manually reconfigure things. If a data source adds a new field or removes a certain table some of your queries might break. You will need to look into the changes and update your queries to work appropriately.
+Occasionally, you will need to manually reconfigure things. If a data source adds a new field or removes a certain table some of your queries might break. You will need to look into the changes and update your queries to work appropriately.
 
 ![Data Source Update Broken Query](/assets/images/BrokenQuery.png "Broken Query")
 
@@ -60,21 +60,21 @@ As shown in the case above, we need to consult the datasource and update the fie
 
 ## Performance
 
-At the Data Lake stage you should focus your optimization at the dashboard or query level.
+At the Data Lake stage, you should focus your optimization at the dashboard or query level.
 
 ### Optimize individual queries
 
-There are simple concepts to keep in mind when optimizing queries. Only join what you have to, Select only the columns you will need to analyze and so on. To dig in deep check out our [Book on Optimizing SQL](https://dataschool.com/sql-optimization/).
+There are simple concepts to keep in mind when optimizing queries. Only join what you have to, Select only the columns you will need to analyze, and so on. To dig in deep check out our [Book on Optimizing SQL](https://dataschool.com/sql-optimization/).
 
 ### Caching
 
-Many BI products allow you to cache data for improved query speeds and less strain on the database itself. While this reduces the real time nature of your analytical query, you can query the data as much as you would like.
+Many BI products allow you to cache data for improved query speeds and less strain on the database itself. While this reduces the real-time nature of your analytical query, you can query the data as much as you would like.
 
 ![Caching data in Chartio](/assets/images/CachingData.png "Cache Data")
 
 ### Create limits
 
-Some platforms struggle with concurrency, where lots of people are querying the same source at once. Improve query speed in these scenarios by limiting how many queries people can perform on the database. While this can be a blow to people’s curiosity or analysis it quickly solves this performance problem.
+Some platforms struggle with concurrency, where lots of people are querying the same source at once. Improve query speed in these scenarios by limiting how many queries people can perform on the database. While this can be a blow to people’s curiosity or analysis, it quickly solves this performance problem.
 
 ![Solve Concurrency with limits](/assets/images/QueryLimits.png "Limit Query People")
 
@@ -88,7 +88,7 @@ Queries can be limited in different ways:
 
 ### Scheduling
 
-Examine how your BI product queries the database. Does it do it automatically on a schedule or is it manual. Tools such as Chartio have Smart refresh options to run queries at off peak times to balance the load on the database.
+Examine how your BI product queries the database. Does it do it automatically on a schedule or is it manual. Tools such as Chartio have Smart Refresh options to run queries at off-peak times to balance the load on the database.
 
 ![Chartio database refresh schedule](/assets/images/ScheduleRefresh.png "Schedule Refresh")
 
