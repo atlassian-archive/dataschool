@@ -38,13 +38,14 @@ So with these changes in mind let's review the current set of pros and cons for 
 
 Pros
 
-* Less Errors
+* Less errors
 * Less chance of PII being handled incorrectly
 
 Cons
 
 * Central Team bombarded with requests
 * Curiosity has a gatekeeper
+* Hard to Scale
 
 ## Democratized data
 
