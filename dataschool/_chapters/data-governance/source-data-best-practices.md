@@ -55,7 +55,7 @@ If you're using Tableau, they have a feature called Data Interpreter that will d
 
 ## Visual, Drag & Drop Exploration
 
-In addition to SQL access, some BI products with drag and drop data explorers such as Tableau Desktop or Chartio's Visual SQL will handle writing the SQL for you.  Generally exploring data visually is much faster and more intuitive than writing raw SQL.  Visual interfaces will handle changing data format strings, join paths, new groupings, unique dialects, etc. which will automatically you a lot of googling and debugging.
+In addition to SQL access, some BI products with drag and drop data explorers such as Tableau Desktop or Chartio's Visual SQL will handle writing the SQL for you.  Generally exploring data visually is much faster and more intuitive than writing raw SQL. Visual interfaces will handle changing data format strings, join paths, new groupings, unique dialects, etc. which will automatically you a lot of googling and debugging.
 
 ![Chartio Visual SQL](/assets/images/Screen Shot 2019-09-30 at 9.44.02 PM.png)
 
@@ -75,7 +75,7 @@ Read this post on [Finding Outliers with SQL](https://dataschool.com/how-to-teac
 
 ## Keep short Dashboards
 
-We've noticed that people have a tendency to keep adding more and more charts to existing dashboards.  We get it, when you're finding one insight at a time, it never feels like the right time to make a totally new dashboard.  The result however is that you end up with really long,  disorganized dashboards that run queries for each chart each time.
+We've noticed that people have a tendency to keep adding more and more charts to existing dashboards.  We get it, when you're finding one insight at a time, it never feels like the right time to make a totally new dashboard. The result however is that you end up with really long, disorganized dashboards that run queries for each chart each time.
 
 ![Keep shorter dashboards](https://chartio.com/images/blog/best-practice:-keep-shorter-dashboards/image-asset.jpeg)
 
@@ -93,13 +93,13 @@ In short - when creating key dashboards that you'll be continually monitoring, f
 
 ## Summary
 
-Analyzing source data can be tricky since it has not been cleaned or modeled. That said, these best practices make it easy: 
+Analyzing source data can be tricky since it has not been cleaned or modeled. That said, these best practices make it easy
 
 * Keep a short, regularly updated snippet dictionary
 * Use BI products to overcome data issues such as weird field names and complex joins
 * Double check the data before visualization
 * Keep shorter Dashboards
-* Design dashboards in pen and paper first
+* Design dashboards with pen and paper first
 * Keep an eye on query performance if you are hitting the production database
 
-Lastly, you should start exploring tools to pipe in multiple sources of data that are not handled by your SQL based BI tool to build your Data Lake.
+Lastly, you should start exploring tools to pipe-in multiple sources of data that are not handled by your SQL-based BI tool to build your Data Lake.
