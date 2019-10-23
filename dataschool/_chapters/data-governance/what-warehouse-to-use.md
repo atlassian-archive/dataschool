@@ -1,6 +1,6 @@
 ---
 section: Stage 2 - Lake
-title: What engine to use for a Lake
+title: What Engine to Use For a Data Lake
 short: Choosing an Engine
 meta_title: How to choose an engine for your Data Lake and Warehouse
 description: Learn the pros and cons of the modern database options like Snowflake,
@@ -26,13 +26,13 @@ Today, with storage being so cheap and warehouses being so scalable, we recommen
 
 ## What is a Warehouse Engine?
 
-In 2005 a group Brown, Brandeis University and MIT released a ground breaking paper know as the [C-Store paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) introducing a new [column store architecture](/data-modeling-101/row-vs-column-oriented-databases/).  The many developments in that paper lead to a new class of cloud based databases that could very powerfully handle large sets of data.
+In 2005 a combined group from Brown University, Brandeis University, and MIT released a ground breaking paper know as the [C-Store paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) introducing a new [column store architecture](/data-modeling-101/row-vs-column-oriented-databases/).  The many developments in that paper lead to a new class of cloud based databases that could very powerfully handle large sets of data.
 
 These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counter parts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data.
 
 <!-- TODO: Would be a great visual here I think - draw a semi and a scooter and maybe list "fast, many trips, low payload" vs "slow, few trips, heavy payload"   -->
 
-If these were vehicles, transactional databases would be motorcycle capable of many quick trips and warehouse engines would be semi's doing few trips but hauling large loads.
+If these were vehicles, transactional databases would be motorcycles capable of many quick trips and warehouse engines would be semis doing few trips but hauling large loads.
 
 ## Deciding factors
 
@@ -45,7 +45,7 @@ The biggest decision to make when moving from a lake to a warehouse is what data
 
 There are a variety of database pricing models for Data Lakes, from being based on storage to being based on the amount of data queried. If your company is strictly using Amazon or Google as your software vendors, this can dictate your vendor choice as well.
 
-The architecture of the Data Lake has implications on how it’ll help your operations scale. Differences in different lakes entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your Data Lake you will want to know that as well.
+The architecture of the Data Lake has implications on how it’ll help your operations scale. Differences in the many types of lakes entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your Data Lake you will want to know that as well.
 
 When selecting the right data engine for your organization, you may also consider whether you want an on-premise or cloud solution. More and more businesses are moving to cloud solutions to take advantage of the “as a service” model and save on hardware costs so we will focus on cloud databases in this section.
 
@@ -59,13 +59,15 @@ Today, there are three dominant choices for cloud based data warehouse engines: 
 
 #### Pros
 
-Redshift has the benefits of ease of use, speed, and cost. Being a part of AWS, there is full service integration for the wide range of AWS services such as S3 for storage and CloudWatch for infrastructure monitoring. Redshift is generally cheaper than Snowflake or BigQuery, with a couple pricing options such as paying hourly per node or paying by number of bytes scanned with Redshift Spectrum. And it’s simple to set up and scale by increasing storage and performance by adding nodes to your cluster.
+Redshift has the benefits of ease of use, speed, and cost. Being a part of AWS, there is full service integration for the wide range of AWS services such as S3 for storage and CloudWatch for infrastructure monitoring. Redshift is generally cheaper than Snowflake or BigQuery, with a couple of pricing options such as paying hourly per node or paying by number of bytes scanned with Redshift Spectrum. It’s simple to set up and scale, increasing storage and performance, by adding nodes to your cluster.
 
-Most popular, though losing ground to a competitive Snowflake. It benefits from being similar in connection and SQL syntax to PostgreSQL.
+Redshift is probably the most popular, although it is losing ground to the competitive Snowflake. It benefits from being similar in connection and SQL syntax to PostgreSQL.
 
 #### Cons
 
-Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many people in an organization accessing the database. Ongoing maintenance may be required with Redshift to resize clusters, define sort keys, and vacuuming data. Like many AWS services there are many ways to customize your configuration with workload management, compression, and partitioning. But these advanced features are not very out of the box. So although it is powerful it may require a dedicated resource from your data engineering team.
+Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many users accessing the database. Ongoing maintenance may be required with Redshift to resize clusters, define sort keys, and vacuuming data. 
+
+Like many AWS services there are ways to customize your configuration with workload management, compression, and partitioning. But these advanced features are not very out of the box. So although it is powerful it may require a dedicated resource from your data engineering team.
 
 ### Google BigQuery
 
@@ -73,7 +75,7 @@ Users can often run into concurrency issues with Redshift if it isn’t set up p
 
 #### Pros
 
-BigQuery is not bound by cluster capacity of storage or compute resources, so it scales and performs very well with increasing demands for concurrency ie. more people/queries accessing the database. As a fully managed database, BigQuery handles vacuums and resizing on its own which can save time for your data engineers and makes it easy to use and maintain. For businesses using Google products, BigQuery integrates well with Google Drive and Google Analytics.
+BigQuery is not bound by cluster capacity of storage or compute resources, so it scales and performs very well with increasing demands for concurrency (ie. more people/queries accessing the database). As a fully managed database, BigQuery handles vacuums and resizing on its own which can save time for your data engineers and makes it easy to use and maintain. For businesses using Google products, BigQuery integrates well with Google Drive and Google Analytics.
 
 #### Cons
 
@@ -113,7 +115,7 @@ Selecting a Data Warehouse can be dependent on a number of factors that should b
 
 Redshift is a good choice as a standard cloud Data Warehouse if you have the capacity for a dedicated DBA. BigQuery and Snowflake are both highly scalable solutions considering their architecture. However, if cost or concurrency limits will be an issue for you then Snowflake would be more suitable for your organization.
 
-Remember all of the data warehouses are built on the same c-store architecture so the differences will not be severe in performance. If you'd like a full benchmarking (though the same final recommendation) do checkout Fivetran's awesome [warehouse benchmark](https://fivetran.com/blog/warehouse-benchmark).
+Remember all of these data warehouses are built on the same c-store architecture so the differences will not be severe in performance. If you'd like a full benchmarking (though the same final recommendation) do checkout Fivetran's awesome [warehouse benchmark](https://fivetran.com/blog/warehouse-benchmark).
 
 <!-- ## Selecting an ETL/ELT Process
 
@@ -123,7 +125,7 @@ Once you have selected your data warehouse solution, you will need to decide how
 
 ![Logo for dbt](/assets/images/dbtLogo (1).png "dbt")
 
-Doing an ETL/ELT in the same place, such as if you are using Redshift for both your database and data warehouse, simplifies your process and keeps your data stack lean. This is desirable because you will have less environments and tools to manage and your data will be housed in one location. You can just do it without having to extract and load. Transform only! -->
+Doing an ETL/ELT in the same place, such as if you are using Redshift for both your database and data warehouse, simplifies your process and keeps your data stack lean. This is desirable because you will have less environments and tools to manage and your data will be housed in one location. You can do it without having to extract and load. Transform only! -->
 
 <!--
 
