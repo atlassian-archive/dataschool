@@ -22,7 +22,7 @@ reading_time: 4
 ---
 Modern businesses generate tons of data. Product information, customer information, app performance, marketing expenditures, etc. You need to start organizing and analyzing data in order to run your business effectively. At the beginning of a business or while a business remains small, it is sufficient to work with data from production databases, product APIs, and financials directly from their original sources.
 
-This stage is ideal for new companies or teams with minimal data needs.  It is inexpensive and relatively easy to tool, implement, and maintain.  It is sometimes exciting to build out a sophisticated data stack, but be sure to start here and check that it satisfies your needs before moving on; over-engineering is a costly mistake.
+This stage is ideal for new companies or teams with minimal data needs. It is inexpensive and relatively easy to tool, implement, and maintain. It is sometimes exciting to build out a sophisticated data stack, but be sure to start here and check that it satisfies your needs before moving on; over-engineering is a costly mistake.
 
 ## This stage is right for you if
 
@@ -46,7 +46,7 @@ Data will live in many different places but the methods to analyze them boil dow
 
 ### Application Dashboards
 
-Many modern SaaS applications come built with the same set of fixed dashboards and visualizations to showcase the data they are capturing. These charts are highly tuned to specific use cases and can be quite informative - and maybe all you really need.  Some, like Salesforce, even have customizable chart and dashboard creators built-in for high flexibility.  These can take you a long way, especially if you don't need to see this data in combination with other data.
+Many modern SaaS applications come built with the same set of fixed dashboards and visualizations to showcase the data they are capturing. These charts are highly tuned to specific use cases and can be quite informative - and maybe all you really need. Some, like Salesforce, even have customizable chart and dashboard creators built-in for high flexibility. These can take you a long way, especially if you don’t need to see this data in combination with other data.
 
 ![Application Dashboards](/assets/images/Screen Shot 2019-09-30 at 9.48.53 PM.png)
 
