@@ -3,7 +3,8 @@ section: Stage 2 - Lake
 title: Extract and Load a Lake
 short: Extract and Load
 meta_title: How to Extract and Load data into a Data Lake
-description: Learn how to extract and load data sources like SalesForce, Hubspot, Marketo, etc into a single source.
+description: Learn how to extract and load data sources like SalesForce, Hubspot,
+  Marketo, etc into a single source.
 number: 6
 authors:
 - _people/kostas-pardalis.md
@@ -20,19 +21,17 @@ story_intro_blurb: ''
 reading_time: 7
 
 ---
-To get data into your Data Lake you will first need to **Extract** the data from the source through SQL or some API, and then **Load** it into the lake.  This process is called Extract and Load - or for short EL.  
+To get data into your Data Lake you will first need to **Extract** the data from the source through SQL or some API, and then **Load** it into the lake.  This process is called Extract and Load - or "EL" for short.
 
 <!--- TODO: Matt - Could use a nice diagram here of the source to lake image with Extract and Load visuals drawn in --->
 
-There are a number of great modern EL vendors (sometimes called ELT vendors) such as [Fivetran](https://fivetran.com/), [Stitch Data](https://stitchdata.com) or [Blendo](https://www.blendo.co).  
+There are a number of great modern EL vendors (sometimes called ELT vendors) such as [Fivetran](https://fivetran.com/), [Stitch Data](https://stitchdata.com) or [Blendo](https://www.blendo.co).
 
 <!--- TODO: Matt - would be great to put the company logos here --->
 
 These EL providers built detailed Extract scripts for the most popular API's and offer a simple experience for extracting and loading your data into your data lake. The process usually involves the setup of a pipeline where credentials are given for both the destination and the data source and some configuration where light transformation is performed, e.g. selecting what tables and fields to sync, hiding some values for privacy reasons, etc.
 
 The setup can be performed with minimal engineering effort in most cases.
-
-
 
 ## Extract Options
 
@@ -49,7 +48,7 @@ You will have to figure out what data you actually need in the data lake, so it 
 
 ### Incremental Extraction
 
-The preferred alternative is to do incremental extractions. This is more challenging since you need to check for new or updated rows and account for changing schemas. However, it is typically preferred because much less data being processed and fewer updates will need to be made in the data lake. All the cloud ELT vendors support incremental extractions from your sources.
+The preferred alternative is to do incremental extractions. This is more challenging since you need to check for new or updated rows and account for changing schemas. However, it is typically preferred because much less data being processed and fewer updates will need to be made in the data lake. All cloud ELT vendors support incremental extractions from your sources.
 
 The main downside to incremental extraction is deletions in a data source. It's not easy to detect and implement deletions in the general case. ELT providers do not guarantee consistency under deletions in most cases, in some cases it can be done or it is implemented by the source, e.g. data is never deleted but flagged as `is_deleted` instead.
 
@@ -67,16 +66,16 @@ If you are using a database system as a data lake, then you can update the data 
 
 The other way is to save the changes without updating the records. This is pretty much the only way you can do it if you use a file system and don’t want to add a lot of complexity on your data lake. The benefit of doing this is that you have a history of all the changes that happened on your data.
 
-
 ## Multiple schemas
 
-Most EL vendors will insert each source into the lake as a new schema or folder if you're on a file system.  This is ideal as your data will still be organized by source and there is no chance of commonly named tables overwriting eachother.  
+Most EL vendors will insert each source into the lake as a new schema or folder if you're on a file system.  This is ideal as your data will still be organized by source and there is no chance of commonly named tables overwriting each other.
 
 It will mean that when querying across these schemas you'll need to remember to specify the schema names in addition to the table names.
 
 ```sql
 SELECT * FROM "salesforce"."_user" AS "SFuser" JOIN "zendesk"."user" AS "ZDuser" ON "SFuser"."email" == "ZDuser"."email"
 ```
+
 <!--- TODO: Can we draw the source and lake image with some slices (schemas) of the new sources stored inside the lake -->
 
 ## Other Extract and Load routes
