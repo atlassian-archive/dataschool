@@ -83,7 +83,7 @@ Oftentimes people’s calculation of a metric will differ because of the followi
 
 #### Common data errors
 
-* New field or value not cleaned (nulls, encoded, wrong format, etc)
+* New field or value not cleaned (nulls, encoded, wrong format, etc.)
 * No new data
 * All queries on a data source erroring out
 * Performance
