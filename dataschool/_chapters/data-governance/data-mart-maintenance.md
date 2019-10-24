@@ -94,7 +94,7 @@ You will likely notice when there is a new column in one of your views that is n
 
 ![Bad naming for new field](/assets/images/NewField.png "New Field")
 
-This can also happen when a new option is added to a field and it is encoded in an unreadable way. Follow the same process, get it updated at the Data Warehouse level.
+This can also happen when a new option is added to a field and it is encoded in an unreadable way. Follow the same process to get it updated at the Data Warehouse level.
 
 ##### ![](/assets/images/NoNewData.png)
 
