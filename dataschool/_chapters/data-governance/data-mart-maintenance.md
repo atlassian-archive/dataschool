@@ -19,9 +19,9 @@ story_intro_blurb: ''
 reading_time: 6
 
 ---
-Now that you have set up Data Marts, you will still have ongoing maintenance to get the most out of your data. The first step is to establish a mayor per mart, they will then be responsible for carrying out the mart maintenance tasks:
+Now that you have set up Data Marts, you will still have ongoing maintenance to get the most out of your data. The first step is to establish a mayor per mart that will be responsible for carrying out the maintenance tasks for their mart:
 
-* Communicate/educate team
+* Communicate with and educate their team
 * Identify issues
 * Identify new needs
 

@@ -140,7 +140,6 @@ pages:
 - dataschool/_chapters/misrepresenting-data/trends.md
 - dataschool/_chapters/sql-optimization/partial-indexes.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
-- dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/data-governance/data-warehouse-implementation.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
@@ -151,6 +150,7 @@ pages:
 - dataschool/_chapters/learn-sql/extras/drop-all-tables-postgres.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/third-normal-form.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md
+- dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-governance/data-mart-implementation.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
