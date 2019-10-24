@@ -47,7 +47,7 @@ If you find you're already at a later stage, you may have a data lake already se
 
 ## Disclaimers
 
-While the goal of this book is to be community driven, the initial structure and version was written mostly by the team at [Chartio](https://chartio.com).  We don't pretend to have an unbiased view of the world.  We've made attempts to use and mention Chartio sparingly - but where BI examples are called for we've used our product as the example.  We've also made attempts to be open about our biases - but
+While the goal of this book is to be community driven, the initial structure and version was written mostly by the team at [Chartio](https://chartio.com).  We don't pretend to have an unbiased view of the world.  We've made attempts to use and mention Chartio sparingly - but where BI examples are called for we've used our product as the example.  We've also made attempts to be open about our biases - but we may not have caught everything, please let us know if you see any blindspots in the book.
 
 That our experience for this book has been gained by working with well over a thousand [modern companies](https://chartio.com/customers/) over almost decade, is a great advantage.  That the majority of these experiences are working with our own customers, setting up and growing data stacks to be specifically used with our unique product has undoubtedly left some blind spots in the book for those using other products.
 
