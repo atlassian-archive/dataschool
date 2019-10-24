@@ -131,4 +131,4 @@ These are all fairly advanced solutions. To learn how to optimize the SQL, read 
 
 ### Identify new needs
 
-Data is never a static thing. As new features roll out, new tools start getting used, and objectives get set, new data needs will emerge for your team. Do not assume that your Mart will be updated when any of these changes happen. You need to proactively advocate to make sure your Mart is updated.
+Data is never a static thing. As new features roll out, new tools get used, objectives are set, and new data needs will emerge for your team. Do not assume that your mart will be updated when any of these changes happen. You need to proactively advocate to make sure your mart is updated in a timely manner.
