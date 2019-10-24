@@ -21,11 +21,11 @@ reading_time: 5
 feedback_doc_url: https://docs.google.com/document/d/1N-FnKpdUb33ZVEeU5-YsuyVkWVGg2G0H_wlGLCFESak/edit?usp=sharing
 
 ---
-At this stage you really need to make a big choice in your organization - who do you want making the charts and dashboards?  Do you want a centralized workflow where all of the charts and dashboards are created by a core team, or do you want to be largely democratized where business users are enabled to self-serve and create their own charts?
+At this stage you need to make a big choice in your organization - who do you want to be making the charts and dashboards? Do you want a centralized workflow where all of the charts and dashboards are created by a core team, or do you want to be largely democratized where business users are enabled to self-serve and create their own charts?
 
 The choice here has dramatic impacts on the business, and while we lean strongly toward the benefits of a democratized workflow we realize it's not always right for every business or every stage.
 
-Here we attempt to clearly articulate the pros and cons of both workflows.  The choice here is painted fairly black and white, because that's just the reality of the implementation.  If you choose to stay centralized, and your central data team is less than around 50 people there's little need to do this final Mart stage of sophistication.  It is more work to build and maintain and if the only people using the data are full-time professionals their need for this slicing is minimal.
+Here we attempt to clearly articulate the pros and cons of both workflows.  The choice here is painted fairly black and white because that's just the reality of the implementation. If you choose to stay centralized and your central data team is less than around 50 people, there's little need to do this final Mart stage of sophistication. It is more work to build and maintain and if the only people using the data are full-time professionals their need for this slicing is minimal.
 
 The choice can impact what BI products you use, and completely changes how you organize your teams, trainings, and even who you hire.
 
