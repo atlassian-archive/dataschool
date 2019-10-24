@@ -62,7 +62,7 @@ Another point of interest are numbers that are not changing even though changes 
 
 ##### Conflicting numbers
 
-Numbers that conflict with numbers you have seen in another place measuring the same thing. If you see the number of new trials in HubSpot and your production database are different the rule of thumb is to trust the data source closest to the event that is being tracked. In this case it would be production.
+Sometimes metrics can be showing conflicting numbers even though they are measuring the same thing. If you see the number of new trials in HubSpot and your production database are different, the rule of thumb is to trust the data source closest to the event that is being tracked. In this case, it would be production.
 
 ```sql
 SELECT COUNT *
@@ -71,7 +71,7 @@ WHERE Trial_Start > NOW()::date - 7
 	AND Email != “%chartio.com”
 ```
 
-vs
+vs.
 
 ```sql
 SELECT COUNT *
@@ -79,7 +79,7 @@ FROM USER
 WHERE Trial_Start > NOW()::date - 7
 ```
 
-Oftentimes people’s calculation of a metric will differ because of the following reasons: They are calculating it based on a different formula, the data source they are using is different, they might be filtering the data differently, or there is an error in their calculation.
+Oftentimes people’s calculation of a metric will differ because of the following reasons: They are calculating it based on a different formula, the data source they are using is different, the data is being filtered differently, or there is an error in their calculation.
 
 #### Common data errors
 
