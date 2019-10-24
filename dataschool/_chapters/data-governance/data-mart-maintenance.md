@@ -96,11 +96,11 @@ You will likely notice when there is a new column in one of your views that is n
 
 This can also happen when a new option is added to a field and it is encoded in an unreadable way. Follow the same process to get it updated at the Data Warehouse level.
 
-##### ![](/assets/images/NoNewData.png)
-
 ##### No new data
 
-If your query stops producing data after a specific date, you need to investigate. This can be caused by a bug, by a field being renamed, or by the data source changing. This is more common than you would think. For instance, if you update a URL the data associated with the previous name will cut off. You can work around this within your SQL query.
+If your query stops producing data after a specific date, you will need to investigate. This can be caused by a bug, a field being renamed, or the data source changing. This is more common than you would think. For instance, if you update a URL the data associated with the previous name will cut off. You can work around this within your SQL query.
+
+![](/assets/images/NoNewData.png)
 
 For example, when Chartio moved its URL from Chart.io to Chartio.com we needed to use:
 
