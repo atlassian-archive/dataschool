@@ -20,7 +20,7 @@ story_intro_blurb: ''
 reading_time: 
 
 ---
-Now that you’ve setup a Data Warehouse, the next and ongoing step is maintenance. This involves making sure the Data Warehouse objects; columns, tables, views, and schemas are accurate and up-to-date. Maintaining your Data Warehouse is an integral part of easing the ability for users in your organization to gain insights into your data. If it is not maintained people will query the wrong data and get conflicting results.
+Now that you’ve setup a Data Warehouse, the next and ongoing step is maintenance. This involves making sure the Data Warehouse objects; columns, tables, views, and schemas are accurate and up-to-date. Maintaining your Data Warehouse is integral for users in your organization to easily and accurately gain insights into your data. If it is not maintained people will query the wrong data and get conflicting results.
 
 As a company’s Data Warehouse ages:
 
@@ -33,9 +33,9 @@ These inevitable problems make it difficult for your company to conduct analyses
 
 ## Track New Metrics
 
-### Why Do New Metrics Matter?
+### Why do new metrics matter?
 
-The way we need to measure our business will change over time. We will launch new products, look into different user behaviors, or try to create a predictive model. We need to track new metrics for these different efforts, sometimes this means creating a new calculated field, sometimes we will need a new column, view, or table.
+The way we need to measure our business will change over time. We will launch new products, look into different user behaviors, or try to create a predictive model. We need to track new metrics for these different efforts.  Sometimes this means creating a new calculated field or a new column, view, or table.
 
 We may add a new field to track our customer information in Salesforce that is inline with our new company objectives, say, tracking account activities through the services we provide. From here, we can see what services are most popular with our customers, then, offer special promotions on these services during seasonal trends where we see a fall in purchases in order to increase sales.
 
@@ -45,7 +45,7 @@ When engineers or analysts create new tables, columns, or views to track metrics
 
 This can also create duplicate work -- say you created a view for your support team but the view along with the pertinent information inside it do not distinguish exactly what this view is for. Users looking to query this view may not know it exists, so they may recreate this view.
 
-### How to add new Metrics Correctly?
+### How to add new metrics correctly.
 
 When adding new metrics we need to consider:
 
@@ -57,21 +57,21 @@ When adding new metrics we need to consider:
 
 Do we only need to add the data to an existing table or should we add to a view or create a whole new view? Let’s review what reasons we would do each:
 
-Only Table
+Existing Table
 
-* The new metric can be understood and queries easily without complex joins or being aggregated
+* The new metric can be understood and queried easily without complex joins or being aggregated.
 
 Existing View*
 
-* A view that exists that is relevant to the new metric
-* The view that is relevant is aggregated in a way that fits how this data should be aggregated
-* Complex join paths would make it difficult for people to query the new data accurately without the view
+* A view that exists that is relevant to the new metric.
+* That view is aggregated in a way that fits this data and its dependent metrics.
+* Complex join paths would make it difficult for people to query the new data accurately without the view.
 
 New View*
 
-* No view that exists that is relevant to the new metric
-* No view that is relevant is aggregated in a way that fits how this metric should be aggregated without the view
-* Complex join paths would make it difficult for people to query the new metric accurately
+* No view that exists that is relevant to the new metric.
+* No view that is relevant is aggregated in a way that fits how this metric should be aggregated without the view.
+* Complex join paths would make it difficult for people to query the new metric accurately.
 
 \*Typically it will be added to an existing table as well but it will be queried from the View
 
@@ -89,17 +89,17 @@ We also need to ensure these views, tables and columns follow the Data Warehouse
 
 ## Deprecate Old Metrics
 
-### Why Do Old Metrics Matter?
+### Why do old metrics matter?
 
-Metrics may become inaccurate or no longer worth analyzing. We want to prevent that data from being queried so others do not come to false conclusions.
+Metrics may become inaccurate or no longer worth analyzing. We want to prevent that data from being queried so others do reach false conclusions.
 
-### Why Do Old Metrics Issues Happen?
+### Why do old metrics issues happen?
 
 As companies grow the tools they use to get and move data change. This leads to multiple places where the same type of data can be queried. Since the analyst might not be aware of which source to use they may query the wrong data.
 
 Also business objectives may change. This can affect what data is appropriate for analysis as well. Features or products may have been deprecated as a result and therefore their associated metrics might be misleading if the analyst was unaware of this.
 
-### How to Deprecate Old Metrics Correctly?
+### How to deprecate old metrics correctly?
 
 If you’re not going to remove columns, tables, or views from user’s access right away, we recommend updating the names for these objects to _deprecated, or, _do_not_use. This makes it clear when browsing or querying that they should not be used.
 
@@ -109,7 +109,7 @@ This style for old metrics should be incorporated into your company’s naming c
 
 ## Handle Permissions
 
-### Why Do Permissions Matter?
+### Why do permissions matter?
 
 Not being granted access to the data you need completely halts analysis. Similarly, not removing someone’s access can be a legal liability. Having the right permissions is a line that should be carefully considered, but caution should be taken to ensure that it doesn’t become a bottleneck.
 
@@ -117,7 +117,7 @@ Consider a scenario where you have users working on multiple BigQuery projects a
 
 Oracle offers the ability to recover a dropped table, but, some data warehouses do not have this ability. If you drop a table in PostgreSQL, you won’t be able to restore this table unless you restore from a backup. If you can’t restore from a backup, there will be no way to recover the dropped table. To avoid this, make sure the proper individuals have the right permissioning on the right Data Warehouse objects.
 
-### Why Do Permission Issues Happen?
+### Why do permission issues happen?
 
 Permission issues happen when the BI Tool or Data Warehouse access does not mirror employee status. This happens when:
 
@@ -127,13 +127,13 @@ Permission issues happen when the BI Tool or Data Warehouse access does not mirr
 * Special permission
 * Account sharing
 
-When you hire analysts, or an individual’s role changes which requires more access to the Data Warehouse, you want to make sure they have the appropriate permissions to analyze metrics in the warehouse. If they lack the proper permissions, this will create a barrier in completing their tasks. Or, if there are no restrictions in what objects they can access in place, those unfamiliar with the Data Warehouse might alter or drop an object.
+When you hire analysts, or an individual’s role changes which requires more access to the Data Warehouse, you will want to make sure they have the appropriate permissions to analyze metrics in the warehouse. If they lack the proper permissions, this will create a barrier in completing their tasks. Or, if there are no restrictions in what objects they can access in place, those unfamiliar with the Data Warehouse might alter or drop an object.
 
 When employees leave sometimes not all of their accounts are deactivated. You may turn off their email but this would not prevent them from logging into the BI Tool. Their account can remain active which is a security concern.
 
 Sometimes an employee is granted special permission to temporarily gain access to more data. The problem occurs when their temporary access is not revoked after they no longer need it. Lastly, employees often share accounts to get the access they want for a particular analysis. This is a bad practice as it does not leave a trace as to who is looking at what data.
 
-### How to Handle Permissions Correctly
+### How to handle permissions correctly.
 
 Making sure your BI Tools access levels mirror the employment status of your employees helps you track users and prevent security issues. The main priority of granting permission is to prevent users from being able to access sensitive information, or, from accidentally deleting data that can’t be recovered.
 
@@ -145,17 +145,17 @@ We recommend programmatically adding and removing users to avoid employees from 
 
 ## Tuning to Optimize
 
-### Why Does Ongoing Modeling Matter?
+### Why does ongoing modeling matter?
 
-The amount of data you have will grow as your objectives change and you begin to track new metrics. As the data grows, you will need to consider if the way you designed the Data Warehouse objects; schemas, tables, views, and columns still makes sense based on the way users query it.
+The amount of data you have will grow as your business grows and your objectives change and you begin to track new metrics. As the data grows, you will need to consider if the way you designed the Data Warehouse objects; schemas, tables, views, and columns still makes sense based on the way users query it.
 
 An indicative sign of needing to revisit Data Warehouse objects or when you should consider remodeling the objects is performance. Performance matters to users, if non-complex queries take too long to run they will stop querying data or start filing tickets to engineering.
 
-### Why Do Warehouses Need Ongoing Optimization?
+### Why do warehouses need ongoing optimization?
 
 As your company grows the data that is queried changes too. New data, new analysts, and new business objectives will shift what data is being queried. The original structure of Data Warehouse objects may need to be reconfigured to optimize usage and performance based on how it is queried.
 
-### How to Continually Optimize your Warehouse?
+### How to continually optimize your warehouse?
 
 Different data warehouses will have options to check performance, but most offer ways to:
 
@@ -191,7 +191,7 @@ A Single Source of Truth Data Warehouse is a worthwhile investment. However, wit
 
 References:
 
-Claire Carroll Company - Fishtown Analytics: [Five principles that will keep your data warehouse organized](https://blog.fishtownanalytics.com/five-principles-that-will-keep-your-data-warehouse-organized-9c3d29caf6ce)
+Claire Carroll - Fishtown Analytics: [Five principles that will keep your data warehouse organized](https://blog.fishtownanalytics.com/five-principles-that-will-keep-your-data-warehouse-organized-9c3d29caf6ce)
 
 Claire Carroll: [The difference between users, groups, and roles on Postgres, Redshift and Snowflake](https://discourse.getdbt.com/t/the-difference-between-users-groups-and-roles-on-postgres-redshift-and-snowflake/429)
 
