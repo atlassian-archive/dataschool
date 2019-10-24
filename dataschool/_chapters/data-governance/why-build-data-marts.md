@@ -46,7 +46,7 @@ This section of the Data Governance book will explain why you should create data
 
 ## The Problem with Data Warehouses
 
-As an organization scales the amount of data it is tracking, the number of people who want to access it scale too. This results in more people with less context about more of the schema.
+As an organization scales the amount of data it is tracking, the number of people who want to access it scale too. This results in more people with less context about a large portion of the schema.
 
 We want to go from a complex schema:
 
@@ -56,7 +56,7 @@ To a siloed schema, where each department has the data they need:
 
 ![Sectioning off a complex Schema with Marts](/assets/images/ComplexSchemaDataMart.png "Complex Schema with Marts")
 
-So while going from Lake to Warehouse was mostly about cleaning up tables, going from warehouse to marts is about cleaning up schemas. Different departments need different parts of the Data Warehouse schema.
+So while going from Lake to Warehouse was mostly about cleaning up tables, going from Warehouse to Marts is about cleaning up schemas. Different departments need different parts of the Data Warehouse schema.
 
 ![Show permissions break down for data marts](/assets/images/DataMartGrid.png "Data Mart Grid")
 
