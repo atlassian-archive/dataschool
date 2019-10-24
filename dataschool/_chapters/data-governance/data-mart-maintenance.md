@@ -117,11 +117,11 @@ GROUP BY 1
 ORDER BY 2 ASC
 ```
 
-Or you can implement this as a more permanent fix at the Data Warehouse stage. One note of warning here is sometimes you want to preserve this cut off to remember the name was changed, so think through before making this modeling decision. If you aren’t sure why it cut off consult the Data Governor or engineers to track down what is going on.
+You can also implement this as a more permanent fix at the Data Warehouse stage. One note of warning here is that sometimes you want to preserve this cut off to remember the name was changed, so think through the implications before making this modeling decision. If you aren’t sure why the data cut off, consult the Data Governor or engineers to find out what is going on.
 
 ##### All queries on a data source are erroring out
 
-This happens for a few reasons, the source has been deprecated, the source had an update changing its data structure, or a bug. This is something to communicate out to your team quickly as it can prevent a ton of data from being used.
+This happens for a few reasons: the source has been deprecated, the source had an update changing its data structure, or a bug. This is something to communicate out to your team quickly as it can prevent a ton of data from being used.
 
 ##### Performance
 
