@@ -50,7 +50,7 @@ There are two types of issues you will need to investigate as a Mayor of a Data 
 
 ##### Spike
 
-Numbers that are much different from the day before but no changes have been made. If traffic to your website doubles in a day it is likely caused by something and not just a fluke. That spike may be caused by a new marketing campaign, a bug, or potentially a google search algorithm update. You should explore these possibilities in that order.
+Something to pay attention to are numbers that are much different from the day before, but not caused by any changes on your end. If traffic to your website doubles in a day, it is likely caused by something and is not just a fluke. The spike may have been caused by a new marketing campaign, a bug, or potentially a Google search algorithm update. You should explore these possibilities in that order.
 
 ![DAta Mart Maintenance Annotation](/assets/images/AnnotationMaintenance.png "Annotate data")
 
