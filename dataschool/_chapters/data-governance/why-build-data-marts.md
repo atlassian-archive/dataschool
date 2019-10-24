@@ -62,13 +62,13 @@ So while going from Lake to Warehouse was mostly about cleaning up tables, going
 
 ## How Data Marts are different from Data Warehouses
 
-Use modeling to create separate schemas where all of the tables are provided to the right team or individual. These will be your company’s Data Marts. Structure wise they should be the same, the data should have been cleaned at the Data Warehouse stage.
+Use modeling to create separate schemas where the tables are provided to the appropriate team or individual. These will be your company’s Data Marts. 
 
-Data Marts are not very different from your Data Warehouse, the heavy lifting was already done. Data Marts make it a bit easier for people within departments to navigate the schema and provide extra oversight of the data for that department.
+The table structures should be the same, as the data should have been cleaned at the Data Warehouse stage. Data Marts are not very different from your Data Warehouse since the heavy lifting was already done. Data Marts make it easier for people within departments to navigate the schema and provide extra insight of the data for that department.
 
 ## Summary
 
-Data Mart makes your data:
+Data Marts make your data:
 
 * **Relevant** to your job and use cases
 * **Accessible** to a variety of people and teams
