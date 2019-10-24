@@ -18,7 +18,7 @@ story_intro_blurb: ''
 reading_time: 3
 
 ---
-As companies grow the amount of data, the number of sources will also increase. This leads to your Data Warehouse having numerous schemas that can become difficult to navigate. Moving from a Data Warehouse to Data Marts reduces the scope of access and makes it easier for users to find the data they need. Data Marts can be created in five steps.
+As companies grow, the amount of data and the number of sources they have will also increase. This leads to your Data Warehouse having numerous schemas that can become difficult to navigate. Moving from a Data Warehouse to Data Marts reduces the scope of access and makes it easier for users to find the data they need. Data Marts can be created in five steps.
 
 ## 1 Views
 
