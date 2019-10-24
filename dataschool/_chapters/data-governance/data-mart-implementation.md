@@ -34,13 +34,13 @@ You should avoid making any new views if possible. You should instead use the Da
     SELECT * 
     FROM DataWarehouse.View
 
-Most if not all of the cleaning should have occurred when going from the Lake to the Warehouse. The big difference here is which views and columns you are pulling in from the warehouse.
+Most if not all of the cleaning should have occurred when going from the Lake to the Warehouse. The big difference here is which views and columns you are pulling in from the Warehouse.
 
 If you do want to create aggregations for performance reasons that is fine, and if you want to combine data we recommend using the wide table approach versus implementing something more complex like star schema.
 
 ## 3 No Star Schema
 
-The performance [benefits of star schema no longer exist](https://fivetran.com/blog/obt-star-schema). It is a lot of work to implement. While some people argue it is easier to query after being set up this way modern BI tools such as Chartio have created interfaces to the data which solve problems such as complex joins.
+The performance [benefits of star schema no longer exist](https://fivetran.com/blog/obt-star-schema). It is a lot of work to implement. While some people argue it is easier to query after being set up this way, modern BI tools such as Chartio have created interfaces to the data which solve problems such as complex joins.
 
 ## 4 Segment tables
 
@@ -56,12 +56,12 @@ Create a matrix that contains the table names and the segments you are splitting
 
 ## 5 Access Update
 
-Prior to implementing Data Marts, you likely had provided all of these groups access to the Data Warehouse. You should remove everyone’s Data Warehouse access by default and grant them access to the mart or marts they belong to. A few people might need to retain access to both, let them ask so that you know who has access to what. These people may still want to query the Data Warehouse when they want to analyze data that would span multiple marts.
+Prior to implementing Data Marts, you likely had provided all of these groups access to the Data Warehouse. You should remove everyone’s Data Warehouse access by default and grant them access to the mart or marts they belong to. A few people might need to retain access to both. Let them ask so that you know who has access to what. These people may still want to query the Data Warehouse when they want to analyze data that would span multiple marts.
 
 ## Summary
 
 * Use Views
 * Don’t deviate that much from the Data Warehouse Views
-* Do not use Star Schema
+* Do not use a Star Schema
 * Segment your marts
 * Update access to be at the mart level instead of warehouse
