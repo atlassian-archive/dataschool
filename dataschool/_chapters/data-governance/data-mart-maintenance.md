@@ -46,23 +46,23 @@ There are two types of issues you will need to investigate as a Mayor of a Data 
 
 #### Data that doesn’t make sense
 
-![](/assets/images/OutlierDataMaintenanceSignal.png)
-
 ##### Spike
 
 Something to pay attention to are numbers that are much different from the day before, but not caused by any changes on your end. If traffic to your website doubles in a day, it is likely caused by something and is not just a fluke. The spike may have been caused by a new marketing campaign, a bug, or potentially a Google search algorithm update. You should explore these possibilities in that order.
 
-![DAta Mart Maintenance Annotation](/assets/images/AnnotationMaintenance.png "Annotate data")
+![](/assets/images/OutlierDataMaintenanceSignal.png)
 
 ##### No Spike
 
 Another point of interest are numbers that are not changing even though changes have been made. If you launched a new marketing campaign and the numbers are not going up, that could be due to a bug or poor campaign performance. They should be investigated in that order. Often the tracking was not set up correctly or the link in the advertisement was going to the wrong place.
 
-![Metrics that are different from different people](/assets/images/ConflictingMetrics.png "Conflicting Metrics")
+![DAta Mart Maintenance Annotation](/assets/images/AnnotationMaintenance.png "Annotate data")
 
 ##### Conflicting numbers
 
 Sometimes metrics can be showing conflicting numbers even though they are measuring the same thing. If you see the number of new trials in HubSpot and your production database are different, the rule of thumb is to trust the data source closest to the event that is being tracked. In this case, it would be production.
+
+![Metrics that are different from different people](/assets/images/ConflictingMetrics.png "Conflicting Metrics")
 
 ```sql
 SELECT COUNT *
@@ -90,7 +90,7 @@ Oftentimes people’s calculation of a metric will differ because of the followi
 
 ##### New field or value not cleaned
 
-You will likely be the first to notice when there is a new column in one of your views that is not easily understandable. You should raise this to the Data Governor so that they can apply the necessary cleaning to it at the Data Warehouse stage. Avoid doing additional cleaning at the Mart level because others might need this field as well. Having a single version of it helps make sure analyses are consistent.
+You will likely notice when there is a new column in one of your views that is not very clear. You should raise this to the Data Governor so that they can apply the necessary cleaning to it at the Data Warehouse stage. Avoid doing additional cleaning at the Mart level because others may need this field as well. Having a single version of it helps to make sure analyses are consistent.
 
 ![Bad naming for new field](/assets/images/NewField.png "New Field")
 
