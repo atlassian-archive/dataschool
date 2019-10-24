@@ -25,7 +25,7 @@ At this stage you need to make a big choice in your organization - who do you wa
 
 The choice here has dramatic impacts on the business, and while we lean strongly toward the benefits of a democratized workflow we realize it's not always right for every business or every stage.
 
-Here we attempt to clearly articulate the pros and cons of both workflows.  The choice here is painted fairly black and white because that's just the reality of the implementation. If you choose to stay centralized and your central data team is less than around 50 people, there's little need to do this final Mart stage of sophistication. It is more work to build and maintain and if the only people using the data are full-time professionals their need for this slicing is minimal.
+Here we attempt to clearly articulate the pros and cons of both workflows.  The choice here is painted fairly black and white because that's just the reality of the implementation. If you choose to stay centralized and your central data team is less than around 50 people, there's little need to do this final Mart stage of sophistication. It is more work to build and maintain, and if the only people using the data are full-time professionals then their need for this slicing is minimal.
 
 The choice can impact what BI products you use, and completely changes how you organize your teams, trainings, and even who you hire.
 
@@ -33,9 +33,9 @@ The choice can impact what BI products you use, and completely changes how you o
 
 _In Progress_
 
-This has been the traditional approach, more due to database and product limitations than being the ideal way to do things. Database storage and compute resources used to be very constrained but now these resources are cheap. Products used to require advanced skills to analyze data, now there are drag and drop interfaces to find insights.
+This has been the traditional approach, more due to database and product limitations than because it's the ideal way to do things. Database storage and compute resources used to be very constrained, but now these resources are cheap. Products used to require advanced skills to analyze data, but now there are drag and drop interfaces to find insights.
 
-So with these changes in mind let's review the current set of pros and cons for centralized data access.
+With these changes in mind, let's review the current set of pros and cons for centralized data access.
 
 Pros
 
@@ -46,7 +46,7 @@ Cons
 
 * Central Team bombarded with requests
 * Curiosity has a gatekeeper
-* Hard to Scale
+* Hard to scale
 
 ## Democratized data
 
