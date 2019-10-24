@@ -42,11 +42,11 @@ A Data Mart is a filtered (and sometimes aggregated) subsection of a Data Wareho
 4. **Maintainable** with less time and effort. Having the data monitored by team leads makes it easier to identify data issues.
 5. **Separated** levels of data access. Easily protect sensitive data by limiting what teams can see in their data marts.
 
-This section of the Data Governance book will explain why you should create data marts, and how to implement them so that you get all the benefits they can deliver your business. Before we dive in deep let’s look at the data issues you are facing with a Data Warehouse.
+This section of the Data Governance book will explain why you should create data marts, and how to implement them so that you get all the benefits they can deliver your business. Before we dive in further let’s look at the data issues you are facing with a Data Warehouse.
 
 ## The Problem with Data Warehouses
 
-As an organization scales the amount of data it is tracking, the number of people who want to access it scale too. This results in more people with less context about more and more of the schema.
+As an organization scales the amount of data it is tracking, the number of people who want to access it scale too. This results in more people with less context about more of the schema.
 
 We want to go from a complex schema:
 
