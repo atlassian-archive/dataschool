@@ -117,7 +117,7 @@ GROUP BY 1
 ORDER BY 2 ASC
 ```
 
-You can also implement this as a more permanent fix at the Data Warehouse stage. One note of warning here is that sometimes you want to preserve this cut off to remember the name was changed, so think through the implications before making this modeling decision. If you aren’t sure why the data cut off, consult the Data Governor or engineers to find out what is going on.
+You can also implement this as a more permanent fix at the Data Warehouse stage. One note of warning here is that sometimes you want to preserve this cut off to remember the name was changed, so think through the implications before making this modeling decision. If you aren’t sure why the data cut off, consult the Data Governor or your engineers to find out what is going on.
 
 ##### All queries on a data source are erroring out
 
@@ -125,9 +125,9 @@ This happens for a few reasons: the source has been deprecated, the source had a
 
 ##### Performance
 
-If queries by you or your team start to take over a minute to run you should investigate. Can the query be optimized? Do we need to spin up more clusters? Or, do we need to do some pre-aggregation?
+If queries by you or your team start to take over a minute to run, you should investigate. Can the queries be optimized? Do we need to spin up more clusters? Or, do we need to do some pre-aggregation?
 
-These are all fairly advanced solutions. To learn how to optimize the SQL, read our book entitled _SQL Optimization_. To spin up more clusters you will need to consult with engineering and the Data Governor. To do pre-aggregation you should consult with the Data Governor and create a new view at the Data Warehouse level so that others can use this newly formed data.
+These are all fairly advanced solutions. To learn how to optimize the SQL, read our book titled _SQL Optimization_. To spin up more clusters you will need to consult with your engineering team and the Data Governor. To do pre-aggregation you should consult with the Data Governor and create a new view at the Data Warehouse level so others can use this newly formed view.
 
 ### Identify new needs
 
