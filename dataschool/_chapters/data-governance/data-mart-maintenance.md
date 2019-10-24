@@ -21,19 +21,19 @@ reading_time: 6
 ---
 Now that you have Data Marts set up, you will need ongoing maintenance to get the most out of your data. The first step is to establish a mayor per mart that will be responsible for carrying out the maintenance tasks for their mart:
 
-* Communicate with and educate the team
+* Communicate and educate the team
 * Identify issues
 * Identify new needs
 
 ## Establish Mart Mayors
 
-This role is similar to the Data Governor for the Data Warehouse. Data Governors delegate down to Mayors, who in turn, take care of Governor tasks at the mart level. Mayors, therefore, communicate with and educate the team using their mart. They are responsible for identifying issues in data that exist in their mart. They also should be the ones creating requests to get more data sources or tables added to their mart.
+This role is similar to the Data Governor for the Data Warehouse. Data Governors delegate down to Mayors, who in turn, take care of Governor tasks at the mart level. Mayors, therefore, communicate with and educate the team using their mart. They are responsible for identifying issues in the data that exist in their mart. They also should be the ones creating requests to get more data sources or tables added to their mart.
 
 ## An Ideal Mayor
 
-### Communicate/educate team
+### Communicate and educate team
 
-Different teams have different needs but some common threads include teaching SQL skills or how to use your BI tool. Mayors should document and share data quirks that show up in a lot of queries. Note, however, that you should try to address these quirks with modeling at the Data Warehouse stage.
+Different teams have different needs, but some common threads include teaching SQL skills or how to use your BI tool. Mayors should document and share data quirks that show up in common queries. Note, however, that you should try to address these quirks with modeling at the Data Warehouse stage.
 
 We wrote a book on [how to teach SQL](https://dataschool.com/how-to-teach-people-sql/) if you need assistance in [explaining how JOINs](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/), [Aggregations](https://dataschool.com/how-to-teach-people-sql/how-sql-aggregations-work/), or [subqueries work](https://dataschool.com/how-to-teach-people-sql/how-sql-subqueries-work/).
 
