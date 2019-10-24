@@ -56,7 +56,7 @@ Something to pay attention to are numbers that are much different from the day b
 
 ##### No Spike
 
-Numbers that are not changing at all even though changes have been made. If you did launch a new marketing campaign and the numbers are not going up that could be due to a bug or poor campaign performance. Again investigate in that order. Often times the tracking was not set up correctly or the link in the advertisement is going to the wrong place.
+Another point of interest are numbers that are not changing even though changes have been made. If you launched a new marketing campaign and the numbers are not going up, that could be due to a bug or poor campaign performance. They should be investigated in that order. Often the tracking was not set up correctly or the link in the advertisement was going to the wrong place.
 
 ![Metrics that are different from different people](/assets/images/ConflictingMetrics.png "Conflicting Metrics")
 
