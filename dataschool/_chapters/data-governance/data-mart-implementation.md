@@ -24,7 +24,7 @@ As companies grow, the amount of data and the number of sources they have will a
 
 Marts should be created with Views, not by creating new tables.
 
-For most companies there is no need to materialize views as the performance should not be that different. However if you are running into performance issues this is worth testing out.
+For most companies there is no need to materialize views as the performance should not be that different. However if you are running into performance issues it can be worth trying materialized views.
 
 ## 2 Use the Data Warehouse
 
