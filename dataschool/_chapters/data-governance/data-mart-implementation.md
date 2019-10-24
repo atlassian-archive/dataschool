@@ -28,7 +28,7 @@ For most companies there is no need to materialize views as the performance shou
 
 ## 2 Use the Data Warehouse
 
-You should avoid doing any large cleaning at this stage. You should be selecting the relevant views and filtering out unnecessary columns from the Data Warehouse to build out each Data Mart. 
+Any large cleaning should be avoided at this stage. You should be selecting the relevant views and filtering out unnecessary columns from the Data Warehouse to build out each Data Mart.
 
     CREATE VIEW 
     SELECT * 
@@ -56,7 +56,7 @@ Create a matrix that contains the table names and the segments you are splitting
 
 ## 5 Access Update
 
-Prior to implementing Data Marts, you likely had provided all of these groups access to the Data Warehouse. You should remove everyone’s Data Warehouse access by default and grant them access to the mart or marts they belong to. 
+Prior to implementing Data Marts, you likely had provided all of these groups access to the Data Warehouse. You should remove everyone’s Data Warehouse access by default and grant them access to the mart or marts they belong to.
 
 A few people might need to retain access to both. Let them ask so that you know who has access to what. These people may still want to query the Data Warehouse when they want to analyze data that would span multiple marts.
 
