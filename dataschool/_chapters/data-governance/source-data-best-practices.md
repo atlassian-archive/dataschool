@@ -47,7 +47,7 @@ Along with the snippets, it is a best practice to add comments describing how th
 
 Agile BI products will allow you to do some light modeling of the data at the BI layer.  In Chartio for instance, there is a Schema Editor that enables you to quickly rename fields, hide columns, specify join paths, and create custom columns or tables. Time here can be well spent, but if you're doing too much of it, consider moving all the way forward to the [Warehouse stage](/data-governance/why-build-a-data-warehouse/) where your efforts will be more universally applied.
 
-![Meta modeling in BI product](/assets/images/BILayerMetaModeling.png "BI Layer Modeling")
+![](/assets/images/Screen Shot 2019-10-25 at 10.07.59 AM.png)
 
 If you're using Tableau, they have a feature called Data Interpreter that will do this as well.
 
