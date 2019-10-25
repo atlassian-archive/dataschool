@@ -20,23 +20,23 @@ story_intro_blurb: ''
 reading_time: 5
 
 ---
-Now that we've established what type of changes we want to make and decided on what engine to use for our Data Warehouse, let's go through the process of getting data from the Lake into the Warehouse. While this sounds complicated it is only comprised of using SQL to create Views.
+Now that we've established what changes we want to make and decided on what engine to use for our Data Warehouse, let's go through the process of getting data from the Lake into the Warehouse. While this sounds complicated, it's only comprised of using SQL to create Views.
 
 ## Why SQL
 
-We recommend using SQL to perform all transformations. It is the standard language for relational database management systems (which is what a Data Warehouse should be) and that is the environment you are probably using for your Data Lake. Working in a SQL based model is ideal because a variety of tools and platforms already exist to write and execute queries. Also, data engineers, analysts, and some business users already understand how to use it.
+We recommend using SQL to perform all transformations. It's the standard language for relational database management systems (which is what a Data Warehouse should be) and it's the environment you are probably using for your Data Lake. Working in a SQL-based model is ideal because a variety of tools and platforms already exist to write and execute queries. Also, data engineers, analysts, and some business users already understand how to use it.
 
 ## Why Views
 
-Views allow us to quickly reformat what the data looks like for people querying without needing to build a new Data Warehouse or incurring costs from storing any additional data. Unless you are dealing with massive amounts of data there are not significant performance gains in creating new tables or materializing the views.
+Views allow us to quickly reformat what the data looks like without needing to build a new Data Warehouse or incurring costs from storing any additional data. Unless you are dealing with massive amounts of data there are not significant performance gains in creating new tables or materializing the views.
 
 ### Use a Modeling tool: dbt
 
-Instead of writing the views directly on the database (which is an option) we recommend using dbt for creating your SQL views. dbt provides many features to help you keep a clean Data Warehouse such as version control, logging, and much more.
+Instead of writing the views directly on the database (which is an option) we recommend using [dbt](https://www.getdbt.com/) for creating your SQL views. dbt provides many features to help you keep a clean Data Warehouse such as version control, logging, and much more.
 
 ## Data Lake to Data Warehouse View Examples
 
-Here is an example of applying a transformation to move from Data Lake to Data Warehouse. First, we build a query to combine a couple of salesforce objects into a single table. For example, using information about an individual and their role within a client company can give you more insight into how you may want to interact with that person.
+Here is an example of applying a transformation to move from a Data Lake to a Data Warehouse. First, we build a query to combine a couple of Salesforce objects into a single table. For example, using information about an individual and their role within a client company can give you more insight into how you may want to interact with that person.
 
 So, getting information on that person’s role into the same table as his/her contact along with some basic demographic information, will save the end user some time in querying the Data Warehouse.
 
@@ -44,7 +44,7 @@ That query might look like this:
 
 ![Build wider Salesforce table](/assets/images/LakeToWarehouseQuery.png "Combine data")
 
-We are choosing a subset of the total possible columns and rolling/denormalizing the table a bit to make it easier for others to query. To make this code into SQL that builds our Data Warehouse, we need to add CREATE VIEW. So the query would actually be:
+We are choosing a subset of the total possible columns and rolling up/denormalizing the table a bit to make it easier for others to query. To make this code into SQL that builds our Data Warehouse, we need to add CREATE VIEW. So the query would actually be:
 
 ```sql
 CREATE VIEW salesforce_user AS
@@ -61,15 +61,15 @@ SELECT
 	,ur.name as role_name
 	,ur.rollup_description as role_rollup
 FROM
-	salesforce.user as u left join
-	salesforce.user_role as ur on u.user_role_id = ur.id;
+	salesforce.user as u
+	left join salesforce.user_role as ur on u.user_role_id = ur.id;
 ```
 
 If we go back to the example first introduced in the [Why Build a Data Warehouse](https://dataschool.com/data-governance/why-build-a-data-warehouse/) article we can walk through all of the transformations described in one SQL query. So let’s look at that messy table with all of the hard to understand/query fields.
 
 ![Issues with Data Lake data](/assets/images/LakeTableIssues.png "Data Lake Table")
 
-We then want to make all of the following changes to that data:
+We then want to make all of the following changes:
 
 ![Fixing data for Warehouse](/assets/images/WarehouseTableFixes.png "Data Warehouse Table")
 
