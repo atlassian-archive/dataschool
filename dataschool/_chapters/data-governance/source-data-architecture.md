@@ -41,9 +41,9 @@ If you’re worried about read performance of your database and want to query th
 
 ![Source Database, Read Only Replica](/assets/images/ReadOnlyReplicaDatabase.png "Read Only Replica Database")
 
-Creating a [read-only replica](https://aws.amazon.com/rds/details/read-replicas/) is easy if you're using cloud providers with hosted databases like RDS but can be hard on other platforms.
+While creating a [read-only replica](https://aws.amazon.com/rds/details/read-replicas/) is easy if you're using cloud providers with hosted databases like RDS, it can be hard on other platforms.
 
-These databases may double the cost of your database spend but removes the risk of an analytic query affecting your application.
+These databases may double the cost of your database spend, but they remove the risk of an analytic query affecting your application.
 
 ## Summary
 
