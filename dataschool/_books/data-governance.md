@@ -12,6 +12,7 @@ authors:
 - _people/tracy-chow.md
 - _people/jaime-flores-lovo.md
 - _people/aaron-aihini.md
+- _people/kostas-pardalis.md
 reviewers: _people/twange-kasoma.md
 cover_image: "/assets/images/book-covers/data-governance.png"
 thumbnail_cover_image: "/assets/images/book-covers/data-governance@thumbnail.png"
