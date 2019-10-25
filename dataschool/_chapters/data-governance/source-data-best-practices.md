@@ -98,7 +98,7 @@ Analyzing source data can be tricky since it has not been cleaned or modeled. Th
 * Keep a short, regularly updated snippet dictionary
 * Use BI products to overcome data issues such as weird field names and complex joins
 * Double check the data before visualization
-* Keep shorter Dashboards
+* Keep shorter dashboards
 * Design dashboards with pen and paper first
 * Keep an eye on query performance if you are hitting the production database
 
