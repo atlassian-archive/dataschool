@@ -37,7 +37,7 @@ This functionality exists across database providers.
 
 #### Read-Only Replica
 
-If you’re worried about read performance of your database and want to query the data without impacting the performance of your application, create a read only replica of the production database. This creates a copy of your data in a new database which can be queried without concern.
+If you’re worried about read performance of your database and want to query the data without impacting the performance of your application, create a read-only replica of the production database. This creates a copy of your data in a new database which can be queried without concern.
 
 ![Source Database, Read Only Replica](/assets/images/ReadOnlyReplicaDatabase.png "Read Only Replica Database")
 
