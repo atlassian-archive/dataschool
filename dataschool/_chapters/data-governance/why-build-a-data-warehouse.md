@@ -29,7 +29,7 @@ A Data Warehouse (also commonly called a single source of truth) is a clean, org
 
 Having a clean unified source of truth enables you to write simpler queries, make fewer errors, work faster (as you're more organized), and repeat yourself much less often.
 
-### This stage is right for you if
+### This stage is right for you if:
 
 * More than a few people are going to be working with this dataset
 * You want a clean source of truth of your company
@@ -37,7 +37,7 @@ Having a clean unified source of truth enables you to write simpler queries, mak
 * You need to separate the structure of the data from the always changing transactional sources.
 * You Don't like Repeating Yourself (DRY)
 
-### You've outgrown this stage if
+### You've outgrown this stage if:
 
 * You want to get democratized - and enable others in your company to explore and understand data themselves
 * You're prepared to teach and enable business users in your company - hopefully using the many resources of the Data School
@@ -59,7 +59,7 @@ This section of the Data Governance book will explain why you should create a Da
 
 Typically, organizations reach roadblocks in making sense of the data in their Data Lake. When the amount of data in your Data Lake reaches a level of complexity with irrelevant, unstructured data, it will be too confusing and messy for non-data analysts to use. Data is inconsistent and unstructured, so it can be error-prone with users using the wrong columns or calculating metrics incorrectly.
 
-When organizations have an initiative to empower users outside of the data science or engineering team to leverage data, they will move to a Data Warehouse. What differentiates a Data Warehouse from a Data Lake, or other source, is that the Data Warehouse will provide a cleaner view of the data and is easier for users to query. 
+When organizations have an initiative to empower users outside of the data science or engineering team to leverage data, they will move to a Data Warehouse. What differentiates a Data Warehouse from a Data Lake, or other source, is that the Data Warehouse will provide a cleaner view of the data and is easier for users to query.
 
 To illustrate the difference, imagine all of your inventory is under one roof, but in a big pile. It's unsorted, and some of it's rotten. You may know where everything is in the pile, but if you want to work with others you'll need to organize it. A proper warehouse requires shelves and organization that makes sense to anyone using it.
 
