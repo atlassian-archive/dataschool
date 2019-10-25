@@ -29,7 +29,7 @@ To use any source data in a database you'll want  to create:
 
 #### Read-Only User
 
-Create and use a read-only user account to analyze data on your production database. This will prevent users from accidentally making any updates to the data during your analysis. Granted this is unlikely but it is still a good precaution. It also makes it possible to grant other people access for analysis purposes and guard against their errors.
+Create and use a read-only user account to analyze data on your production database. This will prevent users from accidentally making any updates to the data during your analysis, granted this is unlikely but is still a good precaution. It also makes it possible to grant other people access for analysis purposes and guard against their errors.
 
 ![Permission Settings for Source Data](/assets/images/ReadOnlyUserPermissions.png "Read Only User Permission")
 
