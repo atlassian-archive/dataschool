@@ -26,9 +26,9 @@ Today, with storage being so cheap and warehouses being so scalable, we recommen
 
 ## What is a Warehouse Engine?
 
-In 2005 a combined group from Brown University, Brandeis University, and MIT released a ground breaking paper know as the [C-Store paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) introducing a new [column store architecture](/data-modeling-101/row-vs-column-oriented-databases/).  The many developments in that paper lead to a new class of cloud based databases that could very powerfully handle large sets of data.
+In 2005 a combined group from Brown University, Brandeis University, and MIT released a ground breaking paper know as the [C-Store paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) introducing a new [column store architecture](/data-modeling-101/row-vs-column-oriented-databases/).  The many developments in that paper led to a new class of cloud based databases that can very powerfully handle large sets of data.
 
-These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counter parts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data.
+These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counterparts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data.
 
 <!-- TODO: Would be a great visual here I think - draw a semi and a scooter and maybe list "fast, many trips, low payload" vs "slow, few trips, heavy payload"   -->
 
@@ -65,7 +65,7 @@ Redshift is probably the most popular, although it is losing ground to the compe
 
 #### Cons
 
-Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many users accessing the database. Ongoing maintenance may be required with Redshift to resize clusters, define sort keys, and vacuuming data. 
+Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many users accessing the database. Ongoing maintenance may be required with Redshift to resize clusters, define sort keys, and vacuuming data.
 
 Like many AWS services there are ways to customize your configuration with workload management, compression, and partitioning. But these advanced features are not very out of the box. So although it is powerful it may require a dedicated resource from your data engineering team.
 
