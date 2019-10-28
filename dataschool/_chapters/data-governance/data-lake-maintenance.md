@@ -88,7 +88,7 @@ Queries can be limited in different ways:
 
 ### Scheduling
 
-Examine how your BI product queries the database. Does it do it automatically on a schedule or is it manual. Tools such as Chartio have Smart Refresh options to run queries at off-peak times to balance the load on the database.
+Examine how your BI product queries the database. Does it do it automatically on a schedule or is it manual. Tools such as Chartio have options to schedule queries to run at off-peak times to balance the load on the database and Smart Refresh options to prevent queries from running when dashboards aren't actively being viewed.
 
 ![Chartio database refresh schedule](/assets/images/ScheduleRefresh.png "Schedule Refresh")
 
