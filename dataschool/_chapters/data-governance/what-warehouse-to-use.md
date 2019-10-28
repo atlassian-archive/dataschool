@@ -51,7 +51,7 @@ When selecting the right data engine for your organization, you may also conside
 
 ## Modern Warehouse Engine Products
 
-Today, there are three dominant choices for cloud based data warehouse engines: [Amazon Redshift](#amazon-redshift), [Google BigQuery](#google-bigquery) and [Snowflake](#snowflake).  Note - [all of these are similar and based on the c-store paper.](https://dataschool.com/data-modeling-101/row-vs-column-oriented-databases/)
+Today, there are three dominant choices for cloud based data warehouse engines: [Amazon Redshift](#amazon-redshift), [Google BigQuery](#google-bigquery) and [Snowflake](#snowflake).  Note - [all of these are similar and based on the C-Store paper.](https://dataschool.com/data-modeling-101/row-vs-column-oriented-databases/)
 
 ### Amazon Redshift
 
