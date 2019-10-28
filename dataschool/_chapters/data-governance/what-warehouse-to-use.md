@@ -36,7 +36,7 @@ If these are vehicles, transactional databases are motorcycles capable of many q
 
 ## Deciding factors
 
-The biggest decision to make when moving from a lake to a warehouse is what database you will use for the warehouse. Most people consider:
+The biggest decision to make when moving from production to a lake is what database you will use. Most people consider:
 
 * Pricing
 * Ecosystem
