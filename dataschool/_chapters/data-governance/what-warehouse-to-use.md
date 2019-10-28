@@ -32,7 +32,7 @@ These engines are geared toward analytic workloads that require larger, but less
 
 <!-- TODO: Would be a great visual here I think - draw a semi and a scooter and maybe list "fast, many trips, low payload" vs "slow, few trips, heavy payload"   -->
 
-If these were vehicles, transactional databases would be motorcycles capable of many quick trips and warehouse engines would be semis doing few trips but hauling large loads.
+If these are vehicles, transactional databases are motorcycles capable of many quick trips while warehouse engines are semis doing fewer trips but hauling large loads.
 
 ## Deciding factors
 
