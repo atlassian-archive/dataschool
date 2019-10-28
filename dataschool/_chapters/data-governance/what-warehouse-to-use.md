@@ -93,7 +93,7 @@ Like Redshift, it's connection and query syntax is also very similar to Postgres
 
 #### Cons
 
-Snowflake is a relatively new database in the market, so if you are familiar with SQL functions supported by databases like Redshift or Postgres you may find some inconsistencies in the SQL syntax. Snowflake also is more expensive
+Snowflake is a relatively new database in the market, so if you are familiar with SQL functions supported by databases like Redshift or Postgres you may find some inconsistencies in the SQL syntax. Snowflake is also generally more expensive.
 
 ## Database Engines
 
