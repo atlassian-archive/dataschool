@@ -77,4 +77,4 @@ Data Lakes are built to handle these types of ad hoc analytical queries independ
 
 Getting the data in one spot is a necessary step for progressing to the other stages.  It makes working with data so much easier that many BI products require this stage - as they will only connect to a single warehouse source.
 
-On top of this Lake you will eventually be able to do proper modeling in the Warehouse stage, cleaning the data so more people can use it, less errors happen, you repeat yourself less, and many more benefits.
+In the Warehouse stage, you'll be able to implement proper modeling on top of your Lake. Through modeling the data will be cleaner, which enables more people to use it, causes fewer errors, and creates less repetition of work.
