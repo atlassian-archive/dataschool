@@ -59,7 +59,7 @@ Today, there are three dominant choices for cloud based data warehouse engines: 
 
 #### Pros
 
-Redshift has the benefits of ease of use, speed, and cost. Being a part of AWS, there is full service integration for the wide range of AWS services such as S3 for storage and CloudWatch for infrastructure monitoring. Redshift is generally cheaper than Snowflake or BigQuery, with a couple of pricing options such as paying hourly per node or paying by number of bytes scanned with Redshift Spectrum. It’s simple to set up and scale, increasing storage and performance, by adding nodes to your cluster.
+Redshift has the benefits of ease of use, speed, and cost. Being a part of AWS, there is full service integration for the wide range of AWS services such as S3 for storage and CloudWatch for infrastructure monitoring. Redshift is generally cheaper than Snowflake or BigQuery, with a couple of pricing options such as paying hourly per node or paying by number of bytes scanned with Redshift Spectrum. It’s simple to set up and scale by adding nodes to your cluster and increasing storage and performance.
 
 Redshift is probably the most popular, although it is losing ground to the competitive Snowflake. It benefits from being similar in connection and SQL syntax to PostgreSQL.
 
