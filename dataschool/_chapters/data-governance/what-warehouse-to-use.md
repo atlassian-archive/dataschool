@@ -47,7 +47,7 @@ There are a variety of database pricing models for Data Lakes, from being based 
 
 The architecture of the Data Lake has implications on how it’ll help your operations scale. Differences in the many types of lakes entail columnar vs. row-oriented storage, and having storage and compute together or separated. If there are requirements for ongoing maintenance of your Data Lake you will want to know that as well.
 
-When selecting the right data engine for your organization, you may also consider whether you want an on-premise or cloud solution. More and more businesses are moving to cloud solutions to take advantage of the “as a service” model and save on hardware costs so we will focus on cloud databases in this section.
+When selecting the right data engine for your organization, you may also consider whether you want an on-premise or cloud solution. More and more businesses are moving to cloud solutions to take advantage of the “as a service” model and save on hardware costs so, we'll focus on cloud databases in this section.
 
 ## Modern Warehouse Engine Products
 
