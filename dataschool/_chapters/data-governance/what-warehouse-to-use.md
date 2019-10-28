@@ -101,7 +101,7 @@ Snowflake is a relatively new database in the market, so if you are familiar wit
 
 #### Pros
 
-Unlike the options above, PostgreSQL is an open source database that is free to download. It can easily be spun up on your local server or hosted on various cloud services such as AWS. Postgres also has an ANSI compliant SQL library and supports an extensive library of third-party and user-defined functions. It has very fast writes as it is a transactional DB. It also has fast reads below \~100M rows
+Unlike the options above, PostgreSQL is an open source database that is free to download. It can easily be spun up on your local server or hosted on various cloud services such as AWS. Postgres also has an ANSI compliant SQL library and supports an extensive library of third-party and user-defined functions. As it's a transactional database, it has very fast writes and also has fast reads below \~100M rows.
 
 #### Cons
 
