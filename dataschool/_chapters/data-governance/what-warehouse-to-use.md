@@ -105,7 +105,7 @@ Unlike the options above, PostgreSQL is an open source database that is free to 
 
 #### Cons
 
-Postgres is a straightforward, flexible solution that’s different from Snowflake, Redshift, and BigQuery because it is a row-oriented database more suited for processing transactional data over analytical queries. It’s a single database connection not architected for parallel processing, so it generally doesn’t perform as well if you have a data volume of over 1 TB. Consequently, Postgres is great as a database, but is not a a good choice for a Data Lake if you have a high volume of data (>1TB).
+Postgres is a straightforward, flexible solution that’s different from Snowflake, Redshift, and BigQuery because it is a row-oriented database more suited for processing transactional data over analytical queries. It’s a single database connection not architected for parallel processing, so it generally doesn’t perform as well if you have a data volume of over 1 TB. Consequently, Postgres is great as a database, but is not a good choice for a Data Lake if you have a high volume of data (>1TB).
 
 ### Recommendation
 
