@@ -113,7 +113,7 @@ Selecting a Data Warehouse can be dependent on a number of factors that should b
 
 Redshift is a good choice as a standard cloud Data Warehouse if you have the capacity for a dedicated DBA. BigQuery and Snowflake are both highly scalable solutions considering their architecture. However, if cost or concurrency limits will be an issue for you then Snowflake would be more suitable for your organization.
 
-Remember all of these data warehouses are built on the same c-store architecture so the differences will not be severe in performance. If you'd like a full benchmarking (though the same final recommendation) do checkout Fivetran's awesome [warehouse benchmark](https://fivetran.com/blog/warehouse-benchmark).
+Remember all of these data warehouses are built on the same C-Store architecture so the differences will not be severe in performance. If you'd like a full benchmarking (though the same final recommendation) do checkout Fivetran's awesome [warehouse benchmark](https://fivetran.com/blog/warehouse-benchmark).
 
 <!-- ## Selecting an ETL/ELT Process
 
