@@ -65,9 +65,9 @@ Redshift is probably the most popular, although it is losing ground to Snowflake
 
 #### Cons
 
-Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many users accessing the database. Ongoing maintenance may be required with Redshift to resize clusters, define sort keys, and vacuuming data.
+Users can often run into concurrency issues with Redshift if it isn’t set up properly or if there are high volumes of queries from many users accessing the database. Ongoing maintenance may be required with Redshift to resize clusters, define sort keys, and vacuum data.
 
-Like many AWS services there are ways to customize your configuration with workload management, compression, and partitioning. But these advanced features are not very out of the box. So although it is powerful it may require a dedicated resource from your data engineering team.
+Like many AWS services there are ways to customize your configuration with workload management, compression, and partitioning. But these advanced features are not very out of the box. So although Redshift is powerful it may require a dedicated resource from your data engineering team.
 
 ### Google BigQuery
 
