@@ -15,7 +15,7 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time: 3
 
 ---
 When a business is getting started with data, people are analyzing it in live systems. While this is ok for tools like Salesforce or Google Analytics, we need to take separate precautions for data in a database.
