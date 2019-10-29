@@ -23,7 +23,7 @@ Now that you have Data Marts set up, you will need ongoing maintenance to get th
 
 * Communicate and educate the team
 * Identify issues
-* Identify new needs
+* Identify new needs 
 
 ## Establish Mart Mayors
 
