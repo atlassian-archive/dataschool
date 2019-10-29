@@ -3,7 +3,7 @@ section: Stage 1 - Source
 title: Source Data Connections
 meta_title: Setup Source Data Architecture
 description: Learn how to configure your database to analyze source data effectively.
-number: 2
+number: 12
 authors:
 - _people/matt.md
 reviewers:
