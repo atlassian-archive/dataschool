@@ -5,7 +5,7 @@ short: Introduction
 meta_title: Stages of Data Sophistication and Modern Data Governance
 description: Learn how Data Governance practices change as the level of data sophistication
   changes.
-number: -10
+number: 1
 authors:
 - _people/dave.md
 reviewers:
