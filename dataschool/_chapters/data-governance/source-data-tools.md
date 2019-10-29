@@ -56,13 +56,13 @@ These are also usually well supported by the vendor's support staff should you h
 
 Many of the applications you are using will allow you to export some of your data into CSV formatted files. You can take this data and open it in Excel to analyze it. While this is an effective way to expand the questions you can ask of the data it is fairly manual and will need to be updated with new data often.
 
-![SEM Rush Export to CSV or Excel Options](http://img.chartio.com/dd1ab48cd773/Image%202019-10-20%20at%203.32.59%20PM.png)
+![SEM Rush Export to CSV or Excel Options](/assets/images/Export-to-Excel.png "Export to CSV or Excel")
 
 ### SQL IDE
 
 For data sources such as your production database, you can query it directly from the command line but this can get messy and hard to keep track of queries and results. We suggest setting up an IDE such as PG admin to better handle querying data within a Schema.
 
-![SQL IDE](http://img.chartio.com/9d64acb901f5/Image%202019-10-20%20at%205.51.42%20PM.png)
+![SQL IDE to explore data](/assets/images/SQL-IDE.png "SQL IDE")
 
 ### Cloud dashboarding tools
 
