@@ -3,7 +3,7 @@ section: book
 title: What Stage are You at?
 meta_title: What Stage of Data Sophistication are You at?
 description: Figure out what level of data sophistication your team is at.
-number: 
+number: 3
 authors:
 - _people/dave.md
 reviewers:
