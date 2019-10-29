@@ -23,7 +23,7 @@ reading_time: 4
 
 This book is for anyone looking to setup an effective, modern (typically cloud based) data stack that will truly enable a company to explore and understand the data it collects to have high visibility into their business.  It's for people who value their data and realize that a company that is truly informed by their data has significant competitive advantages.
 
-![Democratized data organization](http://img.chartio.com/3835f24267b8/Image%202019-10-20%20at%205.27.22%20PM.png)
+![Democratized data organization](/assets/images/Data-to-analytics.png "Democratize data")
 
 It applies to teams setting up either [Centralized or Democratized data workflows](/data-governance/democratized-or-centralized/) with an encouraging bias toward Democratized.
 
