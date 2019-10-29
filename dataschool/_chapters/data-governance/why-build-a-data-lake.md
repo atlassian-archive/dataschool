@@ -59,7 +59,7 @@ In a Data Lake, all data can be combined so it can be analyzed together. This ma
 
 The applications your business uses likely only offer transactional API access to the data.  They're not designed for reporting, so unless the data is exported and put into a format you can easily query, you will end up being very limited in what you can pull.  These APIs, if used directly for reporting, can also become prohibitively expensive.
 
-If you extract that API data with an [ELT product](/data-governance/elt-vs-etl/) and load it into a Data Lake, you'll have all the power and flexibility of SQL or whatever BI product you use - and the cost won't go up considerably with each chart.
+If you extract that API data with an [ELT product](https://dataschool.com/data-governance/etl-vs-elt/) and load it into a Data Lake, you'll have all the power and flexibility of SQL or whatever BI product you use - and the cost won't go up considerably with each chart.
 
 ![Combine Salesforce, Zendesk, and Hubspot in a Dashboard](/assets/images/AppDataCombinedDashboard.png "Combined App Dashboard")
 
