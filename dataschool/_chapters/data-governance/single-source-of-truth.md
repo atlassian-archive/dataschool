@@ -78,7 +78,7 @@ To address these issues we need to keep the analyst/business user in mind and ma
 
 ### Naming convention and style guide
 
-When going through and recreating the schema with views of the relevant tables you should also clean up what's in each table. Exclude irrelevant columns and rename any columns that are confusing. Naming conventions help people analyze data consistently because they clarifies what each column is and how it can be used.
+When going through and recreating the schema with views of the relevant tables you should also clean up what's in each table. Exclude irrelevant columns and rename any columns that are confusing. Naming conventions help people analyze data consistently because they clarify what each column is and how it can be used.
 
 #### Simplify
 
