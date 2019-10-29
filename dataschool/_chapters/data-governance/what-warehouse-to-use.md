@@ -28,7 +28,7 @@ Today, with storage being so cheap and warehouses being so scalable, we recommen
 
 In 2005 a combined group from Brown University, Brandeis University, and MIT released a ground breaking paper know as the [C-Store paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) introducing a new [column store architecture](/data-modeling-101/row-vs-column-oriented-databases/).  The many developments in that paper led to a new class of cloud based databases that can very powerfully handle large sets of data.
 
-These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counterparts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data.
+These engines are geared toward analytic workloads that require larger, but less frequent queries than their transactional counterparts.  Transactional databases like PostgreSQL are optimized to do quick reads and writes at incredibly high volumes in order to run the applications that they serve.  Analytic use cases query data way less frequently, but their queries are usually more complex and over larger sets of data. 
 
 <!-- TODO: Would be a great visual here I think - draw a semi and a scooter and maybe list "fast, many trips, low payload" vs "slow, few trips, heavy payload"   -->
 
