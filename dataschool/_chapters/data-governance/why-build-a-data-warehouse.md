@@ -25,7 +25,7 @@ reading_time: 5
 
 A Data Warehouse (also commonly called a single source of truth) is a clean, organized, single representation of your data.  Sometimes it's a completely different data source, but increasingly it's structured virtually, as a schema of views on top of an existing lake.
 
-![Data Warehouse](http://img.chartio.com/38885f616a2d/Image%202019-10-21%20at%208.54.36%20PM.png)
+![Source Lake Warehouse](/assets/images/Source-Lake-Warehouse.png "Data Warehouse")
 
 Having a clean unified source of truth enables you to write simpler queries, make fewer errors, work faster (as you're more organized), and repeat yourself much less often.
 
