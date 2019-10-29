@@ -1,6 +1,6 @@
 ---
 section: book
-title: Introduction - Modern Data Governance and the 4 Stages of Sophistication
+title: Introduction - The 4 Stages of Sophistication
 short: Introduction
 meta_title: Stages of Data Sophistication and Modern Data Governance
 description: Learn how Data Governance practices change as the level of data sophistication
