@@ -4,7 +4,7 @@ title: Data Lake Maintenance
 meta_title: Maintain a Data Lake
 description: Learn best practices for data lake maintenance. Handle Data Source updates
   and improve performance.
-number: 8
+number: 25
 authors:
 - _people/tim.md
 reviewers:

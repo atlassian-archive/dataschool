@@ -5,7 +5,7 @@ short: Choosing an Engine
 meta_title: How to choose an engine for your Data Lake and Warehouse
 description: Learn the pros and cons of the modern database options like Snowflake,
   Redshift and BigQuery to build your Data Warehouse on.
-number: 5.5
+number: '22'
 authors:
 - _people/tracy-chow.md
 reviewers:
