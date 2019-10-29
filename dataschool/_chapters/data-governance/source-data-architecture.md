@@ -27,7 +27,7 @@ To use any source data in a database you'll want to create:
 1. Read-only Access Users (be careful)
 2. Read-only Replica
 
-#### Read-Only User
+### Read-Only User
 
 Create and use a read-only user account to analyze data on your production database. This will prevent users from accidentally making any updates to the data during your analysis, granted this is unlikely but is still a good precaution. It also makes it possible to grant other people access for analysis purposes and guard against their errors.
 
@@ -35,7 +35,7 @@ Create and use a read-only user account to analyze data on your production datab
 
 This functionality exists across database providers. However this will effect your app's performance so it is best to separate your analytics from your application.
 
-#### Read-Only Replica
+### Read-Only Replica
 
 To query the data without impacting the performance of your application, create a read-only replica of the production database. This creates a copy of your data in a new database which can be queried without concern.
 
