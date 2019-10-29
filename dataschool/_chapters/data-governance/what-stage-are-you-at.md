@@ -69,3 +69,16 @@ published: false
 * You’re prepared to teach and enable business users in your company - hopefully using the many resources of the Data School
 * You have projects that require different formats of the source of truth for easier use
 * Having truly informed employees is important to your company’s competitive success
+
+## [Stage 4 - Mart](https://dataschool.com/data-governance/why-build-data-marts/)
+
+### This stage is right for you if:
+
+* You want to get democratized and enable others in your company to explore and understand data themselves
+* You’re prepared to teach and enable business users in your company - hopefully using the many resources of [The Data School](https://dataschool.com/)
+* You have projects that require different formats of the source of truth for easier use
+* Having truly informed employees is important to your company’s competitive success
+
+### You’ve outgrown this stage if:
+
+* You can’t really! You can make any number of marts, and even put leveling in your marts if you’d like. Implementing this stage will result in a complete, well architected and governed stack that will continually evolve and support your informed competitive company.
