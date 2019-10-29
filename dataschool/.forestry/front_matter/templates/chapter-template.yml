@@ -118,7 +118,6 @@ pages:
 - dataschool/_chapters/data-governance/etl-vs-elt.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
-- dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-security.md
 - dataschool/_chapters/data-governance/defining-a-data-govenor.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
@@ -150,6 +149,7 @@ pages:
 - dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-governance/data-mart-implementation.md
 - dataschool/_chapters/data-governance/introduction-to-modern-data-governance.md
+- dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/what-stage-are-you-at.md
 - dataschool/_chapters/data-governance/why-build-a-data-warehouse.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
