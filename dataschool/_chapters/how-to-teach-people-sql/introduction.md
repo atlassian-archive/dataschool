@@ -3,7 +3,7 @@ title: Introduction
 meta_title: Introduction to How to Teach People SQL
 description: Introduction about why teaching SQL requires understanding of the audience
   who is less adept at dealing with abstract ideas
-section: book
+section: Introduction
 number: 10
 authors:
 - _people/matt.md
