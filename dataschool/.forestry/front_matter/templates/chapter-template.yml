@@ -17,22 +17,25 @@ fields:
   description: If the book should be broken up into sections, choose which section
     does this chapter belongs to
   default: book
-- type: number
-  name: number
-  label: number
-  description: sets the sorting order of the chapters for the book
-  config:
-    required: false
-    min: "-1000"
-    max: '100000'
-    step: '0.5'
-  default: '0'
+
+#
+# - type: number
+#   name: number
+#   label: number
+#   description: sets the sorting order of the chapters for the book
+#   config:
+#     required: false
+#     min: "-1000"
+#     max: '100000'
+#     step: '0.5'
+#   default: '0'
+
 - name: authors
   type: list
   config:
     use_select: true
     min: ''
-    max: 
+    max:
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -41,8 +44,8 @@ fields:
   type: list
   config:
     use_select: true
-    min: 
-    max: 
+    min:
+    max:
     source:
       type: pages
       section: people-a38cd282-7d7b-49cc-8530-5c17ee08e36c
@@ -90,7 +93,7 @@ fields:
   required: true
   config:
     min: '0'
-    max: 
+    max:
     step: '1'
 pages:
 - dataschool/_chapters/sql-optimization/multicolumn-indexes.md
