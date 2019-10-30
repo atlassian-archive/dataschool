@@ -191,18 +191,11 @@ A Single Source of Truth Data Warehouse is a worthwhile investment. However, wit
 
 References:
 
-Claire Carroll - Fishtown Analytics: [Five principles that will keep your data warehouse organized](https://blog.fishtownanalytics.com/five-principles-that-will-keep-your-data-warehouse-organized-9c3d29caf6ce)
-
-Claire Carroll: [The difference between users, groups, and roles on Postgres, Redshift and Snowflake](https://discourse.getdbt.com/t/the-difference-between-users-groups-and-roles-on-postgres-redshift-and-snowflake/429)
-
-Don Jones: [Three data warehouse maintenance tips for DBAs](https://searchsqlserver.techtarget.com/feature/Three-data-warehouse-maintenance-tips-for-DBAs)
-
-BigQuery Documentation: [Creating custom cost controls](https://cloud.google.com/bigquery/docs/custom-quotas)
-
-Stack Over Flow: [Can I rollback a transaction I've already committed? (data loss)](https://stackoverflow.com/questions/12472318/can-i-rollback-a-transaction-ive-already-committed-data-loss/12472582#12472582)
-
-CYBERTEC: [3 Ways to Detect Slow Queries in PostgreSQL](https://www.cybertec-postgresql.com/en/3-ways-to-detect-slow-queries-in-postgresql/)
-
-CYBERTEC: [pg_stat_statements: The Way I Like It](https://www.cybertec-postgresql.com/en/pg_stat_statements-the-way-i-like-it/)
-
-Citusdata: [The most useful Postgres extension: pg_stat_statements](https://www.citusdata.com/blog/2019/02/08/the-most-useful-postgres-extension-pg-stat-statements/)
+* Claire Carroll - Fishtown Analytics: [Five principles that will keep your data warehouse organized](https://blog.fishtownanalytics.com/five-principles-that-will-keep-your-data-warehouse-organized-9c3d29caf6ce)
+* Claire Carroll: [The difference between users, groups, and roles on Postgres, Redshift and Snowflake](https://discourse.getdbt.com/t/the-difference-between-users-groups-and-roles-on-postgres-redshift-and-snowflake/429)
+* Don Jones: [Three data warehouse maintenance tips for DBAs](https://searchsqlserver.techtarget.com/feature/Three-data-warehouse-maintenance-tips-for-DBAs)
+* BigQuery Documentation: [Creating custom cost controls](https://cloud.google.com/bigquery/docs/custom-quotas)
+* Stack Over Flow: [Can I rollback a transaction I've already committed? (data loss)](https://stackoverflow.com/questions/12472318/can-i-rollback-a-transaction-ive-already-committed-data-loss/12472582#12472582)
+* CYBERTEC: [3 Ways to Detect Slow Queries in PostgreSQL](https://www.cybertec-postgresql.com/en/3-ways-to-detect-slow-queries-in-postgresql/)
+* CYBERTEC: [pg_stat_statements: The Way I Like It](https://www.cybertec-postgresql.com/en/pg_stat_statements-the-way-i-like-it/)
+* Citusdata: [The most useful Postgres extension: pg_stat_statements](https://www.citusdata.com/blog/2019/02/08/the-most-useful-postgres-extension-pg-stat-statements/)
