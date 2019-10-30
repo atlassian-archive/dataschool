@@ -3,7 +3,7 @@ title: What Makes a Great Dashboard (ACES)
 meta_title: What Makes a Great Dashboard
 description: Learn the best practices behind dashboard design to support decision
   making. Accuracy, Clarity, Empowerment, and being Succinct.
-section: book
+section: Introduction
 number: 30
 authors:
 - _people/tim.md

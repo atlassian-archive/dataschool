@@ -1,5 +1,5 @@
 ---
-section: book
+section: Conclusion
 title: Conclusion
 meta_title: Use Design Thinking to Create Dashboards
 description: To create a Dashboard you need to define stakeholders and metrics, prototype
