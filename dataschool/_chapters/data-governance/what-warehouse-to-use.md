@@ -5,7 +5,6 @@ short: Choosing an Engine
 meta_title: How to choose an engine for your Data Lake and Warehouse
 description: Learn the pros and cons of the modern database options like Snowflake,
   Redshift and BigQuery to build your Data Warehouse on.
-number: '22'
 authors:
 - _people/tracy-chow.md
 reviewers:
@@ -18,6 +17,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
+number: '22'
 
 ---
 In order to build a Data Lake, we need to choose a database to host it on.  Historically, and still today at massive (> 100GB/day) scale, the Lake was stored in a file system like S3 buckets.
