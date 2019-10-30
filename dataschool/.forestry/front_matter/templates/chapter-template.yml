@@ -21,6 +21,10 @@ fields:
   name: number
   label: number
   description: sets the sorting order of the chapters for the book
+  config:
+    required: false
+    min: "-1000"
+    max: '9000'
 - name: authors
   type: list
   config:
