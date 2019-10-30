@@ -93,3 +93,10 @@ Examine how your BI product queries the database. Does it do it automatically on
 ![Chartio database refresh schedule](/assets/images/ScheduleRefresh.png "Schedule Refresh")
 
 These sorts of tweaks become especially important as more users query the database.
+
+## Summary
+
+To keep a Data Lake being useful you need to:
+
+1. Monitor data source connections and update pipelines when necessary. Use an ETL product to make this simple.
+2. Keep an eye on performance. More people will be querying the database in different ways. Optimize individual queries that are impacting the database, set up caching to improve speed, create limits to stop people from over-querying, and schedule how your BI tool refreshes queries.
