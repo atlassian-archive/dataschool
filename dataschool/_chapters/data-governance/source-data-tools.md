@@ -77,3 +77,7 @@ They often come with some nice default dashboards set up automatically for you, 
 For the most power in working with source data, use a flexible self-service Business Intelligence (BI) solution.  For this stage be sure to choose an agile product, that allows direct SQL queries when necessary and ideally the ability to connect to and blend data from multiple sources.  Those features will be necessary as your data hasn't been consolidated into a single source yet, nor has it been organized in a clean enough way to not need occasional power of a complex SQL query.  We're obviously biased, but Chartio is a great choice here.
 
 ![Self-service Business Intelligence example - Chartio](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y)
+
+## Summary
+
+Every business has access to data, you need to find how best to view it and analyze it to improve your business. While you can use Application Dashboards, Excel, SQL IDE, or Cloud dashboarding tools; We recommend using a self serve Business Intelligence product to work with a variety of sources at once and be able to write SQL against your database.
