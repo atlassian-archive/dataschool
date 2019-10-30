@@ -3,7 +3,7 @@ title: Introduction
 meta_title: Introduction to Designing Dashboards
 description: Dashboards help organizations make data driven decisions. Learn how to
   apply design thinking to creating useful dashboards.
-section: book
+section: Introduction
 number: 10
 authors:
 - _people/matt.md
