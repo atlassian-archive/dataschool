@@ -5,6 +5,7 @@ short: Extract and Load
 meta_title: How to Extract and Load data into a Data Lake
 description: Learn how to extract and load data sources like SalesForce, Hubspot,
   Marketo, etc into a single source.
+number: '23'
 authors:
 - _people/kostas-pardalis.md
 reviewers:
@@ -18,7 +19,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 7
-number: 23
 
 ---
 To get data into your Data Lake you will first need to **Extract** the data from the source through SQL or some API, and then **Load** it into the lake.  This process is called Extract and Load - or "EL" for short.
