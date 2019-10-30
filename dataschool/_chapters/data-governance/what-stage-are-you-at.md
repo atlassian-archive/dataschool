@@ -1,5 +1,5 @@
 ---
-section: book
+section: Introduction
 title: What Stage are You at?
 meta_title: What Stage of Data Sophistication are You at?
 description: Figure out what level of data sophistication your team is at.
@@ -16,19 +16,20 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
-published: false
 
 ---
+Here is a quick guide to finding what stage your team is at. Use the links to jump to that section or view each stage in succession to learn about applying data governance practices at any level.
+
 ## [Stage 1 - Source](https://dataschool.com/data-governance/source-data-tools/)
 
-### This stage is right for you if
+### Right for you if:
 
 * You have a small team with only a few people using data
 * You have minimal data needs at the moment
 * You only have data in a few small sources
 * The only people who need to make new visuals are fairly technical
 
-### You’ve outgrown this stage if
+### You’ve outgrown if:
 
 * You have data you need access to in multiple places/applications
 * You need unique or combined charts/dashboards for cloud application sources like Salesforce
@@ -39,7 +40,7 @@ published: false
 
 ## [Stage 2 - Lake](https://dataschool.com/data-governance/why-build-a-data-lake/)
 
-### This stage is right for you if:
+### Right for you if:
 
 * You need unique or combined charts/dashboards for cloud application sources like Salesforce.
 * Your charts and dashboards will be created by a core set of people who will all be able to learn the ins and outs of the structure of the messy data.
@@ -47,7 +48,7 @@ published: false
 * You cannot spare the time for even light data modeling and are okay, for now, with the technical debt you’re taking on.
 * You have large sets of data and need more performant queries.
 
-### You’ve outgrown this stage if:
+### You’ve outgrown if:
 
 * More than a few people are going to be working with this dataset.
 * You want a clean source of truth of your company.
@@ -57,7 +58,7 @@ published: false
 
 ## [Stage 3 - Warehouse](https://dataschool.com/data-governance/why-build-a-data-warehouse/)
 
-### This stage is right for you if:
+### Right for you if:
 
 * More than a few people are going to be working with this dataset
 * You want a clean source of truth of your company
@@ -65,7 +66,7 @@ published: false
 * You need to separate the structure of the data from the always changing transactional sources.
 * You Don’t like Repeating Yourself (DRY)
 
-### You’ve outgrown this stage if:
+### You’ve outgrown if:
 
 * You want to get democratized - and enable others in your company to explore and understand data themselves
 * You’re prepared to teach and enable business users in your company - hopefully using the many resources of the Data School
@@ -74,7 +75,7 @@ published: false
 
 ## [Stage 4 - Mart](https://dataschool.com/data-governance/why-build-data-marts/)
 
-### This stage is right for you if:
+### Right for you if:
 
 * You want to get democratized and enable others in your company to explore and understand data themselves
 * You’re prepared to teach and enable business users in your company - hopefully using the many resources of [The Data School](https://dataschool.com/)
