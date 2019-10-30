@@ -16,7 +16,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: '3'
-number: '1'
+number: 1
 
 ---
 ## Who this book is for
