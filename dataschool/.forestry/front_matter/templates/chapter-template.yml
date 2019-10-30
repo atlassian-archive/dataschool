@@ -24,7 +24,7 @@ fields:
   config:
     required: false
     min: "-1000"
-    max: '9000'
+    max: '100000'
 - name: authors
   type: list
   config:
