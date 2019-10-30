@@ -1,5 +1,5 @@
 ---
-section: book
+section: Introduction
 title: About this Book
 meta_title: About Modern Data Governance
 description: Information about who this book is for, who it's not, how we wrote it,

@@ -1,5 +1,5 @@
 ---
-section: book
+section: Introduction
 title: Introduction - The 4 Stages of Sophistication
 short: Introduction
 meta_title: Stages of Data Sophistication and Modern Data Governance
