@@ -5,7 +5,7 @@ short: Extract and Load
 meta_title: How to Extract and Load data into a Data Lake
 description: Learn how to extract and load data sources like SalesForce, Hubspot,
   Marketo, etc into a single source.
-number: '23.5'
+number: 23.5
 authors:
 - _people/kostas-pardalis.md
 reviewers:
