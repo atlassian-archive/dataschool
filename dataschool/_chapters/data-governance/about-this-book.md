@@ -15,7 +15,7 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 4
+reading_time: '3'
 number: '1'
 
 ---
