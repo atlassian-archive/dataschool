@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
-image: ''
+image: "/assets/images/WhichStage.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -19,6 +19,8 @@ reading_time:
 
 ---
 Here is a quick guide to finding what stage your team is at. Use the links to jump to that section or view each stage in succession to learn about applying data governance practices at any level.
+
+![Which Stage of Sophistication](/assets/images/WhichStage-1.png)
 
 ## [Stage 1 - Source](https://dataschool.com/data-governance/source-data-tools/)
 
