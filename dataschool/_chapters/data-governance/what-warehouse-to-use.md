@@ -17,7 +17,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
-number: '22'
+number: '22.5'
 
 ---
 In order to build a Data Lake, we need to choose a database to host it on.  Historically, and still today at massive (> 100GB/day) scale, the Lake was stored in a file system like S3 buckets.
