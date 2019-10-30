@@ -4,7 +4,7 @@ title: About this Book
 meta_title: About Modern Data Governance
 description: Information about who this book is for, who it's not, how we wrote it,
   disclaimers, influences and how to contribute.
-number: -10
+number: "-10"
 image: "/assets/images/AboutBook (1).png"
 authors:
 - _people/dave.md
