@@ -3,7 +3,7 @@ title: Accessing Data
 meta_title: Accessing Data from a Database
 description: Accessing data requires permission to the database, asking questions
   in SQL, and knowing how to explore a schema.
-section: book
+section: Introduction
 number: 30
 authors:
 - _people/matt.md
