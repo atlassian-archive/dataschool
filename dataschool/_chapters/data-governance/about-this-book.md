@@ -4,7 +4,7 @@ title: About this Book
 meta_title: About Modern Data Governance
 description: Information about who this book is for, who it's not, how we wrote it,
   disclaimers, influences and how to contribute.
-number: '2'
+number: 2
 image: "/assets/images/AboutBook (1).png"
 authors:
 - _people/dave.md
@@ -21,7 +21,7 @@ reading_time: 4
 ---
 ## Who this book is for
 
-This book is for anyone looking to setup an effective, modern (typically cloud based) data stack that will truly enable a company to explore and understand the data it collects to have high visibility into their business.  It's for people who value their data and realize that a company that is truly informed by their data has significant competitive advantages. 
+This book is for anyone looking to setup an effective, modern (typically cloud based) data stack that will truly enable a company to explore and understand the data it collects to have high visibility into their business.  It's for people who value their data and realize that a company that is truly informed by their data has significant competitive advantages.  
 
 ![Democratized data organization](/assets/images/Data-to-analytics.png "Democratize data")
 
