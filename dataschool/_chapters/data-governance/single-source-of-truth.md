@@ -90,7 +90,7 @@ It's quite common for raw data to be extremely complex. Data was typically meant
       <td>Reason</td>
     </tr>
     <tr>
-      <td>Only include fields with obvious analytical purpose</td>
+      <td><p>Only include fields with obvious analytical purpose</p></td>
       <td>
         It's best to start modeling with only the most relevant columns, excluding any columns that has no immediate or obvious analytical purpose.
       </td>
