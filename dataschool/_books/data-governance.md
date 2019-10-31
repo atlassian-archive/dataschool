@@ -1,7 +1,8 @@
 ---
-title: Modern Data Governance
-meta_title: Data Governance web book
-description: Learn how to apply Data Governance techniques to optimize your data stack
+title: Cloud Data Management
+meta_title: Cloud Data Management web book
+description: Learn how manage cloud data and apply data governance techniques to optimize
+  your data stack.
 downloadable: true
 book_slug: data-governance
 book_sort_number: 1
