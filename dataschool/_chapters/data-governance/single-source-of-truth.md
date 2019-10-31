@@ -99,6 +99,7 @@ It's quite common for raw data to be extremely complex. Data was typically meant
       <td>Extract relevant data from complex data types</td>
       <td>
         Application data sources may contain JSON, arrays, hstore and other complex data types. These are typically hard to query from business intelligence tooling and should have relevant data extracted into new columns.
+        <br>
         <br><u>Example:</u>
         <br>Supposed a table books contains an id column and the following JSON column.
         <p style="background-color: #002000; color: #F2F2F2;">
