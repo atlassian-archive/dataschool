@@ -86,7 +86,7 @@ It's quite common for raw data to be extremely complex. Data was typically meant
 
 <table>
     <tr>
-      <td>Best Practice</td>
+      <td style="min-width:225px;">Best Practice</td>
       <td>Reason</td>
     </tr>
     <tr>
@@ -154,7 +154,7 @@ Data is messy and requires some cleaning to ensure accurate results. Cleaning pr
 
 <table>
     <tr>
-      <td>Best Practice</td>
+      <td style="min-width:225px;">Best Practice</td>
       <td>Reason</td>
     </tr>
     <tr>
@@ -215,7 +215,7 @@ Initially there will be a variety of naming conventions used for tables, columns
 
 <table>
     <tr>
-      <td>Best Practice</td>
+      <td style="min-width:225px;">Best Practice</td>
       <td>Reason</td>
     </tr>
     <tr>
