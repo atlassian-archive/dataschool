@@ -26,11 +26,11 @@ Over time, companies scaled and most people now work for larger, distributed org
 
 Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and an effective data stack are essential tasks if a business wants to gain from it's information.
 
-This book is for organizations of all sizes that want to build the right data stack for them - one that is both practical and enables them to be as informed as possible.  It is a continually improving community driven book teaching Modern Data Governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
+This book is for organizations of all sizes that want to build the right data stack for them - one that is both practical and enables them to be as informed as possible.  It is a continually improving community driven book teaching modern data governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
 
 The structure and original chapters of this book were written by the leadership and Data Advisor teams at Chartio, sharing our experiences working with hundreds of companies over the past decade.  Here we've compiled our learnings and open sourced them in a free, open book.
 
-## The 4 Stages of Data sophistication
+## The 4 Stages of Data Sophistication
 
 From our experience working with so many organizations we recognized four distinct stages of data sophistication that successful companies go through. These stages happen to be tied to a new piece of the data stack that is needed at each stage, and so we have named these stages after those pieces.
 
