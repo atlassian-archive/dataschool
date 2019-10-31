@@ -102,11 +102,11 @@ It's quite common for raw data to be extremely complex. Data was typically meant
         <br><u>Example:</u>
         <br>Supposed a table books contains an id column and the following JSON column.
         <p style="background-color: #002000; color: #F2F2F2;">
-          {
-            <br>&#8195;title: "Moby Dick",
-            <br>&#8195;author: "Herman Melville",
-            <br>&#8195;genres: ["novel", "fiction"]<br>
-          }
+          &#8195;{
+            <br>&#8195;&#8195;title: "Moby Dick",
+            <br>&#8195;&#8195;author: "Herman Melville",
+            <br>&#8195;&#8195;genres: ["novel", "fiction"]<br>
+          &#8195;}
         </p>
         The resulting modeled books table would contain an id, title, and author columns. Genres could be modeled as an independent table, reduced to a single genre based on custom rules, or some other method.
       </td>
@@ -242,7 +242,7 @@ Initially there will be a variety of naming conventions used for tables, columns
     <tr>
       <td>Lower case, underscored naming</td>
       <td>
-        Our data model needs to be easily editable in SQL mode so we should follow conventions that make editing raw SQL easier. Therefore, we should attempt to have column names like id, first_name, last_name, and last_login_type instead of more human readable forms in the model. Chartio will handle that conversion.
+        Our data model needs to be easily editable in SQL mode so we should follow conventions that make editing raw SQL easier. Therefore, we should attempt to have column names like <i>id, first_name, last_name,</i> and <i>last_login_type</i> instead of more human readable forms in the model. Chartio will handle that conversion.
       </td>
     </tr>  
 </table>
