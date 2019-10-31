@@ -16,7 +16,7 @@ authors:
 - _people/kostas-pardalis.md
 reviewers: _people/twange-kasoma.md
 cover_image: "/assets/images/cloud-data-mgmt.png"
-thumbnail_cover_image: "/assets/images/cloud-data-management@40thumbnail.png"
+thumbnail_cover_image: "/assets/images/cloud-data-management@thumbnail.png"
 image: "/assets/images/cloud-data-management-ad.png"
 main_color: "#143676"
 is_featured: true
