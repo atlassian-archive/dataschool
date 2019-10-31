@@ -89,13 +89,13 @@ It's quite common for raw data to be extremely complex. Data was typically meant
       <td style="min-width:225px;">Best Practice</td>
       <td>Reason</td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Only include fields with obvious analytical purpose</td>
       <td>
         It's best to start modeling with only the most relevant columns, excluding any columns that has no immediate or obvious analytical purpose.
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Extract relevant data from complex data types</td>
       <td>
         Application data sources may contain JSON, arrays, hstore and other complex data types. These are typically hard to query from business intelligence tooling and should have relevant data extracted into new columns.
@@ -112,7 +112,7 @@ It's quite common for raw data to be extremely complex. Data was typically meant
         The resulting modeled books table would contain an id, title, and author columns. Genres could be modeled as an independent table, reduced to a single genre based on custom rules, or some other method.
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Change flags and crypto abbreviations to meaningful values</td>
       <td>
         It's common for application databases to have flags or cryptic abbreviations in columns that work well for the application and terrible for a business user. It's important to transform these values into easy, human readable values. Some examples:
@@ -129,7 +129,7 @@ It's quite common for raw data to be extremely complex. Data was typically meant
           </ul>
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>De-normalize where possible</td>
       <td>
         Applications typically have highly normalized tables to prevent duplicates, reduce space, and make modification easier. This typically makes it harder for business users to browser the schema however because the complexity of the joins may be hard to follow. Build wider tables where appropriate, collapsing common concepts into a single table. Some examples could be:
@@ -157,7 +157,7 @@ Data is messy and requires some cleaning to ensure accurate results. Cleaning pr
       <td style="min-width:225px;">Best Practice</td>
       <td>Reason</td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Attempt to eliminate NULLs</td>
       <td>
         NULL values have unexpected consequences in SQL (is "string" <> NULL?). It's best to remove all nulls with values. Some examples:
@@ -169,7 +169,7 @@ Data is messy and requires some cleaning to ensure accurate results. Cleaning pr
           </ul>
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Fix common data inconsistencies</td>
       <td>
         Bad data always makes its way into raw data sources. Whether it is misspellings or just junk data, it is important to clean up the data as much as possible. Some examples:
@@ -183,13 +183,13 @@ Data is messy and requires some cleaning to ensure accurate results. Cleaning pr
           </ul>
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Follow Naming Conventions</td>
       <td>
         Schemas, tables, and columns should all be named in accordance with naming conventions listed below. At a minimum, names should be human readable and be representative of the data type and values stored.
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Remove irrelevant data</td>
       <td>
         Rows that are irrelevant for various reasons should be removed entirely from the data set. Some examples could be:
@@ -201,7 +201,7 @@ Data is messy and requires some cleaning to ensure accurate results. Cleaning pr
         Obviously, if analysis is being done on fraud or spam, that data should not be removed but in most causes, if a row would always be excluded from a query, go ahead and remove it in modeling.
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Change Data Types</td>
       <td>
         Modeling is a great time to change data types to more appropriate types. Unix timestamps could be converted from int columns to datetime for example.
@@ -218,29 +218,29 @@ Initially there will be a variety of naming conventions used for tables, columns
       <td style="min-width:225px;">Best Practice</td>
       <td>Reason</td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Plural Table Names</td>
       <td>
         A table of Leads should be titled "Leads" not Lead.  When there are more than two words on the last needs to be pluralized: opportunity_histories
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>id as primary key</td>
       <td>A simple numeric primary key labeled id should be standard for all tables.</td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>foreign keys follow <br>[tablename]_[id] format</td>
       <td>
         ForeignKeys should follow this format to make it very clear on where the table is linking to. If there are two foreign keys to the same table you can preopend a name to them following the format: <br>[uniquename]_[tablename]_[id].  An accounts table linking to a users table with both a billing contact and a main owner would look like this:<br><br>Accounts<br><br>owner_user_id<br>billing_contact_user_id
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Start columns with a _ if they are needed but should be hidden for Visual mode.</td>
       <td>
         If there are columns you need in the model for joining or other purposes but don’t want visible by default in visual mode you can prefix them.  They will otherwise be treated just as any other column.<br>Let’s say you didn’t think the foreign keys in the accounts table above needed to be shown in Visual mode.  You can simply prefix them as shown below. The relationships will still be detected. It’s a best practice not to show the foreign keys visually.<br><br>Accounts<br>id<br>name<br>_owner_user_id<br>_billing_contact_user_id<br><br>This should not be used for columns you're on the fence about needing.  Those just shouldn't be included.  These are for columns that are needed for querying purposes but have no use in a Visual setting - primarily foreign keys.
       </td>
     </tr>
-    <tr>
+    <tr style="font-family: BlinkMacSystemFont; font-weight: normal;">
       <td>Lower case, underscored naming</td>
       <td>
         Our data model needs to be easily editable in SQL mode so we should follow conventions that make editing raw SQL easier. Therefore, we should attempt to have column names like <i>id, first_name, last_name,</i> and <i>last_login_type</i> instead of more human readable forms in the model. Chartio will handle that conversion.
