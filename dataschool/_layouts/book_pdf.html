@@ -2,7 +2,7 @@
   {%- include head.html -%}
   <body>
 
-{% assign bookchapters = site.chapters | where:'book_slug', page.book_slug | where:'is_hidden', false | sort: 'number' %}
+{% assign bookchapters = site.chapters | where:'book_slug', page.book_slug | where:'is_hidden', false | where: 'is_under_construction', false | sort: 'number' %}
 {% assign books = site.books | where:'book_slug', page.book_slug %}
 {% assign book = books[0] %}
 
