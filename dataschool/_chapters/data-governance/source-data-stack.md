@@ -4,7 +4,7 @@ title: Source Data Stack
 meta_title: How to Build a Source Data Stack
 description: Learn what tools to use to store and analyze source data. See what type
   of people you need to hire to analyze the data.
-number:
+number: 0
 authors: []
 reviewers: []
 feedback_doc_url: https://docs.google.com/document/d/1s06GdWqnstNPBhxEIkGWn9Obqb2CfOhCT8XY5OlNVT0/edit?usp=sharing

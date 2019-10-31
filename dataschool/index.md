@@ -3,7 +3,7 @@ layout: default-breakout
 title: The Data School Home
 meta_title: The Data School by Chartio
 description: A community driven school to help people create data driven organizations.
-  Learn SQL, Dashboard Design, and Analysis techniques to make your company informed.
+  Learn SQL, Dashboard Design, and Analysis techniques and more.
 
 ---
 <div class="home-hero">

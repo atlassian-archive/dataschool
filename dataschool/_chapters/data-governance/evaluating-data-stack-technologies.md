@@ -99,7 +99,7 @@ The combination of collection of meaningful data sets from a database and produc
 
 ## Meeting Your Requirements
 
-Suppose that a mobile game developer wants to track user behavior within the context of the mobile app. This might require tracking of dozens of distinct events per session that might represent actions like completing a level, viewing a screen, or clicking on a banner ad. If this game attracts thousands of users per day, the volume of raw activity data will exceed Excel’s capability in short order. A detailed analysis of the requirements might produce a rough profile such as this:
+Suppose that a mobile game developer wants to track user behavior within the context of the mobile app. This might require tracking dozens of distinct events per session that might represent actions like completing a level, viewing a screen, or clicking on a banner ad. If this game attracts thousands of users per day, the volume of raw activity data will exceed Excel’s capability in short order. A detailed analysis of the requirements might produce a rough profile such as this:
 
 ![](https://lh3.googleusercontent.com/EgMIRT3ptYVrbtdeTYATypEXHJGTBnt-zTev0Ao7fBWIgf954QZTcMhTdRPoY2vcSPiaSZKlJVvuriWLBSsoTiyurt9p_ZMcQ8t7cJc9yig-ukCxDYCaL6D3n_FTXePfc8Vfd7PJ)
 

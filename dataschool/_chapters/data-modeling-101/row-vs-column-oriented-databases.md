@@ -26,7 +26,7 @@ There are two ways to organize relational databases:
 
 ## Row Oriented Databases
 
-Traditional Database Management Systems were created to store data. They are write optimized which lead to a series of design choices including having a row store architecture.
+Traditional Database Management Systems were created to store data. They are optimized to read and write a single row of data which lead to a series of design choices including having a row store architecture.
 
 In a row store, or row oriented database, the data is stored row by row, such that the first column of a row will be next to the last column of the previous row.
 
@@ -38,7 +38,7 @@ This data would be stored on a disk in a row oriented database in order row by r
 
 ![How row oriented data is stored](/assets/images/data-modeling-101/row_vs_col_databases/modeling2.png)
 
-This allows the database to be write optimized because, all that needs to be done to write to it is to tack on another row to the end of the data.
+This allows the database write a row quickly because, all that needs to be done to write to it is to tack on another row to the end of the data.
 
 ### Writing to Row Store Databases
 
@@ -58,13 +58,15 @@ Row oriented databases are still commonly used for Online Transactional Processi
 
 ### Reading from Row Store Databases
 
-Row oriented databases have slow reads because, to do a calculation, they bring extra data into memory and the number of disks they might need to access is usually larger.
+Row oriented databases are fast at retrieving a row or a set of rows but when performing an aggregation it brings extra data (columns) into memory which is slower than only selecting the columns that you are performing the aggregation on. In addition the number of disks the row oriented database might need to access is usually larger.
 
 #### Extra data into Memory
 
-Say we want to get the sum of ages from the Facebook_Friends data. To do this we will need to load all nine of these pieces of data into memory to then pull out the relevant data to do the calculation.
+Say we want to get the sum of ages from the Facebook_Friends data. To do this we will need to load all nine of these pieces of data into memory to then pull out the relevant data to do the aggregation.
 
 ![9 pieces of data to be stored](/assets/images/data-modeling-101/row_vs_col_databases/modeling6.png)
+
+This is wasted computing time.
 
 #### Number of Disks accessed
 
@@ -148,4 +150,4 @@ This architecture means that while the data is being updated from the WS to the 
 
 ## Summary
 
-Column Oriented databases came out with [a 2005 paper](http://people.brandeis.edu/~nga/papers/VLDB05.pdf) explaining the design that Redshift, BigQuery and Snowflake are all built upon. It’s why they all have about the same performance and relative costs. This column oriented database is being used by most major providers of cloud data warehouses. This has become the dominant architecture in relational databases to support OLAP.
+Column Oriented databases came out with [a 2005 paper](http://people.brandeis.edu/\~nga/papers/VLDB05.pdf) explaining the design that Redshift, BigQuery and Snowflake are all built upon. It’s why they all have about the same performance and relative costs. This column oriented database is being used by most major providers of cloud data warehouses. This has become the dominant architecture in relational databases to support OLAP.

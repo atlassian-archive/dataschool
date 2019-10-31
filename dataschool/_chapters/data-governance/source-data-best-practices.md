@@ -4,7 +4,7 @@ title: Source Data Best Practices
 meta_title: Learn Source Data Best Practices
 description: Learn how to manage queries, model in a BI tool, and use drag and drop
   query interfaces.
-number: 3
+number: 13
 authors:
 - _people/matt.md
 reviewers:
@@ -47,7 +47,7 @@ Along with the snippets, it is a best practice to add comments describing how th
 
 Agile BI products will allow you to do some light modeling of the data at the BI layer.  In Chartio for instance, there is a Schema Editor that enables you to quickly rename fields, hide columns, specify join paths, and create custom columns or tables. Time here can be well spent, but if you're doing too much of it, consider moving all the way forward to the [Warehouse stage](/data-governance/why-build-a-data-warehouse/) where your efforts will be more universally applied.
 
-![Meta modeling in BI product](/assets/images/BILayerMetaModeling.png "BI Layer Modeling")
+![BI Layer Meta Modeling](/assets/images/Screen Shot 2019-10-25 at 10.07.59 AM.png "Schema Editor")
 
 If you're using Tableau, they have a feature called Data Interpreter that will do this as well.
 
@@ -98,7 +98,7 @@ Analyzing source data can be tricky since it has not been cleaned or modeled. Th
 * Keep a short, regularly updated snippet dictionary
 * Use BI products to overcome data issues such as weird field names and complex joins
 * Double check the data before visualization
-* Keep shorter Dashboards
+* Keep shorter dashboards
 * Design dashboards with pen and paper first
 * Keep an eye on query performance if you are hitting the production database
 

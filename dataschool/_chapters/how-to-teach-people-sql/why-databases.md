@@ -1,5 +1,5 @@
 ---
-section: book
+section: Introduction
 title: Why Databases?
 meta_title: Why use Databases over Excel
 number: 20

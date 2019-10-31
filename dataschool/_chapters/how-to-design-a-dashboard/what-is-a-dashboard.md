@@ -3,7 +3,7 @@ title: What is a Dashboard?
 meta_title: What is a Business Dashboard?
 description: Learn what dashboards are and why they are important to making decisions.
   Dashboards have a long history for supporting decision making.
-section: book
+section: Introduction
 number: 20
 authors:
 - _people/matt.md

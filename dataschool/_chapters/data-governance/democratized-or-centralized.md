@@ -21,11 +21,11 @@ reading_time: 5
 feedback_doc_url: https://docs.google.com/document/d/1N-FnKpdUb33ZVEeU5-YsuyVkWVGg2G0H_wlGLCFESak/edit?usp=sharing
 
 ---
-At this stage you really need to make a big choice in your organization - who do you want making the charts and dashboards?  Do you want a centralized workflow where all of the charts and dashboards are created by a core team, or do you want to be largely democratized where business users are enabled to self-serve and create their own charts?
+At this stage you need to make a big choice in your organization - who do you want to be making the charts and dashboards? Do you want a centralized workflow where all of the charts and dashboards are created by a core team, or do you want to be largely democratized where business users are enabled to self-serve and create their own charts?
 
 The choice here has dramatic impacts on the business, and while we lean strongly toward the benefits of a democratized workflow we realize it's not always right for every business or every stage.
 
-Here we attempt to clearly articulate the pros and cons of both workflows.  The choice here is painted fairly black and white, because that's just the reality of the implementation.  If you choose to stay centralized, and your central data team is less than around 50 people there's little need to do this final Mart stage of sophistication.  It is more work to build and maintain and if the only people using the data are full-time professionals their need for this slicing is minimal.
+Here we attempt to clearly articulate the pros and cons of both workflows.  The choice here is painted fairly black and white because that's just the reality of the implementation. If you choose to stay centralized and your central data team is less than around 50 people, there's little need to do this final Mart stage of sophistication. It is more work to build and maintain, and if the only people using the data are full-time professionals then their need for this slicing is minimal.
 
 The choice can impact what BI products you use, and completely changes how you organize your teams, trainings, and even who you hire.
 
@@ -33,9 +33,9 @@ The choice can impact what BI products you use, and completely changes how you o
 
 _In Progress_
 
-This has been the traditional approach, more due to database and product limitations than being the ideal way to do things. Database storage and compute resources used to be very constrained but now these resources are cheap. Products used to require advanced skills to analyze data, now there are drag and drop interfaces to find insights.
+This has been the traditional approach, more due to database and product limitations than because it's the ideal way to do things. Database storage and compute resources used to be very constrained, but now these resources are cheap. Products used to require advanced skills to analyze data, but now there are drag and drop interfaces to find insights.
 
-So with these changes in mind let's review the current set of pros and cons for centralized data access.
+With these changes in mind, let's review the current set of pros and cons for centralized data access.
 
 Pros
 
@@ -44,22 +44,22 @@ Pros
 
 Cons
 
-* Central Team bombarded with requests
+* Central team bombarded with requests
 * Curiosity has a gatekeeper
-* Hard to Scale
+* Hard to scale
 
 ## Democratized data
 
 _In Progress_
 
-This is a new approach to working with data in an organization. It comes from a belief in employees' abilities to answer their own questions if given the ability. While this method takes some up front work of getting the data in good shape, this approach can scale as your company grows.
+This is a new approach to working with data in an organization. It comes from a belief in employees' abilities to answer their own questions if given the ability. While this method takes initial work of getting the data in good shape, this approach can scale as your company grows.
 
-Let's explore why Democratized data is so powerful and acknowledge some of the draw backs that keep other teams centralized.
+Let's explore why democratized data is so powerful and acknowledge some of the drawbacks that keep other teams centralized.
 
 Pros
 
-* More Analysis
-* Empowered Employees
+* More analysis
+* Empowered employees
 
 Cons
 

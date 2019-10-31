@@ -1,7 +1,8 @@
 ---
-title: Modern Data Governance
-meta_title: Data Governance web book
-description: Learn how to apply Data Governance techniques to optimize your data stack
+title: Cloud Data Management
+meta_title: Cloud Data Management web book
+description: Learn how manage cloud data and apply data governance techniques to optimize
+  your data stack.
 downloadable: true
 book_slug: data-governance
 book_sort_number: 1
@@ -12,10 +13,11 @@ authors:
 - _people/tracy-chow.md
 - _people/jaime-flores-lovo.md
 - _people/aaron-aihini.md
+- _people/kostas-pardalis.md
 reviewers: _people/twange-kasoma.md
-cover_image: "/assets/images/book-covers/data-governance.png"
-thumbnail_cover_image: "/assets/images/book-covers/data-governance@thumbnail.png"
-image: "/assets/images/book-covers/social-data-governance.png"
+cover_image: "/assets/images/cloud-data-mgmt.png"
+thumbnail_cover_image: "/assets/images/cloud-data-management@thumbnail.png"
+image: "/assets/images/cloud-data.png"
 main_color: "#143676"
 is_featured: true
 status: in_progress

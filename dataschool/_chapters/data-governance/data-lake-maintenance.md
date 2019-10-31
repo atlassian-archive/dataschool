@@ -4,7 +4,7 @@ title: Data Lake Maintenance
 meta_title: Maintain a Data Lake
 description: Learn best practices for data lake maintenance. Handle Data Source updates
   and improve performance.
-number: 8
+number: 25
 authors:
 - _people/tim.md
 reviewers:
@@ -88,8 +88,15 @@ Queries can be limited in different ways:
 
 ### Scheduling
 
-Examine how your BI product queries the database. Does it do it automatically on a schedule or is it manual. Tools such as Chartio have Smart Refresh options to run queries at off-peak times to balance the load on the database.
+Examine how your BI product queries the database. Does it do it automatically on a schedule or is it manual. Tools such as Chartio have options to schedule queries to run at off-peak times to balance the load on the database and Smart Refresh options to prevent queries from running when dashboards aren't actively being viewed.
 
 ![Chartio database refresh schedule](/assets/images/ScheduleRefresh.png "Schedule Refresh")
 
 These sorts of tweaks become especially important as more users query the database.
+
+## Summary
+
+To keep a Data Lake being useful you need to:
+
+1. Monitor data source connections and update pipelines when necessary. Use an ETL product to make this simple.
+2. Keep an eye on performance. More people will be querying the database in different ways. Optimize individual queries that are impacting the database, set up caching to improve speed, create limits to stop people from over-querying, and schedule how your BI tool refreshes queries.

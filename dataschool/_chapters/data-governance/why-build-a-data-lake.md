@@ -3,7 +3,7 @@ section: Stage 2 - Lake
 title: Why Build a Data Lake
 meta_title: Top 3 reasons to build a Data Lake
 description: Learn why you should build a data lake to improve analytics at your company.
-number: 4
+number: 21
 authors:
 - _people/tim.md
 - _people/matt.md
@@ -59,7 +59,7 @@ In a Data Lake, all data can be combined so it can be analyzed together. This ma
 
 The applications your business uses likely only offer transactional API access to the data.  They're not designed for reporting, so unless the data is exported and put into a format you can easily query, you will end up being very limited in what you can pull.  These APIs, if used directly for reporting, can also become prohibitively expensive.
 
-If you extract that API data with an [ELT product](/data-governance/elt-vs-etl/) and load it into a Data Lake, you'll have all the power and flexibility of SQL or whatever BI product you use - and the cost won't go up considerably with each chart.
+If you extract that API data with an [ELT product](https://dataschool.com/data-governance/etl-vs-elt/) and load it into a Data Lake, you'll have all the power and flexibility of SQL or whatever BI product you use - and the cost won't go up considerably with each chart.
 
 ![Combine Salesforce, Zendesk, and Hubspot in a Dashboard](/assets/images/AppDataCombinedDashboard.png "Combined App Dashboard")
 
@@ -77,4 +77,4 @@ Data Lakes are built to handle these types of ad hoc analytical queries independ
 
 Getting the data in one spot is a necessary step for progressing to the other stages.  It makes working with data so much easier that many BI products require this stage - as they will only connect to a single warehouse source.
 
-On top of this Lake you will eventually be able to do proper modeling in the Warehouse stage, cleaning the data so more people can use it, less errors happen, you repeat yourself less, and many more benefits.
+In the Warehouse stage, you'll be able to implement proper modeling on top of your Lake. Through modeling the data will be cleaner, which enables more people to use it, causes fewer errors, and creates less repetition of work.

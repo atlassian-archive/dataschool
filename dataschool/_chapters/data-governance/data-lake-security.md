@@ -3,7 +3,7 @@ section: Stage 2 - Lake
 title: Data Lake Security
 meta_title: Setup Security on a Data Lake
 description: Learn best practices for ensuring data security on a Data Lake database.
-number: 7
+number: 24
 authors:
 - _people/matt.md
 reviewers:
@@ -32,14 +32,14 @@ Remove access from individual tools, move all access to Data Lake. This will cut
 
 ## Permission tiers
 
-Now that you can easily grant anyone access to data, you will have more people accessing data. While this is advantageous for analysis and exploration you do need to be mindful of what schemas and tables they can see.
+Now that you can easily grant anyone access to data, you will have more people using that data. While this is advantageous for analysis and exploration you do need to be mindful of what schemas and tables they can see.
 
 Start out by creating two users groups on the Data Lake as follows:
 
 1. For admin and engineers (Full Access)
 2. For analysts and business users (Relevant Access)
 
-You can prevent the second group from accessing sensitive data in the Data Lake by having that group not have access to the schemas or tables with that type of data.
+You can prevent the second group from accessing sensitive data in the Data Lake by limiting that group's permissions to only relevant schemas or tables.
 
 ![Set Permissions Tiers by Group](/assets/images/PermissionTiers (1).png "Permission Tiers")
 

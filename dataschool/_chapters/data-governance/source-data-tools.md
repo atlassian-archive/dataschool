@@ -4,7 +4,7 @@ title: Starting with Source Data
 meta_title: Best Tools to Analyze Source Data
 description: Learn how to analyze data from applications, production databases, and
   financial records.
-number: 1
+number: 11
 authors:
 - _people/tim.md
 - _people/matt.md
@@ -24,14 +24,14 @@ Modern businesses generate tons of data. Product information, customer informati
 
 This stage is ideal for new companies or teams with minimal data needs. It is inexpensive and relatively easy to tool, implement, and maintain. It is sometimes exciting to build out a sophisticated data stack, but be sure to start here and check that it satisfies your needs before moving on; over-engineering is a costly mistake.
 
-## This stage is right for you if
+### This stage is right for you if
 
 * You have a small team with only a few people using data
 * You have minimal data needs at the moment
 * You only have data in a few small sources
 * The only people who need to make new visuals are fairly technical
 
-## You've outgrown this stage if
+### You've outgrown this stage if
 
 * You have data you need access to in multiple places/applications
 * You need unique or combined charts/dashboards for cloud application sources like Salesforce
@@ -56,13 +56,13 @@ These are also usually well supported by the vendor's support staff should you h
 
 Many of the applications you are using will allow you to export some of your data into CSV formatted files. You can take this data and open it in Excel to analyze it. While this is an effective way to expand the questions you can ask of the data it is fairly manual and will need to be updated with new data often.
 
-![SEM Rush Export to CSV or Excel Options](http://img.chartio.com/dd1ab48cd773/Image%202019-10-20%20at%203.32.59%20PM.png)
+![SEM Rush Export to CSV or Excel Options](/assets/images/Export-to-Excel.png "Export to CSV or Excel")
 
 ### SQL IDE
 
 For data sources such as your production database, you can query it directly from the command line but this can get messy and hard to keep track of queries and results. We suggest setting up an IDE such as PG admin to better handle querying data within a Schema.
 
-![SQL IDE](http://img.chartio.com/9d64acb901f5/Image%202019-10-20%20at%205.51.42%20PM.png)
+![SQL IDE to explore data](/assets/images/SQL-IDE.png "SQL IDE")
 
 ### Cloud dashboarding tools
 
@@ -77,3 +77,7 @@ They often come with some nice default dashboards set up automatically for you, 
 For the most power in working with source data, use a flexible self-service Business Intelligence (BI) solution.  For this stage be sure to choose an agile product, that allows direct SQL queries when necessary and ideally the ability to connect to and blend data from multiple sources.  Those features will be necessary as your data hasn't been consolidated into a single source yet, nor has it been organized in a clean enough way to not need occasional power of a complex SQL query.  We're obviously biased, but Chartio is a great choice here.
 
 ![Self-service Business Intelligence example - Chartio](https://lh3.googleusercontent.com/tVP2nWD1EG5z4PYR2DfkazTXQtXGC3vGlmunB7aPE28bAWge0w5xRm4YL8hseiPLi_tc0kFJhQv863muCvjUguyffoClHes2nw0aMHtYSkjR2iuv8I0NmEod2Syc6-kbCoRQtP5Y)
+
+## Summary
+
+Every business has access to data, you need to find how best to view it and analyze it to improve your business. While you can use Application Dashboards, Excel, SQL IDE, or Cloud dashboarding tools; We recommend using a self serve Business Intelligence product to work with a variety of sources at once and be able to write SQL against your database.

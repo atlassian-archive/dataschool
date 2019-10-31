@@ -5,7 +5,7 @@ short: Acknowledgements
 meta_title: Acknowledgments for Modern Data Governance Book
 description: This is a community driven book - with contributions from many different
   people and organizations.  Help keep it relevant and continually improving.
-number: 9999999
+number: 10000
 authors:
 - _people/dave.md
 reviewers:

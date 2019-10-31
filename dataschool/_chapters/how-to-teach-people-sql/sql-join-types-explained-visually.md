@@ -7,7 +7,8 @@ section: JOINs
 number: 40
 authors:
 - _people/tim.md
-reviewers: []
+reviewers:
+- _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/10bjLM1eP66fzkVjqiqNzfl0DAev1wqB1W-jbyRddiWg/edit?usp=sharing
 image: "/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png"
 is_featured: true

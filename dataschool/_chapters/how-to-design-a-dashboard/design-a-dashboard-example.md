@@ -1,5 +1,5 @@
 ---
-section: book
+section: Conclusion
 title: Design a Dashboard Example
 meta_title: Designing a Dashboard example
 description: Example of how applying design thinking improves dashboard design
