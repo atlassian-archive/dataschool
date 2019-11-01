@@ -24,9 +24,9 @@ Modern companies run on and compete with data.  Historically businesses had all 
 
 Over time, companies scaled and most people now work for larger, distributed organizations.  We've grown from single shop businesses, to having many locations, and even to having no location at all.  The result is that decision makers no longer have direct access to each customer, and must increasingly rely on their data to improve and compete.
 
-Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and an effective data stack are essential tasks if a business wants to gain from it's information.
+Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and an effective data stack are essential tasks if a business wants to gain from its information.
 
-This book is for organizations of all sizes that want to build the right data stack for them - one that is both practical and enables them to be as informed as possible.  It is a continually improving community driven book teaching modern data governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
+This book is for organizations of all sizes that want to build the right data stack for them - one that is both practical and enables them to be as informed as possible.  It is a continually improving community driven book teaching modern data governance techniques for companies at different levels of data sophistication. In it we will progress from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls, and best practices as data needs expand.
 
 The structure and original chapters of this book were written by the leadership and Data Advisor teams at Chartio, sharing our experiences working with hundreds of companies over the past decade.  Here we've compiled our learnings and open sourced them in a free, open book.
 
@@ -69,7 +69,7 @@ In the Lake stage, as you bring in more people to work with the data, you have t
 
 ![Warehouse Stage of Data Sophistication](https://lh3.googleusercontent.com/IIYi4iD4oQgw4CKdR5EAHWXx1MfEuRXCK7gFCx_9Ved3L5hhiSqoNV7p4iqYMwR2Dwfa5_nW4kN6Yx-iTNm_jz63tj0LURWpjiWhmhnkeoMyM5w6FK79z0yTxrXzPn50zDzAAm5G "Data Warehouse")
 
-This stage—creating a data Warehouse—has historically been quite a nightmare, and there are many books written on how best to model your data for analytical processing. But these days it’s not that hard—and will not only spare you from having to explain all of your schemas’ oddities to new team members, but will also save you as an individual time in having to repeat, edit and maintain your own messy queries.
+This stage—creating a data Warehouse—has historically been quite a nightmare, and there are many books written on how best to model your data for analytical processing. But these days it’s not that hard—and will not only spare you from having to explain all of your schemas’ oddities to new team members, but will also save you time as an individual in having to repeat, edit, and maintain your own messy queries.
 
 ### Stage 4. [Marts](/data-governance/why-build-data-marts/)
 
