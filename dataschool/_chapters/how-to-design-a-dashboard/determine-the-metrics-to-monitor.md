@@ -49,7 +49,7 @@ How did you overcome the hardest parts?
 
 What don’t you like about your solution?
 
-We will learn a lot from the Point Person’s answers. If it is not hard for them to achieve their goal a new dashboard is unlikely to be valuable to them. Understanding why achieving their goal is hard gives insight into why a dashboard might be the solution they need. Hearing a story about their struggle in achieving their goal will give you insight into full process involved. If they have not tried to overcome the hard parts they likely do not care that deeply about the goal. If they did try to overcome the hard parts then you might be able to borrow from their solution in your dashboard. Understanding what they didn’t like about their solution will make sure you do not repeat the same mistake in your dashboard.
+We will learn a lot from the Point Person’s answers. If it is not hard for them to achieve their goal a new dashboard is unlikely to be valuable to them. Understanding why achieving their goal is hard gives insight into why a dashboard might be the solution they need. Hearing a story about their struggle in achieving their goal will give you insight into the full process involved. If they have not tried to overcome the hard parts they likely do not care that deeply about the goal. If they did try to overcome the hard parts then you might be able to borrow from their solution in your dashboard. Understanding what they didn’t like about their solution will make sure you do not repeat the same mistake in your dashboard.
 
 After getting perspective on the goal and motivation of the Point Person we need to breakdown all of the decisions along the way to achieving their goal that need data to support them.
 
@@ -83,7 +83,7 @@ Take the list of aspirational and practical decisions and rank order them with t
 
 After we know what decisions are important we need to figure out which metrics would best support those decisions. Below is a spreadsheet that outlines all the necessary pieces that you will need to specify to create a query around a metric. We will refer to this as the Metric Spreadsheet.
 
-Work with the Point Person to write out how they want to aggregate, group by, and filter the metrics. If you are skilled at extracting metric formulas from business people this may not be necessary, but if you want a clear way to document their metric definitions we suggest using a Metric Spreadsheet. Either way this book will use the Metric Spreadsheet keep track and reference what metrics are important to this dashboard design process.
+Work with the Point Person to write out how they want to aggregate, group by, and filter the metrics. If you are skilled at extracting metric formulas from business people this may not be necessary, but if you want a clear way to document their metric definitions we suggest using a Metric Spreadsheet. Either way, this book will use the Metric Spreadsheet to keep track and reference what metrics are important to this dashboard design process.
 
 Metric Spreadsheet
 
