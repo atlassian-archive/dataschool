@@ -69,7 +69,7 @@ In the Lake stage, as you bring in more people to work with the data, you have t
 
 ![Warehouse Stage of Data Sophistication](https://lh3.googleusercontent.com/IIYi4iD4oQgw4CKdR5EAHWXx1MfEuRXCK7gFCx_9Ved3L5hhiSqoNV7p4iqYMwR2Dwfa5_nW4kN6Yx-iTNm_jz63tj0LURWpjiWhmhnkeoMyM5w6FK79z0yTxrXzPn50zDzAAm5G "Data Warehouse")
 
-This stage—creating a data Warehouse—has historically been quite a nightmare, and there are many books written on how best to model your data for analytical processing. But these days it’s not that hard—and will not only spare you from having to explain all of your schemas’ oddities to new team members, but will also save you as an individual time in having to repeat, edit and maintain your own messy queries.
+This stage—creating a data Warehouse—has historically been quite a nightmare, and there are many books written on how best to model your data for analytical processing. But these days it’s not that hard—and will not only spare you from having to explain all of your schemas’ oddities to new team members, but will also save you time as an individual in having to repeat, edit and maintain your own messy queries.
 
 ### Stage 4. [Marts](/data-governance/why-build-data-marts/)
 
