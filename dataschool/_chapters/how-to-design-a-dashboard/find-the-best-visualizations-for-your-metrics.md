@@ -32,7 +32,7 @@ Data visualization is a general term that describes any effort to help people un
 
 ## Most Common Visualizations
 
-After studying 90,000 dashboards at Chartio most data is displayed in a handful of the chart options.
+After studying 90,000 dashboards at Chartio we found most data is displayed in a handful of the chart options.
 
 ![Graph of  most commonly used visualization types](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/dashboardCreationCount.png)
 
