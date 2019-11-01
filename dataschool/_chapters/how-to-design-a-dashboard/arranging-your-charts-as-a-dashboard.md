@@ -29,13 +29,11 @@ Here we can see revenue and operations metrics shaded in blue, marketing metrics
 ### Alignment Quick Tips
 
 * If a specific metric is displayed in two ways, these should be right next to each other. For example here we can see both the current Count of Users, and we can see how they have been trending in the graph next to it this year.
-![Different views of the same metric](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/sameMetrics.png)
-
+  ![Different views of the same metric](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/sameMetrics.png)
 * Line charts with the same time frame should be stacked vertically to facilitate comparisons. For example below we can see how our MRR (Monthly Recurring Revenue) compares to our operational costs by department.
-![vertically stacked charts with same time period](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/sameTime.png)
-
+  ![vertically stacked charts with same time period](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/sameTime.png)
 * Put items next to each other with no separation to use the same title for both visualizations. Here you can see that there does not appear to be any separation between these two visualizations. This groups the data and makes it clear they are describing the same thing.
-![Using a title for multiple charts on a dashboard](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/sameTitle.png)
+  ![Using a title for multiple charts on a dashboard](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/sameTitle.png)
 
 ## Examine Layouts
 
@@ -57,7 +55,7 @@ While being innovative in dashboard design can challenge the way we look at thin
 
 ## Limited Variety
 
-At Chartio we have also noticed that dashboards with multiple chart type get more views to a point. Viewership peaks when three different types of charts are used, and it
+At Chartio we have also noticed that dashboards with multiple chart types get more views to a point. Viewership peaks when three different types of charts are used, and then it drops off. 
 
 ![Chartio chart types variety](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/chartioChart.png)
 
