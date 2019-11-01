@@ -24,7 +24,7 @@ Modern companies run on and compete with data.  Historically businesses had all 
 
 Over time, companies scaled and most people now work for larger, distributed organizations.  We've grown from single shop businesses, to having many locations, and even to having no location at all.  The result is that decision makers no longer have direct access to each customer, and must increasingly rely on their data to improve and compete.
 
-Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and an effective data stack are essential tasks if a business wants to gain from it's information.
+Companies today are quite good at collecting data - but still very poor at organizing and learning from it.  Setting up a proper Data Governance organization, workflow, tools, and an effective data stack are essential tasks if a business wants to gain from its information.
 
 This book is for organizations of all sizes that want to build the right data stack for them - one that is both practical and enables them to be as informed as possible.  It is a continually improving community driven book teaching modern data governance techniques for companies at different levels of data sophistication. In it we will progresses from the starting setup of a new startup to a mature data driven enterprise covering architectures, tools, team organizations, common pitfalls and best practices as data needs expand.
 
