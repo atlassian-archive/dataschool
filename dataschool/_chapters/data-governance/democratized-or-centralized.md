@@ -52,7 +52,7 @@ Cons
 
 _In Progress_
 
-This is a new approach to working with data in an organization. It comes from a belief in employees' abilities to answer their own questions if given the ability. While this method takes initial work of getting the data in good shape, this approach can scale as your company grows.
+This is a new approach to working with data in an organization. It comes from a belief in employees’ abilities to answer their own questions if given the ability. While this method takes some up front work moving from centralized to democratized to get data in a good shape, this approach can scale as your company grows.
 
 Let's explore why democratized data is so powerful and acknowledge some of the drawbacks that keep other teams centralized.
 
