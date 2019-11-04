@@ -64,4 +64,4 @@ Pros
 Cons
 
 * More chance for errors
-* If data is properly sanitized, PII could be handled incorrectly
+* If data is not properly sanitized, PII could be handled incorrectly
