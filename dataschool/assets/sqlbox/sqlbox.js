@@ -153,41 +153,42 @@ autorun             |  Automatically run the initial SQL on load
     }
   }
 
-  $('sqlbox').each(function (index) {
-    $(this).load('/assets/sqlbox/sqlbox.html', setUp);
-  });
+  $( document ).load(function() {
+    $('sqlbox').each(function (index) {
+      $(this).load('/assets/sqlbox/sqlbox.html', setUp);
+    });
 
-  // Tutorial Navbar Javascript
-  $('.sql-categories .level-label').click(function (e) {
-    e.preventDefault();
-    $('ol', $(this).parent()).toggle();
-  });
+    // Tutorial Navbar Javascript
+    $('.sql-categories .level-label').click(function (e) {
+      e.preventDefault();
+      $('ol', $(this).parent()).toggle();
+    });
 
+    /* Some SQL Tutorial specific Stuff below */
 
-  /* Some SQL Tutorial specific Stuff below */
+    // Show anchor links on all Hx's on hover.
+    $("h2, h3, h4, h5, h6").each(function(i, el) {
+      var $el, icon, id;
+      $el = $(el);
+      id = $el.attr('id');
+      icon = '<i class="fa fa-link"></i>';
+      if (id) {
+        return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+      }
+    });
 
-  // Show anchor links on all Hx's on hover.
-  $("h2, h3, h4, h5, h6").each(function(i, el) {
-    var $el, icon, id;
-    $el = $(el);
-    id = $el.attr('id');
-    icon = '<i class="fa fa-link"></i>';
-    if (id) {
-      return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+    // Add anchor links to nav showing sections of the page
+    if(window.location.href.indexOf("practice") == -1) {
+      var l = $("<ul></ul>");
+      $("h2, h3, h4").each(function(i, el) {
+        var $el = $(el)
+        var $a = $("a", $el)
+        // parse anything with a ( in it or a dash
+        var t = $el.text().split(' - ')[0].split('(')[0];
+        var a = $("<a></a>").attr('href', $a.attr('href')).text(t);
+        l.append($("<li></li>").append(a));
+      });
+      $('li.active').append(l);
     }
   });
-
-  // Add anchor links to nav showing sections of the page
-  if(window.location.href.indexOf("practice") == -1) {
-    var l = $("<ul></ul>");
-    $("h2, h3, h4").each(function(i, el) {
-      var $el = $(el)
-      var $a = $("a", $el)
-      // parse anything with a ( in it or a dash
-      var t = $el.text().split(' - ')[0].split('(')[0];
-      var a = $("<a></a>").attr('href', $a.attr('href')).text(t);
-      l.append($("<li></li>").append(a));
-    });
-    $('li.active').append(l);
-  }
 })(jQuery);
