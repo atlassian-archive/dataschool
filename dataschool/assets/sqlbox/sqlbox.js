@@ -153,7 +153,7 @@ autorun             |  Automatically run the initial SQL on load
     }
   }
 
-  $( document ).load(function() {
+  $( window ).on("load", function() {
     $('sqlbox').each(function (index) {
       $(this).load('/assets/sqlbox/sqlbox.html', setUp);
     });
