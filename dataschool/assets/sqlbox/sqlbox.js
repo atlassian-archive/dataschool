@@ -70,8 +70,6 @@ var s;
     box.$textarea.text(box.initial); // set the initial text
     box.autorun = $box.attr('autorun') || false;
 
-    console.log('setting up answer', box.answer, box.initial);
-
     // set settings Values
     $('form', box).attr('action', $.sqlboxSettings.action);
     $('input[name="dbtype"]', box).attr('value', $.sqlboxSettings.dbType)
@@ -155,7 +153,7 @@ var s;
   }
 
   $( window ).on("load", function() {
-    
+
     $('sqlbox').load('/assets/sqlbox/sqlbox.html', function() {
       setUp(this);
     });
