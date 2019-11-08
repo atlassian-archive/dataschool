@@ -17,7 +17,7 @@ incorrect_message   |  The message displayed when the result is incorrect.  'sho
 hint                |  An optional hint for the person.  Will display a button saying "show hint"
 autorun             |  Automatically run the initial SQL on load
  */
-
+var s;
 (function ($) {
   var dataTableSettings = {
     pagination: true,
@@ -58,9 +58,8 @@ autorun             |  Automatically run the initial SQL on load
   }
 
   // applies the style and listeners to a sqlbox
-  function setUp() {
-    var box = this;
-    var $box = $(this);
+  function setUp(box) {
+    var $box = $(box);
     box.answer = $box.attr('answer');
     box.correct_message = $box.attr('correct_message') || 'Correct!';
     box.initial = $box.attr('initial') || '';
@@ -70,6 +69,8 @@ autorun             |  Automatically run the initial SQL on load
     box.$textarea = $('textarea', box) || '';
     box.$textarea.text(box.initial); // set the initial text
     box.autorun = $box.attr('autorun') || false;
+
+    console.log('setting up answer', box.answer, box.initial);
 
     // set settings Values
     $('form', box).attr('action', $.sqlboxSettings.action);
@@ -154,10 +155,10 @@ autorun             |  Automatically run the initial SQL on load
   }
 
   $( window ).on("load", function() {
-    $('sqlbox').each(function (index) {
-      $(this).load('/assets/sqlbox/sqlbox.html', setUp);
+    
+    $('sqlbox').load('/assets/sqlbox/sqlbox.html', function() {
+      setUp(this);
     });
-
     // Tutorial Navbar Javascript
     $('.sql-categories .level-label').click(function (e) {
       e.preventDefault();
@@ -191,4 +192,6 @@ autorun             |  Automatically run the initial SQL on load
       $('li.active').append(l);
     }
   });
+
+  s = setUp;
 })(jQuery);
