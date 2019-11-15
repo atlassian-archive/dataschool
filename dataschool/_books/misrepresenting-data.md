@@ -5,7 +5,7 @@ description: Learn what the most common analysis mistakes are and how to avoid t
   Understand the cognitive biases and simple errors that effect every analyst.
 book_slug: misrepresenting-data
 authors: _people/matt.md
-cover_image: "/assets/images/book-covers/misrepresenting-data.png"
+cover_image: "/assets/images/misrepresenting-data.png"
 thumbnail_cover_image: "/assets/images/book-covers/misrepresenting-data@thumbnail.png"
 image: "/assets/images/book-covers/social-misrepresenting-data.png"
 main_color: ''
