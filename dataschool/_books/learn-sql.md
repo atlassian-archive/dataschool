@@ -3,7 +3,7 @@ title: Learn SQL
 meta_title: 'Learn SQL: Interactive SQL Book'
 description: Learn how to write SQL by answering simple data questions
 book_slug: learn-sql
-book_sort_number: 1
+book_sort_number: 4
 authors: _people/dave.md
 reviewers: _people/matt.md
 cover_image: "/assets/images/book-covers/learn-sql.png"

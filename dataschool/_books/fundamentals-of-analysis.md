@@ -3,7 +3,7 @@ title: Fundamentals of Analysis
 meta_title: Fundamentals of Analysis web book
 description: Learn how to get insights out of data
 book_slug: fundamentals-of-analysis
-book_sort_number: 1
+book_sort_number: 8
 authors: _people/matt.md
 reviewers: _people/dave.md
 cover_image: "/assets/images/book-covers/fundamentals-of-analysis.png"
