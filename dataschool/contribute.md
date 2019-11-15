@@ -20,7 +20,7 @@ While at The Data School let us know if you find any of the following:
 
 There are links to the Google Doc version of each chapter at the bottom of the page:
 
-![](/assets/images/Screen Shot 2019-07-08 at 12.04.42 PM.png)
+[![Give Feedback](/assets/images/Screen Shot 2019-07-08 at 12.04.42 PM.png)](https://docs.google.com/document/d/1otmCF7Ep4VfcymEDSWn6JWGkl3wVTf8C_d18_oEROVc/edit?usp=sharing)
 
 ### Reach out on Slack
 
@@ -30,7 +30,7 @@ We have channels for each of these in our Slack:
 * #book-edits
 * #book-contribute
 
-[Go here to join the Data School Slack]({{ site.slack_url }})
+[Go here to join the Data School Slack](https://join.slack.com/t/thedataschool/shared_invite/enQtNjAyMTM1MTk1MzQ4LWY4YWI1YzBkOTAwZmQ4Y2Q4N2U4MWE1Njg3OWJhNmU2NGRiYTI0MDEzMmQ1MzllMTczMGFhMTEwZTBlYmQxYjY)
 
 If you want to contribute more substantially to a book or help write our next one please reach out to me (@MattDavid) in The Data School’s Slack.
 
@@ -44,16 +44,14 @@ This is a collaborative project to create the best resource for creating data dr
 
 So by definition this means that we need to be open and helpful to everyone here to accomplish our goal. This is what we expect of everyone. If there is any behavior here you find in conflict with that please reach out to me directly.
 
-
-
 {% assign in_progress_chapters = site.chapters | where:'is_under_construction', 'true' | sort: 'last_modified' %}
 {% if in_progress_chapters %}
-  <h2 class="mt-5">{{ in_progress_chapters | size }} Chapters need Contribution</h2>
-  <ul>
-  {% for chapter in in_progress_chapters %}
-    <li class="mb-2">
-     <a href="{{ chapter.url }}">{{ chapter.title }}</a> {% if chapter.is_under_construction %}<em>(In progress)</em>{% endif %}
-    </li>
-  {% endfor %}
-  </ul>
+<h2 class="mt-5">{{ in_progress_chapters | size }} Chapters need Contribution</h2>
+<ul>
+{% for chapter in in_progress_chapters %}
+<li class="mb-2">
+<a href="{{ chapter.url }}">{{ chapter.title }}</a> {% if chapter.is_under_construction %}<em>(In progress)</em>{% endif %}
+</li>
+{% endfor %}
+</ul>
 {% endif %}
