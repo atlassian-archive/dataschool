@@ -3,7 +3,7 @@ title: Dictionary of The Data School
 meta_title: Dictionary of Data Terms by the Data School
 description:
 book_slug: dictionary
-book_sort_number: 2
+book_sort_number: 9
 authors:
 - _people/dave.md
 reviewers: []
