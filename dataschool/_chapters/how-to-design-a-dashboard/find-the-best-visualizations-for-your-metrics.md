@@ -95,7 +95,7 @@ There are multiple ways we need to aggregate operational cost. We need to calcul
 
 ### Revenue
 
-We only need to aggregate the total which produces one value. If no comment was provided by the Point Person about wanting to see the total revenue compared to a previous time or compared to a goal the Single Value Chart is the best option. (reword sentence)
+As we identified in the table earlier, the result we need is a single value. As the Point Person didn't leave a comment about wanting to compare it to previous periods or to a goal, the "Single Value" chart is the best way to represent the figure.
 
 ![Single aggregate for revenue](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/revenueCost.png)
 
