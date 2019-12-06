@@ -141,15 +141,15 @@ In text fields this is more difficult to detect, however there are some tricks h
 
 ### Potentially Wrong Values
 
-While the previous method showed us obvious outliers there can be more subtle outliers that you may want to address. A commonly accepted definition of an outlier is 1.5 * IQR + Q3 and Q1 - 1.5 * IQR. This formula which is one and a half times the interquartile range added to the upper quartile or subtracted from the lower quartile finds outlier values.
+While the previous method showed us obvious outliers there can be more subtle outliers that you may want to address.
 
-Quartiles split a quantitative variable up into 4 sections
+Quartiles split a quantitative variable up into four equal sections. The interquartile range (IQR) is the difference between the upper quartile (Q3) and the lower quartile (Q1), which cover the central 50% of the data. If a value is far enough from the middle, we might consider that an outlier.
 
 ![shows quartile split and the interquartile range](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/IQR.png)
 
 [http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html "http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html")
 
-The interquartile range is the difference between the upper quartile (Q3) and the lower quartile (Q1).
+A commonly accepted definition of an outlier is 1.5 * IQR + Q3 and Q1 - 1.5 * IQR. In essence, if a data point is 1.5 times the IQR larger than the upper quartile, or 1.5 times the IQR smaller than the lower quartile, it is an outlier value.
 
 Here is an example query applying this formula to find outliers using IQR.
 
