@@ -115,7 +115,7 @@ People already struggle with comparing 2D areas, for instance all of these have 
 
 This is also why many people recommend caution using pie charts or area charts since they leverage 2D space. They can be used but only when there are very few categories.
 
-People are also not effective at comparing 3D volume, all of these shapes have the same volume(made up of 4 cubes of the same size).
+People are also not effective at comparing 3D volume, all of these shapes (except for the green L at the top center) have the same volume (made up of 4 cubes of the same size).
 
 ![7 3d objects with equal volume](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/3dShapes.png)
 
