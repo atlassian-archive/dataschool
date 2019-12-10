@@ -108,6 +108,7 @@ fields:
   label: FAQs
   description: FAQs for  SEO
 pages:
+- dataschool/_chapters/data-governance/source-data-tools.md
 - dataschool/_chapters/data-governance/data-mart-implementation.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
@@ -164,7 +165,6 @@ pages:
 - dataschool/_chapters/data-governance/data-mart-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-security.md
 - dataschool/_chapters/data-governance/what-stage-are-you-at.md
-- dataschool/_chapters/data-governance/source-data-tools.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-warehouse-security.md
 - dataschool/_chapters/data-governance/data-warehouse-maintenance.md

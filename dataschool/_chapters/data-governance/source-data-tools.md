@@ -18,6 +18,11 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 4
+faqs:
+- question: What tools can I use to analyze source data?
+  answer: Data will live in many different places but the methods to analyze them
+    boil down to Application Dashboards, Excel, SQL IDE, Cloud dashboarding tools,
+    Business Intelligence (BI).
 
 ---
 Modern businesses generate tons of data. Product information, customer information, app performance, marketing expenditures, etc. You need to start organizing and analyzing data in order to run your business effectively. At the beginning of a business or while a business remains small, it is sufficient to work with data from production databases, product APIs, and financials directly from their original sources.
