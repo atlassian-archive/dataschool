@@ -15,3 +15,5 @@ status: in_progress
 snippet: You have data, now how do you analyze it correctly? This is not a simple task, this book will cover common techniques to get insights out of data accurately.
 ---
 You have data, now how do you analyze it correctly? This is not a simple task, this book will cover common techniques to get insights out of data accurately.
+
+{% include download-fundamentalsofanalysis-book.html %}
