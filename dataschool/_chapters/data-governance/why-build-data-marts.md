@@ -17,6 +17,11 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
+faqs:
+- question: What is a data mart?
+  answer: A Data Mart is a filtered (and sometimes aggregated) subsection of a Data
+    Warehouse to make it easier for a particular group to query data. It provides
+    a smaller schema with only the relevant tables for the group.
 
 ---
 ## What is a Data Mart?
