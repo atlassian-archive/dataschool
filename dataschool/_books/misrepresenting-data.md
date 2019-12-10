@@ -20,3 +20,5 @@ snippet: There is so much data you have access to within a company. Communicatin
 
 ---
 There is so much data you have access to within a company. Communicating accurate insights from company data is challenging. This book covers the mental biases and common mistakes that people make when analyzing data. It then provides guidance on how to prevent and avoid these costly errors.
+
+{% include download-avoidmisrepresentingdata-book.html %}

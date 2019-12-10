@@ -16,3 +16,5 @@ is_featured: false
 snippet: Dashboards enable people to make decisions based on data. This book walks you through the process of defining, prototyping, building, and deploying a dashboard. The focus of the book is to help people make dashboards that get used to make decisions.
 ---
 Dashboards enable people to make decisions based on data. This book walks you through the process of defining, prototyping, building, and deploying a dashboard. The focus of the book is to help people make dashboards that get used to make decisions.
+
+{% include download-designdashboard-book.html %}
