@@ -13,6 +13,7 @@ summary: ''
 is_featured: false
 img_border_on_default: false
 meta_title: What is the difference between Correlation and P value
+is_under_construction: false
 
 ---
 The two most commonly used statistical tests for establishing relationship between variables are correlation and p-value. Correlation is a way to test if two variables have any kind of relationship, whereas p-value tells us if the result of an experiment is statistically significant. In this tutorial, we will be taking a look at how they are calculated and how to interpret the numbers obtained.
