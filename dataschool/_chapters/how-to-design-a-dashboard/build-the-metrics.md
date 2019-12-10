@@ -14,6 +14,7 @@ image: "/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.pn
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1S8xZVmLzy-et4HrFBr1ccBYj5Vlyr6terU0XVbicLl4/edit?usp=sharing
 is_featured: false
+is_under_construction: false
 
 ---
 ![Build the metrics: image of how db metrics interact with technology](/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png)

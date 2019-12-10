@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1iMFvldJoRh7Uay5e_AW7sy9lKb
 image: "/assets/images/Frame - 2019-09-30T123134.565.png"
 is_featured: false
 img_border_on_default: true
+is_under_construction: false
 
 ---
 CASE WHEN takes in values, checks them against a condition and THEN outputs values into a new column based on if it satisfies the condition.

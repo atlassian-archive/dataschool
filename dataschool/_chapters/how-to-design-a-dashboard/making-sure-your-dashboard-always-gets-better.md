@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1nr7qeQM1xjHTq6wh6zCfvU-835
 image: "/assets/images/how-to-design-a-dashboard/making_sure_your_dashboard_always_gets_better/gettingBetter.jpeg"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 ![Iterate on your dashboard](/assets/images/how-to-design-a-dashboard/making_sure_your_dashboard_always_gets_better/gettingBetter.jpeg)

@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1r0fyo8QHWhe_ADc-XruJBRtlIj
 image: /assets/images/sql-optimization/views/views_2.png
 is_featured: false
 img_border_on_default: true
+is_under_construction: false
 
 ---
 ## What is a view?

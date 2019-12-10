@@ -13,6 +13,7 @@ feedback_doc_url: https://docs.google.com/document/d/1xA160gXkrjyrlrygTqNAVnUYaE
 image: "/assets/images/how-to-teach-people-sql/fullOuter/fullOuter_1.gif"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 This is the third most common type of [JOIN in SQL](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/). FULL OUTER refers to the first table, or the table you will be joining to. So in this case it would be the facebook table since it comes before linkedin table in the query.

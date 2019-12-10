@@ -14,6 +14,7 @@ image: "/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_me
 is_featured: false
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1z2HnZTxsdPY89M5ElREXoGSIcQMrPzwdYVcaAbFz9eQ/edit?usp=sharing
+is_under_construction: false
 
 ---
 Selecting the best chart for your metrics is not always a straightforward process. Certain visualizations do not represent some datasets well, and certain visualizations can not represent some datasets at all. Sometimes you just need a table, single value, or just show some text. Knowing the difference will help you design the most useful dashboards.

@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1v_F2P6da3SOwy1W5K13tR-unTb
 image: "/assets/images/sql-optimization/start_modeling_data/data1.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 Data Modeling sounds really scary, like a big chore and months of work.

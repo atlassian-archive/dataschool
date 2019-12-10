@@ -13,6 +13,7 @@ feedback_doc_url: ''
 image: /assets/images/book-covers/sql-optimization.png
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 The way to make a query run faster is to reduce the number of calculations that the software must perform. To do this, you'll need some understanding of how SQL executes a query.

@@ -14,6 +14,7 @@ description: Visualize how subqueries work in SQL by seeing the intermediate tab
   query.
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 A SQL subquery can look complicated:

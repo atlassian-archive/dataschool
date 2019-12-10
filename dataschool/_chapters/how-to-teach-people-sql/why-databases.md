@@ -13,6 +13,7 @@ description: Databases are better for managing data than spreadsheets when you c
   size, accuracy, and security
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 ## What is a database and why use one

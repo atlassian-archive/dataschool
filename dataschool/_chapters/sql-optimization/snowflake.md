@@ -13,6 +13,7 @@ feedback_doc_url: https://docs.google.com/document/d/12zEPe3-HWfnSlKeizN5xqFcdXZ
 image: /assets/images/sql-optimization/snowflake/snowflake_0.png
 is_featured: false
 img_border_on_default: true
+is_under_construction: false
 
 ---
 Snowflake is a cloud-based elastic data warehouse or Relational Database Management System (RDBMS). It is a run using Amazon Amazon Simple Storage Service (S3) for storage and is optimized for high speed on data of any size.

@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1rl45BatWGUEr5roDcABjmPH3e9
 image: /assets/images/sql-optimization/redshift/nodeRelations.png
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 ## What is Redshift?

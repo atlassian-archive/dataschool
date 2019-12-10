@@ -14,6 +14,7 @@ description: Learn to collaborate with your data team to discover what data can 
 is_featured: false
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1AjcnERWqKWWREjniCZ-WZwbBQ_IT4n2FcMAFWyO4iy0/edit?usp=sharing
+is_under_construction: false
 
 ---
 ![Finding data icon](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png)

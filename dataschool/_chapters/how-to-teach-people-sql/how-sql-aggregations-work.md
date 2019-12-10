@@ -12,6 +12,7 @@ description: Visualize how SQL aggregates data by viewing examples of COUNT, AVG
   and SUM. See animations showing each step of the SQL query.
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 SQL COUNT is the most common type of Aggregation in SQL, it counts the number of rows in a column or table. COUNT(\*) tells SQL to count the number of rows of the whole table. COUNT(some column) tells SQL to count the number of non-null rows in that column.

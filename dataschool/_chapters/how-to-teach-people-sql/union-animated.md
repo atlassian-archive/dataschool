@@ -13,6 +13,7 @@ description: Visualize how SQL is joining two tables using a Union All join. See
   visualizations of the data being Unioned in SQL. Learn more.
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 This is the fourth most common type of JOIN in SQL. Union does not attach the data from two tables to a single row. Union stacks two data sets on top of each other into a single table.

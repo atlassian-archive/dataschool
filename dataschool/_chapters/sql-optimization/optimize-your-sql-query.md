@@ -12,6 +12,7 @@ image: "/assets/images/book-covers/sql-optimization.png"
 description: Learn quick tips for how to optimize your SQL queries
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 ## 8 tips for faster querying

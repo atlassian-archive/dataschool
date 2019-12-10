@@ -13,6 +13,7 @@ feedback_doc_url: https://docs.google.com/document/d/10bjLM1eP66fzkVjqiqNzfl0DAe
 image: "/assets/images/how-to-teach-people-sql/sqlJoins/sqlJoins_7.png"
 is_featured: true
 img_border_on_default: false
+is_under_construction: false
 
 ---
 Merging two data sets using SQL or SQL tools can be accomplished through JOINS. A JOIN is a SQL instruction in the FROM clause of your query that is used to identify the tables you are querying and how they should be combined.

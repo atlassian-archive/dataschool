@@ -12,6 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/1A3KNPov7-oBuOVWh553DTYXZxi
 image: "/assets/images/Frame (99).png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 Unlike google sheets where everyone can get access to data with a simple click. Getting to run queries against a database requires getting permissions. Access is most commonly given out through a BI tool instead of credentials into the database itself.

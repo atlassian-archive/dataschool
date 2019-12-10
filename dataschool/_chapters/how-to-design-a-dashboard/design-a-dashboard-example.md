@@ -16,6 +16,7 @@ story_intro_blurb: I wrote this to show how iteration can drastically improve th
   usefulness of a dashboard. It helped us figure out how much we didn't need and what
   was really important
 img_border_on_default: true
+is_under_construction: false
 
 ---
 A while ago I was working with my customer success team to organize a campaign to proactively uncover 15 common usage pitfalls customers can fall into so as to educate those who’ve fallen into it, or are near it, about the best practices.
