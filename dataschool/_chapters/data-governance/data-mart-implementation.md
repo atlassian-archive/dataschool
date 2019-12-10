@@ -16,7 +16,14 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 3
-faqs: []
+faqs:
+- answer: |-
+    1. views
+    2. use the data warehouse
+    3. no star schema
+    4. segment tables
+    5. access update
+  question: What are the five steps to create data marts?
 
 ---
 As companies grow, the amount of data and the number of sources they have will also increase. This leads to your Data Warehouse having numerous schemas that can become difficult to navigate. Moving from a Data Warehouse to Data Marts reduces the scope of access and makes it easier for users to find the data they need. Data Marts can be created in five steps.
