@@ -14,7 +14,7 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time:
 
 ---
 For practicing we will be using an online music store database. Here is the entity relationship diagram of the schema.

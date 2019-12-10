@@ -13,6 +13,7 @@ reviewers:
 image: /assets/images/book-covers/learn-sql.png
 img_border_on_default: false
 is_featured: false
+is_under_construction: false
 
 ---
 PostgreSQL has some nice commands to help you export data to a Comma Separated Values (CSV) format, which can then be opened in Excel or your favorite text editor.  

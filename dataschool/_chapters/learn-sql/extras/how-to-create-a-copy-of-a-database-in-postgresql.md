@@ -11,6 +11,7 @@ reviewers:
 image: /assets/images/book-covers/learn-sql.png
 img_border_on_default: false
 is_featured: false
+is_under_construction: false
 
 ---
 To create a copy of a database, run the following command in psql:

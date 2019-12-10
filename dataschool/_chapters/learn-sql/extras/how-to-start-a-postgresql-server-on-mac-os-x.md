@@ -14,6 +14,7 @@ image: "/assets/images/learn-sql/extras/Start_MacOS_Server/startServerFromCLI.pn
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/1MfBqyfJXD9x4iaI_2Lmt-yCoPqD_jDbDEULMJ7NaavU/edit?usp=sharing
+is_under_construction: false
 
 ---
 There are two main ways to install PostgreSQL on mac OS X.

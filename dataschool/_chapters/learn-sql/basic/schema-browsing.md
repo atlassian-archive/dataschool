@@ -14,6 +14,7 @@ is_featured: false
 image: "/assets/images/learn-sql/basic/schema-browsing/schema-browsing.png"
 topics:
 - _chapters/dictionary/sql.md
+is_under_construction: false
 
 ---
 The word _SCHEMA_ is used to describe a collection of tables and their relationships in your database.  A database instance may have several different schemas.  When you're working with a set of data, it's useful to be able to browse that schema to get a sense for what data is available to you.

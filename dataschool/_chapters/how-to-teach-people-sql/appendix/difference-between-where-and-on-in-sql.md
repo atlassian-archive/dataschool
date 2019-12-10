@@ -12,6 +12,7 @@ description: Understand how filtering and joining can be done in both the ON and
 is_featured: false
 img_border_on_default: false
 meta_title: Difference between WHERE and ON in SQL to JOIN data
+is_under_construction: false
 
 ---
 ## Is there a difference between the WHERE and ON clause?

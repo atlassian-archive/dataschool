@@ -15,6 +15,7 @@ is_featured: false
 image: "/assets/images/book-covers/learn-sql.png"
 topics:
 - _chapters/dictionary/sql.md
+is_under_construction: false
 
 ---
 If want to LIMIT the number of results that are returned you can simply use the LIMIT command with a number of rows to LIMIT by.

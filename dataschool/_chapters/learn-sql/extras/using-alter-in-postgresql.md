@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1CEOlXDZAoDMGhhwFmZ2q4aStSu
 image: /assets/images/book-covers/learn-sql.png
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 In SQL, tables, databases, schemas, groups, indexes, servers, and more can be modified using the **_ALTER_** command. This command enables the user to modify a specific aspect of the table, database, group, etc. while leaving the rest of the data untouched.

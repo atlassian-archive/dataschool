@@ -15,6 +15,7 @@ is_featured: true
 image: "/assets/images/learn-sql/basic/introduction/sql-tutorial-excel-introduction.png"
 topics:
 - _chapters/dictionary/sql.md
+is_under_construction: false
 
 ---
 So you wanna learn SQL huh?  You've come to the right place.  This interactive SQL tutorial is designed to get you querying as quickly as possible.

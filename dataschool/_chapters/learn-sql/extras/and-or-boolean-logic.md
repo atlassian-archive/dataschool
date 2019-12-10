@@ -13,6 +13,7 @@ image: /assets/images/book-covers/learn-sql.png
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/1nCpMs3F4_irNxKL7Fo4a69tlM3v4mWb-cgDUi_j24G8/edit?usp=sharing
+is_under_construction: false
 ---
 AND is used to find where multiple conditions are true
 

@@ -15,6 +15,7 @@ reviewers:
 is_featured: false
 topics:
 - _chapters/dictionary/sql.md
+is_under_construction: false
 
 ---
 Alright, let's get down to some SQL!!  The first command we're going to learn is SELECT as it's the first instruction you need for any SQL statement that's fetching data. There are other starting commands like INSERT and CREATE, but most interactions with databases are SELECTing data.
