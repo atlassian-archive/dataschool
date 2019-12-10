@@ -12,6 +12,7 @@ reviewers:
 - _people/matt.md
 image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
+is_under_construction: false
 
 ---
 So far we've only made conditions using the equal (`=`) or greater than (`>`) operators. There are many more at our disposal.  They are fairly self-explanatory and just need some practice to get down.  Here's the table describing the most commonly used operators:

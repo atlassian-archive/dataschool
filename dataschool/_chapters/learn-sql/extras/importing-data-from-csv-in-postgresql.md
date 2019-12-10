@@ -12,6 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/1zt39uLRSjBc74SXJ-xioYcN9XZ
 image: /assets/images/book-covers/learn-sql.png
 img_border_on_default: false
 is_featured: false
+is_under_construction: false
 
 ---
 # Importing from CSV in PSQL

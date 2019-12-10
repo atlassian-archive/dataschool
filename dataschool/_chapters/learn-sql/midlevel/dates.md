@@ -13,6 +13,7 @@ reviewers:
 - _people/matt.md
 image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
+is_under_construction: false
 
 ---
 DATE and TIME values in {{ page.database }} have a whole special set of functions and operators for their proper use.  So many queries deal with DATE and TIME information that it's important to get to know the date tools.  Below we'll cover and practice the main functions you'll likely need.  If you want to get detailed you can checkout the [full list of {{ page.database }} functions here](https://www.postgresql.org/docs/9.1/static/functions-datetime.html).

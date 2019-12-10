@@ -13,6 +13,7 @@ reviewers:
 - _people/matt.md
 image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
+is_under_construction: false
 
 ---
 Fetching the raw data is nice and all, but now we're going to start actually doing some aggregations and transformations to it!  The first and probably most commonly used aggregation function we are going to learn is COUNT.  The COUNT function takes whatever you give it and returns the count of how many there are.  

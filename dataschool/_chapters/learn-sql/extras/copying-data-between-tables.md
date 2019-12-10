@@ -14,6 +14,7 @@ image: /assets/images/learn-sql/extras/copying_data_between_tables/copyingBetwee
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/13CikUhX31sfe_ouqeKRCZPr14TIxi45wzQksXs9yaJE/edit?usp=sharing
+is_under_construction: false
 
 ---
 **Copy into a new pre-structured table:**

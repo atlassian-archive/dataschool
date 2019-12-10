@@ -12,6 +12,7 @@ reviewers:
 - _people/matt.md
 image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
+is_under_construction: false
 
 ---
 You've covered the majority of the main use cases of SQL!  You know the stuff, but now you've got some practicing to do to become really fluent and skilled at it.  Here we've constructed a large list of challenges to give you that practice.  If you forgot the rules of our practice playgrounds you can review them in the [Basic SQL Practice](../basic-practice/) page.

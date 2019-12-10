@@ -9,6 +9,7 @@ authors:
 - _people/dave.md
 reviewers: []
 published: false
+is_under_construction: false
 ---
 Welcome to our {{ page.database }} interactive SQL Tutorial!  We've designed this specifically for tech-savvy folks to learn enough SQL to be able to do their own analysis and data fetching.  
 

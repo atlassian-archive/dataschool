@@ -13,6 +13,7 @@ reviewers:
 image: /assets/images/learn-sql/extras/random-sequences/random-sequence-4.svg
 img_border_on_default: false
 is_featured: false
+is_under_construction: false
 
 ---
 There are occasionally reasons to use random data, or even random sequences of data.  {{ page.database }} supports this with the `random` SQL function.  The following are some nice examples of how to use this.

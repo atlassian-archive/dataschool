@@ -12,6 +12,7 @@ reviewers:
 - _people/matt.md
 image: "/assets/images/learn-sql/midlevel/joins/sql-tutorial-join-primary-keys.png"
 is_featured: false
+is_under_construction: false
 
 ---
 So far we've been working with each table separately, but as you may have guessed by the tables being named _tracks_, _albums_, and _artists_ and some of the columns having names like _album_id_, it is possible to JOIN these tables together to fetch results from both!

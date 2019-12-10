@@ -12,6 +12,7 @@ image: /assets/images/learn-sql/extras/genSeries/genSeries_thumbNail.png
 img_border_on_default: false
 is_featured: false
 feedback_doc_url: https://docs.google.com/document/d/1EQcE8NYHvWubJ7bO0b75ng_BogFkCkKqOs3E2EFduPs/edit?usp=sharing
+is_under_construction: false
 
 ---
 # Generate a Series in Postgres

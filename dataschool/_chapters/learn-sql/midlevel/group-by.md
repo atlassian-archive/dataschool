@@ -13,6 +13,7 @@ reviewers:
 - _people/matt.md
 image: "/assets/images/book-covers/learn-sql.png"
 is_featured: false
+is_under_construction: false
 
 ---
 So far our aggregation functions have run across all of the data, but it's often useful to split the aggregation into groups.
