@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1RxUrKPBICpGUO2wchwGIME7Qw3
 image: "/assets/images/leftJoin_2.webp"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 ## Left Join

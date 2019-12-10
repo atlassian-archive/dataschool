@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1Kf3Fb6SbOcGe_3HDfxheTFj07v
 image: "/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 ![Share the dashboard](/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/distribution.jpeg)

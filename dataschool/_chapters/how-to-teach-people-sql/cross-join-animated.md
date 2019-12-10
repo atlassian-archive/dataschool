@@ -12,6 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/1v19iRnc-juTr-4N11iw-vm3GyD
 image: "/assets/images/how-to-teach-people-sql/crossJoin/crossJoin_1.gif"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 writers:
   writers: []
 

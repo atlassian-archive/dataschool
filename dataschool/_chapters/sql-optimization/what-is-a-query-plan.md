@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1UcOvqq_7wwxeztReW9WIBY8cJp
 image: /assets/images/sql-optimization/whatsQueryPlan/whatsQueryPlan_2.png
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 A Query plan is a list of instructions that the database needs to follow in order to execute a query on the data.

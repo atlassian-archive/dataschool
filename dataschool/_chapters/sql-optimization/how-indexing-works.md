@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1S7AJ4rsaPnio2bK-opfz_fAIMZ
 image: "/assets/images/sql-optimization/how_to_index/Index_pointsTo_table.png"
 img_border_on_default: true
 meta_title: How to use Indexing to Improve Database Queries
+is_under_construction: false
 
 ---
 ## **What is Indexing?**

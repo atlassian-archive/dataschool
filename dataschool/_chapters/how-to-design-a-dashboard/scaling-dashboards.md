@@ -12,6 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/1wE7Dah1_zBK5gcSZHdyrdsmzvu
 image: "/assets/images/how-to-design-a-dashboard/scaling_dashboards/scaling.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 ![Scaling your dashboards](/assets/images/how-to-design-a-dashboard/scaling_dashboards/scaling.png)

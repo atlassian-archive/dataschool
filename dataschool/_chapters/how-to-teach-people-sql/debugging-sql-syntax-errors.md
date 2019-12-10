@@ -12,6 +12,7 @@ description: Learn the most common reasons for SQL errors due to syntax. Spellin
   errors, Quotation marks, Capitalization, Data Types, and more.
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 When writing SQL queries there are many places where a small mistype can cause you to receive an error. We will review some of the most common errors due to syntax mistakes. Note: this article will cover how common syntax errors affect Postgresql, if you are using a different type of SQL please check the documentation for these scenarios.

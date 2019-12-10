@@ -14,6 +14,7 @@ image: "/assets/images/how-to-design-a-dashboard/what-is-a-dashboard/5cace68b51b
 is_featured: true
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1noS4ZOutqt_WipN-4r5CNAff1KCmjznkgwWyTsNjhq0/edit?usp=sharing
+is_under_construction: false
 
 ---
 Anytime you want to display information to help people make decisions you are in the process of creating a dashboard. Dashboards allow us to arrange multiple data visualizations to give people enough context to consistently make great decisions.

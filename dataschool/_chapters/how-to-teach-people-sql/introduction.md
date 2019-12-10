@@ -14,6 +14,7 @@ image: "/assets/images/Frame (96).png"
 is_featured: false
 img_border_on_default: false
 reading_time: 2
+is_under_construction: false
 
 ---
 > “Those who know, do. Those that understand, teach.” —Aristotle

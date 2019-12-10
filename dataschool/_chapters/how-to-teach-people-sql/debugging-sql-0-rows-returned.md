@@ -12,6 +12,7 @@ description: 'Learn the most common reasons you will get 0 rows returned from yo
   SQL query. See how JOINs and over filtering may be the problem. '
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 Getting an error in SQL can be frustrating. However getting no errors and no data returned by your query can be even more frustrating. In this tutorial we will explore the most common reasons your query will return 0 rows of data.

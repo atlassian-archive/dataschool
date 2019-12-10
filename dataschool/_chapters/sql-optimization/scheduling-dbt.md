@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1CDOGxgTlL9b8oI-cLlPzGb8DJG
 image: /assets/images/sql-optimization/scheduling_dbt/jobSchedule.png
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 Dbt is a great tool for creating, storing, and then running queries against a database. These queries can be for any purpose but we will be talking about how they can be used to create and update simplified tables and views. This allows you to create a set of table and views that are more easily queryable by the rest of your organization so they can find insights faster. Making data easier to use is an important piece of optimizing your SQL and Data Warehouse because this is where most of the time is spent, determining the right query to run.

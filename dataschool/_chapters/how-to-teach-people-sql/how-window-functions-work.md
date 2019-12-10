@@ -14,6 +14,7 @@ feedback_doc_url: https://docs.google.com/document/d/1-baqTQWPYoOB_IFykR9DZcqiAX
 image: "/assets/images/RunningAVGGif.gif"
 is_featured: false
 img_border_on_default: true
+is_under_construction: false
 
 ---
 ## What are Window Functions?

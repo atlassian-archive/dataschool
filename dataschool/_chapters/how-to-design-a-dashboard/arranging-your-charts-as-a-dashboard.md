@@ -14,6 +14,7 @@ image: "/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dash
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/1Pa0bVsWjKnISzwNY7REZqlkMQVtJhnMi74QccC7ut1A/edit?usp=sharing
 is_featured: false
+is_under_construction: false
 
 ---
 Arranging the charts is where the science of a dashboard project starts to cede some of its control to art. There are many things to consider when arranging and sizing charts and selecting fonts and colors. How visualizations are composed in a dashboard can either facilitate or hinder the decision making process.
@@ -55,7 +56,7 @@ While being innovative in dashboard design can challenge the way we look at thin
 
 ## Limited Variety
 
-At Chartio we have also noticed that dashboards with multiple chart types get more views to a point. Viewership peaks when three different types of charts are used, and then it drops off. 
+At Chartio we have also noticed that dashboards with multiple chart types get more views to a point. Viewership peaks when three different types of charts are used, and then it drops off.
 
 ![Chartio chart types variety](/assets/images/how-to-design-a-dashboard/arranging_your_charts_as_a_dashboard/chartioChart.png)
 

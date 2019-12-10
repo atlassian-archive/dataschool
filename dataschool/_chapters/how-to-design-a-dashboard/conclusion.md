@@ -12,6 +12,7 @@ feedback_doc_url: https://docs.google.com/document/d/1wY4Qyg9p-C6J9GLIVlxiX4-XsX
 image: "/assets/images/how-to-design-a-dashboard/Conclusion/conclusionImages.png"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 We have covered dashboard design best practices and outlined a process to create useful dashboards for any organization. You are now equipped to design and build a dashboards to help your organization be more data driven. We hope you enjoyed the book and look forward to hearing your thoughts in Slack.

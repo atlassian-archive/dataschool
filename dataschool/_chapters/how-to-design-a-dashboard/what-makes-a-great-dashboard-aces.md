@@ -15,6 +15,7 @@ image: "/assets/images/how-to-design-a-dashboard/what-makes-a-great-dashboard/5c
 is_featured: false
 img_border_on_default: false
 feedback_doc_url: https://docs.google.com/document/d/173T4Q9yB9arBmAFfLcIRqTj_KFGKFOMEkKGMqSlAtgo/edit?usp=sharing
+is_under_construction: false
 
 ---
 An optimal dashboard is Accurate, Clear, Empowering, and Succinct. These key tenets can be remembered with the acronym ACES.

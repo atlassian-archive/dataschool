@@ -13,6 +13,7 @@ feedback_doc_url: https://docs.google.com/document/d/1BW7SJQIwigKWFxFe9mf17GCimX
 image: "/assets/images/innerJoin_3-1.gif"
 is_featured: false
 img_border_on_default: false
+is_under_construction: false
 
 ---
 This is the default type of [JOIN in SQL](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/), in fact you do not even need to specify INNER JOIN when writing a query. Only writing JOIN is an INNER JOIN.
