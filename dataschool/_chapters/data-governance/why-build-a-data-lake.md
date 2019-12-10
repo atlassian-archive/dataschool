@@ -17,6 +17,18 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
+faqs:
+- question: Why should I build a Data Lake?
+  answer: |-
+    1. It's unifying
+    2. Full query access
+    3. Performance
+    4. Progress
+- question: What is a Data Lake?
+  answer: A Data Lake is a storage repository of multiple sources of raw data in a
+    single location. In the cloud these are typically stored in cloud c-store data
+    warehouses or in S3 buckets.  The data can be in a variety of formats and can
+    be structured, semi-structured, unstructured, or even binary.
 
 ---
 ## What is a Data Lake?
