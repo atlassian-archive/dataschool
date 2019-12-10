@@ -82,6 +82,31 @@ fields:
     min: '0'
     max: 
     step: '1'
+- name: faqs
+  type: field_group_list
+  fields:
+  - name: question
+    type: text
+    config:
+      required: false
+    label: question
+    description: 'The question '
+  - name: answer
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: answer
+    description: The answer
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: FAQs
+  description: FAQs for  SEO
 pages:
 - dataschool/_chapters/data-governance/introduction-to-modern-data-governance.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
