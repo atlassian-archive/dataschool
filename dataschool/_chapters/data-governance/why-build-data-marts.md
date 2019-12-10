@@ -18,6 +18,11 @@ is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
 faqs:
+- question: How are data marts different from data warehouses?
+  answer: |-
+    Use modeling to create separate schemas where the tables are provided to the appropriate team or individual. These will be your company’s Data Marts.
+
+    The table structures should be the same, as the data should have been cleaned at the Data Warehouse stage. Data Marts are not very different from your Data Warehouse since the heavy lifting was already done. Data Marts make it easier for people within departments to navigate the schema and provide extra insight of the data for that department.
 - question: Why should I build a data mart?
   answer: |-
     1. Relevance to use cases. Limiting the schema to the tables that you need allow you to parse the schema easily.
