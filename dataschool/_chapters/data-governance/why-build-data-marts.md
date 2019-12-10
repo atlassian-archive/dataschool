@@ -18,6 +18,13 @@ is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
 faqs:
+- question: Why should I build a data mart?
+  answer: |-
+    1. Relevance to use cases. Limiting the schema to the tables that you need allow you to parse the schema easily.
+    2. Accessible to a variety of people and teams. Data marts allow you to expose more people to data without overwhelming them.
+    3. Customized architecture for different use cases. Aggregations, metric calculations, and PII can all be handled individually for teams.
+    4. Maintainable with less time and effort. Having the data monitored by team leads makes it easier to identify data issues.
+    5. Separated levels of data access. Easily protect sensitive data by limiting what teams can see in their data marts.
 - question: What is a data mart?
   answer: A Data Mart is a filtered (and sometimes aggregated) subsection of a Data
     Warehouse to make it easier for a particular group to query data. It provides
