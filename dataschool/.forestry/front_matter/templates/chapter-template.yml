@@ -108,6 +108,11 @@ fields:
   label: FAQs
   description: FAQs for  SEO
 pages:
+- dataschool/_chapters/sql-optimization/scheduling-dbt.md
+- dataschool/_chapters/sql-optimization/snowflake.md
+- dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
+- dataschool/_chapters/sql-optimization/optimizing-data-queries-with-redshift.md
+- dataschool/_chapters/sql-optimization/views.md
 - dataschool/_chapters/data-governance/why-build-a-data-lake.md
 - dataschool/_chapters/data-governance/introduction-to-modern-data-governance.md
 - dataschool/_chapters/data-governance/single-source-of-truth.md
@@ -162,17 +167,12 @@ pages:
 - dataschool/_chapters/misrepresenting-data/review-outcomes.md
 - dataschool/_chapters/misrepresenting-data/define-experiment-parameters.md
 - dataschool/_chapters/data-modeling-101/creating-an-ec2-server.md
-- dataschool/_chapters/sql-optimization/snowflake.md
-- dataschool/_chapters/sql-optimization/views.md
 - dataschool/_chapters/sql-optimization/bigquery-optimization.md
 - dataschool/_chapters/misrepresenting-data/comparing-to-historical-averages.md
 - dataschool/_chapters/data-modeling-101/running-jupyter-notebook-on-an-ec2-server.md
 - dataschool/_chapters/sql-optimization/partial-indexes.md
 - dataschool/_chapters/sql-optimization/optimization-using-explain.md
-- dataschool/_chapters/sql-optimization/scheduling-dbt.md
-- dataschool/_chapters/sql-optimization/optimizing-data-queries-with-redshift.md
 - dataschool/_chapters/misrepresenting-data/metric-vs-metrics.md
-- dataschool/_chapters/sql-optimization/order-of-a-sql-query.md
 - dataschool/_chapters/data-modeling-101/using-jupyter-notebooks.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
 - dataschool/_chapters/misrepresenting-data/increase-ecommerce-sales-with-metrics.md
