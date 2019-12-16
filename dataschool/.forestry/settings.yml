@@ -37,12 +37,11 @@ instant_preview: true
 build:
   preview_env:
   - JEKYLL_ENV=staging
-  - RUBY_VERSION=2.6.1
-  - BUILD_DIR=dataschool
   preview_output_directory: dataschool/_site
   install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
+  working_dir: "/srv/dataschool"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     --port 8080 --host 0.0.0.0 -d _site
   publish_command: bundle exec jekyll build -d _site
