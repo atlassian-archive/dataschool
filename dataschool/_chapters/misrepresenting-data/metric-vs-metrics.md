@@ -50,7 +50,7 @@ Use visualization tools to put metrics next to each other. This allows you to co
 
 Let’s combine the two previous graphs into a single dashboard.
 
-![](https://lh3.googleusercontent.com/VJaFOQ93IaTkJsWqd0JNPXoy255bVo5ld29YkIOmDu0J6hSdnhZa-fqGhsqN1zkpTMOlu8sLwcn8qU3kRij5puo71QTQ7qc1ZXgoqyk05uoYLHu-Zm-Wa_-d_j2hhhdnV-7toLgc =566x569)
+![](https://lh3.googleusercontent.com/VJaFOQ93IaTkJsWqd0JNPXoy255bVo5ld29YkIOmDu0J6hSdnhZa-fqGhsqN1zkpTMOlu8sLwcn8qU3kRij5puo71QTQ7qc1ZXgoqyk05uoYLHu-Zm-Wa_-d_j2hhhdnV-7toLgc)
 
 We can now quickly compare them instead of getting overly excited by one metric. With the plot of bounce rate placed next to the number of sessions, we can’t ignore the fact that visitors are not finding anything else they want to do on the site. Even though we were successful in getting more traffic we should re-examine the quality and targeting of the content or check out the CTAs on the page.
 
