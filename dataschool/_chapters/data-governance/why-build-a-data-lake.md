@@ -35,7 +35,7 @@ faqs:
 
 A Data Lake is a storage repository of multiple sources of raw data in a single location. In the cloud these are typically stored in cloud c-store data warehouses or in S3 buckets.  The data can be in a variety of formats and can be structured, semi-structured, unstructured, or even binary.
 
-![](/assets/images/LakeConnection (1).png)
+![/assets/images/LakeConnection (1).png](https://app.forestry.io/sites/4as0wjl6ljzlda/body-media//assets/images/LakeConnection (1).png)
 
 The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast the term Data Mart which described orderly, siloed, and refined data. Having all the data in one place made it easier to work with large data sets and start gaining insights earlier in the data modeling process.
 
@@ -50,12 +50,12 @@ The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast 
 ### You've outgrown this stage if:
 
 * More than a few people are going to be working with this dataset.
-* You want a clean source of truth of your company.
+* You want a clean source of truth about your company.
 * You don't like fighting with integrity issues.
-* You need to separate the structure of the data from the always changing transactional sources.
+* You need to separate the structure of the data from the always-changing transactional sources.
 * You Don't like Repeating Yourself (DRY)
 
-![Move data from Sources to Lake](/assets/images/DataLake (1)-1.png "Data Lake")
+![Move data from Sources to Lake](https://app.forestry.io/sites/4as0wjl6ljzlda/body-media//assets/images/DataLake (1)-1.png "Data Lake")
 
 ## Top 4 reasons to build a Data Lake
 
@@ -63,7 +63,7 @@ The term Data Lake, after oil lakes (pre-refinery oil), was created to contrast 
 
 As your data needs expand it becomes harder and harder to work with data kept in multiple different silos.  It may make sense from a product perspective for your traffic data to be in Google Analytics, your sales records to be in Salesforce and your trial engagement data to be in some database.  However, when you need to analyze your funnel and attribution models you need them all together.
 
-In the source stage we discussed blending options, but because blends load all pre-join results into the BI product these are extremely limited in how much data can be joined and are not a scalable solution.
+In the source stage, we discussed blending options, but because blends load all pre-join results into the BI product these are extremely limited in how much data can be joined and are not a scalable solution.
 
 In a Data Lake, all data can be combined so it can be analyzed together. This makes gaining insights easier and provides more depth for data exploration.
 
@@ -73,7 +73,7 @@ The applications your business uses likely only offer transactional API access t
 
 If you extract that API data with an [ELT product](https://dataschool.com/data-governance/etl-vs-elt/) and load it into a Data Lake, you'll have all the power and flexibility of SQL or whatever BI product you use - and the cost won't go up considerably with each chart.
 
-![Combine Salesforce, Zendesk, and Hubspot in a Dashboard](/assets/images/AppDataCombinedDashboard.png "Combined App Dashboard")
+![Combine Salesforce, Zendesk, and Hubspot in a Dashboard](https://app.forestry.io/sites/4as0wjl6ljzlda/body-media//assets/images/AppDataCombinedDashboard.png "Combined App Dashboard")
 
 <!--- TODO: Matt could you have a version of this where it's actually put into a DB and then there's a SQL command being run on it? This version of the image could maybe be used to talk about Blending in the sources section? --->
 
@@ -81,7 +81,7 @@ If you extract that API data with an [ELT product](https://dataschool.com/data-g
 
 Source data might be from the actual production database which could affect the performance of the application that it is powering. Queries that demand a lot of data such as aggregations are not optimally run on transactional databases.
 
-![Analytical Dashboards are faster for Dashboards](/assets/images/TransactionalVsAnalyticalDatabase.png "Transactional vs Analytical Database")
+![Analytical Dashboards are faster for Dashboards](https://app.forestry.io/sites/4as0wjl6ljzlda/body-media//assets/images/TransactionalVsAnalyticalDatabase.png "Transactional vs Analytical Database")
 
 Data Lakes are built to handle these types of ad hoc analytical queries independently of the production environment. You can scale up resources on a Data Lake to be able to query data even faster.
 
