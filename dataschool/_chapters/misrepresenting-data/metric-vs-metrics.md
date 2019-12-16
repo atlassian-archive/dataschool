@@ -10,7 +10,7 @@ authors:
 reviewers:
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1JszhGxLjjc07yT3a1bCA8ci1fp8xScC-2BF1kvoFHLM/edit?usp=sharing
-image: "/assets/images/book-covers/misrepresenting-data.png"
+image: "/assets/images/Frame (61)-2-1.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
