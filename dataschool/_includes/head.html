@@ -45,8 +45,10 @@
      "url": "{{ site.url }}{{ page.url }}"
      }
   </script>
-  {% assign a = site.people | where: 'path', author_path.author %}
-  {% assign author = a[0] %}
+  {% for author_path in page.authors %}
+    {% assign a = site.people | where: 'path', author_path %}
+    {% assign author = a[0] %}
+  {% endfor %}
   <script type="application/ld+json">
     { "@context": "http://schema.org",
     "@type": "Article",
@@ -54,7 +56,7 @@
     "image": "{{ page.image }}",
     "author": {
         "@type": "Person",
-        "name": "{{ page.author }}"
+        "name": "{{ author.title }}"
     },
      "publisher": {
       "@type": "Organization",
