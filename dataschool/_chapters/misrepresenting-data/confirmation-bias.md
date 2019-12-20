@@ -8,6 +8,7 @@ number: 1
 authors:
 - _people/matt.md
 reviewers:
+- _people/twange-kasoma.md
 - _people/blake.md
 - _people/matthew-layne.md
 - _people/mike-yi.md
