@@ -8,6 +8,7 @@ number: 2
 authors:
 - _people/matt.md
 reviewers:
+- _people/twange-kasoma.md
 - _people/mike-yi.md
 - _people/matthew-layne.md
 - _people/blake.md
@@ -19,6 +20,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
+faqs: []
 
 ---
 Selection Bias is when the group chosen to be analyzed is not representative of the population you are trying to draw conclusions about.
@@ -26,7 +28,7 @@ Selection Bias is when the group chosen to be analyzed is not representative of 
 How do you get an unrepresentative group accidentally?
 
 * Convenience
-* Self Selection
+* Self-Selection
 
 ## Convenience
 
@@ -52,7 +54,7 @@ Example:
 
 You send out a survey to all of your customers to gauge their satisfaction with your product. While this seems like it would provide for good feedback, you are likely to get responses from people who are very opinionated, very angry, or people who are trying to waste time at work.
 
-Common Biased Self Selectors:
+Common Biased Self-Selectors:
 
 * Very negative people
 * Very positive
@@ -65,7 +67,7 @@ Let’s say you want to introduce a premium feature in your BI Tool. You send ou
 
 This seems rational, they are the most engaged, they deserve a sneak peek and they might have great insight about the feature.
 
-Why might this selection of people cause our analysis of the feature to be wrong?
+Why might this selection of people cause your analysis of the feature to be wrong?
 
 * They might try every new feature regardless of if it provides value to them.
 * They might see this as a way to get in touch with someone at the company.
@@ -83,5 +85,5 @@ If you do send out a large email and most of the people who respond are early ad
 
 * Selection Bias
   * Make sure the group of people you test something on is representative of the population you want to impact. Do this by randomizing your sample.
-* Self Selection
+* Self-Selection
   * Make sure the people who voluntarily participate in something you are analyzing are representative of the population you want to analyze. Do this by having qualifying questions.
