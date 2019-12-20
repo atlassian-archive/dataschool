@@ -19,11 +19,12 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
+faqs: []
 
 ---
 Even if a metric was chosen for a new feature or product, important parameters about how that metric will be measured and evaluated might not be set.
 
-One of the things that makes analysis hard is that there are so many things happening at once that might affect the metric you are monitoring. Determining what caused the metric to move is complicated. A good experiment tries to control for as many of the other things that may be influencing the outcomes of your experiment as possible so that we can determine if our new product/feature impacted it.
+One of the things that makes analysis hard is that there are so many things happening at once that might affect the metric you are monitoring. Determining what caused the metric to move is complicated -- hence the need for a good experiment that tries to control for as many of the other things that may be influencing the outcomes as possible.
 
 In a typical business context there are three parameters that you should spend time defining:
 
