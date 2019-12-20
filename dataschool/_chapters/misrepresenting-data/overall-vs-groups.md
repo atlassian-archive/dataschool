@@ -10,6 +10,7 @@ authors:
 - _people/ben-jones.md
 - _people/matt.md
 reviewers:
+- _people/twange-kasoma.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1TrqcSIOq3d8ItC637ub2FOQAV9yArf6Q0A2QNHJREuU/edit?usp=sharing
 image: "/assets/images/Frame 2 (8).png"
@@ -19,13 +20,14 @@ is_under_construction: false
 reading_time: 
 is_community_story: false
 story_intro_blurb: ''
+faqs: []
 
 ---
 ![](/assets/images/Frame (54).png)
 
 ## The problem with overall statistics
 
-Overall statistics that describe all of your users or visitors can be misleading, the overall statistic does not show you nuanced patterns about the underlying data. As you saw in [statistic vs distribution](https://dataschool.com/misrepresenting-data/statistic-vs-distribution/) you know that distributions help you see these patterns but there are multiple ways to examine the underlying data. Another method is to group the data by different categories.
+Overall statistics that describe all of your users or visitors can be misleading. This is because the overall statistic does not show you nuanced patterns about the underlying data. As you saw in [statistic vs distribution](https://dataschool.com/misrepresenting-data/statistic-vs-distribution/) you know that distributions help you see these patterns but there are multiple ways to examine the underlying data. Another method is to group the data by different categories.
 
 Let’s start with the same high-level statistic:
 
@@ -50,14 +52,14 @@ Common ways to group data about web site visitors:
 
 ### Group by Category
 
-To get a high level metric we can use an aggregation on a column in SQL:
+To get a high-level metric we can use an aggregation on a column in SQL:
 
 ```sql
 SELECT AVG("Time on Page")
 FROM Users
 ```
 
-To get a high level metric broken out by group we need to add the group to the SELECT and then put it in the GROUP BY clause:
+To get a high-level metric broken out by group we need to add the group to the SELECT and then put it in the GROUP BY clause:
 
 ```sql
 SELECT Country, AVG("Time on Page") as "AVG Time on Page"
@@ -99,7 +101,7 @@ Grouped by Age
 
 ![medium variation](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_4.png)
 
-There are meaningful differences here but they still revolve around the same overall statistic. These differences might be large enough to investigate outlier groups more closely. It is a common practice to report a high level stat and provide a margin around how much it varies. Providing this extra context can help you feel more confident in the overall statistic
+There are meaningful differences here but they still revolve around the same overall statistic. These differences might be large enough to investigate outlier groups more closely. It is a common practice to report a high-level stat and provide a margin around how much it varies. Providing this extra context can help you feel more confident in the overall statistic.
 
 ### High Variance
 
@@ -115,20 +117,20 @@ Grouped by Gender
 
 ![Overall stat where females are higher](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_6.png)
 
-Females have an overall higher average Time on Page. However when we group by Gender and then by Device we see that in every category females have a lower average time on page than males.
+Females have an overall higher AVG Time on Page. However when we group by Gender and then by Device we see that in every category females have a lower AVG Time on Page than males.
 
 ![breakdown of stats where females are lower in all sections](/assets/images/misrepresenting-data/overallVsGroups/origVsGroups_7.png)
 
-Even though females had a lower average time on page than males for every device they still have a higher overall time on page, how is this possible?
+Even though females had a lower AVG Time on Page than males for every device they still have a higher overall Time on Page, how is this possible?
 
-This is because the amount of people behind each one of these average time on page statistics is different:
+This is because the number of people behind each one of these AVG Time on Page statistics is different:
 
-* The amount of male visitors per device was 100 mobile, 100 desktop, and 100 tablet.
-* The amount of female visitors by device was 325 mobile, 50 desktop, and 25 tablet.
+* The number of male visitors per device was 100 mobile, 100 desktop, and 100 tablet.
+* The number of female visitors by device was 325 mobile, 50 desktop, and 25 tablet.
 
 Since the female mobile group was so disproportionately large it dragged the average up with it in the overall statistic. This is an example of [Simpson's Paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox).
 
-We can visualize this more clearly by mapping number of people behind a statistic with the size of a circle and increase the saturation of a color to show the increase in the AVG time on page:
+We can visualize this more clearly by mapping number of people behind a statistic with the size of a circle and increase the saturation of a color to show the increase in the AVG Time on Page:
 
 ![Simpsons Paradox visually explained with circles and colors](/assets/images/simpsonsParadox.png "Simpsons Paradox")
 
