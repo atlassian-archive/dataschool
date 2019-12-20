@@ -8,6 +8,7 @@ number: 10
 authors:
 - _people/matt.md
 reviewers:
+- _people/twange-kasoma.md
 - _people/matthew-layne.md
 - _people/blake.md
 - _people/mike-yi.md
@@ -19,6 +20,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
+faqs: []
 
 ---
 ![](/assets/images/Frame (57).png)
@@ -27,8 +29,8 @@ reading_time:
 
 When numbers change people can report how big that change was in relative or absolute terms.
 
-* Relative change - What percentage larger or smaller did the number get from the original number
-* Absolute change - how many more or less is it than the original number
+* Relative change - By what percentage (larger or smaller) did the number change from the original number?
+* Absolute change - What is the difference between the original number and the new one?
 
 While these two statements do not sound that different, let's explore how they can each be misleading.
 
@@ -36,13 +38,13 @@ While these two statements do not sound that different, let's explore how they c
 
 Relative changes on small numbers can appear to be more significant than they are. This is because a small absolute change in the number can result in a large percentage change.
 
-So if I got a $50 dollar return on my $10 investment, my relative change was a 400% increase.
+So if I got a $50 return on my $10 investment, my relative change was a 400% increase.
 
 ![4 Blocks as a 400% increase in size](/assets/images/misrepresenting-data/relVsAbsChange/relVsAbsChange_0.png)
 
-There is also some variation in how relative changes are reported. Here we have a 400% increase which is also the same as saying 5 times as much. This becomes more confusing when a relative change is negative. Something that is 5 times as small is an 80% decrease from the original amount.
+There is also some variation in how relative changes are reported. Here we have a 400% increase which is also the same as saying five times as much. This becomes more confusing when a relative change is negative. Something that is five times as small is an 80% decrease from the original amount.
 
-Relative changes on big numbers can appear less significant. This is because any absolute change in the number needs to be large to show a large relative change. Even when the absolute change is large, if it is a change on a larger number the relative change can be small. Let’s say that the national deficit increased by 5%. This may seem small, but the actual increase or absolute change to the $20,000,000,000,000 budget is 1 trillion dollars.
+Relative changes on big numbers can appear less significant. This is because any absolute change in the number needs to be large to show a large relative change. Even when the absolute change is large, if it is a change on a larger number the relative change can be small. Let’s say that the national deficit increased by 5%. This may seem small, but the actual increase or absolute change to the $20,000,000,000,000 budget is $1 trillion.
 
 ![4 blocks as a 6.25% increase](/assets/images/misrepresenting-data/relVsAbsChange/relVsAbsChange_1.png)
 
@@ -50,22 +52,22 @@ Relative changes on big numbers can appear less significant. This is because any
 
 Absolute changes work the other way:
 
-* Absolute changes on small numbers can look small even if their relative changes are large. I earned $40 on my investment.
-* Absolute changes on big numbers can look big even if their relative changes are small. The deficit has increased by 1 trillion dollars.
+* Absolute changes on small numbers can look small even if their relative changes are large. To allude to the example used earlier, I earned $40 on my investment.
+* Absolute changes on big numbers can look big even if their relative changes are small. The deficit has increased by $1 trillion.
 
 ## When to use Relative vs Absolute change
 
 ### Use Both
 
-When choosing between reporting a relative change or absolute change, take a second and think if you choosing the type of change that best represents what is actually happening or are you selecting the more sensational number. The best practice is to provide both numbers. Personally, I recommend putting the less sensational number first so people have context and are not distrusting when you reveal the less significant number.
+When choosing between reporting a relative change or absolute change, take a second to think about whether you are choosing the type of change that best represents what is actually happening. Or, are you simply selecting the more sensational number? The best practice is to provide both numbers. Personally, I recommend putting the less sensational number first so people have context and are not distrusting when you reveal the less significant number.
 
 ### Context Matters
 
-When numbers change, we want to know the reason. Sometimes the context completely changes the story. If home prices increased by 20% over the past ten years we might be concerned about this trend. However if you factor in inflation which was also increased by 20% over the past ten years, then the relative value of homes have stayed constant. Even if the change in home price was put in absolute terms, there was no actual change in the value of the home. For any chart focused on tracking a monetary value over a time period, you will always need to adjust for inflation.
+When numbers change, we want to know the reason. Sometimes the context completely changes the story. If home prices increased by 20% over the past ten years we might be concerned about this trend. However, if you factor in inflation which also increased by 20% over the past ten years, then the relative value of homes has stayed constant. Even if the change in home prices was put in absolute terms, there was no actual change in the value of the homes. For any chart focused on tracking a monetary value over a time period, you will always need to adjust for inflation.
 
 ### Compare
 
-To get a clearer idea if an absolute or relative change is significant compare it to other changes that are related to it. For example, if sharks kill 16 people per year and this year they killed 20, that is a 25% increase of sharks killing people. If you compare this to heart disease killing approximately 600,000 people per year, the total number and the relative change of shark related deaths don’t sound so significant. Even if heart disease declined 25% in the same year, it should still helps us better understand the lack of significance to shark related deaths.
+To get a clearer idea of whether an absolute or relative change is significant, compare it to other changes that are related to it. For example, if sharks kill 16 people per year, and this year they killed 20, that is a 25% increase of sharks killing people. If you compare this to heart disease killing approximately 600,000 people per year, the total number and the relative change of shark-related deaths don’t sound so significant. Even if heart disease declined 25% in the same year, it should still help us better understand the lack of significance to shark-related deaths.
 
 ## Interpreting Relative vs Absolute change
 
