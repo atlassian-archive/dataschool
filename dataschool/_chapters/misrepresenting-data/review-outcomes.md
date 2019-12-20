@@ -8,6 +8,7 @@ number: 13
 authors:
 - _people/matt.md
 reviewers:
+- _people/twange-kasoma.md
 - _people/matthew-layne.md
 - _people/blake.md
 - _people/mike-yi.md
@@ -19,6 +20,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
+faqs: []
 
 ---
 ![Review outcomes of product launches](/assets/images/Frame (61)-2.png)
@@ -41,7 +43,7 @@ When data changes dramatically we want to take credit if it was a positive chang
 
 ### Marketing
 
-A lot of times we are focused on the work we are doing and do not see what other parts of the company are doing to influence buyers and users. One of the most common reasons for any spike is there being a marketing push that day or that week. Reach out to that team to confirm no additional spend/effort has been going on to remove this potential reason
+A lot of times we are focused on the work we are doing and do not see what other parts of the company are doing to influence buyers and users. One of the most common reasons for any spike is there being a marketing push that day or that week. Reach out to that team to confirm no additional spend/effort has been going on to remove this potential reason.
 
 ### Technical Reasons
 
@@ -66,8 +68,8 @@ Simple questions to stay in check:
 
 ### Summary:
 
-* Your metric may move for reasons other than your feature or product
-* Marketing can give a metric a temporary boost
-* Bugs in the code can drastically under or over report some metric
-* Your cohort might not have been representative of the whole population
-* Share your results when you feel confident they will hold, do not share at the first sign of positivity
+* Your metric may move for reasons other than your feature or product.
+* Marketing can give a metric a temporary boost.
+* Bugs in the code can drastically under- or over-report some metric.
+* Your cohort might not have been representative of the whole population.
+* Only share your results when you feel confident they will hold; do not share at the first sign of positivity.
