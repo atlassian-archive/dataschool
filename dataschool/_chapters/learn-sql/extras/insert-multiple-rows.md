@@ -28,7 +28,7 @@ INSERT INTO tablename VALUES ("value1","value2","value3",1234);
 INSERT INTO tablename VALUES ("value1","value2","value3",1234);
 ```
 
-However There may be times when you are inserting multiple/many rows of data and do not want to have to repeat the full INSERT INTO statement for each individual record. You can accomplish this by using slightly modified syntax.
+However There may be times when you are inserting multiple/many rows of data and do not want to have to repeat the full `INSERT INTO` statement for each individual record. You can accomplish this by using slightly modified syntax.
 
 First write a single INSERT statement and specify the field names, enclosed in parentheses, separated by commas.
 
