@@ -37,7 +37,8 @@ Below, I'll give a little description of what each function can do and a quick e
 
 ```sql
 SELECT salesid, sellerid, qty,
-ROW_NUMBER() OVER (PARTITION BY sellerid ORDER BY qty asc) AS row
+	ROW_NUMBER() OVER 
+    (PARTITION BY sellerid ORDER BY qty asc) AS row
 FROM winsales
 ORDER BY 2,4;
 ```
@@ -71,6 +72,7 @@ Then filter your results to only include the rows that are in the position you c
 There are so many other uses for row numbers when trying to clean or organize your data based on some ordinal parameter.
 
 ## DATE_TRUNC
+
 ```sql
 SELECT date_trunc('week', saletime), sum(pricepaid)
 FROM sales
