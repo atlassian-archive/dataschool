@@ -1,9 +1,11 @@
 ---
-section: book
+section: Extras
 title: 5 Redshift SQL shortcuts
-meta_title: ''
-description: ''
-authors: []
+meta_title: 5 Redshift SQL shortcuts to learn
+description: Learn how to use row number, date trunc, mod, split part, and rename
+  to improve your queries.
+authors:
+- _people/josh-richman.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1j8_EWT1AWsDimIGeXCXAZQBw7_3Y2Ur-fTKUY65nU4w/edit?usp=sharing
@@ -15,7 +17,6 @@ is_community_story: false
 story_intro_blurb: ''
 reading_time: 5
 faqs: []
-published: false
 
 ---
 These are 5 Redshift SQL commands can revolutionize your ability to analyze data effectively and efficiently:
