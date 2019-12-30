@@ -1,18 +1,19 @@
 ---
 section: book
-title: ''
+title: 5 Redshift SQL shortcuts
 meta_title: ''
 description: ''
 authors: []
-reviewers: []
-feedback_doc_url: ''
+reviewers:
+- _people/matt.md
+feedback_doc_url: https://docs.google.com/document/d/1j8_EWT1AWsDimIGeXCXAZQBw7_3Y2Ur-fTKUY65nU4w/edit?usp=sharing
 image: ''
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time: 
+reading_time: 5
 faqs: []
 published: false
 
