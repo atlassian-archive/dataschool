@@ -1,7 +1,7 @@
 ---
 section: JOINs
 title: Union - Animated
-meta_title: Union - Animated with Gifs
+meta_title: SQL UNION - Animated with Gifs
 number: 80
 authors:
 - _people/matt.md
