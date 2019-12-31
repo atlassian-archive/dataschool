@@ -1,6 +1,6 @@
 ---
 title: Full Outer Join - Animated
-meta_title: Full Outer Join - Animated with Gifs
+meta_title: SQL Full Outer Join - Animated with Gifs
 description: Visualize how SQL is joining two tables using a Full Outer JOIN. See
   animated visualizations of the data being FULL OUTER joined in SQL. Learn more.
 section: JOINs
