@@ -73,7 +73,10 @@ Most EL vendors will insert each source into the lake as a new schema or folder 
 It will mean that when querying across these schemas you'll need to remember to specify the schema names in addition to the table names.
 
 ```sql
-SELECT * FROM "salesforce"."_user" AS "SFuser" JOIN "zendesk"."user" AS "ZDuser" ON "SFuser"."email" == "ZDuser"."email"
+SELECT * 
+FROM "salesforce"."_user" AS "SFuser" 
+JOIN "zendesk"."user" AS "ZDuser" 
+	ON "SFuser"."email" == "ZDuser"."email"
 ```
 
 <!--- TODO: Can we draw the source and lake image with some slices (schemas) of the new sources stored inside the lake -->
