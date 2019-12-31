@@ -1,6 +1,6 @@
 ---
 title: Cross Join - Animated
-meta_title: Cross Join - Animated with Gifs
+meta_title: SQL Cross Join - Animated with Gifs
 description: Visualize how SQL is joining two tables using a Cross Join. See animated
   visualizations of the data being CROSS JOINed in SQL. Learn more.
 section: JOINs
