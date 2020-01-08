@@ -20,9 +20,20 @@ There are two ways to organize relational databases:
 * **Row oriented**
 * **Column oriented** (also known as **columnar** or **C-store**)
 
-**Row oriented databases** are databases that organize data by record, keeping all of the data associated with a record next to each other in memory. Row oriented databases are the traditional way of organizing data and still provide some key benefits for storing data quickly.
+**Row oriented databases** are databases that organize data by record, keeping all of the data associated with a record next to each other in memory. Row oriented databases are the traditional way of organizing data and still provide some key benefits for storing data quickly. They are optimized for reading and writing rows efficiently. 
 
-**Column oriented databases** are databases that organize data by field, keeping all of the data associated with a field next to each other in memory. Columnar databases have grown in popularity and provide performance advantages to querying data.
+Common row oriented databases: 
+
+* Postgres 
+* MySQL
+
+**Column oriented databases** are databases that organize data by field, keeping all of the data associated with a field next to each other in memory. Columnar databases have grown in popularity and provide performance advantages to querying data. They are optimized for reading and computing on columns efficiently.
+
+Common column oriented databases: 
+
+* Redshift
+* BigQuery
+* Snowflake.
 
 ## Row Oriented Databases
 
