@@ -149,7 +149,6 @@ pages:
 - dataschool/_chapters/learn-sql/extras/find-duplicates.md
 - dataschool/_chapters/learn-sql/extras/hierarchical-data-in-sql.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
-- dataschool/_chapters/learn-sql/extras/if-in-the-select.md
 - dataschool/_chapters/learn-sql/extras/insert-multiple-rows.md
 - dataschool/_chapters/learn-sql/extras/list-the-tables-in-sqlite-opened-with-attach.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
