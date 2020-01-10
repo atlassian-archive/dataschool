@@ -17,7 +17,6 @@ is_community_story: false
 story_intro_blurb: ''
 reading_time: 4
 faqs: []
-published: false
 
 ---
 Postgres allows you to use conditional logic in your SQL queries. When the goal is simply to filter down results, using a WHERE clause is usually the best method.
