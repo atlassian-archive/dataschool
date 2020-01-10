@@ -39,7 +39,7 @@ Here are three different methods which can be used to execute conditional logic 
 Let’s say that we had the following data and wanted to group the results into regions based on their location. We could utilize a CASE statement to achieve this.
 
 | --- | --- | --- |
-| facebook.name | facebook.numfriends | facebook.location |
+| name | numfriends | location |
 | Matt | 300 | San Francisco |
 | Lisa | 500 | Los Angeles |
 | Jeff | 600 | Chicago |
@@ -49,10 +49,10 @@ Let’s say that we had the following data and wanted to group the results into 
 SELECT name,
 	numfriends,
 	CASE
-		WHEN location = ‘San Francisco’ THEN ‘West’
-		WHEN location = ‘Los Angeles’ THEN ‘West’
-		WHEN location = ‘New York’ THEN ‘East
-		ELSE ‘Other’
+		WHEN location = 'San Francisco' THEN 'West'
+		WHEN location = 'Los Angeles' THEN 'West'
+		WHEN location = 'New York' THEN 'East'
+		ELSE 'Other'
 	END AS Region
 FROM facebook;
 ```
@@ -60,7 +60,7 @@ FROM facebook;
 The result would look like this and provide us the Regional grouping we desired.
 
 | --- | --- | --- | --- |
-| facebook.name | facebook.numfriends | facebook.location | Region |
+| name | numfriends | location | region |
 | Matt | 300 | San Francisco | West |
 | Lisa | 500 | Los Angeles | West |
 | Jeff | 600 | Chicago | Other |
@@ -74,14 +74,14 @@ Let’s now say that we wanted to group again but this time based on the number 
 SELECT name,
 	numfriends,
 	location,
-	IIF (numfriends >=500, ‘Larger’, ‘Smaller) AS Size
+	IIF (numfriends >=500, 'Larger', 'Smaller') AS Size
 FROM facebook;
 ```
 
 Here are the results:
 
 | --- | --- | --- | --- |
-| facebook.name | facebook.numfriends | facebook.location | Size |
+| name | numfriends | location | size |
 | Matt | 300 | San Francisco | Smaller |
 | Lisa | 500 | Los Angeles | Larger |
 | Jeff | 600 | Chicago | Larger |
@@ -98,19 +98,19 @@ SELECT name,
 	numfriends,
 	location,
 FROM facebook
-WHERE location = ‘San Francisco’
+WHERE location = 'San Francisco'
 UNION
 	SELECT name,
 		numfriends,
 		location,
 	FROM facebook
-	WHERE location = ‘Los Angeles’;
+	WHERE location = 'Los Angeles';
 ```
 
 The result would be:
 
 | --- | --- | --- |
-| facebook.name | facebook.numfriends | facebook.location |
+| name | numfriends | location |
 | Matt | 300 | San Francisco |
 | Lisa | 500 | Los Angeles |
 
