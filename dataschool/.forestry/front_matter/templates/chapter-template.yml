@@ -135,6 +135,7 @@ pages:
 - dataschool/_chapters/dictionary/sql-optimization.md
 - dataschool/_chapters/fundamentals-of-analysis/choosing-metrics-for-product-launch.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
+- dataschool/_chapters/fundamentals-of-analysis/how-to-track-sign-up-flow.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-an-outlier.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-data-and-why-should-i-care.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
