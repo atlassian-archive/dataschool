@@ -1,9 +1,10 @@
 ---
 section: Analysis Mistakes
 title: Metric vs Metrics
-meta_title: Why you should use multiple metrics
+meta_title: Use multiple metrics to improve your analysis. See why individual metrics
+  can be misleading.
 description: A single Metric can be misleading. Learn how to use multiple Metrics
-  to avoid misleading yourself and others. Learn more
+  to avoid misleading yourself and others.
 number: 6
 authors:
 - _people/matt.md
