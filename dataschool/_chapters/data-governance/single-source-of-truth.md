@@ -114,7 +114,7 @@ Data is messy and requires some cleaning to ensure accurate results. Cleaning pr
 <tr style="font-family: Open Sans; font-weight: 200;">
 <td>Attempt to eliminate NULLs</td>
 <td>
-NULL values have unexpected consequences in SQL (is "string" <> NULL?). It's best to remove all nulls with values. Some examples:
+NULL values have unexpected consequences in SQL (is "string" <> NULL?). It's best to replace all nulls with values. Some examples:
 <ul>
 <br><li>Change all NULL values in the first_name column to the string Blank.</li>
 <br><li>
