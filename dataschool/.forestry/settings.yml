@@ -47,7 +47,7 @@ build:
   publish_command: bundle exec jekyll build -d _site
   publish_env:
   - JEKYLL_ENV=production
-  - RUBY_VERSION=2.6.1
+  - RUBY_VERSION=2.6.3
   - BUILD_DIR=dataschool
   output_directory: dataschool/_site
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
