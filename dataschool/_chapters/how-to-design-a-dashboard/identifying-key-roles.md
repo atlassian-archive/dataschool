@@ -8,6 +8,7 @@ number: 50
 authors:
 - _people/matt.md
 reviewers:
+- _people/mike-yi.md
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/identifying_key_roles/groupPic.png"
 is_featured: false
@@ -18,9 +19,9 @@ is_under_construction: false
 ---
 ![group of people](/assets/images/how-to-design-a-dashboard/identifying_key_roles/groupPic.png)
 
-In a dashboard design project, multiple people are involved in making it a success. Key stakeholders need to be defined from the start to facilitate optimal collaboration and communication during the appropriate steps of the process. There are 4 key stakeholders with corresponding responsibilities in a typical dashboard project.
+In a dashboard design project, multiple people are involved in making it a success. Key stakeholders need to be defined from the start to facilitate optimal collaboration and communication during the appropriate steps of the process. There are four key stakeholders with corresponding responsibilities in a typical dashboard project.
 
-These roles may be fulfilled by the same person but typically they are not.
+These roles may be fulfilled by the same person, but typically they are not.
 
 ## Key Stakeholders
 
@@ -28,7 +29,7 @@ These roles may be fulfilled by the same person but typically they are not.
 
 ![Define > Prototype > Build > Deploy process](/assets/images/how-to-design-a-dashboard/identifying_key_roles/allHighlighted.png)
 
-This is the person that is responsible for creating the dashboard, and managing the project. As you are the one reading this book this is likely you. Since you will be involved in all steps you should be in charge of coordinating all efforts of the project.
+This is the person that is responsible for creating the dashboard and managing the project. As you are the one reading this book this is likely you. Since you will be involved in all steps, you should be in charge of coordinating all efforts of the project.
 
 Designer responsibilities:
 
@@ -45,13 +46,13 @@ Designer responsibilities:
 
 This stakeholder group is the most passive in the creation of the dashboard, but the most active once the dashboard is finalized.
 
-Audience Responsibilities:
+Audience responsibilities:
 
 * Provide feedback on whether or not the dashboard is useful
 
-There are no direct responsibilities for this role during the design and build phase, however, all design decisions should take into account how the consumer will interact with the dashboard. Pretty much every decision that is made in this project should be made with the Consumer in mind. Their product or business knowledge, business role, and any cultural or other sensitivities NEED to be considered when completing almost every step of the dashboard project.
+There are no direct responsibilities for this role during the design and build phase. However, all design decisions should take into account how the audience will interact with the dashboard. Pretty much every decision that is made in this project should be made with the audience in mind. Their product or business knowledge, business role, and any cultural or other sensitivities NEED to be considered when completing almost every step of the dashboard project.
 
-Questions to keep in mind about Consumers:
+Questions to keep in mind about audience:
 
 * What devices will they use to view this dashboard?
 * How much context is needed for each metric?
@@ -78,7 +79,7 @@ Point Person’s responsibilities:
 
 ![Highlight the build phase](/assets/images/how-to-design-a-dashboard/identifying_key_roles/buildHighlighted.png)
 
-This is a member of the data team that understands the data source, schema, and any other library that will be used to create the metrics. This may also be you or perhaps not.
+This is a member of the data team that understands the data source, schema, and any other library that will be used to create the metrics. In some cases, the Data Gatekeeper and Designer roles will be the same person.
 
 Data Gatekeeper’s main responsibilities include:
 
@@ -86,7 +87,7 @@ Data Gatekeeper’s main responsibilities include:
 * Helping others understand the data source schema
 * Helping with SQL queries
 
-Figuring out which columns to use in a visualization and in a dashboard can be challenging since many databases are not well documented and the data is not modeled appropriately. Data Gatekeepers can make this much easier since they are familiar with the schema and can grant you permission to tables that you may not have access to. They may also write the SQL queries themselves or help you optimize queries that you have written.
+Figuring out which columns to use in a visualization and in a dashboard can be challenging since many databases are not well documented and the data is not modeled appropriately. Data Gatekeepers can make this much easier since they will be familiar with the schema and can grant you permission to tables that you may not have access to. They may also write the SQL queries themselves or help you optimize queries that you have written.
 
 ## Summary
 
