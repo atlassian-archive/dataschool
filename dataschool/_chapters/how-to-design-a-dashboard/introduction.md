@@ -8,6 +8,7 @@ number: 10
 authors:
 - _people/matt.md
 reviewers:
+- _people/mike-yi.md
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg"
 is_featured: false
