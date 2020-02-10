@@ -21,19 +21,17 @@ is_under_construction: false
 
 Without looking at data how do people make decisions?
 
-They base it on their past experience and their understanding of the scenario. This is no longer enough as more organizations become data driven. While we cannot change people’s past experience we can surface data to help change their understanding of the scenario.
-
-We live in exciting times for data driven decision making:
+They base it on their past experience and their understanding of a scenario. This approach used to be required since data was hard to get and understand. However data has become much more accessible:
 
 * We are able to get data from all parts of our business
 * We can store tons of data cheaply
-* Many tools exist to easily extract and visualize that data
+* Many tools exist to easily extract, transform, and visualize data
 
-We want more people within our organizations to better understand what is going on so they can make better decisions. We can do this by exposing people to information dashboards. Dashboards are the link between the data people (people like you) and the business people. This book shows how design thinking and design processes can be used to create highly impactful dashboards to help business people make data driven decisions in your organization.
+Dashboards cannot change people’s past experience but they can surface data to help improve someone's understanding of the scenario to help them make better decisions. Dashboards are the link between the data people (people like you) and the business people. This book shows how design thinking can be used to create highly impactful dashboards to help business people make data driven decisions in your organization.
 
-Business Intelligence tools have made it easy to create visualizations and dashboards. It is tempting to start building multiple dashboards right away without fully investing in defining the problems, stakeholders, and metrics or prototyping ideal designs. Spending time in the Define and Prototyping stages will help any dashboard designer produce dashboards that get used more by their audience.
+Applying design thinking to dashboards can be challenging. Business Intelligence tools have made it all too easy to create visualizations and dashboards. It is tempting to start building multiple dashboards right away to help people. However without fully investing in defining the problems, stakeholders, and metrics or prototyping ideal designs the dashboard is likely to be ineffective. Spending time in the Define and Prototyping stages will help any dashboard designer produce dashboards that get used more by their audience because it will be well suited to the decisions that audience needs to make.
 
-This book will quickly introduce you to what dashboards are, what makes them useful, and an overview of the dashboard design process. Then it will spend the bulk of the book going through the process itself:
+This book will quickly introduce you to what dashboards are, what makes them useful, and an overview of best practices for dashboard design. Then it will spend the bulk of the book going through the design thinking process for dashboards:
 
 ![dashboard design process: Define>Prototype>Build>Deploy](/assets/images/how-to-design-a-dashboard/introduction/intro-dash-1.jpg)
 
