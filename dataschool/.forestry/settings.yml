@@ -1,6 +1,6 @@
 ---
 new_page_extension: md
-auto_deploy: true
+auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
@@ -44,4 +44,10 @@ build:
   working_dir: "/srv/dataschool"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     --port 8080 --host 0.0.0.0 -d _site
+  publish_command: bundle exec jekyll build -d _site
+  publish_env:
+  - JEKYLL_ENV=production
+  - RUBY_VERSION=2.6.3
+  - BUILD_DIR=dataschool
+  output_directory: dataschool/_site
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
