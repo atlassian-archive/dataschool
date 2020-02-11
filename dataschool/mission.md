@@ -5,7 +5,7 @@ description: Our mission is to JOIN people ON data by creating the best free res
   for building a data driven organization.
 
 ---
-<h1 class="title centered mb-5" >{{page.title}}</h1>
+<h1 class="title centered mb-5">{{page.title}}</h1>
 
 At [Chartio](https://chartio.com/) we describe our mission in four words which, not coincidentally, can be understood by both people and machines. Our mission is to:
 
