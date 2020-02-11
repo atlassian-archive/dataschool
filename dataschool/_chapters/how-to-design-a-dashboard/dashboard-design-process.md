@@ -18,9 +18,7 @@ is_under_construction: false
 ---
 The dashboard design process is very similar to any design process – the output in this case is simply a dashboard.
 
-## Why Process is Important
-
-## Why The Design Process Is Important
+## Why the Design Process is Important
 
 People get very attached to solutions they come up with for a given problem. The more they invest time and effort into their solution, the stronger they believe in it regardless of how well it actually solves the problem. This is why it is critical to avoid jumping right to solving a problem by building a dashboard. We don’t want dashboards that don’t solve the problem well because they will not be used.
 
