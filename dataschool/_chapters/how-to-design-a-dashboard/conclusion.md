@@ -15,6 +15,13 @@ img_border_on_default: false
 is_under_construction: false
 
 ---
-We have covered dashboard design best practices and outlined a process to create useful dashboards for any organization. You are now equipped to design and build a dashboards to help your organization be more data driven. We hope you enjoyed the book and look forward to hearing your thoughts in Slack.
+In this book, we have covered dashboard design best practices and outlined a process to create useful dashboards for any organization.
+
+1. Define stakeholders, metrics, and decisions
+2. Prototype on paper and get feedback
+3. Build the dashboard by finding the right data and using proper charts
+4. Deploy the dashboard to your audience and iterate
+
+You are now equipped to design and build dashboards to help your organization make more informed decisions. We hope you enjoyed the book and look forward to hearing your thoughts in Slack.
 
 ![Dashboard design process](/assets/images/how-to-design-a-dashboard/Conclusion/conclusionImages.png)
