@@ -49,7 +49,7 @@ Bar Line, bubble, bullet, single value, and bar charts are the most often viewed
 
 We also created a list of when each chart type is optimal to use for viewers interpreting the data correctly. We have created a decision tree to help you choose the most effective chart for your data. You can use this flowchart to select your visualizations. Please download this, print it out, and put it on the wall near your desk.
 
-![flow chart outlining how to choose what visualization to use](/assets/images/how-to-design-a-dashboard/find_the_best_chart_for_your_metrics/visualizationWeb.png)
+![flow chart outlining how to choose what visualization to use](/assets/images/Decision Tree 6.png)
 
 ## Single Value
 
