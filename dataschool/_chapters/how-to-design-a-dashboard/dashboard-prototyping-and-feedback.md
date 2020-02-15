@@ -58,4 +58,6 @@ Ask the following questions for the whole dashboard:
 
 ## Iteration
 
-Be open to feedback. The goal is to create a useful dashboard for the audience, not to convince people your design is great. You will likely need to do more than one round of prototyping, feedback, and iteration to find the right mix of visualizations. After you feel confident the dashboard contains the most highly relevant information to help support the decisions you are ready to bring the various charts to life.
+Be open to feedback. The goal is to create a useful dashboard for the audience, not to convince people your design is great. You will likely need to do more than one round of prototyping, feedback, and iteration to find the right mix of visualizations. 
+
+After you feel confident the dashboard contains the most highly relevant information to help support the decisions you are ready to bring the various charts to life.
