@@ -33,7 +33,7 @@ Start with individual metrics and draw them as visualizations. Remember to try d
 
 It is common to have new ideas for metrics while sketching. Go ahead and sketch them and then evaluate whether they serve to inform the decisions that need to be made from this dashboard. If you do end up keeping them, go back and fill out the Metric Spreadsheet with the details so that you can build them easier later on.
 
-![Dashboard drawing](/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/dashboardDrawing.jpeg)
+![Multiple chat drawings](/assets/images/three charts.png)
 
 Then try drawing multiple visualizations together. As you sketch out different combinations of visualizations for the dashboard try to limit the number you use in each attempt to as few as possible. Start by asking if you only had 1 chart which would it be. If you had 2,3,4 etc: go through the same process. This will help you determine which should be prioritized visually.
 
