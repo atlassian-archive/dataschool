@@ -21,7 +21,7 @@ feedback_doc_url: https://docs.google.com/document/d/173T4Q9yB9arBmAFfLcIRqTj_KF
 is_under_construction: false
 
 ---
-![](/assets/images/ACES.png)
+![Dashboard Principles](/assets/images/ACES.png)
 
 An optimal dashboard is Accurate, Clear, Empowering, and Succinct. These key tenets can be remembered with the acronym ACES.
 
