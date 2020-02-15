@@ -47,7 +47,7 @@ The modern day [business dashboard](https://chartio.com/learn/dashboards/how-to-
 
 Let’s begin with that very common dashboard that billions of people use every day, the dashboard in a car. Think about the type of data that is displayed. This dashboard presents how fast the car is going, the RPM, the oil temperature, and how much gas is left. Not to mention warning symbols, information about gears, and whether or not your lights are on. It provides all things you need to monitor in order to do your job, in this case driving your car safely.
 
-![car dashboard example](/assets/images/how-to-design-a-dashboard/what-is-a-dashboard/5cace6bb8d24c18b7a6130da_5c9268b10e85f0e2916b4590_AFYXiUdQ6-_HNEsFGXBPBxipDDpE6SACOSrmw4OmKegt3mm7EmHizuM9-w6j_Ts7C6SQ_PZzp7qXmmx4C4n9dDfgAhfk-yVcISGlcLPIFO66zynZQVnjlxFeB-p3RG2XxJYODX-9.jpg "dashboard example")
+![car dashboard example](/assets/images/car dash.png "Dashboard example")
 
 The data displayed to the driver helps them make important decisions about speed, engine health, and if they need to go to a gas station. Dashboards such as this allow people to make informed decisions.
 
@@ -55,13 +55,13 @@ The data displayed to the driver helps them make important decisions about speed
 
 However, let’s imagine a dashboard in a car that only showed one of these data visualizations
 
-![Speedometer in the car dashboard](/assets/images/how-to-design-a-dashboard/what-is-a-dashboard/5cace6cd51b22942feb0fcb4_dash zoom-1.jpg)
+![Speedometer in the car dashboard](/assets/images/car dash-speedometer only.png)
 
 We might know how fast we are going but we could run out of gas at any minute. Seeing a single chart to make all of your decisions from is dangerous. Unfortunately, this is often how people encounter data, in a single chart. The data is isolated, lacking context and other important information required to make a good decision.
 
 A news report might show the job market of the United States in a single chart:
 
-![US unemployment rate](/assets/images/how-to-design-a-dashboard/what-is-a-dashboard/5cace7708d24c150426132ad_5c9268b10e85f0caa86b458f_8w_fQ303Xf6cI8pkaTji-vn-d1-IBsM9QP_IDSsIm_4-tHtu8Laaib-F2_yRQVn6iQARSEpbfz9iPQojxSVgh8dJSVIaSR4oP7xIxRIewAsow3MAsppRoh6ArkPR-3AJuMX3CWaw.png "https://ig.ft.com/sites/numbers/economies/us/")
+![](/assets/images/unemployment chart.png)
 
 At first glance this looks great, the unemployment rate is around 4%. You might conclude that it is easy to get a job and decide to quit and look for a new one. While this graph could be useful to help determine if I should look for a better job, it does not paint the full picture. One visualization alone should never give anyone much confidence. There could be critically important data that is missing if you only consider one visualization.
 
@@ -69,7 +69,7 @@ At first glance this looks great, the unemployment rate is around 4%. You might 
 
 If that chart was part of a dashboard that included multiple visualizations about the job market, it would be easier to make a better decision. Let’s add another chart:
 
-![Unemployment rate and job search length by type of job](/assets/images/how-to-design-a-dashboard/what-is-a-dashboard/5cace7d0832adc26ef602091_5cab6f5bee421faa37ce4a55_4JzOAJAeR5zzkC_Qmir8PdX503K6AXppycdGGaY36cKfAdKWEj4C3Bgt8D1rmh6lFlN1r5tbF4fRJveKLCiylK2R_mqIPuMfzWYDfIr_FhqMedP3fZt2Q84GwL5yVR6grIsC7KVl.png "https://talent.works/2017/09/22/how-long-does-it-take-to-get-a-job-60-days-if-youre-in-hr-or-sales/")
+![Unemployment rate and job search length by type of job](/assets/images/job apps chart.png)
 
 Here we can see the length of time it takes to get a job broken out by field. While the first visualization signals it is a good job market, the second indicates which field will be the quickest to get a job in. This is the beginning of a dashboard to support the decision of if I should look for a new job. Dashboards are composed of multiple visualizations so that the person can be well informed before making a decision.
 
