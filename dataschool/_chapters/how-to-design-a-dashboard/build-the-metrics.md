@@ -8,6 +8,7 @@ number: 110
 authors:
 - _people/matt.md
 reviewers:
+- _people/mike-yi.md
 - _people/tim.md
 - _people/dave.md
 image: "/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png"
@@ -19,13 +20,15 @@ is_under_construction: false
 ---
 ![Build the metrics: image of how db metrics interact with technology](/assets/images/how-to-design-a-dashboard/build_the_metrics/coverImage.png)
 
-In the previous chapters, we filled out a metric spreadsheet. We took a vague ask from a Point Person and turned it into a well-defined list of metrics, calculations, and data sources. We will now use the completed metric architecture to create various SQL queries.
+In the previous chapters, we filled out the [Metric Spreadsheet](https://dataschool.com/how-to-design-a-dashboard/determine-the-metrics-to-monitor/). We worked with the Point Person to define a list of metrics. Then we reached out to the Data Gatekeeper to determine what data sources we need. We will now use the completed Metric Spreadsheet to create various SQL queries.
 
-The columns of the metric architecture map to a SQL query.
+The columns of the Metric Spreadsheet map to a SQL query.
 
 ![SQL query metric architecture](/assets/images/how-to-design-a-dashboard/build_the_metrics/metricArchitectureMap.png)
 
 Take a look at a couple of sample queries we could create from this spreadsheet for the Operations Cost metric:
+
+![](/assets/images/operationsCost.png)
 
 ## Total Operations Cost
 
@@ -67,21 +70,21 @@ One of the beauties of SQL is that it can do the logistical work of finding the 
 
 If you are struggling with understanding how Aggregations or Subqueries work check out:
 
-* [How SQL Count Aggregation Works](/how-to-teach-people-sql/how-sql-aggregations-work/)
-* [How SQL Subqueries Work](/how-to-teach-people-sql/how-sql-subqueries-work/)
+* [How SQL Count Aggregation Works](https://dataschool.com/how-to-teach-people-sql/how-sql-aggregations-work/)
+* [How SQL Subqueries Work](https://dataschool.com/how-to-teach-people-sql/how-sql-subqueries-work/)
 
 If you are running into errors or are getting 0 rows returned check out:
 
-* [Debugging SQL Syntax Errors](/how-to-teach-people-sql/debugging-sql-syntax-errors/)
-* [Debugging SQL 0 Rows Returned](/how-to-teach-people-sql/debugging-sql-0-rows-returned/)
+* [Debugging SQL Syntax Errors](https://dataschool.com/how-to-teach-people-sql/debugging-sql-syntax-errors/)
+* [Debugging SQL 0 Rows Returned](https://dataschool.com/how-to-teach-people-sql/debugging-sql-0-rows-returned/)
 
 ## Checking your Queries
 
-Do not assume your query is perfect. You should check it by looking at other peoples' queries and/or by having the Data Gatekeeper review it.
+Do not assume your query is perfect. You should check it by looking at other peoples’ queries and/or having the Data Gatekeeper review it.
 
 ### Check other people's Queries
 
-Depending on the BI tool that you are using you can see other people's SQL queries. This can be very insightful. You can take note of data sources they used that you were not aware of. You can also see if other people have complexity in their queries.
+Depending on the BI tool that you are using you can see other people’s SQL queries. This can be very insightful. You can take note of data sources they used that you were not aware of. You can also see if other people have complexity in their queries.
 
 Complex Query example:
 
@@ -95,26 +98,24 @@ ORDER BY "Day of Payment Date" ASC
 LIMIT 1000;
 ```
 
-Complexity in a query typically suggests the data is nuanced, messy, or certain business logic needs to be adhered to. If you come across a complex query that is for the same or a similar metric as the one you are working on, try reaching out to the creator. You should try to understand what the extra parts are all about so you can incorporate what is relevant into your own query.
+Complexity in a query such as the one above typically suggests the data is nuanced, messy, or certain business logic needs to be adhered to. If you come across a complex query that is for the same or a similar metric as the one you are working on, try reaching out to the creator of the complex query. You should try to understand what the extra parts are all about so you can incorporate what is relevant into your own query.
 
 On the other hand, if other people have similar looking queries for similar metrics you are probably in the clear. However, you still will want to get someone else's eyes on it for verification.
 
 ### Consult Data Gatekeeper
 
-Getting a code review on your queries is a best practice. Reach back out to the Data Gatekeeper to validate your queries are calculating their metrics correctly. Having the metric spreadsheet facilitates this process since they can see your work and how you go to the query you wrote.
+Get a code review on your queries. Reach back out to the Data Gatekeeper to validate your queries are calculating their metrics correctly. Having the metric spreadsheet facilitates this process since they can see your work and how you go to the query you wrote.
 
 ## Build the Dashboard
 
-Take the tables of data line them up with where they fit into your design.
-
-![Tables arranged how you want your dashboard to be laid out](/assets/images/how-to-design-a-dashboard/build_the_metrics/buildTheDashboard.png)
-
-Go through each table and create the corresponding data visualization in your BI tool. Put all the visualizations together into your final dashboard.
+Go through each table and create the corresponding queries and then take that data and build the visualizations on top of it in your BI tool. Arrange all the visualizations to match your final sketched dashboard. Once you are done you will have created a well designed dashboard.
 
 ![Dashboard version of those queries](/assets/images/how-to-design-a-dashboard/build_the_metrics/exampleDashboard.jpeg)
 
+However even with all the thought and effort put in so far there are still critical steps to make sure this good design becomes even better.
+
 ## Summary
 
-* Build metrics in SQL by plugging in the columns to their relevant part of a SQL statement
-* SQL is required to get the data. Use it to calculate the metrics directly as well as to reflect any underlying changes
-* Check your queries by evaluating other people's queries in your company and/or having the Data Gatekeeper review it
+* Build metrics in SQL by plugging in the columns to their relevant part of a SQL statement.
+* SQL is required to get the data. Use it to calculate the metrics directly as well as to reflect any underlying changes.
+* Check your queries by evaluating other people’s queries in your company and/or having the Data Gatekeeper review it.
