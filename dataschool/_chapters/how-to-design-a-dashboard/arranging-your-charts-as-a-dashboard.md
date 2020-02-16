@@ -65,7 +65,7 @@ At Chartio, we have also noticed that dashboards with multiple chart types get m
 
 The average viewership peaks when six different types of charts are used:
 
-![](/assets/images/AVG Number of Views per # of chart types on Dashb_2020-02-16-082024.png)
+![](/assets/images/AVG Number of Views by Number of Chart Yypes on D_2020-02-16-082623.png)
 
 We did not include average viewership above 6 chart types due to the outliers present in dashboards with more than 6 chart types.
 
