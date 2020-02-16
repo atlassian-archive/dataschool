@@ -103,9 +103,7 @@ You should state whatever policies are relevant in the email that includes the d
 
 Dashboards can be stylized and formatted to be displayed on televisions or other large monitors throughout an office. You can see the problem with needing to scroll here, as it isn’t an option. Sometimes dashboards are presented on multiple televisions mounted to the walls of bullpens, office spaces, conference rooms, and lunch/break rooms.
 
-![Dashboards on tvs](/assets/images/how-to-design-a-dashboard/sharing_the_dashboard_distribution_strategies/televisions.jpeg)
-
-‍[https://www.geckoboard.com/learn/case-studies/dashlane/](https://www.geckoboard.com/learn/case-studies/dashlane/ "https://www.geckoboard.com/learn/case-studies/dashlane/")
+![](/assets/images/photo.jpg)
 
 Since many different types of employees will be viewing data presented in this fashion, their opinions about how it should change could be very diverse. Collect all the feedback you can and then work with the Point Person to prioritize updates. Be prepared to make significant changes on these types of dashboards once they are released.
 
