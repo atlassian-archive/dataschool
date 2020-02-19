@@ -8,6 +8,7 @@ number: 90
 authors:
 - _people/matt.md
 reviewers:
+- _people/andrew-dudley.md
 - _people/mike-yi.md
 image: "/assets/images/how-to-design-a-dashboard/dashboard_prototyping_and_feedback/feedbackLoop.png"
 is_featured: false
