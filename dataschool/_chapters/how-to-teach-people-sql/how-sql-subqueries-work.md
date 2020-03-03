@@ -53,7 +53,7 @@ SELECT *
 FROM (subquery table)
 ```
 
-![Main Query](/assets/images/how-to-teach-people-sql/subqueries/subqueries_3.png)
+![Result of SQL Subquery](/assets/images/how-to-teach-people-sql/subqueries/subqueries_2.png)
 
 Now while this was a somewhat pointless subquery example since you could have just run the subquery to get the same result, it illustrates the point the the outer query is pulling from the created table of the subquery. In this case it is selecting everything from the subquery.
 
