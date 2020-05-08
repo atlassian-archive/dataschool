@@ -13,7 +13,7 @@ The DA Hub aims to empower analytics leaders with the knowledge and confidence t
 Each chapter of the book will be dedicated to a different leader. The first chapter features Gary Angel, CEO of Digital Mortar. Gary  is one of the leading digital measurement experts of the world and the author of the Measuring the Digital World book published in 2016. He’s a frequent speaker at industry events and took the time to reflect on the conversations he had with analytics leaders at the DA Hub on exploring what they might do with their analytics teams that might be “dangerous, interesting or transformative.”
 
 We hope this book inspires you to have more data and analytics conversations with your peers. Discussion topics are endless. Gary has kicked several off in his post below. We would love to hear your point of view on what he has shared. We would also like to hear what you think we should be having a conversation about next!
-
+**********
 ### Kicking Back and Thinking About the Big Stuff
 By Gary Angel
 
@@ -89,7 +89,8 @@ I don’t believe that there are many areas of analytics that are potentially tr
 Our discussion tackled obvious areas for dynamic pricing (any business with perishable inventory) and some non-obvious use-cases. I happen to be a firm believer that retailers should use dynamic pricing to manage inventory (raising the price, for example, on a popular jacket before it sells out in the store) and this idea triggered a very lively discussion on the implications. Of particular concern was the impact on customer satisfaction and brand perception as well the potential for unequal treatment of customers. But pricing on inventory is clearly non-discriminatory. You’re not targeting a class of customers or even any specific customer. In fact, stores engage in inventory-based sales all the time and I’ve never heard anyone complain about that! What they often don’t do is raise prices appropriately to manage that same inventory (and yes – I’m sure people will complain about that though it doesn’t seem to trouble airlines much).
 
 Whatever you think of dynamic pricing in retail, if you live in a vertical that doesn’t price dynamically, you really should take a moment and think about whether there is an opportunity to change that. The technologies exist to make dynamic pricing possible and if our discussion suggested anything, it’s that there are still plenty of opportunities to find new areas of application.
- 
-Capturing a good conversation in prose is akin, for me at least, to capturing a waterfall or Summit on my camera’s phone. I’m no Jane Austen or Saul Bellow. And the joy of the Hub format when it works is hard to represent. Nor does every conversation there sparkle or inform. But when they do, it’s hard to beat. This laid-back exploration of the future, which I entered with so little expectation, proved as enjoyable a group discussion as I’ve had in many years.
+ ************
+Capturing a good conversation in prose is akin, for me at least, to capturing a waterfall or summit on my camera’s phone. I’m no Jane Austen or Saul Bellow. And the joy of the Hub format when it works is hard to represent. Nor does every conversation there sparkle or inform. But when they do, it’s hard to beat. This laid-back exploration of the future, which I entered with so little expectation, proved as enjoyable a group discussion as I’ve had in many years.
+
 Thanks to one and all who participated!
  
