@@ -8,6 +8,7 @@ number: 4
 authors:
 - _people/matt.md
 reviewers:
+- _people/twange-kasoma.md
 - _people/blake.md
 - _people/matthew-layne.md
 feedback_doc_url: https://docs.google.com/document/d/1QPvkbgXwiIPgZlU81-kiSZe2mrqhsgoQ44C62hSPbnM/edit?usp=sharing
@@ -18,13 +19,14 @@ reading_time: 5
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
+faqs: []
 
 ---
 ![Distribution of an average](/assets/images/Frame (53).png)
 
 ## The problem with a single statistic
 
-Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While high-level stats can be informative, relying on them to accurately represent the underlying data can be problematic because they can hide important patterns in the underlying data.
+Most metrics are reported as a single statistic: Average time on page, Number of Active Users, Customer Acquisition Cost. While high-level statistics can be informative, relying on them to accurately represent the underlying data can be problematic because they can hide important patterns in the underlying data.
 
 ![High Level Statistic](/assets/images/misrepresenting-data/statVsDist/statVsDist_0.png)
 
@@ -51,7 +53,7 @@ Creating a distribution is a bit more complex. First you have to create buckets 
 
 If you had the numbers {1,2,3,3,6,6}, you could bucket them into two groups: 1-3 and 4-6. The first bucket 1-3 would have 4 values in it {1,2,3,3} and the second bucket 4-6 would have two values in it {6,6}. You could also bucket them into three groups which would be 1-2, 3-4, and 5-6.
 
-Bucketing can be done using CASE WHEN. Bucket sizes should be the same with the exception that the last bucket can have an open ended upper limit if there are extreme outliers. Figuring out the correct bucket size to use takes some trial and error to capture the right amount of variation in the data.
+Bucketing can be done using CASE WHEN. Bucket sizes should be the same with the exception that the last bucket can have an open-ended upper limit if there are extreme outliers. Figuring out the correct bucket size to use takes some trial and error to capture the right amount of variation in the data.
 
 Put the buckets into a [Common Table Expression](https://www.essentialsql.com/introduction-common-table-expressions-ctes/) and then use a COUNT aggregation on your newly created column.
 
@@ -76,7 +78,7 @@ In many BI tools creating a histogram is a built-in type of chart that can take 
 
 ![Right Skewed Distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_3.png)
 
-**Right Skewed** - Since most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.- Most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
+**Right Skewed** - Since most of the data is lower than the average, using a median instead of an average would be more representative of the data because it falls more in the center of the actual data. This is because it is less affected by values in the tail.
 
 ![Left Skewed Distribution](/assets/images/misrepresenting-data/statVsDist/statVsDist_4.png)
 
@@ -102,7 +104,7 @@ By splitting and re-bucketing we can see in greater detail what the underlying d
 
 ## Summary
 
-While statistics such as a mean or median are commonly used and easy to understand, a distribution adds more nuance and clarity to the data. Even if you do not end up displaying your distribution, you should look at it to know how well your summary stat represents it.
+While statistics such as a mean or median are commonly used and easy to understand, a distribution adds more nuance and clarity to the data. Even if you do not end up displaying your distribution, you should look at it to know how well your summary statistic represents it.
 
 * Always look at the distribution of the underlying data.
 * Verify that the high level statistic accurately represent the underlying data.
@@ -110,5 +112,5 @@ While statistics such as a mean or median are commonly used and easy to understa
   * Right Skewed
   * Left Skewed
   * Normal
-  * Bimodal
+  * Bi-Modal
   * [And more](https://medium.com/@srowen/common-probability-distributions-347e6b945ce4)

@@ -6,6 +6,7 @@ number: 100
 authors:
 - _people/matt.md
 reviewers:
+- _people/mike-yi.md
 - _people/dave.md
 - _people/tim.md
 image: "/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png"
@@ -19,31 +20,37 @@ is_under_construction: false
 ---
 ![Finding data icon](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/findingData.png)
 
-From the previous chapters most of the ambiguity of what is going on the dashboard should have been addressed:
+From the previous chapters, we established a foundation for building a dashboard, answering the questions of:
 
-* Why - why you are building this dashboard
-* Who – who you will be working with in the dashboard creation process
-* What – what metrics will support decisions to achieve the dashboards goal
+* What decisions will this dashboard support?
+* What metrics will inform those decisions?
+* Which visualizations best showcase those metrics?
 
-However the biggest challenge can be the “How”, as in how do we get the data to build the actual dashboard. The three data scenarios you will encounter are:
+However, the biggest challenge in dashboard design can be the “How”, as in how we get the data to build each of the visualizations.
 
-* When you have the data
-* When you have messy data (most common)
-* When you have no data
+The three data scenarios you will encounter finding the data are:
+
+* You have clean data
+* You have messy data (most common)
+* You have no data
 
 If you have the data this will be an easy step of the process. If the data is messy or it does not exist things will get much more challenging.
 
 ## When you have the data
 
-Now you have to find the data that you will use to calculate those metrics in your database. Review the schemas of the databases you have access to.
+![](/assets/images/clean data.png)
+
+Finding where the data that you need is can be the hardest part of the process. Often, data is not well documented and what you need could be spread across multiple databases. First, search for tables that have keywords from your Metrics Spreadsheet.
+
+Review the [schemas of the databases](https://dataschool.com/how-to-teach-people-sql/accessing-data/) you have access to. Some BI tools provide you with visual Entity Relationship Diagrams to help you explore:
 
 ![available schemas](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/schema.png)
 
-Finding where the data is that you need can be the hardest part of the process. Often times data is not well documented and what you need could be spread across multiple databases. First search for tables that have keywords from your Metrics Spreadsheet.
+Some products such as [Chartio](https://chartio.com/product/visual-sql/) also allow you to search to find relevant columns and tables with autocomplete:
 
-![Find relevant tables in the menu](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/keywords.png)
+![](/assets/images/autocomplete.png)
 
-When you find something promising such as a table with the same keyword you searched or contains a field that matches your keyword do a quick query:
+When you find something promising such as a table with the same keyword you searched for, or one that contains a field that matches your keyword, run a quick query:
 
 ```sql
 SELECT *
@@ -53,35 +60,35 @@ LIMIT 3;
 
 ![check for relevant info with limit](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/fromOperations3.png)
 
-Once you get the results you can quickly see if it has the relevant information. In this case we can see it has a department column that looks appropriate, and the amount column may be the cost data we are looking for.
+Once you get the results, you can quickly see if it has relevant information. In this case, we can see that the table has a department column that looks appropriate, and the amount column may be the cost data we are looking for. If a table such as this one looks relevant to one of the metrics, write it down or put it directly in the [Metrics Spreadsheet](https://dataschool.com/how-to-design-a-dashboard/determine-the-metrics-to-monitor/).
 
-If a table such as this one looks relevant to one of the metrics write it down or put it directly in the Metrics Spreadsheet.
-
-Your next step will be to determine what data you cannot find yourself. If you find a table but are unsure if it is the correct data put the name of the table in with a ? at the end. If you cannot find any relevant tables for a metric put three ? in the Metrics Spreadsheet.
+Your next step will be to determine what data you cannot find yourself. If you find a table, but are unsure if it is the correct data, put the name of the table in with a ? at the end. If you cannot find any relevant tables for a metric put three ? in the Metrics Spreadsheet.
 
 ![Full metric spreadsheet](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFull.png)
 
-If you have any questions about the tables or columns you have found, it is time to consult the Data Gatekeeper. I’d highly recommend coming to the Data Gatekeeper with the list of tables and fields you have questions about, using the metric spreadsheet is a convenient way to structure the conversation.
+If you have any questions about the tables or columns you have found, it is time to consult the Data Gatekeeper. I’d highly recommend going to the Data Gatekeeper with the list of tables and fields you have questions about, using the Metrics Spreadsheet as a convenient way to structure the conversation.
 
 Go through each metric with the Data Gatekeeper, and explain what tables and fields you think you should be using and which ones you have questions about.
 
 ![table structure with desired tables highlighted](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/highlightedSchema.png)
 
-The Data Gatekeeper will confirm which tables and fields you have selected so far or will help locate the tables and fields you need. Some of the data you need might not be accessible to you due to access permissions. The Data Gatekeeper may grant you access or will provide feedback about how to work around this limitation. After locating the relevant tables, update the Metrics Spreadsheet.
+The Data Gatekeeper will confirm the tables and fields you have selected so far or will help you locate the tables and fields you need. You might not be able to access some of the data you need due to access permissions. The Data Gatekeeper may grant you access, help create the query, or will provide feedback about how to work around this limitation. After locating the relevant tables, update the Metrics Spreadsheet.
 
 ![Metrics spreadsheet with datasources highlighted](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetDatasource.png)
 
-We also need to specify the fields within the tables that will be used to make creating the SQL queries easy. Place the field names from the tables you found into the Formulas directly and put them in parentheses below your grouping categories in the Content column. Notice ‘Total’ does not have a column associated with it because it is the full aggregation.
+We also need to specify the fields within the tables that will be used to make creating the SQL queries easy. Place the field names in parentheses below your grouping categories in the Content column. Notice ‘Total’ does not have a column associated with it because it is aggregating the full table.
 
 ![Metrics spreadsheet with the formulae highlighted](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/metricsSpreadsheetFormula.png)
 
 ## When you have messy data
 
-Well you have data but it is messy. It may be obvious such as missing values. It may be mysterious, such as a value you have is different than what a user of your application is seeing. Let’s explore what to do about different messy data problems.
+![messy data](/assets/images/messy data.png)
+
+Most data is messy data. It may have obvious issues such as missing values. It may have more mysterious issues, such as obvious typos from manual input, or worse, ambiguous values. Whatever the cause, all these issues need to be addressed or documented before being used in a visualization.
 
 ### Missing values
 
-On any column that you will be using in a metric calculation you should check for Nulls and blank records. Here is an example query to get the Total number of nulls and nulls as a percent of total records.
+On any column that you will be using in a metric calculation, you should check for Nulls and blank records. Here is an example query to get the total number of Nulls:
 
 ```sql
 SELECT COUNT(*)
@@ -99,21 +106,26 @@ WHERE field = '' or field = ' '
 
 You need to evaluate how to treat missing values.
 
-* **Ignore:** leave the values as they are
-  * This is the most common approach to dealing with missing data, you note the amount of missing values that exist and move on.
-  * If there are high amounts of missing data in a field it is not recommended to use it in a calculation since it may no longer be representative of that field.
-* **Delete:** remove any records with missing data
-  * Deletion is only recommended if the records are a very small minority of the data set so it does not skew the data.
-  * One legitimate reason for removing a record due to a missing value is if it has missing values in multiple fields.
-* **Impute:** replace the missing value with a value
-  * If the data is relatively normally distributed replacing the value with the average or median can be done if there are only a few records missing the value.
-  * In some cases it is clear that leaving a field blank might indicate that the answer is 0, in these cases it is appropriate to impute with a 0
+#### Ignore - leave the values as they are
 
-Regardless of which option you choose be sure to have the decision documented so others can reproduce the calculation and understand if they should take the data they are seeing to be 100% accurate or not.
+* This is the most common approach to dealing with missing data. Note the amount of missing values that exist and move on.
+* If there are high amounts of missing data in a field it is not recommended to use it in a calculation since it may no longer be representative of that field.
+
+#### Delete - remove any records with missing data
+
+* Deletion is only recommended if the records are a very small minority of the data set so their removal does not skew the data.
+* One legitimate reason for removing a record due to a missing value is if it has missing values in multiple fields.
+
+#### Impute - replace the missing value with a value
+
+* If the data is relatively normally distributed, replacing the value with the average or median can be done if there are only a few records missing the value. This will bias the distribution more towards the center so be cautious.
+* In some cases it is clear that leaving a field blank might indicate that the true value is 0. In these cases it is appropriate to impute with a 0.
+
+Regardless of which option you choose, be sure to have the decision documented so others can reproduce the calculation and understand if they should take the data they are seeing to be 100% accurate or not.
 
 ### Obviously Wrong Values
 
-On any column that you will be using in a metric calculation you should also check for bizarre values. The Data School recommends doing a quick check on the highest and lowest values of any of the fields that will be used. You can do this using the ORDER BY clause.
+On any column that you will be using in a metric calculation, you should also check for bizarre values. Do a quick check for the highest and lowest values of any of the fields that will be used. You can do this using the ORDER BY clause.
 
 ```sql
 SELECT *
@@ -127,32 +139,35 @@ FROM table
 ORDER BY field ASC
 ```
 
-This will quickly surface values that are way off if they are in the field.
+This will quickly surface values that are way off from others in the field.
 
-In text fields this is more difficult to detect, however there are some tricks here as well. They are more use case oriented tips.
+In text fields this is obviously wrong values are difficult to detect since the mistakes may not show at the beginning or end of an ordered list. However there are a few common things to check for:
 
-* Phone Number
-  * Common fake numbers 123-456-7890, 000-000-0000, 867-5309, and 999-999-9999
-* Name
-  * Common fake names: John Doe, Jane Doe,
-  * Repetitive letters such as ‘aa’,’bb’
-* Birthday
-  * Too old: pre 1919
-  * Too young: 2014 and above
+#### Phone Number
+
+* Common fake numbers: 123-456-7890, 000-000-0000, and 999-999-9999
+
+#### Name
+
+* Common fake names: John Doe, Jane Doe,
+* Repetitive letters such as ‘aa’,’bb’
+
+#### Birthday
+
+* Too old: Over 100 years ago
+* Too young: Less than 13 years ago
 
 ### Potentially Wrong Values
 
-While the previous method showed us obvious outliers there can be more subtle outliers that you may want to address.
+While the previous method dealt with obviously wrong values there can be more subtle [outliers](https://dataschool.com/fundamentals-of-analysis/what-is-an-outlier/) and potentially wrong values that you may want to address.
 
-Quartiles split a quantitative variable up into four equal sections. The interquartile range (IQR) is the difference between the upper quartile (Q3) and the lower quartile (Q1), which cover the central 50% of the data. If a value is far enough from the middle, we might consider that an outlier.
+For instance we will demonstrate one method of determining outliers using the interquartile range method. First we need to establish quartiles within the data. Quartiles split a quantitative variable up into four equal sections. The interquartile range (IQR) is the difference between the upper quartile (Q3) and the lower quartile (Q1), which cover the central 50% of the data. If a value is far enough from the middle, we might consider that an outlier.
 
-![shows quartile split and the interquartile range](/assets/images/how-to-design-a-dashboard/finding_the_data_that_builds_metrics/IQR.png)
+![](/assets/images/interquartile range.png)
 
-[http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html "http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_summarizingdata/bs704_summarizingdata7.html")
+A commonly accepted definition of an outlier is 1.5 * IQR + Q3 or Q1 - 1.5 * IQR. In essence, if a data point is 1.5 times the IQR larger than the upper quartile, or 1.5 times the IQR smaller than the lower quartile, it is an outlier value.
 
-A commonly accepted definition of an outlier is 1.5 * IQR + Q3 and Q1 - 1.5 * IQR. In essence, if a data point is 1.5 times the IQR larger than the upper quartile, or 1.5 times the IQR smaller than the lower quartile, it is an outlier value.
-
-Here is an example query applying this formula to find outliers using IQR.
+Here is an example query applying this formula to [find outliers using IQR](https://dataschool.com/how-to-teach-people-sql/how-to-find-outliers-with-sql/).
 
 ```sql
 WITH orderedlist
@@ -178,39 +193,41 @@ WHERE  num > Floor((SELECT Count(*) AS c
                                                   FROM   table) * 0.25) ))
 ```
 
-Again in text fields this is more difficult to detect. Watch out for the following:
+In text fields, potentially wrong values are more difficult to detect. Watch out for the following:
 
-* Incorrect Grouping
-* Misspellings of the same thing such as ‘Hamburger’, ‘Hamburdr’, ‘Hanburger’
-* Various capitalization ‘Hamburger’, ‘HamBurger’, ‘hamburger’’
+#### Misspellings
 
-SQL will treat each of these variations as unique, you can find these by grouping by the column the text values are in and reviewing any groups with very few records in them. This is potentially a sign that they should have been incorporated into a larger group but weren’t due to misspellings and capitalization inconsistencies.
+* Slight errors will affect a query’s grouping or filtering: ‘Hamburger’, ‘Hamburdr’, ‘Hanburger’
+
+#### Various capitalization
+
+* Any difference could affect a query’s grouping or filtering: ‘Hamburger’, ‘HamBurger’, ‘hamburger’’
+
+SQL will treat each of these variations as unique. One way to detect these is by grouping by the column the text values are in and reviewing any groups with very few records in them. These will most likely be misspelled versions of bigger categories.
 
 ## When you have no data
 
-Sometimes you do not have the data in your database to calculate a metric. This can be seen as a huge roadblock but there are a few ways forward. We need to first ask ourselves the following to know what we can do.
+![](/assets/images/no data.png)
+
+Sometimes you do not have the data in your database for your metric. This can be a huge roadblock but there are a few ways forward. First, we need to know:
 
 * Do we care about historical data?
 * Is the metric actually trackable?
 * How much data is needed for this metric to be valuable?
 
+With these answers we can solve the problem in a few different ways.
+
 ### Instrumenting new data points
 
-If historical data is of no concern consider working with the Data Gatekeeper to talk with engineering about starting to track what you want. This will delay the project from completion based on the engineering resources available to help.
+If historical data is of no concern, consider working with the Data Gatekeeper to start to tracking the data for the metrics you want. This might involve engineering to implement the new tracking. Based on the engineering resources available to help, this may delay completion of the dashboarding project.
 
-Consider the costs
-
-* People time
-* Data Complexity
-* Database costs
-
-If the metric desired here is for a statistical test, talk with the Data Gatekeeper about how much data will be necessary to do the test properly. Factor in how much time it will take to get that data and let the Point Person know. Often times people will want to draw conclusions as quickly as possible, do not let your dashboard get used incorrectly like this. Set expectations up front when instrumenting new data points and perhaps even note on the dashboard when conclusions can be drawn.
+If the metric desired here is for a statistical test, talk with the Data Gatekeeper about how much data will be necessary to do the test properly. Factor in how much time it will take to get that data and let the Point Person know. Often times, people will want to draw conclusions as quickly as possible, before there has been enough data to be confident in the results. Do not let your dashboard get used incorrectly like this. Set time expectations up front when instrumenting new data points and perhaps even note on the dashboard when conclusions can be drawn.
 
 ### Proxy Metrics
 
-If we want historical data but we do not have the data for the metric we wanted we can use proxy metrics. Proxy Metrics are metrics that give us the same or similar information to what we wanted.
+If we want historical data but we do not have the data for the metric we wanted, we can use proxy metrics. Proxy metrics are metrics that give us the same or similar information to what we wanted, when we can’t directly measure the desired metric.
 
-Example:
+**Example:**
 
 The Point Person wants to know what customers think of the product.
 
@@ -220,21 +237,23 @@ Desired Metric: NPS
 
 Proxy Metric: Return Visitors
 
-* We could look at how often customers use the product as a proxy metric, we equivocate regular usage with our customers liking the product.
+* We could look at how often customers use the product as a proxy metric. In this case, we equivocate regular usage with our customers liking the product.
 
-While Proxy Metrics are not exact they can give us a good estimation. Finding good proxy metrics can be dangerous because they can change the focus of your company.
+While proxy metrics are not exact, they can give us a good estimation. Be careful when using proxy metrics, however, since they may be measuring things you do not expect and can lead you to make bad decisions.
 
-Consider a company who has to wait a long time to see if their product was valuable to the consumer such as an education company. They provide a lot of knowledge but if their ultimate goal is job placement they have to wait several months to know if their education was effective for the student.
+#### Proxy Metric example
+
+Consider a company who has to wait a long time to see if their product was valuable to the consumer such as an education company. They provide a lot of knowledge to students, but if their ultimate goal is job placement they have to wait several months to know if their education was effective.
 
 How can they measure if they are doing a good job before their desired metric event happens?
 
-You could introduce surveys to measure how confident students are in their job prospects, you could measure graduation rates, or you could measure the amount of inbound interest in your students from outside employers. Each one of these Proxy Metrics which you might be able to assess sooner than the “did they get a job” metric will lead you to focus on different activities. So be cautious with Proxy Metrics
+You could introduce surveys to measure how confident students are in their job prospects, you could measure graduation rates, or you could measure the amount of inbound interest in your students from outside employers. Each one of these Proxy Metrics which you might be able to assess sooner than the “did they get a job” metric will lead you to focus on different activities.
 
 ## Summary
 
-* Finding where the data is located can be challenging
-* Most likely you will need to involve the Data Gatekeeper in your search, be prepared with what data you are looking for before engaging with them
-* Sometimes you will not be able to find data due to your level of access and will need to consult the Data Gatekeeper.
-* Fill out your metric architecture to know which table and field will be necessary for each metric.
+* Finding where the data is located can be challenging.
+* Most likely you will need to involve the Data Gatekeeper in your search. Be prepared with what data you are looking for before engaging with them.
+* Sometimes you will not be able to find data due to your level of access and will need to consult with the Data Gatekeeper.
+* Fill out your metric architecture to know which tables and fields will be necessary for each metric.
 * Determine how messy your data is and clean it appropriately
-* If you do not have the data for a metric work with the Data Gatekeeper to instrument new data points or use Proxy Metrics
+* If you do not have the data for a metric, work with the Data Gatekeeper to instrument new data points or use a proxy metric.

@@ -8,6 +8,7 @@ number: 11
 authors:
 - _people/matt.md
 reviewers:
+- _people/twange-kasoma.md
 - _people/mike-yi.md
 feedback_doc_url: https://docs.google.com/document/d/1EN9jLWcWilsrw3z7eWCiEN3fx-VY_MSTRynGGLCk3N4/edit?usp=sharing
 image: "/assets/images/Frame 2.7.png"
@@ -17,6 +18,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 reading_time: 
+faqs: []
 
 ---
 #### How many jellybeans are in the jar?
@@ -36,22 +38,22 @@ When we do not predict outcomes, we are more likely to encounter confirmation bi
 
 ## Lack of scientific rigor
 
-The scientific method can be boiled down to 2 steps.
+The scientific method can be boiled down to two steps.
 
 1. Make a prediction.
 2. Test to see if that prediction is correct.
 
-Your prediction should be based on past knowledge about the field you are in and the test should be designed to confirm or disconfirm that prediction. When you do not make a prediction, you cannot design a test to confirm or disconfirm it. Conclusions that are reached without a scientific process are less reliable. The interpretation of results are based on post hoc reasoning and therefore our decisions may not be valid. In addition, we are not able to learn clear lessons from our results.
+Your prediction should be based on past knowledge about the field you are in and the test should be designed to confirm or disconfirm that prediction. When you do not make a prediction, you cannot design a test to confirm or disconfirm it. Conclusions that are reached without a scientific process are less reliable. The interpretation of results is based on post hoc reasoning and therefore our decisions may not be valid. In addition, we are not able to learn clear lessons from our results.
 
 If you do not make predictions you can gather data and make observations, but you can only report what you have found and not draw any conclusions (i.e. correlation ≠ causation). However, that information you gather, can help inform predictions in the future for experiments and tests that can be subject to statistical techniques.
 
 ## Not improving our decision making over time
 
-We have to request and commit resources for projects before they commence. So we need to make predictions about what the impact of these projects will be in order to justify the resource allocation. Saying “this project is going to be good for the company” gives you a lot of ways to “find success”. This mindset does not give you a good feedback loop on if your prediction was correct. This vague prediction provides vague information for the company
+We have to request and commit resources for projects before they commence. So we need to make predictions about what the impact of these projects will be in order to justify the resource allocation. Saying “this project is going to be good for the company” gives you a lot of ways to “find success”. This mindset does not give you a good feedback loop on whether your prediction was correct. This vague prediction provides vague information for the company
 
 If we do not make clear predictions, we will find reasons why the data we gathered was “predictable”. We will not learn from our planning mistakes.
 
-We need to make firm predictions and then review the outcomes. We can refine vague predictions e.g. "This project is going to be good for the company" by asking “how?”. As we closely examine our predictions and the actual results we will improve our ability to make better predictions in the future.
+We need to make firm predictions and then review the outcomes. We can refine vague predictions e.g. "This project is going to be good for the company" by asking “how?”. As we closely examine our predictions and the actual results, we will improve our ability to make better predictions in the future.
 
 # Tips for Making Predictions
 
@@ -59,11 +61,11 @@ While making an initial prediction is not too challenging, sticking to your pred
 
 ## Things aren't exact and can be negative
 
-Make an upper bound and lower bound prediction and then add a confidence measure to it. “I am 90% confident that this feature will improve engagement 5-50%. Thinking in bounds and confidence levels allows you to think more broadly about your prediction and removes the stigma of needing to be exactly right.
+Make an upper bound and lower bound prediction and then add a confidence measure to it. “I am 90% confident that this feature will improve engagement 5-50%". Thinking in bounds and confidence levels allows you to think more broadly about your prediction and removes the stigma of needing to be exactly right.
 
 A common misconception for people is that the range of impact of their feature is greater than 0 on whatever the metric is. The real range of the impact can be negative or positive. Your feature can have a negative impact as they often do.
 
-Think through how feature could go wrong and whether it affects your confidence level in your range. What are you basing your prediction on that would prevent the feature from having a negative impact? Have some guidelines and actions set in place if the feature you launch has a negative impact on the metrics you predicted it to positively impact. Having this plan and following it will reduce squabbling from your team and make it easier to try another experiment. Otherwise your team will be frustrated that they spent time on something that didn’t work.
+Think through how the feature could go wrong and whether it affects your confidence level in your range. What are you basing your prediction on that would prevent the feature from having a negative impact? Have some guidelines and actions set in place if the feature you launch has a negative impact on the metrics you predicted it to positively impact. Having this plan and following it will reduce squabbling from your team and make it easier to try another experiment. Otherwise your team will be frustrated that they spent time on something that didn’t work.
 
 ## Make public facing predictions
 

@@ -135,19 +135,21 @@ pages:
 - dataschool/_chapters/dictionary/sql-optimization.md
 - dataschool/_chapters/fundamentals-of-analysis/choosing-metrics-for-product-launch.md
 - dataschool/_chapters/fundamentals-of-analysis/how-to-explore-data.md
+- dataschool/_chapters/fundamentals-of-analysis/how-to-track-sign-up-flow.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-an-outlier.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-data-and-why-should-i-care.md
 - dataschool/_chapters/fundamentals-of-analysis/what-is-the-interquartile-range.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/syntax-conventions.md
 - dataschool/_chapters/how-to-teach-people-sql/appendix/third-normal-form.md
+- dataschool/_chapters/learn-sql/extras/5 Redshift SQL shortcuts.md
 - dataschool/_chapters/learn-sql/extras/additional-practice.md
+- dataschool/_chapters/learn-sql/extras/conditional-logic.md
 - dataschool/_chapters/learn-sql/extras/drop-all-tables-postgres.md
 - dataschool/_chapters/learn-sql/extras/exclude-a-column.md
 - dataschool/_chapters/learn-sql/extras/export-to-csv-from-psql.md
 - dataschool/_chapters/learn-sql/extras/find-duplicates.md
 - dataschool/_chapters/learn-sql/extras/hierarchical-data-in-sql.md
 - dataschool/_chapters/learn-sql/extras/how-to-replace-nulls-with-0s.md
-- dataschool/_chapters/learn-sql/extras/if-in-the-select.md
 - dataschool/_chapters/learn-sql/extras/insert-multiple-rows.md
 - dataschool/_chapters/learn-sql/extras/list-the-tables-in-sqlite-opened-with-attach.md
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
@@ -178,3 +180,4 @@ pages:
 - dataschool/_chapters/sql-optimization/scheduling-dbt.md
 - dataschool/_chapters/sql-optimization/snowflake.md
 - dataschool/_chapters/sql-optimization/views.md
+- dataschool/_people/josh-richman.md

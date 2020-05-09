@@ -38,7 +38,7 @@ This stage is ideal for new companies or teams with minimal data needs. It is in
 
 ### You've outgrown this stage if
 
-* You have data you need access to in multiple places/applications
+* You have data you need to access in multiple places/applications
 * You need unique or combined charts/dashboards for cloud application sources like Salesforce
 * More than just a few people need access to this data
 * You're struggling with performance issues
