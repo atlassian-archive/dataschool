@@ -108,6 +108,7 @@ fields:
   label: FAQs
   description: FAQs for  SEO
 pages:
+- dataschool/_chapters/Data-Conversations/taking-a-da-hub-approach-to-solving-analytics-challenges.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
 - dataschool/_chapters/data-governance/data-lake-security.md
