@@ -180,4 +180,5 @@ pages:
 - dataschool/_chapters/sql-optimization/scheduling-dbt.md
 - dataschool/_chapters/sql-optimization/snowflake.md
 - dataschool/_chapters/sql-optimization/views.md
+- dataschool/_chapters/taking-a-da-hub-approach-to-solving-analytics-challenges.md
 - dataschool/_people/josh-richman.md
