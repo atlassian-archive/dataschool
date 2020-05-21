@@ -2,6 +2,7 @@
 section: book
 reading_time: 6
 title: Taking a DA Hub Approach to Solving Analytics Challenges
+short: DA Hub
 meta_title: Data Analytics Hub approach
 description: The Data Analytics Hub details how they foster productive conversations
   about data within companies
