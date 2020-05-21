@@ -2,6 +2,7 @@
 section: book
 reading_time: 5
 title: Driving Actionable Insights Through Data Engagement
+short: Insights From Engagement
 meta_title: Data Engagement Drives Insights
 description: Learn how to drive actionable insights by using data engagement within
   your company.
