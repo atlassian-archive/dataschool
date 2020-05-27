@@ -17,3 +17,5 @@ status: in_progress
 
 ---
 Learn about how the data world is rapidly changing. This book contains interviews and group discussions on the most important data topics today. This book was inspired by the Digital Analytics Hub which regularly holds events to bring together the best minds in the industry.
+
+![](/assets/images/dahub.png)
