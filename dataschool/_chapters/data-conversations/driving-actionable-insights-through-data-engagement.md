@@ -24,7 +24,9 @@ faqs: []
 
 #### How Companies Can Get Data Fit
 
-Rusty Rahmer is an experienced digital leader with over 10 years of experience driving digital strategy, technology program planning and delivery at Vanguard. He’s starting a conversation that I’m sure has come up in many analytics teams. Most of the conversations start off like this, **_“We’ve built this great dashboard/platform, how come no one is using it?”_** At the same time there is an executive leadership team discussing why their multi-million dollar investment hasn’t increased profits for the division. Rusty walks us through an experience from his career and lays out a framework that increased data engagement.
+Rusty Rahmer has over 17 years of experience driving digital strategy, technology program planning, and delivery in financial services and health care. Since 2013 Rusty had been leading enterprise class digital intelligence programs at investment company Vanguard and more recently at pharma giant GSK. In this post Rusty relates to a challenge many analytics professionals have faced - **_“We’ve built this great dashboard/platform, how come no one is using it?” _**At the same time in a boardroom nearby an executive leadership team is discussing why their multi-million dollar investment in data and analytics has had little positive impact on company profits.
+
+Rusty walks us through a similar experience from his career and how together with his team they developed a methodology to increase stakeholders’ engagement and bring about a complete transformation in how data was viewed in the company. This framework is still in place to date, several years following initiation
 
 ***
 
