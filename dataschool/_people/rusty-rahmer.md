@@ -3,7 +3,7 @@ title: Rusty Rahmer
 meta_title: Contributor - Rusty Rahmer
 description: Rusty Rahmer has over 17 years of experience driving digital strategy,
   technology program planning, and delivery in financial services and health care.
-image: "/assets/images/rusty.jpeg"
+image: "/assets/images/rusty_rahmergradientbackgroundsmaller.png"
 is_contributor: true
 job_title: Head of Customer Experience Solutions
 company: GSK
