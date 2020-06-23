@@ -17,6 +17,7 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 faqs: []
+number: 9000
 
 ---
 If you followed this book, you should now have a modern data stack that allows you to ingest & report on:
