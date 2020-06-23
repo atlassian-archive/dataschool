@@ -5,8 +5,10 @@ title: Doing more with your Data Mart
 meta_title: How to route your data from Mart to Applications
 description: Learn why you should use a tool like census to push your data back to
   your data sources
-authors: []
-reviewers: []
+authors:
+- _people/sylvain-giuliani.md
+reviewers:
+- _people/matt.md
 feedback_doc_url: ''
 image: "/assets/images/loop-diagram.png"
 is_featured: false
