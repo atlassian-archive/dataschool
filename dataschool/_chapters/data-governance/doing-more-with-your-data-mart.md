@@ -30,7 +30,7 @@ At this point, you have already created real value for your company, but you can
 
 ## **Doing more with your Data – Closing the loop**
 
-As a data person, you can contribute directly to the success of your company by closing the loop and bringing the unified data back into the business tools your marketing, sales, and support teams are using to achieve their goals.
+As a data person, you can contribute directly to the success of your company by closing the loop and bringing the unified data back into the business tools your marketing, sales, and support teams are using to achieve their goals. 
 
 ![](https://lh6.googleusercontent.com/452pOrqZx1aRdGf4xQXn684lwZm2wJ7fXiUs20ULn2iKjBjwgGkVStzHMfYdVj485bv7tasqtHj7mQiChKtEBJVJ5yuC64Mvpy0cqnsxUbxqxLXk9GQEubz7fpHfAcv9rUBgRhcG =624x464)
 
