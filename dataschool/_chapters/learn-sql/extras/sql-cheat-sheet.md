@@ -90,11 +90,12 @@ The WHERE clause is used with SELECT to filter the returned records based on spe
 Note that WHERE can be used with many different operators besides the = operator shown in the example. Possible operators include:
 
 = Equal to
+
 > Greater than
 > < Less than
 > = Greater than or equal
 > <= Less than or equal
-<> Not equal
+> <> Not equal
 
 BETWEEN Between specified endpoints of a range
 
@@ -233,9 +234,9 @@ The UNION operator is used to combine the result sets of 2 or more SELECT statem
 * Each SELECT statement must return fields with similar data types
 * Each SELECT statement must return those fields in the same order
 
-    SELECT fieldnames FROM table1
-    UNION
-    SELECT fieldnames FROM table2;
+  SELECT fieldnames FROM table1
+  UNION
+  SELECT fieldnames FROM table2;
 
 When the UNION operator combines the result sets, it looks across all the records and removes any duplicate records. To combine the result sets and retain any duplicated records, use UNION ALL:
 
@@ -251,7 +252,7 @@ INTERSECT functions similarly to UNION, however rather than keeping only unique 
     INTERSECT
     SELECT fieldnames FROM table2;
 
-### EXCEP
+### EXCEPT
 
 EXCEPT also functions similarly to UNION and is the inverse of INTERSECT. EXCEPT looks at the result sets for 2 SELECT statements and only returns the records from the first SELECT statement that are not found in the results of the second SELECT statement.
 
