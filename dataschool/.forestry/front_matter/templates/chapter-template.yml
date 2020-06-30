@@ -157,7 +157,6 @@ pages:
 - dataschool/_chapters/learn-sql/extras/meta-commands-in-psql.md
 - dataschool/_chapters/learn-sql/extras/outputting-query-results-to-files-with-o.md
 - dataschool/_chapters/learn-sql/extras/show-tables-in-postgres.md
-- dataschool/_chapters/learn-sql/extras/sql-cheat-sheet-1.md
 - dataschool/_chapters/learn-sql/extras/sql-cheat-sheet.md
 - dataschool/_chapters/learn-sql/extras/update-with-join-in-sql.md
 - dataschool/_chapters/learn-sql/extras/what-is-the-difference-between-union-and-union-all.md
