@@ -108,6 +108,7 @@ fields:
   label: FAQs
   description: FAQs for  SEO
 pages:
+- dataschool/_chapters/data-conversations/blockchain-as-a-platform-for-data-governance-2.0.md
 - dataschool/_chapters/data-conversations/driving-actionable-insights-through-data-engagement.md
 - dataschool/_chapters/data-governance/data-lake-architecture.md
 - dataschool/_chapters/data-governance/data-lake-maintenance.md
