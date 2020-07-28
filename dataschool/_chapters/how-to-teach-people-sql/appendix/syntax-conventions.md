@@ -47,9 +47,11 @@ For readability, all SQL commands should be written in uppercase letters. This a
     FROM 
     	users
 
-## New Line Per Column
+## New Lines and Indenting
 
-Lay out columns on new lines so that it easy to identify each of the columns being used. When they are placed in the same line as the SQL command they may not even fit within your SQL editor window. Do keep Aliases on the same line to make it clear what they are referring to.
+Lay out each column or logical statement on new lines so that it easy to identify what is being queried and filtered. When they are placed in the same line as the SQL command they may not even fit within your SQL editor window. Keep Aliases on the same line to make it clear what they are referring to.
+
+Keep the SQL keywords on lines of their own and indent the other parts of the query. This makes it easy to read, edits and spot any unexpected errors.
 
 ❌
 
@@ -77,15 +79,6 @@ When writing simple queries for up to 3 three (3) columns, you can write the col
 
     SELECT created_at, age_at_registration, current_age
     FROM customers
-
-## Indenting
-
-Keep the SQL keywords on lines of their own and indenting other parts of the query, queries are optimal for readability, making any future edits and spotting any unexpected errors.
-
-| --- | --- |
-| Simple | Complex |
-| SELECT * FROM users | SELECT DATE(created_at) AS created_at, gender, province, COUNT(*) AS total_new_users FROM users WHERE is_new_user = TRUE AND gender <> ‘male’ GROUP BY created_at, gender, province ORDER BY total_new_users DESC |
-| SELECT *FROM users | SELECT DATE(created_at) AS created_at, gender, province, COUNT(*) AS total_new_users FROM users WHERE is_new_user = TRUE AND gender <> ‘male’ GROUP BY created_at, gender, province ORDER BY total_new_users DESC |
 
 ## GROUP BY Numbers and Names
 
