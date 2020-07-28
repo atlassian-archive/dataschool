@@ -30,12 +30,12 @@ For readability, all SQL commands should be written in uppercase letters. This a
 ❌
 ```
 Select 
-	created_at, 
-	gender, 
-	age_at_registration, 
-	province
+    created_at, 
+    gender, 
+    age_at_registration, 
+    province
 from 
-	users
+    users
 ```
 ✅
 ```
