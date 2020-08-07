@@ -134,6 +134,13 @@ defaults:
       book_slug: dictionary
       image: /assets/images/book-covers/data-school-dictionary.png
       layout: dictionary
+  - scope:
+      path: "_chapters/data-conversations"
+      type: "chapters"
+    values:
+      book_slug: data-conversations
+      image: /assets/images/final-textbook-design.jpg
+      permalink: "/data-conversations/:slug/"
 
   - scope:
       path: "_chapters/learn-sql"
