@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/allen-hillery.md
 feedback_doc_url: ''
-image: "/assets/images/on-premises-and-cloud-managed.jpg"
+image: "/assets/images/on-premises-and-Cloud-managed.jpg"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
