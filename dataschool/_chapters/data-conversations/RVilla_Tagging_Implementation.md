@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/allen-hillery.md
 feedback_doc_url: ''
-image: "/assets/images/5_key_points_taggingFlow_images.jpg"
+image: "/assets/images/5_key_points_taggingFlow_images.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -40,7 +40,7 @@ The strategy used for instrumenting tags can impact the usability of the data co
 
 Typically organizations are only focused on capturing data that supports their KPIs or want to tag everything.  Neither of these two sets up an organization for long term tagging success.  A KPI based implementation is narrowly focused on capturing data that answers specific questions and a “tag everything” approach can be too cumbersome and costly to implement.   
 
-**Creating an adaptive strategy means thinking about KPIS as well as interactions that can better help you understand your visitors better.** This requires a little more time and work up front but it is a better approach for maintaining a flexible implementation over time.  For example, understanding how often a visitor changes the size or color of a recommended product is not typically part of a KPI, however, it can be important in helping to understand recommendations and their impact on sales.
+**Creating an adaptive strategy means thinking about KPIS as well as interactions that can better help you understand your visitors.** This requires a little more time and work up front but it is a better approach for maintaining a flexible implementation over time.  For example, understanding how often a visitor changes the size or color of a recommended product is not typically part of a KPI, however, it can be important in helping to understand recommendations and their impact on sales.
 
 The project team at the retailer’s implementation had chosen to focus on KPIs.  The data collected provided specific answers to support those questions but left out many of the features in the shopping experience limiting the kinds of answers that could be provided about user behavior, they were unable to report on when users changed product sizes and why.
 	
