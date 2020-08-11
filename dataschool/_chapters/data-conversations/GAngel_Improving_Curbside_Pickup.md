@@ -3,13 +3,13 @@ section: book
 reading_time: 8
 title: Improving the Operational Art of Curbside Pickup and Other People-Based Processes
 meta_title: Improving Curbside Pickup
-description: Learn how Blockchain can be applied as a data governance platform
+description: Curbside pickup is a great example of a complex process retailers had to implement almost overnight.
 authors:
 - _people/gary-angel.md
 reviewers:
 - _people/allen-hillery.md
 feedback_doc_url: ''
-image: "/assets/images/sbvvj_9akkt3nditkaljkna.png"
+image: "/assets/images/ga_curbside-pickup-malls.jpg"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -63,15 +63,15 @@ People-tracking is equivalent to session replay in the digital realm. You can pi
 
 ### Understanding Process Flow and Identifying Loop-Backs
 
-![](/assets/images/sbvvj_9akkt3nditkaljkna.png)
+![](/assets/images/LaborTrackingImage1.jpg)
 
 Here’s an example where completing a particular fulfillment required a full re-cycle in the Process:
 
-![](/assets/images/sbvvj_9akkt3nditkaljkna.png)
+![](/assets/images/LaborTrackingImage3.jpg)
 
 Many new processes must be sensitive to employee density. Here you can see when processes brought multiple Associates into close proximity:
 
-![](/assets/images/sbvvj_9akkt3nditkaljkna.png)
+![](/assets/images/LaborTrackingImage2.jpg)
 
 Studying how processes played out often reveals significant improvement opportunities. In this case, the final step of most pickups required a trip to the back-station. By moving that location near the outside door, 2-3 minutes were shaved off every fulfillment. Analysis also showed several opportunities for order parallelization and identified a problem in the way larger orders were assembled that was significantly slowing down fulfillment. These kinds of improvements simply don’t happen without measurement.
 

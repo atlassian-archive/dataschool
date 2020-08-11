@@ -1,8 +1,8 @@
 ---
 title: Rene Villa
-meta_title: Senior Analytics and Data Product Manager
+meta_title: Contributor - Rene Villa
 description: Rene Villa has extensive experience building digital analytics infrastructure that includes tagging implementations, data warehouse tables and visualization tools.
-image: "/assets/images/Rene_Profile_Pic.jpg"
+image: "/assets/images/rene_profile_pic.jpg"
 is_contributor: true
 job_title: Senior Product Analytics Manager
 company: Aspire Consulting

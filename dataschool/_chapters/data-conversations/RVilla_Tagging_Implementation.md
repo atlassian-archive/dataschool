@@ -9,7 +9,7 @@ authors:
 reviewers:
 - _people/allen-hillery.md
 feedback_doc_url: ''
-image: "/assets/images/5_Key_Points_taggingflow_images.jpg"
+image: "/assets/images/5_key_points_taggingFlow_images.jpg"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
@@ -22,7 +22,7 @@ faqs: []
 
 Capturing how a website or app is being used by visitors or customers is a must if one wants to be successful at providing a service or selling products.  The data collected provides invaluable information that can be used to tailor the experience to customers and help to increase loyalty.  **Understanding digital customers has become more important in our current climate with the pandemic forcing many businesses to accelerate their shift to digital and even considering an online only model.**
 
-![](/assets/images/5_Key_Points_Sampletag_images.png)
+![](/assets/images/5_key_points_Sampletag_images.png)
 
 Tracking an online experience, most commonly referred to as ***tagging***, is typically managed by using a third-party software such as Google Analytics or Adobe Analytics. These tools collect clickstream data and provide a reporting interface that can support deep analysis and reporting.  They also provide additional software that can help manage tagging, a tag manager. Google Analytics and Google Tag Manager are the most popular tools in the marketplace given that they are free for basic service.
 
@@ -48,7 +48,7 @@ The project team at the retailer’s implementation had chosen to focus on KPIs.
 Since the retailer was migrating to Adobe Analytics from another tool it was at times important to understand why certain old tags were implemented, unfortunately the tagging documentation for the previous tool was non existent, leading to time wasted on testing and validating those tags. 
 The new tagging team did an excellent job at documenting the specific tagging solutions for Adobe Analytics and making that documentation available to everyone, however, no one had created an overall tagging solution document that tracked the variables and values being captured and the purpose for each tag.
 
-![](/assets/images/5_Key_Points_DesDoc_images.png)
+![](/assets/images/5_key_points_DesDoc_images.png)
 
 I took it upon myself to create the overall solution design document for the retailer’s tagging solution.  It is important to maintain an overall solutions design document with the supporting documentation for each specific tag implemented.  These documents become critical in understanding the data being collected as well as supporting the tagging implementation as it progresses over time.
 
