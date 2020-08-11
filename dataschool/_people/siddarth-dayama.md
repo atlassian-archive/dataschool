@@ -1,8 +1,8 @@
 ---
 title: Siddharth Dayama
-meta_title: Siddharth Dayama, Senior Manager at Verizon
+meta_title: Contributor - Siddharth Dayama
 description: Siddharth "Sid" Dayama has extensive experience in data visualization and predictive analytics 
-image: "/assets/images/sid_headshot.jpg"
+image: "/assets/images/Sid_headshot.JPG"
 is_contributor: true
 job_title: Senior Manager
 company: Verizon
