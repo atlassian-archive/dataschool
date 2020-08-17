@@ -10,7 +10,8 @@
   <title>{{ page.meta_title }}</title>
   <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
   <!-- SEO -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>ß
+  {% include vwo-script.html %}
   <!-- css -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
