@@ -184,3 +184,4 @@ pages:
 - dataschool/_chapters/sql-optimization/snowflake.md
 - dataschool/_chapters/sql-optimization/views.md
 - dataschool/_people/josh-richman.md
+- dataschool/resources.md
