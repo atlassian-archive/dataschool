@@ -109,7 +109,7 @@ There are a few different types of JOINs, each which specifies a different way f
 We can demonstrate each of these by doing a COUNT(*) and showing how many rows are in each dataset.  First, the following query shows us how many columns are in the _artists_ and _albums_ tables.
 
 <sqlbox
-initial="SELECT '# of albums', COUNT(_) FROM albums UNION SELECT '# of artists',COUNT(_) FROM artists;"
+initial="SELECT '# of albums', COUNT(*) FROM albums UNION SELECT '# of artists',COUNT(*) FROM artists;"
 autorun="true"
 
 > </sqlbox>
@@ -131,8 +131,8 @@ autorun="true"
 An OUTER JOIN is going to fetch all joined rows, and also any rows from the specified direction (RIGHT or LEFT) that didn't have any connections.  In our database, many artists don't have an album stored.  So if we do a **RIGHT** OUTER JOIN here which specifies that the right listed _artists_ table is the target OUTER table we will get back all matches that we did from the INNER JOIN above _AND_ all of the non matched rows from the _artists_ table.  And here we show we do:
 
 <sqlbox
-initial="SELECT count(_) FROM albums RIGHT OUTER JOIN artists ON albums.artist_id = artists.id;"
-answer="SELECT count(_) FROM albums RIGHT OUTER JOIN artists ON albums.artist_id = artists.id WHERE albums.id IS NULL;"
+initial="SELECT count(*) FROM albums RIGHT OUTER JOIN artists ON albums.artist_id = artists.id;"
+answer="SELECT count(*) FROM albums RIGHT OUTER JOIN artists ON albums.artist_id = artists.id WHERE albums.id IS NULL;"
 hint="WHERE albums.id IS NULL"
 autorun="true"
 
