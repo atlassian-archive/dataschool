@@ -25,7 +25,7 @@ For this example we use BigQuery and dbt. BigQuery is one of Google's cloud data
 
 ![Image result for big query logo](/assets/images/sql-optimization/start_modeling_data/data1.png)
 
-‍[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/ "https://cloud.google.com/bigquery/")
+[https://cloud.google.com/bigquery/](https://cloud.google.com/bigquery/ "https://cloud.google.com/bigquery/")
 
 BigQuery comes with a set of public data sets that are great for practicing data modeling on. I will be using the Stack Overflow data set they have.
 
@@ -97,16 +97,16 @@ This will pop open a file called profiles.yml which is the most challenging part
 
 ```yml
 my-bigquery-db:
-	target: dev
-	outputs:
-		dev:
-			type: bigquery
-			method: service-account
-			project: happy-vegetable-211094
-			dataset: soCleaned
-			threads: 1
-			keyfile: /users/matt/BigQuerykeyfile.json
-			timeout_seconds: 300
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: happy-vegetable-211094
+      dataset: soCleaned
+      threads: 1
+      keyfile: /users/matt/BigQuerykeyfile.json
+      timeout_seconds: 300
 ```
 
 Now I will mark where you will need to update with your own info with **bold**.
