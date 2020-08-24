@@ -95,7 +95,7 @@ open /Users/[your username]/.dbt
 
 This will pop open a file called profiles.yml which is the most challenging part of this tutorial. Configuring the profiles yml file. As a starter you can copy paste the code below to replace what is in the file, replacing one field with your own information.
 
-```code
+```yml
 my-bigquery-db:
 	target: dev
 	outputs:
