@@ -2,7 +2,8 @@
 section: book
 title: Running Jupyter Notebook on an EC2 Server
 meta_title: Running Jupyter Notebook on an EC2 Server
-description: Learn how to run a Jupyter Notebook on an AWS EC2 Server and the advantages of this.
+description: Learn how to run a Jupyter Notebook on an AWS EC2 Server and the advantages
+  of this.
 number: 40
 authors:
 - _people/blake.md
@@ -10,11 +11,14 @@ reviewers:
 - _people/matthew-layne.md
 - _people/matt.md
 feedback_doc_url: https://docs.google.com/document/d/1HpR9gGG7l7Jgr6FjFEWOogD17pAewG0pE5_KesFoNQA/edit?usp=sharing
-image: /assets/images/data-modeling-101/jupyter_article/jupyterLoggedIn.png
+image: "/assets/images/data-modeling-101/jupyter_article/jupyterLoggedIn.png"
 is_featured: false
 img_border_on_default: false
 is_under_construction: false
-reading_time:
+reading_time: 
+is_community_story: false
+story_intro_blurb: ''
+faqs: []
 
 ---
 ## What is Jupyter?
@@ -141,7 +145,7 @@ Enter the IPython command line:
 
 Now follow these steps to generate your password:
 
-`export IPython.lib import passwd`
+`from IPython.lib import passwd`
 
 `passwd()`
 
