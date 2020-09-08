@@ -36,3 +36,4 @@ fields:
   label: main_color
 pages:
 - dataschool/_books/data-conversations.md
+- dataschool/_books/data-resources.md
