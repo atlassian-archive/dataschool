@@ -104,9 +104,9 @@ initial="SELECT * FROM tracks WHERE NOT composer='Green Day';"
 
 ## Ordering and Parenthesis
 
-You can use any number of OR and AND commands in conjunction to describe your conditions.  Just like in math class, SQL has an order of operations.  An AND is essentially a logic multiplication\], and an OR is a logic addition, so ANDed conditions are preformed first, and then the ORs.
+You can use any number of OR and AND commands in conjunction to describe your conditions.  Just like in math class, SQL has an order of operations.  An AND is essentially a logic multiplication\], and an OR is a logic addition, so ANDed conditions are performed first, and then the ORs.
 
-Also like math, you can use parenthesis to specify the order of operations.  As a best practice it's good to use parenthesis wherever it seems like the logic and order might not be too clear.  To explore let's attempt to pull all the _tracks_ composed Green Day AND any track by AC/DC that is over 240,000 milliseconds.
+Also like math, you can use parenthesis to specify the order of operations.  As a best practice it's good to use parenthesis wherever it seems like the logic and order might not be too clear. To explore let's attempt to pull all the _tracks_ composed Green Day AND any track by AC/DC that is over 240,000 milliseconds.
 
 <sqlbox
 initial="SELECT * FROM tracks WHERE composer = 'Green Day' OR (composer = 'AC/DC' AND milliseconds > 240000);"
