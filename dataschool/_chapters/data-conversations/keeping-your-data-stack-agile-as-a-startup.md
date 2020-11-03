@@ -5,7 +5,8 @@ title: Keeping your Data Stack Agile as a Startup
 meta_title: Agile Data Stack for Startups
 description: What considerations you should have while building a modern data stack
   as a startup.
-authors: []
+authors:
+- _people/jacob-cohen.md
 reviewers:
 - _people/matt.md
 feedback_doc_url: ''
@@ -16,7 +17,6 @@ is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
 faqs: []
-published: false
 
 ---
 Change is constant. This is especially true when it comes to data for Startups. New features, new tools, new data sources are constantly emerging. Startups need a data architecture that is flexible so they can keep learning from their data as they grow. They cannot wait for clean data.
