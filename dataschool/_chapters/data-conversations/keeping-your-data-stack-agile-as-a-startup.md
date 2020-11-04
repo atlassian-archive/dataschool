@@ -62,4 +62,4 @@ Avoid Vendor owned viz tools, these are largely used as sales wedges which is di
 
 Lastly consider the learning curve for your viz tool. Every insight is super valuable to growth at the beginning of a company, and limiting who can find these insights can limit your growth. Pick a tool that helps people query a database even if they do not know how to write SQL. Chartio built Visual SQL for all the non-technical people to be able to meaningfully explore a company’s data.
 
-Startups need to stay data stack flexible, and with tools available today like Chartio and HarperDB, it's never been easier.
+Startups need to stay data stack flexible, and with tools available today like Chartio and HarperDB, it has never been easier.
