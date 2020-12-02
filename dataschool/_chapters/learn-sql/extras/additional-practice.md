@@ -14,7 +14,8 @@ img_border_on_default: false
 is_under_construction: false
 is_community_story: false
 story_intro_blurb: ''
-reading_time:
+reading_time: 
+faqs: []
 
 ---
 For practicing we will be using an online music store database. Here is the entity relationship diagram of the schema.
@@ -69,7 +70,7 @@ Join the Artist and the Album table with an **inner join** in the SQL box below:
 
 <sqlbox
 
-answer='SELECT * FROM albums JOIN albums ON artists.artist_id=artists.id;'
+answer='SELECT * FROM albums JOIN artists ON albums.artist_id=artists.id;'
 
 hint='Try using INNER JOIN'
 
