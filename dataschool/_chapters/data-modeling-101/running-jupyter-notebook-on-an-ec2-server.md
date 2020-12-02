@@ -157,6 +157,8 @@ Next go into your jupyter config file:
 
 `vim jupyter_notebook_config.py_`
 
+Note: You may need first to run "exit" in order to exit IPython otherwise the vim command may not be recognized by the terminal.
+
 And add the following code:
 
 ```code
@@ -166,6 +168,16 @@ conf.NotebookApp.ip = '0.0.0.0'
 conf.NotebookApp.password = u'YOUR PASSWORD HASH'
 conf.NotebookApp.port = 8888
 ```
+
+Note: this code below should be put at the beginning of the document.
+
+Tips:
+
+\- press "i" for insert mode
+
+\- press "esc" to escape
+
+\- press "shift+ z" to exit doc
 
 #### Step 7: Create a directory for your notebooks
 
