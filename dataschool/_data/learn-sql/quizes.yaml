@@ -168,8 +168,8 @@ mid-level:
     references:
       - 'dates'
   - question: "Get the *first_name*s and *birth_date*s of each of the *employees* in the format: Jan 1st, 1976"
-    answer: "SELECT first_name, TO_CHAR(birth_date, 'Month FMDDth, YYYY') FROM employees;"
-    hint: "first_name, TO_CHAR(birth_date, 'Month FMDDth, YYYY')"
+    answer: "SELECT first_name, TO_CHAR(birth_date, 'Mon FMDDth, YYYY') FROM employees;"
+    hint: "first_name, TO_CHAR(birth_date, 'Mon FMDDth, YYYY')"
     references:
       - 'dates'
   - question: "Get the *first_name*s and *birth_date*s of each of the *employees* in the format: 09/23/1987"
