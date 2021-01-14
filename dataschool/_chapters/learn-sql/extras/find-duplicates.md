@@ -35,15 +35,13 @@ Our sample table, called users, shows our Facebook friends and their relevant in
 
 If we wanted to understand how many of our current Facebook friends had the same first name, we could do so by executing the following SQL query:
 
-```
-SELECT 
-	first_name, 
-    COUNT(*)
-FROM 
-	users
-GROUP BY 
-	first_name
-```
+    SELECT 
+    	first_name, 
+    	COUNT(*)
+    FROM 
+    	users
+    GROUP BY 
+    	first_name
 
 In order to see how many of these names appear more often than others, you could add an additional ORDER BY statement to the end of the query and order by DESC.
 
@@ -56,17 +54,15 @@ In order to see how many of these names appear more often than others, you could
 
 Additionally, you could add an additional HAVING clause to the above query like so:
 
-```
-SELECT 
-	first_name, 
-    COUNT(*)
-FROM 
-	users
-GROUP BY 
-	first_name
-HAVING 
-	COUNT (first_name) > 1
-```
+    SELECT 
+    	first_name, 
+    	COUNT(*)
+    FROM 
+    	users
+    GROUP BY 
+    	first_name
+    HAVING 
+    	COUNT (first_name) > 1
 
 With the following sample _users_ table, we can see that the _first_name_ Carlo appears more than once and therefore you have more than one friend named Carlo on your Facebook friends list. The HAVING clause in this query deliberately selects instances where the field in the SELECT statement appears more than once and anything that appears in the result is a duplicate value in the table.
 
@@ -78,19 +74,17 @@ With the following sample _users_ table, we can see that the _first_name_ Carlo 
 
 Similarly, if you wanted to understand how many Facebook friends have created more than one account, you could run the following query:
 
-```
-SELECT 
-	first_name, 
-    last_name, 
-    COUNT(*)
-FROM 
-	users
-GROUP BY 
-	first_name, 
-    last_name
-HAVING 
-	COUNT(*) > 1
-```
+    SELECT 
+    	first_name, 
+    	last_name, 
+    	COUNT(*)
+    FROM 
+    	users
+    GROUP BY 
+    	first_name, 
+    	last_name
+    HAVING 
+    	COUNT(*) > 1
 
 | --- | --- | --- |
 | user_id | first_name | last_name |
@@ -103,23 +97,23 @@ By executing this query we see that your friend Carlo Thomas has created two Fac
 
 Another way to search for duplicate values is to use the ROW_NUMBER window function. We can use this function to number each row in the table where the parameters for the ranking are determined by the partition by. This method is most useful when there are parameters included with ranking the duplicate records. For more information on how window functions work see [here](https://dataschool.com/how-to-teach-people-sql/how-window-functions-work/).
 
-```
-WITH
-facebook_friends_deduped AS (
-	SELECT
-		first_name,
-		last_name,
-		ROW_NUMBER() OVER (PARTITION BY first_name, last_name ORDER BY accepted_at 			ASC) AS occurrence
-	FROM
-		users
-	)
-SELECT
-	*
-FROM
-	facebook_friends_deduped
-WHERE
-	rank > 1
-```
+    WITH
+    facebook_friends_deduped AS (
+    	SELECT
+    		first_name,
+    		last_name,
+    		ROW_NUMBER() OVER (PARTITION BY 
+            	first_name, last_name ORDER BY accepted_at ASC)
+     			AS occurrence
+    	FROM
+    		users
+    	)
+    SELECT
+    	*
+    FROM
+    	facebook_friends_deduped
+    WHERE
+    	rank > 1
 
 The output of this query would look something like this:
 
@@ -133,15 +127,15 @@ The above query determined that Carlo Thomas was your duplicate Facebook friend.
 
 Utilizing the Row Number technique from above, we can additionally use a CASE statement to insert a new boolean field into the table that describes whether the row is duplicated or not. See how CASE WHEN works [here](https://dataschool.com/how-to-teach-people-sql/how-case-when-works/).
 
-```
-SELECT
-	*,
-	CASE 
-    	WHEN ROW NUMBER() OVER (PARTITION BY first_name, last_name > 1 THEN TRUE ELSE 			FALSE
-	END AS is_duplicated
-FROM
-	users
-```
+    SELECT
+    	*,
+    	CASE 
+    		WHEN ROW NUMBER() OVER (PARTITION BY 
+     			first_name, last_name > 1 THEN TRUE 
+    			ELSE FALSE
+    	END AS is_duplicated
+    FROM
+    	users
 
 This method would return the following result:
 
