@@ -68,7 +68,7 @@ mid-level:
       - where
       - "order-by"
   - question: "Get the *artists* who's *id*s are between 55 and 98."
-    answer: "SELECT * FROM artists WHERE id <= 55 AND id >= 98"
+    answer: "SELECT * FROM artists WHERE id >= 55 AND id <= 98"
     hint: "use the <= and >= operators."
     references:
       - operators
