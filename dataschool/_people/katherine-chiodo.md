@@ -4,7 +4,7 @@ meta_title: Contributor - Katherine
 description: Katherine is a data analyst supporting healthcare operations at Maple
 image: "/assets/images/image-from-ios-1.jpg"
 is_contributor: true
-job_title: Data Analyst
+job_title: Analytics Engineer
 company: Maple
 data_school_slack_handle: ''
 linkedin: https://www.linkedin.com/mwlite/in/katherine-chiodo-811693135
