@@ -1,0 +1,34 @@
+<script type='text/javascript'>
+/* THIS CAN BE CHANGED
+
+    Requirement is to have
+    1. A cookie that stores a random value from 1-2
+    This is used to group customers into explicit groups to ensure experiments do not overlap where required.
+
+*/
+function optGetCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+
+    for(var i = 0; i <ca.length; i++) { var c=ca[i]; while (c.charAt(0)==' ' ) { c=c.substring(1); } if (c.indexOf(name)==0)
+        { return c.substring(name.length, c.length); } } return "" ; } var optSetCrossDomainCookie=function(name, value,
+        days) { var expires; if (days) { var date=new Date(); date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires="; expires=" + date.toGMTString(); } else { expires="" ; } document.cookie=name + "=" + value + expires
+        + "; path=/; domain=.dataschool.com;" ; }; var retrieve=optGetCookie("optVal"); if (!retrieve) { var
+        optVal=Math.floor(Math.random() * 10) + 1; optSetCrossDomainCookie("optVal",optVal, 1000); }
+</script>
+<!-- Start VWO Async SmartCode -->
+<script type='text/javascript'>
+window._vwo_code = window._vwo_code || (function(){
+    var account_id=516084,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    is_spa=1,
+    hide_element='body',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+</script>
+<!-- End VWO Async SmartCode -->
