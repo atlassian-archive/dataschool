@@ -61,7 +61,7 @@ mid-level:
     hint: "get just the id from the artists table where the name is 'Miles Davis'"
     references:
       - where
-  - question: "Get all the *tracks* with *gerne_id* of 20 from longest to shortest."
+  - question: "Get all the *tracks* with *genre_id* of 20 from longest to shortest."
     answer: "SELECT * FROM tracks WHERE genre_id = 20 ORDER BY milliseconds DESC;"
     hint: "get genre_id of 20 and order milliseconds descending"
     references:
