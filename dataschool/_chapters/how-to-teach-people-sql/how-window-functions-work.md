@@ -213,7 +213,7 @@ You can see that the average song length from the first example is not the same 
 Traditionally, ORDER BY is called on the whole table(as seen above) and will sort the table by the given column. There are two circumstances ORDER BY can be used in:
 
 1. **Without `PARTITION BY`:** ORDER BY will sort like the traditional ORDER BY while also causing the aggregate function to be applied incrementally, providing a new, recalculated value for every row in the table.(first example below)
-2. **With `PARTITION BY`:** ORDER BY will sort each partition individually by the given column.
+2. **With `PARTITION BY`:** ORDER BY will sort each partition individually by the given column and cause the aggregate function to be applied incrementally for each partition.
 
 #### Example
 
@@ -242,9 +242,9 @@ AVG('Steps Taken') OVER(PARTITION BY 'Weekend' ORDER BY Date)
 AS 'Average Steps Taken' FROM 'Steps Taken Daily';
 ```
 
-![Partitioning the steps taken running average table by weekend or weekday](/assets/images/how-to-teach-people-sql/appendix/window_functions/PartitionByAndOrderBy.png)
+![Partitioning the steps taken running average table by weekend or weekday](https://p-0mfbvn.t4.n0.cdn.getcloudapp.com/items/WnuYR927/32d905a5-40ea-489a-948e-92097969b1cf.png)
 
-Looking at the data above, you can see that when used with PARTITION BY, ORDER BY does not create a “running average”. Again, note that Window Functions do not return two new rows just displaying the average steps from during the week and on the weekend, the average is displayed as a new column on the end of the data.
+Looking at the data above, you can see that when used with PARTITION BY, ORDER BY creates a “running average”. Again, note that Window Functions do not return two new rows just displaying the average steps from during the week and on the weekend, the running average is displayed as a new column on the end of the data.
 
 ## Summary
 
