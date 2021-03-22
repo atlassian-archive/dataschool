@@ -232,9 +232,9 @@ FROM 'Steps Taken Daily';
 
 ![A steps taken running average table](/assets/images/how-to-teach-people-sql/appendix/window_functions/StepsTakenRunningAvg.png)
 
-You should notice that, since ORDER BY was used alone, the AVG function is taken as the “running average”. So the AVG is recalculated in every row.
+You should notice that, since ORDER BY was used, the AVG function is taken as the “running average”. So the AVG is recalculated in every row.
 
-We could also use PARTITION BY with ORDER BY, implementing a weekend indicator, to separate weekday activity from weekend activity:
+We could also use PARTITION BY with ORDER BY, implementing a weekend indicator, to separate the weekday running average from weekend running average:
 
 ```sql
 SELECT 'Date', 'Weekend', 'Steps Taken',
@@ -244,7 +244,7 @@ AS 'Average Steps Taken' FROM 'Steps Taken Daily';
 
 ![Partitioning the steps taken running average table by weekend or weekday](https://p-0mfbvn.t4.n0.cdn.getcloudapp.com/items/WnuYR927/32d905a5-40ea-489a-948e-92097969b1cf.png)
 
-Looking at the data above, you can see that when used with PARTITION BY, ORDER BY creates a “running average”. Again, note that Window Functions do not return two new rows just displaying the average steps from during the week and on the weekend, the running average is displayed as a new column on the end of the data.
+Looking at the data above, you can see that when used with PARTITION BY, ORDER BY still creates a “running average”. Again, note that Window Functions do not return two new rows just displaying the average steps from during the week and on the weekend, the running average is displayed as a new column on the end of the data.
 
 ## Summary
 
