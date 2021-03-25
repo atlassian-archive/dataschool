@@ -6,6 +6,7 @@
   <ul class="list-unstyled main-nav components">
     <li {% if page.url == '/books.html' or page.layout == "book" %}class="active"{% endif %}><a href="/books/">Web Books</a></li>
     <li {% if page.url == '/contribute.html' %}class="active"{% endif %}><a href="/contribute/">Contribute</a></li>
+    <li {% if page.url == '/people.html' %}class="active"{% endif %}><a href="/people/">Contributors</a></li>
     <li><a href="{{ site.slack_url }}" target="_blank">Slack Community</a></li>
   </ul>
   <!-- showing current book -->
