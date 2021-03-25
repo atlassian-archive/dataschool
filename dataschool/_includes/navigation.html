@@ -4,8 +4,10 @@
     <img src="/assets/images/chartio-data-school-logo.svg" alt="Data School's Logo"/>
   </a>
   <ul class="list-unstyled main-nav components">
-    <li {% if page.url == '/books.html' or page.layout == "book" %}class="active"{% endif %}><a href="/books/">Web Books</a></li>
-    <li {% if page.url == '/contribute.html' %}class="active"{% endif %}><a href="/contribute/">Contribute</a></li>
+    <li {% if page.url == '/books/' or page.layout == "book" and page.url != "/learn-sql/" %}class="active"{% endif %}><a href="/books/">Web Books</a></li>
+    <li {% if page.url == '/learn-sql/' %}class="active"{% endif %}><a href="/learn-sql/">Learn SQL</a></li>
+    <li {% if page.url == '/contribute/' %}class="active"{% endif %}><a href="/contribute/">Contribute</a></li>
+    <li {% if page.url == '/people/' %}class="active"{% endif %}><a href="/people/">Contributors</a></li>
     <li><a href="{{ site.slack_url }}" target="_blank">Slack Community</a></li>
   </ul>
   <!-- showing current book -->
