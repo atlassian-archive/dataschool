@@ -175,3 +175,14 @@ sqlbox {
     cursor: pointer;
   }
 }
+
+// scroll fix 
+div.CodeMirror {
+  &-hscrollbar {
+    overflow-x: hidden !important;
+  }
+
+  &-scroll {
+    overflow: hidden !important;
+  }
+}
