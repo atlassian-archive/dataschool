@@ -132,7 +132,7 @@ mid-level:
     references:
       - "order-by"
       - "group-by"
-  - question: "Take the above query with the same ordering but group by *album_id* and then *group_id* and change the order of the results to reflect that switch."
+  - question: "Take the above query with the same ordering but group by *album_id* and then *genre_id* and change the order of the results to reflect that switch."
     answer: "SELECT album_id, genre_id, COUNT(*) FROM tracks GROUP BY album_id, genre_id ORDER BY genre_id ASC, album_id DESC;"
     hint: "switch around the occurences of album_id, genre_id except for the ordering"
     references:
