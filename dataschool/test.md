@@ -111,5 +111,3 @@ Data integrity refers to the fact that data must be reliable and accurate over i
 2. [https://postgresapp.com](https://postgresapp.com "https://postgresapp.com")
 3. [https://www.postgresql.org/docs/10/app-pg-ctl.html](https://www.postgresql.org/docs/10/app-pg-ctl.html "https://www.postgresql.org/docs/10/app-pg-ctl.html")
 
-
-{% include newsletter-form.html %}

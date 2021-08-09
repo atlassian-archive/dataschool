@@ -55,9 +55,4 @@ layout: default
       {% if bookchapters[next_index] %}<a class="btn btn-primary next-chapter-btn" href="{{ bookchapters[next_index].url }}">Next – {{ bookchapters[next_index].title }}</a>{% endif %}
     {% endif %}
   {% endfor %}
-
-  <div class="centered mt-5">
-    <p class="faux-header">Get new data chapters sent right to your Inbox</p>
-    {% include newsletter-form.html %}
-  </div>
 </div>
