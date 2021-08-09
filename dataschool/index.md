@@ -52,12 +52,6 @@ description: A community driven school to help people create data driven organiz
 </div>
 </div>
 {% endfor %}
-<div class="row homepage-signup mt-5 mb-5">
-<div class="col-sm centered">
-<h2>Get new data chapters sent right to your Inbox</h2>
-{% include newsletter-form.html %}
-</div>
-</div>
 </div>
 <div class="footer">
 <div class="container">
