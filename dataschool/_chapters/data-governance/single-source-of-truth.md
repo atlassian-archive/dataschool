@@ -97,7 +97,7 @@ Combine the sources, sources_redshift, sources_postgres, and sources_myself tabl
 Combine the users and addresses tables into a single users table since addresses are meaningless on their own.
 </li>
 </ul>
-This simplification requires trial and error and you may not always get it r_ight.
+This simplification requires trial and error and you may not always get it right.
 </td>
 </tr>
 _</table>
