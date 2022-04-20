@@ -55,7 +55,7 @@ If you're using Tableau, they have a feature called Data Interpreter that will d
 
 ## Visual, Drag & Drop Exploration
 
-In addition to SQL access, some BI products with drag and drop data explorers such as Tableau Desktop or Chartio's Visual SQL will handle writing the SQL for you.  Generally exploring data visually is much faster and more intuitive than writing raw SQL. Visual interfaces will handle changing data format strings, join paths, new groupings, unique dialects, etc. which will automatically you a lot of googling and debugging.
+In addition to SQL access, some BI products with drag and drop data explorers such as Tableau Desktop or Chartio's Visual SQL will handle writing the SQL for you.  Generally exploring data visually is much faster and more intuitive than writing raw SQL. Visual interfaces will handle changing data format strings, join paths, new groupings, unique dialects, etc. which will automatically save you a lot of googling and debugging.
 
 ![Chartio Visual SQL](/assets/images/Screen Shot 2019-09-30 at 9.44.02 PM.png)
 
