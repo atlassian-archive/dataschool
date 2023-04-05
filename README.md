@@ -1,3 +1,7 @@
+# ⚠️ Archived Repository
+
+Chartio and also dataschool.com were acquired by Atlassian in 2021. This repository is now archived and no further pull-requests will be accepted.
+
 # DataSchool.com
 
 This is the site powering dataschool.com.  Please contribute!
