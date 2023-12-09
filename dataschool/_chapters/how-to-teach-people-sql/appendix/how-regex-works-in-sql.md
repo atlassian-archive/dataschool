@@ -117,3 +117,4 @@ A full list of regular expressions can be found at: [RexEgg](https://www.rexegg.
 
 [https://lerner.co.il/2016/03/01/regexps-in-postgresql/](https://lerner.co.il/2016/03/01/regexps-in-postgresql/)
 [https://www.rexegg.com/regex-quickstart.html](https://www.rexegg.com/regex-quickstart.html)
+[https://extendsclass.com/regex-tester.html](https://extendsclass.com/regex-tester.html)
